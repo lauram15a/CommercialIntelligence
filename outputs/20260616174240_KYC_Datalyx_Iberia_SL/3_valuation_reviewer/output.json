@@ -1,0 +1,39 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 1.36,
+        "liquidez_corriente": 2.33,
+        "cobertura_intereses": 12.94,
+        "ebitda": 1100000,
+        "deuda_financiera": 1500000,
+        "ingresos": 8200000
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 1.27,
+        "liquidez_corriente": 2.56,
+        "cobertura_intereses": 15.0,
+        "ebitda": 1650000,
+        "deuda_financiera": 2100000,
+        "ingresos": 11500000
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 1.25,
+        "liquidez_corriente": 2.95,
+        "cobertura_intereses": 16.55,
+        "ebitda": 2400000,
+        "deuda_financiera": 3000000,
+        "ingresos": 15000000
+      }
+    ],
+    "variacion": {
+      "variacion_ebitda_pct": 45.5,
+      "variacion_deuda_financiera_pct": 42.9,
+      "variacion_ingresos_pct": 30.4
+    }
+  },
+  "interpretacion": "Entre 2022 y 2024 el apalancamiento (Debt/EBITDA) mejora ligeramente de **1,36x** a **1,25x** (2023: **1,27x**), lo que sugiere una **mayor capacidad de repago** pese a que la **deuda financiera** crece **+42,9%** interanual, al estar acompañada por un **EBITDA +45,5%**. La **liquidez corriente** se refuerza de **2,33x** (2022) a **2,95x** (2024), indicando holgura para atender compromisos de corto plazo. La **cobertura de intereses** también mejora de **12,94x** a **16,55x**, consistente con una mayor resiliencia ante el coste financiero. En términos de actividad, los **ingresos** aumentan **+30,4%** interanual, coherente con el crecimiento del EBITDA y con un perfil operativo en expansión. En el historial con el banco constan **2 operaciones** (línea de circulante por **700k** y financiación de inversión por **400k**) ambas **vigentes y al corriente**, con **impagos = 0** e **incidencias = 0**, lo que respalda un comportamiento de pago estable. La existencia de productos transaccionales como **línea de circulante** y **confirming** aporta evidencia adicional de relación operativa recurrente sin señales de estrés. No se observan ratios faltantes (None/null) en la información proporcionada, por lo que el análisis se basa en métricas completas para 2022–2024."
+}

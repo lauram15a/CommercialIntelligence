@@ -1,0 +1,32 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "CAPEX previsto",
+      "valor": "20M EUR"
+    },
+    {
+      "nombre": "Ingresos estimados",
+      "valor": "31,0M EUR"
+    },
+    {
+      "nombre": "CAPEX / ingresos",
+      "valor": "~65%"
+    },
+    {
+      "nombre": "Fase del negocio",
+      "valor": "expansión (inversión intensiva en capacidad)"
+    },
+    {
+      "nombre": "Opción estratégica",
+      "valor": "posible socio industrial (entrada de capital/alianza)"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Intensificación del esfuerzo inversor (CAPEX elevado) orientado a expansión de capacidad.",
+    "Potencial transformación del perfil operativo por ampliación de activos productivos.",
+    "Apertura a alternativas de financiación no bancaria mediante socio industrial/alianza.",
+    "Probable transición hacia una estructura de capital más compleja para sostener el crecimiento."
+  ],
+  "interpretacion": "El plan de CAPEX (20M EUR) es muy elevado frente a los ingresos estimados (31,0M EUR), lo que sugiere una fase de expansión que probablemente tensionará la liquidez y requerirá financiación de largo plazo. La ausencia de datos de rentabilidad y endeudamiento impide evaluar capacidad de servicio de deuda, por lo que la estructuración (mix deuda/capital) será clave. La mención de un posible socio industrial apunta a una vía complementaria de capital/alianza para acelerar el crecimiento y mitigar el riesgo financiero del ciclo inversor.",
+  "disponible": true
+}

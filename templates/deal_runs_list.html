@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Histórico -- Deal Intelligence{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <div class="page-header">
+    <p class="eyebrow">{{ department_name }}</p>
+    <h1>Histórico de oportunidades</h1>
+    <p>Consulta las propuestas comerciales generadas por el sistema multiagente y los outputs intermedios de cada agente.</p>
+  </div>
+
+  <div class="card" style="margin-bottom: 64px;">
+    {% if runs %}
+    <table class="runs-table">
+      <thead>
+        <tr>
+          <th>Empresa / sector</th>
+          <th>Fecha de ejecución</th>
+          <th>Identificador</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for run in runs %}
+        <tr>
+          <td>{{ run.label }}</td>
+          <td>{{ run.timestamp }}</td>
+          <td class="is-mono">{{ run.run_id }}</td>
+          <td><a href="{{ url_for('deal_run_detail', run_id=run.run_id) }}">Ver propuesta &rarr;</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <div class="empty-state">
+      <h3>Sin análisis todavía</h3>
+      <p>Cuando se procese una búsqueda, aparecerá aquí.</p>
+    </div>
+    {% endif %}
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 2.14,
+        "liquidez_corriente": 2.18,
+        "cobertura_intereses": 6.22,
+        "ebitda": 280000,
+        "deuda_financiera": 600000,
+        "ingresos": 2100000
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 1.94,
+        "liquidez_corriente": 2.57,
+        "cobertura_intereses": 8.61,
+        "ebitda": 620000,
+        "deuda_financiera": 1200000,
+        "ingresos": 3800000
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 2.11,
+        "liquidez_corriente": 3.26,
+        "cobertura_intereses": 8.64,
+        "ebitda": 950000,
+        "deuda_financiera": 2000000,
+        "ingresos": 5600000
+      }
+    ],
+    "variacion": {
+      "variacion_ebitda_pct": 53.2,
+      "variacion_deuda_financiera_pct": 66.7,
+      "variacion_ingresos_pct": 47.4
+    }
+  },
+  "interpretacion": "Entre 2022 y 2023 el apalancamiento (Debt/EBITDA) mejora de 2,14x a 1,94x, consistente con una mayor capacidad de repago apoyada en el crecimiento del EBITDA (de 280k a 620k) pese al aumento de deuda (de 600k a 1,2M). En 2024 el apalancamiento repunta a 2,11x, reflejando que la deuda financiera crece más rápido (+66,7% interanual, hasta 2,0M) que el EBITDA (+53,2% interanual, hasta 950k), aunque el nivel sigue en un rango moderado. La liquidez corriente muestra una tendencia claramente positiva (2,18x → 2,57x → 3,26x), lo que sugiere holgura para atender obligaciones de corto plazo. La cobertura de intereses también se fortalece (6,22x en 2022 a 8,61x en 2023 y 8,64x en 2024), indicando buena capacidad de servicio de la deuda con el resultado operativo. En paralelo, los ingresos crecen con fuerza (2,1M → 3,8M → 5,6M; +47,4% interanual en 2024), lo que respalda la mejora de métricas operativas, si bien el incremento de endeudamiento exige seguimiento. Desde el punto de vista comportamental, el cliente registra 1 operación anterior, 0 impagos y sin incidencias, y mantiene productos transaccionales (cuenta corriente) además de financiación venture debt en 2024, lo que es coherente con un historial bancario sin señales de estrés. En conjunto, el perfil financiero muestra liquidez y cobertura sólidas, con un apalancamiento que se deteriora ligeramente en 2024 por mayor deuda, aspecto a monitorizar en próximas revisiones."
+}

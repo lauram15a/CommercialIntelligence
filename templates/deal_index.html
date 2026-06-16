@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}Nueva búsqueda — Deal Intelligence{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <div class="page-header">
+    <p class="eyebrow">{{ department_name_deal }}</p>
+    <h1>Nueva búsqueda de oportunidades</h1>
+    <p>
+      Selecciona un sector para que el sistema identifique automáticamente las
+      empresas con mayor potencial de financiación o asesoramiento. Puedes
+      indicar una empresa concreta si ya tienes un objetivo en mente.
+    </p>
+  </div>
+
+  <div class="workspace">
+
+    <div class="card">
+      <div class="card__header">
+        <h2>Parámetros de la búsqueda</h2>
+        <p>El sistema consultará la base de datos de empresas y generará una propuesta comercial lista para la reunión.</p>
+      </div>
+      <div class="card__body">
+        <form action="{{ url_for('deal_nueva_solicitud') }}" method="post" id="deal-request-form">
+
+          <div class="form-group">
+            <label for="sector">Sector a analizar</label>
+            <select id="sector" name="sector" required>
+              <option value="">— Selecciona un sector —</option>
+              <option value="Industrial">Industrial</option>
+              <option value="Tecnología">Tecnología</option>
+              <option value="Inmobiliario">Inmobiliario</option>
+              <option value="Retail y Distribución">Retail y distribución</option>
+              <option value="Construcción">Construcción</option>
+              <option value="Energía">Energía</option>
+              <option value="Salud y Farmacia">Salud y farmacia</option>
+              <option value="Agroindustria">Agroindustria</option>
+            </select>
+            <span class="form-hint">El Opportunity Researcher Agent detectará las empresas con mayor potencial dentro del sector.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="company_name">Empresa objetivo (opcional)</label>
+            <div class="autocomplete-wrapper">
+              <input type="text" id="company_name" name="company_name"
+                     placeholder="Ej. Acme Componentes SL" autocomplete="off">
+              <ul class="autocomplete-list" id="company_name_list"></ul>
+            </div>
+            <span class="form-hint">Si ya tienes una empresa en mente, el sistema centra el análisis en ella. Si no, se usa la oportunidad de mayor prioridad detectada.</span>
+          </div>
+
+          <div class="form-actions">
+            <span class="form-hint">El análisis tarda entre 1 y 2 minutos.</span>
+            <button type="submit" class="btn btn-primary">Lanzar análisis</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <aside class="pipeline-panel card">
+      <div class="card__header">
+        <h2>Pipeline de agentes</h2>
+        <p>Sistema multiagente — GPT-5.2 sobre Azure OpenAI</p>
+      </div>
+      <ol class="pipeline-steps">
+        {% for step in agent_steps %}
+        <li class="pipeline-step">
+          <div class="pipeline-step__rail">
+            <span class="pipeline-step__marker">{{ loop.index }}</span>
+            <span class="pipeline-step__line"></span>
+          </div>
+          <div class="pipeline-step__body">
+            <p class="pipeline-step__label">{{ step.label }}</p>
+            <p class="pipeline-step__desc">{{ step.desc }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </aside>
+
+  </div>
+
+  <div class="card" style="margin-bottom: 64px;">
+    <div class="card__header">
+      <h2>Análisis recientes</h2>
+      <p>Últimas búsquedas procesadas por el sistema</p>
+    </div>
+    {% if runs %}
+    <table class="runs-table">
+      <thead>
+        <tr>
+          <th>Empresa</th>
+          <th>Fecha de ejecución</th>
+          <th>Identificador</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for run in runs %}
+        <tr>
+          <td>{{ run.label }}</td>
+          <td>{{ run.timestamp }}</td>
+          <td class="is-mono">{{ run.run_id }}</td>
+          <td><a href="{{ url_for('deal_run_detail', run_id=run.run_id) }}">Ver propuesta &rarr;</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <div class="empty-state">
+      <h3>Sin análisis todavía</h3>
+      <p>Cuando se procese una búsqueda, aparecerá aquí.</p>
+    </div>
+    {% endif %}
+  </div>
+
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  const EMPRESA_NAMES = {{ empresa_names | tojson }};
+  setupAutocomplete('company_name', 'company_name_list', EMPRESA_NAMES);
+</script>
+{% endblock %}

@@ -1,0 +1,39 @@
+{
+  "periodos": [
+    {
+      "periodo": "2022",
+      "ebitda": 3800000,
+      "deuda_financiera": 8000000,
+      "activo_corriente": 9500000,
+      "pasivo_corriente": 7200000,
+      "patrimonio_neto": 6800000,
+      "ingresos": 32000000,
+      "gastos_financieros": 450000,
+      "data_gaps": []
+    },
+    {
+      "periodo": "2023",
+      "ebitda": 4900000,
+      "deuda_financiera": 10500000,
+      "activo_corriente": 12100000,
+      "pasivo_corriente": 8900000,
+      "patrimonio_neto": 8200000,
+      "ingresos": 38000000,
+      "gastos_financieros": 520000,
+      "data_gaps": []
+    },
+    {
+      "periodo": "2024",
+      "ebitda": 5800000,
+      "deuda_financiera": 12000000,
+      "activo_corriente": 14500000,
+      "pasivo_corriente": 9800000,
+      "patrimonio_neto": 9900000,
+      "ingresos": 42000000,
+      "gastos_financieros": 610000,
+      "data_gaps": []
+    }
+  ],
+  "audit_flags": [],
+  "resumen": "Se normalizaron 3 periodos (2022-2024) con EBITDA, deuda financiera, activo/pasivo corriente, patrimonio neto, ingresos y gastos financieros completos en todos los años. No se detectaron valores negativos no plausibles ni saltos interanuales >100% en las magnitudes provistas."
+}

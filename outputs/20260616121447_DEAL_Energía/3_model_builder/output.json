@@ -1,0 +1,32 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos estimados",
+      "valor": "~5,9M€"
+    },
+    {
+      "nombre": "Inversión nueva planta fotovoltaica (CAPEX proyecto)",
+      "valor": "~60M€"
+    },
+    {
+      "nombre": "Empleados",
+      "valor": "28"
+    },
+    {
+      "nombre": "Endeudamiento actual reportado",
+      "valor": "No reportado"
+    },
+    {
+      "nombre": "Margen operativo/EBITDA",
+      "valor": "No disponible"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Transición desde un perfil de desarrollador/operador pequeño hacia fase de ejecución de un activo fotovoltaico de gran escala.",
+    "Aumento relevante de la intensidad de capital por entrada en proyectos con CAPEX elevado.",
+    "Probable incorporación de financiación de proyecto (project finance) asociada al cierre financiero, con posible sindicación.",
+    "Mayor necesidad de gestión de riesgos financieros y operativos (p. ej., coberturas) al pasar a construcción/operación."
+  ],
+  "interpretacion": "La información disponible sugiere un negocio con ingresos actuales moderados pero con un salto inminente en necesidades de capital por el desarrollo de una planta FV de ~60M€, sin visibilidad aún sobre márgenes que permitan evaluar capacidad de generación de caja. El hito de cierre financiero apunta a una estructuración inmediata de deuda de proyecto y potencialmente a la entrada de coinversores institucionales para completar el equity del proyecto. La ausencia de datos sobre apalancamiento actual y CAPEX histórico incrementa la importancia de definir estructura de capital, calendario de desembolsos y mecanismos de mitigación de riesgos (incluidas coberturas) durante construcción y puesta en marcha.",
+  "disponible": true
+}

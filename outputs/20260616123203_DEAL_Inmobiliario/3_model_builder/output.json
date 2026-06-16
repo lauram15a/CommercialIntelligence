@@ -1,0 +1,19 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos estimados",
+      "valor": "~18,0 M€"
+    },
+    {
+      "nombre": "Nuevas promociones previstas (2025)",
+      "valor": "2"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Aceleración de la actividad de desarrollo con ampliación del pipeline de promociones.",
+    "Mayor intensidad de inversión típica en promotoras (suelo/obra en curso y desembolsos de construcción) asociada a fase de expansión.",
+    "Búsqueda activa de financiadores con potencial recurrencia ligada a futuras promociones."
+  ],
+  "interpretacion": "La información disponible apunta a una fase de crecimiento impulsada por el lanzamiento de nuevas promociones, pero sin detalle de márgenes, liquidez o apalancamiento no puede evaluarse la rentabilidad ni la capacidad de servicio de deuda. En este contexto, es razonable anticipar necesidades de financiación promotor a corto plazo (principalmente deuda de construcción y estructura de capital por proyecto) para ejecutar el pipeline. La ausencia de datos de endeudamiento y caja sugiere que cualquier estructuración deberá apoyarse en métricas y garantías a nivel de promoción (preventas, costes, calendario de obra) más que en históricos corporativos.",
+  "disponible": true
+}

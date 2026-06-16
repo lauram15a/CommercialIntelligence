@@ -1,0 +1,104 @@
+{
+  "run_id": "20260616123203",
+  "sector": "Inmobiliario",
+  "company_name": "Promotora Levante Residencial SL",
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Inmobiliario",
+    "oportunidades": [
+      {
+        "empresa": "Promotora Levante Residencial SL",
+        "motivo": "El lanzamiento de dos promociones en 2025 y la búsqueda activa de entidades financiadoras apuntan a una necesidad inmediata de financiación promotor (deuda de construcción y estructura de capital del proyecto). Es una ventana clara para entrar como financiador/asesor desde fase temprana y capturar relación recurrente en futuras promociones.",
+        "prioridad": "alta",
+        "ingresos_estimados": 18000000,
+        "empleados": 35
+      },
+      {
+        "empresa": "Patrimonios Centrales SA",
+        "motivo": "La refinanciación prevista para 2S25 sobre una cartera hipotecaria respaldada por activos valorados en 95M EUR sugiere una oportunidad relevante de optimización de estructura de deuda (plazo, coste, covenants) y potencial reordenación de garantías. El calendario definido permite preparar propuesta con antelación y competir por el mandato de refinanciación.",
+        "prioridad": "alta",
+        "ingresos_estimados": 7500000,
+        "empleados": 12
+      }
+    ],
+    "resumen": "En inmobiliario, las oportunidades más accionables suelen concentrarse en (i) financiación promotor ligada a nuevos lanzamientos y (ii) refinanciaciones de carteras patrimonialistas ante vencimientos o búsqueda de mejora de condiciones. Las señales detectadas apuntan a necesidades de deuda con timing claro en 2025, lo que favorece originación temprana y posicionamiento del banco como socio financiero recurrente."
+  },
+  "earnings_summary": "Promotora Levante Residencial SL (sector inmobiliario) muestra una clara aceleración de actividad de desarrollo, con el lanzamiento previsto de dos promociones en 2025, lo que sugiere un incremento relevante del volumen de negocio frente a periodos previos, aunque no se aportan cifras históricas de ingresos para cuantificar crecimiento interanual. El único dato disponible es un nivel de ingresos estimados de ~18,0 M€, sin desglose temporal ni cuenta de resultados que permita evaluar evolución de margen operativo o rentabilidad. Tampoco se incluyen datos de CAPEX, si bien en una promotora el esfuerzo inversor se materializa típicamente en inversión en suelo/obra en curso y desembolsos de construcción, coherente con una fase de expansión de pipeline. No hay información sobre endeudamiento actual, estructura de capital o posición de liquidez, por lo que no puede evaluarse apalancamiento ni capacidad de servicio de deuda. En conjunto, la compañía presenta un perfil de crecimiento por nuevas promociones y una búsqueda activa de financiadores, lo que puede implicar una necesidad inmediata de financiación promotor (deuda de construcción y estructura de capital del proyecto) y una oportunidad de acompañamiento recurrente en futuras promociones.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos estimados",
+        "valor": "~18,0 M€"
+      },
+      {
+        "nombre": "Nuevas promociones previstas (2025)",
+        "valor": "2"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Aceleración de la actividad de desarrollo con ampliación del pipeline de promociones.",
+      "Mayor intensidad de inversión típica en promotoras (suelo/obra en curso y desembolsos de construcción) asociada a fase de expansión.",
+      "Búsqueda activa de financiadores con potencial recurrencia ligada a futuras promociones."
+    ],
+    "interpretacion": "La información disponible apunta a una fase de crecimiento impulsada por el lanzamiento de nuevas promociones, pero sin detalle de márgenes, liquidez o apalancamiento no puede evaluarse la rentabilidad ni la capacidad de servicio de deuda. En este contexto, es razonable anticipar necesidades de financiación promotor a corto plazo (principalmente deuda de construcción y estructura de capital por proyecto) para ejecutar el pipeline. La ausencia de datos de endeudamiento y caja sugiere que cualquier estructuración deberá apoyarse en métricas y garantías a nivel de promoción (preventas, costes, calendario de obra) más que en históricos corporativos.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Promotora Levante Residencial SL es una compañía del sector inmobiliario enfocada en desarrollo/promoción residencial. Se encuentra en una fase de expansión de su pipeline, con dos promociones previstas para 2025 y una búsqueda activa de entidades financiadoras.",
+    "situacion_actual": "La compañía prevé lanzar dos promociones en 2025, lo que apunta a una aceleración relevante de la actividad y a mayores necesidades de inversión típicas de promotora (suelo/obra en curso y desembolsos de construcción). La información financiera disponible es limitada: solo se dispone de ingresos estimados de ~18,0 M€ sin detalle temporal ni de márgenes, y no hay visibilidad sobre liquidez, endeudamiento o estructura de capital.",
+    "necesidades_potenciales": [
+      "Financiación promotor para las promociones 2025: deuda de construcción y estructura de capital por proyecto.",
+      "Asesoramiento en estructuración de financiación a nivel de promoción (calendario de disposiciones, hitos de obra, garantías y condiciones).",
+      "Financiación puente/estructura para inversión inicial en suelo y obra en curso asociada al arranque del pipeline.",
+      "Plan de relación recurrente para financiar futuras promociones conforme se amplíe el pipeline."
+    ],
+    "riesgos": [
+      "Falta de información sobre endeudamiento, caja y capacidad de servicio de deuda, lo que limita la evaluación de apalancamiento y solvencia corporativa.",
+      "Ausencia de cuenta de resultados detallada (márgenes/rentabilidad) y de desglose temporal de ingresos estimados (~18,0 M€).",
+      "Riesgo de ejecución propio de nuevas promociones (desembolsos de construcción y necesidades de circulante ligadas a obra en curso).",
+      "Dependencia de estructuración y métricas a nivel de proyecto ante la limitada trazabilidad de históricos corporativos."
+    ],
+    "talking_points": [
+      "Confirmar alcance y calendario de las 2 promociones 2025: hitos, presupuesto de obra, necesidades de caja por fases y fecha objetivo de inicio.",
+      "Aterrizar la necesidad de financiación: importe objetivo, mix deuda/capital por promoción y esquema de disposiciones alineado a certificaciones/hitos.",
+      "Solicitar información mínima para estructurar: detalle de ingresos estimados (~18,0 M€) por promoción, costes previstos y cronograma.",
+      "Mapear situación financiera actual: deuda existente, caja disponible y cualquier compromiso financiero vigente para entender restricciones de estructura.",
+      "Proponer un enfoque de financiación por proyecto y una hoja de ruta de relación para acompañar el pipeline futuro (financiación recurrente por promociones)."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Financiación promotor para Promotora Levante Residencial (promociones 2025)",
+    "subtitulo": "Entrada temprana como financiador y asesor para estructurar la deuda de construcción de dos promociones en 2025 y construir una relación recurrente por pipeline.",
+    "oportunidad_detectada": "La compañía prevé lanzar dos promociones residenciales en 2025 y está buscando activamente entidades financiadoras, lo que apunta a una necesidad inmediata de financiación promotor. Dada la limitada trazabilidad de históricos corporativos, existe una ventana clara para posicionarnos desde fase temprana con una estructura por proyecto (disposiciones por hitos, garantías y covenants) y capturar recurrencia en futuras promociones. El objetivo es liderar la estructuración y ejecución de la financiación, reduciendo fricción de cierre y asegurando capacidad de acompañamiento del pipeline.",
+    "contexto_financiero": [
+      "Ingresos estimados disponibles: ~18,0 M€ (sin desglose temporal ni detalle de márgenes).",
+      "Pipeline: 2 nuevas promociones previstas para 2025, con incremento esperado de inversión en suelo/obra en curso y desembolsos de construcción.",
+      "Sin visibilidad actual sobre caja, endeudamiento, compromisos financieros ni capacidad de servicio de deuda a nivel corporativo.",
+      "Necesidad probable de estructuración basada en métricas de proyecto: presupuesto, calendario de obra, preventas, costes y garantías."
+    ],
+    "encaje_productos": [
+      "Financiación promotor (préstamo de construcción por proyecto con disposiciones por certificaciones/hitos).",
+      "Financiación puente para suelo y gastos iniciales (arranque de promoción y obra en curso).",
+      "Líneas de avales y garantías (licencias, acopios, contratistas y obligaciones frente a terceros).",
+      "Asesoramiento en estructuración de capital del proyecto (mix deuda/capital, covenants, waterfall y documentación)."
+    ],
+    "comparables": [
+      "Aedas Homes",
+      "Neinor Homes",
+      "Metrovacesa"
+    ],
+    "argumentos_valor": [
+      "Enfoque “project-first”: estructuración y análisis centrados en cada promoción (presupuesto, hitos, preventas y garantías), mitigando la falta de históricos corporativos.",
+      "Rapidez de ejecución: hoja de ruta de información mínima y term sheet preliminar para acortar tiempos hasta cierre y primera disposición.",
+      "Estructuras alineadas a la realidad de obra: calendario de disposiciones por certificaciones, control de costes y mecanismos de protección ante desviaciones.",
+      "Relación recurrente: capacidad de acompañar el pipeline con un marco replicable para futuras promociones (financiación, avales y servicios transaccionales)."
+    ],
+    "proximos_pasos": [
+      "Solicitar paquete mínimo por promoción (1-2 semanas): presupuesto detallado, cronograma de obra, plan comercial/preventas, situación del suelo (título, cargas), licencias/estado urbanístico, contratista y esquema de costes/contingencias.",
+      "Realizar sesión de estructuración (60-90 min) para definir: importe objetivo, mix deuda/capital, hitos de disposición, garantías y calendario de cierre; emitir term sheet indicativa por promoción.",
+      "Lanzar due diligence y proceso interno de aprobación con enfoque por proyecto (incluyendo valoración, sensibilidad de costes/plazos y escenarios de preventas) para llegar a oferta vinculante y cierre."
+    ],
+    "narrativa_markdown": "### Resumen ejecutivo\nPromotora Levante Residencial SL se encuentra en una fase de expansión con el lanzamiento previsto de **dos promociones residenciales en 2025** y una **búsqueda activa de entidades financiadoras**. Esto crea una oportunidad inmediata para entrar como financiador y asesor desde fase temprana, liderando la estructuración de la financiación y posicionándonos como socio recurrente para el pipeline futuro.\n\nLa información financiera disponible es limitada (se dispone únicamente de **ingresos estimados ~18,0 M€** sin detalle temporal ni de márgenes, y sin visibilidad sobre caja o endeudamiento). Por ello, proponemos un enfoque de **financiación por proyecto**, apoyado en métricas y garantías a nivel de promoción: presupuesto de obra, calendario, preventas, costes y estructura contractual.\n\nNuestra propuesta se centra en una **financiación promotor (deuda de construcción)** con disposiciones por hitos/certificaciones, complementada si aplica con **financiación puente para suelo y gastos iniciales** y **líneas de avales** para necesidades operativas de la promoción. Adicionalmente, aportamos **asesoramiento de estructuración** para optimizar el mix deuda/capital, covenants y documentación, reduciendo fricción y tiempos de cierre.\n\nEl siguiente paso es acordar un paquete mínimo de información por promoción y celebrar una sesión de estructuración para emitir una **term sheet indicativa**. Con ello, activaremos un proceso ágil de análisis y aprobación para llegar a oferta vinculante y cierre alineado con el calendario de arranque de obra.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx"
+  }
+}

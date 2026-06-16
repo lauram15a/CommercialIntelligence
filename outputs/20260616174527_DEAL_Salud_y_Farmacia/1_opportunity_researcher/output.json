@@ -1,0 +1,27 @@
+{
+  "sector": "Salud y Farmacia",
+  "oportunidades": [
+    {
+      "empresa": "BioMédica Ibérica SA",
+      "motivo": "La expansión de capacidad con un CAPEX previsto de 20M EUR apunta a una necesidad inmediata de financiación a largo plazo y estructuración de deuda. Además, la mención explícita de un posible socio industrial abre una ventana de asesoramiento estratégico/M&A para optimizar estructura de capital y acelerar crecimiento.",
+      "prioridad": "alta",
+      "ingresos_estimados": 31000000,
+      "empleados": 240
+    },
+    {
+      "empresa": "Hispania Biotech Labs SA",
+      "motivo": "La entrada en fase precomercial de dos kits oncológicos sugiere un punto de inflexión (de I+D a industrialización) que suele requerir financiación de escalado y planificación de caja de cara a 2026. Es una oportunidad relevante para diseñar una estructura de financiación alineada con hitos regulatorios/comerciales y apoyar decisiones estratégicas de crecimiento.",
+      "prioridad": "alta",
+      "ingresos_estimados": 20600000,
+      "empleados": 132
+    },
+    {
+      "empresa": "Red Clínicas Meridional SL",
+      "motivo": "La negociación para adquirir dos centros indica necesidad táctica de financiación de adquisiciones y de integración, además de inversión recurrente en equipamiento. La oportunidad es atractiva pero más transaccional y dependiente del cierre de las compras, por lo que la urgencia es moderada frente a los casos de CAPEX/escala industrial.",
+      "prioridad": "media",
+      "ingresos_estimados": 14500000,
+      "empleados": 180
+    }
+  ],
+  "resumen": "El sector Salud y Farmacia combina crecimiento estructural (demanda asistencial y diagnóstico) con necesidades intensivas de capital en dos frentes: expansión industrial en medtech/diagnóstico y consolidación en prestación privada. En este contexto, las señales más accionables para el banco suelen venir de CAPEX relevante, escalado precomercial y operaciones de M&A buy-and-build que requieren estructuración de financiación y soporte estratégico."
+}

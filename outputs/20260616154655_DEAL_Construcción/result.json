@@ -1,0 +1,172 @@
+{
+  "run_id": "20260616154655",
+  "sector": "Construcción",
+  "company_name": "Constructora Bermejo e Hijos SL",
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Construcción",
+    "oportunidades": [
+      {
+        "empresa": "Constructora Bermejo e Hijos SL",
+        "motivo": "La adjudicación de un contrato de rehabilitación urbana de 12M EUR activa necesidades inmediatas de avales (técnicos/definitivos) y financiación de circulante para ejecutar obra y gestionar cobros/pagos. Momento oportuno para estructurar líneas recurrentes ligadas a la cartera y al calendario de certificaciones.",
+        "prioridad": "alta",
+        "ingresos_estimados": 22000000,
+        "empleados": 165
+      },
+      {
+        "empresa": "Atlas Infra Rail SL",
+        "motivo": "El crecimiento de la cartera pública sugiere incremento de necesidades de avales para licitaciones y capacidad de circulante para sostener la ejecución simultánea de contratos. Oportunidad de acompañar el escalado con soluciones de financiación vinculadas a pipeline y a hitos de obra.",
+        "prioridad": "alta",
+        "ingresos_estimados": 33700000,
+        "empleados": 214
+      },
+      {
+        "empresa": "Grupo Caldas Infraestructuras SA",
+        "motivo": "Los sobrecostes han presionado márgenes y pueden tensionar liquidez y covenants, elevando la necesidad de optimizar estructura de capital y asegurar capacidad de avales para mantener el ritmo de licitaciones. Es relevante ahora por la búsqueda explícita de nuevas fuentes de financiación para sostener el pipeline.",
+        "prioridad": "media",
+        "ingresos_estimados": 69500000,
+        "empleados": 420
+      }
+    ],
+    "resumen": "El sector construcción (especialmente obra pública) suele generar oportunidades bancarias ligadas a avales para licitaciones/ejecución y a financiación de circulante por descalces entre certificaciones y pagos a proveedores. En el entorno actual, la presión de costes y la necesidad de sostener carteras de contratos hacen más frecuente la demanda de líneas de crédito, garantías y revisión de estructura financiera."
+  },
+  "earnings_summary": "Constructora Bermejo e Hijos SL presenta unos ingresos estimados de ~22,0M EUR, pero no se aportan series históricas que permitan cuantificar crecimiento/decrecimiento interanual ni evolución del margen operativo. La adjudicación de un contrato de rehabilitación urbana por 12,0M EUR (≈55% de los ingresos estimados) sugiere un incremento relevante de actividad y concentración temporal de ejecución, con impacto directo en necesidades de circulante por el desfase entre certificaciones/cobros y pagos a subcontratas y proveedores. No hay datos de CAPEX, por lo que no puede evaluarse si la estrategia requiere inversión en maquinaria/equipos o si el modelo es más intensivo en subcontratación. Tampoco se dispone de información de endeudamiento o posición de caja para valorar capacidad de absorción del pico de trabajo y el perfil de riesgo financiero. En términos operativos, el contrato activa necesidades inmediatas de avales (técnicos/definitivos) y financiación ligada al calendario de obra, lo que apunta a una demanda de líneas recurrentes y flexibles para soportar la cartera y la gestión de cobros/pagos. La compañía presenta una expansión de cartera de pedidos de alta relevancia relativa, lo que puede implicar necesidad de financiación de circulante y capacidad de emisión de garantías para ejecutar el proyecto sin tensiones de liquidez.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos estimados",
+        "valor": "~22,0M EUR"
+      },
+      {
+        "nombre": "Importe contrato rehabilitación urbana adjudicado",
+        "valor": "12,0M EUR"
+      },
+      {
+        "nombre": "Contrato como % de ingresos estimados",
+        "valor": "≈55%"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Mayor dependencia de la cartera de pedidos y de adjudicaciones puntuales de gran tamaño respecto a la escala actual.",
+      "Concentración temporal de ejecución de obra que puede generar picos de actividad y de necesidades de circulante.",
+      "Riesgo estructural de desfase entre certificaciones/cobros y pagos a subcontratas y proveedores, típico del negocio de construcción."
+    ],
+    "interpretacion": "La adjudicación de un contrato muy relevante frente a los ingresos estimados apunta a un salto de actividad, pero también a una mayor concentración y a potenciales tensiones de liquidez durante la ejecución. La ausencia de datos de caja/deuda y CAPEX impide evaluar la capacidad de absorción del pico de trabajo y el perfil de riesgo financiero. Aun así, el patrón operativo descrito sugiere necesidades de financiación de circulante y de emisión de avales/garantías vinculadas al calendario de obra para evitar fricciones en cobros y pagos.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Constructora Bermejo e Hijos SL es una empresa de construcción con ingresos estimados de ~22,0M EUR. Ha sido adjudicataria de un contrato de rehabilitación urbana por 12,0M EUR, de alta relevancia relativa (≈55% de los ingresos estimados). Su operativa está expuesta al ciclo típico de obra: certificaciones/cobros frente a pagos a subcontratas y proveedores.",
+    "situacion_actual": "La adjudicación del contrato de 12,0M EUR implica un salto de actividad y una concentración temporal de ejecución que previsiblemente tensionará el circulante. Se anticipan necesidades inmediatas de avales (técnicos/definitivos) y de financiación ligada al calendario de certificaciones. No se dispone de datos de caja/deuda ni de CAPEX, por lo que no puede valorarse la capacidad financiera actual para absorber el pico de trabajo.",
+    "necesidades_potenciales": [
+      "Líneas de avales (técnicos/definitivos) asociadas al contrato y a futuras licitaciones, con estructura recurrente ligada a cartera.",
+      "Financiación de circulante para cubrir el desfase entre certificaciones/cobros y pagos a subcontratas/proveedores durante la ejecución.",
+      "Estructuración de líneas flexibles vinculadas al calendario de obra y certificaciones para evitar tensiones de liquidez en picos de actividad."
+    ],
+    "riesgos": [
+      "Concentración de ingresos/actividad en un único contrato relevante (≈55% de ingresos estimados), con impacto si hay retrasos, incidencias o cambios en el proyecto.",
+      "Riesgo de liquidez por desfase entre certificaciones/cobros y pagos a subcontratas y proveedores durante la obra.",
+      "Falta de visibilidad sobre endeudamiento y posición de caja, dificultando evaluar capacidad de absorción del pico de trabajo y el riesgo financiero.",
+      "Incertidumbre sobre necesidades de CAPEX (maquinaria/equipos) al no disponer de información, con posible presión adicional de financiación si fuera necesaria."
+    ],
+    "talking_points": [
+      "Confirmar calendario de ejecución, hitos de certificación y plazos de cobro del contrato de 12,0M EUR para dimensionar una línea de circulante alineada a obra.",
+      "Definir el paquete de avales requerido (tipología, importes, plazos y contragarantías) y proponer una línea de avales recurrente ligada a cartera.",
+      "Mapear el ciclo de pagos (subcontratas/proveedores) y necesidades de tesorería por meses para anticipar picos y evitar tensiones operativas.",
+      "Solicitar información clave para completar el análisis: caja disponible, deuda vigente, límites actuales de avales/financiación y cualquier necesidad de CAPEX asociada al proyecto.",
+      "Explorar si la compañía prevé nuevas adjudicaciones relevantes a corto plazo para estructurar límites globales por cartera y no solo por contrato."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial: avales y financiación de circulante para ejecución de contrato de rehabilitación urbana (12M€)",
+    "subtitulo": "Estructurar de forma inmediata una línea de avales y una solución de circulante alineadas al calendario de certificaciones para ejecutar la obra sin tensiones de tesorería.",
+    "oportunidad_detectada": "La adjudicación de un contrato de rehabilitación urbana por 12,0M€ (≈55% de los ingresos estimados) activa necesidades urgentes de avales (técnicos/definitivos) y financiación de circulante por el desfase entre certificaciones/cobros y pagos a subcontratas y proveedores. Existe una ventana comercial para convertir una necesidad puntual en una estructura recurrente por cartera, con límites flexibles y revisiones ligadas a hitos de obra. El objetivo es asegurar capacidad de ejecución, proteger liquidez y mejorar la competitividad en futuras licitaciones.",
+    "contexto_financiero": [
+      "Ingresos estimados: ~22,0M€.",
+      "Contrato adjudicado: 12,0M€ (≈55% de los ingresos estimados), elevando la concentración de actividad en un único proyecto.",
+      "Riesgo operativo típico del sector: desfase entre certificaciones/cobros y pagos a subcontratas/proveedores durante la ejecución.",
+      "Sin visibilidad actual de caja/deuda ni CAPEX, por lo que se requiere recopilación de información para dimensionar límites y estructura."
+    ],
+    "encaje_productos": [
+      "Línea de avales (provisionales, técnicos, definitivos y de acopio) con límite recurrente por cartera",
+      "Línea de circulante (póliza de crédito / línea revolving) dimensionada a picos de tesorería por certificaciones",
+      "Anticipo de certificaciones / factoring de créditos comerciales (con o sin recurso, según pagador y estructura)",
+      "Gestión de pagos a proveedores (confirming) para estabilizar el ciclo de pagos y negociar plazos"
+    ],
+    "comparables": [
+      "Acciona Construcción",
+      "Sacyr Construcción",
+      "OHLA"
+    ],
+    "argumentos_valor": [
+      "Ejecución sin fricciones: capacidad inmediata de emisión de avales y disponibilidad de liquidez para sostener el ritmo de obra y subcontratación.",
+      "Estructura a medida del proyecto: límites y vencimientos alineados a hitos, certificaciones y plazos de cobro, con revisiones periódicas.",
+      "Mejora de competitividad en licitaciones: línea recurrente por cartera que evita negociar operación a operación y acelera nuevas adjudicaciones.",
+      "Control y anticipación de riesgos: seguimiento de tesorería por obra, covenants operativos y reporting sencillo para detectar desviaciones tempranas."
+    ],
+    "proximos_pasos": [
+      "Reunión de trabajo para levantar el calendario de obra (hitos, certificaciones, plazos de cobro) y el plan mensual de pagos a subcontratas/proveedores; construir un cuadro de tesorería por proyecto.",
+      "Recopilar documentación para preaprobación de límites: últimos estados financieros disponibles, CIRBE/endeudamiento, posición de caja, límites actuales de avales, contrato adjudicado y pliego (incl. requisitos de garantías).",
+      "Presentar en 48-72h una propuesta indicativa de: (i) línea de avales por cartera y (ii) línea de circulante + alternativa de anticipo de certificaciones/confirming, con escenarios por ritmo de certificación."
+    ],
+    "narrativa_markdown": "## Resumen ejecutivo\nConstructora Bermejo e Hijos SL afronta un momento de alta prioridad comercial tras la adjudicación de un contrato de rehabilitación urbana por **12,0M€**, de relevancia muy elevada frente a sus ingresos estimados (**~22,0M€**). Este salto de actividad concentra ejecución y riesgos operativos en un periodo acotado, haciendo crítico asegurar capacidad de **garantías** y **liquidez** desde el inicio.\n\n## Necesidad concreta\nEl ciclo de obra (certificaciones y cobros vs. pagos a subcontratas y proveedores) suele generar un **desfase de circulante** que, en proyectos de este tamaño relativo, puede tensionar la tesorería. En paralelo, el contrato activa necesidades inmediatas de **avales técnicos/definitivos** (y potencialmente de acopio), que deben emitirse con agilidad para no frenar la ejecución.\n\n## Propuesta de solución\nProponemos estructurar una **línea de avales recurrente por cartera** y una **línea de circulante flexible** (revolving) dimensionadas al calendario de certificaciones, complementadas con **anticipo de certificaciones/factoring** y **confirming** para estabilizar pagos a proveedores. El objetivo es convertir una necesidad puntual en una plataforma financiera reutilizable para este contrato y futuras licitaciones.\n\n## Enfoque de implementación\nEn la primera reunión validaremos calendario de obra, plazos de cobro y mapa de pagos para construir un cuadro de tesorería mensual y fijar límites. Con la documentación financiera básica (caja/deuda, límites vigentes, contrato y requisitos de garantías) prepararemos una propuesta indicativa con escenarios y un plan de seguimiento operativo.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx"
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_opportunity_researcher",
+      "id": "AGT-DEAL-001",
+      "agente": "Opportunity Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Identificacion y priorizacion de oportunidades por sector.",
+      "fuente": "BBDD interna + criterios de priorizacion del agente",
+      "fecha_extraccion": "2026-06-16T13:47:03+00:00",
+      "trazabilidad": "1_opportunity_researcher/output.json",
+      "nota": "Oportunidades evaluadas: 3."
+    },
+    {
+      "tipo": "agente_earnings_reviewer",
+      "id": "AGT-DEAL-002",
+      "agente": "Earnings Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Analisis de resultados financieros y tendencias clave.",
+      "fuente": "Documentacion financiera aportada + contexto de oportunidad",
+      "fecha_extraccion": "2026-06-16T13:47:09+00:00",
+      "trazabilidad": "2_earnings_reviewer/output.txt",
+      "nota": "Documentos de entrada: 1.",
+      "contenido_referencia": "Constructora Bermejo e Hijos SL presenta unos ingresos estimados de ~22,0M EUR, pero no se aportan series históricas que permitan cuantificar crecimiento/decrecimiento interanual ni evolución del margen operativo. La adjudicación de un contrato de rehabilitación urbana por 12,0M EUR (≈55% de los ingresos estimados) sugiere un incremento relevante de actividad y concentración temporal de ejecución, con impacto directo en necesidades de circulante por el desfase entre certificaciones/cobros y pagos a subcontratas y proveedores. No hay datos de CAPEX, por lo que no puede evaluarse si la estrategia requiere inversión en maquinaria/equipos o si el modelo es más intensivo en subcontratación. Tampoco se dispone de información de endeudamiento o posición de caja para valorar capacidad de absorción del pico de trabajo y el perfil de riesgo financiero. En términos operativos, el contrato activa ne"
+    },
+    {
+      "tipo": "agente_model_builder_deal",
+      "id": "AGT-DEAL-003",
+      "agente": "Model Builder Agent (Deal)",
+      "resultado": "OK",
+      "descripcion": "Extraccion de indicadores y tendencias estructurales para soporte comercial.",
+      "fuente": "Resumen de Earnings Reviewer",
+      "fecha_extraccion": "2026-06-16T13:47:16+00:00",
+      "trazabilidad": "3_model_builder/output.json",
+      "nota": "Paso opcional en el pipeline Deal."
+    },
+    {
+      "tipo": "agente_meeting_preparer",
+      "id": "AGT-DEAL-004",
+      "agente": "Meeting Preparer Agent",
+      "resultado": "OK",
+      "descripcion": "Generacion de briefing comercial: perfil, riesgos, necesidades y talking points.",
+      "fuente": "Opportunity context + analisis financiero + modelo opcional",
+      "fecha_extraccion": "2026-06-16T13:47:26+00:00",
+      "trazabilidad": "4_meeting_preparer/output.json"
+    },
+    {
+      "tipo": "agente_pitch_builder",
+      "id": "AGT-DEAL-005",
+      "agente": "Pitch Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Construccion de propuesta final y pitchbook para revision comercial.",
+      "fuente": "Briefing de cliente + contexto de oportunidad + analisis financiero",
+      "fecha_extraccion": "2026-06-16T13:47:45+00:00",
+      "trazabilidad": "5_pitch_builder/output.json",
+      "nota": "Pitchbook generado: si.",
+      "contenido_referencia": "## Resumen ejecutivo\nConstructora Bermejo e Hijos SL afronta un momento de alta prioridad comercial tras la adjudicación de un contrato de rehabilitación urbana por **12,0M€**, de relevancia muy elevada frente a sus ingresos estimados (**~22,0M€**). Este salto de actividad concentra ejecución y riesgos operativos en un periodo acotado, haciendo crítico asegurar capacidad de **garantías** y **liquidez** desde el inicio.\n\n## Necesidad concreta\nEl ciclo de obra (certificaciones y cobros vs. pagos a subcontratas y proveedores) suele generar un **desfase de circulante** que, en proyectos de este tamaño relativo, puede tensionar la tesorería. En paralelo, el contrato activa necesidades inmediatas de **avales técnicos/definitivos** (y potencialmente de acopio), que deben emitirse con agilidad para no frenar la ejecución.\n\n## Propuesta de solución\nProponemos estructurar una **línea de avales rec"
+    }
+  ]
+}

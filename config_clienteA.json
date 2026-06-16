@@ -1,0 +1,42 @@
+{
+  "BANK_NAME": "Bankinter",
+  "BANK_LEGAL_NAME": "Bankinter, S.A.",
+  "PLATFORM_NAME": "Plataforma de Agentes IA",
+  "PRODUCT_NAME": "KYC & Credit Risk Intelligence",
+  "PRODUCT_SHORT_NAME": "Risk Intelligence",
+  "LOGO_FILENAME": "logo.png",
+
+  "colors_referencia": {
+    "negro":             "#212425",
+    "blanco":            "#FFFFFF",
+    "naranja":           "#FF8D30",
+    "azul":              "#B7F0F0",
+    "amarillo":          "#FED227",
+    "banca_patrimonial": "#AF6200",
+    "bank_investment":   "#687B54",
+    "family_office":     "#2C4859",
+    "naranja_enlaces":   "#C05600"
+  },
+
+  "ui": {
+    "COLOR_PRIMARY":       "#FF8D30",
+    "COLOR_PRIMARY_DARK":  "#C05600",
+    "COLOR_PRIMARY_SOFT":  "#FFF3E8",
+    "COLOR_ACCENT":        "#FED227",
+    "COLOR_ACCENT_SOFT":   "#FFFAE0",
+    "COLOR_WARN":          "#AF6200",
+    "COLOR_WARN_SOFT":     "#FFF0D6",
+    "COLOR_DANGER":        "#C05600",
+    "COLOR_DANGER_SOFT":   "#FFE8D6",
+    "COLOR_OK":            "#687B54",
+    "COLOR_OK_SOFT":       "#EFF3EA",
+    "COLOR_BG":            "#F9F9F9",
+    "COLOR_SURFACE":       "#FFFFFF",
+    "COLOR_INK":           "#212425",
+    "COLOR_INK_MUTED":     "#6B7280",
+    "COLOR_BORDER":        "#E5E7EB",
+    "FOOTER_TEXT":         "Herramienta de apoyo al analista. Las recomendaciones generadas no constituyen una decision de aprobacion o denegacion de la operacion. La decision final corresponde al analista y al comite de riesgos.",
+    "DEPARTMENT_NAME_KYC":  "Direccion de Riesgos - Onboarding KYC",
+    "DEPARTMENT_NAME_DEAL": "Banca Corporativa - Deal Intelligence"
+  }
+}

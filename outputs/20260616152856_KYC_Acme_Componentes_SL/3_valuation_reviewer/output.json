@@ -1,0 +1,39 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 2.11,
+        "liquidez_corriente": 1.32,
+        "cobertura_intereses": 8.44,
+        "ebitda": 3800000,
+        "deuda_financiera": 8000000,
+        "ingresos": 32000000
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 2.14,
+        "liquidez_corriente": 1.36,
+        "cobertura_intereses": 9.42,
+        "ebitda": 4900000,
+        "deuda_financiera": 10500000,
+        "ingresos": 38000000
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 2.07,
+        "liquidez_corriente": 1.48,
+        "cobertura_intereses": 9.51,
+        "ebitda": 5800000,
+        "deuda_financiera": 12000000,
+        "ingresos": 42000000
+      }
+    ],
+    "variacion": {
+      "variacion_ebitda_pct": 18.4,
+      "variacion_deuda_financiera_pct": 14.3,
+      "variacion_ingresos_pct": 10.5
+    }
+  },
+  "interpretacion": "El apalancamiento (Debt/EBITDA) se mantiene estable en el periodo 2022–2024, pasando de 2,11x (2022) a 2,14x (2023) y mejorando a 2,07x (2024), lo que sugiere una ligera mejora de la capacidad de repago en 2024 pese al incremento de deuda. En términos absolutos, la deuda financiera crece a 12,0M en 2024 (+14,3% interanual), pero el EBITDA aumenta a 5,8M (+18,4%), compensando el mayor endeudamiento y sosteniendo el ratio. La liquidez corriente mejora de 1,32 (2022) a 1,36 (2023) y 1,48 (2024), indicando mayor holgura para atender obligaciones de corto plazo. La cobertura de intereses se incrementa de 8,44x a 9,42x y 9,51x, nivel que refleja una capacidad cómoda de servicio de la deuda y resiliencia ante subidas de coste financiero. Los ingresos también crecen hasta 42,0M en 2024 (+10,5% interanual), coherente con el refuerzo de generación operativa observado en EBITDA. En el historial con el banco constan 5 operaciones desde 2022 (línea de circulante cancelada OK y resto de productos vigentes al corriente, incluyendo CAPEX, leasing y confirming), sin impagos (0), lo que apoya un comportamiento de pago consistente. Se registran incidencias operativas menores (discrepancia documental subsanada en 2023 y retraso de 10 días en cuentas auditadas 2022), a considerar como señal de seguimiento documental más que de estrés financiero."
+}

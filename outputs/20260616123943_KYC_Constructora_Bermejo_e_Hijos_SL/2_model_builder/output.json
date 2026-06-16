@@ -1,0 +1,7 @@
+{
+  "periodos": [],
+  "audit_flags": [
+    "Entrada vacía: no se recibieron objetos 'datos_financieros', por lo que no es posible normalizar ni auditar periodos."
+  ],
+  "resumen": "No se proporcionaron datos_financieros; no hay periodos ni magnitudes disponibles para consolidar."
+}

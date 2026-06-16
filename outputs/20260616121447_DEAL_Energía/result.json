@@ -1,0 +1,117 @@
+{
+  "run_id": "20260616121447",
+  "sector": "Energía",
+  "company_name": "Alcántara Energía Renovable SL",
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Energía",
+    "oportunidades": [
+      {
+        "empresa": "Alcántara Energía Renovable SL",
+        "motivo": "La compañía está en fase de cierre financiero de una nueva planta fotovoltaica (~60M€), lo que implica una necesidad inmediata de estructuración y sindicación de project finance y, potencialmente, coinversión institucional. El hito de cierre financiero crea urgencia y ventana clara para asesoramiento en términos, coberturas y optimización de estructura de capital del proyecto.",
+        "prioridad": "alta",
+        "ingresos_estimados": 5900000,
+        "empleados": 28
+      },
+      {
+        "empresa": "Ibérica Solar Partners SL",
+        "motivo": "La intención de estructurar un vehículo de inversión para atraer capital, junto con una cartera con potencial de desinversión, abre una oportunidad inmediata de asesoramiento en estructuración (vehículo/mandato), levantamiento de capital y ejecución de M&A (venta parcial de cartera o rotación de activos). El momento es relevante porque la creación del vehículo suele requerir coordinación temprana con inversores, gobernanza y pipeline de transacciones.",
+        "prioridad": "alta",
+        "ingresos_estimados": 9800000,
+        "empleados": 48
+      }
+    ],
+    "resumen": "El sector energético en España sigue impulsado por el despliegue de renovables y la integración de almacenamiento, lo que genera necesidades recurrentes de financiación de proyectos y de capital para desarrollo. En paralelo, la rotación de carteras y la creación de vehículos de inversión se mantienen como palancas clave para monetizar pipelines y atraer inversores institucionales."
+  },
+  "earnings_summary": "Alcántara Energía Renovable SL presenta unos ingresos estimados de ~5,9M€ (sin desglose histórico), por lo que no es posible cuantificar crecimiento interanual ni identificar tendencia de ventas con la información disponible. Tampoco se aportan datos de margen operativo/EBITDA, por lo que no puede evaluarse si hay mejora o compresión de rentabilidad. No hay cifras de CAPEX histórico, pero la compañía se encuentra en fase de cierre financiero de una nueva planta fotovoltaica con inversión aproximada de ~60M€, lo que sugiere un salto relevante en intensidad de capital y una estrategia de crecimiento vía desarrollo/puesta en operación de activos. No se reporta endeudamiento actual, aunque el propio hito de “financial close” apunta a la incorporación inminente de deuda de proyecto y a la necesidad de estructuración (incluida sindicación) y potencial coinversión institucional. Con 28 empleados, el perfil parece el de un desarrollador/operador de tamaño contenido que está entrando en una fase de ejecución con mayores requerimientos de financiación y gestión de riesgos (p. ej., coberturas).  \n\nLa compañía presenta una transición hacia un proyecto de gran CAPEX (~60M€) sin visibilidad aún de márgenes ni apalancamiento actual, lo que puede implicar una necesidad inmediata de financiación estructurada y optimización de estructura de capital del proyecto.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos estimados",
+        "valor": "~5,9M€"
+      },
+      {
+        "nombre": "Inversión nueva planta fotovoltaica (CAPEX proyecto)",
+        "valor": "~60M€"
+      },
+      {
+        "nombre": "Empleados",
+        "valor": "28"
+      },
+      {
+        "nombre": "Endeudamiento actual reportado",
+        "valor": "No reportado"
+      },
+      {
+        "nombre": "Margen operativo/EBITDA",
+        "valor": "No disponible"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Transición desde un perfil de desarrollador/operador pequeño hacia fase de ejecución de un activo fotovoltaico de gran escala.",
+      "Aumento relevante de la intensidad de capital por entrada en proyectos con CAPEX elevado.",
+      "Probable incorporación de financiación de proyecto (project finance) asociada al cierre financiero, con posible sindicación.",
+      "Mayor necesidad de gestión de riesgos financieros y operativos (p. ej., coberturas) al pasar a construcción/operación."
+    ],
+    "interpretacion": "La información disponible sugiere un negocio con ingresos actuales moderados pero con un salto inminente en necesidades de capital por el desarrollo de una planta FV de ~60M€, sin visibilidad aún sobre márgenes que permitan evaluar capacidad de generación de caja. El hito de cierre financiero apunta a una estructuración inmediata de deuda de proyecto y potencialmente a la entrada de coinversores institucionales para completar el equity del proyecto. La ausencia de datos sobre apalancamiento actual y CAPEX histórico incrementa la importancia de definir estructura de capital, calendario de desembolsos y mecanismos de mitigación de riesgos (incluidas coberturas) durante construcción y puesta en marcha.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Alcántara Energía Renovable SL es un desarrollador/operador de energías renovables con un tamaño contenido (28 empleados) e ingresos estimados de ~5,9M€. La compañía está dando un salto de escala al preparar la ejecución de una nueva planta fotovoltaica con CAPEX aproximado de ~60M€.",
+    "situacion_actual": "La empresa se encuentra en fase de cierre financiero (“financial close”) de un proyecto fotovoltaico relevante, lo que implica una necesidad inmediata de estructurar financiación de proyecto y, potencialmente, sindicarla. No hay visibilidad disponible sobre EBITDA/márgenes ni sobre endeudamiento actual, por lo que la definición de estructura de capital, calendario de desembolsos y mitigación de riesgos cobra especial importancia en esta fase.",
+    "necesidades_potenciales": [
+      "Estructuración de project finance para el CAPEX del proyecto (~60M€), incluyendo términos, paquete de garantías y calendario de disposiciones.",
+      "Sindicacion de la deuda de proyecto para asegurar capacidad de financiación y diversificación de entidades.",
+      "Optimización de estructura de capital del proyecto (mix deuda/equity) y apoyo en la búsqueda/entrada de coinversión institucional para completar el equity.",
+      "Diseño de estrategia de coberturas asociadas al proyecto (p. ej., riesgos financieros durante construcción/operación) alineada con requisitos de financiadores."
+    ],
+    "riesgos": [
+      "Información financiera limitada (sin EBITDA/márgenes ni deuda reportada), dificultando evaluar capacidad de generación de caja y tolerancia a apalancamiento.",
+      "Riesgo de ejecución por salto de escala (de ingresos moderados a un proyecto de gran CAPEX), con mayores exigencias de gestión durante construcción y puesta en marcha.",
+      "Riesgo de cierre financiero por ventana temporal: presión de plazos y potencial impacto en términos si se retrasa la estructuración/sindicación.",
+      "Necesidad de gestión de riesgos (incluidas coberturas) para cumplir condiciones de financiadores y evitar volatilidad que afecte al caso base del proyecto."
+    ],
+    "talking_points": [
+      "Confirmar estado del “financial close”: hitos pendientes, calendario objetivo y principales condicionantes para cierre (documentación, permisos, contratos clave).",
+      "Alinear la estructura objetivo de financiación: tamaño de deuda, perfil de amortización, condiciones clave y enfoque de sindicación (número de bancos, roles, timing).",
+      "Revisar necesidades de equity y opción de coinversión institucional: importe, estructura (equity/otros instrumentos) y proceso/cronograma de incorporación.",
+      "Identificar gaps de información para crédito: solicitar paquete mínimo (márgenes/EBITDA, endeudamiento actual, plan de desembolsos del CAPEX) para acelerar term sheet y aprobación interna.",
+      "Mapear riesgos a cubrir y requisitos de financiadores: definir qué coberturas se contemplan y cuándo se implementarían durante construcción/operación."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Cierre financiero y sindicación de Project Finance para nueva planta FV (~60M€) – Alcántara Energía Renovable SL",
+    "subtitulo": "Acompañar el financial close con una estructura de project finance sindicada, coberturas y optimización del mix deuda/equity para asegurar ejecución y términos competitivos.",
+    "oportunidad_detectada": "Alcántara Energía Renovable SL está en una ventana crítica de “financial close” para una planta fotovoltaica con CAPEX aproximado de ~60M€, lo que exige una estructuración inmediata de financiación de proyecto y, previsiblemente, sindicación para asegurar capacidad y diversificación de entidades. Dada la limitada visibilidad financiera pública (sin EBITDA/márgenes ni deuda reportada), el valor del banco se centra en acelerar el proceso con un paquete de información mínimo, definir términos bancables, coordinar documentación y mitigar riesgos mediante coberturas. Adicionalmente, puede existir necesidad de completar el equity del proyecto mediante coinversión institucional, optimizando la estructura de capital y el coste total.",
+    "contexto_financiero": [
+      "Ingresos estimados actuales: ~5,9M€ (sin desglose histórico disponible).",
+      "Proyecto en preparación: nueva planta fotovoltaica con CAPEX ~60M€ (salto relevante de intensidad de capital).",
+      "Tamaño de la organización: 28 empleados (perfil de desarrollador/operador de tamaño contenido en fase de escalado).",
+      "Métricas clave no disponibles: EBITDA/márgenes y endeudamiento actual reportado; necesidad de completar paquete de información para crédito y caso base del proyecto."
+    ],
+    "encaje_productos": [
+      "Financiación de proyecto (Project Finance) para construcción y operación, con estructura de amortización y paquete de garantías",
+      "Sindicacion de deuda (mandato de coordinador/arranger) y distribución a entidades participantes",
+      "Asesoramiento de estructura de capital y apoyo en coinversión institucional (equity del proyecto / instrumentos híbridos)",
+      "Coberturas financieras (tipo de interés y, si aplica, coberturas asociadas a ingresos/mercado) alineadas con requisitos de financiadores"
+    ],
+    "comparables": [
+      "Solaria Energía y Medio Ambiente",
+      "Grenergy Renovables",
+      "Audax Renovables"
+    ],
+    "argumentos_valor": [
+      "Ejecución rápida hacia el cierre financiero: capacidad de coordinar term sheet, due diligence, documentación y calendario de disposiciones para cumplir hitos del proyecto.",
+      "Estructura bancable y optimizada: definición de covenants, garantías, reservas y perfil de amortización para maximizar apalancamiento sostenible y minimizar coste total.",
+      "Sindicacion eficiente: acceso a una base amplia de entidades para asegurar capacidad, diversificar riesgo y mejorar certidumbre de fondos en construcción.",
+      "Gestión integral de riesgos: diseño e implementación de coberturas y condiciones financieras que protejan el caso base y faciliten la aprobación de financiadores."
+    ],
+    "proximos_pasos": [
+      "Convocar reunión de 60–90 minutos para confirmar estado del financial close (hitos pendientes, permisos, contratos clave, calendario objetivo) y la estructura objetivo (deuda/equity, tenor, amortización, garantías).",
+      "Solicitar “paquete mínimo” para crédito y modelización: modelo financiero del proyecto, supuestos de ingresos, CAPEX/OPEX y calendario, contratos (EPC/O&M y, si aplica, acuerdos de venta), estructura societaria y endeudamiento actual.",
+      "Preparar en 10–15 días una propuesta indicativa: estructura de project finance, estrategia de sindicación, plan de coberturas y hoja de ruta de documentación hasta cierre."
+    ],
+    "narrativa_markdown": "Alcántara Energía Renovable SL afronta un punto de inflexión: el cierre financiero de una nueva planta fotovoltaica con un CAPEX aproximado de ~60M€. Este hito concentra urgencia y riesgo de ejecución, y abre una ventana clara para estructurar una financiación de proyecto robusta, sindicable y alineada con el calendario de construcción.\n\nCon información financiera pública limitada (sin EBITDA/márgenes ni endeudamiento reportado), la prioridad es acelerar la preparación del paquete de crédito y del caso base del proyecto para evitar retrasos y preservar términos competitivos. En esta fase, la coordinación de term sheet, due diligence, documentación y condiciones precedentes es determinante para llegar a cierre en plazo.\n\nProponemos liderar la estructuración de un project finance con un enfoque de sindicación que asegure capacidad y diversificación de entidades, definiendo desde el inicio el paquete de garantías, covenants, reservas y el perfil de amortización. En paralelo, planteamos una estrategia de coberturas (p. ej., tipo de interés y otras coberturas relevantes) para proteger el caso base y cumplir requisitos de financiadores.\n\nAdicionalmente, si el equity requerido para el proyecto necesita refuerzo, podemos apoyar la optimización del mix deuda/equity y la incorporación de coinversión institucional, con un proceso y cronograma compatibles con el financial close.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx"
+  }
+}

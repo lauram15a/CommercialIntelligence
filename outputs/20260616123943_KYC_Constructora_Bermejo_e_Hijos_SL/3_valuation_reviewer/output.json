@@ -1,0 +1,7 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [],
+    "variacion": {}
+  },
+  "interpretacion": "Con la información disponible no es posible evaluar la evolución del apalancamiento (Debt/EBITDA), ya que no se han proporcionado ratios por periodo ni variación interanual (dataset vacío). En consecuencia, no puede concluirse si la capacidad de repago ha mejorado o se ha deteriorado por cambios en el endeudamiento relativo. Tampoco es posible comentar la liquidez corriente ni la cobertura de intereses, al no constar valores numéricos para dichos indicadores (None/no reportado). Desde la perspectiva de comportamiento, el cliente figura “sin historial previo” en el banco, por lo que no hay evidencia interna sobre puntualidad de pagos, incidencias, impagos o desempeño transaccional que permita contrastar los ratios financieros. La ausencia simultánea de métricas financieras y de track record bancario limita materialmente el análisis cuantitativo y la identificación de señales tempranas de estrés. Para completar la revisión, sería necesario contar al menos con Debt/EBITDA por dos periodos (y su % YoY), liquidez corriente y cobertura de intereses, además de cualquier información de endeudamiento, vencimientos y coste financiero."
+}

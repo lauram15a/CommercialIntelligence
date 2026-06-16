@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Baltic Industrial Exports Ltd",
+    "tipo": "sanciones",
+    "lista": "OFAC SDN",
+    "confianza": 0.94
+  },
+  {
+    "nombre": "Orion Petrochemical Trading FZE",
+    "tipo": "sanciones",
+    "lista": "EU Consolidated Sanctions",
+    "confianza": 0.91
+  },
+  {
+    "nombre": "Alejandro Vargas Ibarra",
+    "tipo": "PEP",
+    "lista": "PEP Internacional",
+    "confianza": 0.89
+  },
+  {
+    "nombre": "Carmen Hidalgo Serrano",
+    "tipo": "PEP",
+    "lista": "PEP Nacional",
+    "confianza": 0.93
+  },
+  {
+    "nombre": "Eastbridge Holdings PLC",
+    "tipo": "sanciones",
+    "lista": "UK Sanctions List",
+    "confianza": 0.92
+  }
+]

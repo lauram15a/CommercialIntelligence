@@ -1,0 +1,39 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 1.36,
+        "liquidez_corriente": 2.33,
+        "cobertura_intereses": 12.94,
+        "ebitda": 1100000,
+        "deuda_financiera": 1500000,
+        "ingresos": 8200000
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 1.27,
+        "liquidez_corriente": 2.56,
+        "cobertura_intereses": 15.0,
+        "ebitda": 1650000,
+        "deuda_financiera": 2100000,
+        "ingresos": 11500000
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 1.25,
+        "liquidez_corriente": 2.95,
+        "cobertura_intereses": 16.55,
+        "ebitda": 2400000,
+        "deuda_financiera": 3000000,
+        "ingresos": 15000000
+      }
+    ],
+    "variacion": {
+      "variacion_ebitda_pct": 45.5,
+      "variacion_deuda_financiera_pct": 42.9,
+      "variacion_ingresos_pct": 30.4
+    }
+  },
+  "interpretacion": "Entre 2022 y 2024 el apalancamiento (Debt/EBITDA) mejora ligeramente de 1,36x a 1,25x (2023: 1,27x), lo que sugiere una mayor capacidad de repago relativa pese al crecimiento de la deuda. En términos absolutos, la deuda financiera aumenta un +42,9% interanual mientras el EBITDA crece un +45,5%, manteniendo el ratio contenido y coherente con una expansión del negocio. La liquidez corriente se fortalece de 2,33x (2022) a 2,95x (2024), indicando holgura para atender obligaciones de corto plazo. La cobertura de intereses también mejora de 12,94x a 16,55x, lo que reduce el riesgo de tensión financiera ante subidas de tipos o caídas moderadas del resultado. Los ingresos crecen un +30,4% interanual, apoyando la tendencia de mejora operativa y la sostenibilidad del servicio de deuda. En el historial con el banco constan 2 operaciones (línea de circulante y financiación de inversión) ambas vigentes y al corriente, con impagos=0 e incidencias=0, lo que es consistente con un comportamiento de pago adecuado. La existencia de productos transaccionales (línea de circulante y confirming) aporta visibilidad adicional sobre la operativa, sin señales de deterioro en el comportamiento registrado."
+}

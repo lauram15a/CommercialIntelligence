@@ -1,0 +1,490 @@
+{
+  "run_id": "20260616154359",
+  "entity_name": "Grupo Caldas Infraestructuras SA",
+  "use_case": "kyc",
+  "kyc_output": {
+    "extracted_entities": [
+      {
+        "tipo_documento": "escritura",
+        "fecha_documento": "2001-06-20",
+        "entidad": {
+          "nombre_legal": "Grupo Caldas Infraestructuras SA",
+          "identificador_fiscal": "A28476390",
+          "titulares_reales": [
+            "Grupo Caldas Holding SA (75.0% - española)",
+            "Infraestructuras del Norte SL (25.0% - española)"
+          ],
+          "administradores": [
+            "Pedro Caldas Fuentes (Consejero Delegado)",
+            "María Jesús Prieto Valls (Consejera)"
+          ],
+          "direccion": "Paseo de la Castellana 110, 4ºB, 28046 Madrid"
+        },
+        "datos_financieros": {
+          "ebitda": null,
+          "deuda_financiera": null,
+          "activo_corriente": null,
+          "pasivo_corriente": null,
+          "patrimonio_neto": null,
+          "ingresos": null,
+          "gastos_financieros": null,
+          "periodo": null
+        },
+        "alertas_extraidas": [
+          "Retraso puntual en pagos registrado en 2023",
+          "Historial crediticio con 1 impago registrado en el banco"
+        ],
+        "observaciones": "Documento legible y estructurado. No se incluyen datos financieros detallados, solo información societaria y alertas internas."
+      },
+      {
+        "tipo_documento": "balance",
+        "fecha_documento": null,
+        "entidad": {
+          "nombre_legal": "Grupo Caldas Infraestructuras SA",
+          "identificador_fiscal": "A28476390",
+          "titulares_reales": null,
+          "administradores": null,
+          "direccion": null
+        },
+        "datos_financieros": {
+          "ebitda": 5200000,
+          "deuda_financiera": 22000000,
+          "activo_corriente": 18500000,
+          "pasivo_corriente": 16200000,
+          "patrimonio_neto": 9800000,
+          "ingresos": 68000000,
+          "gastos_financieros": 980000,
+          "periodo": "2022"
+        },
+        "alertas_extraidas": [],
+        "observaciones": "Documento legible, datos financieros principales claramente identificados. No se incluyen titulares reales, administradores ni dirección."
+      },
+      {
+        "tipo_documento": "balance",
+        "fecha_documento": null,
+        "entidad": {
+          "nombre_legal": "Grupo Caldas Infraestructuras SA",
+          "identificador_fiscal": "A28476390",
+          "titulares_reales": [],
+          "administradores": [],
+          "direccion": null
+        },
+        "datos_financieros": {
+          "ebitda": 4800000,
+          "deuda_financiera": 25000000,
+          "activo_corriente": 19200000,
+          "pasivo_corriente": 18400000,
+          "patrimonio_neto": 10100000,
+          "ingresos": 72000000,
+          "gastos_financieros": 1100000,
+          "periodo": "2023"
+        },
+        "alertas_extraidas": [],
+        "observaciones": "Documento legible, datos financieros principales claramente identificados. No se incluyen titulares reales, administradores ni dirección."
+      },
+      {
+        "tipo_documento": "balance",
+        "fecha_documento": null,
+        "entidad": {
+          "nombre_legal": "Grupo Caldas Infraestructuras SA",
+          "identificador_fiscal": "A28476390",
+          "titulares_reales": [],
+          "administradores": [],
+          "direccion": null
+        },
+        "datos_financieros": {
+          "ebitda": 3100000,
+          "deuda_financiera": 27500000,
+          "activo_corriente": 16800000,
+          "pasivo_corriente": 17900000,
+          "patrimonio_neto": 9300000,
+          "ingresos": 69500000,
+          "gastos_financieros": 1350000,
+          "periodo": "2024"
+        },
+        "alertas_extraidas": [],
+        "observaciones": "Documento legible, cifras claras y completas. No se indica fecha exacta de emisión ni dirección de la entidad."
+      }
+    ],
+    "kyc_results": [
+      {
+        "rule_id": "KYC-001",
+        "name": "Documento de identidad presente",
+        "status": "FAIL",
+        "evidence": "no se encontró ningún documento tipo 'dni'"
+      },
+      {
+        "rule_id": "KYC-003",
+        "name": "Consistencia de nombre legal entre documentos",
+        "status": "PASS",
+        "evidence": "nombres encontrados: ['Grupo Caldas Infraestructuras SA']"
+      },
+      {
+        "rule_id": "KYC-004",
+        "name": "Titular real identificado",
+        "status": "PASS",
+        "evidence": "titulares reales presentes"
+      },
+      {
+        "rule_id": "KYC-005",
+        "name": "Información financiera presente",
+        "status": "PASS",
+        "evidence": "balance/PyG encontrado"
+      }
+    ],
+    "screening_results": [
+      {
+        "name": "Grupo Caldas Holding SA (75.0% - española)",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      },
+      {
+        "name": "Grupo Caldas Infraestructuras SA",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      },
+      {
+        "name": "Infraestructuras del Norte SL (25.0% - española)",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      },
+      {
+        "name": "María Jesús Prieto Valls (Consejera)",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      },
+      {
+        "name": "Pedro Caldas Fuentes (Consejero Delegado)",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      }
+    ],
+    "evidencias": [
+      {
+        "tipo": "fuente_interna_documental",
+        "id": "DOC-001",
+        "resultado": "OK",
+        "descripcion": "Extraccion estructurada de escritura_constitucion.txt (tipo detectado: escritura).",
+        "fuente": "Repositorio documental interno (expediente KYC)",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/doc-reader -> escritura_constitucion.txt",
+        "nota": "Documento legible y estructurado. No se incluyen datos financieros detallados, solo información societaria y alertas internas.",
+        "contenido_referencia": "FICHA IDENTIFICATIVA Y ESCRITURA DE CONSTITUCIÓN\nNombre legal: Grupo Caldas Infraestructuras SA\nNIF/CIF: A28476390\nForma jurídica: Sociedad Anónima\nDomicilio social: Paseo de la Castellana 110, 4ºB, 28046 Madrid\nFecha de constitución: 2001-06-20\nCapital social: 5,000,000 EUR\nCNAE: 4211 - Construcción de carreteras y autopistas\nSector: Construcción\nEmpleados: 420\n\nTITULARES REALES (UBO):\n  - Grupo Caldas Holding SA (75.0% - española)\n  - Infraestructuras del Norte SL (25.0% - española)\n\nADMINISTRADORES:\n  - Pedro Caldas Fuentes (Consejero Delegado)\n  - María Jesús Prieto Valls (Consejera)\n\nALER"
+      },
+      {
+        "tipo": "fuente_interna_documental",
+        "id": "DOC-002",
+        "resultado": "OK",
+        "descripcion": "Extraccion estructurada de balance_2022.txt (tipo detectado: balance).",
+        "fuente": "Repositorio documental interno (expediente KYC)",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/doc-reader -> balance_2022.txt",
+        "nota": "Documento legible, datos financieros principales claramente identificados. No se incluyen titulares reales, administradores ni dirección.",
+        "contenido_referencia": "ESTADOS FINANCIEROS - EJERCICIO 2022\nEmpresa: Grupo Caldas Infraestructuras SA\nNIF/CIF: A28476390\nPeríodo: 2022\n\nCUENTA DE RESULTADOS:\n    Ingresos de explotación: 68,000,000 EUR\n    EBITDA: 5,200,000 EUR\n    Gastos financieros: 980,000 EUR\n\nBALANCE:\n    Activo corriente: 18,500,000 EUR\n    Pasivo corriente: 16,200,000 EUR\n    Deuda financiera neta: 22,000,000 EUR\n    Patrimonio neto: 9,800,000 EUR\n\nFuente: Sistemas contables del banco (datos remitidos por la empresa y validados internamente).\n"
+      },
+      {
+        "tipo": "fuente_interna_documental",
+        "id": "DOC-003",
+        "resultado": "OK",
+        "descripcion": "Extraccion estructurada de balance_2023.txt (tipo detectado: balance).",
+        "fuente": "Repositorio documental interno (expediente KYC)",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/doc-reader -> balance_2023.txt",
+        "nota": "Documento legible, datos financieros principales claramente identificados. No se incluyen titulares reales, administradores ni dirección.",
+        "contenido_referencia": "ESTADOS FINANCIEROS - EJERCICIO 2023\nEmpresa: Grupo Caldas Infraestructuras SA\nNIF/CIF: A28476390\nPeríodo: 2023\n\nCUENTA DE RESULTADOS:\n    Ingresos de explotación: 72,000,000 EUR\n    EBITDA: 4,800,000 EUR\n    Gastos financieros: 1,100,000 EUR\n\nBALANCE:\n    Activo corriente: 19,200,000 EUR\n    Pasivo corriente: 18,400,000 EUR\n    Deuda financiera neta: 25,000,000 EUR\n    Patrimonio neto: 10,100,000 EUR\n\nFuente: Sistemas contables del banco (datos remitidos por la empresa y validados internamente).\n"
+      },
+      {
+        "tipo": "fuente_interna_documental",
+        "id": "DOC-004",
+        "resultado": "OK",
+        "descripcion": "Extraccion estructurada de balance_2024.txt (tipo detectado: balance).",
+        "fuente": "Repositorio documental interno (expediente KYC)",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/doc-reader -> balance_2024.txt",
+        "nota": "Documento legible, cifras claras y completas. No se indica fecha exacta de emisión ni dirección de la entidad.",
+        "contenido_referencia": "ESTADOS FINANCIEROS - EJERCICIO 2024\nEmpresa: Grupo Caldas Infraestructuras SA\nNIF/CIF: A28476390\nPeríodo: 2024\n\nCUENTA DE RESULTADOS:\n    Ingresos de explotación: 69,500,000 EUR\n    EBITDA: 3,100,000 EUR\n    Gastos financieros: 1,350,000 EUR\n\nBALANCE:\n    Activo corriente: 16,800,000 EUR\n    Pasivo corriente: 17,900,000 EUR\n    Deuda financiera neta: 27,500,000 EUR\n    Patrimonio neto: 9,300,000 EUR\n\nFuente: Sistemas contables del banco (datos remitidos por la empresa y validados internamente).\n"
+      },
+      {
+        "tipo": "regla_kyc",
+        "id": "KYC-001",
+        "resultado": "ALERTA",
+        "descripcion": "Documento de identidad presente - no se encontró ningún documento tipo 'dni'",
+        "fuente": "Motor de reglas KYC interno",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+      },
+      {
+        "tipo": "regla_kyc",
+        "id": "KYC-003",
+        "resultado": "OK",
+        "descripcion": "Consistencia de nombre legal entre documentos - nombres encontrados: ['Grupo Caldas Infraestructuras SA']",
+        "fuente": "Motor de reglas KYC interno",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+      },
+      {
+        "tipo": "regla_kyc",
+        "id": "KYC-004",
+        "resultado": "OK",
+        "descripcion": "Titular real identificado - titulares reales presentes",
+        "fuente": "Motor de reglas KYC interno",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+      },
+      {
+        "tipo": "regla_kyc",
+        "id": "KYC-005",
+        "resultado": "OK",
+        "descripcion": "Información financiera presente - balance/PyG encontrado",
+        "fuente": "Motor de reglas KYC interno",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-001",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de Grupo Caldas Holding SA (75.0% - española) con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> Grupo Caldas Holding SA (75.0% - española)",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-002",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de Grupo Caldas Infraestructuras SA con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> Grupo Caldas Infraestructuras SA",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-003",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de Infraestructuras del Norte SL (25.0% - española) con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> Infraestructuras del Norte SL (25.0% - española)",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-004",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de María Jesús Prieto Valls (Consejera) con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> María Jesús Prieto Valls (Consejera)",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-005",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de Pedro Caldas Fuentes (Consejero Delegado) con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> Pedro Caldas Fuentes (Consejero Delegado)",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "fuente_externa_noticias",
+        "id": "MKT-001",
+        "resultado": "OK",
+        "descripcion": "Registro de señales externas para riesgo reputacional/legal.",
+        "fuente": "Busqueda externa (local_db/fuentes_externas.json o fuente configurada)",
+        "fecha_extraccion": "2026-06-16T13:44:30+00:00",
+        "trazabilidad": "Market Researcher Agent -> entidad=Grupo Caldas Infraestructuras SA",
+        "nota": "La decision final requiere validacion manual de Cumplimiento y Riesgos.",
+        "contenido_referencia": "No se han encontrado resultados en las fuentes consultadas para **Grupo Caldas Infraestructuras SA** relacionados con noticias negativas, litigios, sanciones regulatorias o eventos operativos relevantes. Tampoco se ha localizado información en las búsquedas realizadas sobre **concurso de acreedores/preconcurso** asociado a la sociedad. Para las personas relacionadas (**Pedro Caldas Fuentes** y **María Jesús Prieto Valls**) no se han encontrado menciones en noticias o incidencias públicas en las fuentes consultadas. En consecuencia, **no se han encontrado señales externas relevantes** en las fuentes consultadas (lo anterior refleja ausencia de resultados en la búsqueda, no una confirmación de ausencia de riesgo)."
+      }
+    ]
+  },
+  "modelo_financiero": {
+    "periodos": [
+      {
+        "periodo": "2022",
+        "ebitda": 5200000,
+        "deuda_financiera": 22000000,
+        "activo_corriente": 18500000,
+        "pasivo_corriente": 16200000,
+        "patrimonio_neto": 9800000,
+        "ingresos": 68000000,
+        "gastos_financieros": 980000,
+        "data_gaps": []
+      },
+      {
+        "periodo": "2023",
+        "ebitda": 4800000,
+        "deuda_financiera": 25000000,
+        "activo_corriente": 19200000,
+        "pasivo_corriente": 18400000,
+        "patrimonio_neto": 10100000,
+        "ingresos": 72000000,
+        "gastos_financieros": 1100000,
+        "data_gaps": []
+      },
+      {
+        "periodo": "2024",
+        "ebitda": 3100000,
+        "deuda_financiera": 27500000,
+        "activo_corriente": 16800000,
+        "pasivo_corriente": 17900000,
+        "patrimonio_neto": 9300000,
+        "ingresos": 69500000,
+        "gastos_financieros": 1350000,
+        "data_gaps": []
+      }
+    ],
+    "audit_flags": [
+      "Activo corriente < pasivo corriente en 2024 (16800000 vs 17900000): posible tensión de liquidez o error de extracción; revisar.",
+      "Salto >100% en gastos_financieros entre 2023 y 2024 (+22.7%): no aplica (sin flag).",
+      "Salto >100% en ebitda entre 2023 y 2024 (-35.4%): no aplica (sin flag).",
+      "Salto >100% en deuda_financiera entre 2023 y 2024 (+10.0%): no aplica (sin flag).",
+      "Salto >100% en ingresos entre 2023 y 2024 (-3.5%): no aplica (sin flag).",
+      "Salto >100% en pasivo_corriente entre 2023 y 2024 (-2.7%): no aplica (sin flag).",
+      "Salto >100% en activo_corriente entre 2023 y 2024 (-12.5%): no aplica (sin flag).",
+      "Salto >100% en patrimonio_neto entre 2023 y 2024 (-7.9%): no aplica (sin flag)."
+    ],
+    "resumen": "Se normalizaron 3 periodos (2022-2024) con EBITDA, deuda financiera, activo/pasivo corriente, patrimonio neto, ingresos y gastos financieros completos en cada año. No hay campos faltantes; se detecta activo corriente inferior al pasivo corriente en 2024 como punto a revisar."
+  },
+  "valuation_output": {
+    "ratios": {
+      "ratios_por_periodo": [
+        {
+          "periodo": "2022",
+          "debt_ebitda": 4.23,
+          "liquidez_corriente": 1.14,
+          "cobertura_intereses": 5.31,
+          "ebitda": 5200000,
+          "deuda_financiera": 22000000,
+          "ingresos": 68000000
+        },
+        {
+          "periodo": "2023",
+          "debt_ebitda": 5.21,
+          "liquidez_corriente": 1.04,
+          "cobertura_intereses": 4.36,
+          "ebitda": 4800000,
+          "deuda_financiera": 25000000,
+          "ingresos": 72000000
+        },
+        {
+          "periodo": "2024",
+          "debt_ebitda": 8.87,
+          "liquidez_corriente": 0.94,
+          "cobertura_intereses": 2.3,
+          "ebitda": 3100000,
+          "deuda_financiera": 27500000,
+          "ingresos": 69500000
+        }
+      ],
+      "variacion": {
+        "variacion_ebitda_pct": -35.4,
+        "variacion_deuda_financiera_pct": 10.0,
+        "variacion_ingresos_pct": -3.5
+      }
+    },
+    "interpretacion": "Entre 2022 y 2024 se observa un deterioro relevante del apalancamiento: el Debt/EBITDA pasa de 4,23x (2022) a 5,21x (2023) y 8,87x (2024), explicado por una caída del EBITDA del -35,4% interanual en 2024 (de 4,8M a 3,1M) junto con un aumento de la deuda financiera del +10,0% (hasta 27,5M). Esta evolución implica menor capacidad de repago vía generación operativa, pese a que los ingresos solo retroceden -3,5% interanual en 2024 (69,5M), lo que sugiere presión de márgenes/eficiencia. La liquidez corriente también se debilita, de 1,14 (2022) a 1,04 (2023) y 0,94 (2024), situándose por debajo de 1x en 2024 y elevando el riesgo de tensiones de circulante. En paralelo, la cobertura de intereses cae de 5,31x (2022) a 4,36x (2023) y 2,30x (2024), reduciendo el colchón ante subidas de tipos o volatilidad del resultado. \n\nEn el historial con el banco, la relación es recurrente (6 operaciones) y mantiene exposiciones vigentes al corriente (línea circulante 17,5M en 2023 y financiación de inversión 10,0M en 2024), lo que aporta evidencia de continuidad operativa y uso estable de productos (leasing, estructurada 2021 y línea de crédito). No obstante, constan una incidencia por retraso puntual en pagos en 2023 y 1 impago, que, combinados con el deterioro de apalancamiento, liquidez y cobertura, incrementan la sensibilidad del perfil de riesgo ante cualquier nueva presión de caja."
+  },
+  "market_research_output": "No se han encontrado resultados en las fuentes consultadas para **Grupo Caldas Infraestructuras SA** relacionados con noticias negativas, litigios, sanciones regulatorias o eventos operativos relevantes. Tampoco se ha localizado información en las búsquedas realizadas sobre **concurso de acreedores/preconcurso** asociado a la sociedad. Para las personas relacionadas (**Pedro Caldas Fuentes** y **María Jesús Prieto Valls**) no se han encontrado menciones en noticias o incidencias públicas en las fuentes consultadas. En consecuencia, **no se han encontrado señales externas relevantes** en las fuentes consultadas (lo anterior refleja ausencia de resultados en la búsqueda, no una confirmación de ausencia de riesgo).",
+  "historial": {
+    "operaciones_anteriores": 6,
+    "incidencias": [
+      "retraso puntual en pagos 2023"
+    ],
+    "impagos": 1,
+    "productos_contratados": [
+      "leasing maquinaria",
+      "financiacion estructurada 2021",
+      "linea de credito"
+    ],
+    "operaciones_detalle": [
+      {
+        "fecha": "2023-03-15",
+        "tipo": "linea_circulante",
+        "importe": 17500000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-07-10",
+        "tipo": "financiacion_inversion",
+        "importe": 10000000,
+        "estado": "vigente_al_corriente"
+      }
+    ],
+    "resumen_historial": "Relacion historica con 6 operaciones registradas; impagos=1; incidencias=1."
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_kyc_screener",
+      "id": "AGT-KYC-001",
+      "agente": "KYC Screener Agent",
+      "resultado": "OK",
+      "descripcion": "Extraccion documental, reglas KYC y screening ejecutados.",
+      "fuente": "Fuentes internas + screening local/operativo",
+      "fecha_extraccion": "2026-06-16T13:44:15+00:00",
+      "trazabilidad": "1_kyc_screener/output.json",
+      "nota": "Documentos procesados: 4; reglas evaluadas: 4; sujetos screeneados: 5."
+    },
+    {
+      "tipo": "agente_model_builder",
+      "id": "AGT-KYC-002",
+      "agente": "Model Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Normalizacion financiera multi-periodo y deteccion de audit flags.",
+      "fuente": "Datos financieros extraidos del expediente",
+      "fecha_extraccion": "2026-06-16T13:44:24+00:00",
+      "trazabilidad": "2_model_builder/output.json",
+      "nota": "Periodos normalizados: 3; audit_flags: 8."
+    },
+    {
+      "tipo": "agente_market_researcher",
+      "id": "AGT-KYC-003",
+      "agente": "Market Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Recopilacion y sintesis de señales externas reputacionales y legales.",
+      "fuente": "fuentes_externas.json / agregador configurado",
+      "fecha_extraccion": "2026-06-16T13:44:30+00:00",
+      "trazabilidad": "4_market_researcher/output.txt",
+      "nota": "Hallazgos externos sujetos a verificacion manual de Cumplimiento y Riesgos.",
+      "contenido_referencia": "No se han encontrado resultados en las fuentes consultadas para **Grupo Caldas Infraestructuras SA** relacionados con noticias negativas, litigios, sanciones regulatorias o eventos operativos relevantes. Tampoco se ha localizado información en las búsquedas realizadas sobre **concurso de acreedores/preconcurso** asociado a la sociedad. Para las personas relacionadas (**Pedro Caldas Fuentes** y **María Jesús Prieto Valls**) no se han encontrado menciones en noticias o incidencias públicas en las fuentes consultadas. En consecuencia, **no se han encontrado señales externas relevantes** en las fuentes consultadas (lo anterior refleja ausencia de resultados en la búsqueda, no una confirmación de ausencia de riesgo)."
+    },
+    {
+      "tipo": "agente_valuation_reviewer",
+      "id": "AGT-KYC-004",
+      "agente": "Valuation Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Calculo de ratios y analisis de riesgo cruzado con historial del cliente.",
+      "fuente": "Modelo financiero normalizado + historial interno",
+      "fecha_extraccion": "2026-06-16T13:44:37+00:00",
+      "trazabilidad": "3_valuation_reviewer/output.json",
+      "nota": "Ratios calculados para 3 periodos; historial disponible: si."
+    },
+    {
+      "tipo": "agente_credit_risk_report",
+      "id": "AGT-KYC-005",
+      "agente": "Credit Risk Report Agent",
+      "resultado": "OK",
+      "descripcion": "Sintesis integral para comite de riesgos con recomendaciones operativas.",
+      "fuente": "Outputs de KYC Screener, Model Builder, Market Researcher y Valuation Reviewer",
+      "fecha_extraccion": "2026-06-16T13:44:58+00:00",
+      "trazabilidad": "informe.md",
+      "nota": "La decision final de riesgo corresponde al analista y al comite.",
+      "contenido_referencia": "# Informe de riesgo - Grupo Caldas Infraestructuras SA\n\n## Resumen ejecutivo\nGrupo Caldas Infraestructuras SA presenta documentación societaria consistente y estados financieros para 2022–2024, pero con una carencia KYC material: falta documentación de identidad (según KYC Screener Agent, regla KYC-001 en FAIL). En lo financiero, se observa deterioro significativo en 2024: caída de EBITDA (-35,4% vs 2023) con aumento de deuda (+10,0%), elevando el apalancamiento hasta 8,87x Debt/EBITDA (según Valuation Reviewer Agent). La liquidez corriente cae por debajo de 1x en 2024 (0,94), sugiriendo tensión de circulante (según Valuation Reviewer Agent y audit_flag del Model Builder Agent). En screening no hay hits, pero el propio motor indica limitación operativa (“fichero de sanciones no encontrado”), por lo que el resultado no es concluyente (según KYC Screener Agent). Externamente no se identifi"
+    }
+  ]
+}

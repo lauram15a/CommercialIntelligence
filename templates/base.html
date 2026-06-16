@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" style="
+    --color-primary: {{ colors.primary }};
+    --color-primary-dark: {{ colors.primary_dark }};
+    --color-primary-soft: {{ colors.primary_soft }};
+    --color-accent: {{ colors.accent }};
+    --color-accent-soft: {{ colors.accent_soft }};
+    --color-warn: {{ colors.warn }};
+    --color-warn-soft: {{ colors.warn_soft }};
+    --color-danger: {{ colors.danger }};
+    --color-danger-soft: {{ colors.danger_soft }};
+    --color-ok: {{ colors.ok }};
+    --color-ok-soft: {{ colors.ok_soft }};
+    --color-bg: {{ colors.bg }};
+    --color-surface: {{ colors.surface }};
+    --color-ink: {{ colors.ink }};
+    --color-ink-muted: {{ colors.ink_muted }};
+    --color-border: {{ colors.border }};
+  ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ platform_name }}{% endblock %} · {{ bank_name }}</title>
+  {% if logo_filename %}
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/' + logo_filename) }}">
+  {% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {% block extra_head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  <div class="app-shell">
+
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a href="{{ url_for('usecases_menu') }}" class="brand-link">
+          {% if logo_filename %}
+            <img class="brand-logo" src="{{ url_for('static', filename='img/' + logo_filename) }}" alt="{{ bank_name }}">
+          {% else %}
+            <span class="brand-mark" aria-hidden="true">{{ logo_initials }}</span>
+          {% endif %}
+          <span class="brand-text">
+            <span class="brand-bank">{{ bank_name }}</span>
+            <span class="brand-product">{{ platform_name }}</span>
+          </span>
+        </a>
+
+        <nav class="topbar__nav">
+          <a href="{{ url_for('usecases_menu') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'usecases_menu' }}">Casos de uso</a>
+          {% if request.endpoint and request.endpoint.startswith('kyc_') %}
+            <span class="topbar__divider" aria-hidden="true"></span>
+            <a href="{{ url_for('kyc_index') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'kyc_index' }}">Nueva solicitud</a>
+            <a href="{{ url_for('kyc_runs_list') }}" class="topbar__link {{ 'is-active' if request.endpoint in ['kyc_runs_list', 'kyc_run_detail'] }}">Histórico</a>
+          {% elif request.endpoint and request.endpoint.startswith('deal_') %}
+            <span class="topbar__divider" aria-hidden="true"></span>
+            <a href="{{ url_for('deal_index') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'deal_index' }}">Nueva solicitud</a>
+            <a href="{{ url_for('deal_runs_list') }}" class="topbar__link {{ 'is-active' if request.endpoint in ['deal_runs_list', 'deal_run_detail'] }}">Histórico</a>
+          {% endif %}
+        </nav>
+
+        <div class="topbar__meta">
+          <span class="topbar__dept">
+            {% if request.endpoint and request.endpoint.startswith('deal_') %}
+              {{ department_name_deal }}
+            {% else %}
+              {{ department_name_kyc }}
+            {% endif %}
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="app-footer">
+      <div class="app-footer__inner">
+        <p class="app-footer__legal">{{ footer_text }}</p>
+        <p class="app-footer__byline">{{ bank_legal_name }} &nbsp;·&nbsp; {{ platform_name }}</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  {% block extra_scripts %}{% endblock %}
+</body>
+</html>

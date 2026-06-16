@@ -1,0 +1,157 @@
+{
+  "extracted_entities": [
+    {
+      "tipo_documento": "escritura",
+      "fecha_documento": "2019-11-05",
+      "entidad": {
+        "nombre_legal": "Nexuria Tech Solutions SL",
+        "identificador_fiscal": "B66123409",
+        "titulares_reales": [
+          "Adrián Nexuria Pujol",
+          "Vertex Ventures Spain SL",
+          "Laura Morales Sanz"
+        ],
+        "administradores": [
+          "Adrián Nexuria Pujol",
+          "Laura Morales Sanz"
+        ],
+        "direccion": "Calle Provença 236, 3º1ª, 08008 Barcelona"
+      },
+      "datos_financieros": {
+        "ebitda": null,
+        "deuda_financiera": null,
+        "activo_corriente": null,
+        "pasivo_corriente": null,
+        "patrimonio_neto": null,
+        "ingresos": null,
+        "gastos_financieros": null,
+        "periodo": null
+      },
+      "alertas_extraidas": [
+        "Sin alertas registradas"
+      ],
+      "observaciones": "Documento legible y completo. Información estructurada y clara. No se detectan incidencias ni alertas relevantes."
+    },
+    {
+      "tipo_documento": "balance",
+      "fecha_documento": null,
+      "entidad": {
+        "nombre_legal": "Nexuria Tech Solutions SL",
+        "identificador_fiscal": "B66123409",
+        "titulares_reales": null,
+        "administradores": null,
+        "direccion": null
+      },
+      "datos_financieros": {
+        "ebitda": 280000,
+        "deuda_financiera": 600000,
+        "activo_corriente": 980000,
+        "pasivo_corriente": 450000,
+        "patrimonio_neto": 820000,
+        "ingresos": 2100000,
+        "gastos_financieros": 45000,
+        "periodo": "2022"
+      },
+      "alertas_extraidas": [],
+      "observaciones": "Documento legible, datos financieros claros y completos. No se identifican titulares reales, administradores ni dirección."
+    },
+    {
+      "tipo_documento": "balance",
+      "fecha_documento": null,
+      "entidad": {
+        "nombre_legal": "Nexuria Tech Solutions SL",
+        "identificador_fiscal": "B66123409",
+        "titulares_reales": [],
+        "administradores": [],
+        "direccion": null
+      },
+      "datos_financieros": {
+        "ebitda": 620000,
+        "deuda_financiera": 1200000,
+        "activo_corriente": 1850000,
+        "pasivo_corriente": 720000,
+        "patrimonio_neto": 1400000,
+        "ingresos": 3800000,
+        "gastos_financieros": 72000,
+        "periodo": "2023"
+      },
+      "alertas_extraidas": [],
+      "observaciones": "Documento legible, datos financieros completos, sin información sobre titulares, administradores ni dirección."
+    },
+    {
+      "tipo_documento": "balance",
+      "fecha_documento": null,
+      "entidad": {
+        "nombre_legal": "Nexuria Tech Solutions SL",
+        "identificador_fiscal": "B66123409",
+        "titulares_reales": [],
+        "administradores": [],
+        "direccion": null
+      },
+      "datos_financieros": {
+        "ebitda": 950000,
+        "deuda_financiera": 2000000,
+        "activo_corriente": 3100000,
+        "pasivo_corriente": 950000,
+        "patrimonio_neto": 2600000,
+        "ingresos": 5600000,
+        "gastos_financieros": 110000,
+        "periodo": "2024"
+      },
+      "alertas_extraidas": [],
+      "observaciones": "Documento legible, datos financieros claros, sin información sobre titulares, administradores ni dirección."
+    }
+  ],
+  "kyc_results": [
+    {
+      "rule_id": "KYC-001",
+      "name": "Documento de identidad presente",
+      "status": "FAIL",
+      "evidence": "no se encontró ningún documento tipo 'dni'"
+    },
+    {
+      "rule_id": "KYC-003",
+      "name": "Consistencia de nombre legal entre documentos",
+      "status": "PASS",
+      "evidence": "nombres encontrados: ['Nexuria Tech Solutions SL']"
+    },
+    {
+      "rule_id": "KYC-004",
+      "name": "Titular real identificado",
+      "status": "PASS",
+      "evidence": "titulares reales presentes"
+    },
+    {
+      "rule_id": "KYC-005",
+      "name": "Información financiera presente",
+      "status": "PASS",
+      "evidence": "balance/PyG encontrado"
+    }
+  ],
+  "screening_results": [
+    {
+      "name": "Adrián Nexuria Pujol",
+      "hits": [],
+      "source": "local_db",
+      "note": "fichero de sanciones no encontrado"
+    },
+    {
+      "name": "Laura Morales Sanz",
+      "hits": [],
+      "source": "local_db",
+      "note": "fichero de sanciones no encontrado"
+    },
+    {
+      "name": "Nexuria Tech Solutions SL",
+      "hits": [],
+      "source": "local_db",
+      "note": "fichero de sanciones no encontrado"
+    },
+    {
+      "name": "Vertex Ventures Spain SL",
+      "hits": [],
+      "source": "local_db",
+      "note": "fichero de sanciones no encontrado"
+    }
+  ]
+}

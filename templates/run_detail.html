@@ -1,0 +1,447 @@
+{% extends "base.html" %}
+
+{% block title %}Informe -- {{ run.result.get('entity_name', '(sin nombre)') }}{% endblock %}
+
+{% block content %}
+<div class="container">
+
+{% set kyc       = run.result.get('kyc_output', {}) %}
+{% set modelo    = run.result.get('modelo_financiero', {}) %}
+{% set valuation = run.result.get('valuation_output', {}) %}
+{% set historial = run.result.get('historial', {}) %}
+{% set evidencias = (run.result.get('kyc_output', {}).get('evidencias', []) or []) + (run.result.get('evidencias_agentes', []) or []) %}
+
+  <div class="run-header">
+    <div class="run-header__eyebrow">
+      <p class="eyebrow" style="margin: 0;">{{ department_name }}</p>
+    </div>
+    <h1>{{ run.result.get('entity_name', '(sin nombre)') }}</h1>
+    <div class="run-meta">
+      <span><strong>Expediente</strong> &nbsp;{{ run.run_id }}</span>
+      <span><strong>Fecha</strong> &nbsp;{{ run.timestamp }}</span>
+      <span><strong>Documentos procesados</strong> &nbsp;{{ kyc.get('extracted_entities', []) | length }}</span>
+    </div>
+  </div>
+
+  <div class="run-tabs" role="tablist">
+    <button class="run-tab is-active" data-tab="informe">Informe final</button>
+    <button class="run-tab" data-tab="kyc">1 - KYC Screener</button>
+    <button class="run-tab" data-tab="model">2 - Model Builder</button>
+    <button class="run-tab" data-tab="market">3 - Market Researcher</button>
+    <button class="run-tab" data-tab="valuation">4 - Valuation Reviewer</button>
+  </div>
+
+  <!-- ============ INFORME FINAL ============ -->
+  <div class="run-tab-panel is-active" data-tab="informe" style="padding-bottom: 64px;">
+    <div class="card">
+      <div class="card__header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <h2>Informe de riesgo</h2>
+          <p>Generado por el Credit Risk Report Agent</p>
+        </div>
+        <a href="{{ url_for('kyc_download_informe', run_id=run.run_id) }}"
+           class="btn btn-secondary" style="white-space: nowrap;">
+          Descargar informe (.docx)
+        </a>
+      </div>
+      <div class="card__body">
+        <article class="report" id="report-markdown"></article>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ KYC SCREENER ============ -->
+  <div class="run-tab-panel" data-tab="kyc" style="padding-bottom: 64px;">
+
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Validación KYC</h2>
+        <p>Resultado de las reglas evaluadas sobre los documentos del expediente</p>
+      </div>
+      <div class="card__body">
+        {% for rule in kyc.get('kyc_results', []) %}
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 14px 0; {% if not loop.last %}border-bottom: 1px solid var(--color-border);{% endif %}">
+          <div>
+            <strong>{{ rule.rule_id }} - {{ rule.name }}</strong>
+            <p style="margin: 4px 0 0; font-size: 13px; color: var(--color-ink-muted);">{{ rule.evidence }}</p>
+          </div>
+          {% if rule.status == 'PASS' %}
+            <span class="badge badge-pass">Pass</span>
+          {% elif rule.status == 'WARN' %}
+            <span class="badge badge-warn">Aviso</span>
+          {% else %}
+            <span class="badge badge-fail">Incidencia</span>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Screening sanciones / PEP / adverse media</h2>
+        <p>Resultado del cribado para cada parte identificada en los documentos</p>
+      </div>
+      <div class="card__body">
+        {% for s in kyc.get('screening_results', []) %}
+        <div style="padding: 12px 0; {% if not loop.last %}border-bottom: 1px solid var(--color-border);{% endif %}">
+          <strong>{{ s.name }}</strong>
+          {% if s.hits %}
+            <span class="badge badge-fail" style="margin-left: 10px;">{{ s.hits | length }} hit(s)</span>
+          {% else %}
+            <span class="badge badge-pass" style="margin-left: 10px;">Sin coincidencias</span>
+          {% endif %}
+          {% if s.note %}
+            <p style="margin: 6px 0 0; font-size: 13px; color: var(--color-ink-muted);">{{ s.note }} (fuente: {{ s.source }})</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__header">
+        <h2>Documentos extraídos</h2>
+        <p>Datos estructurados extraídos por el agente doc-reader</p>
+      </div>
+      <div class="card__body">
+        {% for doc in kyc.get('extracted_entities', []) %}
+        <div style="padding: 14px 0; {% if not loop.last %}border-bottom: 1px solid var(--color-border);{% endif %}">
+          <strong>{{ doc.tipo_documento | default('desconocido') | capitalize }}</strong>
+          {% if doc.entidad and doc.entidad.nombre_legal %}
+            <span style="color: var(--color-ink-muted); font-size: 13px;"> - {{ doc.entidad.nombre_legal }}</span>
+          {% endif %}
+          {% if doc.observaciones %}
+            <p style="margin: 6px 0 0; font-size: 13px; color: var(--color-ink-muted);">{{ doc.observaciones }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 20px;">
+      <div class="card__header">
+        <h2>Registro de evidencias y trazabilidad</h2>
+        <p>Cada dato y cada paso de agente queda vinculado a su fuente, fecha de extracción y método de obtención</p>
+      </div>
+      <div class="card__body">
+        {% if evidencias %}
+
+        {% for ev in evidencias %}
+        <div style="border: 1px solid var(--color-border); border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; background: var(--color-surface);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="badge {{ 'badge-warn' if ev.get('tipo') == 'screening_sanciones' else 'badge-pass' }}" style="font-size: 11px;">
+                {{ ev.get('tipo', 'dato').replace('_', ' ').upper() }}
+              </span>
+              <strong style="font-size: 14px;">{{ ev.get('id', '') }}</strong>
+            </div>
+
+            {% if ev.get('resultado') %}
+            <span class="badge {{ 'badge-fail' if ev.get('resultado') == 'ALERTA' else ('badge-warn' if ev.get('resultado') == 'NO_CONCLUYENTE' else 'badge-pass') }}">
+              {{ ev.get('resultado', '').replace('_', ' ') }}
+            </span>
+            {% endif %}
+          </div>
+
+          <p style="font-size: 14px; font-weight: 600; margin: 0 0 6px; color: var(--color-ink);">{{ ev.get('descripcion', '') }}</p>
+
+          <div style="display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 12.5px; color: var(--color-ink-muted);">
+            <span>Fuente:</span>
+            <span style="color: var(--color-ink);">{{ ev.get('fuente', '--') }}</span>
+            <span>Fecha:</span>
+            <span>{{ ev.get('fecha_extraccion', '--') }}</span>
+
+            {% if ev.get('trazabilidad') %}
+            <span>Trazabilidad:</span>
+            <span style="color: var(--color-ink);">{{ ev.get('trazabilidad', '--') }}</span>
+            {% endif %}
+
+            {% if ev.get('nota') %}
+            <span>Nota:</span>
+            <span style="color: var(--color-ink);">{{ ev.get('nota') }}</span>
+            {% endif %}
+          </div>
+
+          {% if ev.get('contenido_referencia') %}
+          <details style="margin-top: 10px;">
+            <summary style="font-size: 12px; color: var(--color-ink-muted); cursor: pointer;">Ver extracto del documento</summary>
+            <pre style="margin-top: 8px; font-size: 11.5px; background: var(--color-bg); border-radius: 6px; padding: 10px; white-space: pre-wrap; color: var(--color-ink-muted); overflow: auto;">{{ ev.get('contenido_referencia', '') }}</pre>
+          </details>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+        <div style="margin-top: 20px; padding: 12px 16px; background: var(--color-accent-soft); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+          <p style="font-size: 13px; color: var(--color-ink); margin: 0;">
+            <strong>Nota de auditoría:</strong> Este registro de evidencias se genera automáticamente durante la ejecución y queda guardado en <code>result.json</code>. Cada evidencia incluye fuente, método de obtención y marca temporal para facilitar reproducibilidad y auditoría.
+          </p>
+        </div>
+
+        {% else %}
+        <div class="empty-state">
+          <h3>Sin evidencias registradas</h3>
+          <p>Esta ejecución no tiene evidencias trazables disponibles. Puede deberse a una versión anterior del pipeline.</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ MODEL BUILDER ============ -->
+  <div class="run-tab-panel" data-tab="model" style="padding-bottom: 64px;">
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Modelo financiero normalizado</h2>
+        <p>{{ modelo.get('resumen', '') }}</p>
+      </div>
+      <div class="card__body" style="padding: 0;">
+        <table class="runs-table">
+          <thead>
+            <tr>
+              <th>Periodo</th>
+              <th>EBITDA</th>
+              <th>Deuda financiera</th>
+              <th>Activo corriente</th>
+              <th>Pasivo corriente</th>
+              <th>Gastos financieros</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in modelo.get('periodos', []) %}
+            <tr>
+              <td><strong>{{ p.periodo }}</strong></td>
+              <td class="is-mono">{{ '{:,.0f}'.format(p.ebitda) if p.ebitda is not none else '--' }}</td>
+              <td class="is-mono">{{ '{:,.0f}'.format(p.deuda_financiera) if p.deuda_financiera is not none else '--' }}</td>
+              <td class="is-mono">{{ '{:,.0f}'.format(p.activo_corriente) if p.activo_corriente is not none else '--' }}</td>
+              <td class="is-mono">{{ '{:,.0f}'.format(p.pasivo_corriente) if p.pasivo_corriente is not none else '--' }}</td>
+              <td class="is-mono">{{ '{:,.0f}'.format(p.gastos_financieros) if p.gastos_financieros is not none else '--' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    {% if modelo.get('audit_flags') %}
+    <div class="card">
+      <div class="card__header">
+        <h2>Alertas de auditoría de datos</h2>
+        <p>Saltos o inconsistencias detectadas durante la normalización</p>
+      </div>
+      <div class="card__body">
+        {% for flag in modelo.get('audit_flags', []) %}
+        <div style="padding: 10px 0; {% if not loop.last %}border-bottom: 1px solid var(--color-border);{% endif %}">
+          <span class="badge badge-warn">Revisar</span>
+          <span style="margin-left: 10px; font-size: 14px;">{{ flag }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ============ MARKET RESEARCHER ============ -->
+  <div class="run-tab-panel" data-tab="market" style="padding-bottom: 64px;">
+    <div class="card">
+      <div class="card__header">
+        <h2>Señales externas</h2>
+        <p>Resumen de noticias, litigios y cambios societarios encontrados</p>
+      </div>
+      <div class="card__body">
+        <article class="report" id="market-markdown"></article>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ VALUATION REVIEWER ============ -->
+  <div class="run-tab-panel" data-tab="valuation" style="padding-bottom: 64px;">
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Ratios de riesgo</h2>
+        <p>Evolución de los indicadores clave por período</p>
+      </div>
+      <div class="card__body">
+        <table class="runs-table">
+          <thead>
+            <tr>
+              <th>Periodo</th>
+              <th>Debt / EBITDA</th>
+              <th>Liquidez corriente</th>
+              <th>Cobertura de intereses</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in valuation.get('ratios', {}).get('ratios_por_periodo', []) %}
+            <tr>
+              <td><strong>{{ r.periodo }}</strong></td>
+              <td class="is-mono">{{ '%.2fx'|format(r.debt_ebitda) if r.debt_ebitda is not none else '--' }}</td>
+              <td class="is-mono">{{ '%.2fx'|format(r.liquidez_corriente) if r.liquidez_corriente is not none else '--' }}</td>
+              <td class="is-mono">{{ '%.2fx'|format(r.cobertura_intereses) if r.cobertura_intereses is not none else '--' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+        {% set variacion = valuation.get('ratios', {}).get('variacion', {}) %}
+        {% if variacion %}
+        <div class="metric-row">
+          {% for key, val in variacion.items() %}
+          {% if val is not none %}
+          <div>
+            <p class="metric-tile__label">{{ key.replace('variacion_', '').replace('_pct', '').replace('_', ' ') | capitalize }}</p>
+            <p class="metric-tile__value {{ 'is-up' if (val > 0 and 'deuda' in key) else ('is-down' if val <= 0 and 'deuda' in key else '') }}">
+              {{ '+' if val > 0 }}{{ val }}%
+            </p>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Interpretación</h2>
+        <p>Análisis cualitativo cruzado con el histórico del cliente</p>
+      </div>
+      <div class="card__body">
+        <article class="report" id="valuation-markdown"></article>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__header">
+        <h2>Historial del cliente</h2>
+        <p>Relación previa con el banco</p>
+      </div>
+      <div class="card__body">
+        {% if historial %}
+          <div class="metric-row" style="margin-bottom: 12px;">
+            <div>
+              <p class="metric-tile__label">Operaciones anteriores</p>
+              <p class="metric-tile__value">{{ historial.get('operaciones_anteriores', 0) }}</p>
+            </div>
+            <div>
+              <p class="metric-tile__label">Impagos</p>
+              <p class="metric-tile__value {{ 'is-down' if historial.get('impagos', 0) == 0 else 'is-up' }}">{{ historial.get('impagos', 0) }}</p>
+            </div>
+            <div>
+              <p class="metric-tile__label">Incidencias</p>
+              <p class="metric-tile__value">{{ (historial.get('incidencias') or []) | length }}</p>
+            </div>
+          </div>
+
+          {% if historial.get('resumen_historial') %}
+          <div style="margin-bottom: 14px; font-size: 14px; color: var(--color-ink);">
+            {{ historial.get('resumen_historial') }}
+          </div>
+          {% endif %}
+
+          <div style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+            <div>
+              <strong style="font-size: 13px;">Productos contratados</strong>
+              {% set productos = historial.get('productos_contratados') or [] %}
+              {% if productos %}
+                <ul style="margin: 8px 0 0; padding-left: 18px; color: var(--color-ink-muted); font-size: 13px;">
+                  {% for p in productos %}
+                  <li>{{ p }}</li>
+                  {% endfor %}
+                </ul>
+              {% else %}
+                <p style="margin: 8px 0 0; color: var(--color-ink-muted); font-size: 13px;">Sin productos históricos registrados.</p>
+              {% endif %}
+            </div>
+
+            <div>
+              <strong style="font-size: 13px;">Incidencias</strong>
+              {% set incidencias = historial.get('incidencias') or [] %}
+              {% if incidencias %}
+                <ul style="margin: 8px 0 0; padding-left: 18px; color: var(--color-ink-muted); font-size: 13px;">
+                  {% for i in incidencias %}
+                  <li>{{ i }}</li>
+                  {% endfor %}
+                </ul>
+              {% else %}
+                <p style="margin: 8px 0 0; color: var(--color-ink-muted); font-size: 13px;">Sin incidencias registradas.</p>
+              {% endif %}
+            </div>
+
+            {% set operaciones = historial.get('operaciones_detalle') or [] %}
+            {% if operaciones %}
+            <div>
+              <strong style="font-size: 13px;">Operaciones históricas (detalle)</strong>
+              <table class="runs-table" style="margin-top: 8px;">
+                <thead>
+                  <tr>
+                    <th>Fecha</th>
+                    <th>Tipo</th>
+                    <th>Importe</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for op in operaciones %}
+                  <tr>
+                    <td>{{ op.get('fecha', '--') }}</td>
+                    <td>{{ op.get('tipo', '--') }}</td>
+                    <td class="is-mono">{{ '{:,.0f}'.format(op.get('importe')) if op.get('importe') is not none else '--' }}</td>
+                    <td>{{ op.get('estado', '--') }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            {% endif %}
+          </div>
+        {% else %}
+          <div class="empty-state" style="margin: 0;">
+            <h3>Sin historial registrado</h3>
+            <p>No hay operaciones anteriores para esta entidad en la base de datos interna.</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block extra_head %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  document.querySelectorAll('.run-tab').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.run-tab').forEach((t) => t.classList.remove('is-active'));
+      document.querySelectorAll('.run-tab-panel').forEach((p) => p.classList.remove('is-active'));
+      tab.classList.add('is-active');
+      document.querySelector(`.run-tab-panel[data-tab="${tab.dataset.tab}"]`).classList.add('is-active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  const informeMd    = {{ (run.informe_md or '') | tojson }};
+  const marketMd     = {{ (run.result.get('market_research_output') or '') | tojson }};
+  const valuationMd  = {{ (run.result.get('valuation_output', {}).get('interpretacion') or '') | tojson }};
+
+  function renderMarkdown(elId, md, emptyMsg) {
+    const el   = document.getElementById(elId);
+    const text = md || emptyMsg;
+    if (typeof marked !== 'undefined') {
+      el.innerHTML = marked.parse(text);
+    } else {
+      el.innerHTML = '<pre style="white-space: pre-wrap; font-family: inherit; font-size: 15px; line-height: 1.75; margin: 0;"></pre>';
+      el.querySelector('pre').textContent = text;
+    }
+  }
+
+  renderMarkdown('report-markdown',    informeMd,   '*No se ha generado informe para esta ejecución.*');
+  renderMarkdown('market-markdown',    marketMd,    '*Sin resultados del Market Researcher Agent.*');
+  renderMarkdown('valuation-markdown', valuationMd, '*Sin interpretación disponible.*');
+</script>
+{% endblock %}

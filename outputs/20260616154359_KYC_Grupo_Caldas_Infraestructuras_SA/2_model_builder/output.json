@@ -1,0 +1,48 @@
+{
+  "periodos": [
+    {
+      "periodo": "2022",
+      "ebitda": 5200000,
+      "deuda_financiera": 22000000,
+      "activo_corriente": 18500000,
+      "pasivo_corriente": 16200000,
+      "patrimonio_neto": 9800000,
+      "ingresos": 68000000,
+      "gastos_financieros": 980000,
+      "data_gaps": []
+    },
+    {
+      "periodo": "2023",
+      "ebitda": 4800000,
+      "deuda_financiera": 25000000,
+      "activo_corriente": 19200000,
+      "pasivo_corriente": 18400000,
+      "patrimonio_neto": 10100000,
+      "ingresos": 72000000,
+      "gastos_financieros": 1100000,
+      "data_gaps": []
+    },
+    {
+      "periodo": "2024",
+      "ebitda": 3100000,
+      "deuda_financiera": 27500000,
+      "activo_corriente": 16800000,
+      "pasivo_corriente": 17900000,
+      "patrimonio_neto": 9300000,
+      "ingresos": 69500000,
+      "gastos_financieros": 1350000,
+      "data_gaps": []
+    }
+  ],
+  "audit_flags": [
+    "Activo corriente < pasivo corriente en 2024 (16800000 vs 17900000): posible tensión de liquidez o error de extracción; revisar.",
+    "Salto >100% en gastos_financieros entre 2023 y 2024 (+22.7%): no aplica (sin flag).",
+    "Salto >100% en ebitda entre 2023 y 2024 (-35.4%): no aplica (sin flag).",
+    "Salto >100% en deuda_financiera entre 2023 y 2024 (+10.0%): no aplica (sin flag).",
+    "Salto >100% en ingresos entre 2023 y 2024 (-3.5%): no aplica (sin flag).",
+    "Salto >100% en pasivo_corriente entre 2023 y 2024 (-2.7%): no aplica (sin flag).",
+    "Salto >100% en activo_corriente entre 2023 y 2024 (-12.5%): no aplica (sin flag).",
+    "Salto >100% en patrimonio_neto entre 2023 y 2024 (-7.9%): no aplica (sin flag)."
+  ],
+  "resumen": "Se normalizaron 3 periodos (2022-2024) con EBITDA, deuda financiera, activo/pasivo corriente, patrimonio neto, ingresos y gastos financieros completos en cada año. No hay campos faltantes; se detecta activo corriente inferior al pasivo corriente en 2024 como punto a revisar."
+}

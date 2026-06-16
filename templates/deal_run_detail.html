@@ -1,0 +1,348 @@
+{% extends "base.html" %}
+
+{% block title %}Propuesta -- {{ run.result.get('company_name', '(sin nombre)') }}{% endblock %}
+
+{% block content %}
+<div class="container">
+
+{% set opp   = run.result.get('opportunity_output', {}) %}
+{% set model = run.result.get('model_output', {}) %}
+{% set brief = run.result.get('meeting_brief', {}) %}
+{% set pitch = run.result.get('pitch_output', {}) %}
+{% set evidencias = run.result.get('evidencias_agentes', []) or [] %}
+
+  <div class="run-header">
+    <div class="run-header__eyebrow">
+      <p class="eyebrow" style="margin: 0;">{{ department_name }}</p>
+    </div>
+    <h1>{{ run.result.get('company_name', '(sin nombre)') }}</h1>
+    <div class="run-meta">
+      <span><strong>Expediente</strong> &nbsp;{{ run.run_id }}</span>
+      <span><strong>Fecha</strong> &nbsp;{{ run.timestamp }}</span>
+      <span><strong>Sector</strong> &nbsp;{{ run.result.get('sector', '--') }}</span>
+    </div>
+  </div>
+
+  <div class="run-tabs" role="tablist">
+    <button class="run-tab is-active" data-tab="propuesta">Propuesta final</button>
+    <button class="run-tab" data-tab="oportunidades">1 · Oportunidades</button>
+    <button class="run-tab" data-tab="financiero">2 · Análisis financiero</button>
+    <button class="run-tab" data-tab="briefing">3-4 · Briefing de cliente</button>
+    <button class="run-tab" data-tab="pitchbook">5 · Pitchbook</button>
+  </div>
+
+  <!-- ============ PROPUESTA FINAL ============ -->
+  <div class="run-tab-panel is-active" data-tab="propuesta" style="padding-bottom: 64px;">
+    {% if run.pptx_available %}
+    <div class="uc-disclaimer" style="margin-bottom: 24px;">
+      <span class="uc-disclaimer__icon" aria-hidden="true">i</span>
+      <p>
+        Esta propuesta es un punto de partida generado automáticamente. El equipo
+        comercial debe revisarla, ajustarla y personalizarla antes de cualquier
+        interacción con el cliente. El pitchbook está disponible en la pestaña
+        <strong>5 · Pitchbook</strong>.
+      </p>
+    </div>
+    <div style="display: flex; justify-content: flex-end; margin: -8px 0 16px;">
+      <a href="{{ url_for('deal_download_pitchbook', run_id=run.run_id) }}" class="btn btn-primary">Descargar pitchbook (.pptx)</a>
+    </div>
+    {% endif %}
+    <div class="card">
+      <div class="card__header">
+        <h2>{{ pitch.get('titulo', 'Propuesta comercial') }}</h2>
+        {% if pitch.get('subtitulo') %}<p>{{ pitch.get('subtitulo') }}</p>{% endif %}
+      </div>
+      <div class="card__body">
+        <article class="report" id="propuesta-markdown"></article>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ OPORTUNIDADES ============ -->
+  <div class="run-tab-panel" data-tab="oportunidades" style="padding-bottom: 64px;">
+    <div class="card">
+      <div class="card__header">
+        <h2>Oportunidades detectadas - sector {{ opp.get('sector', run.result.get('sector', '')) }}</h2>
+        <p>{{ opp.get('resumen', '') }}</p>
+      </div>
+      <div class="card__body" style="padding: 0;">
+        <table class="runs-table">
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>Motivo</th>
+              <th>Prioridad</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for o in opp.get('oportunidades', []) %}
+            <tr {% if o.get('empresa') == run.result.get('company_name') %}style="background: var(--color-primary-soft);"{% endif %}>
+              <td>
+                <strong>{{ o.get('empresa', '') }}</strong>
+                {% if o.get('empresa') == run.result.get('company_name') %}
+                  <span class="badge badge-pass" style="margin-left: 8px;">Seleccionada</span>
+                {% endif %}
+              </td>
+              <td>{{ o.get('motivo', '') }}</td>
+              <td>
+                {% if o.get('prioridad') == 'alta' %}
+                  <span class="badge badge-fail">Alta</span>
+                {% elif o.get('prioridad') == 'media' %}
+                  <span class="badge badge-warn">Media</span>
+                {% else %}
+                  <span class="badge badge-pass">Baja</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ANALISIS FINANCIERO ============ -->
+  <div class="run-tab-panel" data-tab="financiero" style="padding-bottom: 64px;">
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Análisis de resultados financieros</h2>
+        <p>Earnings Reviewer Agent</p>
+      </div>
+      <div class="card__body">
+        <p style="font-size: 15.5px; line-height: 1.75; margin: 0;">{{ run.earnings_summary or run.result.get('earnings_summary', '') }}</p>
+      </div>
+    </div>
+
+    {% if model.get('disponible') %}
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Visión financiera básica</h2>
+        <p>Model Builder Agent (paso opcional)</p>
+      </div>
+      <div class="card__body">
+        <div class="metric-row">
+          {% for ind in model.get('indicadores_clave', []) %}
+          <div>
+            <p class="metric-tile__label">{{ ind.get('nombre', '') }}</p>
+            <p class="metric-tile__value">{{ ind.get('valor', '') }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        {% if model.get('tendencias_estructurales') %}
+        <p class="metric-tile__label" style="margin-top: 28px;">TENDENCIAS ESTRUCTURALES</p>
+        <ul style="margin: 10px 0 0; padding-left: 22px; font-size: 14.5px; line-height: 1.8;">
+          {% for t in model.get('tendencias_estructurales', []) %}<li>{{ t }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__header"><h2>Interpretación</h2></div>
+      <div class="card__body">
+        <p style="font-size: 15.5px; line-height: 1.75; margin: 0; font-style: italic; color: var(--color-ink-muted);">{{ model.get('interpretacion', '') }}</p>
+      </div>
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <h3>Model Builder Agent omitido</h3>
+      <p>No había suficiente información financiera estructurada (paso opcional).</p>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ============ BRIEFING DE CLIENTE ============ -->
+  <div class="run-tab-panel" data-tab="briefing" style="padding-bottom: 64px;">
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Perfil y situación actual</h2>
+        <p>Meeting Preparer Agent</p>
+      </div>
+      <div class="card__body">
+        <p style="font-size: 15px; line-height: 1.7;">{{ brief.get('perfil', '') }}</p>
+        <p style="font-size: 15px; line-height: 1.7; color: var(--color-ink-muted); font-style: italic; margin-bottom: 0;">{{ brief.get('situacion_actual', '') }}</p>
+      </div>
+    </div>
+    <div class="workspace" style="grid-template-columns: 1fr 1fr; margin-bottom: 20px;">
+      <div class="card">
+        <div class="card__header"><h2>Necesidades potenciales</h2></div>
+        <div class="card__body">
+          <ul style="margin: 0; padding-left: 22px; font-size: 14.5px; line-height: 1.8;">
+            {% for n in brief.get('necesidades_potenciales', []) %}<li>{{ n }}</li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header"><h2>Riesgos y puntos de atención</h2></div>
+        <div class="card__body">
+          <ul style="margin: 0; padding-left: 22px; font-size: 14.5px; line-height: 1.8;">
+            {% for r in brief.get('riesgos', []) %}<li>{{ r }}</li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__header"><h2>Talking points para la reunión</h2></div>
+      <div class="card__body">
+        <ul style="margin: 0; padding-left: 22px; font-size: 14.5px; line-height: 1.8;">
+          {% for tp in brief.get('talking_points', []) %}<li>{{ tp }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PITCHBOOK ============ -->
+  <div class="run-tab-panel" data-tab="pitchbook" style="padding-bottom: 64px;">
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="card__header">
+        <h2>Pitchbook generado</h2>
+        <p>Pitch Builder Agent · 6 diapositivas, formato 16:9</p>
+      </div>
+      <div class="card__body">
+        {% if run.pptx_available %}
+        <p style="margin-top: 0;">El pitchbook incluye portada, oportunidad detectada, contexto financiero, briefing de cliente, encaje de productos y comparables, y próximos pasos.</p>
+        <a href="{{ url_for('deal_download_pitchbook', run_id=run.run_id) }}" class="btn btn-primary">Descargar pitchbook (.pptx)</a>
+        {% else %}
+        <div class="empty-state" style="padding: 24px 0;">
+          <h3>Pitchbook no disponible</h3>
+          <p>{{ pitch.get('pptx_error', 'No se ha podido generar el fichero .pptx para esta ejecución.') }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="workspace" style="grid-template-columns: 1fr 1fr;">
+      <div class="card">
+        <div class="card__header"><h2>Encaje con productos del banco</h2></div>
+        <div class="card__body">
+          <ul style="margin: 0; padding-left: 22px; font-size: 14.5px; line-height: 1.8;">
+            {% for p in pitch.get('encaje_productos', []) %}<li>{{ p }}</li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header"><h2>Comparables sectoriales</h2></div>
+        <div class="card__body">
+          {% if pitch.get('comparables') %}
+          <ul style="margin: 0; padding-left: 22px; font-size: 14.5px; line-height: 1.8;">
+            {% for c in pitch.get('comparables', []) %}<li>{{ c }}</li>{% endfor %}
+          </ul>
+          {% else %}
+          <p style="margin: 0; color: var(--color-ink-muted); font-size: 14px;">Sin comparables disponibles para esta oportunidad.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% if pitch.get('argumentos_valor') %}
+    <div class="card" style="margin-top: 20px;">
+      <div class="card__header"><h2>Argumentos de valor</h2></div>
+      <div class="card__body">
+        <ul style="margin: 0; padding-left: 22px; font-size: 14.5px; line-height: 1.8;">
+          {% for a in pitch.get('argumentos_valor', []) %}<li>{{ a }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+    {% if pitch.get('proximos_pasos') %}
+    <div class="card" style="margin-top: 20px;">
+      <div class="card__header"><h2>Próximos pasos</h2></div>
+      <div class="card__body">
+        <ol style="margin: 0; padding-left: 22px; font-size: 14.5px; line-height: 1.8;">
+          {% for s in pitch.get('proximos_pasos', []) %}<li>{{ s }}</li>{% endfor %}
+        </ol>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="card" style="margin-top: 20px;">
+      <div class="card__header">
+        <h2>Registro de evidencias y trazabilidad</h2>
+        <p>Evidencias generadas por todos los agentes del pipeline Deal</p>
+      </div>
+      <div class="card__body">
+        {% if evidencias %}
+          {% for ev in evidencias %}
+          <div style="border: 1px solid var(--color-border); border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; background: var(--color-surface);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span class="badge badge-pass" style="font-size: 11px;">{{ ev.get('tipo', 'agente').replace('_', ' ').upper() }}</span>
+                <strong style="font-size: 14px;">{{ ev.get('id', '') }}</strong>
+              </div>
+
+              {% if ev.get('resultado') %}
+              <span class="badge {{ 'badge-fail' if ev.get('resultado') == 'ALERTA' else ('badge-warn' if ev.get('resultado') == 'NO_CONCLUYENTE' else 'badge-pass') }}">
+                {{ ev.get('resultado', '').replace('_', ' ') }}
+              </span>
+              {% endif %}
+            </div>
+
+            <p style="font-size: 14px; font-weight: 600; margin: 0 0 6px; color: var(--color-ink);">{{ ev.get('descripcion', '') }}</p>
+
+            <div style="display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 12.5px; color: var(--color-ink-muted);">
+              <span>Agente:</span>
+              <span style="color: var(--color-ink);">{{ ev.get('agente', '--') }}</span>
+              <span>Fuente:</span>
+              <span style="color: var(--color-ink);">{{ ev.get('fuente', '--') }}</span>
+              <span>Fecha:</span>
+              <span>{{ ev.get('fecha_extraccion', '--') }}</span>
+              {% if ev.get('trazabilidad') %}
+              <span>Trazabilidad:</span>
+              <span style="color: var(--color-ink);">{{ ev.get('trazabilidad', '--') }}</span>
+              {% endif %}
+              {% if ev.get('nota') %}
+              <span>Nota:</span>
+              <span style="color: var(--color-ink);">{{ ev.get('nota') }}</span>
+              {% endif %}
+            </div>
+
+            {% if ev.get('contenido_referencia') %}
+            <details style="margin-top: 10px;">
+              <summary style="font-size: 12px; color: var(--color-ink-muted); cursor: pointer;">Ver extracto</summary>
+              <pre style="margin-top: 8px; font-size: 11.5px; background: var(--color-bg); border-radius: 6px; padding: 10px; white-space: pre-wrap; color: var(--color-ink-muted); overflow: auto;">{{ ev.get('contenido_referencia', '') }}</pre>
+            </details>
+            {% endif %}
+          </div>
+          {% endfor %}
+        {% else %}
+          <div class="empty-state" style="margin: 0;">
+            <h3>Sin evidencias registradas</h3>
+            <p>Esta ejecución no contiene evidencias de agentes. Puede corresponder a una ejecución anterior.</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_head %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  document.querySelectorAll('.run-tab').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.run-tab').forEach((t) => t.classList.remove('is-active'));
+      document.querySelectorAll('.run-tab-panel').forEach((p) => p.classList.remove('is-active'));
+      tab.classList.add('is-active');
+      document.querySelector(`.run-tab-panel[data-tab="${tab.dataset.tab}"]`).classList.add('is-active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  const propuestaMd = {{ (run.propuesta_md or '') | tojson }};
+
+  function renderMarkdown(elId, md, emptyMsg) {
+    const el   = document.getElementById(elId);
+    const text = md || emptyMsg;
+    if (typeof marked !== 'undefined') {
+      el.innerHTML = marked.parse(text);
+    } else {
+      el.innerHTML = '<pre style="white-space: pre-wrap; font-family: inherit; font-size: 15px; line-height: 1.75; margin: 0;"></pre>';
+      el.querySelector('pre').textContent = text;
+    }
+  }
+
+  renderMarkdown('propuesta-markdown', propuestaMd,
+    '*No se ha generado una propuesta narrativa para esta ejecución.*');
+</script>
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block title %}Análisis en curso{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="progress-shell">
+
+    <div class="page-header">
+      <p class="eyebrow">
+        {% if request.endpoint and request.endpoint.startswith('deal_') %}
+          {{ department_name_deal }}
+        {% else %}
+          {{ department_name_kyc }}
+        {% endif %}
+      </p>
+      <h1>Analizando <span class="entity-name">{{ entity_name }}</span></h1>
+      <p>
+        Los {{ agent_steps | length }} agentes están procesando la solicitud.
+        Esta página se actualiza automáticamente; no es necesario recargar.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card__header">
+        <h2>Pipeline de agentes</h2>
+        <p>Sistema multiagente · GPT-5.2 sobre Azure OpenAI</p>
+      </div>
+      <ol class="pipeline-steps" id="pipeline-steps">
+        {% for step in agent_steps %}
+        <li class="pipeline-step" data-step="{{ step.key }}">
+          <div class="pipeline-step__rail">
+            <span class="pipeline-step__marker">{{ loop.index }}</span>
+            <span class="pipeline-step__line"></span>
+          </div>
+          <div class="pipeline-step__body">
+            <p class="pipeline-step__label">{{ step.label }}</p>
+            <p class="pipeline-step__desc">{{ step.desc }}</p>
+            <span class="pipeline-step__status">Pendiente</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="progress-error" id="progress-error">
+      Ha ocurrido un error durante el análisis. Consulta los registros del
+      sistema (app.log) para más detalle.
+    </div>
+
+    <div class="progress-cta" id="progress-cta">
+      <a href="#" id="progress-cta-link" class="btn btn-primary">Ver resultado completo</a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  const RUN_ID          = {{ run_id | tojson }};
+  const API_STATUS_URL  = {{ api_status_url | tojson }};
+  const RESULT_URL_PREFIX = {{ result_url_prefix | tojson }};
+
+  function applyState(state) {
+    document.querySelectorAll('#pipeline-steps .pipeline-step').forEach((el) => {
+      const key      = el.dataset.step;
+      const statusEl = el.querySelector('.pipeline-step__status');
+      el.classList.remove('is-active', 'is-done');
+      if (state.completed_steps.includes(key)) {
+        el.classList.add('is-done');
+        statusEl.textContent = 'Completado';
+      } else if (state.current_step === key) {
+        el.classList.add('is-active');
+        statusEl.textContent = 'En curso';
+      } else {
+        statusEl.textContent = 'Pendiente';
+      }
+    });
+    if (state.status === 'error') {
+      document.getElementById('progress-error').classList.add('is-visible');
+    }
+    if (state.status === 'done' && state.real_run_id) {
+      const cta  = document.getElementById('progress-cta');
+      const link = document.getElementById('progress-cta-link');
+      link.href = `${RESULT_URL_PREFIX}/${state.real_run_id}`;
+      cta.classList.add('is-visible');
+    }
+  }
+
+  async function poll() {
+    try {
+      const res   = await fetch(API_STATUS_URL);
+      if (!res.ok) return;
+      const state = await res.json();
+      applyState(state);
+      if (state.status === 'running') setTimeout(poll, 2500);
+    } catch (e) {
+      setTimeout(poll, 4000);
+    }
+  }
+
+  poll();
+</script>
+{% endblock %}

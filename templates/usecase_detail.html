@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}{{ uc.name }}{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <section class="uc-hero">
+    <p class="uc-hero__code">EXPEDIENTE {{ uc.code }} &middot; {{ department_name }}</p>
+    <h1>{{ uc.name }}</h1>
+    <p class="uc-hero__tagline">&ldquo;{{ uc.tagline }}&rdquo;</p>
+    {% if uc.status == 'available' %}
+    <div style="margin-top: 28px;">
+      {% if uc.slug == 'corporate-deal-intelligence' %}
+        <a href="{{ url_for('deal_index') }}" class="btn btn-primary">Empezar a usar este caso de uso</a>
+      {% else %}
+        <a href="{{ url_for('kyc_index') }}" class="btn btn-primary">Empezar a usar este caso de uso</a>
+      {% endif %}
+      <a href="{{ url_for('usecases_menu') }}" class="btn btn-secondary" style="margin-left: 12px;">Volver al menu</a>
+    </div>
+    {% endif %}
+  </section>
+
+  <section class="uc-section">
+    <p class="uc-section__label">Qué hace</p>
+    <p class="uc-lead">{{ uc.summary }}</p>
+  </section>
+
+  {% if uc.how_it_works %}
+  <section class="uc-section">
+    <p class="uc-section__label">Cómo funciona</p>
+    <h2>Del primer dato al material listo para la reunion</h2>
+    <div class="uc-flow">
+      {% for step in uc.how_it_works %}
+      <div class="uc-flow__item" style="--reveal-delay: {{ loop.index0 * 90 }}ms;">
+        <div class="uc-flow__rail">
+          <div class="uc-flow__node">{{ loop.index }}</div>
+          <div class="uc-flow__line"></div>
+        </div>
+        <div class="uc-flow__body">
+          <p class="uc-flow__title">{{ step.title }}</p>
+          <p class="uc-flow__desc">{{ step.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if uc.agents %}
+  <section class="uc-section">
+    <p class="uc-section__label">Agentes que intervienen</p>
+    <h2>Un equipo de {{ uc.agents | length }} especialistas</h2>
+    <div class="uc-agents">
+      {% for agent in uc.agents %}
+      <div class="uc-agent-chip">
+        <span class="uc-agent-chip__name">{{ agent.name }}</span>
+        <span class="uc-agent-chip__role">{{ agent.role }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if uc.disclaimer %}
+  <section class="uc-section">
+    <div class="uc-disclaimer">
+      <span class="uc-disclaimer__icon" aria-hidden="true">i</span>
+      <p>{{ uc.disclaimer }}</p>
+    </div>
+  </section>
+  {% endif %}
+
+  <div class="uc-cta">
+    {% if uc.status == 'available' %}
+      {% if uc.slug == 'corporate-deal-intelligence' %}
+        <a href="{{ url_for('deal_index') }}" class="btn btn-primary">Empezar a usar este caso de uso</a>
+      {% else %}
+        <a href="{{ url_for('kyc_index') }}" class="btn btn-primary">Empezar a usar este caso de uso</a>
+      {% endif %}
+    {% endif %}
+    <a href="{{ url_for('usecases_menu') }}" class="btn btn-secondary">Volver al menu</a>
+  </div>
+
+</div>
+{% endblock %}

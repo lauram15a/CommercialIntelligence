@@ -1,0 +1,47 @@
+{
+  "periodos": [
+    {
+      "periodo": "2022",
+      "ebitda": 280000,
+      "deuda_financiera": 600000,
+      "activo_corriente": 980000,
+      "pasivo_corriente": 450000,
+      "patrimonio_neto": 820000,
+      "ingresos": 2100000,
+      "gastos_financieros": 45000,
+      "data_gaps": []
+    },
+    {
+      "periodo": "2023",
+      "ebitda": 620000,
+      "deuda_financiera": 1200000,
+      "activo_corriente": 1850000,
+      "pasivo_corriente": 720000,
+      "patrimonio_neto": 1400000,
+      "ingresos": 3800000,
+      "gastos_financieros": 72000,
+      "data_gaps": []
+    },
+    {
+      "periodo": "2024",
+      "ebitda": 950000,
+      "deuda_financiera": 2000000,
+      "activo_corriente": 3100000,
+      "pasivo_corriente": 950000,
+      "patrimonio_neto": 2600000,
+      "ingresos": 5600000,
+      "gastos_financieros": 110000,
+      "data_gaps": []
+    }
+  ],
+  "audit_flags": [
+    "Salto >100% en EBITDA entre 2022 y 2023 (~121%): revisar posible cambio de criterio o error de extracción",
+    "Salto >100% en deuda_financiera entre 2022 y 2023 (100%): revisar posible error de extracción/escala",
+    "Salto >100% en activo_corriente entre 2023 y 2024 (~68%): OK (no supera 100%), sin flag",
+    "Salto >100% en patrimonio_neto entre 2023 y 2024 (~86%): OK (no supera 100%), sin flag",
+    "Salto >100% en ingresos entre 2022 y 2023 (~81%): OK (no supera 100%), sin flag",
+    "Salto >100% en deuda_financiera entre 2023 y 2024 (~67%): OK (no supera 100%), sin flag",
+    "Chequeo de signos: activo_corriente, pasivo_corriente y patrimonio_neto son positivos en todos los periodos (plausible)"
+  ],
+  "resumen": "Se normalizaron 3 periodos (2022-2024) con EBITDA, deuda_financiera, activo_corriente, pasivo_corriente, patrimonio_neto, ingresos y gastos_financieros completos en cada año. Se detectan saltos relevantes a revisar principalmente en EBITDA y deuda_financiera entre 2022 y 2023."
+}

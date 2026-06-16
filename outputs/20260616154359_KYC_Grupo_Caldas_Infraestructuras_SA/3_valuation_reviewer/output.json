@@ -1,0 +1,39 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 4.23,
+        "liquidez_corriente": 1.14,
+        "cobertura_intereses": 5.31,
+        "ebitda": 5200000,
+        "deuda_financiera": 22000000,
+        "ingresos": 68000000
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 5.21,
+        "liquidez_corriente": 1.04,
+        "cobertura_intereses": 4.36,
+        "ebitda": 4800000,
+        "deuda_financiera": 25000000,
+        "ingresos": 72000000
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 8.87,
+        "liquidez_corriente": 0.94,
+        "cobertura_intereses": 2.3,
+        "ebitda": 3100000,
+        "deuda_financiera": 27500000,
+        "ingresos": 69500000
+      }
+    ],
+    "variacion": {
+      "variacion_ebitda_pct": -35.4,
+      "variacion_deuda_financiera_pct": 10.0,
+      "variacion_ingresos_pct": -3.5
+    }
+  },
+  "interpretacion": "Entre 2022 y 2024 se observa un deterioro relevante del apalancamiento: el Debt/EBITDA pasa de 4,23x (2022) a 5,21x (2023) y 8,87x (2024), explicado por una caída del EBITDA del -35,4% interanual en 2024 (de 4,8M a 3,1M) junto con un aumento de la deuda financiera del +10,0% (hasta 27,5M). Esta evolución implica menor capacidad de repago vía generación operativa, pese a que los ingresos solo retroceden -3,5% interanual en 2024 (69,5M), lo que sugiere presión de márgenes/eficiencia. La liquidez corriente también se debilita, de 1,14 (2022) a 1,04 (2023) y 0,94 (2024), situándose por debajo de 1x en 2024 y elevando el riesgo de tensiones de circulante. En paralelo, la cobertura de intereses cae de 5,31x (2022) a 4,36x (2023) y 2,30x (2024), reduciendo el colchón ante subidas de tipos o volatilidad del resultado. \n\nEn el historial con el banco, la relación es recurrente (6 operaciones) y mantiene exposiciones vigentes al corriente (línea circulante 17,5M en 2023 y financiación de inversión 10,0M en 2024), lo que aporta evidencia de continuidad operativa y uso estable de productos (leasing, estructurada 2021 y línea de crédito). No obstante, constan una incidencia por retraso puntual en pagos en 2023 y 1 impago, que, combinados con el deterioro de apalancamiento, liquidez y cobertura, incrementan la sensibilidad del perfil de riesgo ante cualquier nueva presión de caja."
+}

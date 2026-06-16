@@ -1,0 +1,1085 @@
+{
+  "version": "2026-06-16.2",
+  "descripcion": "Repositorio unificado de fuentes externas simuladas (Deep Research) por empresa.",
+  "nota": "Incluye noticias y contexto externo publico potencialmente localizable en internet.",
+  "empresas": {
+    "Acme Componentes SL": {
+      "noticias": [
+        {
+          "empresa": "Acme Componentes SL",
+          "titulo": "Acme Componentes inaugura su primera planta de producción en Polonia",
+          "fuente": "Expansión",
+          "fecha": "2025-05-15",
+          "resumen": "La empresa zaragozana completa su expansión internacional con una planta en Wroclaw con capacidad para 120 empleados y una inversión de 9 millones de euros."
+        },
+        {
+          "empresa": "Acme Componentes SL",
+          "titulo": "Acme Componentes consolida su posición como proveedor de primer nivel para la automoción alemana",
+          "fuente": "El Economista",
+          "fecha": "2025-12-01",
+          "resumen": "La empresa ha renovado y ampliado sus contratos con dos fabricantes alemanes de primer nivel, asegurando ingresos por más de 15 millones hasta 2027."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Industrial",
+        "descripcion": "Fabricante de componentes industriales de precisión, con sede en Zaragoza.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Industrial.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Acme Componentes SL\" sanciones PEP adverse media",
+        "\"Acme Componentes SL\" litigio concurso administradores",
+        "\"Acme Componentes SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Alcántara Energía Renovable SL": {
+      "noticias": [
+        {
+          "empresa": "Alcántara Energía Renovable SL",
+          "titulo": "Alcántara Energía obtiene la autorización administrativa para su segunda planta en Badajoz",
+          "fuente": "Cinco Días",
+          "fecha": "2025-02-05",
+          "resumen": "La Junta de Extremadura ha concedido la autorización definitiva para la planta de 45 MW que la empresa tiene previsto construir en el término municipal de Mérida."
+        },
+        {
+          "empresa": "Alcántara Energía Renovable SL",
+          "titulo": "Alcántara Energía impulsará una nueva planta fotovoltaica en Extremadura",
+          "fuente": "El Economista",
+          "fecha": "2025-07-14",
+          "resumen": "La compañía invertirá más de 60 millones de euros en una nueva planta que incrementará su capacidad instalada en un 35%. El proyecto está en fase de cierre financiero."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Energía",
+        "descripcion": "Promotora y operadora de plantas fotovoltaicas en Extremadura y Castilla-La Mancha.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Energía.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Alcántara Energía Renovable SL\" sanciones PEP adverse media",
+        "\"Alcántara Energía Renovable SL\" litigio concurso administradores",
+        "\"Alcántara Energía Renovable SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Atlas Infra Rail SL": {
+      "noticias": [
+        {
+          "empresa": "Atlas Infra Rail SL",
+          "titulo": "Atlas Infra Rail se adjudica dos contratos ferroviarios por 64 millones",
+          "fuente": "Expansión",
+          "fecha": "2026-01-30",
+          "resumen": "La empresa andaluza refuerza su cartera con proyectos de modernización de infraestructura ferroviaria en Andalucía y Castilla-La Mancha."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Construcción",
+        "descripcion": "Contratista ferroviario especializado en modernización y mantenimiento de infraestructuras de vía.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Construcción.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Atlas Infra Rail SL\" sanciones PEP adverse media",
+        "\"Atlas Infra Rail SL\" litigio concurso administradores",
+        "\"Atlas Infra Rail SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "BioMédica Ibérica SA": {
+      "noticias": [
+        {
+          "empresa": "BioMédica Ibérica SA",
+          "titulo": "BioMédica Ibérica SA: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Salud y Farmacia con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "BioMédica Ibérica SA",
+          "titulo": "BioMédica Ibérica SA: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Salud y Farmacia",
+        "descripcion": "Fabricante de dispositivos médicos de diagnóstico in vitro, con planta en Murcia.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Salud y Farmacia.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"BioMédica Ibérica SA\" sanciones PEP adverse media",
+        "\"BioMédica Ibérica SA\" litigio concurso administradores",
+        "\"BioMédica Ibérica SA\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Bodegas Ribera del Viento SA": {
+      "noticias": [
+        {
+          "empresa": "Bodegas Ribera del Viento SA",
+          "titulo": "Bodegas Ribera del Viento SA: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Agroindustria con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "Bodegas Ribera del Viento SA",
+          "titulo": "Bodegas Ribera del Viento SA: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Agroindustria",
+        "descripcion": "Bodega con denominación de origen en Ribera del Duero, con exportación activa en Europa y Asia.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Agroindustria.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Bodegas Ribera del Viento SA\" sanciones PEP adverse media",
+        "\"Bodegas Ribera del Viento SA\" litigio concurso administradores",
+        "\"Bodegas Ribera del Viento SA\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Cadena Distribuidora Atlántica SL": {
+      "noticias": [
+        {
+          "empresa": "Cadena Distribuidora Atlántica SL",
+          "titulo": "Cadena Distribuidora Atlántica SL: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Retail y Distribución con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "Cadena Distribuidora Atlántica SL",
+          "titulo": "Cadena Distribuidora Atlántica SL: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Retail y Distribución",
+        "descripcion": "Red de distribución de productos de gran consumo en el noroeste de España.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Retail y Distribución.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Cadena Distribuidora Atlántica SL\" sanciones PEP adverse media",
+        "\"Cadena Distribuidora Atlántica SL\" litigio concurso administradores",
+        "\"Cadena Distribuidora Atlántica SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Constructora Bermejo e Hijos SL": {
+      "noticias": [
+        {
+          "empresa": "Constructora Bermejo e Hijos SL",
+          "titulo": "Constructora Bermejo e Hijos SL: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Construcción con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "Constructora Bermejo e Hijos SL",
+          "titulo": "Constructora Bermejo e Hijos SL: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Construcción",
+        "descripcion": "Empresa constructora familiar especializada en rehabilitación y obra civil en Andalucía.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Construcción.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Constructora Bermejo e Hijos SL\" sanciones PEP adverse media",
+        "\"Constructora Bermejo e Hijos SL\" litigio concurso administradores",
+        "\"Constructora Bermejo e Hijos SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Cooperativa Olivarera del Sur SCOOP": {
+      "noticias": [
+        {
+          "empresa": "Cooperativa Olivarera del Sur SCOOP",
+          "titulo": "Cooperativa Olivarera del Sur SCOOP: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Agroindustria con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "Cooperativa Olivarera del Sur SCOOP",
+          "titulo": "Cooperativa Olivarera del Sur SCOOP: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Agroindustria",
+        "descripcion": "Cooperativa olivarera con almazara propia y exportación directa a 22 países.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Agroindustria.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Cooperativa Olivarera del Sur SCOOP\" sanciones PEP adverse media",
+        "\"Cooperativa Olivarera del Sur SCOOP\" litigio concurso administradores",
+        "\"Cooperativa Olivarera del Sur SCOOP\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Datalyx Iberia SL": {
+      "noticias": [
+        {
+          "empresa": "Datalyx Iberia SL",
+          "titulo": "Datalyx Iberia recibe inversión de Nordic Capital para acelerar su expansión en banca",
+          "fuente": "Expansión",
+          "fecha": "2025-11-20",
+          "resumen": "El fondo de capital riesgo nórdico entra en el capital de la empresa barcelonesa con una participación del 35%, valorando la compañía en 42 millones de euros."
+        },
+        {
+          "empresa": "Datalyx Iberia SL",
+          "titulo": "Datalyx firma contrato con tres entidades financieras españolas de primer nivel",
+          "fuente": "CincoDías",
+          "fecha": "2026-03-05",
+          "resumen": "La empresa de analítica de datos cerrará 2026 con más de 20 millones en ingresos anuales recurrentes tras la incorporación de tres nuevos clientes institucionales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Tecnología",
+        "descripcion": "Proveedor de software de analítica de datos para el sector financiero, con sede en Barcelona.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Tecnología.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Datalyx Iberia SL\" sanciones PEP adverse media",
+        "\"Datalyx Iberia SL\" litigio concurso administradores",
+        "\"Datalyx Iberia SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Distribuciones Monteverde SA": {
+      "noticias": [
+        {
+          "empresa": "Distribuciones Monteverde SA",
+          "titulo": "Monteverde renegocia su deuda tras varios trimestres de tensión de liquidez",
+          "fuente": "La Información",
+          "fecha": "2024-12-12",
+          "resumen": "La compañía ha alcanzado un acuerdo con varias entidades para reestructurar su deuda financiera y evitar incumplimientos. El proceso implica una quita parcial de intereses."
+        },
+        {
+          "empresa": "Distribuciones Monteverde SA",
+          "titulo": "Distribuciones Monteverde registra su tercer año consecutivo de caída de ingresos",
+          "fuente": "El Economista",
+          "fecha": "2025-04-30",
+          "resumen": "La distribuidora valenciana cerró 2024 con unos ingresos de 33 millones, un 7% menos que en 2023. La dirección apunta a la pérdida de contratos con grandes cadenas como causa principal."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Retail y Distribución",
+        "descripcion": "Distribuidor mayorista multisectorial con sede en Valencia y red de clientes en todo el Levante.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Retail y Distribución.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Distribuciones Monteverde SA\" sanciones PEP adverse media",
+        "\"Distribuciones Monteverde SA\" litigio concurso administradores",
+        "\"Distribuciones Monteverde SA\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Grupo Caldas Infraestructuras SA": {
+      "noticias": [
+        {
+          "empresa": "Grupo Caldas Infraestructuras SA",
+          "titulo": "Sobrecostes en proyectos de obra pública tensionan márgenes de Grupo Caldas",
+          "fuente": "Cinco Días",
+          "fecha": "2025-03-22",
+          "resumen": "La compañía ha reconocido desviaciones relevantes en varios contratos, impactando negativamente en su rentabilidad. El EBITDA cayó un 35% en 2024."
+        },
+        {
+          "empresa": "Grupo Caldas Infraestructuras SA",
+          "titulo": "Grupo Caldas gana el contrato de ampliación de la A-4 por 87 millones",
+          "fuente": "El País",
+          "fecha": "2025-06-01",
+          "resumen": "El grupo constructor se adjudica un nuevo contrato con el Ministerio de Transportes, lo que aliviaría su cartera de pedidos para 2026."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Construcción",
+        "descripcion": "Constructora de obra pública especializada en infraestructuras viarias, con sede en Madrid.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Construcción.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Grupo Caldas Infraestructuras SA\" sanciones PEP adverse media",
+        "\"Grupo Caldas Infraestructuras SA\" litigio concurso administradores",
+        "\"Grupo Caldas Infraestructuras SA\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Hispania Biotech Labs SA": {
+      "noticias": [
+        {
+          "empresa": "Hispania Biotech Labs SA",
+          "titulo": "Hispania Biotech acelera su expansión con nueva línea de producción en Valencia",
+          "fuente": "CincoDías",
+          "fecha": "2026-02-19",
+          "resumen": "La compañía invertirá 14 millones de euros para duplicar su capacidad de producción de kits de diagnóstico durante los próximos 18 meses."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Salud y Farmacia",
+        "descripcion": "Compañía biotecnológica con foco en diagnóstico oncológico y expansión de capacidad productiva.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Salud y Farmacia.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Hispania Biotech Labs SA\" sanciones PEP adverse media",
+        "\"Hispania Biotech Labs SA\" litigio concurso administradores",
+        "\"Hispania Biotech Labs SA\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Ibérica Solar Partners SL": {
+      "noticias": [
+        {
+          "empresa": "Ibérica Solar Partners SL",
+          "titulo": "Ibérica Solar Partners SL: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Energía con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "Ibérica Solar Partners SL",
+          "titulo": "Ibérica Solar Partners SL: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Energía",
+        "descripcion": "Agregador de proyectos de energía solar y almacenamiento en la península ibérica.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Energía.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Ibérica Solar Partners SL\" sanciones PEP adverse media",
+        "\"Ibérica Solar Partners SL\" litigio concurso administradores",
+        "\"Ibérica Solar Partners SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Logística Transibérica SL": {
+      "noticias": [
+        {
+          "empresa": "Logística Transibérica SL",
+          "titulo": "El encarecimiento del combustible impacta en los costes del sector logístico",
+          "fuente": "Expansión",
+          "fecha": "2025-02-18",
+          "resumen": "Empresas del sector, incluyendo Transibérica, han visto reducidos sus márgenes debido al incremento de costes operativos. El EBITDA del sector cayó de media un 15% en 2024."
+        },
+        {
+          "empresa": "Logística Transibérica SL",
+          "titulo": "Logística Transibérica amplía su red de almacenes en el corredor mediterráneo",
+          "fuente": "Logística Profesional",
+          "fecha": "2025-09-10",
+          "resumen": "La empresa aragonesa ha inaugurado un nuevo almacén de 12.000 m² en Valencia para reforzar su presencia en el Arco Mediterráneo. La inversión asciende a 3,5 millones de euros."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Logística y Transporte",
+        "descripcion": "Entidad con presencia en Logística y Transporte.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Logística y Transporte.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Logística Transibérica SL\" sanciones PEP adverse media",
+        "\"Logística Transibérica SL\" litigio concurso administradores",
+        "\"Logística Transibérica SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Mediterránea Foods Export SA": {
+      "noticias": [
+        {
+          "empresa": "Mediterránea Foods Export SA",
+          "titulo": "Mediterránea Foods incrementa un 22% sus exportaciones en 2025",
+          "fuente": "El Economista",
+          "fecha": "2026-03-11",
+          "resumen": "El grupo murciano prevé ampliar planta en 2026 para atender mayor demanda internacional y reducir cuellos de botella logísticos."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Agroindustria",
+        "descripcion": "Exportador de conservas vegetales premium con presencia en UE, Reino Unido y Oriente Medio.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Agroindustria.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Mediterránea Foods Export SA\" sanciones PEP adverse media",
+        "\"Mediterránea Foods Export SA\" litigio concurso administradores",
+        "\"Mediterránea Foods Export SA\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Nexuria Tech Solutions SL": {
+      "noticias": [
+        {
+          "empresa": "Nexuria Tech Solutions SL",
+          "titulo": "Nexuria cierra una ronda de financiación de 8 millones para expandirse en Europa",
+          "fuente": "Expansión",
+          "fecha": "2025-10-03",
+          "resumen": "La startup tecnológica busca acelerar su crecimiento en mercados internacionales y ampliar su equipo de producto. La ronda fue liderada por Vertex Ventures Spain."
+        },
+        {
+          "empresa": "Nexuria Tech Solutions SL",
+          "titulo": "Nexuria lanza su plataforma de gestión financiera para pymes en Portugal y Francia",
+          "fuente": "CincoDías",
+          "fecha": "2026-01-18",
+          "resumen": "La empresa barcelonesa expande su presencia internacional tras completar la ronda de financiación. Prevé alcanzar los 8 millones de euros en ingresos recurrentes en 2026."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Tecnología",
+        "descripcion": "Empresa de tecnología de la información especializada en soluciones para pymes, con sede en Barcelona.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Tecnología.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Nexuria Tech Solutions SL\" sanciones PEP adverse media",
+        "\"Nexuria Tech Solutions SL\" litigio concurso administradores",
+        "\"Nexuria Tech Solutions SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Norte Logística SA": {
+      "noticias": [
+        {
+          "empresa": "Norte Logística SA",
+          "titulo": "Norte Logística lanza su servicio de transporte intermodal ferroviario en el corredor atlántico",
+          "fuente": "Logística Profesional",
+          "fecha": "2025-04-08",
+          "resumen": "La empresa vasca amplía su oferta con soluciones ferroviarias para reducir la huella de carbono de sus clientes industriales. La inversión en material rodante supera los 4 millones."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Industrial",
+        "descripcion": "Operador logístico especializado en transporte intermodal para el sector industrial, con sede en Vitoria-Gasteiz.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Industrial.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Norte Logística SA\" sanciones PEP adverse media",
+        "\"Norte Logística SA\" litigio concurso administradores",
+        "\"Norte Logística SA\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Patrimonios Centrales SA": {
+      "noticias": [
+        {
+          "empresa": "Patrimonios Centrales SA",
+          "titulo": "Patrimonios Centrales SA: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Inmobiliario con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "Patrimonios Centrales SA",
+          "titulo": "Patrimonios Centrales SA: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Inmobiliario",
+        "descripcion": "Sociedad patrimonialista con cartera diversificada de activos comerciales y de oficinas en Madrid.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Inmobiliario.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Patrimonios Centrales SA\" sanciones PEP adverse media",
+        "\"Patrimonios Centrales SA\" litigio concurso administradores",
+        "\"Patrimonios Centrales SA\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Promotora Levante Residencial SL": {
+      "noticias": [
+        {
+          "empresa": "Promotora Levante Residencial SL",
+          "titulo": "Promotora Levante Residencial SL: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Inmobiliario con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "Promotora Levante Residencial SL",
+          "titulo": "Promotora Levante Residencial SL: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Inmobiliario",
+        "descripcion": "Promotora inmobiliaria especializada en residencial de obra nueva en la Comunidad Valenciana.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Inmobiliario.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Promotora Levante Residencial SL\" sanciones PEP adverse media",
+        "\"Promotora Levante Residencial SL\" litigio concurso administradores",
+        "\"Promotora Levante Residencial SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Red Clínicas Meridional SL": {
+      "noticias": [
+        {
+          "empresa": "Red Clínicas Meridional SL",
+          "titulo": "Red Clínicas Meridional SL: seguimiento de crecimiento y posicion sectorial",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-04-10",
+          "resumen": "Se observan senales de actividad en Salud y Farmacia con foco en expansion y eficiencia operativa."
+        },
+        {
+          "empresa": "Red Clínicas Meridional SL",
+          "titulo": "Red Clínicas Meridional SL: analisis publico de entorno competitivo",
+          "fuente": "DeepResearch Mock Feed",
+          "fecha": "2026-05-20",
+          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Salud y Farmacia",
+        "descripcion": "Grupo de clínicas privadas especializadas en traumatología y fisioterapia en Andalucía.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Salud y Farmacia.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Red Clínicas Meridional SL\" sanciones PEP adverse media",
+        "\"Red Clínicas Meridional SL\" litigio concurso administradores",
+        "\"Red Clínicas Meridional SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    },
+    "Vertia Energía SL": {
+      "noticias": [
+        {
+          "empresa": "Vertia Energía SL",
+          "titulo": "Vertia Energía firma contratos de eficiencia energética por 28 millones en 2025",
+          "fuente": "El Economista",
+          "fecha": "2025-08-22",
+          "resumen": "La empresa madrileña ha cerrado cinco nuevos proyectos de eficiencia energética con grandes plantas industriales en Castilla y León y Aragón, impulsando su crecimiento al 45%."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Industrial",
+        "descripcion": "Proveedor de soluciones de eficiencia energética para plantas industriales, con sede en Alcobendas.",
+        "senal_mercado": "Sin senal especifica en el set actual."
+      },
+      "senales_externas": [
+        "Seguimiento de prensa economica y mercantil.",
+        "Revision de adjudicaciones/contratos publicos cuando aplique.",
+        "Validacion de cambios de administradores y estructura accionarial."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
+      ],
+      "cambios_societarios": [
+        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo macro y competitivo en sector Industrial.",
+        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Vertia Energía SL\" sanciones PEP adverse media",
+        "\"Vertia Energía SL\" litigio concurso administradores",
+        "\"Vertia Energía SL\" cuentas anuales auditoria deuda covenants"
+      ],
+      "fuentes_objetivo": [
+        "UE Consolidated",
+        "OFAC SDN",
+        "ONU",
+        "HMT UK",
+        "BORME",
+        "CNMV (si aplica)",
+        "Prensa economica especializada"
+      ],
+      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+    }
+  }
+}

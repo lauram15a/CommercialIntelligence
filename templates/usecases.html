@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Casos de uso{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <section class="hero">
+    <div class="hero__kicker">
+      <span class="dot" aria-hidden="true"></span>
+      Plataforma de agentes IA &middot; {{ bank_name }}
+    </div>
+    <h1 class="hero__title">Agentes especializados que <em>preparan el expediente</em> antes que tú.</h1>
+    <p class="hero__lede">
+      Cada caso de uso reúne a varios agentes de IA, cada uno experto en una tarea
+      concreta, que colaboran para entregar el trabajo de fondo ya hecho: lectura
+      de documentación, validaciones, cálculos y un informe listo para decidir.
+    </p>
+  </section>
+
+  <div class="usecase-grid">
+    {% for uc in use_cases %}
+      {% if uc.status == 'available' %}
+        <a href="{{ url_for('usecase_detail', slug=uc.slug) }}" class="usecase-card">
+          <div class="usecase-card__head">
+            <span class="usecase-card__code">{{ uc.code }}</span>
+            <span class="usecase-card__badge usecase-card__badge--available">Disponible</span>
+          </div>
+          <h2 class="usecase-card__title">{{ uc.name }}</h2>
+          <p class="usecase-card__tagline">{{ uc.tagline }}</p>
+          <p class="usecase-card__summary">{{ uc.summary }}</p>
+          <span class="usecase-card__cta">Ver cómo funciona <span class="arrow">→</span></span>
+        </a>
+      {% else %}
+        <div class="usecase-card usecase-card--disabled">
+          <div class="usecase-card__head">
+            <span class="usecase-card__code">{{ uc.code }}</span>
+            <span class="usecase-card__badge usecase-card__badge--soon">Próximamente</span>
+          </div>
+          <h2 class="usecase-card__title">{{ uc.name }}</h2>
+          <p class="usecase-card__tagline">{{ uc.tagline }}</p>
+          <p class="usecase-card__summary">{{ uc.summary }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>
+{% endblock %}

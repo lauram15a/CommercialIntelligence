@@ -1,0 +1,464 @@
+{
+  "run_id": "20260616160046",
+  "entity_name": "Datalyx Iberia SL",
+  "use_case": "kyc",
+  "kyc_output": {
+    "extracted_entities": [
+      {
+        "tipo_documento": "escritura",
+        "fecha_documento": "2018-02-14",
+        "entidad": {
+          "nombre_legal": "Datalyx Iberia SL",
+          "identificador_fiscal": "B87654321",
+          "titulares_reales": [
+            "Sofía Datalyx Ferrer",
+            "Nordic Capital Iberia BV",
+            "Marc Ribera Vidal"
+          ],
+          "administradores": [
+            "Sofía Datalyx Ferrer",
+            "Marc Ribera Vidal"
+          ],
+          "direccion": "Paseo de Gracia 55, 7ºA, 08007 Barcelona"
+        },
+        "datos_financieros": {
+          "ebitda": null,
+          "deuda_financiera": null,
+          "activo_corriente": null,
+          "pasivo_corriente": null,
+          "patrimonio_neto": null,
+          "ingresos": null,
+          "gastos_financieros": null,
+          "periodo": null
+        },
+        "alertas_extraidas": [
+          "Sin alertas registradas"
+        ],
+        "observaciones": "Documento legible y completo. Incluye información clara sobre titulares reales y administradores. No se observan incidencias ni alertas KYC. Expediente actualizado en 2025."
+      },
+      {
+        "tipo_documento": "balance",
+        "fecha_documento": null,
+        "entidad": {
+          "nombre_legal": "Datalyx Iberia SL",
+          "identificador_fiscal": "B87654321",
+          "titulares_reales": [],
+          "administradores": [],
+          "direccion": null
+        },
+        "datos_financieros": {
+          "ebitda": 1100000,
+          "deuda_financiera": 1500000,
+          "activo_corriente": 2800000,
+          "pasivo_corriente": 1200000,
+          "patrimonio_neto": 2200000,
+          "ingresos": 8200000,
+          "gastos_financieros": 85000,
+          "periodo": "2022"
+        },
+        "alertas_extraidas": [],
+        "observaciones": "Documento legible, datos financieros completos, sin información sobre titulares, administradores o dirección."
+      },
+      {
+        "tipo_documento": "balance",
+        "fecha_documento": null,
+        "entidad": {
+          "nombre_legal": "Datalyx Iberia SL",
+          "identificador_fiscal": "B87654321",
+          "titulares_reales": null,
+          "administradores": null,
+          "direccion": null
+        },
+        "datos_financieros": {
+          "ebitda": 1650000,
+          "deuda_financiera": 2100000,
+          "activo_corriente": 4100000,
+          "pasivo_corriente": 1600000,
+          "patrimonio_neto": 3800000,
+          "ingresos": 11500000,
+          "gastos_financieros": 110000,
+          "periodo": "2023"
+        },
+        "alertas_extraidas": [],
+        "observaciones": "Documento legible, datos financieros principales presentes, sin información sobre titulares reales, administradores o dirección."
+      },
+      {
+        "tipo_documento": "balance",
+        "fecha_documento": null,
+        "entidad": {
+          "nombre_legal": "Datalyx Iberia SL",
+          "identificador_fiscal": "B87654321",
+          "titulares_reales": null,
+          "administradores": null,
+          "direccion": null
+        },
+        "datos_financieros": {
+          "ebitda": 2400000,
+          "deuda_financiera": 3000000,
+          "activo_corriente": 6200000,
+          "pasivo_corriente": 2100000,
+          "patrimonio_neto": 5600000,
+          "ingresos": 15000000,
+          "gastos_financieros": 145000,
+          "periodo": "2024"
+        },
+        "alertas_extraidas": [],
+        "observaciones": "Documento legible, datos financieros claros y completos. No se identifican titulares reales, administradores ni dirección."
+      }
+    ],
+    "kyc_results": [
+      {
+        "rule_id": "KYC-001",
+        "name": "Documento de identidad presente",
+        "status": "FAIL",
+        "evidence": "no se encontró ningún documento tipo 'dni'"
+      },
+      {
+        "rule_id": "KYC-003",
+        "name": "Consistencia de nombre legal entre documentos",
+        "status": "PASS",
+        "evidence": "nombres encontrados: ['Datalyx Iberia SL']"
+      },
+      {
+        "rule_id": "KYC-004",
+        "name": "Titular real identificado",
+        "status": "PASS",
+        "evidence": "titulares reales presentes"
+      },
+      {
+        "rule_id": "KYC-005",
+        "name": "Información financiera presente",
+        "status": "PASS",
+        "evidence": "balance/PyG encontrado"
+      }
+    ],
+    "screening_results": [
+      {
+        "name": "Datalyx Iberia SL",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      },
+      {
+        "name": "Marc Ribera Vidal",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      },
+      {
+        "name": "Nordic Capital Iberia BV",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      },
+      {
+        "name": "Sofía Datalyx Ferrer",
+        "hits": [],
+        "source": "local_db",
+        "note": "fichero de sanciones no encontrado"
+      }
+    ],
+    "evidencias": [
+      {
+        "tipo": "fuente_interna_documental",
+        "id": "DOC-001",
+        "resultado": "OK",
+        "descripcion": "Extraccion estructurada de escritura_constitucion.txt (tipo detectado: escritura).",
+        "fuente": "Repositorio documental interno (expediente KYC)",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/doc-reader -> escritura_constitucion.txt",
+        "nota": "Documento legible y completo. Incluye información clara sobre titulares reales y administradores. No se observan incidencias ni alertas KYC. Expediente actualizado en 2025.",
+        "contenido_referencia": "FICHA IDENTIFICATIVA Y ESCRITURA DE CONSTITUCIÓN\nNombre legal: Datalyx Iberia SL\nNIF/CIF: B87654321\nForma jurídica: Sociedad de Responsabilidad Limitada\nDomicilio social: Paseo de Gracia 55, 7ºA, 08007 Barcelona\nFecha de constitución: 2018-02-14\nCapital social: 200,000 EUR\nCNAE: 6202 - Actividades de consultoría informática\nSector: Tecnología\nEmpleados: 120\n\nTITULARES REALES (UBO):\n  - Sofía Datalyx Ferrer (45.0% - española)\n  - Nordic Capital Iberia BV (35.0% - holandesa)\n  - Marc Ribera Vidal (20.0% - española)\n\nADMINISTRADORES:\n  - Sofía Datalyx Ferrer (CEO y Administradora Mancomunada)\n  -"
+      },
+      {
+        "tipo": "fuente_interna_documental",
+        "id": "DOC-002",
+        "resultado": "OK",
+        "descripcion": "Extraccion estructurada de balance_2022.txt (tipo detectado: balance).",
+        "fuente": "Repositorio documental interno (expediente KYC)",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/doc-reader -> balance_2022.txt",
+        "nota": "Documento legible, datos financieros completos, sin información sobre titulares, administradores o dirección.",
+        "contenido_referencia": "ESTADOS FINANCIEROS - EJERCICIO 2022\nEmpresa: Datalyx Iberia SL\nNIF/CIF: B87654321\nPeríodo: 2022\n\nCUENTA DE RESULTADOS:\n    Ingresos de explotación: 8,200,000 EUR\n    EBITDA: 1,100,000 EUR\n    Gastos financieros: 85,000 EUR\n\nBALANCE:\n    Activo corriente: 2,800,000 EUR\n    Pasivo corriente: 1,200,000 EUR\n    Deuda financiera neta: 1,500,000 EUR\n    Patrimonio neto: 2,200,000 EUR\n\nFuente: Sistemas contables del banco (datos remitidos por la empresa y validados internamente).\n"
+      },
+      {
+        "tipo": "fuente_interna_documental",
+        "id": "DOC-003",
+        "resultado": "OK",
+        "descripcion": "Extraccion estructurada de balance_2023.txt (tipo detectado: balance).",
+        "fuente": "Repositorio documental interno (expediente KYC)",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/doc-reader -> balance_2023.txt",
+        "nota": "Documento legible, datos financieros principales presentes, sin información sobre titulares reales, administradores o dirección.",
+        "contenido_referencia": "ESTADOS FINANCIEROS - EJERCICIO 2023\nEmpresa: Datalyx Iberia SL\nNIF/CIF: B87654321\nPeríodo: 2023\n\nCUENTA DE RESULTADOS:\n    Ingresos de explotación: 11,500,000 EUR\n    EBITDA: 1,650,000 EUR\n    Gastos financieros: 110,000 EUR\n\nBALANCE:\n    Activo corriente: 4,100,000 EUR\n    Pasivo corriente: 1,600,000 EUR\n    Deuda financiera neta: 2,100,000 EUR\n    Patrimonio neto: 3,800,000 EUR\n\nFuente: Sistemas contables del banco (datos remitidos por la empresa y validados internamente).\n"
+      },
+      {
+        "tipo": "fuente_interna_documental",
+        "id": "DOC-004",
+        "resultado": "OK",
+        "descripcion": "Extraccion estructurada de balance_2024.txt (tipo detectado: balance).",
+        "fuente": "Repositorio documental interno (expediente KYC)",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/doc-reader -> balance_2024.txt",
+        "nota": "Documento legible, datos financieros claros y completos. No se identifican titulares reales, administradores ni dirección.",
+        "contenido_referencia": "ESTADOS FINANCIEROS - EJERCICIO 2024\nEmpresa: Datalyx Iberia SL\nNIF/CIF: B87654321\nPeríodo: 2024\n\nCUENTA DE RESULTADOS:\n    Ingresos de explotación: 15,000,000 EUR\n    EBITDA: 2,400,000 EUR\n    Gastos financieros: 145,000 EUR\n\nBALANCE:\n    Activo corriente: 6,200,000 EUR\n    Pasivo corriente: 2,100,000 EUR\n    Deuda financiera neta: 3,000,000 EUR\n    Patrimonio neto: 5,600,000 EUR\n\nFuente: Sistemas contables del banco (datos remitidos por la empresa y validados internamente).\n"
+      },
+      {
+        "tipo": "regla_kyc",
+        "id": "KYC-001",
+        "resultado": "ALERTA",
+        "descripcion": "Documento de identidad presente - no se encontró ningún documento tipo 'dni'",
+        "fuente": "Motor de reglas KYC interno",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+      },
+      {
+        "tipo": "regla_kyc",
+        "id": "KYC-003",
+        "resultado": "OK",
+        "descripcion": "Consistencia de nombre legal entre documentos - nombres encontrados: ['Datalyx Iberia SL']",
+        "fuente": "Motor de reglas KYC interno",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+      },
+      {
+        "tipo": "regla_kyc",
+        "id": "KYC-004",
+        "resultado": "OK",
+        "descripcion": "Titular real identificado - titulares reales presentes",
+        "fuente": "Motor de reglas KYC interno",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+      },
+      {
+        "tipo": "regla_kyc",
+        "id": "KYC-005",
+        "resultado": "OK",
+        "descripcion": "Información financiera presente - balance/PyG encontrado",
+        "fuente": "Motor de reglas KYC interno",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-001",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de Datalyx Iberia SL con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> Datalyx Iberia SL",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-002",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de Marc Ribera Vidal con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> Marc Ribera Vidal",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-003",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de Nordic Capital Iberia BV con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> Nordic Capital Iberia BV",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "screening_sanciones",
+        "id": "SCR-004",
+        "resultado": "NO_CONCLUYENTE",
+        "descripcion": "Screening de Sofía Datalyx Ferrer con 0 coincidencia(s).",
+        "fuente": "local_db",
+        "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+        "trazabilidad": "KYC Screener/screening_lookup -> Sofía Datalyx Ferrer",
+        "nota": "fichero de sanciones no encontrado",
+        "contenido_referencia": ""
+      },
+      {
+        "tipo": "fuente_externa_noticias",
+        "id": "MKT-001",
+        "resultado": "OK",
+        "descripcion": "Registro de señales externas para riesgo reputacional/legal.",
+        "fuente": "Busqueda externa (local_db/fuentes_externas.json o fuente configurada)",
+        "fecha_extraccion": "2026-06-16T14:01:05+00:00",
+        "trazabilidad": "Market Researcher Agent -> entidad=Datalyx Iberia SL",
+        "nota": "La decision final requiere validacion manual de Cumplimiento y Riesgos.",
+        "contenido_referencia": "En las búsquedas realizadas no se han encontrado resultados públicos en las fuentes consultadas sobre **Datalyx Iberia SL** relacionados con noticias negativas/relevantes, **concurso de acreedores**, **litigios/demandas** o eventos corporativos destacables.  \n\nTampoco se ha localizado información externa relevante vinculada a las personas/entidades relacionadas consultadas (**Marc Ribera Vidal**, **Nordic Capital Iberia BV**, **Sofía Datalyx Ferrer**) en conexión directa con Datalyx Iberia SL.  \n\nDado que las búsquedas no devolvieron resultados, esto debe interpretarse como **“no se encontró información en las fuentes consultadas”**, no como ausencia de riesgo."
+      }
+    ]
+  },
+  "modelo_financiero": {
+    "periodos": [
+      {
+        "periodo": "2022",
+        "ebitda": 1100000,
+        "deuda_financiera": 1500000,
+        "activo_corriente": 2800000,
+        "pasivo_corriente": 1200000,
+        "patrimonio_neto": 2200000,
+        "ingresos": 8200000,
+        "gastos_financieros": 85000,
+        "data_gaps": []
+      },
+      {
+        "periodo": "2023",
+        "ebitda": 1650000,
+        "deuda_financiera": 2100000,
+        "activo_corriente": 4100000,
+        "pasivo_corriente": 1600000,
+        "patrimonio_neto": 3800000,
+        "ingresos": 11500000,
+        "gastos_financieros": 110000,
+        "data_gaps": []
+      },
+      {
+        "periodo": "2024",
+        "ebitda": 2400000,
+        "deuda_financiera": 3000000,
+        "activo_corriente": 6200000,
+        "pasivo_corriente": 2100000,
+        "patrimonio_neto": 5600000,
+        "ingresos": 15000000,
+        "gastos_financieros": 145000,
+        "data_gaps": []
+      }
+    ],
+    "audit_flags": [
+      "Salto >100% en patrimonio_neto entre 2022 (2200000) y 2023 (3800000): revisar extracción / posible cambio de perímetro o unidad.",
+      "Salto >100% en activo_corriente entre 2023 (4100000) y 2024 (6200000): revisar extracción / posible cambio de perímetro o unidad."
+    ],
+    "resumen": "Se normalizaron 3 periodos (2022-2024) con EBITDA, deuda financiera, activo/pasivo corriente, patrimonio neto, ingresos y gastos financieros completos en todos los años. Se detectan saltos >100% en patrimonio neto (2022-2023) y en activo corriente (2023-2024) que conviene validar contra los documentos fuente."
+  },
+  "valuation_output": {
+    "ratios": {
+      "ratios_por_periodo": [
+        {
+          "periodo": "2022",
+          "debt_ebitda": 1.36,
+          "liquidez_corriente": 2.33,
+          "cobertura_intereses": 12.94,
+          "ebitda": 1100000,
+          "deuda_financiera": 1500000,
+          "ingresos": 8200000
+        },
+        {
+          "periodo": "2023",
+          "debt_ebitda": 1.27,
+          "liquidez_corriente": 2.56,
+          "cobertura_intereses": 15.0,
+          "ebitda": 1650000,
+          "deuda_financiera": 2100000,
+          "ingresos": 11500000
+        },
+        {
+          "periodo": "2024",
+          "debt_ebitda": 1.25,
+          "liquidez_corriente": 2.95,
+          "cobertura_intereses": 16.55,
+          "ebitda": 2400000,
+          "deuda_financiera": 3000000,
+          "ingresos": 15000000
+        }
+      ],
+      "variacion": {
+        "variacion_ebitda_pct": 45.5,
+        "variacion_deuda_financiera_pct": 42.9,
+        "variacion_ingresos_pct": 30.4
+      }
+    },
+    "interpretacion": "Entre 2022 y 2024 el apalancamiento (Debt/EBITDA) mejora ligeramente de 1,36x a 1,25x (2023: 1,27x), lo que sugiere una mayor capacidad de repago relativa pese al crecimiento de la deuda. En términos absolutos, la deuda financiera aumenta un +42,9% interanual mientras el EBITDA crece un +45,5%, manteniendo el ratio contenido y coherente con una expansión del negocio. La liquidez corriente se fortalece de 2,33x (2022) a 2,95x (2024), indicando holgura para atender obligaciones de corto plazo. La cobertura de intereses también mejora de 12,94x a 16,55x, lo que reduce el riesgo de tensión financiera ante subidas de tipos o caídas moderadas del resultado. Los ingresos crecen un +30,4% interanual, apoyando la tendencia de mejora operativa y la sostenibilidad del servicio de deuda. En el historial con el banco constan 2 operaciones (línea de circulante y financiación de inversión) ambas vigentes y al corriente, con impagos=0 e incidencias=0, lo que es consistente con un comportamiento de pago adecuado. La existencia de productos transaccionales (línea de circulante y confirming) aporta visibilidad adicional sobre la operativa, sin señales de deterioro en el comportamiento registrado."
+  },
+  "market_research_output": "En las búsquedas realizadas no se han encontrado resultados públicos en las fuentes consultadas sobre **Datalyx Iberia SL** relacionados con noticias negativas/relevantes, **concurso de acreedores**, **litigios/demandas** o eventos corporativos destacables.  \n\nTampoco se ha localizado información externa relevante vinculada a las personas/entidades relacionadas consultadas (**Marc Ribera Vidal**, **Nordic Capital Iberia BV**, **Sofía Datalyx Ferrer**) en conexión directa con Datalyx Iberia SL.  \n\nDado que las búsquedas no devolvieron resultados, esto debe interpretarse como **“no se encontró información en las fuentes consultadas”**, no como ausencia de riesgo.",
+  "historial": {
+    "operaciones_anteriores": 2,
+    "incidencias": [],
+    "impagos": 0,
+    "productos_contratados": [
+      "linea circulante",
+      "confirming"
+    ],
+    "operaciones_detalle": [
+      {
+        "fecha": "2023-03-15",
+        "tipo": "linea_circulante",
+        "importe": 700000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-07-10",
+        "tipo": "financiacion_inversion",
+        "importe": 400000,
+        "estado": "vigente_al_corriente"
+      }
+    ],
+    "resumen_historial": "Relacion historica con 2 operaciones registradas; impagos=0; incidencias=0."
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_kyc_screener",
+      "id": "AGT-KYC-001",
+      "agente": "KYC Screener Agent",
+      "resultado": "OK",
+      "descripcion": "Extraccion documental, reglas KYC y screening ejecutados.",
+      "fuente": "Fuentes internas + screening local/operativo",
+      "fecha_extraccion": "2026-06-16T14:00:53+00:00",
+      "trazabilidad": "1_kyc_screener/output.json",
+      "nota": "Documentos procesados: 4; reglas evaluadas: 4; sujetos screeneados: 4."
+    },
+    {
+      "tipo": "agente_model_builder",
+      "id": "AGT-KYC-002",
+      "agente": "Model Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Normalizacion financiera multi-periodo y deteccion de audit flags.",
+      "fuente": "Datos financieros extraidos del expediente",
+      "fecha_extraccion": "2026-06-16T14:00:59+00:00",
+      "trazabilidad": "2_model_builder/output.json",
+      "nota": "Periodos normalizados: 3; audit_flags: 2."
+    },
+    {
+      "tipo": "agente_market_researcher",
+      "id": "AGT-KYC-003",
+      "agente": "Market Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Recopilacion y sintesis de señales externas reputacionales y legales.",
+      "fuente": "fuentes_externas.json / agregador configurado",
+      "fecha_extraccion": "2026-06-16T14:01:05+00:00",
+      "trazabilidad": "4_market_researcher/output.txt",
+      "nota": "Hallazgos externos sujetos a verificacion manual de Cumplimiento y Riesgos.",
+      "contenido_referencia": "En las búsquedas realizadas no se han encontrado resultados públicos en las fuentes consultadas sobre **Datalyx Iberia SL** relacionados con noticias negativas/relevantes, **concurso de acreedores**, **litigios/demandas** o eventos corporativos destacables.  \n\nTampoco se ha localizado información externa relevante vinculada a las personas/entidades relacionadas consultadas (**Marc Ribera Vidal**, **Nordic Capital Iberia BV**, **Sofía Datalyx Ferrer**) en conexión directa con Datalyx Iberia SL.  \n\nDado que las búsquedas no devolvieron resultados, esto debe interpretarse como **“no se encontró información en las fuentes consultadas”**, no como ausencia de riesgo."
+    },
+    {
+      "tipo": "agente_valuation_reviewer",
+      "id": "AGT-KYC-004",
+      "agente": "Valuation Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Calculo de ratios y analisis de riesgo cruzado con historial del cliente.",
+      "fuente": "Modelo financiero normalizado + historial interno",
+      "fecha_extraccion": "2026-06-16T14:01:11+00:00",
+      "trazabilidad": "3_valuation_reviewer/output.json",
+      "nota": "Ratios calculados para 3 periodos; historial disponible: si."
+    },
+    {
+      "tipo": "agente_credit_risk_report",
+      "id": "AGT-KYC-005",
+      "agente": "Credit Risk Report Agent",
+      "resultado": "OK",
+      "descripcion": "Sintesis integral para comite de riesgos con recomendaciones operativas.",
+      "fuente": "Outputs de KYC Screener, Model Builder, Market Researcher y Valuation Reviewer",
+      "fecha_extraccion": "2026-06-16T14:01:31+00:00",
+      "trazabilidad": "informe.md",
+      "nota": "La decision final de riesgo corresponde al analista y al comite.",
+      "contenido_referencia": "# Informe de riesgo - Datalyx Iberia SL\n\n## Resumen ejecutivo\nDatalyx Iberia SL presenta un expediente societario consistente (nombre y NIF coherentes) y con titulares reales/administradores identificados según el **KYC Screener Agent** (escritura 2018-02-14, expediente actualizado en 2025). La principal brecha KYC es la **ausencia de documentos de identidad (DNI) de personas físicas** (regla KYC-001 en FAIL). En lo financiero (2022–2024), el negocio muestra crecimiento de ingresos y EBITDA, con apalancamiento moderado y métricas de liquidez y cobertura de intereses en mejora, según **Model Builder** y **Valuation Reviewer**. Existen **flags de consistencia** por saltos relevantes en patrimonio neto (2022–2023) y activo corriente (2023–2024) que requieren validación contra fuente. En señales externas, el **Market Researcher** no encontró información pública negativa en las fuentes consul"
+    }
+  ]
+}

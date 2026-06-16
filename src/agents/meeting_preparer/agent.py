@@ -26,7 +26,7 @@ Recibiras:
 1. El nombre de la empresa objetivo y el motivo por el que fue identificada
    como oportunidad (del Opportunity Researcher Agent).
 2. El analisis de resultados financieros del Earnings Reviewer Agent (texto).
-3. (Opcional) Una vision financiera basica del Model Builder Agent.
+3. Una vision financiera basica del Model Builder Agent.
 
 TAREA: genera un BRIEFING DE CLIENTE estructurado en JSON:
 

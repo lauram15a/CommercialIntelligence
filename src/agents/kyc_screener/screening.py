@@ -53,7 +53,7 @@ def local_screening_lookup(name: str) -> dict:
         "hits": hits,
         "source": "local_db",
         "note": (
-            "Resultado basado en fuente local de demo; repetir screening en fuente operativa "
+            "Resultado basado en fuente local; repetir screening en fuente operativa "
             "actualizada (UE/OFAC/ONU/HMT y/o proveedor interno) para cierre concluyente."
         ),
         "confidence": "non_conclusive" if not hits else "review_required",

@@ -2,7 +2,7 @@
 agents/kyc_screener/agent.py
 ==============================
 KYC Screener Agent - Agente 1 de 5 del sistema multiagente.
-Cubre los pasos 1-2 del artículo (ingesta documental + validación KYC).
+Cubre los pasos 1-2 del artículo (validación KYC).
 
 Internamente orquesta tres sub-pasos (equivalentes a los subagentes
 doc-reader / rules-engine / screening del cookbook original):

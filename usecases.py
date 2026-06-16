@@ -28,8 +28,6 @@ USE_CASES = [
             "noticias públicas y listas de sanciones o PEP."
         ),
         "how_it_works": [
-            {"title": "Ingesta documental",
-             "description": "El sistema recopila y organiza todos los documentos de la solicitud, sea cual sea su formato de origen."},
             {"title": "Validación KYC",
              "description": "Comprueba identidad, vigencia de documentos, consistencia de nombres, titular real, sanciones y PEP, con una explicación clara de cada hallazgo."},
             {"title": "Extracción financiera",
@@ -62,7 +60,7 @@ USE_CASES = [
             "manteniendo siempre el control humano sobre la decisión final."
         ),
         "agents": [
-            {"name": "KYC Screener Agent",      "role": "Ingesta y validación KYC"},
+            {"name": "KYC Screener Agent",      "role": "Validación KYC"},
             {"name": "Model Builder Agent",      "role": "Normalización financiera"},
             {"name": "Market Researcher Agent",  "role": "Señales externas"},
             {"name": "Valuation Reviewer Agent", "role": "Análisis de riesgo"},
@@ -128,7 +126,7 @@ USE_CASES = [
         "agents": [
             {"name": "Opportunity Researcher Agent", "role": "Identificación de oportunidades"},
             {"name": "Earnings Reviewer Agent",      "role": "Análisis financiero"},
-            {"name": "Model Builder Agent",          "role": "Visión financiera (opcional)"},
+            {"name": "Model Builder Agent",          "role": "Visión financiera"},
             {"name": "Meeting Preparer Agent",       "role": "Briefing de cliente"},
             {"name": "Pitch Builder Agent",          "role": "Propuesta y pitchbook"},
         ],

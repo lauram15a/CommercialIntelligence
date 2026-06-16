@@ -54,7 +54,7 @@ class BankConfig:
         "Herramienta de apoyo al analista. Las recomendaciones generadas no "
         "constituyen una decision de aprobacion o denegacion de la operacion. "
         "La decision final corresponde al analista y al comite de riesgos."))
-    DEPARTMENT_NAME_KYC  = os.environ.get("BANK_DEPARTMENT_NAME_KYC",  _ui.get("DEPARTMENT_NAME_KYC",  "Direccion de Riesgos - Onboarding KYC"))
+    DEPARTMENT_NAME_KYC  = os.environ.get("BANK_DEPARTMENT_NAME_KYC",  _ui.get("DEPARTMENT_NAME_KYC",  "Dirección de Riesgos - Onboarding KYC"))
     DEPARTMENT_NAME_DEAL = os.environ.get("BANK_DEPARTMENT_NAME_DEAL", _ui.get("DEPARTMENT_NAME_DEAL", "Banca Corporativa - Deal Intelligence"))
 
     @classmethod

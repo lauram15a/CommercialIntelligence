@@ -27,7 +27,7 @@ Recibiras:
 1. El nombre de la empresa objetivo, el sector y el motivo de la oportunidad.
 2. El analisis de resultados financieros del Earnings Reviewer Agent.
 3. El briefing del Meeting Preparer Agent.
-4. (Opcional) La vision financiera basica del Model Builder Agent.
+4. La vision financiera basica del Model Builder Agent.
 
 TAREA: redacta el contenido de una PROPUESTA COMERCIAL en formato JSON:
 

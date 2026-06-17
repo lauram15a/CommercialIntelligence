@@ -1,0 +1,20 @@
+{
+  "sector": "Tecnología",
+  "oportunidades": [
+    {
+      "empresa": "Datalyx Iberia SL",
+      "motivo": "La ronda privada reciente sugiere un plan de aceleración (internacionalización y/o preparación para una adquisición), lo que suele abrir necesidad de financiación no dilutiva para extender runway y ejecutar crecimiento. El encaje explícito con venture debt y un posible escenario de M&A la convierten en una oportunidad inmediata de asesoramiento y estructuración de capital.",
+      "prioridad": "alta",
+      "ingresos_estimados": 15000000,
+      "empleados": 120
+    },
+    {
+      "empresa": "Nexuria Tech Solutions SL",
+      "motivo": "El fuerte crecimiento de ingresos y la búsqueda de inversores estratégicos apuntan a un periodo de transición con potencial gap de liquidez, donde una financiación puente puede ser relevante para sostener el plan comercial. Además, el proceso con inversores puede derivar en operaciones corporativas (entrada de socio, compra parcial/total), abriendo oportunidad de asesoramiento.",
+      "prioridad": "media",
+      "ingresos_estimados": 5600000,
+      "empleados": 62
+    }
+  ],
+  "resumen": "En tecnología, las señales de rondas privadas y crecimientos acelerados suelen anticipar necesidades de capital para escalar (especialmente internacionalización) y para financiar transiciones corporativas. En este conjunto, predominan oportunidades de financiación no dilutiva/puente y de asesoramiento ligado a procesos con inversores estratégicos y potencial M&A."
+}

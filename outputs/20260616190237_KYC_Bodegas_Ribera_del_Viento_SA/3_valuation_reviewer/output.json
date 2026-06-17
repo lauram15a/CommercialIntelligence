@@ -1,0 +1,7 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [],
+    "variacion": {}
+  },
+  "interpretacion": "Con la información disponible no es posible evaluar la evolución del apalancamiento (Debt/EBITDA), ya que no se han proporcionado ratios por periodo ni variación interanual (ratios_por_periodo vacío y variacion sin datos). En consecuencia, no puede concluirse si la capacidad de repago ha mejorado o se ha deteriorado por cambios en el endeudamiento relativo o en la generación de EBITDA. Tampoco se dispone de datos de liquidez corriente (current ratio) ni de cobertura de intereses, por lo que no es posible valorar la holgura de caja de corto plazo ni la capacidad de atender el servicio de la deuda con resultados operativos. Desde la perspectiva cualitativa, el cliente no presenta relación histórica con el banco (0 operaciones anteriores) y no constan productos contratados, lo que limita la evidencia de comportamiento transaccional. No se registran incidencias ni impagos (0), si bien la ausencia de historial reduce el valor predictivo de este dato. Para completar el análisis, sería necesario contar con Debt/EBITDA por al menos dos periodos (y su YoY), liquidez corriente y cobertura de intereses, además de deuda total, EBITDA LTM y gasto financiero para validar consistencia."
+}

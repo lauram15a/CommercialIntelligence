@@ -1,0 +1,20 @@
+{
+  "sector": "Tecnología",
+  "oportunidades": [
+    {
+      "empresa": "Datalyx Iberia SL",
+      "motivo": "La ronda privada reciente sugiere un punto de inflexión (aceleración internacional y/o preparación para una adquisición), donde suele encajar financiación complementaria y asesoramiento corporativo. El interés explícito en venture debt indica una necesidad inmediata de capital no dilutivo para extender runway y ejecutar crecimiento/M&A.",
+      "prioridad": "alta",
+      "ingresos_estimados": 15000000,
+      "empleados": 120
+    },
+    {
+      "empresa": "Nexuria Tech Solutions SL",
+      "motivo": "El fuerte crecimiento (47% en 2024) y la captación de inversores estratégicos suelen generar necesidades de liquidez de corto plazo para sostener el plan comercial hasta el cierre de la operación. La mención de financiación puente abre una ventana para estructurar financiación temporal y acompañar en el proceso de M&A/entrada de socio.",
+      "prioridad": "media",
+      "ingresos_estimados": 5600000,
+      "empleados": 62
+    }
+  ],
+  "resumen": "En tecnología, las oportunidades más accionables suelen concentrarse en compañías en fase de escalado con rondas recientes o procesos de entrada de inversor, donde aparecen necesidades de capital no dilutivo, financiación puente y asesoramiento corporativo. El dinamismo de crecimiento y la consolidación (M&A) hacen que el “timing” sea clave para originar mandatos antes de hitos de expansión o transacciones."
+}

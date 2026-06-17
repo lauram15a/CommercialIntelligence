@@ -1,0 +1,122 @@
+{
+  "extracted_entities": [
+    {
+      "tipo_documento": "escritura",
+      "fecha_documento": null,
+      "entidad": {
+        "nombre_legal": "Bodegas Ribera del Viento SA",
+        "identificador_fiscal": null,
+        "titulares_reales": [],
+        "administradores": [],
+        "direccion": null
+      },
+      "datos_financieros": {
+        "ebitda": null,
+        "deuda_financiera": null,
+        "activo_corriente": null,
+        "pasivo_corriente": null,
+        "patrimonio_neto": null,
+        "ingresos": null,
+        "gastos_financieros": null,
+        "periodo": null
+      },
+      "alertas_extraidas": [],
+      "observaciones": "Documento legible pero con ausencia de datos clave: NIF/CIF, domicilio social, fecha de constitución, titulares reales y administradores no constan. Solo se indica sector, empleados y una breve descripción de actividad."
+    }
+  ],
+  "kyc_results": [
+    {
+      "rule_id": "KYC-001",
+      "name": "Documento de identidad presente",
+      "status": "FAIL",
+      "evidence": "no se encontró ningún documento tipo 'dni'"
+    },
+    {
+      "rule_id": "KYC-003",
+      "name": "Consistencia de nombre legal entre documentos",
+      "status": "PASS",
+      "evidence": "nombres encontrados: ['Bodegas Ribera del Viento SA']"
+    },
+    {
+      "rule_id": "KYC-004",
+      "name": "Titular real identificado",
+      "status": "FAIL",
+      "evidence": "no se identifica titular real"
+    },
+    {
+      "rule_id": "KYC-005",
+      "name": "Información financiera presente",
+      "status": "FAIL",
+      "evidence": "faltan estados financieros"
+    }
+  ],
+  "screening_results": [
+    {
+      "name": "Bodegas Ribera del Viento SA",
+      "hits": [],
+      "source": "local_db",
+      "note": "Resultado basado en fuente local; repetir screening en fuente operativa actualizada (UE/OFAC/ONU/HMT y/o proveedor interno) para cierre concluyente.",
+      "confidence": "non_conclusive"
+    }
+  ],
+  "evidencias": [
+    {
+      "tipo": "fuente_interna_documental",
+      "id": "DOC-001",
+      "resultado": "OK",
+      "descripcion": "Extraccion estructurada de escritura_constitucion.txt (tipo detectado: escritura).",
+      "fuente": "Repositorio documental interno (expediente KYC)",
+      "fecha_extraccion": "2026-06-16T17:02:49+00:00",
+      "trazabilidad": "KYC Screener/doc-reader -> escritura_constitucion.txt",
+      "nota": "Documento legible pero con ausencia de datos clave: NIF/CIF, domicilio social, fecha de constitución, titulares reales y administradores no constan. Solo se indica sector, empleados y una breve descripción de actividad.",
+      "contenido_referencia": "FICHA IDENTIFICATIVA Y ESCRITURA DE CONSTITUCIÓN\nNombre legal: Bodegas Ribera del Viento SA\nNIF/CIF: No consta en BBDD KYC\nForma jurídica: No consta\nDomicilio social: No consta\nFecha de constitución: No consta\nCapital social: No consta EUR\nCNAE: No consta\nSector: Agroindustria\nEmpleados: 62\n\nTITULARES REALES (UBO):\n  - No consta\n\nADMINISTRADORES:\n  - No consta\n\nALERTAS KYC REGISTRADAS EN BBDD DEL BANCO:\n  - Sin alertas registradas\n\nOBSERVACIONES INTERNAS:\nEmpresa seleccionada desde la BBDD de oportunidades Deal. Descripción: Bodega con denominación de origen en Ribera del Duero, con exportació"
+    },
+    {
+      "tipo": "regla_kyc",
+      "id": "KYC-001",
+      "resultado": "ALERTA",
+      "descripcion": "Documento de identidad presente - no se encontró ningún documento tipo 'dni'",
+      "fuente": "Motor de reglas KYC interno",
+      "fecha_extraccion": "2026-06-16T17:02:49+00:00",
+      "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+    },
+    {
+      "tipo": "regla_kyc",
+      "id": "KYC-003",
+      "resultado": "OK",
+      "descripcion": "Consistencia de nombre legal entre documentos - nombres encontrados: ['Bodegas Ribera del Viento SA']",
+      "fuente": "Motor de reglas KYC interno",
+      "fecha_extraccion": "2026-06-16T17:02:49+00:00",
+      "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+    },
+    {
+      "tipo": "regla_kyc",
+      "id": "KYC-004",
+      "resultado": "ALERTA",
+      "descripcion": "Titular real identificado - no se identifica titular real",
+      "fuente": "Motor de reglas KYC interno",
+      "fecha_extraccion": "2026-06-16T17:02:49+00:00",
+      "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+    },
+    {
+      "tipo": "regla_kyc",
+      "id": "KYC-005",
+      "resultado": "ALERTA",
+      "descripcion": "Información financiera presente - faltan estados financieros",
+      "fuente": "Motor de reglas KYC interno",
+      "fecha_extraccion": "2026-06-16T17:02:49+00:00",
+      "trazabilidad": "KYC Screener/evaluate_kyc_rules"
+    },
+    {
+      "tipo": "screening_sanciones",
+      "id": "SCR-001",
+      "resultado": "NO_CONCLUYENTE",
+      "descripcion": "Screening de Bodegas Ribera del Viento SA con 0 coincidencia(s).",
+      "fuente": "local_db",
+      "fecha_extraccion": "2026-06-16T17:02:49+00:00",
+      "trazabilidad": "KYC Screener/screening_lookup -> Bodegas Ribera del Viento SA",
+      "nota": "Resultado basado en fuente local; repetir screening en fuente operativa actualizada (UE/OFAC/ONU/HMT y/o proveedor interno) para cierre concluyente.",
+      "contenido_referencia": ""
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "run_id": "20260616190526",
+  "sector": "Tecnología",
+  "company_name": "Datalyx Iberia SL",
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Tecnología",
+    "oportunidades": [
+      {
+        "empresa": "Datalyx Iberia SL",
+        "motivo": "La ronda privada reciente sugiere un punto de inflexión (aceleración internacional y/o preparación para una adquisición), donde suele encajar financiación complementaria y asesoramiento corporativo. El interés explícito en venture debt indica una necesidad inmediata de capital no dilutivo para extender runway y ejecutar crecimiento/M&A.",
+        "prioridad": "alta",
+        "ingresos_estimados": 15000000,
+        "empleados": 120
+      },
+      {
+        "empresa": "Nexuria Tech Solutions SL",
+        "motivo": "El fuerte crecimiento (47% en 2024) y la captación de inversores estratégicos suelen generar necesidades de liquidez de corto plazo para sostener el plan comercial hasta el cierre de la operación. La mención de financiación puente abre una ventana para estructurar financiación temporal y acompañar en el proceso de M&A/entrada de socio.",
+        "prioridad": "media",
+        "ingresos_estimados": 5600000,
+        "empleados": 62
+      }
+    ],
+    "resumen": "En tecnología, las oportunidades más accionables suelen concentrarse en compañías en fase de escalado con rondas recientes o procesos de entrada de inversor, donde aparecen necesidades de capital no dilutivo, financiación puente y asesoramiento corporativo. El dinamismo de crecimiento y la consolidación (M&A) hacen que el “timing” sea clave para originar mandatos antes de hitos de expansión o transacciones."
+  },
+  "earnings_summary": "Datalyx Iberia SL presenta unos ingresos estimados de ~15,0 M€ (con ~120 empleados), lo que sugiere una escala ya relevante para una compañía tecnológica en fase de crecimiento. No se aportan datos comparativos por ejercicio, por lo que no es posible cuantificar la evolución interanual de ingresos ni inferir tendencias de crecimiento. Tampoco hay información de margen operativo/EBITDA, CAPEX o endeudamiento, limitando el análisis de rentabilidad, intensidad inversora y estructura de capital. La señal cualitativa más relevante es la “ronda privada reciente” y el interés explícito en venture debt, que apunta a una fase de aceleración (internacionalización y/o preparación para M&A) y a una prioridad por capital no dilutivo para extender runway. En conjunto, la compañía presenta indicios de transición a una etapa de expansión y posible actividad corporativa, lo que puede implicar una necesidad de financiación complementaria y apoyo de asesoramiento para ejecutar crecimiento y/o adquisiciones.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos estimados",
+        "valor": "~15,0 M€"
+      },
+      {
+        "nombre": "Empleados",
+        "valor": "~120"
+      },
+      {
+        "nombre": "Ronda privada reciente",
+        "valor": "Sí (cualitativo)"
+      },
+      {
+        "nombre": "Interés en venture debt",
+        "valor": "Explícito (cualitativo)"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Escalado de una compañía tecnológica en fase de crecimiento con tamaño ya relevante.",
+      "Transición hacia una etapa de expansión (p.ej., internacionalización) y/o preparación para M&A.",
+      "Preferencia por financiación no dilutiva para extender runway tras una ronda privada reciente."
+    ],
+    "interpretacion": "Con ingresos estimados de ~15,0 M€ y ~120 empleados, la compañía parece estar en una fase de expansión, pero faltan datos de márgenes, CAPEX y deuda para evaluar rentabilidad y capacidad de servicio. La ronda privada reciente y el interés en venture debt sugieren foco en extender runway y financiar crecimiento sin dilución. Esto podría implicar necesidad de financiación complementaria (deuda venture/estructuras flexibles) y apoyo de asesoramiento para ejecutar planes de crecimiento y/o adquisiciones.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Datalyx Iberia SL es una compañía tecnológica en fase de crecimiento con una escala ya relevante, con ingresos estimados de ~15,0 M€ y ~120 empleados. La empresa ha realizado recientemente una ronda privada y ha manifestado interés explícito en venture debt, lo que sugiere foco en crecimiento acelerado con capital no dilutivo.",
+    "situacion_actual": "La ronda privada reciente apunta a un punto de inflexión estratégico, potencialmente ligado a internacionalización y/o preparación para una operación corporativa (M&A). La ausencia de datos de márgenes, CAPEX y endeudamiento impide evaluar rentabilidad y capacidad de servicio de deuda, pero el interés en venture debt sugiere una necesidad inmediata de extender runway y financiar el plan de expansión.",
+    "necesidades_potenciales": [
+      "Venture debt / deuda de crecimiento para extender runway tras la ronda privada y financiar expansión sin dilución.",
+      "Estructuras flexibles de financiación complementaria para soportar internacionalización (p.ej., necesidades de inversión y capital de trabajo asociadas).",
+      "Financiación para M&A (línea de adquisiciones o bridge) si se confirma una estrategia de crecimiento inorgánico.",
+      "Asesoramiento corporativo para preparación de M&A (buy-side/sell-side) y definición de estructura de capital óptima en la siguiente fase."
+    ],
+    "riesgos": [
+      "Visibilidad limitada sobre rentabilidad (margen/EBITDA) y generación de caja, lo que dificulta dimensionar deuda y covenants adecuados.",
+      "Falta de información sobre CAPEX e intensidad inversora, con riesgo de necesidades de caja superiores a lo previsto durante la expansión.",
+      "Riesgo de ejecución asociado a internacionalización y/o M&A (integración, desviaciones de plan, consumo de caja).",
+      "Posible desalineación entre expectativas de crecimiento y capacidad de servicio de deuda si el crecimiento no se materializa al ritmo esperado."
+    ],
+    "talking_points": [
+      "Confirmar objetivo del venture debt: runway (meses), hitos a financiar y calendario de necesidades de caja tras la ronda privada.",
+      "Solicitar KPIs financieros mínimos para estructurar propuesta: margen/EBITDA (o burn), cash actual, deuda existente, CAPEX y evolución de ingresos (últimos 12–24 meses).",
+      "Explorar plan de internacionalización: mercados prioritarios, inversión prevista y cómo impacta en capital de trabajo y estructura operativa.",
+      "Sondear intención de M&A: pipeline de targets, tamaño de tickets y timing; valorar alternativas (línea de adquisiciones/bridge) y apoyo de asesoramiento.",
+      "Alinear estructura y términos: importe objetivo, plazo, amortización vs. bullet, covenants/indicadores de seguimiento y posibles garantías, en función de la visibilidad de caja."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Datalyx Iberia SL | Financiación de crecimiento no dilutiva y apoyo corporativo",
+    "subtitulo": "Acompañar el punto de inflexión tras la ronda privada con venture debt y soluciones de financiación/asesoramiento para acelerar expansión e iniciativas de M&A.",
+    "oportunidad_detectada": "La ronda privada reciente y el interés explícito en venture debt sugieren una necesidad inmediata de capital no dilutivo para extender runway y ejecutar un plan de crecimiento acelerado. En este contexto, suele encajar una estructura de deuda de crecimiento flexible, complementada con financiación de circulante e instrumentos para internacionalización. Adicionalmente, si existe una agenda de crecimiento inorgánico, podemos preparar una línea de adquisiciones/bridge y asesoramiento corporativo para ejecutar M&A con rapidez y disciplina.",
+    "contexto_financiero": [
+      "Ingresos estimados: ~15,0 M€ (escala relevante para una tecnológica en crecimiento).",
+      "Plantilla: ~120 empleados (estructura operativa ya dimensionada para expansión).",
+      "Ronda privada reciente: señal de transición a fase de aceleración y foco en hitos de crecimiento.",
+      "Información no disponible a la fecha: margen/EBITDA o burn, CAPEX, caja y deuda (necesario para dimensionar importe, plazo y covenants)."
+    ],
+    "encaje_productos": [
+      "Venture debt / deuda de crecimiento (estructura flexible con amortización adaptada a hitos).",
+      "Líneas de circulante (póliza de crédito / confirming / factoring) para soportar el incremento de capital de trabajo por expansión.",
+      "Financiación de adquisiciones (línea de adquisiciones o bridge) para ejecutar M&A oportunista.",
+      "Asesoramiento corporativo en M&A (buy-side/sell-side) y optimización de estructura de capital."
+    ],
+    "comparables": [
+      "Altia",
+      "Izertis",
+      "Plain Concepts"
+    ],
+    "argumentos_valor": [
+      "Estructuración a medida: combinamos deuda de crecimiento con herramientas de circulante para minimizar dilución y asegurar liquidez durante la expansión.",
+      "Velocidad y certidumbre: proceso ágil de análisis y term sheet condicionado a un set de KPIs claro (runway, burn/EBITDA, caja, deuda, cohortes/retención si aplica).",
+      "Alineación con el plan estratégico: financiación diseñada alrededor de hitos (internacionalización, contratación, producto, go-to-market) y posibles triggers de M&A.",
+      "Enfoque integral: capacidad de acompañar tanto la financiación como el asesoramiento corporativo para preparar y ejecutar operaciones (pipeline, valoración, estructura, due diligence)."
+    ],
+    "proximos_pasos": [
+      "Concertar reunión de 60–75 min para confirmar objetivo del venture debt (runway objetivo, hitos, calendario) y mapa de necesidades (orgánico vs. M&A).",
+      "Solicitar paquete mínimo de información para propuesta indicativa: ingresos LTM y últimos 24 meses, margen/EBITDA o burn, caja y runway, deuda existente, CAPEX, KPIs comerciales (ARR/MRR si aplica, churn/retención, CAC/LTV) y plan de negocio 12–24 meses.",
+      "Preparar en 7–10 días laborables una propuesta indicativa con rangos de importe/plazo, perfil de amortización, covenants de seguimiento y opciones de línea de adquisiciones, más un esquema de trabajo para asesoramiento M&A."
+    ],
+    "narrativa_markdown": "Datalyx Iberia SL se encuentra en un momento especialmente accionable: la ronda privada reciente y el interés explícito en venture debt apuntan a una fase de aceleración donde el capital no dilutivo suele ser clave para extender runway y ejecutar el plan sin penalizar a los accionistas.\n\nCon ingresos estimados de ~15,0 M€ y una plantilla de ~120 empleados, la compañía ya opera a una escala que permite plantear una estructura de deuda de crecimiento, siempre que validemos métricas básicas de rentabilidad/burn, caja, CAPEX y deuda existente. La prioridad es alinear el tamaño y la flexibilidad de la financiación con hitos concretos (expansión internacional, inversión comercial y de producto, y necesidades de capital de trabajo).\n\nProponemos trabajar una solución combinada: (i) venture debt/deuda de crecimiento con amortización adaptada al plan y (ii) líneas de circulante para absorber tensiones de caja derivadas del crecimiento. Si existe una agenda de crecimiento inorgánico, añadimos (iii) una línea de adquisiciones/bridge para ejecutar oportunidades con rapidez.\n\nEn paralelo, podemos aportar asesoramiento corporativo para preparar y ejecutar M&A (buy-side/sell-side), ayudando a definir criterios de target, estructura de la operación y un proceso eficiente de due diligence, de forma coherente con la estructura de capital objetivo.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx"
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_opportunity_researcher",
+      "id": "AGT-DEAL-001",
+      "agente": "Opportunity Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Identificacion y priorizacion de oportunidades por sector.",
+      "fuente": "BBDD interna + criterios de priorizacion del agente",
+      "fecha_extraccion": "2026-06-16T17:05:32+00:00",
+      "trazabilidad": "1_opportunity_researcher/output.json",
+      "nota": "Oportunidades evaluadas: 2."
+    },
+    {
+      "tipo": "agente_earnings_reviewer",
+      "id": "AGT-DEAL-002",
+      "agente": "Earnings Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Analisis de resultados financieros y tendencias clave.",
+      "fuente": "Documentacion financiera aportada + contexto de oportunidad",
+      "fecha_extraccion": "2026-06-16T17:05:38+00:00",
+      "trazabilidad": "2_earnings_reviewer/output.txt",
+      "nota": "Documentos de entrada: 1.",
+      "contenido_referencia": "Datalyx Iberia SL presenta unos ingresos estimados de ~15,0 M€ (con ~120 empleados), lo que sugiere una escala ya relevante para una compañía tecnológica en fase de crecimiento. No se aportan datos comparativos por ejercicio, por lo que no es posible cuantificar la evolución interanual de ingresos ni inferir tendencias de crecimiento. Tampoco hay información de margen operativo/EBITDA, CAPEX o endeudamiento, limitando el análisis de rentabilidad, intensidad inversora y estructura de capital. La señal cualitativa más relevante es la “ronda privada reciente” y el interés explícito en venture debt, que apunta a una fase de aceleración (internacionalización y/o preparación para M&A) y a una prioridad por capital no dilutivo para extender runway. En conjunto, la compañía presenta indicios de transición a una etapa de expansión y posible actividad corporativa, lo que puede implicar una necesid"
+    },
+    {
+      "tipo": "agente_model_builder_deal",
+      "id": "AGT-DEAL-003",
+      "agente": "Model Builder Agent (Deal)",
+      "resultado": "OK",
+      "descripcion": "Extraccion de indicadores y tendencias estructurales para soporte comercial.",
+      "fuente": "Resumen de Earnings Reviewer",
+      "fecha_extraccion": "2026-06-16T17:05:43+00:00",
+      "trazabilidad": "3_model_builder/output.json",
+      "nota": "Paso opcional en el pipeline Deal."
+    },
+    {
+      "tipo": "agente_meeting_preparer",
+      "id": "AGT-DEAL-004",
+      "agente": "Meeting Preparer Agent",
+      "resultado": "OK",
+      "descripcion": "Generacion de briefing comercial: perfil, riesgos, necesidades y talking points.",
+      "fuente": "Opportunity context + analisis financiero + modelo opcional",
+      "fecha_extraccion": "2026-06-16T17:05:54+00:00",
+      "trazabilidad": "4_meeting_preparer/output.json"
+    },
+    {
+      "tipo": "agente_pitch_builder",
+      "id": "AGT-DEAL-005",
+      "agente": "Pitch Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Construccion de propuesta final y pitchbook para revision comercial.",
+      "fuente": "Briefing de cliente + contexto de oportunidad + analisis financiero",
+      "fecha_extraccion": "2026-06-16T17:06:11+00:00",
+      "trazabilidad": "5_pitch_builder/output.json",
+      "nota": "Pitchbook generado: si.",
+      "contenido_referencia": "Datalyx Iberia SL se encuentra en un momento especialmente accionable: la ronda privada reciente y el interés explícito en venture debt apuntan a una fase de aceleración donde el capital no dilutivo suele ser clave para extender runway y ejecutar el plan sin penalizar a los accionistas.\n\nCon ingresos estimados de ~15,0 M€ y una plantilla de ~120 empleados, la compañía ya opera a una escala que permite plantear una estructura de deuda de crecimiento, siempre que validemos métricas básicas de rentabilidad/burn, caja, CAPEX y deuda existente. La prioridad es alinear el tamaño y la flexibilidad de la financiación con hitos concretos (expansión internacional, inversión comercial y de producto, y necesidades de capital de trabajo).\n\nProponemos trabajar una solución combinada: (i) venture debt/deuda de crecimiento con amortización adaptada al plan y (ii) líneas de circulante para absorber tensi"
+    }
+  ]
+}

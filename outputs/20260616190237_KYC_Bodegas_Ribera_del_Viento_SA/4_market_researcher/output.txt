@@ -1,7 +1,0 @@
-En las búsquedas realizadas sobre **Bodegas Ribera del Viento SA** (noticias, concurso de acreedores, litigios y cambios de administradores) **no aparecen incidencias públicas concluyentes** (p. ej., concursos, sanciones o litigios) en las fuentes consultadas; el único contenido localizado es de tipo “seguimiento/entorno sectorial” y recomendaciones genéricas de verificación (fuente: *DeepResearch Mock Feed* 2026-04-10 y 2026-05-20; y entradas genéricas en *fuentes_externas.json* 2026-06-16).  
-
-En particular, **no se han encontrado referencias específicas** a “concurso de acreedores” ni a “litigio” asociadas a la empresa en los resultados devueltos por las consultas realizadas.  
-
-Dado que **no se identifican administradores/titulares** en el encargo, no ha sido posible extender la búsqueda a personas relacionadas.  
-
-Conclusión operativa: **No se han encontrado señales externas relevantes en las fuentes consultadas**; se recomienda contrastar en fuentes oficiales (BORME/Registro Mercantil, BOE y CENDOJ) si se requiere evidencia documental de cambios societarios o procedimientos judiciales.

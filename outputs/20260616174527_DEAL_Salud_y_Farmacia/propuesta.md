@@ -1,9 +1,0 @@
-BioMédica Ibérica SA se encuentra en una fase de expansión intensiva, con un CAPEX previsto de **20M EUR** frente a **31,0M EUR** de ingresos estimados (≈**65%**). Por magnitud y naturaleza, el proyecto puede ser transformacional en capacidad, pero también tensionar la liquidez si la financiación no acompasa el calendario de inversión y el ramp-up.
-
-Proponemos estructurar una solución de **financiación a largo plazo** para el CAPEX, complementada con **liquidez de apoyo** (puente/circulante) para cubrir picos de caja durante la ejecución. La estructura debe contemplar **carencias** y un perfil de amortización adaptado a la puesta en marcha, incorporando un marco de seguimiento por hitos que reduzca el riesgo de desviaciones de coste/plazo.
-
-En paralelo, la referencia a un **posible socio industrial** abre una oportunidad de **asesoramiento estratégico/M&A** para evaluar alternativas de capital/alianza, su impacto en control y gobernanza, y la combinación óptima con deuda. Mantener esta opcionalidad puede mejorar el coste de capital, reforzar el balance y acelerar el crecimiento comercial/tecnológico.
-
-Para avanzar con rapidez, el siguiente paso es validar el punto de partida financiero (deuda, caja, rentabilidad y generación de caja) y el detalle del plan inversor (tramos, hitos y ramp-up). Con esa base, presentaremos una propuesta indicativa de estructura y un plan de trabajo que permita cerrar financiación y, si aplica, activar el proceso de socio industrial en paralelo.
-
-El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

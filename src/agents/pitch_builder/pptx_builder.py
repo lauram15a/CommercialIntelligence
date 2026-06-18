@@ -8,7 +8,7 @@ Generador del pitchbook .pptx para el Pitch Builder Agent.
   - Tipografia Cambria (display) + Calibri (cuerpo)
 
 Uso:
-    from agents.pitch_builder.pptx_builder import build_pitch_deck
+    from src.agents.pitch_builder.pptx_builder import build_pitch_deck
     build_pitch_deck(output_path, company_name, sector, pitch, meeting_brief, model_output)
 """
 

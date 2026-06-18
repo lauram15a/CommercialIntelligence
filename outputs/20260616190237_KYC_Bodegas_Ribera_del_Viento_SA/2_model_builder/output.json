@@ -1,7 +1,0 @@
-{
-  "periodos": [],
-  "audit_flags": [
-    "Entrada vacía: no se recibieron objetos 'datos_financieros' para normalizar/combinar por periodo."
-  ],
-  "resumen": "No hay datos financieros disponibles en la entrada (lista vacía), por lo que no se puede construir una serie temporal ni ejecutar checks entre periodos."
-}

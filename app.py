@@ -16,6 +16,10 @@ from pathlib import Path
 
 from flask import Flask, render_template, request, jsonify, abort, send_file
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+
 from config import BankConfig
 from usecases import USE_CASES, get_use_case, get_available_use_cases
 

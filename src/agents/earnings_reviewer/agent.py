@@ -57,8 +57,7 @@ def _has_prompt(agent_key: str) -> bool:
 
 def _fallback_prompt() -> str:
     return (
-        "Eres un analista financiero senior de un banco con actividad de "
-        "banca corporativa, especializado en revisar resultados financieros "
+        "Eres un analista financiero senior de un banco, especializado en revisar resultados financieros "
         "de empresas para identificar tendencias y necesidades potenciales."
     )
 

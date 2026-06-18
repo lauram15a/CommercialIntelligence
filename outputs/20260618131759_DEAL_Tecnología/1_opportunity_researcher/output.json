@@ -1,0 +1,20 @@
+{
+  "sector": "Tecnología",
+  "oportunidades": [
+    {
+      "empresa": "Datalyx Iberia SL",
+      "motivo": "La ronda privada reciente sugiere fase de aceleración (internacionalización y/o preparación para adquisición), típicamente acompañada de necesidades de liquidez para CAPEX comercial, producto y posibles compras tácticas. Encaje claro para venture debt complementaria a equity y/o financiación para M&A.",
+      "prioridad": "alta",
+      "ingresos_estimados": 15000000,
+      "empleados": 120
+    },
+    {
+      "empresa": "Nexuria Tech Solutions SL",
+      "motivo": "El crecimiento del 47% en 2024 y la captación de inversores estratégicos apuntan a un periodo de inversión y posibles movimientos corporativos; la mención explícita de necesidades de financiación puente indica demanda próxima de liquidez. Oportunidad combinada de financiación puente y asesoramiento en M&A/entrada de socio estratégico.",
+      "prioridad": "media",
+      "ingresos_estimados": 5600000,
+      "empleados": 62
+    }
+  ],
+  "resumen": "En tecnología, las oportunidades más accionables suelen concentrarse en compañías en fase de escalado con rondas recientes (apetito por venture debt) y en negocios con fuerte crecimiento que están estructurando entrada de inversor (necesidad de puente y asesoramiento corporativo). En el universo analizado, la señal más inmediata es la de Datalyx por potencial expansión/M&A, seguida de Nexuria por puente ligado a proceso estratégico."
+}

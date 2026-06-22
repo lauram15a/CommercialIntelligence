@@ -115,9 +115,8 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(247, 244, 237, 0.86);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-border);
+  background: #FF6600;
+  border-bottom: none;
 }
 
 .topbar__inner {
@@ -195,7 +194,7 @@ img { max-width: 100%; display: block; }
 .topbar__divider {
   width: 1px;
   height: 18px;
-  background: var(--color-border);
+  background: rgba(255,255,255,0.3);
   margin: 0 8px;
 }
 
@@ -204,20 +203,20 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius-pill);
   font-size: 13.5px;
   font-weight: 500;
-  color: var(--color-ink-muted);
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
   transition: background var(--t-fast), color var(--t-fast);
   white-space: nowrap;
 }
 
 .topbar__link:hover {
-  background: var(--color-primary-soft);
-  color: var(--color-primary-dark);
+  background: rgba(255,255,255,0.15);
+  color: #fff;
 }
 
 .topbar__link.is-active {
-  background: var(--color-primary);
-  color: var(--color-bg);
+  background: rgba(255,255,255,0.2);
+  color: #fff;
 }
 
 .topbar__meta {
@@ -229,7 +228,7 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-ink-muted);
+  color: rgba(255,255,255,0.7);
 }
 
 @media (max-width: 860px) {

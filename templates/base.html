@@ -36,39 +36,18 @@
     <header class="topbar">
       <div class="topbar__inner">
         <a href="{{ url_for('usecases_menu') }}" class="brand-link">
-          {% if logo_filename %}
-            <img class="brand-logo" src="{{ url_for('static', filename='img/' + logo_filename) }}" alt="{{ bank_name }}">
-          {% else %}
-            <span class="brand-mark" aria-hidden="true">{{ logo_initials }}</span>
-          {% endif %}
-          <span class="brand-text">
-            <span class="brand-bank">{{ bank_name }}</span>
-            <span class="brand-product">{{ platform_name }}</span>
-          </span>
+          <img class="brand-logo" src="{{ url_for('static', filename='img/logotipo.png') }}" alt="{{ bank_name }}">
         </a>
 
         <nav class="topbar__nav">
-          <a href="{{ url_for('usecases_menu') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'usecases_menu' }}">Casos de uso</a>
           {% if request.endpoint and request.endpoint.startswith('kyc_') %}
-            <span class="topbar__divider" aria-hidden="true"></span>
             <a href="{{ url_for('kyc_index') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'kyc_index' }}">Nueva solicitud</a>
             <a href="{{ url_for('kyc_runs_list') }}" class="topbar__link {{ 'is-active' if request.endpoint in ['kyc_runs_list', 'kyc_run_detail'] }}">Histórico</a>
           {% elif request.endpoint and request.endpoint.startswith('deal_') %}
-            <span class="topbar__divider" aria-hidden="true"></span>
             <a href="{{ url_for('deal_index') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'deal_index' }}">Nueva solicitud</a>
             <a href="{{ url_for('deal_runs_list') }}" class="topbar__link {{ 'is-active' if request.endpoint in ['deal_runs_list', 'deal_run_detail'] }}">Histórico</a>
           {% endif %}
         </nav>
-
-        <div class="topbar__meta">
-          <span class="topbar__dept">
-            {% if request.endpoint and request.endpoint.startswith('deal_') %}
-              {{ department_name_deal }}
-            {% else %}
-              {{ department_name_kyc }}
-            {% endif %}
-          </span>
-        </div>
       </div>
     </header>
 

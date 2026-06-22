@@ -113,3 +113,32 @@ def run_screening_tool(arguments: dict, use_mock: bool = False) -> dict:
         result = real_screening_lookup(name)
     logger.info("[KYC Screener Agent] screening: %s -> %d hits", name, len(result.get("hits", [])))
     return result
+
+
+def run_screening(names: list[str], use_mock: bool = True) -> dict:
+    """Ejecuta screening sobre una lista de nombres y devuelve resumen consolidado.
+
+    Retorna:
+        {"resultados": [...], "resumen": str, "conclusion": "LIMPIO"|"ALERTA"|"NO_CONCLUYENTE"}
+    """
+    resultados = []
+    hay_alerta = False
+
+    for name in names:
+        result = run_screening_tool({"name": name}, use_mock=use_mock)
+        hits = result.get("hits", [])
+        resultados.append({"nombre": name, "hits": hits, "total_hits": len(hits)})
+        if hits:
+            hay_alerta = True
+
+    if hay_alerta:
+        conclusion = "ALERTA"
+        resumen = (
+            f"Se han detectado coincidencias en listas de sanciones/PEP para "
+            f"{sum(1 for r in resultados if r['hits'])} de {len(resultados)} sujetos cribados."
+        )
+    else:
+        conclusion = "LIMPIO"
+        resumen = f"No se han encontrado coincidencias para ninguno de los {len(resultados)} sujetos cribados."
+
+    return {"resultados": resultados, "resumen": resumen, "conclusion": conclusion}

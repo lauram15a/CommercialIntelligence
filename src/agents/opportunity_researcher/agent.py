@@ -20,29 +20,38 @@ logger = get_logger("deal")
 DATA_DIR = Path(__file__).resolve().parent.parent.parent.parent / "data"
 
 
-def run_opportunity_researcher_agent(sector: str, use_mock: bool = True) -> dict:
+def run_opportunity_researcher_agent(
+    sector: str,
+    use_mock: bool = False,
+    fuente: str = "interna",
+    empresas_override: list[dict] | None = None,
+) -> dict:
     """
-    sector: nombre del sector a analizar (p.ej. "Industrial").
-
-    Devuelve:
-        {
-          "sector": "...",
-          "oportunidades": [{"empresa", "motivo", "prioridad", ...}],
-          "resumen": "..."
-        }
+    sector:             sector o zona a analizar
+    fuente:             "interna" (bbdd.json) o "externa" (fuentes_externas.json)
+    empresas_override:  lista de empresas ya filtradas (p.ej. por geografia)
     """
-    logger.info("=== [Opportunity Researcher Agent] Inicio (sector=%s) ===", sector)
+    logger.info("=== [Opportunity Researcher Agent] Inicio (sector=%s, fuente=%s) ===",
+                sector, fuente)
 
-    # Cargar empresas del sector desde bbdd.json
-    empresas = _load_empresas_sector(sector)
+    # Usar empresas pre-filtradas si las hay, si no cargar de la fuente correcta
+    if empresas_override:
+        empresas = empresas_override
+    else:
+        empresas = _load_empresas_sector(sector, fuente)
 
+    from agents.opportunity_researcher.prompt import get_system_prompt
     system_prompt = get_system_prompt(
-        extra=f"Sector a analizar en esta ejecucion: {sector}"
+        extra=(
+            f"Sector / zona a analizar: {sector}\n"
+            f"Fuente de datos: {'base de datos interna del banco (clientes)' if fuente == 'interna' else 'fuentes externas publicas (no clientes)'}"
+        )
     )
 
     user_msg = (
-        f"Sector: {sector}\n\n"
-        f"Empresas detectadas en la base de datos:\n"
+        f"Sector / zona: {sector}\n"
+        f"Fuente: {fuente}\n\n"
+        f"Empresas detectadas:\n"
         + json.dumps(empresas, ensure_ascii=False, indent=2)
     )
 
@@ -69,42 +78,43 @@ def run_opportunity_researcher_agent(sector: str, use_mock: bool = True) -> dict
             "raw": content[:2000],
         }
 
-    logger.info(
-        "[Opportunity Researcher Agent] %d oportunidades para sector '%s'",
-        len(result.get("oportunidades", [])), sector,
-    )
+    logger.info("[Opportunity Researcher Agent] %d oportunidades",
+                len(result.get("oportunidades", [])))
     logger.info("=== [Opportunity Researcher Agent] Fin ===")
     return result
 
 
-def _load_empresas_sector(sector: str) -> list[dict]:
-    """Carga las empresas de un sector desde bbdd.json."""
-    bbdd_path = DATA_DIR / "bbdd.json"
-    if not bbdd_path.exists():
-        return []
-    try:
+def _load_empresas_sector(sector: str, fuente: str = "interna") -> list[dict]:
+    """Carga empresas de un sector desde la fuente correcta."""
+    if fuente == "interna":
+        bbdd_path = DATA_DIR / "bbdd.json"
+        if not bbdd_path.exists():
+            return []
         with open(bbdd_path, encoding="utf-8") as f:
             bbdd = json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return []
-
-    empresas_deal = bbdd.get("empresas_deal", {})
-    empresas = empresas_deal.get(sector)
-
-    # Si no hay match exacto, buscar case-insensitive
-    if empresas is None:
-        sector_lower = sector.strip().lower()
+        empresas_deal = bbdd.get("empresas_deal", {})
+        sector_lower  = sector.strip().lower()
         for key, val in empresas_deal.items():
-            if key.lower() == sector_lower:
-                empresas = val
-                break
+            if key.strip().lower() == sector_lower:
+                return val
+        return []
+    else:  # externa
+        ext_path = DATA_DIR / "fuentes_externas.json"
+        if not ext_path.exists():
+            return []
+        with open(ext_path, encoding="utf-8") as f:
+            ext = json.load(f)
+        sector_lower = sector.strip().lower()
+        results = []
+        for nombre, emp in ext.get("empresas", {}).items():
+            perfil = emp.get("perfil_publico", {})
+            if perfil.get("sector", "").strip().lower() == sector_lower:
+                results.append({
+                    "empresa":     nombre,
+                    "descripcion": perfil.get("descripcion", ""),
+                    "señal":       perfil.get("senal_mercado", ""),
+                    "ingresos_estimados": None,
+                    "empleados":   None,
+                })
+        return results
 
-    # Si el sector no existe en bbdd, devolver todas las empresas disponibles
-    # para que el agente tenga algo con lo que trabajar
-    if empresas is None:
-        all_empresas = []
-        for val in empresas_deal.values():
-            all_empresas.extend(val)
-        return all_empresas
-
-    return empresas

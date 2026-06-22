@@ -430,6 +430,78 @@ Fuente: Sistemas contables del banco (datos remitidos por la empresa y validados
     return docs
 
 
+def _load_fuentes_externas() -> dict:
+    """Carga data/fuentes_externas.json."""
+    path = DATA_DIR / "fuentes_externas.json"
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    return data.get("empresas", {})
+
+
+def _get_comunidades_disponibles() -> list[str]:
+    """
+    Devuelve la lista de comunidades autonomas disponibles combinando
+    bbdd.json (clientes) y fuentes_externas.json (no clientes).
+    """
+    comunidades = set()
+
+    # Desde bbdd.json (clientes KYC tienen domicilio_social)
+    db_kyc = _load_empresas_kyc()
+    for emp in db_kyc.values():
+        domicilio = emp.get("domicilio_social", "")
+        # Intentar extraer comunidad desde el campo observaciones o sector
+        # (en bbdd.json no siempre hay comunidad explicita, usamos provincia del domicilio)
+        comunidad = emp.get("comunidad_autonoma", "")
+        if comunidad:
+            comunidades.add(comunidad)
+
+    # Desde fuentes_externas.json (no clientes)
+    ext = _load_fuentes_externas()
+    for emp in ext.values():
+        ca = emp.get("comunidad_autonoma", "")
+        if ca:
+            comunidades.add(ca)
+
+    return sorted(comunidades)
+
+
+def _get_empresas_por_geografia(comunidad: str, fuente: str) -> list[dict]:
+    """
+    Devuelve empresas de una comunidad autonoma.
+    fuente: "interna" (bbdd.json) o "externa" (fuentes_externas.json)
+    """
+    results = []
+    if fuente == "interna":
+        db = _load_empresas_kyc()
+        for nombre, emp in db.items():
+            if emp.get("comunidad_autonoma", "").lower() == comunidad.lower():
+                results.append({
+                    "empresa": nombre,
+                    "sector":  emp.get("sector", ""),
+                    "descripcion": emp.get("observaciones", ""),
+                    "señal": f"Cliente interno. Sector: {emp.get('sector', '')}.",
+                    "ingresos_estimados": None,
+                    "empleados": emp.get("empleados"),
+                })
+    else:
+        ext = _load_fuentes_externas()
+        for nombre, emp in ext.items():
+            if emp.get("comunidad_autonoma", "").lower() == comunidad.lower():
+                perfil = emp.get("perfil_publico", {})
+                senales = emp.get("senales_externas", [])
+                results.append({
+                    "empresa": nombre,
+                    "sector":  perfil.get("sector", ""),
+                    "descripcion": perfil.get("descripcion", ""),
+                    "señal": perfil.get("senal_mercado", senales[0] if senales else ""),
+                    "ingresos_estimados": None,
+                    "empleados": None,
+                })
+    return results
+
+
 # ---------------------------------------------------------------------------
 # API - Autocompletado de empresas
 # ---------------------------------------------------------------------------
@@ -488,6 +560,8 @@ def _run_kyc_pipeline_background(run_id, entity_name, documents):
                           current_step=None,
                           real_run_id=result["run_id"])
     except Exception as exc:  # noqa: BLE001
+        import traceback
+        traceback.print_exc()
         _update_run_state(_RUNS_STATE, run_id, status="error", error=str(exc), current_step=None)
 
 
@@ -601,7 +675,9 @@ def kyc_nueva_solicitud():
 # Caso de uso 2 - Corporate & Deal Intelligence (prefijo /deal)
 # ---------------------------------------------------------------------------
 
-def _run_deal_pipeline_background(run_id, sector, company_name, financial_documents):
+def _run_deal_pipeline_background(run_id, sector, company_name,
+                                   financial_documents, fuente="interna",
+                                   geografia="", empresas_geografia=None):
     try:
         from deal_orchestrator import run_deal_intelligence_pipeline
 
@@ -615,6 +691,9 @@ def _run_deal_pipeline_background(run_id, sector, company_name, financial_docume
             sector=sector,
             company_name=company_name or None,
             financial_documents=financial_documents,
+            fuente=fuente,
+            geografia=geografia,
+            empresas_geografia=empresas_geografia or [],
             use_mock=False,
             step_callback=step_cb,
         )
@@ -622,23 +701,33 @@ def _run_deal_pipeline_background(run_id, sector, company_name, financial_docume
                           status="done",
                           current_step=None,
                           real_run_id=result["run_id"])
-    except Exception as exc:  # noqa: BLE001
-        _update_run_state(_DEAL_RUNS_STATE, run_id, status="error", error=str(exc), current_step=None)
+    except Exception as exc:
+        import traceback
+        traceback.print_exc()
+        _update_run_state(_DEAL_RUNS_STATE, run_id,
+                          status="error", error=str(exc), current_step=None)
 
 
 @app.route("/deal/")
 def deal_index():
     runs = _list_runs("deal")[:6]
-    empresa_names = []
-    db = _load_empresas_deal()
-    for empresas in db.values():
-        for emp in empresas:
-            nombre = emp.get("empresa", "")
-            if nombre:
-                empresa_names.append(nombre)
-    empresa_names = sorted(set(empresa_names))
-    return render_template("deal_index.html", runs=runs, agent_steps=DEAL_AGENT_STEPS,
-                           empresa_names=empresa_names)
+
+    # Nombres para autocomplete por fuente
+    empresa_names_internas = sorted(_load_empresas_kyc().keys())
+    empresa_names_externas = sorted(_load_fuentes_externas().keys())
+    empresa_names_todas    = sorted(set(empresa_names_internas + empresa_names_externas))
+
+    comunidades = _get_comunidades_disponibles()
+
+    return render_template(
+        "deal_index.html",
+        runs=runs,
+        agent_steps=DEAL_AGENT_STEPS,
+        empresa_names=empresa_names_todas,
+        empresa_names_internas=empresa_names_internas,
+        empresa_names_externas=empresa_names_externas,
+        comunidades=comunidades,
+    )
 
 
 @app.route("/deal/runs")
@@ -705,26 +794,80 @@ def deal_download_pitchbook(run_id):
     return send_file(pptx_path, as_attachment=True, download_name=download_name)
 
 
+@app.route("/deal/runs/<run_id>/pitchbook.pdf")
+def deal_download_pitchbook_pdf(run_id):
+    """Descarga del pitchbook en formato PDF."""
+    run_dir = _find_run_dir("deal", run_id)
+    if run_dir is None:
+        abort(404)
+    result_path = run_dir / "result.json"
+    if not result_path.exists():
+        abort(404)
+    with open(result_path, encoding="utf-8") as f:
+        result = json.load(f)
+    pdf_rel = result.get("pitch_output", {}).get("pdf_path")
+    if not pdf_rel:
+        abort(404)
+    pdf_path = run_dir / pdf_rel
+    if not pdf_path.exists():
+        abort(404)
+    company      = result.get("company_name", "empresa")
+    safe_company = "".join(c if c.isalnum() or c in " -_" else "" for c in company).strip().replace(" ", "_")
+    download_name = f"pitchbook_{safe_company or 'oportunidad'}.pdf"
+    return send_file(pdf_path, as_attachment=True, download_name=download_name)
+
+
 @app.route("/deal/solicitudes/nueva", methods=["POST"])
 def deal_nueva_solicitud():
-    sector = request.form.get("sector", "").strip()
-    if not sector:
-        abort(400, "El sector es obligatorio")
-
+    sector       = request.form.get("sector",       "").strip()
     company_name = request.form.get("company_name", "").strip()
+    fuente       = request.form.get("fuente",       "interna")   # "interna" | "externa"
+    geografia    = request.form.get("geografia",    "").strip()  # comunidad autonoma
+    confirmar_externa = request.form.get("confirmar_externa", "")
+
+    # Validacion: al menos sector, empresa, o geografia
+    if not sector and not company_name and not geografia:
+        abort(400, "Debes indicar al menos un sector, una empresa o una zona geografica.")
+
+    # Si viene empresa sin sector ni geografia, detectar si es cliente
+    empresa_es_cliente = False
+    if company_name and not sector and not geografia:
+        db_kyc = _load_empresas_kyc()
+        empresa_es_cliente = company_name.strip().lower() in {
+            k.strip().lower() for k in db_kyc.keys()
+        }
+        # Si no es cliente y no ha confirmado, devolver pagina de confirmacion
+        if not empresa_es_cliente and not confirmar_externa:
+            return render_template(
+                "deal_confirmar_externa.html",
+                company_name=company_name,
+                department_name_deal=BankConfig.DEPARTMENT_NAME_DEAL,
+            )
+        # Si es cliente, forzar fuente interna
+        if empresa_es_cliente:
+            fuente = "interna"
+        else:
+            fuente = "externa"
+
+    # Si hay geografia, construir lista de empresas del area
+    empresas_geografia = []
+    if geografia:
+        empresas_geografia = _get_empresas_por_geografia(geografia, fuente)
 
     financial_documents = []
-    for name, text in zip(request.form.getlist("doc_name"), request.form.getlist("doc_text")):
+    for name, text in zip(request.form.getlist("doc_name"),
+                          request.form.getlist("doc_text")):
         if text.strip():
             financial_documents.append({"name": name.strip() or "documento.txt", "text": text})
 
     provisional_run_id = uuid.uuid4().hex[:12]
-    label = company_name or f"Sector {sector}"
+    label = company_name or (f"Zona {geografia}" if geografia else f"Sector {sector}")
     _init_run_state(_DEAL_RUNS_STATE, provisional_run_id, DEAL_AGENT_STEPS, label)
 
     threading.Thread(
         target=_run_deal_pipeline_background,
-        args=(provisional_run_id, sector, company_name, financial_documents),
+        args=(provisional_run_id, sector, company_name, financial_documents,
+              fuente, geografia, empresas_geografia),
         daemon=True,
     ).start()
 
@@ -736,7 +879,6 @@ def deal_nueva_solicitud():
         api_status_url=f"/deal/api/runs/{provisional_run_id}/status",
         result_url_prefix="/deal/runs",
     )
-
 
 if __name__ == "__main__":
     app.run(debug=True)

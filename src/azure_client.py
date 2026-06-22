@@ -265,7 +265,13 @@ class Clients:
                 "[AUTH] Local environment detected -> DefaultAzureCredential "
                 "(AZ CLI / VS Code / Shared cache, Managed Identity EXCLUDED)"
             )
-            credential = DefaultAzureCredential(exclude_managed_identity_credential=True)
+            tenant_id = os.getenv("AZURE_TENANT_ID", "").strip() or None
+            credential = DefaultAzureCredential(
+                exclude_managed_identity_credential=True,
+                additionally_allowed_tenants=["*"],
+                **({"visual_studio_code_tenant_id": tenant_id,
+                    "shared_cache_tenant_id": tenant_id} if tenant_id else {}),
+            )
 
         self._log_credential_identity(credential)
         return credential

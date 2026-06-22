@@ -273,7 +273,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Extremadura"
     },
     "Grupo Caldas Infraestructuras SA": {
       "nombre_legal": "Grupo Caldas Infraestructuras SA",
@@ -576,7 +577,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Comunidad de Madrid"
     },
     "Nexuria Tech Solutions SL": {
       "nombre_legal": "Nexuria Tech Solutions SL",
@@ -870,7 +872,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Cataluña"
     },
     "Distribuciones Monteverde SA": {
       "nombre_legal": "Distribuciones Monteverde SA",
@@ -1167,7 +1170,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Comunidad Valenciana"
     },
     "Logística Transibérica SL": {
       "nombre_legal": "Logística Transibérica SL",
@@ -1442,7 +1446,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Aragón"
     },
     "Datalyx Iberia SL": {
       "nombre_legal": "Datalyx Iberia SL",
@@ -1736,7 +1741,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Cataluña"
     },
     "Acme Componentes SL": {
       "nombre_legal": "Acme Componentes SL",
@@ -2025,7 +2031,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Aragón"
     },
     "Norte Logística SA": {
       "nombre_legal": "Norte Logística SA",
@@ -2298,7 +2305,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "País Vasco"
     },
     "Vertia Energía SL": {
       "nombre_legal": "Vertia Energía SL",
@@ -2587,7 +2595,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Comunidad de Madrid"
     },
     "Hispania Biotech Labs SA": {
       "nombre_legal": "Hispania Biotech Labs SA",
@@ -2881,7 +2890,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Comunidad Valenciana"
     },
     "Atlas Infra Rail SL": {
       "nombre_legal": "Atlas Infra Rail SL",
@@ -3156,7 +3166,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Andalucía"
     },
     "Mediterránea Foods Export SA": {
       "nombre_legal": "Mediterránea Foods Export SA",
@@ -3445,7 +3456,8 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
-      }
+      },
+      "comunidad_autonoma": "Región de Murcia"
     }
   },
   "empresas_deal": {

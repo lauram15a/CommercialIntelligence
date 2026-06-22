@@ -1,9 +1,592 @@
 {
-  "version": "2026-06-16.2",
-  "descripcion": "Repositorio unificado de fuentes externas simuladas (Deep Research) por empresa.",
-  "nota": "Incluye noticias y contexto externo publico potencialmente localizable en internet.",
+  "version": "2026-06-19.1",
+  "descripcion": "Repositorio unificado de fuentes externas simuladas (Deep Research). Incluye empresas NO clientes del banco identificadas como oportunidades externas, y enriquecimiento publico de empresas existentes.",
+  "nota": "Las empresas marcadas como tipo=prospecto_externo NO son clientes del banco. Las marcadas como tipo=enriquecimiento_cliente corresponden a clientes con cobertura de fuentes publicas.",
   "empresas": {
+    "Quantum Digital Health SL": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Comunidad de Madrid",
+      "noticias": [
+        {
+          "empresa": "Quantum Digital Health SL",
+          "titulo": "Quantum Digital Health cierra una ronda Serie B de 25 millones liderada por Forbion",
+          "fuente": "Expansión",
+          "fecha": "2026-03-12",
+          "resumen": "La healthtech madrileña, especializada en IA para diagnóstico temprano de enfermedades cardiovasculares, alcanza los 35M EUR de valoración. Planea duplicar equipo e internacionalizar en 2026-2027."
+        },
+        {
+          "empresa": "Quantum Digital Health SL",
+          "titulo": "Quantum Digital Health firma acuerdo con tres hospitales privados en España y Portugal",
+          "fuente": "El Economista",
+          "fecha": "2026-05-20",
+          "resumen": "La empresa consolida su modelo B2B con contratos de 3 años con Quirónsalud, HPA y José de Mello Saúde. Ingresos recurrentes previstos de 12M EUR en 2027."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Salud y Farmacia",
+        "descripcion": "Startup de salud digital especializada en IA aplicada al diagnóstico cardiovascular temprano, con sede en Madrid.",
+        "senal_mercado": "Ronda Serie B reciente de 25M EUR. Fase de escalado con necesidades de venture debt y posible financiación puente pre-Series C.",
+        "ingresos_estimados": 8500000,
+        "empleados": 85
+      },
+      "senales_externas": [
+        "Ronda de financiación Serie B cerrada en marzo 2026 (25M EUR, Forbion lead).",
+        "Contratación activa de 40 posiciones en LinkedIn (ingeniería, ventas internacionales).",
+        "Expansión a Portugal y UK prevista para S2 2026.",
+        "Pipeline de ingresos recurrentes en rápido crecimiento (+120% YoY)."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios identificados en fuentes públicas.",
+        "Certificación CE-MDR obtenida en 2025 para su producto principal."
+      ],
+      "cambios_societarios": [
+        "Entrada de Forbion como accionista minoritario (22%) en marzo 2026.",
+        "Ampliación de consejo con dos consejeros independientes del sector salud."
+      ],
+      "riesgos_sectoriales": [
+        "Regulación sanitaria estricta (MDR) puede ralentizar el time-to-market.",
+        "Dependencia de ciclos de compra hospitalaria largos (12-18 meses).",
+        "Competencia creciente de big tech en IA sanitaria."
+      ],
+      "busquedas_recomendadas": [
+        "\"Quantum Digital Health SL\" financiación ronda inversores",
+        "\"Quantum Digital Health SL\" acuerdos hospitales healthtech",
+        "\"Quantum Digital Health\" venture debt crecimiento"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "Crunchbase",
+        "Prensa especializada healthtech",
+        "LinkedIn"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Solara Renovables Castilla SL": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Castilla-La Mancha",
+      "noticias": [
+        {
+          "empresa": "Solara Renovables Castilla SL",
+          "titulo": "Solara Renovables obtiene DIA favorable para dos parques solares de 180 MW en Ciudad Real",
+          "fuente": "Cinco Días",
+          "fecha": "2026-01-28",
+          "resumen": "Los dos proyectos suman una inversión prevista de 145 millones de euros. La empresa busca cerrar financiación project finance durante el primer semestre de 2026."
+        },
+        {
+          "empresa": "Solara Renovables Castilla SL",
+          "titulo": "Solara Renovables negocia PPAs con dos electrointensivas para sus nuevos parques",
+          "fuente": "El Economista",
+          "fecha": "2026-04-15",
+          "resumen": "La promotora castellano-manchega ha avanzado en la firma de contratos PPA a 10 años que darían soporte crediticio a la financiación de los proyectos."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Energía",
+        "descripcion": "Promotora de parques fotovoltaicos en Castilla-La Mancha, con pipeline de 400 MW en distintas fases de desarrollo.",
+        "senal_mercado": "Proyectos con DIA aprobada por 180 MW. Necesidad inminente de project finance (145M EUR) y posible entrada de socio financiero.",
+        "ingresos_estimados": 12000000,
+        "empleados": 42
+      },
+      "senales_externas": [
+        "DIA aprobada para dos nuevos parques en Ciudad Real (180 MW total).",
+        "Negociación activa de PPAs corporativos a 10 años.",
+        "Pipeline total de 400 MW en distintas fases de tramitación.",
+        "Búsqueda activa de entidad financiadora para project finance."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios identificados.",
+        "Pendiente de autorización administrativa previa para un tercer proyecto de 80 MW."
+      ],
+      "cambios_societarios": [
+        "Constitución de SPVs para cada proyecto individual.",
+        "Posible entrada de fondo de infraestructuras en el capital (negociaciones en curso)."
+      ],
+      "riesgos_sectoriales": [
+        "Riesgo regulatorio por cambios en retribución renovable.",
+        "Dependencia de PPAs para viabilidad crediticia del project finance.",
+        "Posibles retrasos en conexión a red por saturación de nudos."
+      ],
+      "busquedas_recomendadas": [
+        "\"Solara Renovables\" project finance fotovoltaico",
+        "\"Solara Renovables Castilla\" Ciudad Real parques solares",
+        "\"Solara Renovables\" PPA electrointensivas"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "BOE (autorizaciones energéticas)",
+        "CNMC",
+        "Prensa energética"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Logística Portuaria del Cantábrico SA": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Cantabria",
+      "noticias": [
+        {
+          "empresa": "Logística Portuaria del Cantábrico SA",
+          "titulo": "Logística Portuaria del Cantábrico invierte 18M en ampliar su terminal en Santander",
+          "fuente": "Expansión",
+          "fecha": "2025-11-05",
+          "resumen": "La empresa cántabra amplía un 40% su capacidad de almacenamiento y handling, anticipando el crecimiento del tráfico de mercancías en el corredor atlántico."
+        },
+        {
+          "empresa": "Logística Portuaria del Cantábrico SA",
+          "titulo": "El Puerto de Santander registra un aumento del 28% en tráfico de contenedores",
+          "fuente": "El Diario Montañés",
+          "fecha": "2026-02-10",
+          "resumen": "Logística Portuaria del Cantábrico, principal concesionario del puerto, se beneficia directamente del incremento de actividad vinculado al nearshoring europeo."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Logística y Transporte",
+        "descripcion": "Operador logístico portuario con concesión en el Puerto de Santander, especializado en graneles y contenedores.",
+        "senal_mercado": "Inversión de 18M en ampliación de terminal. Alto crecimiento por nearshoring. Necesidades de financiación CAPEX y posible leasing de equipamiento.",
+        "ingresos_estimados": 38000000,
+        "empleados": 210
+      },
+      "senales_externas": [
+        "Ampliación de terminal con inversión de 18M EUR en curso.",
+        "Beneficiario directo del boom de nearshoring europeo.",
+        "Tráfico del Puerto de Santander +28% en 2025.",
+        "Concesión portuaria renovada hasta 2045."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios relevantes identificados.",
+        "Concesión administrativa vigente hasta 2045 con condiciones de inversión mínima cumplidas."
+      ],
+      "cambios_societarios": [
+        "Sin cambios recientes en estructura accionarial.",
+        "Familia fundadora mantiene el 100% del capital."
+      ],
+      "riesgos_sectoriales": [
+        "Dependencia de un único activo (concesión portuaria Santander).",
+        "Riesgo de desaceleración del comercio internacional.",
+        "Competencia de puertos cercanos (Bilbao, Gijón)."
+      ],
+      "busquedas_recomendadas": [
+        "\"Logística Portuaria del Cantábrico\" ampliación terminal",
+        "\"Logística Portuaria del Cantábrico\" concesión puerto Santander",
+        "\"Logística Portuaria Cantábrico\" financiación inversión"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "Autoridad Portuaria de Santander",
+        "Prensa sectorial logística"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Agrotech Levante SL": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Comunidad Valenciana",
+      "noticias": [
+        {
+          "empresa": "Agrotech Levante SL",
+          "titulo": "Agrotech Levante capta 6M EUR para su plataforma de agricultura de precisión",
+          "fuente": "Valencia Plaza",
+          "fecha": "2026-02-22",
+          "resumen": "La agritech valenciana ha completado una ronda de financiación para escalar su solución de riego inteligente a nivel nacional. Actualmente opera en 15.000 hectáreas."
+        },
+        {
+          "empresa": "Agrotech Levante SL",
+          "titulo": "El sector citrícola español adopta masivamente tecnologías de precisión",
+          "fuente": "Agronegocios",
+          "fecha": "2026-04-08",
+          "resumen": "Agrotech Levante lidera la transformación digital del riego citrícola en la Comunidad Valenciana y Murcia, con contratos con cooperativas que suman 40.000 hectáreas potenciales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Tecnología",
+        "descripcion": "Startup agritech especializada en plataformas de agricultura de precisión y riego inteligente basado en IoT y datos satelitales.",
+        "senal_mercado": "Ronda de 6M EUR cerrada. Expansión nacional en curso. Potencial necesidad de venture debt o financiación de equipamiento IoT para despliegue masivo.",
+        "ingresos_estimados": 4200000,
+        "empleados": 55
+      },
+      "senales_externas": [
+        "Ronda de financiación de 6M EUR cerrada en febrero 2026.",
+        "Expansión de 15.000 a 40.000 hectáreas prevista para 2026-2027.",
+        "Contratos firmados con 12 cooperativas citrícolas.",
+        "Alianza con empresa israelí de tecnología satelital."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios identificados.",
+        "Subvención CDTI activa por 800K EUR para I+D."
+      ],
+      "cambios_societarios": [
+        "Entrada de fondo agritech (Anterra Capital) con 18% del capital.",
+        "Fundadores mantienen 55% del capital post-ronda."
+      ],
+      "riesgos_sectoriales": [
+        "Dependencia de ciclo agrícola y climatología.",
+        "Adopción tecnológica lenta en segmento cooperativo tradicional.",
+        "Competencia de multinacionales del riego (Netafim, John Deere)."
+      ],
+      "busquedas_recomendadas": [
+        "\"Agrotech Levante\" financiación ronda agritech",
+        "\"Agrotech Levante\" riego precisión cooperativas",
+        "\"Agrotech Levante\" IoT agricultura Valencia"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "CDTI",
+        "Crunchbase",
+        "Prensa agrícola especializada"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Residencias Premium del Norte SA": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "País Vasco",
+      "noticias": [
+        {
+          "empresa": "Residencias Premium del Norte SA",
+          "titulo": "Residencias Premium del Norte prevé abrir tres nuevos centros en Euskadi y Navarra",
+          "fuente": "El Correo",
+          "fecha": "2026-01-15",
+          "resumen": "El grupo geriátrico planifica inversiones por 45 millones de euros para 2026-2028 con la apertura de centros de 120 plazas en Bilbao, San Sebastián y Pamplona."
+        },
+        {
+          "empresa": "Residencias Premium del Norte SA",
+          "titulo": "El envejecimiento poblacional impulsa la inversión en residencias de mayores en el norte de España",
+          "fuente": "Cinco Días",
+          "fecha": "2026-03-28",
+          "resumen": "Grupos como Residencias Premium del Norte lideran el crecimiento del sector, con ocupaciones superiores al 95% y listas de espera en sus centros actuales."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Salud y Farmacia",
+        "descripcion": "Grupo de residencias geriátricas premium en el País Vasco y Navarra, con 5 centros operativos y 620 plazas.",
+        "senal_mercado": "Plan de expansión de 45M EUR (3 nuevos centros). Financiación promotor/rehabilitación + leasing de equipamiento médico. Posible M&A de centros pequeños.",
+        "ingresos_estimados": 28000000,
+        "empleados": 380
+      },
+      "senales_externas": [
+        "Plan de inversión de 45M EUR para 3 nuevos centros (2026-2028).",
+        "Ocupación >95% en los 5 centros actuales.",
+        "Sector con demanda estructural creciente (envejecimiento).",
+        "Búsqueda activa de suelo y licencias en Bilbao y San Sebastián."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios relevantes.",
+        "Inspecciones sanitarias con resultado favorable en todos los centros (2025)."
+      ],
+      "cambios_societarios": [
+        "Entrada de family office vasco con 20% del capital en 2024.",
+        "Estudian posible incorporación de socio financiero para el plan de expansión."
+      ],
+      "riesgos_sectoriales": [
+        "Alto CAPEX por centro (12-15M EUR).",
+        "Regulación autonómica cambiante en ratios de personal.",
+        "Dificultad de contratación de personal cualificado en el sector."
+      ],
+      "busquedas_recomendadas": [
+        "\"Residencias Premium del Norte\" expansión geriátrico",
+        "\"Residencias Premium\" inversión centros residenciales",
+        "\"Residencias Premium Norte\" financiación Euskadi"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "Gobierno Vasco (licencias)",
+        "Prensa local",
+        "Informes sectoriales geriátricos"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Iberian Cloud Services SA": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Comunidad de Madrid",
+      "noticias": [
+        {
+          "empresa": "Iberian Cloud Services SA",
+          "titulo": "Iberian Cloud construirá un data center de 50 MW en Alcalá de Henares",
+          "fuente": "Expansión",
+          "fecha": "2025-12-18",
+          "resumen": "La empresa invertirá 180 millones en un centro de datos de última generación para atender la demanda de hiperescaladores y empresas nacionales. Inicio de obras previsto para Q2 2026."
+        },
+        {
+          "empresa": "Iberian Cloud Services SA",
+          "titulo": "Iberian Cloud firma acuerdo de colocation con un hiperescalador americano",
+          "fuente": "CincoDías",
+          "fecha": "2026-04-02",
+          "resumen": "El contrato, valorado en 12M EUR anuales durante 10 años, asegura el 40% de la capacidad del nuevo data center antes de su construcción."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Tecnología",
+        "descripcion": "Operador de centros de datos independiente en España, con dos instalaciones operativas en Madrid y Barcelona.",
+        "senal_mercado": "Inversión de 180M EUR en nuevo data center. Contrato anchor firmado. Financiación project finance necesaria + posible socio industrial o financiero.",
+        "ingresos_estimados": 52000000,
+        "empleados": 145
+      },
+      "senales_externas": [
+        "Proyecto de 180M EUR para data center de 50 MW en Alcalá de Henares.",
+        "Contrato anchor (hiperescalador) por 120M EUR a 10 años ya firmado.",
+        "Demanda creciente por IA y migración cloud.",
+        "Búsqueda activa de financiación project finance."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios identificados.",
+        "Licencia de obra en tramitación (previsión de aprobación Q1 2026)."
+      ],
+      "cambios_societarios": [
+        "Fondo de infraestructuras (InfraVia) posee el 60% del capital.",
+        "Equipo directivo con 15% (management package).",
+        "Posible ampliación de capital para co-inversión en el nuevo proyecto."
+      ],
+      "riesgos_sectoriales": [
+        "Alto CAPEX concentrado en un solo proyecto.",
+        "Dependencia de disponibilidad de potencia eléctrica en la zona.",
+        "Competencia de hiperescaladores con data centers propios.",
+        "Riesgo de obsolescencia tecnológica a largo plazo."
+      ],
+      "busquedas_recomendadas": [
+        "\"Iberian Cloud Services\" data center financiación",
+        "\"Iberian Cloud\" Alcalá de Henares proyecto",
+        "\"Iberian Cloud Services\" project finance infraestructura digital"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "Ayuntamiento Alcalá de Henares",
+        "Prensa tecnológica",
+        "Spain DC (asociación sectorial)"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Conservas Atlánticas del Noroeste SL": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Galicia",
+      "noticias": [
+        {
+          "empresa": "Conservas Atlánticas del Noroeste SL",
+          "titulo": "Conservas Atlánticas invertirá 9M en una nueva línea de producción de platos preparados",
+          "fuente": "La Voz de Galicia",
+          "fecha": "2026-03-05",
+          "resumen": "La conservera gallega apuesta por la diversificación hacia platos preparados premium, con una nueva línea productiva en su planta de Vigo que operará a pleno rendimiento en 2027."
+        },
+        {
+          "empresa": "Conservas Atlánticas del Noroeste SL",
+          "titulo": "Las exportaciones gallegas de conservas crecen un 18% impulsadas por la demanda asiática",
+          "fuente": "Faro de Vigo",
+          "fecha": "2026-05-12",
+          "resumen": "Conservas Atlánticas se posiciona como el tercer exportador del sector en Galicia, con mercados en Japón, Corea del Sur y Emiratos Árabes."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Agroindustria",
+        "descripcion": "Conservera gallega de productos del mar premium con fuerte orientación exportadora, con sede y planta en Vigo.",
+        "senal_mercado": "Inversión de 9M en diversificación. Fuerte crecimiento exportador (+18%). Necesidades de financiación CAPEX, trade finance y coberturas FX.",
+        "ingresos_estimados": 34000000,
+        "empleados": 195
+      },
+      "senales_externas": [
+        "Inversión de 9M EUR en nueva línea de platos preparados.",
+        "Exportaciones creciendo al 18% interanual.",
+        "Tercera empresa exportadora del sector conservero en Galicia.",
+        "Apertura de mercados en Asia-Pacífico (Japón, Corea)."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios relevantes.",
+        "Certificaciones IFS y BRC vigentes."
+      ],
+      "cambios_societarios": [
+        "Empresa familiar (tercera generación) con 100% del capital.",
+        "Incorporación de equipo directivo externo en 2024 (CEO y CFO profesionales)."
+      ],
+      "riesgos_sectoriales": [
+        "Dependencia de materia prima pesquera con precios volátiles.",
+        "Exposición a divisas (USD, JPY, AED).",
+        "Competencia de conserveras low-cost del sudeste asiático."
+      ],
+      "busquedas_recomendadas": [
+        "\"Conservas Atlánticas del Noroeste\" inversión planta",
+        "\"Conservas Atlánticas\" exportación Japón Corea",
+        "\"Conservas Atlánticas Noroeste\" financiación crecimiento"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "ICEX",
+        "Prensa gallega",
+        "Informes sectoriales conservero"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Desarrollos Inmobiliarios Costa Blanca SA": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Comunidad Valenciana",
+      "noticias": [
+        {
+          "empresa": "Desarrollos Inmobiliarios Costa Blanca SA",
+          "titulo": "Costa Blanca Desarrollos lanza tres promociones residenciales por 65M EUR en Alicante",
+          "fuente": "Idealista News",
+          "fecha": "2026-01-22",
+          "resumen": "La promotora alicantina lanza tres nuevas promociones de 180 viviendas totales, dirigidas al comprador internacional (nórdico y centroeuropeo) con entregas previstas en 2027-2028."
+        },
+        {
+          "empresa": "Desarrollos Inmobiliarios Costa Blanca SA",
+          "titulo": "El residencial en la Costa Blanca mantiene ritmos de venta pre-pandemia",
+          "fuente": "El Confidencial",
+          "fecha": "2026-04-18",
+          "resumen": "Promotoras como Costa Blanca registran preventas superiores al 60% antes del inicio de obra, con ticket medio de 350K EUR por vivienda."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Inmobiliario",
+        "descripcion": "Promotora inmobiliaria residencial de costa, especializada en comprador internacional, con sede en Alicante.",
+        "senal_mercado": "Lanzamiento de 3 promociones por 65M EUR. Preventas >60%. Necesidad de financiación promotor y posible acompañamiento en línea de avales.",
+        "ingresos_estimados": 42000000,
+        "empleados": 28
+      },
+      "senales_externas": [
+        "Tres promociones nuevas lanzadas en 2026 (65M EUR inversión total).",
+        "Preventas superiores al 60% antes de inicio de obra.",
+        "Comprador internacional (nórdico/centroeuropeo) como target principal.",
+        "Búsqueda activa de entidad financiadora para préstamo promotor."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios relevantes.",
+        "Licencias de obra concedidas para los tres proyectos."
+      ],
+      "cambios_societarios": [
+        "Empresa familiar con 80% del capital. Socio financiero minoritario (20%).",
+        "Sin cambios recientes."
+      ],
+      "riesgos_sectoriales": [
+        "Dependencia de demanda internacional sensible a tipos de cambio.",
+        "Posible desaceleración del mercado residencial de costa.",
+        "Costes de construcción con tendencia alcista."
+      ],
+      "busquedas_recomendadas": [
+        "\"Desarrollos Inmobiliarios Costa Blanca\" promociones Alicante",
+        "\"Costa Blanca\" promotora residencial financiación",
+        "\"Desarrollos Inmobiliarios Costa Blanca\" préstamo promotor"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "Registro de la Propiedad",
+        "Idealista",
+        "Prensa inmobiliaria"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Fabricaciones Navarra Industrial SL": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Navarra",
+      "noticias": [
+        {
+          "empresa": "Fabricaciones Navarra Industrial SL",
+          "titulo": "Fabricaciones Navarra gana contrato de 22M con Airbus para componentes estructurales",
+          "fuente": "Diario de Navarra",
+          "fecha": "2026-02-28",
+          "resumen": "La empresa navarra de mecanizados aeronáuticos firma un contrato marco de 5 años con Airbus para el suministro de componentes del A320neo y A350."
+        },
+        {
+          "empresa": "Fabricaciones Navarra Industrial SL",
+          "titulo": "El sector aeronáutico navarro consolida su posición como hub de Tier-2",
+          "fuente": "Expansión",
+          "fecha": "2026-05-03",
+          "resumen": "Empresas como Fabricaciones Navarra lideran la cadena de suministro aeronáutica en España, con inversiones en automatización que superan los 8M EUR en el último bienio."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Industrial",
+        "descripcion": "Fabricante de componentes aeronáuticos de precisión (mecanizado y composites) con sede en Pamplona y planta en Noáin.",
+        "senal_mercado": "Contrato marco de 22M con Airbus (5 años). Inversiones en automatización. Posible necesidad de financiación CAPEX, línea de circulante y avales de cumplimiento.",
+        "ingresos_estimados": 26000000,
+        "empleados": 175
+      },
+      "senales_externas": [
+        "Contrato marco con Airbus por 22M EUR a 5 años.",
+        "Inversiones en automatización de 8M EUR en 2024-2025.",
+        "Proceso de certificación NADCAP en curso (acabados especiales).",
+        "Participación en programa Clean Sky 3 de la UE."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios relevantes.",
+        "Certificación EN9100 vigente (calidad aeronáutica)."
+      ],
+      "cambios_societarios": [
+        "Empresa familiar con gestión profesionalizada.",
+        "Posible incorporación de socio industrial para escalar capacidad productiva."
+      ],
+      "riesgos_sectoriales": [
+        "Dependencia de un cliente principal (Airbus >40% facturación).",
+        "Ciclo aeronáutico sujeto a volatilidad de pedidos.",
+        "Competencia de países con costes laborales más bajos (Marruecos, Turquía)."
+      ],
+      "busquedas_recomendadas": [
+        "\"Fabricaciones Navarra Industrial\" Airbus contrato",
+        "\"Fabricaciones Navarra\" aeronáutica mecanizado",
+        "\"Fabricaciones Navarra Industrial\" inversión automatización"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "TEDAE",
+        "Prensa industrial",
+        "Programas UE Clean Aviation"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Hoteles Boutique Mediterráneo SL": {
+      "tipo": "prospecto_externo",
+      "comunidad_autonoma": "Islas Baleares",
+      "noticias": [
+        {
+          "empresa": "Hoteles Boutique Mediterráneo SL",
+          "titulo": "Hoteles Boutique Mediterráneo adquiere dos establecimientos en Mallorca por 28M EUR",
+          "fuente": "Hosteltur",
+          "fecha": "2026-02-05",
+          "resumen": "El grupo hotelero balear amplía su portfolio a 8 establecimientos con la compra de dos hoteles boutique de 4 estrellas superior en la Serra de Tramuntana."
+        },
+        {
+          "empresa": "Hoteles Boutique Mediterráneo SL",
+          "titulo": "El turismo premium en Baleares marca récords de ocupación y precio medio",
+          "fuente": "El Economista",
+          "fecha": "2026-05-15",
+          "resumen": "Cadenas como Hoteles Boutique Mediterráneo registran ADRs superiores a 450 EUR/noche en temporada alta, con ocupaciones del 92% de abril a octubre."
+        }
+      ],
+      "perfil_publico": {
+        "sector": "Retail y Distribución",
+        "descripcion": "Cadena hotelera boutique de lujo en Islas Baleares, con 8 establecimientos y 420 habitaciones totales.",
+        "senal_mercado": "Adquisición de dos hoteles por 28M EUR. Plan de crecimiento activo. Necesidad de financiación de adquisición y posible refinanciación de cartera hipotecaria.",
+        "ingresos_estimados": 36000000,
+        "empleados": 320
+      },
+      "senales_externas": [
+        "Adquisición de dos hoteles por 28M EUR en febrero 2026.",
+        "Plan estratégico de llegar a 12 hoteles en 2028.",
+        "ADR >450 EUR/noche con ocupaciones del 92%.",
+        "Búsqueda de financiación para próximas adquisiciones."
+      ],
+      "litigios_y_regulatorio": [
+        "Sin litigios relevantes.",
+        "Todas las licencias turísticas en regla (moratorium balear superado)."
+      ],
+      "cambios_societarios": [
+        "Familia fundadora (60%) + fondo hotelero (40%).",
+        "El fondo estudia exit parcial en 2027-2028."
+      ],
+      "riesgos_sectoriales": [
+        "Moratorium turístico balear puede limitar crecimiento futuro.",
+        "Estacionalidad (70% de ingresos en abr-oct).",
+        "Dependencia del turismo internacional premium."
+      ],
+      "busquedas_recomendadas": [
+        "\"Hoteles Boutique Mediterráneo\" adquisición Mallorca",
+        "\"Hoteles Boutique Mediterráneo\" financiación hotelera",
+        "\"Hoteles Boutique Mediterráneo\" crecimiento Baleares"
+      ],
+      "fuentes_objetivo": [
+        "BORME",
+        "Conselleria Turismo Baleares",
+        "Hosteltur",
+        "Prensa hotelera"
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
     "Acme Componentes SL": {
+      "tipo": "enriquecimiento_cliente",
+      "comunidad_autonoma": "Aragón",
       "noticias": [
         {
           "empresa": "Acme Componentes SL",
@@ -23,40 +606,23 @@
       "perfil_publico": {
         "sector": "Industrial",
         "descripcion": "Fabricante de componentes industriales de precisión, con sede en Zaragoza.",
-        "senal_mercado": "Sin senal especifica en el set actual."
+        "senal_mercado": "Expansión internacional activa (Polonia). Contratos con OEMs alemanes renovados. Posible necesidad de financiación estructurada adicional."
       },
       "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+        "Apertura de planta en Polonia (9M EUR inversión) en 2025.",
+        "Contratos renovados con fabricantes alemanes Tier-1.",
+        "Crecimiento estimado de facturación del 20% en 2025."
       ],
       "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Industrial.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+        "Exposición a ciclo automoción europea.",
+        "Riesgo de tipo de cambio (PLN/EUR).",
+        "Tensión de márgenes por costes energéticos."
       ],
-      "busquedas_recomendadas": [
-        "\"Acme Componentes SL\" sanciones PEP adverse media",
-        "\"Acme Componentes SL\" litigio concurso administradores",
-        "\"Acme Componentes SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
     },
     "Alcántara Energía Renovable SL": {
+      "tipo": "enriquecimiento_cliente",
+      "comunidad_autonoma": "Extremadura",
       "noticias": [
         {
           "empresa": "Alcántara Energía Renovable SL",
@@ -76,351 +642,23 @@
       "perfil_publico": {
         "sector": "Energía",
         "descripcion": "Promotora y operadora de plantas fotovoltaicas en Extremadura y Castilla-La Mancha.",
-        "senal_mercado": "Sin senal especifica en el set actual."
+        "senal_mercado": "Nueva planta de 60M EUR en cierre financiero. Crecimiento de capacidad instalada del 35%."
       },
       "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+        "Autorización administrativa para planta de 45 MW en Mérida.",
+        "Inversión de 60M EUR en fase de cierre financiero.",
+        "Expansión de capacidad del 35%."
       ],
       "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Energía.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+        "Riesgo regulatorio por cambios en retribución renovable.",
+        "Dependencia de cierre financiero para proyecto principal.",
+        "Riesgo de conexión a red (saturación de nudos en Extremadura)."
       ],
-      "busquedas_recomendadas": [
-        "\"Alcántara Energía Renovable SL\" sanciones PEP adverse media",
-        "\"Alcántara Energía Renovable SL\" litigio concurso administradores",
-        "\"Alcántara Energía Renovable SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Atlas Infra Rail SL": {
-      "noticias": [
-        {
-          "empresa": "Atlas Infra Rail SL",
-          "titulo": "Atlas Infra Rail se adjudica dos contratos ferroviarios por 64 millones",
-          "fuente": "Expansión",
-          "fecha": "2026-01-30",
-          "resumen": "La empresa andaluza refuerza su cartera con proyectos de modernización de infraestructura ferroviaria en Andalucía y Castilla-La Mancha."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Construcción",
-        "descripcion": "Contratista ferroviario especializado en modernización y mantenimiento de infraestructuras de vía.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Construcción.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Atlas Infra Rail SL\" sanciones PEP adverse media",
-        "\"Atlas Infra Rail SL\" litigio concurso administradores",
-        "\"Atlas Infra Rail SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "BioMédica Ibérica SA": {
-      "noticias": [
-        {
-          "empresa": "BioMédica Ibérica SA",
-          "titulo": "BioMédica Ibérica SA: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Salud y Farmacia con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "BioMédica Ibérica SA",
-          "titulo": "BioMédica Ibérica SA: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Salud y Farmacia",
-        "descripcion": "Fabricante de dispositivos médicos de diagnóstico in vitro, con planta en Murcia.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Salud y Farmacia.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"BioMédica Ibérica SA\" sanciones PEP adverse media",
-        "\"BioMédica Ibérica SA\" litigio concurso administradores",
-        "\"BioMédica Ibérica SA\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Bodegas Ribera del Viento SA": {
-      "noticias": [
-        {
-          "empresa": "Bodegas Ribera del Viento SA",
-          "titulo": "Bodegas Ribera del Viento SA: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Agroindustria con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "Bodegas Ribera del Viento SA",
-          "titulo": "Bodegas Ribera del Viento SA: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Agroindustria",
-        "descripcion": "Bodega con denominación de origen en Ribera del Duero, con exportación activa en Europa y Asia.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Agroindustria.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Bodegas Ribera del Viento SA\" sanciones PEP adverse media",
-        "\"Bodegas Ribera del Viento SA\" litigio concurso administradores",
-        "\"Bodegas Ribera del Viento SA\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Cadena Distribuidora Atlántica SL": {
-      "noticias": [
-        {
-          "empresa": "Cadena Distribuidora Atlántica SL",
-          "titulo": "Cadena Distribuidora Atlántica SL: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Retail y Distribución con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "Cadena Distribuidora Atlántica SL",
-          "titulo": "Cadena Distribuidora Atlántica SL: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Retail y Distribución",
-        "descripcion": "Red de distribución de productos de gran consumo en el noroeste de España.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Retail y Distribución.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Cadena Distribuidora Atlántica SL\" sanciones PEP adverse media",
-        "\"Cadena Distribuidora Atlántica SL\" litigio concurso administradores",
-        "\"Cadena Distribuidora Atlántica SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Constructora Bermejo e Hijos SL": {
-      "noticias": [
-        {
-          "empresa": "Constructora Bermejo e Hijos SL",
-          "titulo": "Constructora Bermejo e Hijos SL: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Construcción con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "Constructora Bermejo e Hijos SL",
-          "titulo": "Constructora Bermejo e Hijos SL: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Construcción",
-        "descripcion": "Empresa constructora familiar especializada en rehabilitación y obra civil en Andalucía.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Construcción.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Constructora Bermejo e Hijos SL\" sanciones PEP adverse media",
-        "\"Constructora Bermejo e Hijos SL\" litigio concurso administradores",
-        "\"Constructora Bermejo e Hijos SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Cooperativa Olivarera del Sur SCOOP": {
-      "noticias": [
-        {
-          "empresa": "Cooperativa Olivarera del Sur SCOOP",
-          "titulo": "Cooperativa Olivarera del Sur SCOOP: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Agroindustria con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "Cooperativa Olivarera del Sur SCOOP",
-          "titulo": "Cooperativa Olivarera del Sur SCOOP: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Agroindustria",
-        "descripcion": "Cooperativa olivarera con almazara propia y exportación directa a 22 países.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Agroindustria.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Cooperativa Olivarera del Sur SCOOP\" sanciones PEP adverse media",
-        "\"Cooperativa Olivarera del Sur SCOOP\" litigio concurso administradores",
-        "\"Cooperativa Olivarera del Sur SCOOP\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
     },
     "Datalyx Iberia SL": {
+      "tipo": "enriquecimiento_cliente",
+      "comunidad_autonoma": "Cataluña",
       "noticias": [
         {
           "empresa": "Datalyx Iberia SL",
@@ -440,93 +678,88 @@
       "perfil_publico": {
         "sector": "Tecnología",
         "descripcion": "Proveedor de software de analítica de datos para el sector financiero, con sede en Barcelona.",
-        "senal_mercado": "Sin senal especifica en el set actual."
+        "senal_mercado": "Entrada de Nordic Capital (35%, valoración 42M EUR). Tres nuevos clientes institucionales. Posible M&A o ampliación."
       },
       "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+        "Inversión de Nordic Capital con valoración de 42M EUR.",
+        "Tres nuevos contratos con entidades financieras.",
+        "Ingresos recurrentes previstos >20M EUR en 2026."
       ],
       "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Tecnología.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+        "Competencia de plataformas globales de analítica.",
+        "Dependencia del sector financiero como vertical única.",
+        "Riesgo de rotación de talento tech en Barcelona."
       ],
-      "busquedas_recomendadas": [
-        "\"Datalyx Iberia SL\" sanciones PEP adverse media",
-        "\"Datalyx Iberia SL\" litigio concurso administradores",
-        "\"Datalyx Iberia SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
     },
-    "Distribuciones Monteverde SA": {
+    "Nexuria Tech Solutions SL": {
+      "tipo": "enriquecimiento_cliente",
+      "comunidad_autonoma": "Cataluña",
       "noticias": [
         {
-          "empresa": "Distribuciones Monteverde SA",
-          "titulo": "Monteverde renegocia su deuda tras varios trimestres de tensión de liquidez",
-          "fuente": "La Información",
-          "fecha": "2024-12-12",
-          "resumen": "La compañía ha alcanzado un acuerdo con varias entidades para reestructurar su deuda financiera y evitar incumplimientos. El proceso implica una quita parcial de intereses."
+          "empresa": "Nexuria Tech Solutions SL",
+          "titulo": "Nexuria cierra una ronda de financiación de 8 millones para expandirse en Europa",
+          "fuente": "Expansión",
+          "fecha": "2025-10-03",
+          "resumen": "La startup tecnológica busca acelerar su crecimiento en mercados internacionales y ampliar su equipo de producto. La ronda fue liderada por Vertex Ventures Spain."
         },
         {
-          "empresa": "Distribuciones Monteverde SA",
-          "titulo": "Distribuciones Monteverde registra su tercer año consecutivo de caída de ingresos",
-          "fuente": "El Economista",
-          "fecha": "2025-04-30",
-          "resumen": "La distribuidora valenciana cerró 2024 con unos ingresos de 33 millones, un 7% menos que en 2023. La dirección apunta a la pérdida de contratos con grandes cadenas como causa principal."
+          "empresa": "Nexuria Tech Solutions SL",
+          "titulo": "Nexuria lanza su plataforma de gestión financiera para pymes en Portugal y Francia",
+          "fuente": "CincoDías",
+          "fecha": "2026-01-18",
+          "resumen": "La empresa barcelonesa expande su presencia internacional tras completar la ronda de financiación. Prevé alcanzar los 8 millones de euros en ingresos recurrentes en 2026."
         }
       ],
       "perfil_publico": {
-        "sector": "Retail y Distribución",
-        "descripcion": "Distribuidor mayorista multisectorial con sede en Valencia y red de clientes en todo el Levante.",
-        "senal_mercado": "Sin senal especifica en el set actual."
+        "sector": "Tecnología",
+        "descripcion": "Empresa de tecnología especializada en soluciones de gestión financiera para pymes, con sede en Barcelona.",
+        "senal_mercado": "Ronda de 8M EUR cerrada. Expansión a Portugal y Francia. Crecimiento rápido (+47% ingresos)."
       },
       "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+        "Ronda de 8M EUR liderada por Vertex Ventures Spain.",
+        "Lanzamiento en Portugal y Francia en enero 2026.",
+        "Previsión de 8M EUR en ingresos recurrentes 2026."
       ],
       "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Retail y Distribución.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
+        "Competencia intensa en fintech/SaaS para pymes.",
+        "Quema de caja elevada en fase de expansión.",
+        "Riesgo de no alcanzar unit economics positivos a escala."
       ],
-      "busquedas_recomendadas": [
-        "\"Distribuciones Monteverde SA\" sanciones PEP adverse media",
-        "\"Distribuciones Monteverde SA\" litigio concurso administradores",
-        "\"Distribuciones Monteverde SA\" cuentas anuales auditoria deuda covenants"
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
+    },
+    "Hispania Biotech Labs SA": {
+      "tipo": "enriquecimiento_cliente",
+      "comunidad_autonoma": "Comunidad Valenciana",
+      "noticias": [
+        {
+          "empresa": "Hispania Biotech Labs SA",
+          "titulo": "Hispania Biotech acelera su expansión con nueva línea de producción en Valencia",
+          "fuente": "CincoDías",
+          "fecha": "2026-02-19",
+          "resumen": "La compañía invertirá 14 millones de euros para duplicar su capacidad de producción de kits de diagnóstico durante los próximos 18 meses."
+        }
       ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
+      "perfil_publico": {
+        "sector": "Salud y Farmacia",
+        "descripcion": "Compañía biotecnológica con foco en diagnóstico oncológico y expansión de capacidad productiva.",
+        "senal_mercado": "Inversión de 14M EUR en nueva línea de producción. Fase precomercial de dos productos nuevos. Escalado industrial en 2026."
+      },
+      "senales_externas": [
+        "Inversión de 14M EUR en duplicación de capacidad productiva.",
+        "Dos kits de diagnóstico oncológico en fase precomercial.",
+        "Escalado industrial previsto para 2026."
       ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+      "riesgos_sectoriales": [
+        "Regulación CE-IVD exigente para nuevos productos.",
+        "Riesgo de retrasos en aprobaciones regulatorias.",
+        "Competencia de grandes multinacionales de diagnóstico."
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
     },
     "Grupo Caldas Infraestructuras SA": {
+      "tipo": "enriquecimiento_cliente",
+      "comunidad_autonoma": "Comunidad de Madrid",
       "noticias": [
         {
           "empresa": "Grupo Caldas Infraestructuras SA",
@@ -546,540 +779,19 @@
       "perfil_publico": {
         "sector": "Construcción",
         "descripcion": "Constructora de obra pública especializada en infraestructuras viarias, con sede en Madrid.",
-        "senal_mercado": "Sin senal especifica en el set actual."
+        "senal_mercado": "EBITDA -35% en 2024 por sobrecostes. Nuevo contrato de 87M EUR que alivia pipeline. Posible refinanciación."
       },
       "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
+        "Caída del 35% del EBITDA en 2024 por sobrecostes.",
+        "Adjudicación de contrato A-4 por 87M EUR en 2025.",
+        "Posible necesidad de refinanciación de deuda."
       ],
       "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Construcción.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Grupo Caldas Infraestructuras SA\" sanciones PEP adverse media",
-        "\"Grupo Caldas Infraestructuras SA\" litigio concurso administradores",
-        "\"Grupo Caldas Infraestructuras SA\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Hispania Biotech Labs SA": {
-      "noticias": [
-        {
-          "empresa": "Hispania Biotech Labs SA",
-          "titulo": "Hispania Biotech acelera su expansión con nueva línea de producción en Valencia",
-          "fuente": "CincoDías",
-          "fecha": "2026-02-19",
-          "resumen": "La compañía invertirá 14 millones de euros para duplicar su capacidad de producción de kits de diagnóstico durante los próximos 18 meses."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Salud y Farmacia",
-        "descripcion": "Compañía biotecnológica con foco en diagnóstico oncológico y expansión de capacidad productiva.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Salud y Farmacia.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Hispania Biotech Labs SA\" sanciones PEP adverse media",
-        "\"Hispania Biotech Labs SA\" litigio concurso administradores",
-        "\"Hispania Biotech Labs SA\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Ibérica Solar Partners SL": {
-      "noticias": [
-        {
-          "empresa": "Ibérica Solar Partners SL",
-          "titulo": "Ibérica Solar Partners SL: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Energía con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "Ibérica Solar Partners SL",
-          "titulo": "Ibérica Solar Partners SL: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Energía",
-        "descripcion": "Agregador de proyectos de energía solar y almacenamiento en la península ibérica.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Energía.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Ibérica Solar Partners SL\" sanciones PEP adverse media",
-        "\"Ibérica Solar Partners SL\" litigio concurso administradores",
-        "\"Ibérica Solar Partners SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Logística Transibérica SL": {
-      "noticias": [
-        {
-          "empresa": "Logística Transibérica SL",
-          "titulo": "El encarecimiento del combustible impacta en los costes del sector logístico",
-          "fuente": "Expansión",
-          "fecha": "2025-02-18",
-          "resumen": "Empresas del sector, incluyendo Transibérica, han visto reducidos sus márgenes debido al incremento de costes operativos. El EBITDA del sector cayó de media un 15% en 2024."
-        },
-        {
-          "empresa": "Logística Transibérica SL",
-          "titulo": "Logística Transibérica amplía su red de almacenes en el corredor mediterráneo",
-          "fuente": "Logística Profesional",
-          "fecha": "2025-09-10",
-          "resumen": "La empresa aragonesa ha inaugurado un nuevo almacén de 12.000 m² en Valencia para reforzar su presencia en el Arco Mediterráneo. La inversión asciende a 3,5 millones de euros."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Logística y Transporte",
-        "descripcion": "Entidad con presencia en Logística y Transporte.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Logística y Transporte.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Logística Transibérica SL\" sanciones PEP adverse media",
-        "\"Logística Transibérica SL\" litigio concurso administradores",
-        "\"Logística Transibérica SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Mediterránea Foods Export SA": {
-      "noticias": [
-        {
-          "empresa": "Mediterránea Foods Export SA",
-          "titulo": "Mediterránea Foods incrementa un 22% sus exportaciones en 2025",
-          "fuente": "El Economista",
-          "fecha": "2026-03-11",
-          "resumen": "El grupo murciano prevé ampliar planta en 2026 para atender mayor demanda internacional y reducir cuellos de botella logísticos."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Agroindustria",
-        "descripcion": "Exportador de conservas vegetales premium con presencia en UE, Reino Unido y Oriente Medio.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Agroindustria.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Mediterránea Foods Export SA\" sanciones PEP adverse media",
-        "\"Mediterránea Foods Export SA\" litigio concurso administradores",
-        "\"Mediterránea Foods Export SA\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Nexuria Tech Solutions SL": {
-      "noticias": [
-        {
-          "empresa": "Nexuria Tech Solutions SL",
-          "titulo": "Nexuria cierra una ronda de financiación de 8 millones para expandirse en Europa",
-          "fuente": "Expansión",
-          "fecha": "2025-10-03",
-          "resumen": "La startup tecnológica busca acelerar su crecimiento en mercados internacionales y ampliar su equipo de producto. La ronda fue liderada por Vertex Ventures Spain."
-        },
-        {
-          "empresa": "Nexuria Tech Solutions SL",
-          "titulo": "Nexuria lanza su plataforma de gestión financiera para pymes en Portugal y Francia",
-          "fuente": "CincoDías",
-          "fecha": "2026-01-18",
-          "resumen": "La empresa barcelonesa expande su presencia internacional tras completar la ronda de financiación. Prevé alcanzar los 8 millones de euros en ingresos recurrentes en 2026."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Tecnología",
-        "descripcion": "Empresa de tecnología de la información especializada en soluciones para pymes, con sede en Barcelona.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Tecnología.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Nexuria Tech Solutions SL\" sanciones PEP adverse media",
-        "\"Nexuria Tech Solutions SL\" litigio concurso administradores",
-        "\"Nexuria Tech Solutions SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Norte Logística SA": {
-      "noticias": [
-        {
-          "empresa": "Norte Logística SA",
-          "titulo": "Norte Logística lanza su servicio de transporte intermodal ferroviario en el corredor atlántico",
-          "fuente": "Logística Profesional",
-          "fecha": "2025-04-08",
-          "resumen": "La empresa vasca amplía su oferta con soluciones ferroviarias para reducir la huella de carbono de sus clientes industriales. La inversión en material rodante supera los 4 millones."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Industrial",
-        "descripcion": "Operador logístico especializado en transporte intermodal para el sector industrial, con sede en Vitoria-Gasteiz.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Industrial.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Norte Logística SA\" sanciones PEP adverse media",
-        "\"Norte Logística SA\" litigio concurso administradores",
-        "\"Norte Logística SA\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Patrimonios Centrales SA": {
-      "noticias": [
-        {
-          "empresa": "Patrimonios Centrales SA",
-          "titulo": "Patrimonios Centrales SA: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Inmobiliario con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "Patrimonios Centrales SA",
-          "titulo": "Patrimonios Centrales SA: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Inmobiliario",
-        "descripcion": "Sociedad patrimonialista con cartera diversificada de activos comerciales y de oficinas en Madrid.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Inmobiliario.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Patrimonios Centrales SA\" sanciones PEP adverse media",
-        "\"Patrimonios Centrales SA\" litigio concurso administradores",
-        "\"Patrimonios Centrales SA\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Promotora Levante Residencial SL": {
-      "noticias": [
-        {
-          "empresa": "Promotora Levante Residencial SL",
-          "titulo": "Promotora Levante Residencial SL: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Inmobiliario con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "Promotora Levante Residencial SL",
-          "titulo": "Promotora Levante Residencial SL: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Inmobiliario",
-        "descripcion": "Promotora inmobiliaria especializada en residencial de obra nueva en la Comunidad Valenciana.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Inmobiliario.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Promotora Levante Residencial SL\" sanciones PEP adverse media",
-        "\"Promotora Levante Residencial SL\" litigio concurso administradores",
-        "\"Promotora Levante Residencial SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Red Clínicas Meridional SL": {
-      "noticias": [
-        {
-          "empresa": "Red Clínicas Meridional SL",
-          "titulo": "Red Clínicas Meridional SL: seguimiento de crecimiento y posicion sectorial",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-04-10",
-          "resumen": "Se observan senales de actividad en Salud y Farmacia con foco en expansion y eficiencia operativa."
-        },
-        {
-          "empresa": "Red Clínicas Meridional SL",
-          "titulo": "Red Clínicas Meridional SL: analisis publico de entorno competitivo",
-          "fuente": "DeepResearch Mock Feed",
-          "fecha": "2026-05-20",
-          "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Salud y Farmacia",
-        "descripcion": "Grupo de clínicas privadas especializadas en traumatología y fisioterapia en Andalucía.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Salud y Farmacia.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Red Clínicas Meridional SL\" sanciones PEP adverse media",
-        "\"Red Clínicas Meridional SL\" litigio concurso administradores",
-        "\"Red Clínicas Meridional SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
-    },
-    "Vertia Energía SL": {
-      "noticias": [
-        {
-          "empresa": "Vertia Energía SL",
-          "titulo": "Vertia Energía firma contratos de eficiencia energética por 28 millones en 2025",
-          "fuente": "El Economista",
-          "fecha": "2025-08-22",
-          "resumen": "La empresa madrileña ha cerrado cinco nuevos proyectos de eficiencia energética con grandes plantas industriales en Castilla y León y Aragón, impulsando su crecimiento al 45%."
-        }
-      ],
-      "perfil_publico": {
-        "sector": "Industrial",
-        "descripcion": "Proveedor de soluciones de eficiencia energética para plantas industriales, con sede en Alcobendas.",
-        "senal_mercado": "Sin senal especifica en el set actual."
-      },
-      "senales_externas": [
-        "Seguimiento de prensa economica y mercantil.",
-        "Revision de adjudicaciones/contratos publicos cuando aplique.",
-        "Validacion de cambios de administradores y estructura accionarial."
-      ],
-      "litigios_y_regulatorio": [
-        "Sin litigios concluyentes en el repositorio simulado; requiere validacion en BOE/BORME/CENDOJ cuando proceda."
-      ],
-      "cambios_societarios": [
-        "Revisar movimientos en registro mercantil y modificaciones de organo de administracion."
-      ],
-      "riesgos_sectoriales": [
-        "Riesgo macro y competitivo en sector Industrial.",
-        "Riesgo de coste de financiacion y tension de margenes en escenarios de tipos altos."
-      ],
-      "busquedas_recomendadas": [
-        "\"Vertia Energía SL\" sanciones PEP adverse media",
-        "\"Vertia Energía SL\" litigio concurso administradores",
-        "\"Vertia Energía SL\" cuentas anuales auditoria deuda covenants"
-      ],
-      "fuentes_objetivo": [
-        "UE Consolidated",
-        "OFAC SDN",
-        "ONU",
-        "HMT UK",
-        "BORME",
-        "CNMV (si aplica)",
-        "Prensa economica especializada"
-      ],
-      "ultima_actualizacion": "2026-06-16T15:30:00Z"
+        "Márgenes bajo presión por inflación de costes.",
+        "Dependencia de licitaciones públicas.",
+        "Riesgo de impago histórico registrado (2023)."
+      ],
+      "ultima_actualizacion": "2026-06-19T10:00:00Z"
     }
   }
 }

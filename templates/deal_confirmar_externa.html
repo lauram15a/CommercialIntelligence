@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Empresa no encontrada como cliente{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="page-header">
+    <p class="eyebrow">{{ department_name_deal }}</p>
+    <h1>Empresa no registrada como cliente</h1>
+    <p>
+      La empresa <strong>{{ company_name }}</strong> no figura en la base de datos
+      interna del banco como cliente activo.
+    </p>
+  </div>
+
+  <div class="card" style="max-width: 640px; margin: 0 auto 64px;">
+    <div class="card__header">
+      <h2>¿Deseas realizar el estudio con fuentes externas?</h2>
+      <p>
+        El sistema analizara la informacion disponible en fuentes publicas
+        (prensa economica, registros publicos, senales de mercado) para
+        generar una propuesta comercial de aproximacion.
+      </p>
+    </div>
+    <div class="card__body">
+      <div class="uc-disclaimer" style="margin-bottom: 24px;">
+        <span class="uc-disclaimer__icon" aria-hidden="true">i</span>
+        <p>
+          El analisis con fuentes externas es menos detallado que el analisis
+          con datos internos. No incluira historial bancario, balances auditados
+          ni scoring interno. La propuesta generada servira como punto de partida
+          para una primera aproximacion comercial.
+        </p>
+      </div>
+
+      <form action="{{ url_for('deal_nueva_solicitud') }}" method="post"
+            style="display: flex; flex-direction: column; gap: 16px;">
+        <input type="hidden" name="company_name"       value="{{ company_name }}">
+        <input type="hidden" name="fuente"             value="externa">
+        <input type="hidden" name="confirmar_externa"  value="1">
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button type="submit" class="btn btn-primary">
+            Si, realizar estudio con fuentes externas
+          </button>
+          <a href="{{ url_for('deal_index') }}" class="btn btn-secondary">
+            Cancelar
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

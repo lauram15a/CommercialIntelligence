@@ -83,6 +83,16 @@ function setupAutocomplete(inputId, listId, items) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobile-menu-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  if (menuBtn && mobileNav) {
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('is-open');
+      mobileNav.classList.toggle('is-open');
+    });
+  }
+
   // Entrada escalonada de las tarjetas de casos de uso (landing)
   const cards = document.querySelectorAll('.usecase-card');
   cards.forEach((card, i) => {

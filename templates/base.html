@@ -39,7 +39,7 @@
           <img class="brand-logo" src="{{ url_for('static', filename='img/logotipo.png') }}" alt="{{ bank_name }}">
         </a>
 
-        <nav class="topbar__nav">
+        <nav class="topbar__nav topbar__nav--desktop">
           {% if request.endpoint and request.endpoint.startswith('kyc_') %}
             <a href="{{ url_for('kyc_index') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'kyc_index' }}">Nueva solicitud</a>
             <a href="{{ url_for('kyc_runs_list') }}" class="topbar__link {{ 'is-active' if request.endpoint in ['kyc_runs_list', 'kyc_run_detail'] }}">Histórico</a>
@@ -48,7 +48,25 @@
             <a href="{{ url_for('deal_runs_list') }}" class="topbar__link {{ 'is-active' if request.endpoint in ['deal_runs_list', 'deal_run_detail'] }}">Histórico</a>
           {% endif %}
         </nav>
+
+        <button class="topbar__hamburger" id="mobile-menu-toggle" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+
+      <!-- Mobile nav -->
+      <nav class="topbar__mobile-nav" id="mobile-nav">
+        <a href="{{ url_for('usecases_menu') }}" class="topbar__mobile-link">Inicio</a>
+        {% if request.endpoint and request.endpoint.startswith('kyc_') %}
+          <a href="{{ url_for('kyc_index') }}" class="topbar__mobile-link">Nueva solicitud</a>
+          <a href="{{ url_for('kyc_runs_list') }}" class="topbar__mobile-link">Histórico</a>
+        {% elif request.endpoint and request.endpoint.startswith('deal_') %}
+          <a href="{{ url_for('deal_index') }}" class="topbar__mobile-link">Nueva solicitud</a>
+          <a href="{{ url_for('deal_runs_list') }}" class="topbar__mobile-link">Histórico</a>
+        {% else %}
+          <a href="{{ url_for('usecases_menu') }}" class="topbar__mobile-link">Casos de uso</a>
+        {% endif %}
+      </nav>
     </header>
 
     <main class="app-main">

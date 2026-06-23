@@ -1,0 +1,24 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Inversión estimada proyecto fotovoltaico (CAPEX)",
+      "valor": "~€60M"
+    },
+    {
+      "nombre": "Ingresos estimados actuales",
+      "valor": "~€5,9M"
+    },
+    {
+      "nombre": "Escala del proyecto vs. ingresos actuales",
+      "valor": "~10x (60/5,9)"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Salto de escala por entrada en fase de cierre financiero de un proyecto fotovoltaico relevante.",
+    "CAPEX extraordinario concentrado en el corto plazo asociado al despliegue del activo.",
+    "Estrategia de crecimiento basada en desarrollo y operación de activos de generación renovable.",
+    "Probable estructuración de deuda tipo project finance (posible sindicación) dada la naturaleza del activo y el cierre financiero."
+  ],
+  "interpretacion": "La compañía afronta una necesidad inmediata de financiación estructurada para ejecutar un CAPEX significativo, lo que previsiblemente requerirá deuda de project finance y coordinación de entidades financiadoras. La falta de series históricas de P&L/EBITDA y de datos de endeudamiento actual limita la evaluación de la evolución operativa y del apalancamiento. El contexto sugiere potencial para complementar la deuda con coinversión institucional para cerrar la estructura de capital del proyecto.",
+  "disponible": true
+}

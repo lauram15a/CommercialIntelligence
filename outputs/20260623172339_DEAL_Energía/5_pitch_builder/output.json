@@ -1,0 +1,33 @@
+{
+  "titulo": "Propuesta comercial | Alcántara Energía Renovable SL",
+  "subtitulo": "Estructuración y sindicación urgente de financiación de proyecto fotovoltaico (~€60M) y apoyo en la entrada de coinversores institucionales para asegurar el cierre financiero",
+  "oportunidad_detectada": "Alcántara Energía Renovable SL está en fase de cierre financiero de un proyecto fotovoltaico con CAPEX estimado de ~€60M, lo que implica una necesidad inmediata de estructuración de deuda tipo project finance y coordinación de un sindicato de financiadores. Dada la magnitud del salto de escala frente a ingresos estimados actuales (~€5,9M), existe además una oportunidad complementaria de articular coinversión institucional (equity/alternativos) para robustecer la estructura de capital y acelerar el cierre.",
+  "contexto_financiero": [
+    "Proyecto fotovoltaico en cierre financiero con inversión estimada ~€60M (CAPEX concentrado en el corto plazo), típico de una estructura de financiación sin recurso/limitado recurso basada en flujos del activo.",
+    "Ingresos estimados actuales ~€5,9M; el proyecto supone un salto de escala aproximado de ~10x, lo que eleva la relevancia de una estructura de capital y covenants adecuados al perfil de riesgo de construcción y operación.",
+    "Información limitada disponible (sin series históricas de P&L/EBITDA ni endeudamiento actual), por lo que el avance eficiente requiere un paquete de información del proyecto (modelo, contratos, permisos, EPC/O&M, PPA/merchant, seguros) para dimensionar capacidad de deuda y términos."
+  ],
+  "encaje_productos": [
+    "Financiación estructurada (project finance): estructuración, model review, term sheet, coordinación de due diligence y negociación de documentación",
+    "Sindicacion de deuda: coordinación de entidades financiadoras, estrategia de colocación, proceso competitivo y cierre",
+    "Asesoramiento en estructura de capital: definición del mix deuda/capital, análisis de sensibilidad (precio, producción, costes, tipos) y covenants",
+    "Búsqueda de coinversores institucionales: preparación de materiales, identificación de perfiles, gestión de proceso y apoyo en negociación de términos"
+  ],
+  "comparables": [
+    "Plataformas de generación renovable (solar) con activos operativos y pipeline en Iberia",
+    "Vehículos de inversión en infraestructuras/energía con foco en renovables (perfil institucional)",
+    "Desarrolladores y operadores de proyectos fotovoltaicos con financiación de proyecto recurrente"
+  ],
+  "argumentos_valor": [
+    "Ejecución rápida orientada a cierre: enfoque en hitos críticos (estructura, capacidad de deuda, documentación y calendario) para minimizar riesgo de retrasos en el cierre financiero.",
+    "Optimización de estructura y coste de capital: diseño de un project finance alineado con el perfil del activo (construcción/operación) y con flexibilidad para el salto de escala, buscando maximizar capacidad de deuda sin comprometer resiliencia.",
+    "Acceso coordinado a financiadores y coinversores: proceso estructurado para sindicar deuda y, en paralelo, evaluar coinversión institucional para reforzar equity, diversificar fuentes y aumentar certidumbre de fondos."
+  ],
+  "proximos_pasos": [
+    "Sesión de arranque (60–90 min): confirmar estado del cierre financiero, calendario, importe objetivo de deuda, estructura deseada (tenor/amortización) y principales contratos (EPC, O&M, PPA/merchant).",
+    "Solicitud de información y plan de trabajo: modelo financiero del proyecto, supuestos de producción, permisos, CAPEX/OPEX, estructura societaria, seguros, y situación de endeudamiento actual; definición de un cronograma de due diligence y documentación.",
+    "Propuesta de estructura preliminar: rango indicativo de apalancamiento, métricas de cobertura, reservas, covenants y estrategia de sindicación; decisión sobre carril paralelo de coinversión institucional (ticket, rol, timing y materiales)."
+  ],
+  "narrativa_markdown": "Alcántara Energía Renovable SL afronta un momento crítico: el cierre financiero de un proyecto fotovoltaico con una inversión estimada de ~€60M. Por la naturaleza del activo y la concentración del CAPEX en el corto plazo, la solución más eficiente suele ser una financiación estructurada tipo project finance, con coordinación de financiadores y una ejecución muy enfocada a hitos para asegurar el calendario.\n\nEl proyecto supone un salto de escala relevante frente a los ingresos estimados actuales (~€5,9M), lo que incrementa la importancia de definir una estructura de capital robusta (mix deuda/capital), covenants adecuados y un paquete de reservas y mitigantes que soporte tanto la fase de construcción como la operación. Dado que no se dispone aún de series históricas de P&L/EBITDA ni de información de endeudamiento actual, el avance debe apoyarse en un paquete de información del proyecto (modelo, contratos, permisos y supuestos operativos) para dimensionar capacidad de deuda y términos.\n\nProponemos un enfoque de doble carril: (i) estructuración y sindicación de la deuda de project finance, incluyendo revisión del modelo, term sheet, coordinación de due diligence y negociación documental; y (ii) evaluación y, en su caso, articulación de coinversión institucional para reforzar el equity y elevar la certidumbre de fondos, especialmente útil cuando el tamaño del proyecto es material respecto a la base actual.\n\nEl objetivo es acelerar el cierre financiero con una estructura optimizada en coste de capital y resiliente ante sensibilidades clave (precio, producción, costes y tipos), coordinando a los financiadores y potenciales coinversores bajo un proceso ordenado y competitivo.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+  "pptx_path": "5_pitch_builder/pitchbook.pptx"
+}

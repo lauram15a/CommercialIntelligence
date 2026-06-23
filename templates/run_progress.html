@@ -46,6 +46,8 @@
     <div class="progress-error" id="progress-error">
       Ha ocurrido un error durante el análisis. Consulta los registros del
       sistema (app.log) para más detalle.
+      <br>
+      <strong id="progress-error-detail"></strong>
     </div>
 
     <div class="progress-cta" id="progress-cta">
@@ -79,6 +81,8 @@
     });
     if (state.status === 'error') {
       document.getElementById('progress-error').classList.add('is-visible');
+      const detail = document.getElementById('progress-error-detail');
+      detail.textContent = state.error || 'Error no detallado por el backend.';
     }
     if (state.status === 'done' && state.real_run_id) {
       const cta  = document.getElementById('progress-cta');

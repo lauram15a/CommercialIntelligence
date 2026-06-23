@@ -1,0 +1,33 @@
+{
+  "users": {
+    "ana.garcia": {
+      "username": "ana.garcia",
+      "nombre": "Ana",
+      "apellidos": "García López",
+      "email": "ana.garcia@bankinter.com",
+      "cargo": "Directora de Riesgos Corporativos",
+      "departamento": "Dirección de Riesgos",
+      "oficina": "Madrid - Sede Central",
+      "telefono": "+34 91 623 4567",
+      "extension": "4567",
+      "fecha_incorporacion": "2018-03-15",
+      "nivel": "Director",
+      "foto": "ana.png"
+    },
+    "andres.martinez": {
+      "username": "andres.martinez",
+      "nombre": "Andrés",
+      "apellidos": "Martínez Ruiz",
+      "email": "andres.martinez@bankinter.com",
+      "cargo": "Analista Senior de Banca de Inversión",
+      "departamento": "Corporate & Investment Banking",
+      "oficina": "Madrid - Paseo de la Castellana",
+      "telefono": "+34 91 623 8901",
+      "extension": "8901",
+      "fecha_incorporacion": "2020-09-01",
+      "nivel": "Senior Analyst",
+      "foto": "andres.jpg"
+    }
+  },
+  "active_user": "ana.garcia"
+}

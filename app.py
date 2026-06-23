@@ -9,12 +9,13 @@ Rutas Deal: /deal/ /deal/runs /deal/runs/<id> /deal/runs/<id>/progress
 """
 
 import json
+import logging
 import threading
 import uuid
 from datetime import datetime
 from pathlib import Path
 
-from flask import Flask, render_template, request, jsonify, abort, send_file
+from flask import Flask, render_template, request, jsonify, abort, send_file, session, redirect, url_for
 
 import sys
 from pathlib import Path
@@ -29,6 +30,27 @@ DATA_DIR    = BASE_DIR / "data"
 OUTPUTS_DIR.mkdir(exist_ok=True)
 
 app = Flask(__name__)
+app.secret_key = "mock-sso-dev-key-not-for-production"
+logger = logging.getLogger(__name__)
+
+# ---------------------------------------------------------------------------
+# SSO mock
+# ---------------------------------------------------------------------------
+SSO_DATA_PATH = DATA_DIR / "sso" / "sso.json"
+
+
+def _load_sso_data() -> dict:
+    if SSO_DATA_PATH.exists():
+        with open(SSO_DATA_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def _get_current_user() -> dict | None:
+    sso = _load_sso_data()
+    username = session.get("sso_user") or sso.get("active_user")
+    users = sso.get("users", {})
+    return users.get(username)
 
 _RUNS_STATE:      dict[str, dict] = {}
 _DEAL_RUNS_STATE: dict[str, dict] = {}
@@ -105,6 +127,7 @@ DEAL_AGENT_STEPS = [
 def inject_globals():
     context = BankConfig.to_template_context()
     context["available_use_cases"] = get_available_use_cases()
+    context["sso_user"] = _get_current_user()
     return context
 
 
@@ -488,7 +511,14 @@ def _run_kyc_pipeline_background(run_id, entity_name, documents):
                           current_step=None,
                           real_run_id=result["run_id"])
     except Exception as exc:  # noqa: BLE001
-        _update_run_state(_RUNS_STATE, run_id, status="error", error=str(exc), current_step=None)
+        logger.exception("Error en pipeline KYC en background | run_id=%s | entity=%s", run_id, entity_name)
+        _update_run_state(
+            _RUNS_STATE,
+            run_id,
+            status="error",
+            error=f"{type(exc).__name__}: {exc}",
+            current_step=None,
+        )
 
 
 @app.route("/kyc/")
@@ -623,7 +653,19 @@ def _run_deal_pipeline_background(run_id, sector, company_name, financial_docume
                           current_step=None,
                           real_run_id=result["run_id"])
     except Exception as exc:  # noqa: BLE001
-        _update_run_state(_DEAL_RUNS_STATE, run_id, status="error", error=str(exc), current_step=None)
+        logger.exception(
+            "Error en pipeline DEAL en background | run_id=%s | sector=%s | company=%s",
+            run_id,
+            sector,
+            company_name,
+        )
+        _update_run_state(
+            _DEAL_RUNS_STATE,
+            run_id,
+            status="error",
+            error=f"{type(exc).__name__}: {exc}",
+            current_step=None,
+        )
 
 
 @app.route("/deal/")
@@ -739,4 +781,29 @@ def deal_nueva_solicitud():
 
 
 if __name__ == "__main__":
+    # Servir fotos SSO desde data/sso/images/
+    @app.route("/sso/photo/<filename>")
+    def sso_photo(filename):
+        photo_dir = DATA_DIR / "sso" / "images"
+        return send_file(photo_dir / filename)
+
+    @app.route("/sso/switch/<username>")
+    def sso_switch(username):
+        sso = _load_sso_data()
+        if username in sso.get("users", {}):
+            session["sso_user"] = username
+        return redirect(request.referrer or url_for("usecases_menu"))
+
+    @app.route("/sso/api/user")
+    def sso_api_user():
+        user = _get_current_user()
+        if not user:
+            return jsonify({"error": "No user"}), 404
+        return jsonify(user)
+
+    @app.route("/sso/api/users")
+    def sso_api_users():
+        sso = _load_sso_data()
+        return jsonify(list(sso.get("users", {}).values()))
+
     app.run(debug=True)

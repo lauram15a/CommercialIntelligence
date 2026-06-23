@@ -25,11 +25,12 @@ from functools import lru_cache
 from typing import Optional
 
 from azure.identity import (
+    AzureCliCredential,
     DefaultAzureCredential,
     ManagedIdentityCredential,
     get_bearer_token_provider,
 )
-from openai import AzureOpenAI, OpenAI
+from openai import AzureOpenAI, OpenAI, BadRequestError
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -247,6 +248,7 @@ class Clients:
         - Azure host         ->  ManagedIdentityCredential (user-assigned if client_id present).
         """
         client_id = (self.config.azure_client_id or "").strip() or None
+        tenant_id = (os.getenv("AZURE_TENANT_ID") or "").strip() or None
         in_azure = self._is_running_in_azure_host()
 
         if in_azure:
@@ -261,11 +263,21 @@ class Clients:
                 credential = ManagedIdentityCredential()
         else:
             self._ensure_az_cli_on_path()
-            logger.info(
-                "[AUTH] Local environment detected -> DefaultAzureCredential "
-                "(AZ CLI / VS Code / Shared cache, Managed Identity EXCLUDED)"
-            )
-            credential = DefaultAzureCredential(exclude_managed_identity_credential=True)
+            if tenant_id:
+                logger.info(
+                    "[AUTH] Local environment detected -> AzureCliCredential "
+                    "(tenant fijo por AZURE_TENANT_ID=%s)",
+                    tenant_id,
+                )
+                # Forzamos el tenant explícito para evitar tokens del tenant activo
+                # en Azure CLI que no coincidan con el recurso de Azure OpenAI.
+                credential = AzureCliCredential(tenant_id=tenant_id)
+            else:
+                logger.info(
+                    "[AUTH] Local environment detected -> DefaultAzureCredential "
+                    "(AZ CLI / VS Code / Shared cache, Managed Identity EXCLUDED)"
+                )
+                credential = DefaultAzureCredential(exclude_managed_identity_credential=True)
 
         self._log_credential_identity(credential)
         return credential
@@ -563,4 +575,15 @@ def chat_completion(messages, profile: str = "gpt52", tools=None, tool_choice=No
     if tool_choice:
         params["tool_choice"] = tool_choice
 
-    return client.chat.completions.create(**params)
+    try:
+        return client.chat.completions.create(**params)
+    except BadRequestError as exc:
+        detail = str(exc)
+        if "Tenant provided in token does not match resource token" in detail:
+            tenant_id = (os.getenv("AZURE_TENANT_ID") or "").strip() or "<AZURE_TENANT_ID>"
+            raise RuntimeError(
+                "Azure OpenAI rechazó el token por mismatch de tenant. "
+                f"Asegura sesión en el tenant correcto ({tenant_id}) con: "
+                f"'az login --tenant {tenant_id}' y vuelve a ejecutar."
+            ) from exc
+        raise

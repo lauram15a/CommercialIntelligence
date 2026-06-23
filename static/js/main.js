@@ -117,4 +117,42 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
 
   revealEls.forEach((el) => observer.observe(el));
+
+  // ---- SSO User Menu ----
+  const ssoBtn = document.getElementById('sso-avatar-btn');
+  const ssoDrop = document.getElementById('sso-dropdown');
+  const ssoMenu = document.getElementById('sso-user-menu');
+
+  if (ssoBtn && ssoDrop) {
+    ssoBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      ssoDrop.classList.toggle('is-open');
+
+      // Load switch users list on first open
+      const switchContainer = document.getElementById('sso-switch-users');
+      if (ssoDrop.classList.contains('is-open') && switchContainer && !switchContainer.dataset.loaded) {
+        fetch('/sso/api/users')
+          .then(r => r.json())
+          .then(users => {
+            switchContainer.innerHTML = '';
+            users.forEach(u => {
+              const a = document.createElement('a');
+              a.href = '/sso/switch/' + u.username;
+              a.className = 'sso-switch__user';
+              a.innerHTML =
+                '<img class="sso-switch__user-avatar" src="/sso/photo/' + u.foto + '" alt="' + u.nombre + '">' +
+                '<span class="sso-switch__user-name">' + u.nombre + ' ' + u.apellidos + '</span>';
+              switchContainer.appendChild(a);
+            });
+            switchContainer.dataset.loaded = '1';
+          });
+      }
+    });
+
+    document.addEventListener('click', function(e) {
+      if (ssoMenu && !ssoMenu.contains(e.target)) {
+        ssoDrop.classList.remove('is-open');
+      }
+    });
+  }
 });

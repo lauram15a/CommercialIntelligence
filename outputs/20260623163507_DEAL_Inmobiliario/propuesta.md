@@ -1,0 +1,9 @@
+Promotora Levante Residencial SL se encuentra en una fase de expansión del pipeline con el lanzamiento previsto de dos promociones residenciales en 2025, con ingresos estimados asociados de ~18,0 M€. La necesidad explícita de financiación promotor y la búsqueda activa de entidades apuntan a un proceso en curso y a una ventana inmediata para originación.
+
+La oportunidad consiste en estructurar financiación por proyecto que cubra las necesidades típicas de arranque y ejecución (suelo, construcción y comercialización), con un calendario de disposiciones alineado a hitos de obra y un repago vinculado a la dinámica de ventas/entregas. Dada la ausencia de históricos y de métricas de margen, el análisis debe centrarse en la viabilidad y sensibilidad por promoción: presupuesto, contingencias, preventas, pricing, plazos y estructura de garantías.
+
+Proponemos articular una solución de deuda senior por proyecto (con posibles líneas complementarias operativas) que combine rapidez de ejecución con un marco de control y mitigación de riesgos: condiciones ligadas a preventas, validación de presupuesto, mecanismos de disposiciones contra certificaciones y un paquete de garantías coherente con el activo y los flujos del desarrollo.
+
+El siguiente paso es una reunión de trabajo para confirmar los parámetros clave de ambas promociones y recopilar la información mínima necesaria para emitir una propuesta indicativa no vinculante en un plazo corto, maximizando la probabilidad de cierre en un entorno competitivo.
+
+El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

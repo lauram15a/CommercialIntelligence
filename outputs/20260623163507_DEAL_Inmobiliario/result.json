@@ -1,0 +1,155 @@
+{
+  "run_id": "20260623163507",
+  "sector": "Inmobiliario",
+  "company_name": "Promotora Levante Residencial SL",
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Inmobiliario",
+    "oportunidades": [
+      {
+        "empresa": "Promotora Levante Residencial SL",
+        "motivo": "Lanzamiento de dos promociones residenciales en 2025 con necesidad explícita de financiación promotor y búsqueda activa de entidades, lo que sugiere proceso en curso y ventana inmediata para originación.",
+        "prioridad": "alta",
+        "ingresos_estimados": 18000000,
+        "empleados": 35
+      },
+      {
+        "empresa": "Patrimonios Centrales SA",
+        "motivo": "Refinanciación de cartera hipotecaria prevista para 2S25 sobre activos valorados en ~95M EUR; oportunidad clara para estructurar refinanciación (y potencialmente optimización de plazos/covenants) con preparación previa al proceso.",
+        "prioridad": "alta",
+        "ingresos_estimados": 7500000,
+        "empleados": 12
+      }
+    ],
+    "resumen": "En inmobiliario, las oportunidades más accionables suelen venir de financiación promotor (nuevos desarrollos) y refinanciaciones de deuda respaldada por activos ante vencimientos o reprice. En la muestra, ambas compañías muestran necesidades próximas y explícitas, con alta probabilidad de mandato si se actúa con antelación en estructuración y términos."
+  },
+  "earnings_summary": "Promotora Levante Residencial SL (sector inmobiliario) muestra una señal clara de crecimiento/inversión al anunciar el lanzamiento de dos promociones residenciales en 2025, con ingresos estimados asociados de ~18,0 M€. No se aportan históricos de ingresos, por lo que no es posible cuantificar crecimiento interanual ni identificar estacionalidad o concentración por proyecto. Tampoco hay datos de margen operativo (p. ej., EBITDA/resultado de explotación), lo que limita evaluar si la compañía está en fase de expansión con compresión de márgenes por costes de obra/financiación o si mantiene rentabilidades estables. En términos de CAPEX, aunque no se reporta inversión explícita, el inicio de promociones implica un incremento relevante de inversión y consumo de caja vía suelo, construcción y gastos de comercialización, típicamente financiados con deuda promotor. No se facilita información de endeudamiento actual, pero la “necesidad explícita de financiación promotor” y la búsqueda activa de entidades apuntan a un aumento próximo del apalancamiento para ejecutar el pipeline 2025.\n\nLa compañía presenta un perfil de expansión por nuevos desarrollos con requerimiento inmediato de financiación de proyecto, lo que puede implicar una oportunidad de originación de deuda promotor sujeta a análisis de preventas, costes y estructura de garantías.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Promociones residenciales lanzadas (2025)",
+        "valor": "2"
+      },
+      {
+        "nombre": "Ingresos estimados asociados a lanzamientos 2025",
+        "valor": "~18,0 M€"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Expansión del pipeline vía nuevos desarrollos residenciales con foco en 2025.",
+      "Mayor consumo de caja por inversión en suelo, construcción y comercialización ligado al inicio de promociones.",
+      "Financiación del crecimiento previsiblemente vía deuda promotor y estructura de garantías por proyecto."
+    ],
+    "interpretacion": "La información disponible apunta a una fase de crecimiento/inversión impulsada por el lanzamiento de dos promociones en 2025 con ~18,0 M€ de ingresos estimados, pero sin históricos ni márgenes no puede evaluarse la rentabilidad ni la calidad del crecimiento. El arranque de promociones sugiere un incremento relevante de necesidades de caja y, por tanto, una necesidad inmediata de financiación de proyecto. La búsqueda activa de entidades para financiación promotor indica un probable aumento del apalancamiento para ejecutar el pipeline 2025, sujeto a análisis de preventas, costes y garantías.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Promotora Levante Residencial SL es una compañía del sector inmobiliario enfocada en promoción residencial. La información disponible la sitúa en una fase de expansión del pipeline con lanzamientos previstos para 2025.",
+    "situacion_actual": "Ha anunciado el lanzamiento de dos promociones residenciales en 2025 con ingresos estimados asociados de ~18,0 M€. Existe una necesidad explícita de financiación promotor y una búsqueda activa de entidades, lo que sugiere un proceso de financiación en curso y una ventana inmediata para originación.",
+    "necesidades_potenciales": [
+      "Financiación promotor por proyecto para cubrir inversión en suelo, construcción y gastos de comercialización ligados a las promociones 2025.",
+      "Estructuración de deuda con garantías por proyecto (p. ej., sobre activo/flujo del desarrollo) acorde al calendario de obra y ventas.",
+      "Acompañamiento en definición de hitos/condiciones típicas (p. ej., preventas, presupuesto de obra, calendario de disposiciones) para cerrar financiación en plazo."
+    ],
+    "riesgos": [
+      "Falta de históricos financieros y ausencia de datos de márgenes (EBITDA/resultado de explotación), lo que limita evaluar rentabilidad y resiliencia.",
+      "No se dispone de información sobre endeudamiento actual; la nueva financiación podría elevar el apalancamiento de forma relevante.",
+      "Riesgo de ejecución de promociones (costes de obra, plazos, comercialización) y de consumo de caja elevado durante el arranque del proyecto."
+    ],
+    "talking_points": [
+      "Confirmar detalles de las 2 promociones 2025: ubicación, tipología, calendario, presupuesto total y plan de comercialización.",
+      "Cuantificar necesidad de financiación: importe objetivo, usos (suelo/obra/comercialización), calendario de disposiciones y repago esperado.",
+      "Estado del proceso con otras entidades: fase, términos indicativos recibidos y criterios de decisión.",
+      "Solicitar información mínima para análisis: estructura societaria por proyecto, preventas/objetivo de preventas, costes y contingencias, y situación de deuda actual.",
+      "Explorar estructura de garantías y covenants razonables por proyecto para acelerar cierre (sin asumir decisiones finales)."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Financiación promotor para Promotora Levante Residencial SL",
+    "subtitulo": "Originación inmediata de deuda de proyecto para dos promociones residenciales 2025 (~18,0 M€ de ingresos estimados) en un proceso de financiación ya en curso",
+    "oportunidad_detectada": "La compañía ha anunciado el lanzamiento de dos promociones residenciales en 2025 y ha manifestado una necesidad explícita de financiación promotor, con búsqueda activa de entidades. Esto sugiere un proceso competitivo en marcha y una ventana inmediata para presentar una propuesta estructurada, acelerar el cierre y capturar la relación como entidad financiadora de referencia. La oportunidad se centra en estructurar deuda por proyecto con garantías adecuadas, calendario de disposiciones alineado a obra y condiciones vinculadas a hitos de preventas y presupuesto.",
+    "contexto_financiero": [
+      "Pipeline 2025 en expansión: 2 promociones residenciales con ingresos estimados asociados de ~18,0 M€, lo que anticipa incremento de inversión y consumo de caja (suelo, obra y comercialización).",
+      "Visibilidad financiera limitada: no se dispone de históricos de ingresos ni de métricas de rentabilidad (p. ej., EBITDA/resultado de explotación), lo que exige un enfoque de análisis basado en viabilidad por proyecto (costes, preventas, calendario y sensibilidad).",
+      "Estructura de capital no reportada: ausencia de datos de endeudamiento actual; la nueva financiación podría elevar el apalancamiento, por lo que será clave dimensionar LTV/LTC, colchones de contingencia y mecanismos de control de disposiciones."
+    ],
+    "encaje_productos": [
+      "Financiación promotor (deuda senior por proyecto) con disposiciones contra certificaciones de obra y repago vía entregas/ventas",
+      "Líneas complementarias de circulante y avales vinculados a la ejecución (p. ej., garantías técnicas/contractuales) y gestión de cobros de preventas"
+    ],
+    "comparables": [
+      "Promotoras residenciales regionales con financiación por proyecto (SPV) y repago por ventas",
+      "Desarrollos residenciales de tamaño medio (ticket ~10–25 M€ de ingresos) con estructura de deuda senior y hitos de preventas"
+    ],
+    "argumentos_valor": [
+      "Rapidez y certidumbre de ejecución: propuesta de términos y checklist de información orientados a acortar plazos de aprobación y firma en un proceso competitivo.",
+      "Estructuración a medida por proyecto: dimensionamiento de deuda y calendario de disposiciones alineados al plan de obra/ventas, con covenants e hitos (preventas, presupuesto, contingencias) que protegen a ambas partes.",
+      "Enfoque de riesgo basado en el activo y el flujo del desarrollo: paquete de garantías y controles de disposiciones para mitigar riesgos de coste/plazo/comercialización, preservando flexibilidad operativa del promotor."
+    ],
+    "proximos_pasos": [
+      "Reunión de 60–90 minutos para confirmar parámetros de las 2 promociones: ubicación, tipología, calendario, presupuesto total, estrategia comercial y objetivo/estado de preventas.",
+      "Solicitud de información mínima para propuesta indicativa: estructura societaria por proyecto (SPV), detalle de costes (suelo/obra/soft costs), cronograma de obra, plan de ventas y situación de deuda actual.",
+      "Emisión de una propuesta indicativa no vinculante (importe, estructura, garantías, hitos y calendario) y definición de un plan de cierre con due diligence y documentación."
+    ],
+    "narrativa_markdown": "Promotora Levante Residencial SL se encuentra en una fase de expansión del pipeline con el lanzamiento previsto de dos promociones residenciales en 2025, con ingresos estimados asociados de ~18,0 M€. La necesidad explícita de financiación promotor y la búsqueda activa de entidades apuntan a un proceso en curso y a una ventana inmediata para originación.\n\nLa oportunidad consiste en estructurar financiación por proyecto que cubra las necesidades típicas de arranque y ejecución (suelo, construcción y comercialización), con un calendario de disposiciones alineado a hitos de obra y un repago vinculado a la dinámica de ventas/entregas. Dada la ausencia de históricos y de métricas de margen, el análisis debe centrarse en la viabilidad y sensibilidad por promoción: presupuesto, contingencias, preventas, pricing, plazos y estructura de garantías.\n\nProponemos articular una solución de deuda senior por proyecto (con posibles líneas complementarias operativas) que combine rapidez de ejecución con un marco de control y mitigación de riesgos: condiciones ligadas a preventas, validación de presupuesto, mecanismos de disposiciones contra certificaciones y un paquete de garantías coherente con el activo y los flujos del desarrollo.\n\nEl siguiente paso es una reunión de trabajo para confirmar los parámetros clave de ambas promociones y recopilar la información mínima necesaria para emitir una propuesta indicativa no vinculante en un plazo corto, maximizando la probabilidad de cierre en un entorno competitivo.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx"
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_opportunity_researcher",
+      "id": "AGT-DEAL-001",
+      "agente": "Opportunity Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Identificacion y priorizacion de oportunidades por sector.",
+      "fuente": "BBDD interna + criterios de priorizacion del agente",
+      "fecha_extraccion": "2026-06-23T14:35:17+00:00",
+      "trazabilidad": "1_opportunity_researcher/output.json",
+      "nota": "Oportunidades evaluadas: 2."
+    },
+    {
+      "tipo": "agente_earnings_reviewer",
+      "id": "AGT-DEAL-002",
+      "agente": "Earnings Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Analisis de resultados financieros y tendencias clave.",
+      "fuente": "Documentacion financiera aportada + contexto de oportunidad",
+      "fecha_extraccion": "2026-06-23T14:35:28+00:00",
+      "trazabilidad": "2_earnings_reviewer/output.txt",
+      "nota": "Documentos de entrada: 1.",
+      "contenido_referencia": "Promotora Levante Residencial SL (sector inmobiliario) muestra una señal clara de crecimiento/inversión al anunciar el lanzamiento de dos promociones residenciales en 2025, con ingresos estimados asociados de ~18,0 M€. No se aportan históricos de ingresos, por lo que no es posible cuantificar crecimiento interanual ni identificar estacionalidad o concentración por proyecto. Tampoco hay datos de margen operativo (p. ej., EBITDA/resultado de explotación), lo que limita evaluar si la compañía está en fase de expansión con compresión de márgenes por costes de obra/financiación o si mantiene rentabilidades estables. En términos de CAPEX, aunque no se reporta inversión explícita, el inicio de promociones implica un incremento relevante de inversión y consumo de caja vía suelo, construcción y gastos de comercialización, típicamente financiados con deuda promotor. No se facilita información de e"
+    },
+    {
+      "tipo": "agente_model_builder_deal",
+      "id": "AGT-DEAL-003",
+      "agente": "Model Builder Agent (Deal)",
+      "resultado": "OK",
+      "descripcion": "Extraccion de indicadores y tendencias estructurales para soporte comercial.",
+      "fuente": "Resumen de Earnings Reviewer",
+      "fecha_extraccion": "2026-06-23T14:35:36+00:00",
+      "trazabilidad": "3_model_builder/output.json",
+      "nota": "Paso opcional en el pipeline Deal."
+    },
+    {
+      "tipo": "agente_meeting_preparer",
+      "id": "AGT-DEAL-004",
+      "agente": "Meeting Preparer Agent",
+      "resultado": "OK",
+      "descripcion": "Generacion de briefing comercial: perfil, riesgos, necesidades y talking points.",
+      "fuente": "Opportunity context + analisis financiero + modelo opcional",
+      "fecha_extraccion": "2026-06-23T14:35:46+00:00",
+      "trazabilidad": "4_meeting_preparer/output.json"
+    },
+    {
+      "tipo": "agente_pitch_builder",
+      "id": "AGT-DEAL-005",
+      "agente": "Pitch Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Construccion de propuesta final y pitchbook para revision comercial.",
+      "fuente": "Briefing de cliente + contexto de oportunidad + analisis financiero",
+      "fecha_extraccion": "2026-06-23T14:36:07+00:00",
+      "trazabilidad": "5_pitch_builder/output.json",
+      "nota": "Pitchbook generado: si.",
+      "contenido_referencia": "Promotora Levante Residencial SL se encuentra en una fase de expansión del pipeline con el lanzamiento previsto de dos promociones residenciales en 2025, con ingresos estimados asociados de ~18,0 M€. La necesidad explícita de financiación promotor y la búsqueda activa de entidades apuntan a un proceso en curso y a una ventana inmediata para originación.\n\nLa oportunidad consiste en estructurar financiación por proyecto que cubra las necesidades típicas de arranque y ejecución (suelo, construcción y comercialización), con un calendario de disposiciones alineado a hitos de obra y un repago vinculado a la dinámica de ventas/entregas. Dada la ausencia de históricos y de métricas de margen, el análisis debe centrarse en la viabilidad y sensibilidad por promoción: presupuesto, contingencias, preventas, pricing, plazos y estructura de garantías.\n\nProponemos articular una solución de deuda senior"
+    }
+  ]
+}

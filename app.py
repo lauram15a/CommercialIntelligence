@@ -123,11 +123,109 @@ DEAL_AGENT_STEPS = [
 ]
 
 
+def _current_use_case_slug() -> str | None:
+    endpoint = request.endpoint or ""
+    if endpoint.startswith("kyc_"):
+        return "kyc-credit-risk"
+    if endpoint.startswith("deal_"):
+        return "corporate-deal-intelligence"
+    if endpoint == "usecase_detail":
+        return (request.view_args or {}).get("slug")
+    return None
+
+
+def _build_banner_state() -> dict:
+    endpoint = request.endpoint or ""
+    current_slug = _current_use_case_slug()
+    current_use_case = get_use_case(current_slug) if current_slug else None
+
+    main_nav = []
+    for uc in get_available_use_cases():
+        main_nav.append({
+            "label": uc.get("short_name") or uc.get("name") or uc.get("slug", ""),
+            "href": url_for("usecase_detail", slug=uc["slug"]),
+            "active": uc.get("slug") == current_slug,
+        })
+
+    tabs = []
+    title_by_endpoint = {
+        "usecases_menu": "Casos de uso",
+        "kyc_runs_list": "Histórico",
+        "kyc_run_detail": "Detalle de ejecución",
+        "kyc_run_progress": "Análisis en curso",
+        "deal_runs_list": "Histórico",
+        "deal_run_detail": "Detalle de ejecución",
+        "deal_run_progress": "Análisis en curso",
+    }
+
+    if endpoint.startswith("kyc_"):
+        tabs = [
+            {
+                "label": AGENT_STEPS[0]["short"],
+                "href": url_for("kyc_index"),
+                "active": endpoint == "kyc_index",
+            },
+            {
+                "label": "Histórico",
+                "href": url_for("kyc_runs_list"),
+                "active": endpoint in {"kyc_runs_list", "kyc_run_detail"},
+            },
+        ]
+    elif endpoint.startswith("deal_"):
+        tabs = [
+            {
+                "label": DEAL_AGENT_STEPS[0]["short"],
+                "href": url_for("deal_index"),
+                "active": endpoint == "deal_index",
+            },
+            {
+                "label": "Histórico",
+                "href": url_for("deal_runs_list"),
+                "active": endpoint in {"deal_runs_list", "deal_run_detail"},
+            },
+        ]
+    elif endpoint == "usecases_menu":
+        tabs = [
+            {
+                "label": uc.get("code") or uc.get("short_name") or uc.get("name"),
+                "href": url_for("usecase_detail", slug=uc["slug"]),
+                "active": False,
+            }
+            for uc in get_available_use_cases()
+        ]
+
+    title_hidden_endpoints = {"kyc_index", "deal_index"}
+
+    current_title = title_by_endpoint.get(endpoint)
+    if endpoint == "usecase_detail" and current_use_case:
+        current_title = current_use_case.get("name") or current_use_case.get("short_name")
+    if endpoint in title_hidden_endpoints:
+        current_title = ""
+    elif not current_title and current_use_case:
+        current_title = current_use_case.get("short_name") or current_use_case.get("name")
+    if endpoint not in title_hidden_endpoints and not current_title:
+        current_title = BankConfig.PRODUCT_NAME
+
+    breadcrumb = [BankConfig.BANK_NAME]
+    if current_use_case:
+        breadcrumb.append(current_use_case.get("short_name") or current_use_case.get("name"))
+    if current_title and current_title != breadcrumb[-1]:
+        breadcrumb.append(current_title)
+
+    return {
+        "main_nav": main_nav,
+        "tabs": tabs,
+        "current_section": {"title": current_title},
+        "breadcrumb": breadcrumb,
+    }
+
+
 @app.context_processor
 def inject_globals():
     context = BankConfig.to_template_context()
     context["available_use_cases"] = get_available_use_cases()
     context["sso_user"] = _get_current_user()
+    context["banner"] = _build_banner_state()
     return context
 
 

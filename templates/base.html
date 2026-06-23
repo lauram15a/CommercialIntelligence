@@ -36,65 +36,69 @@
     <header class="topbar">
       <div class="topbar__inner">
         <a href="{{ url_for('usecases_menu') }}" class="brand-link">
-          <img class="brand-logo" src="{{ url_for('static', filename='img/logotipo.png') }}" alt="{{ bank_name }}">
+          <img class="brand-logo" src="{{ url_for('static', filename='img/narangrande.png') }}" alt="{{ bank_name }}">
         </a>
 
         <nav class="topbar__nav topbar__nav--desktop">
-          {% if request.endpoint and request.endpoint.startswith('kyc_') %}
-            <a href="{{ url_for('kyc_index') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'kyc_index' }}">Nueva solicitud</a>
-            <a href="{{ url_for('kyc_runs_list') }}" class="topbar__link {{ 'is-active' if request.endpoint in ['kyc_runs_list', 'kyc_run_detail'] }}">Histórico</a>
-          {% elif request.endpoint and request.endpoint.startswith('deal_') %}
-            <a href="{{ url_for('deal_index') }}" class="topbar__link {{ 'is-active' if request.endpoint == 'deal_index' }}">Nueva solicitud</a>
-            <a href="{{ url_for('deal_runs_list') }}" class="topbar__link {{ 'is-active' if request.endpoint in ['deal_runs_list', 'deal_run_detail'] }}">Histórico</a>
-          {% endif %}
+          {% for item in banner.main_nav %}
+            <a href="{{ item.href }}" class="topbar__link {{ 'is-active' if item.active }}">{{ item.label }}</a>
+          {% endfor %}
         </nav>
 
-        <button class="topbar__hamburger" id="mobile-menu-toggle" aria-label="Menú">
-          <span></span><span></span><span></span>
-        </button>
-
-        {% if sso_user %}
-        <div class="sso-user-menu" id="sso-user-menu">
-          <button class="sso-user-menu__trigger" id="sso-avatar-btn" aria-label="Perfil de usuario">
-            <img class="sso-user-menu__avatar" src="/sso/photo/{{ sso_user.foto }}" alt="{{ sso_user.nombre }}">
-          </button>
-          <div class="sso-user-menu__dropdown" id="sso-dropdown">
-            <div class="sso-user-menu__header">
-              <img class="sso-user-menu__photo" src="/sso/photo/{{ sso_user.foto }}" alt="{{ sso_user.nombre }}">
-              <div class="sso-user-menu__info">
-                <span class="sso-user-menu__name">{{ sso_user.nombre }} {{ sso_user.apellidos }}</span>
-                <span class="sso-user-menu__email">{{ sso_user.email }}</span>
+        <div class="topbar__right">
+          {% if sso_user %}
+          <div class="sso-user-menu" id="sso-user-menu">
+            <button class="sso-user-menu__trigger" id="sso-avatar-btn" aria-label="Perfil de usuario">
+              <img class="sso-user-menu__avatar" src="/sso/photo/{{ sso_user.foto }}" alt="{{ sso_user.nombre }}">
+            </button>
+            <div class="sso-user-menu__dropdown" id="sso-dropdown">
+              <div class="sso-user-menu__header">
+                <img class="sso-user-menu__photo" src="/sso/photo/{{ sso_user.foto }}" alt="{{ sso_user.nombre }}">
+                <div class="sso-user-menu__info">
+                  <span class="sso-user-menu__name">{{ sso_user.nombre }} {{ sso_user.apellidos }}</span>
+                  <span class="sso-user-menu__email">{{ sso_user.email }}</span>
+                </div>
+              </div>
+              <div class="sso-user-menu__details">
+                <div class="sso-detail"><span class="sso-detail__label">Cargo</span><span class="sso-detail__value">{{ sso_user.cargo }}</span></div>
+                <div class="sso-detail"><span class="sso-detail__label">Departamento</span><span class="sso-detail__value">{{ sso_user.departamento }}</span></div>
+                <div class="sso-detail"><span class="sso-detail__label">Oficina</span><span class="sso-detail__value">{{ sso_user.oficina }}</span></div>
+                <div class="sso-detail"><span class="sso-detail__label">Teléfono</span><span class="sso-detail__value">{{ sso_user.telefono }} (ext. {{ sso_user.extension }})</span></div>
+                <div class="sso-detail"><span class="sso-detail__label">Nivel</span><span class="sso-detail__value">{{ sso_user.nivel }}</span></div>
+                <div class="sso-detail"><span class="sso-detail__label">Incorporación</span><span class="sso-detail__value">{{ sso_user.fecha_incorporacion }}</span></div>
+              </div>
+              <div class="sso-user-menu__switch">
+                <span class="sso-switch__title">Cambiar usuario</span>
+                <div class="sso-switch__users" id="sso-switch-users"></div>
               </div>
             </div>
-            <div class="sso-user-menu__details">
-              <div class="sso-detail"><span class="sso-detail__label">Cargo</span><span class="sso-detail__value">{{ sso_user.cargo }}</span></div>
-              <div class="sso-detail"><span class="sso-detail__label">Departamento</span><span class="sso-detail__value">{{ sso_user.departamento }}</span></div>
-              <div class="sso-detail"><span class="sso-detail__label">Oficina</span><span class="sso-detail__value">{{ sso_user.oficina }}</span></div>
-              <div class="sso-detail"><span class="sso-detail__label">Teléfono</span><span class="sso-detail__value">{{ sso_user.telefono }} (ext. {{ sso_user.extension }})</span></div>
-              <div class="sso-detail"><span class="sso-detail__label">Nivel</span><span class="sso-detail__value">{{ sso_user.nivel }}</span></div>
-              <div class="sso-detail"><span class="sso-detail__label">Incorporación</span><span class="sso-detail__value">{{ sso_user.fecha_incorporacion }}</span></div>
-            </div>
-            <div class="sso-user-menu__switch">
-              <span class="sso-switch__title">Cambiar usuario</span>
-              <div class="sso-switch__users" id="sso-switch-users"></div>
-            </div>
           </div>
+          {% endif %}
+
+          <button class="topbar__hamburger" id="mobile-menu-toggle" aria-label="Menú">
+            <span></span><span></span><span></span>
+          </button>
         </div>
-        {% endif %}
+      </div>
+
+      <div class="topbar__context">
+        <div class="topbar__context-inner">
+          <nav class="topbar__tabs" aria-label="Navegación secundaria">
+            {% for tab in banner.tabs %}
+              <a href="{{ tab.href }}" class="topbar__tab {{ 'is-active' if tab.active }}">{{ tab.label }}</a>
+            {% endfor %}
+          </nav>
+        </div>
       </div>
 
       <!-- Mobile nav -->
       <nav class="topbar__mobile-nav" id="mobile-nav">
-        <a href="{{ url_for('usecases_menu') }}" class="topbar__mobile-link">Inicio</a>
-        {% if request.endpoint and request.endpoint.startswith('kyc_') %}
-          <a href="{{ url_for('kyc_index') }}" class="topbar__mobile-link">Nueva solicitud</a>
-          <a href="{{ url_for('kyc_runs_list') }}" class="topbar__mobile-link">Histórico</a>
-        {% elif request.endpoint and request.endpoint.startswith('deal_') %}
-          <a href="{{ url_for('deal_index') }}" class="topbar__mobile-link">Nueva solicitud</a>
-          <a href="{{ url_for('deal_runs_list') }}" class="topbar__mobile-link">Histórico</a>
-        {% else %}
-          <a href="{{ url_for('usecases_menu') }}" class="topbar__mobile-link">Casos de uso</a>
-        {% endif %}
+        {% for item in banner.main_nav %}
+          <a href="{{ item.href }}" class="topbar__mobile-link {{ 'is-active' if item.active }}">{{ item.label }}</a>
+        {% endfor %}
+        {% for tab in banner.tabs if tab.href and tab.href != '#' %}
+          <a href="{{ tab.href }}" class="topbar__mobile-link topbar__mobile-link--sub {{ 'is-active' if tab.active }}">{{ tab.label }}</a>
+        {% endfor %}
       </nav>
     </header>
 

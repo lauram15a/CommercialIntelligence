@@ -1,0 +1,7 @@
+Datalyx Iberia SL muestra señales de estar en una fase de aceleración tras una ronda privada reciente, con una escala estimada de ingresos de ~15,0 M€ y ~120 empleados. Este punto del ciclo suele venir acompañado de mayores necesidades de liquidez para expansión comercial, internacionalización y, en algunos casos, crecimiento inorgánico.
+
+Proponemos estructurar una solución de financiación no dilutiva que complemente el equity: un tramo de deuda de crecimiento orientado a extender runway y financiar el plan operativo, junto con una estructura específica para adquisiciones (línea para M&A y/o financiación puente con desembolsos escalonados). El objetivo es preservar caja y opcionalidad estratégica, minimizando dilución y evitando interrupciones en la ejecución.
+
+Dado que actualmente no hay visibilidad suficiente sobre rentabilidad (EBIT/EBITDA), CAPEX, caja y endeudamiento, el primer paso es construir un paquete de información y un caso base de 18–24 meses que permita dimensionar capacidad de repago y definir una estructura de covenants y amortización alineada con hitos. Este trabajo también refuerza la preparación de la compañía ante potenciales procesos corporativos.
+
+A partir de la información financiera y del plan de crecimiento, presentaremos una propuesta indicativa con alternativas de estructura (tramo principal + línea M&A/working capital), condiciones económicas y un calendario de ejecución. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

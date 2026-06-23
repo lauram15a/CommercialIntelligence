@@ -1,0 +1,20 @@
+{
+  "sector": "Inmobiliario",
+  "oportunidades": [
+    {
+      "empresa": "Promotora Levante Residencial SL",
+      "motivo": "Lanzamiento de dos promociones de obra nueva en 2025 con necesidad explícita de financiación promotor y búsqueda activa de entidades, lo que sugiere proceso en curso y ventana inmediata para originación.",
+      "prioridad": "alta",
+      "ingresos_estimados": 18000000,
+      "empleados": 35
+    },
+    {
+      "empresa": "Patrimonios Centrales SA",
+      "motivo": "Refinanciación de cartera hipotecaria prevista para 2S25 sobre activos valorados en 95M EUR, indicando necesidad próxima de estructuración y sindicación/renegociación de deuda con potencial de cross-sell (coberturas, cash management).",
+      "prioridad": "alta",
+      "ingresos_estimados": 7500000,
+      "empleados": 12
+    }
+  ],
+  "resumen": "En inmobiliario, las oportunidades más accionables suelen concentrarse en financiación promotor (nuevos desarrollos) y refinanciaciones de carteras ante vencimientos o repricing de tipos. En la muestra, ambas compañías presentan señales claras y fechadas (2025) de necesidad de financiación, con procesos potencialmente iniciados o próximos a iniciarse."
+}

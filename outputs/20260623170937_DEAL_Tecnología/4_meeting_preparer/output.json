@@ -1,0 +1,23 @@
+{
+  "perfil": "Datalyx Iberia SL es una compañía tecnológica con una escala ya relevante, con ingresos estimados de ~15,0 M€ y ~120 empleados. La reciente ronda privada sugiere que se encuentra en una fase de aceleración, potencialmente orientada a internacionalización y/o crecimiento inorgánico (M&A).",
+  "situacion_actual": "La señal de una ronda privada reciente apunta a un incremento del ritmo de inversión y, previsiblemente, del consumo de caja en el corto plazo para ejecutar el plan de expansión. No hay datos históricos de crecimiento, márgenes, CAPEX, ni de endeudamiento/estructura de capital, por lo que no es posible evaluar con precisión la rentabilidad, el apalancamiento operativo o la capacidad de asumir deuda adicional.",
+  "necesidades_potenciales": [
+    "Estructuración de venture debt complementaria a equity para financiar expansión (internacionalización) sin dilución adicional inmediata.",
+    "Financiación puente o líneas para necesidades de liquidez derivadas de aceleración comercial (OPEX) y ramp-up de equipos.",
+    "Capacidad de financiación para oportunidades de M&A (ticket de adquisición y/o costes de integración) en el corto plazo.",
+    "Revisión de estructura de capital y “headroom” de deuda para dimensionar un paquete de financiación alineado con el plan post-ronda."
+  ],
+  "riesgos": [
+    "Falta de visibilidad sobre crecimiento interanual, márgenes y evolución de rentabilidad: riesgo de que la aceleración venga con compresión de márgenes.",
+    "Ausencia de información sobre endeudamiento actual y covenants: riesgo de limitaciones para incorporar nueva deuda o de encaje subóptimo del instrumento.",
+    "Ejecución de internacionalización y/o M&A puede elevar el consumo de caja y aumentar la volatilidad de resultados en el corto plazo.",
+    "Si la inversión es mayoritariamente OPEX, el burn rate podría incrementarse antes de materializarse ingresos incrementales."
+  ],
+  "talking_points": [
+    "Confirmar detalles de la ronda privada reciente: importe, valoración, nuevos inversores, uso de fondos y runway esperado.",
+    "Entender el plan de crecimiento 12-24 meses: internacionalización (países, go-to-market, contratación) y calendario de hitos.",
+    "Explorar si hay pipeline de M&A: tamaño objetivo, timing, estructura (cash vs. equity) y necesidades de financiación asociadas.",
+    "Mapear estructura de capital actual: deuda existente, condiciones, covenants y flexibilidad para incorporar venture debt.",
+    "Alinear una hipótesis de solución: venture debt como complemento al equity para extender runway y financiar expansión/M&A minimizando dilución, sujeto a revisión de métricas y capacidad de repago."
+  ]
+}

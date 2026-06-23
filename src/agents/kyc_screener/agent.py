@@ -74,7 +74,7 @@ def run_kyc_screener_agent(documents: list[dict], use_mock: bool = True) -> dict
     nombres_a_cribar = _collect_names_for_screening(result.get("extracted_entities", []))
 
     # Ejecutar screening de sanciones
-    screening_output = run_screening(nombres_a_cribar)
+    screening_output = run_screening(nombres_a_cribar, use_mock=use_mock)
 
     result["screening_results"]    = screening_output["resultados"]
     result["screening_resumen"]    = screening_output["resumen"]

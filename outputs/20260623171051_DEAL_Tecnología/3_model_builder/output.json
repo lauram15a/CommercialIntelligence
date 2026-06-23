@@ -1,0 +1,23 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos estimados",
+      "valor": "~15,0 M€"
+    },
+    {
+      "nombre": "Empleados",
+      "valor": "~120"
+    },
+    {
+      "nombre": "Ronda privada reciente",
+      "valor": "Sí (sin importe divulgado)"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Escala de ingresos ya relevante para una tecnológica de ~120 empleados, con señales cualitativas de crecimiento acelerado.",
+    "Posible fase de aceleración con potencial internacionalización y/o preparación para M&A tras una ronda privada reciente.",
+    "Limitada visibilidad sobre rentabilidad operativa y estructura de costes por ausencia de histórico de P&L (EBIT/EBITDA) y CAPEX."
+  ],
+  "interpretacion": "La compañía parece estar en una etapa de crecimiento con cierta visibilidad de ingresos, pero la falta de información sobre márgenes, CAPEX, caja y deuda impide evaluar la generación de caja y el perfil de riesgo financiero. La ronda privada reciente sugiere un plan de expansión (comercial, internacionalización y/o crecimiento inorgánico) que típicamente eleva las necesidades de liquidez. Podría requerir financiación complementaria para ejecutar el plan, especialmente si se contemplan adquisiciones o inversión en plataforma/infraestructura.",
+  "disponible": true
+}

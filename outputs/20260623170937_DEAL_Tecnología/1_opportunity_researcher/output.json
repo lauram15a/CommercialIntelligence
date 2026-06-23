@@ -1,0 +1,20 @@
+{
+  "sector": "Tecnología",
+  "oportunidades": [
+    {
+      "empresa": "Datalyx Iberia SL",
+      "motivo": "Ronda privada reciente sugiere fase de aceleración (internacionalización y/o adquisición) y abre ventana para estructurar venture debt complementaria a equity. La combinación de crecimiento y posible M&A incrementa la probabilidad de necesidad de financiación en el corto plazo.",
+      "prioridad": "alta",
+      "ingresos_estimados": 15000000,
+      "empleados": 120
+    },
+    {
+      "empresa": "Nexuria Tech Solutions SL",
+      "motivo": "Fuerte crecimiento (47% en 2024) y proceso activo de captación de inversores estratégicos apuntan a una necesidad táctica de liquidez (financiación puente) para sostener expansión y/o preparar una operación corporativa. Oportunidad adicional de asesoramiento en M&A si el inversor estratégico deriva en transacción.",
+      "prioridad": "media",
+      "ingresos_estimados": 5600000,
+      "empleados": 62
+    }
+  ],
+  "resumen": "En tecnología, las mejores oportunidades comerciales suelen concentrarse en compañías en fase de escalado con rondas recientes o procesos de inversores estratégicos, donde encajan soluciones de venture debt, financiación puente y asesoramiento M&A. En este universo, ambas señales apuntan a actividad corporativa y necesidades de capital, con mayor inmediatez en Datalyx por el contexto post-ronda y potencial de expansión/M&A."
+}

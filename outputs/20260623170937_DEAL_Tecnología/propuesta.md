@@ -1,0 +1,7 @@
+Datalyx Iberia SL presenta señales claras de entrada en una fase de aceleración tras una ronda privada reciente, con una escala ya relevante (ingresos estimados ~15,0 M€ y ~120 empleados). En este contexto, es habitual que la compañía incremente inversión comercial y de expansión (principalmente OPEX) y, en paralelo, evalúe oportunidades de crecimiento inorgánico, elevando la necesidad de liquidez y la presión sobre el runway en el corto plazo.
+
+Proponemos explorar una solución de **venture debt complementaria al equity** que permita extender runway y financiar la ejecución del plan 12–24 meses con **mínima dilución adicional inmediata**. La estructura puede adaptarse al ramp-up (por ejemplo, con carencia inicial y amortización progresiva) y contemplar flexibilidad para escenarios de internacionalización y/o adquisiciones.
+
+Dado que no se dispone aún de históricos detallados de crecimiento, márgenes, CAPEX ni estructura de endeudamiento, el primer paso es un **diagnóstico rápido de estructura de capital y capacidad de servicio de deuda**, apoyado en información financiera y un plan de tesorería. Con ello, podremos dimensionar el instrumento, definir covenants alineados a la realidad operativa y establecer un marco de financiación escalable.
+
+Como resultado, entregaremos una **propuesta indicativa** con rango de tamaño, estructura, pricing orientativo y condiciones clave, junto con un cronograma de ejecución hasta cierre. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

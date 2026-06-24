@@ -8,9 +8,12 @@ Outputs en: outputs/YYYYMMDDHHMMSS_KYC_<empresa>/
 
 import json
 import re
+import sys
 import unicodedata
 from pathlib import Path
 from datetime import datetime, timezone
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from src.logging_utils import setup_run_logging
 from src.agents.kyc_screener.agent import run_kyc_screener_agent

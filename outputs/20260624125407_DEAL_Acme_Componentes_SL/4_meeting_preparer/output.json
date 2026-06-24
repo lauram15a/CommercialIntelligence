@@ -1,0 +1,23 @@
+{
+  "perfil": "Acme Componentes SL es una compañía con crecimiento sostenido de ingresos entre 2022 y 2024 (32,0m€ → 42,0m€) y mejora progresiva de rentabilidad operativa. La evolución de márgenes (EBITDA y EBIT al alza) sugiere apalancamiento operativo y una gestión eficiente pese al aumento de gastos de explotación.",
+  "situacion_actual": "En 2024 el crecimiento se desacelera (+10,5% YoY vs +18,8% en 2023), pero la expansión continúa y los márgenes mejoran (EBITDA 13,8%; EBIT 10,8%). A la vez, aumenta el endeudamiento financiero (8,0m€ → 12,0m€) y los gastos financieros (0,45m€ → 0,61m€), mientras el patrimonio neto crece (6,8m€ → 9,9m€), consistente con retención de resultados. Historial bancario: cliente desde N/D, rating interno N/D, sin operaciones activas e impagos 0.",
+  "necesidades_potenciales": [
+    "Financiación para sostener el crecimiento y posibles inversiones en activos (inferidas por el aumento de amortizaciones de 0,96m€ a 1,26m€).",
+    "Optimización de estructura de capital ante el incremento de deuda y del coste financiero (revisión de plazos, tipos y mix de financiación).",
+    "Soluciones de circulante para acompañar el crecimiento de ventas (p. ej., necesidades estacionales o por expansión), dado el aumento de escala del negocio.",
+    "Revisión de planificación financiera para mantener la mejora de márgenes en un entorno de desaceleración del crecimiento."
+  ],
+  "riesgos": [
+    "Mayor apalancamiento financiero (deuda 12,0m€ en 2024) y aumento de gastos financieros, con potencial presión sobre el resultado si suben tipos o cae la actividad.",
+    "Desaceleración del crecimiento en 2024 que podría reducir el apalancamiento operativo si continúa la moderación de ingresos.",
+    "Posible intensificación de inversión en activos (proxy: amortizaciones al alza) sin visibilidad de CAPEX, con riesgo de tensiones de caja si la inversión se acelera.",
+    "Ausencia de información clave (rating interno N/D, antigüedad N/D, sin detalle de CAPEX) que limita la evaluación completa de necesidades y capacidad de endeudamiento."
+  ],
+  "talking_points": [
+    "Confirmar el plan de crecimiento 2025: drivers del crecimiento 2022–2024 y si la desaceleración de 2024 es coyuntural o estructural.",
+    "Aclarar el ciclo de inversión: CAPEX reciente y previsto, y si el aumento de amortizaciones refleja nuevas líneas/productividad/expansión de capacidad.",
+    "Revisar la estructura de deuda actual (importe, vencimientos, tipo fijo/variable) y objetivos de la compañía para coste financiero y flexibilidad.",
+    "Explorar necesidades de financiación: inversión (medio/largo plazo) vs circulante (corto plazo) y calendario de desembolsos/cobros.",
+    "Actualizar información bancaria básica pendiente (rating interno, relación histórica) y mapear próximos hitos financieros para definir una propuesta preliminar."
+  ]
+}

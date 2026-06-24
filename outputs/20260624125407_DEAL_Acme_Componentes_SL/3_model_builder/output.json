@@ -1,0 +1,32 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos",
+      "valor": "32,0m€ (2022) → 38,0m€ (2023, +18,8% YoY) → 42,0m€ (2024, +10,5% YoY)"
+    },
+    {
+      "nombre": "Margen EBITDA",
+      "valor": "11,9% (2022) → 12,9% (2023) → 13,8% (2024)"
+    },
+    {
+      "nombre": "Margen EBIT",
+      "valor": "8,9% (2022) → 9,9% (2023) → 10,8% (2024)"
+    },
+    {
+      "nombre": "Deuda financiera",
+      "valor": "8,0m€ (2022) → 10,5m€ (2023) → 12,0m€ (2024)"
+    },
+    {
+      "nombre": "Resultado neto",
+      "valor": "1,79m€ (2022) → 2,95m€ (2024)"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Crecimiento de ingresos sostenido con desaceleración del ritmo en 2024, manteniendo expansión.",
+    "Mejora progresiva de márgenes (EBITDA y EBIT), sugiriendo apalancamiento operativo pese al aumento de gastos de explotación.",
+    "Aumento de amortizaciones (0,96m€ → 1,26m€) que apunta a mayor base de activos y posible intensificación de inversión.",
+    "Incremento del endeudamiento financiero acompañado de crecimiento del patrimonio neto, consistente con retención de resultados."
+  ],
+  "interpretacion": "La compañía combina crecimiento con mejora de rentabilidad operativa, lo que indica una trayectoria financiera positiva y capacidad de generar resultados crecientes. Sin embargo, el aumento de deuda y de gastos financieros sugiere mayor apalancamiento y/o encarecimiento del coste de financiación. Si la expansión viene acompañada de mayor inversión en activos (inferida por el alza de amortizaciones), podría requerirse financiación adicional para sostener el plan de crecimiento y optimizar la estructura de capital.",
+  "disponible": true
+}

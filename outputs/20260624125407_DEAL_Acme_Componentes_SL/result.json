@@ -1,0 +1,148 @@
+{
+  "run_id": "20260624125407",
+  "sector": "No especificado",
+  "company_name": "Acme Componentes SL",
+  "fuente": "interna",
+  "geografia": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Acme Componentes SL",
+    "oportunidades": [],
+    "resumen": "La lista de empresas detectadas está vacía, por lo que no es posible priorizar oportunidades comerciales ni inferir necesidades de financiación/asesoramiento. Para avanzar, necesito el listado de compañías (y, si existe, cualquier señal interna asociada: crecimiento, CAPEX, vencimientos de deuda, M&A, circulante) para poder asignar prioridad."
+  },
+  "earnings_summary": "Acme Componentes SL muestra un crecimiento sostenido de ingresos: 32,0m€ (2022) → 38,0m€ (2023, +18,8% YoY) → 42,0m€ (2024, +10,5% YoY), con una desaceleración del ritmo en 2024 pero manteniendo expansión. La rentabilidad operativa mejora, con margen EBITDA pasando de 11,9% (3,8m€/32,0m€) en 2022 a 12,9% en 2023 y 13,8% en 2024, y margen EBIT de 8,9% a 9,9% y 10,8% respectivamente, sugiriendo apalancamiento operativo pese al aumento de gastos de explotación. En paralelo, las amortizaciones suben de 0,96m€ a 1,26m€ (2022–2024), lo que apunta a mayor base de activos y potencial incremento de inversión, aunque no hay dato explícito de CAPEX para confirmarlo. El endeudamiento financiero aumenta de 8,0m€ (2022) a 10,5m€ (2023) y 12,0m€ (2024), mientras el patrimonio neto también crece (6,8m€ → 9,9m€), indicando refuerzo de fondos propios vía resultados retenidos. Los gastos financieros crecen de 0,45m€ a 0,61m€ (2022–2024), coherente con mayor deuda y/o coste de financiación, aunque el resultado neto también mejora (1,79m€ → 2,95m€). La compañía presenta crecimiento rentable con incremento de apalancamiento y probable intensificación de inversión en activos, lo que puede implicar necesidad de financiación adicional para sostener el plan de expansión y optimizar su estructura de capital.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos",
+        "valor": "32,0m€ (2022) → 38,0m€ (2023, +18,8% YoY) → 42,0m€ (2024, +10,5% YoY)"
+      },
+      {
+        "nombre": "Margen EBITDA",
+        "valor": "11,9% (2022) → 12,9% (2023) → 13,8% (2024)"
+      },
+      {
+        "nombre": "Margen EBIT",
+        "valor": "8,9% (2022) → 9,9% (2023) → 10,8% (2024)"
+      },
+      {
+        "nombre": "Deuda financiera",
+        "valor": "8,0m€ (2022) → 10,5m€ (2023) → 12,0m€ (2024)"
+      },
+      {
+        "nombre": "Resultado neto",
+        "valor": "1,79m€ (2022) → 2,95m€ (2024)"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Crecimiento de ingresos sostenido con desaceleración del ritmo en 2024, manteniendo expansión.",
+      "Mejora progresiva de márgenes (EBITDA y EBIT), sugiriendo apalancamiento operativo pese al aumento de gastos de explotación.",
+      "Aumento de amortizaciones (0,96m€ → 1,26m€) que apunta a mayor base de activos y posible intensificación de inversión.",
+      "Incremento del endeudamiento financiero acompañado de crecimiento del patrimonio neto, consistente con retención de resultados."
+    ],
+    "interpretacion": "La compañía combina crecimiento con mejora de rentabilidad operativa, lo que indica una trayectoria financiera positiva y capacidad de generar resultados crecientes. Sin embargo, el aumento de deuda y de gastos financieros sugiere mayor apalancamiento y/o encarecimiento del coste de financiación. Si la expansión viene acompañada de mayor inversión en activos (inferida por el alza de amortizaciones), podría requerirse financiación adicional para sostener el plan de crecimiento y optimizar la estructura de capital.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Acme Componentes SL es una compañía con crecimiento sostenido de ingresos entre 2022 y 2024 (32,0m€ → 42,0m€) y mejora progresiva de rentabilidad operativa. La evolución de márgenes (EBITDA y EBIT al alza) sugiere apalancamiento operativo y una gestión eficiente pese al aumento de gastos de explotación.",
+    "situacion_actual": "En 2024 el crecimiento se desacelera (+10,5% YoY vs +18,8% en 2023), pero la expansión continúa y los márgenes mejoran (EBITDA 13,8%; EBIT 10,8%). A la vez, aumenta el endeudamiento financiero (8,0m€ → 12,0m€) y los gastos financieros (0,45m€ → 0,61m€), mientras el patrimonio neto crece (6,8m€ → 9,9m€), consistente con retención de resultados. Historial bancario: cliente desde N/D, rating interno N/D, sin operaciones activas e impagos 0.",
+    "necesidades_potenciales": [
+      "Financiación para sostener el crecimiento y posibles inversiones en activos (inferidas por el aumento de amortizaciones de 0,96m€ a 1,26m€).",
+      "Optimización de estructura de capital ante el incremento de deuda y del coste financiero (revisión de plazos, tipos y mix de financiación).",
+      "Soluciones de circulante para acompañar el crecimiento de ventas (p. ej., necesidades estacionales o por expansión), dado el aumento de escala del negocio.",
+      "Revisión de planificación financiera para mantener la mejora de márgenes en un entorno de desaceleración del crecimiento."
+    ],
+    "riesgos": [
+      "Mayor apalancamiento financiero (deuda 12,0m€ en 2024) y aumento de gastos financieros, con potencial presión sobre el resultado si suben tipos o cae la actividad.",
+      "Desaceleración del crecimiento en 2024 que podría reducir el apalancamiento operativo si continúa la moderación de ingresos.",
+      "Posible intensificación de inversión en activos (proxy: amortizaciones al alza) sin visibilidad de CAPEX, con riesgo de tensiones de caja si la inversión se acelera.",
+      "Ausencia de información clave (rating interno N/D, antigüedad N/D, sin detalle de CAPEX) que limita la evaluación completa de necesidades y capacidad de endeudamiento."
+    ],
+    "talking_points": [
+      "Confirmar el plan de crecimiento 2025: drivers del crecimiento 2022–2024 y si la desaceleración de 2024 es coyuntural o estructural.",
+      "Aclarar el ciclo de inversión: CAPEX reciente y previsto, y si el aumento de amortizaciones refleja nuevas líneas/productividad/expansión de capacidad.",
+      "Revisar la estructura de deuda actual (importe, vencimientos, tipo fijo/variable) y objetivos de la compañía para coste financiero y flexibilidad.",
+      "Explorar necesidades de financiación: inversión (medio/largo plazo) vs circulante (corto plazo) y calendario de desembolsos/cobros.",
+      "Actualizar información bancaria básica pendiente (rating interno, relación histórica) y mapear próximos hitos financieros para definir una propuesta preliminar."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Acme Componentes SL",
+    "subtitulo": "Financiación de crecimiento y optimización de estructura de capital para sostener la expansión rentable en un entorno de desaceleración",
+    "oportunidad_detectada": "Acme Componentes SL combina crecimiento de ingresos (32,0m€ en 2022 a 42,0m€ en 2024) con mejora de márgenes (EBITDA 11,9%→13,8%), lo que sugiere apalancamiento operativo y capacidad de generación de resultados. En paralelo, el aumento de deuda (8,0m€→12,0m€) y del gasto financiero (0,45m€→0,61m€) apunta a una oportunidad de revisar el mix de financiación, reforzar flexibilidad y acompañar un posible ciclo inversor (proxy: amortizaciones al alza).",
+    "contexto_financiero": [
+      "Crecimiento sostenido con desaceleración en 2024: ingresos 32,0m€ (2022) → 38,0m€ (2023, +18,8% YoY) → 42,0m€ (2024, +10,5% YoY).",
+      "Mejora de rentabilidad operativa: margen EBITDA 11,9% (2022) → 12,9% (2023) → 13,8% (2024); margen EBIT 8,9% → 9,9% → 10,8%.",
+      "Mayor apalancamiento y coste financiero: deuda financiera 8,0m€ (2022) → 10,5m€ (2023) → 12,0m€ (2024) y gastos financieros 0,45m€ → 0,61m€; patrimonio neto al alza (6,8m€ → 9,9m€) por retención de resultados."
+    ],
+    "encaje_productos": [
+      "Financiación a medio/largo plazo para inversión y crecimiento (préstamo/financiación de activos) con estructura de amortización alineada a generación de caja y vida útil de activos.",
+      "Soluciones de circulante (líneas de crédito, financiación de cobros/pagos) para absorber necesidades derivadas del aumento de escala y posibles picos estacionales, con covenants y reporting adaptados."
+    ],
+    "comparables": [
+      "Fabricantes de componentes industriales (pymes) con crecimiento orgánico y necesidad de CAPEX para capacidad/productividad",
+      "Proveedores B2B de componentes para automoción/maquinaria/industria con márgenes EBITDA en el rango bajo-medio teens y apalancamiento moderado"
+    ],
+    "argumentos_valor": [
+      "Acompañamiento del plan 2025–2026: estructurar financiación que permita sostener crecimiento sin tensionar caja, especialmente si el ciclo inversor se acelera (amortizaciones al alza como indicador).",
+      "Optimización del coste y del riesgo financiero: revisión de vencimientos, tipos (fijo/variable) y mix de deuda para mitigar sensibilidad a tipos y mejorar visibilidad de gastos financieros.",
+      "Flexibilidad operativa: combinación de financiación de inversión + circulante para cubrir calendario de desembolsos/cobros, preservando capacidad de maniobra ante una posible continuidad de la desaceleración del crecimiento."
+    ],
+    "proximos_pasos": [
+      "Reunión de diagnóstico (60–90 min): confirmar drivers de crecimiento 2022–2024, lectura de la desaceleración 2024 y plan comercial/operativo 2025.",
+      "Recopilación de información clave: detalle de deuda (importe, vencimientos, garantías, tipo fijo/variable), CAPEX histórico y previsto, y necesidades de circulante (DSO/DPO/stock) para dimensionar soluciones.",
+      "Entrega de propuesta preliminar: alternativas de estructura (inversión vs circulante), calendario, rango de importes y condiciones indicativas, incluyendo escenarios de sensibilidad (tipos/crecimiento/márgenes)."
+    ],
+    "narrativa_markdown": "Acme Componentes SL presenta una trayectoria de **crecimiento rentable**: los ingresos aumentan de 32,0m€ (2022) a 42,0m€ (2024), mientras los márgenes mejoran (EBITDA 11,9%→13,8%; EBIT 8,9%→10,8%), reflejando apalancamiento operativo y una evolución positiva de la eficiencia.\n\nEn paralelo, se observa un **incremento del apalancamiento financiero** (deuda 8,0m€→12,0m€) y del gasto financiero (0,45m€→0,61m€). Este contexto abre una oportunidad para **optimizar la estructura de capital** (plazos, mix fijo/variable y flexibilidad) y asegurar que el coste financiero no limite la capacidad de inversión y crecimiento.\n\nAdicionalmente, el aumento de amortizaciones (0,96m€→1,26m€) sugiere una **mayor base de activos** y potencial intensificación de inversión, aunque es necesario confirmar CAPEX y calendario. Proponemos una solución combinada: financiación a medio/largo plazo para inversión y crecimiento, complementada con herramientas de circulante para acompañar el aumento de escala y posibles necesidades estacionales.\n\nEl siguiente paso es un diagnóstico conjunto para confirmar el plan 2025, el ciclo inversor y la estructura actual de deuda, y con ello presentar una propuesta preliminar con alternativas de estructura y sensibilidad a escenarios. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {
+    "operaciones_anteriores": 5,
+    "incidencias": [
+      "Discrepancia documental puntual en poderes de firma (subsanada en 2023)",
+      "Entrega tardia de cuentas auditadas 2022 (10 dias de retraso)"
+    ],
+    "impagos": 0,
+    "productos_contratados": [
+      "Linea de circulante 2022",
+      "Prestamo CAPEX para automatizacion de planta",
+      "Leasing industrial",
+      "Cobertura de tipo de interes",
+      "Confirming proveedores"
+    ],
+    "operaciones_detalle": [
+      {
+        "fecha": "2022-04-15",
+        "tipo": "linea_circulante",
+        "importe": 2500000,
+        "estado": "cancelada_ok"
+      },
+      {
+        "fecha": "2023-02-10",
+        "tipo": "prestamo_capex",
+        "importe": 3200000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2023-10-03",
+        "tipo": "leasing_maquinaria",
+        "importe": 1400000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-03-21",
+        "tipo": "confirming",
+        "importe": 900000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-11-12",
+        "tipo": "cobertura_tipos",
+        "importe": 12000000,
+        "estado": "vigente"
+      }
+    ],
+    "resumen_historial": "Cliente con relacion operativa activa desde 2022, sin impagos, con incidencias documentales menores ya regularizadas."
+  }
+}

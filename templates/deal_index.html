@@ -1,59 +1,142 @@
 {% extends "base.html" %}
 
-{% block title %}Nueva búsqueda - Deal Intelligence{% endblock %}
+{% block title %}Nueva busqueda - Deal Intelligence{% endblock %}
 
 {% block content %}
 <div class="container">
 
   <div class="page-header">
     <p class="eyebrow">{{ department_name_deal }}</p>
-    <h1>Nueva búsqueda de oportunidades</h1>
+    <h1>Nueva busqueda de oportunidades</h1>
     <p>
-      Selecciona un sector para que el sistema identifique automáticamente las
-      empresas con mayor potencial de financiación o asesoramiento. Puedes
-      indicar una empresa concreta si ya tienes un objetivo en mente.
+      Busca oportunidades por sector, por empresa o por zona geografica.
+      El sistema identificara las empresas con mayor potencial y generara
+      una propuesta comercial lista para la reunion.
     </p>
   </div>
 
   <div class="workspace">
-
     <div class="card">
       <div class="card__header">
-        <h2>Parámetros de la búsqueda</h2>
-        <p>El sistema consultará la base de datos de empresas y generará una propuesta comercial lista para la reunión.</p>
+        <h2>Parametros de la busqueda</h2>
       </div>
       <div class="card__body">
+
+        <!-- Selector de modo de busqueda -->
+        <div class="search-mode-tabs" role="tablist" style="display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid var(--color-border); padding-bottom: 0;">
+          <button type="button" class="search-mode-tab is-active" data-mode="sector"
+                  style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-primary); border-bottom: 2px solid var(--color-primary); margin-bottom: -2px; cursor: pointer;">
+            Por sector
+          </button>
+          <button type="button" class="search-mode-tab" data-mode="empresa"
+                  style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-ink-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer;">
+            Por empresa
+          </button>
+          <button type="button" class="search-mode-tab" data-mode="geografia"
+                  style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-ink-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer;">
+            Por zona geografica
+          </button>
+        </div>
+
         <form action="{{ url_for('deal_nueva_solicitud') }}" method="post" id="deal-request-form">
 
-          <div class="form-group">
-            <label for="sector">Sector a analizar</label>
-            <select id="sector" name="sector" required>
-              <option value="">- Selecciona un sector -</option>
-              <option value="Industrial">Industrial</option>
-              <option value="Tecnología">Tecnología</option>
-              <option value="Inmobiliario">Inmobiliario</option>
-              <option value="Retail y Distribución">Retail y distribución</option>
-              <option value="Construcción">Construcción</option>
-              <option value="Energía">Energía</option>
-              <option value="Salud y Farmacia">Salud y farmacia</option>
-              <option value="Agroindustria">Agroindustria</option>
-            </select>
-            <span class="form-hint">El Opportunity Researcher Agent detectará las empresas con mayor potencial dentro del sector.</span>
+          <!-- ======= MODO: POR SECTOR ======= -->
+          <div class="search-mode-panel" data-mode="sector">
+
+            <div class="form-group">
+              <label>Tipo de empresas</label>
+              <div style="display: flex; gap: 24px; margin-top: 6px;">
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
+                  <input type="radio" name="fuente" value="interna" checked
+                         onchange="updateAutocomplete()"> Clientes del banco
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
+                  <input type="radio" name="fuente" value="externa"
+                         onchange="updateAutocomplete()"> No clientes (fuentes externas)
+                </label>
+              </div>
+              <span class="form-hint">Los clientes del banco se analizan con datos internos. Los no clientes, con informacion publica disponible.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="sector">Sector a analizar</label>
+              <select id="sector" name="sector">
+                <option value="">- Selecciona un sector -</option>
+                <option value="Industrial">Industrial</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Inmobiliario">Inmobiliario</option>
+                <option value="Retail y Distribucion">Retail y distribucion</option>
+                <option value="Construccion">Construccion</option>
+                <option value="Energia">Energia</option>
+                <option value="Salud y Farmacia">Salud y farmacia</option>
+                <option value="Agroindustria">Agroindustria</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="company_name_sector">Empresa objetivo (opcional)</label>
+              <div class="autocomplete-wrapper">
+                <input type="text" id="company_name_sector" name="company_name_sector"
+                       placeholder="Dejar en blanco para usar la de mayor prioridad"
+                       autocomplete="off">
+                <ul class="autocomplete-list" id="company_name_sector_list"></ul>
+              </div>
+              <span class="form-hint">Si no se indica empresa, el sistema seleccionara la de mayor prioridad del sector.</span>
+            </div>
+
           </div>
 
-          <div class="form-group">
-            <label for="company_name">Empresa objetivo</label>
-            <div class="autocomplete-wrapper">
-              <input type="text" id="company_name" name="company_name"
-                     placeholder="Ej. Acme Componentes SL" autocomplete="off">
-              <ul class="autocomplete-list" id="company_name_list"></ul>
+          <!-- ======= MODO: POR EMPRESA ======= -->
+          <div class="search-mode-panel" data-mode="empresa" style="display: none;">
+
+            <div class="form-group">
+              <label for="company_name_empresa">Nombre de la empresa</label>
+              <div class="autocomplete-wrapper">
+                <input type="text" id="company_name_empresa"
+                       placeholder="Escribe el nombre de la empresa..."
+                       autocomplete="off">
+                <ul class="autocomplete-list" id="company_name_empresa_list"></ul>
+              </div>
+              <span class="form-hint">El sistema detectara automaticamente si es cliente del banco o no.</span>
             </div>
-            <span class="form-hint">Si ya tienes una empresa en mente, el sistema centra el análisis en ella. Si no, se usa la oportunidad de mayor prioridad detectada.</span>
+
           </div>
+
+          <!-- ======= MODO: POR GEOGRAFIA ======= -->
+          <div class="search-mode-panel" data-mode="geografia" style="display: none;">
+
+            <div class="form-group">
+              <label>Tipo de empresas</label>
+              <div style="display: flex; gap: 24px; margin-top: 6px;">
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
+                  <input type="radio" name="fuente" value="interna"> Clientes del banco
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
+                  <input type="radio" name="fuente" value="externa" checked> No clientes (fuentes externas)
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="geografia">Comunidad autonoma</label>
+              <select id="geografia" name="geografia">
+                <option value="">- Selecciona una zona -</option>
+                {% for ca in comunidades %}
+                <option value="{{ ca }}">{{ ca }}</option>
+                {% endfor %}
+              </select>
+              <span class="form-hint">El sistema buscara empresas con oportunidades en la zona seleccionada.</span>
+            </div>
+
+          </div>
+
+          <!-- Campo oculto que recibe el company_name del modo empresa -->
+          <input type="hidden" id="company_name_hidden" name="company_name" value="">
+          <input type="hidden" id="search_mode" name="search_mode" value="sector">
 
           <div class="form-actions">
-            <span class="form-hint">El análisis tarda entre 1 y 2 minutos.</span>
-            <button type="submit" class="btn btn-primary">Lanzar análisis</button>
+            <span class="form-hint">El analisis tarda entre 1 y 2 minutos.</span>
+            <button type="submit" class="btn btn-primary" onclick="prepareSubmit()">Lanzar analisis</button>
           </div>
 
         </form>
@@ -80,20 +163,19 @@
         {% endfor %}
       </ol>
     </aside>
-
   </div>
 
   <div class="card" style="margin-bottom: 64px;">
     <div class="card__header">
-      <h2>Análisis recientes</h2>
-      <p>Últimas búsquedas procesadas por el sistema</p>
+      <h2>Analisis recientes</h2>
+      <p>Ultimas busquedas procesadas por el sistema</p>
     </div>
     {% if runs %}
     <table class="runs-table">
       <thead>
         <tr>
           <th>Empresa</th>
-          <th>Fecha de ejecución</th>
+          <th>Fecha de ejecucion</th>
           <th>Identificador</th>
           <th></th>
         </tr>
@@ -111,8 +193,8 @@
     </table>
     {% else %}
     <div class="empty-state">
-      <h3>Sin análisis todavía</h3>
-      <p>Cuando se procese una búsqueda, aparecerá aquí.</p>
+      <h3>Sin analisis todavia</h3>
+      <p>Cuando se procese una busqueda, aparecera aqui.</p>
     </div>
     {% endif %}
   </div>
@@ -122,7 +204,76 @@
 
 {% block extra_scripts %}
 <script>
-  const EMPRESA_NAMES = {{ empresa_names | tojson }};
-  setupAutocomplete('company_name', 'company_name_list', EMPRESA_NAMES);
+  const EMPRESAS_INTERNAS = {{ empresa_names_internas | tojson }};
+  const EMPRESAS_EXTERNAS = {{ empresa_names_externas | tojson }};
+  const EMPRESAS_TODAS    = {{ empresa_names | tojson }};
+
+  let currentMode = "sector";
+
+  // --- Cambio de modo ---
+  document.querySelectorAll(".search-mode-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      currentMode = tab.dataset.mode;
+      document.getElementById("search_mode").value = currentMode;
+      document.querySelectorAll(".search-mode-tab").forEach(t => {
+        t.style.color = "var(--color-ink-muted)";
+        t.style.borderBottomColor = "transparent";
+      });
+      tab.style.color = "var(--color-primary)";
+      tab.style.borderBottomColor = "var(--color-primary)";
+      document.querySelectorAll(".search-mode-panel").forEach(p => {
+        p.style.display = p.dataset.mode === currentMode ? "" : "none";
+      });
+    });
+  });
+
+  // --- Autocomplete adaptativo segun fuente ---
+  function getEmpresaList() {
+    const fuente = document.querySelector("input[name='fuente']:checked");
+    if (!fuente) return EMPRESAS_TODAS;
+    return fuente.value === "interna" ? EMPRESAS_INTERNAS : EMPRESAS_EXTERNAS;
+  }
+
+  function updateAutocomplete() {
+    // Limpiar y reconfigurar autocomplete con la lista correcta
+    const list = getEmpresaList();
+    setupAutocomplete("company_name_sector", "company_name_sector_list", list);
+  }
+
+  // Inicializar autocompletes
+  setupAutocomplete("company_name_sector",  "company_name_sector_list",  EMPRESAS_INTERNAS);
+  setupAutocomplete("company_name_empresa", "company_name_empresa_list", EMPRESAS_TODAS);
+
+  // Escuchar cambios de radio fuente
+  document.querySelectorAll("input[name='fuente']").forEach(r => {
+    r.addEventListener("change", updateAutocomplete);
+  });
+
+  // --- Preparar submit segun modo activo ---
+  function prepareSubmit() {
+    const form = document.getElementById("deal-request-form");
+    document.getElementById("search_mode").value = currentMode;
+
+    if (currentMode === "empresa") {
+      const val = document.getElementById("company_name_empresa").value.trim();
+      document.getElementById("company_name_hidden").value = val;
+      // Limpiar sector y geografia para que el backend sepa el modo
+      form.querySelector("#sector") && (form.querySelector("#sector").value = "");
+      form.querySelector("#geografia") && (form.querySelector("#geografia").value = "");
+    } else if (currentMode === "sector") {
+      document.getElementById("company_name_hidden").value =
+        document.getElementById("company_name_sector").value.trim();
+      form.querySelector("#geografia") && (form.querySelector("#geografia").value = "");
+    } else if (currentMode === "geografia") {
+      document.getElementById("company_name_hidden").value = "";
+      form.querySelector("#sector") && (form.querySelector("#sector").value = "");
+      // La fuente ya esta seleccionada en el radio del modo geografia
+    }
+  }
+
+  // Cubre envio por Enter, no solo click en el boton.
+  document.getElementById("deal-request-form").addEventListener("submit", () => {
+    prepareSubmit();
+  });
 </script>
 {% endblock %}

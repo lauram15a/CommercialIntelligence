@@ -1,9 +1,0 @@
-Alcántara Energía Renovable SL afronta un momento crítico: el cierre financiero de un proyecto fotovoltaico con una inversión estimada de ~€60M. Por la naturaleza del activo y la concentración del CAPEX en el corto plazo, la solución más eficiente suele ser una financiación estructurada tipo project finance, con coordinación de financiadores y una ejecución muy enfocada a hitos para asegurar el calendario.
-
-El proyecto supone un salto de escala relevante frente a los ingresos estimados actuales (~€5,9M), lo que incrementa la importancia de definir una estructura de capital robusta (mix deuda/capital), covenants adecuados y un paquete de reservas y mitigantes que soporte tanto la fase de construcción como la operación. Dado que no se dispone aún de series históricas de P&L/EBITDA ni de información de endeudamiento actual, el avance debe apoyarse en un paquete de información del proyecto (modelo, contratos, permisos y supuestos operativos) para dimensionar capacidad de deuda y términos.
-
-Proponemos un enfoque de doble carril: (i) estructuración y sindicación de la deuda de project finance, incluyendo revisión del modelo, term sheet, coordinación de due diligence y negociación documental; y (ii) evaluación y, en su caso, articulación de coinversión institucional para reforzar el equity y elevar la certidumbre de fondos, especialmente útil cuando el tamaño del proyecto es material respecto a la base actual.
-
-El objetivo es acelerar el cierre financiero con una estructura optimizada en coste de capital y resiliente ante sensibilidades clave (precio, producción, costes y tipos), coordinando a los financiadores y potenciales coinversores bajo un proceso ordenado y competitivo.
-
-El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

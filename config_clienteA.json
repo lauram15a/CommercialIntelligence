@@ -36,7 +36,7 @@
     "COLOR_INK_MUTED":     "#6B7280",
     "COLOR_BORDER":        "#E5E7EB",
     "FOOTER_TEXT":         "Herramienta de apoyo al analista. Las recomendaciones generadas no constituyen una decision de aprobacion o denegacion de la operacion. La decision final corresponde al analista y al comite de riesgos.",
-    "DEPARTMENT_NAME_KYC":  "Direccion de Riesgos - Onboarding KYC",
+    "DEPARTMENT_NAME_KYC":  "Dirección de Riesgos - Onboarding KYC",
     "DEPARTMENT_NAME_DEAL": "Deal Intelligence"
   }
 }

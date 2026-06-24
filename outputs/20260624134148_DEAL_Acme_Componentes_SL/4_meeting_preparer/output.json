@@ -1,0 +1,23 @@
+{
+  "perfil": "Acme Componentes SL es una compañía industrial (componentes) con crecimiento sostenido de ingresos entre 2022 y 2024 (32,0m€ → 42,0m€) y mejora progresiva de márgenes operativos. Presenta una base de activos en expansión (amortizaciones al alza), compatible con un ciclo inversor y crecimiento orgánico.",
+  "situacion_actual": "La empresa mantiene expansión, aunque con desaceleración del crecimiento interanual (+18,8% en 2023 vs +10,5% en 2024), y mejora de rentabilidad (margen EBITDA 11,9% → 13,8%). El endeudamiento aumenta (8,0m€ → 12,0m€) pero el apalancamiento se mantiene estable en deuda/EBITDA (~2,1x), con mayor gasto financiero absoluto; además, se anticipa CAPEX relevante por nueva planta en Polonia (2025) y una potencial refinanciación en 2027 (deuda estimada 12,0m€).",
+  "necesidades_potenciales": [
+    "Financiación de CAPEX para la nueva planta en Polonia (2025): estructuración de deuda de inversión y calendario de desembolsos.",
+    "Financiación de circulante asociada al crecimiento/expansión (líneas de crédito, confirming/factoring u otras soluciones de working capital).",
+    "Refinanciación 2027 (deuda estimada 12,0m€): extensión de vencimientos, optimización de coste y estructura (posible sindicación/club deal según tamaño final).",
+    "Revisión de estructura de capital para sostener el crecimiento manteniendo métricas de apalancamiento en niveles objetivo."
+  ],
+  "riesgos": [
+    "Ejecución del proyecto de expansión (planta en Polonia): riesgo de desviaciones de CAPEX/plazos y presión temporal sobre liquidez.",
+    "Aumento del coste financiero: los gastos financieros suben (0,45m€ → 0,61m€), lo que puede tensionar cobertura si el entorno de tipos se mantiene elevado o si sube la deuda.",
+    "Crecimiento desacelerando: menor ritmo de ventas podría afectar la capacidad de absorber mayor endeudamiento si el plan de expansión no se materializa según lo previsto.",
+    "Visibilidad limitada del CAPEX real (no hay dato explícito), lo que dificulta dimensionar necesidades y estructura óptima de financiación."
+  ],
+  "talking_points": [
+    "Plan de inversión 2025 (Polonia): importe total, calendario, hitos, proveedores y cómo se financiará (deuda vs recursos propios).",
+    "Necesidades de circulante ligadas al crecimiento: evolución de cobros/pagos, inventarios y si prevén picos de caja durante la puesta en marcha.",
+    "Mapa de deuda actual y vencimientos: confirmar estructura, garantías, covenants y preparar con antelación la ventana de refinanciación 2027 (12,0m€ estimados).",
+    "Evolución de márgenes y drivers: qué explica la mejora de EBITDA/EBIT y cómo se protege en el escenario de expansión.",
+    "Objetivo de apalancamiento: con deuda/EBITDA ~2,1x estable, validar tolerancia a mayor deuda durante el CAPEX y plan de desapalancamiento posterior."
+  ]
+}

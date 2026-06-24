@@ -1,0 +1,21 @@
+{
+  "perfil": "Acme Componentes SL es una compañía con crecimiento sostenido de ingresos entre 2022 y 2024 (32,0m€ a 42,0m€). En paralelo, muestra mejora progresiva de la rentabilidad operativa, con expansión de márgenes EBITDA y EBIT, lo que sugiere mayor eficiencia a medida que escala.",
+  "situacion_actual": "La empresa mantiene expansión en 2024 aunque con desaceleración del crecimiento (+10,5% YoY vs +18,8% en 2023). Ha incrementado su endeudamiento (8,0m€ a 12,0m€) y los gastos financieros (0,45m€ a 0,61m€), mientras el apalancamiento Deuda/EBITDA se modera en 2024 (~2,1x) por la mejora del EBITDA; el patrimonio neto también crece (6,8m€ a 9,9m€). No constan operaciones activas ni impagos en el historial bancario disponible.",
+  "necesidades_potenciales": [
+    "Financiación para inversión/crecimiento si el aumento de amortizaciones refleja una mayor base de activos y potencial intensificación de CapEx.",
+    "Optimización de estructura de capital para sostener el crecimiento limitando la presión del mayor endeudamiento y del coste financiero.",
+    "Revisión de condiciones de deuda y calendario de vencimientos (no disponible) para mitigar el impacto del aumento de gastos financieros."
+  ],
+  "riesgos": [
+    "Desaceleración del crecimiento en 2024 que, si continúa, podría reducir la capacidad de absorber mayores costes financieros.",
+    "Incremento del endeudamiento (+50% 2022–2024) y de los gastos financieros, con potencial sensibilidad a tipos/condiciones de financiación.",
+    "Posible necesidad de CapEx adicional (inferida por mayores amortizaciones) sin visibilidad de plan de inversión, lo que podría tensionar el apalancamiento si se financia con más deuda."
+  ],
+  "talking_points": [
+    "Confirmar drivers del crecimiento 2022–2024 y causas de la desaceleración en 2024 (mix, demanda, precios, capacidad).",
+    "Entender el plan de inversión/CapEx y si el aumento de amortizaciones responde a expansión de capacidad, renovación de activos o adquisiciones.",
+    "Mapear estructura de deuda actual (importe, tipo fijo/variable, vencimientos, covenants) y evaluar opciones de refinanciación/optimización.",
+    "Validar objetivos de apalancamiento y política financiera: cómo equilibran crecimiento, margen y coste financiero.",
+    "Explorar necesidades de financiación a 12–24 meses (circulante, inversión, crecimiento) y criterios internos para tomar deuda adicional."
+  ]
+}

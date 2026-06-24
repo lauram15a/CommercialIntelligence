@@ -1,0 +1,281 @@
+{
+  "normalized_financials": {
+    "entity": {
+      "legal_name": "Acme Componentes SL",
+      "identifier": {
+        "type": "NIF/CIF",
+        "value": "B50123987"
+      },
+      "jurisdiction": "ES",
+      "currency": "EUR",
+      "units": "EUR"
+    },
+    "periodicity": "annual",
+    "period_end_month_day": "12-31",
+    "statements_coverage": {
+      "income_statement": [
+        "revenue",
+        "ebitda",
+        "financial_expenses"
+      ],
+      "balance_sheet": [
+        "current_assets",
+        "current_liabilities",
+        "equity",
+        "net_financial_debt"
+      ],
+      "cash_flow_statement": []
+    },
+    "line_items_definition": {
+      "revenue": "Ingresos (ventas netas) del ejercicio",
+      "ebitda": "Resultado bruto de explotación (EBITDA)",
+      "financial_expenses": "Gastos financieros del ejercicio",
+      "current_assets": "Activo corriente",
+      "current_liabilities": "Pasivo corriente",
+      "equity": "Patrimonio neto",
+      "net_financial_debt": "Deuda financiera neta (deuda financiera bruta menos caja y equivalentes, según definición interna)"
+    },
+    "periods": [
+      {
+        "period_year": 2022,
+        "period_start_date": "2022-01-01",
+        "period_end_date": "2022-12-31",
+        "income_statement": {
+          "revenue": {
+            "value": 32000000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "ebitda": {
+            "value": 3800000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "financial_expenses": {
+            "value": 450000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          }
+        },
+        "balance_sheet": {
+          "current_assets": {
+            "value": 9500000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "current_liabilities": {
+            "value": 7200000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "equity": {
+            "value": 6800000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "net_financial_debt": {
+            "value": 8000000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          }
+        },
+        "derived_metrics": {
+          "ebitda_margin": {
+            "value": 0.11875,
+            "unit": "ratio",
+            "formula": "ebitda / revenue"
+          },
+          "current_ratio": {
+            "value": 1.3194444444,
+            "unit": "x",
+            "formula": "current_assets / current_liabilities"
+          },
+          "net_debt_to_ebitda": {
+            "value": 2.1052631579,
+            "unit": "x",
+            "formula": "net_financial_debt / ebitda"
+          },
+          "interest_coverage_ebitda": {
+            "value": 8.4444444444,
+            "unit": "x",
+            "formula": "ebitda / financial_expenses"
+          }
+        }
+      },
+      {
+        "period_year": 2023,
+        "period_start_date": "2023-01-01",
+        "period_end_date": "2023-12-31",
+        "income_statement": {
+          "revenue": {
+            "value": 38000000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "ebitda": {
+            "value": 4900000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "financial_expenses": {
+            "value": 520000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          }
+        },
+        "balance_sheet": {
+          "current_assets": {
+            "value": 12100000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "current_liabilities": {
+            "value": 8900000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "equity": {
+            "value": 8200000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "net_financial_debt": {
+            "value": 10500000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          }
+        },
+        "derived_metrics": {
+          "yoy_revenue_growth": {
+            "value": 0.1875,
+            "unit": "ratio",
+            "formula": "(revenue_2023 - revenue_2022) / revenue_2022"
+          },
+          "yoy_ebitda_growth": {
+            "value": 0.2894736842,
+            "unit": "ratio",
+            "formula": "(ebitda_2023 - ebitda_2022) / ebitda_2022"
+          },
+          "ebitda_margin": {
+            "value": 0.1289473684,
+            "unit": "ratio",
+            "formula": "ebitda / revenue"
+          },
+          "current_ratio": {
+            "value": 1.3595505618,
+            "unit": "x",
+            "formula": "current_assets / current_liabilities"
+          },
+          "net_debt_to_ebitda": {
+            "value": 2.1428571429,
+            "unit": "x",
+            "formula": "net_financial_debt / ebitda"
+          },
+          "interest_coverage_ebitda": {
+            "value": 9.4230769231,
+            "unit": "x",
+            "formula": "ebitda / financial_expenses"
+          }
+        }
+      },
+      {
+        "period_year": 2024,
+        "period_start_date": "2024-01-01",
+        "period_end_date": "2024-12-31",
+        "income_statement": {
+          "revenue": {
+            "value": 42000000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "ebitda": {
+            "value": 5800000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "financial_expenses": {
+            "value": 610000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          }
+        },
+        "balance_sheet": {
+          "current_assets": {
+            "value": 14500000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "current_liabilities": {
+            "value": 9800000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "equity": {
+            "value": 9900000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          },
+          "net_financial_debt": {
+            "value": 12000000,
+            "currency": "EUR",
+            "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+          }
+        },
+        "derived_metrics": {
+          "yoy_revenue_growth": {
+            "value": 0.1052631579,
+            "unit": "ratio",
+            "formula": "(revenue_2024 - revenue_2023) / revenue_2023"
+          },
+          "yoy_ebitda_growth": {
+            "value": 0.1836734694,
+            "unit": "ratio",
+            "formula": "(ebitda_2024 - ebitda_2023) / ebitda_2023"
+          },
+          "ebitda_margin": {
+            "value": 0.1380952381,
+            "unit": "ratio",
+            "formula": "ebitda / revenue"
+          },
+          "current_ratio": {
+            "value": 1.4795918367,
+            "unit": "x",
+            "formula": "current_assets / current_liabilities"
+          },
+          "net_debt_to_ebitda": {
+            "value": 2.0689655172,
+            "unit": "x",
+            "formula": "net_financial_debt / ebitda"
+          },
+          "interest_coverage_ebitda": {
+            "value": 9.5081967213,
+            "unit": "x",
+            "formula": "ebitda / financial_expenses"
+          }
+        }
+      }
+    ],
+    "data_quality": {
+      "sources_present": [
+        "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+      ],
+      "missing_fields": [
+        "total_assets",
+        "total_liabilities",
+        "cash_and_equivalents",
+        "gross_debt",
+        "net_income",
+        "ebit",
+        "tax_expense",
+        "depreciation_amortization",
+        "capex",
+        "operating_cash_flow",
+        "free_cash_flow"
+      ],
+      "notes": [
+        "La 'deuda financiera neta' se mantiene como métrica provista; no se descompone en caja y deuda bruta por falta de datos.",
+        "No se puede validar el balance (Activos = Pasivos + Patrimonio) al no disponer de total de activos/pasivos."
+      ]
+    }
+  }
+}

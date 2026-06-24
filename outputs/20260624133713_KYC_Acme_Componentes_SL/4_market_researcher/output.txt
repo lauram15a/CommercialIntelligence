@@ -1,0 +1,47 @@
+## Resumen (markdown) — Señales externas relevantes para el análisis de riesgo  
+**Empresa:** Acme Componentes SL  
+**Partes vinculadas:** No identificadas  
+**Noticias/señales en base de datos interna:** No hay registros
+
+### 1) Situación de información disponible
+- **Ausencia de señales internas registradas**: no hay noticias ni alertas en la base de datos interna, por lo que **no se observan “red flags” documentadas** desde esa fuente.
+- **Riesgo operativo para el análisis**: la falta de señales internas **no equivale a ausencia de riesgo**; implica que el análisis depende de **fuentes externas** (registros mercantiles, prensa, litigios, sanciones, insolvencias, cambios societarios, etc.).
+
+### 2) Señales externas a revisar (checklist de riesgo)
+A falta de eventos ya capturados, las señales externas típicamente más relevantes para una empresa industrial/de componentes incluyen:
+
+**A. Riesgo legal y de cumplimiento**
+- Procedimientos judiciales (civil/mercantil/laboral) y **litigios recurrentes**.
+- **Sanciones administrativas** (consumo, competencia, medioambiente, seguridad industrial).
+- Señales AML/FT: menciones en listas de sanciones, PEPs, adverse media.
+
+**B. Riesgo financiero / continuidad**
+- Indicadores de **estrés de liquidez**: impagos reportados, ejecuciones, embargos, protestos.
+- **Insolvencia**: preconcurso/concurso, acuerdos de refinanciación, reestructuraciones.
+- Cambios bruscos en cuentas depositadas (caídas de ventas/márgenes, patrimonio neto bajo, fondo de maniobra negativo).
+
+**C. Riesgo societario y de gobierno**
+- Cambios frecuentes de administradores, domicilio, objeto social o estructura accionarial.
+- Creación/cierre de filiales, operaciones corporativas atípicas.
+- Señales de **opacidad**: falta de depósito de cuentas, retrasos recurrentes, auditorías con salvedades (si aplica).
+
+**D. Riesgo comercial y de cadena de suministro**
+- Dependencia elevada de pocos clientes/proveedores (si se identifica por fuentes públicas).
+- Incidencias de calidad/recalls, paradas de planta, accidentes laborales relevantes.
+- Exposición a shocks sectoriales (automoción, industrial, construcción, etc.) y a precios de materias primas/energía.
+
+**E. Riesgo reputacional (adverse media)**
+- Noticias negativas: fraude, conflictos laborales, incumplimientos contractuales, disputas con clientes, prácticas anticompetitivas.
+- Señales en redes/foros sectoriales (con cautela; requieren verificación).
+
+### 3) Conclusión preliminar (con la evidencia actual)
+- **No hay señales externas concretas aportadas** en el input (solo consta que la base interna no tiene noticias).  
+- Por tanto, el resultado actual es: **“sin señales registradas”**, con **necesidad de completar** el análisis mediante un barrido externo estructurado.
+
+### 4) Información mínima necesaria para convertir esto en un resumen “con señales”
+Si me indicas cualquiera de estos datos, puedo aterrizar el resumen con señales reales (y no solo el checklist):
+- **NIF/CIF** y **provincia/municipio** (para evitar homónimos).
+- Sector/end-market principal (p. ej., automoción, electrónica, metalmecánica).
+- Fuentes externas disponibles en tu entorno (Registro Mercantil, BORME, bases de litigios, listas de sanciones, prensa, etc.) o si quieres que proponga un set estándar.
+
+Si quieres, también puedo devolverte el resumen en formato de **matriz de riesgo** (señal → severidad → probabilidad → evidencia → acción recomendada).

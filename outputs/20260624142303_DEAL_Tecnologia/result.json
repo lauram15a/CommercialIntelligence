@@ -1,0 +1,161 @@
+{
+  "run_id": "20260624142303",
+  "sector": "Tecnologia",
+  "company_name": "DataNexa Cloud Systems SL",
+  "fuente": "interna",
+  "geografia": null,
+  "analyst_notes": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Tecnologia",
+    "oportunidades": [
+      {
+        "empresa": "DataNexa Cloud Systems SL",
+        "motivo": "La compañía tiene un plan activo de adquisición de un competidor vertical, lo que típicamente requiere financiación puente y estructuración de deuda para ejecutar el cierre y la integración.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "Existe un evento corporativo (M&A) con necesidad de fondos en el corto plazo, lo que eleva la urgencia y la probabilidad de mandato frente a casos de CAPEX incremental o refinanciación a más largo plazo.",
+        "ingresos_estimados": 15200000,
+        "empleados": 128,
+        "historial_banco": "Cliente desde 20112-06-15. Rating interno: BBB+. Operaciones activas: 2. Impagos: 0.",
+        "_historial_completo": {
+          "cliente_desde": "20112-06-15",
+          "rating_interno": "BBB+",
+          "impagos": 0,
+          "segmento": "Corporate Tecnologia",
+          "gestor": "Equipo Levante",
+          "operaciones_activas": [
+            {
+              "tipo": "Prestamo corporativo",
+              "importe_EUR": 4450000,
+              "cuota_mensual_EUR": 72000,
+              "fecha_inicio": "2024-03-01",
+              "vencimiento": "2029-03-01",
+              "al_corriente": true
+            },
+            {
+              "tipo": "Linea de circulante",
+              "limite_EUR": 2550000,
+              "dispuesto_EUR": 1350000,
+              "fecha_inicio": "2025-01-10",
+              "vencimiento": "2026-12-31",
+              "al_corriente": true
+            }
+          ],
+          "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+        }
+      },
+      {
+        "empresa": "Tecnologia Holdings SL",
+        "motivo": "Presenta crecimiento operativo con una necesidad potencial de financiación en 2027 ligada a CAPEX y/o refinanciación, con deuda estimada de 4,2M EUR, abriendo la puerta a optimización de estructura y planificación de vencimientos.",
+        "prioridad": "media",
+        "justificacion_prioridad": "La señal apunta a una necesidad próxima pero no inmediata (horizonte 2027), por lo que el encaje es claro para originación temprana, aunque con menor urgencia que un proceso de adquisición en curso.",
+        "ingresos_estimados": 10000000,
+        "empleados": 120
+      },
+      {
+        "empresa": "VectorIA Analytics SA",
+        "motivo": "El aumento de CAPEX en producto e infraestructura para escalar internacionalmente sugiere necesidad de financiación de crecimiento y potenciales líneas de circulante para soportar la expansión y el ciclo de cobro enterprise.",
+        "prioridad": "media",
+        "justificacion_prioridad": "Hay una necesidad plausible asociada a expansión, pero sin hito transaccional fechado (p.ej., adquisición o refinanciación con vencimiento cercano), por lo que la urgencia es similar a otras oportunidades de crecimiento y menor que M&A.",
+        "ingresos_estimados": 11800000,
+        "empleados": 104
+      }
+    ],
+    "resumen": "En tecnología, las oportunidades más accionables suelen venir de eventos (M&A) y de planes de expansión que elevan CAPEX y necesidades de circulante. En este conjunto, destaca una operación de adquisición con probable necesidad inmediata de financiación, seguida de casos de crecimiento con necesidades más graduales (CAPEX/escala y refinanciación planificada)."
+  },
+  "earnings_summary": "DataNexa Cloud Systems SL presenta unos ingresos estimados de ~15,2 M€ (sin desglose por ejercicios), por lo que no es posible cuantificar crecimiento interanual ni identificar estacionalidad con la información disponible. Tampoco se aportan datos de margen operativo/EBITDA, por lo que no puede evaluarse si la rentabilidad está mejorando o sufriendo compresión. No hay información sobre CAPEX, lo que limita el análisis de intensidad inversora y su alineación con una estrategia de expansión o eficiencia. Igualmente, no se reporta endeudamiento ni posición de caja, por lo que no puede inferirse capacidad de apalancamiento o headroom financiero. La señal cualitativa relevante es un plan activo de adquisición de un competidor vertical, que suele implicar necesidades de liquidez de corto plazo y posterior estructuración para financiar el cierre e integración.  \n\nLa compañía presenta una dinámica estratégica de crecimiento inorgánico con visibilidad limitada de métricas financieras históricas, lo que puede implicar necesidad de financiación puente y de estructuración de deuda sujeta a la capacidad de generación de caja y al perfil de apalancamiento actual (no disponible).",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos estimados",
+        "valor": "~15,2 M€"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Visibilidad limitada de métricas financieras históricas (sin desglose por ejercicios).",
+      "Estrategia de crecimiento inorgánico mediante adquisición de un competidor vertical.",
+      "Falta de información sobre rentabilidad (margen operativo/EBITDA) y CAPEX, lo que impide evaluar eficiencia e intensidad inversora.",
+      "Sin datos de deuda ni caja, por lo que no puede inferirse capacidad de apalancamiento ni holgura financiera."
+    ],
+    "interpretacion": "Con la información disponible solo puede afirmarse un nivel de ingresos estimado, sin poder evaluar crecimiento, rentabilidad ni generación de caja. El plan activo de adquisición sugiere probables necesidades de liquidez a corto plazo (financiación puente) y posterior estructuración de financiación para cierre e integración. La viabilidad y el coste de esa financiación dependerán de la capacidad de generación de caja y del apalancamiento actual, que no están disponibles.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "DataNexa Cloud Systems SL es una compañía de sistemas cloud con ingresos estimados de ~15,2 M€. La empresa está ejecutando una estrategia de crecimiento inorgánico mediante la adquisición de un competidor vertical.",
+    "situacion_actual": "Existe un plan activo de adquisición, lo que normalmente implica necesidades de liquidez de corto plazo para el cierre y recursos adicionales para la integración posterior. La visibilidad financiera es limitada: no se dispone de desglose histórico de ingresos, ni de EBITDA/margen operativo, CAPEX, deuda o caja, por lo que no puede evaluarse con precisión la capacidad de apalancamiento ni la generación de caja.",
+    "necesidades_potenciales": [
+      "Financiación puente para ejecutar el cierre de la adquisición en plazos cortos.",
+      "Estructuración de deuda (y potencial refinanciación posterior) para financiar compra e integración, sujeta a métricas de caja/apalancamiento a confirmar.",
+      "Asesoramiento en estructuración de la operación (calendario de desembolsos, covenants, amortización) alineado con el plan de integración."
+    ],
+    "riesgos": [
+      "Riesgo de información insuficiente: ausencia de datos de EBITDA, CAPEX, deuda y caja limita la evaluación de solvencia y capacidad de repago.",
+      "Riesgo de integración post-adquisición (sin datos disponibles sobre sinergias, costes de integración o impacto en márgenes).",
+      "Riesgo de apalancamiento: sin conocer la posición financiera actual, la financiación podría tensionar covenants o la liquidez."
+    ],
+    "talking_points": [
+      "Confirmar el estado del proceso de adquisición: calendario, tamaño de la transacción, estructura (asset vs share deal) y necesidades de fondos en el cierre.",
+      "Solicitar información financiera mínima para estructurar financiación: histórico de ingresos por ejercicios, EBITDA/margen, CAPEX, deuda/caja y proyecciones post-integración.",
+      "Explorar opciones de financiación puente y su salida (take-out): deuda a plazo, líneas revolving, o refinanciación tras el cierre según generación de caja.",
+      "Alinear la estructura de deuda con el plan de integración: periodos de carencia, covenants y flexibilidad para costes de integración.",
+      "Revisar el historial bancario: cliente desde 20112-06-15, rating interno BBB+, 2 operaciones activas, 0 impagos; validar si el rating sigue reflejando la situación actual ante el M&A."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Financiación puente y estructuración de deuda para adquisición (DataNexa Cloud Systems SL)",
+    "subtitulo": "Acompañar el cierre de la adquisición con liquidez inmediata y una estructura de deuda escalable que preserve flexibilidad para la integración.",
+    "oportunidad_detectada": "DataNexa Cloud Systems SL está ejecutando un plan activo de adquisición de un competidor vertical, lo que típicamente exige disponibilidad de fondos en plazos cortos y certidumbre de ejecución. La oportunidad consiste en estructurar una financiación puente para el cierre y diseñar una solución de deuda “take-out” posterior (y potencial refinanciación) alineada con el plan de integración y la capacidad de generación de caja, actualmente no documentada con detalle.",
+    "contexto_financiero": [
+      "Ingresos estimados: ~15,2 M€; sin desglose histórico por ejercicios, lo que impide cuantificar crecimiento y estacionalidad con la información disponible.",
+      "No se dispone de EBITDA/margen operativo, CAPEX, deuda ni caja; por tanto, la capacidad de apalancamiento, cobertura de servicio de deuda y holgura financiera deben confirmarse antes de fijar tamaño, precio y covenants.",
+      "La naturaleza de la operación (adquisición de competidor vertical) sugiere necesidades de liquidez de corto plazo para el cierre y recursos adicionales para costes de integración y captura de sinergias."
+    ],
+    "encaje_productos": [
+      "Financiación puente para adquisición (préstamo puente / línea puente) con calendario de desembolsos y condiciones sujetas a due diligence financiera.",
+      "Estructuración de deuda de medio plazo (tramo a plazo + línea revolving para circulante) y potencial refinanciación post-cierre para optimizar coste, covenants y perfil de amortización."
+    ],
+    "comparables": [
+      "Proveedores de software y servicios cloud B2B de tamaño medio (Europa) con estrategia de consolidación vertical [UNSOURCED]",
+      "Integradores/managed service providers (MSP) con ingresos 10–50 M€ y foco en soluciones cloud y ciberseguridad [UNSOURCED]"
+    ],
+    "argumentos_valor": [
+      "Certidumbre de ejecución: capacidad de estructurar una solución puente que asegure fondos en el cierre y reduzca riesgo de ruptura por calendario.",
+      "Estructura a medida para integración: diseño de covenants, periodos de carencia y flexibilidad de amortización para absorber costes de integración y variabilidad de caja post-adquisición.",
+      "Ruta clara de salida (take-out): planificación desde el día 1 de la financiación definitiva (deuda a plazo / revolving / refinanciación) en función de métricas verificadas y plan de sinergias."
+    ],
+    "proximos_pasos": [
+      "Confirmar parámetros de la transacción: precio/estructura (asset vs share deal), calendario, necesidades de fondos en cierre, y usos (compra, fees, integración, circulante).",
+      "Solicitar paquete mínimo de información para estructuración: histórico 3 años de P&L y balance, LTM, EBITDA normalizado, CAPEX, deuda/caja, detalle de clientes/contratos, y proyecciones standalone vs. proforma con sinergias.",
+      "Preparar propuesta indicativa: tamaño de puente, tenor, pricing, garantías, covenants preliminares y esquema de take-out; acordar cronograma de due diligence y aprobación interna."
+    ],
+    "narrativa_markdown": "DataNexa Cloud Systems SL se encuentra en un momento de alta prioridad estratégica al estar ejecutando un plan activo de adquisición de un competidor vertical. Este tipo de operación suele requerir liquidez inmediata para asegurar el cierre en plazo y, posteriormente, una estructura de financiación que acompañe la integración sin tensionar la operativa.\n\nCon la información disponible, la compañía presenta ingresos estimados de ~15,2 M€, pero no se dispone de desglose histórico, EBITDA/margen operativo, CAPEX, deuda ni caja. Esta limitación impide dimensionar con precisión la capacidad de apalancamiento y el perfil de repago; por ello, la propuesta se plantea en dos fases: (i) financiación puente para garantizar ejecución del cierre y (ii) estructuración de deuda de medio plazo (con posible refinanciación) una vez verificada la generación de caja y el desempeño proforma.\n\nNuestra propuesta de valor se centra en aportar certidumbre de fondos y velocidad de ejecución, junto con una arquitectura de deuda diseñada para el periodo de integración: covenants calibrados, flexibilidad de amortización y herramientas de liquidez (p. ej., línea revolving) para absorber costes de integración y necesidades de circulante. En paralelo, se define desde el inicio una ruta de salida del puente (“take-out”) para optimizar coste y términos cuando la información financiera esté completa.\n\nPara avanzar, proponemos una sesión de trabajo para confirmar los parámetros de la transacción (estructura, calendario, usos de fondos) y acordar el paquete mínimo de información financiera y operativa. Con ello, prepararemos una propuesta indicativa con alternativas de estructura, términos preliminares y un cronograma de due diligence y aprobaciones.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {
+    "cliente_desde": "20112-06-15",
+    "rating_interno": "BBB+",
+    "impagos": 0,
+    "segmento": "Corporate Tecnologia",
+    "gestor": "Equipo Levante",
+    "operaciones_activas": [
+      {
+        "tipo": "Prestamo corporativo",
+        "importe_EUR": 4450000,
+        "cuota_mensual_EUR": 72000,
+        "fecha_inicio": "2024-03-01",
+        "vencimiento": "2029-03-01",
+        "al_corriente": true
+      },
+      {
+        "tipo": "Linea de circulante",
+        "limite_EUR": 2550000,
+        "dispuesto_EUR": 1350000,
+        "fecha_inicio": "2025-01-10",
+        "vencimiento": "2026-12-31",
+        "al_corriente": true
+      }
+    ],
+    "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+  }
+}

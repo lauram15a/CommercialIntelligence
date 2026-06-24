@@ -1,28 +1,28 @@
 {% extends "base.html" %}
 
-{% block title %}Nueva busqueda - Deal Intelligence{% endblock %}
+{% block title %}Nueva búsqueda - Deal Intelligence{% endblock %}
 
 {% block content %}
 <div class="container">
 
   <div class="page-header">
     <p class="eyebrow">{{ department_name_deal }}</p>
-    <h1>Nueva busqueda de oportunidades</h1>
+    <h1>Nueva búsqueda de oportunidades</h1>
     <p>
-      Busca oportunidades por sector, por empresa o por zona geografica.
-      El sistema identificara las empresas con mayor potencial y generara
-      una propuesta comercial lista para la reunion.
+      Busca oportunidades por sector, por empresa o por zona geográfica.
+      El sistema identificará las empresas con mayor potencial y generará
+      una propuesta comercial lista para la reunión.
     </p>
   </div>
 
   <div class="workspace">
     <div class="card">
       <div class="card__header">
-        <h2>Parametros de la busqueda</h2>
+        <h2>Parámetros de la búsqueda</h2>
       </div>
       <div class="card__body">
 
-        <!-- Selector de modo de busqueda -->
+        <!-- Selector de modo de búsqueda -->
         <div class="search-mode-tabs" role="tablist" style="display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid var(--color-border); padding-bottom: 0;">
           <button type="button" class="search-mode-tab is-active" data-mode="sector"
                   style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-primary); border-bottom: 2px solid var(--color-primary); margin-bottom: -2px; cursor: pointer;">
@@ -34,7 +34,7 @@
           </button>
           <button type="button" class="search-mode-tab" data-mode="geografia"
                   style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-ink-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer;">
-            Por zona geografica
+            Por zona geográfica
           </button>
         </div>
 
@@ -45,32 +45,32 @@
 
             <div class="form-group">
               <label>Tipo de empresas</label>
-              <div style="display: flex; gap: 24px; margin-top: 6px;">
-                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
-                  <input type="radio" name="fuente" value="interna" checked
-                         onchange="updateAutocomplete()"> Clientes del banco
+              <div class="deal-radio-group" style="margin-top: 6px;">
+                <label class="deal-radio">
+                  <input type="radio" name="fuente" value="interna" checked> Clientes del banco
                 </label>
-                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
-                  <input type="radio" name="fuente" value="externa"
-                         onchange="updateAutocomplete()"> No clientes (fuentes externas)
+                <label class="deal-radio">
+                  <input type="radio" name="fuente" value="externa"> No clientes (fuentes externas)
                 </label>
               </div>
-              <span class="form-hint">Los clientes del banco se analizan con datos internos. Los no clientes, con informacion publica disponible.</span>
+              <span class="form-hint">Los clientes del banco se analizan con datos internos. Los no clientes, con información pública disponible.</span>
             </div>
 
             <div class="form-group">
               <label for="sector">Sector a analizar</label>
-              <select id="sector" name="sector">
-                <option value="">- Selecciona un sector -</option>
-                <option value="Industrial">Industrial</option>
-                <option value="Tecnologia">Tecnologia</option>
-                <option value="Inmobiliario">Inmobiliario</option>
-                <option value="Retail y Distribucion">Retail y distribucion</option>
-                <option value="Construccion">Construccion</option>
-                <option value="Energia">Energia</option>
-                <option value="Salud y Farmacia">Salud y farmacia</option>
-                <option value="Agroindustria">Agroindustria</option>
-              </select>
+              <div class="deal-select-wrap">
+                <select id="sector" name="sector" class="deal-select">
+                  <option value="">Selecciona un sector</option>
+                  <option value="Industrial">Industrial</option>
+                  <option value="Tecnologia">Tecnología</option>
+                  <option value="Inmobiliario">Inmobiliario</option>
+                  <option value="Retail y Distribucion">Retail y distribución</option>
+                  <option value="Construccion">Construcción</option>
+                  <option value="Energia">Energía</option>
+                  <option value="Salud y Farmacia">Salud y farmacia</option>
+                  <option value="Agroindustria">Agroindustria</option>
+                </select>
+              </div>
             </div>
 
             <div class="form-group">
@@ -81,7 +81,13 @@
                        autocomplete="off">
                 <ul class="autocomplete-list" id="company_name_sector_list"></ul>
               </div>
-              <span class="form-hint">Si no se indica empresa, el sistema seleccionara la de mayor prioridad del sector.</span>
+              <span class="form-hint" id="company_name_sector_hint">Si no se indica empresa, el sistema seleccionara la de mayor prioridad del sector.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="notes_sector">Apuntes del gestor (opcional)</label>
+              <textarea id="notes_sector" name="notes_sector" placeholder="Ejemplo: he hablado con dirección financiera y priorizan refinanciación de deuda en 2027."></textarea>
+              <span class="form-hint">Estas notas se usan como contexto adicional para priorizar oportunidades.</span>
             </div>
 
           </div>
@@ -90,14 +96,42 @@
           <div class="search-mode-panel" data-mode="empresa" style="display: none;">
 
             <div class="form-group">
-              <label for="company_name_empresa">Nombre de la empresa</label>
-              <div class="autocomplete-wrapper">
-                <input type="text" id="company_name_empresa"
-                       placeholder="Escribe el nombre de la empresa..."
-                       autocomplete="off">
-                <ul class="autocomplete-list" id="company_name_empresa_list"></ul>
+              <label>Tipo de empresa</label>
+              <div class="deal-radio-group" style="margin-top: 6px;">
+                <label class="deal-radio">
+                  <input type="radio" name="fuente_empresa" value="interna" checked> Cliente interno
+                </label>
+                <label class="deal-radio">
+                  <input type="radio" name="fuente_empresa" value="externa"> Cliente externo
+                </label>
               </div>
-              <span class="form-hint">El sistema detectara automaticamente si es cliente del banco o no.</span>
+            </div>
+
+            <div class="form-group" id="empresa-interna-group">
+              <label for="company_name_empresa_interna">Empresa cliente</label>
+              <div class="deal-select-wrap">
+                <select id="company_name_empresa_interna" class="deal-select">
+                  <option value="">Selecciona una empresa cliente</option>
+                  {% for name in empresa_names_internas %}
+                  <option value="{{ name }}">{{ name }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <span class="form-hint">Si eliges cliente interno, selecciona la empresa desde este listado.</span>
+            </div>
+
+            <div class="form-group" id="empresa-externa-group" style="display: none;">
+              <label for="company_name_empresa_externa">Empresa externa</label>
+              <input type="text" id="company_name_empresa_externa"
+                     placeholder="Escribe el nombre de la empresa externa..."
+                     autocomplete="off">
+              <span class="form-hint">Si eliges cliente externo, escribe el nombre manualmente.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="notes_empresa">Apuntes del gestor (opcional)</label>
+              <textarea id="notes_empresa" name="notes_empresa" placeholder="Ejemplo: contacto comercial indica plan de adquisición en 6 meses y necesidad de financiación puente."></textarea>
+              <span class="form-hint">Estas notas se usan como contexto adicional para priorizar oportunidades.</span>
             </div>
 
           </div>
@@ -107,36 +141,47 @@
 
             <div class="form-group">
               <label>Tipo de empresas</label>
-              <div style="display: flex; gap: 24px; margin-top: 6px;">
-                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
-                  <input type="radio" name="fuente" value="interna"> Clientes del banco
+              <div class="deal-radio-group" style="margin-top: 6px;">
+                <label class="deal-radio">
+                  <input type="radio" name="fuente" value="interna" checked> Clientes del banco
                 </label>
-                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
-                  <input type="radio" name="fuente" value="externa" checked> No clientes (fuentes externas)
+                <label class="deal-radio">
+                  <input type="radio" name="fuente" value="externa"> No clientes (fuentes externas)
                 </label>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="geografia">Comunidad autonoma</label>
-              <select id="geografia" name="geografia">
-                <option value="">- Selecciona una zona -</option>
-                {% for ca in comunidades %}
-                <option value="{{ ca }}">{{ ca }}</option>
-                {% endfor %}
-              </select>
-              <span class="form-hint">El sistema buscara empresas con oportunidades en la zona seleccionada.</span>
+              <label for="geografia">Comunidad autónoma</label>
+              <div class="deal-select-wrap">
+                <select id="geografia" name="geografia" class="deal-select">
+                  <option value="">Selecciona una zona</option>
+                  {% for ca in comunidades %}
+                  <option value="{{ ca }}">{{ ca }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <span class="form-hint">El sistema buscará empresas con oportunidades en la zona seleccionada.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="notes_geografia">Apuntes del gestor (opcional)</label>
+              <textarea id="notes_geografia" name="notes_geografia" placeholder="Ejemplo: foco en empresas exportadoras de la zona con tensión de circulante por estacionalidad."></textarea>
+              <span class="form-hint">Estas notas se usan como contexto adicional para priorizar oportunidades.</span>
             </div>
 
           </div>
 
           <!-- Campo oculto que recibe el company_name del modo empresa -->
           <input type="hidden" id="company_name_hidden" name="company_name" value="">
+          <input type="hidden" id="company_name_empresa_resolved" name="company_name_empresa" value="">
+          <input type="hidden" id="fuente_empresa_hidden" name="fuente_empresa" value="interna">
           <input type="hidden" id="search_mode" name="search_mode" value="sector">
+          <input type="hidden" id="search_notes" name="search_notes" value="">
 
           <div class="form-actions">
-            <span class="form-hint">El analisis tarda entre 1 y 2 minutos.</span>
-            <button type="submit" class="btn btn-primary" onclick="prepareSubmit()">Lanzar analisis</button>
+            <span class="form-hint">El análisis tarda entre 1 y 2 minutos.</span>
+            <button type="submit" class="btn btn-primary" onclick="prepareSubmit()">Lanzar análisis</button>
           </div>
 
         </form>
@@ -168,14 +213,14 @@
   <div class="card" style="margin-bottom: 64px;">
     <div class="card__header">
       <h2>Analisis recientes</h2>
-      <p>Ultimas busquedas procesadas por el sistema</p>
+      <p>Últimas búsquedas procesadas por el sistema</p>
     </div>
     {% if runs %}
     <table class="runs-table">
       <thead>
         <tr>
           <th>Empresa</th>
-          <th>Fecha de ejecucion</th>
+          <th>Fecha de ejecución</th>
           <th>Identificador</th>
           <th></th>
         </tr>
@@ -193,8 +238,8 @@
     </table>
     {% else %}
     <div class="empty-state">
-      <h3>Sin analisis todavia</h3>
-      <p>Cuando se procese una busqueda, aparecera aqui.</p>
+      <h3>Sin análisis todavía</h3>
+      <p>Cuando se procese una búsqueda, aparecerá aquí.</p>
     </div>
     {% endif %}
   </div>
@@ -206,9 +251,17 @@
 <script>
   const EMPRESAS_INTERNAS = {{ empresa_names_internas | tojson }};
   const EMPRESAS_EXTERNAS = {{ empresa_names_externas | tojson }};
-  const EMPRESAS_TODAS    = {{ empresa_names | tojson }};
+  const EMPRESA_SECTOR_MAP_INTERNAS = {{ empresa_sector_map_internas | tojson }};
 
   let currentMode = "sector";
+
+  function normalizeText(str) {
+    return (str || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
+  }
 
   // --- Cambio de modo ---
   document.querySelectorAll(".search-mode-tab").forEach(tab => {
@@ -224,30 +277,82 @@
       document.querySelectorAll(".search-mode-panel").forEach(p => {
         p.style.display = p.dataset.mode === currentMode ? "" : "none";
       });
+      syncSectorTargetState();
     });
   });
 
-  // --- Autocomplete adaptativo segun fuente ---
-  function getEmpresaList() {
+  function getSelectedFuente() {
     const fuente = document.querySelector("input[name='fuente']:checked");
-    if (!fuente) return EMPRESAS_TODAS;
-    return fuente.value === "interna" ? EMPRESAS_INTERNAS : EMPRESAS_EXTERNAS;
+    return fuente ? fuente.value : "interna";
   }
 
-  function updateAutocomplete() {
-    // Limpiar y reconfigurar autocomplete con la lista correcta
-    const list = getEmpresaList();
-    setupAutocomplete("company_name_sector", "company_name_sector_list", list);
+  function getSelectedFuenteEmpresa() {
+    const fuente = document.querySelector("input[name='fuente_empresa']:checked");
+    return fuente ? fuente.value : "interna";
+  }
+
+  function getInternalCompaniesBySector() {
+    const selectedSector = normalizeText(document.getElementById("sector").value);
+    if (!selectedSector) {
+      return EMPRESAS_INTERNAS;
+    }
+    return EMPRESAS_INTERNAS.filter(name => {
+      const companySector = normalizeText(EMPRESA_SECTOR_MAP_INTERNAS[name]);
+      return companySector === selectedSector;
+    });
+  }
+
+  function getSectorTargetCandidates() {
+    if (getSelectedFuente() !== "interna") {
+      return [];
+    }
+    return getInternalCompaniesBySector();
+  }
+
+  function syncSectorTargetState() {
+    const isExterna = getSelectedFuente() === "externa";
+    const sectorInput = document.getElementById("company_name_sector");
+    const sectorList = document.getElementById("company_name_sector_list");
+    const sectorHint = document.getElementById("company_name_sector_hint");
+
+    if (isExterna) {
+      sectorInput.placeholder = "Escribe la empresa objetivo (sin sugerencias)";
+      if (sectorHint) {
+        sectorHint.textContent = "Con fuentes externas no se muestran sugerencias; introduce la empresa manualmente.";
+      }
+      sectorList.classList.remove("is-open");
+      sectorList.innerHTML = "";
+    } else {
+      sectorInput.placeholder = "Dejar en blanco para usar la de mayor prioridad";
+      if (sectorHint) {
+        sectorHint.textContent = "Solo se sugieren clientes del banco del sector seleccionado.";
+      }
+    }
+  }
+
+  function syncEmpresaSourceState() {
+    const fuenteEmpresa = getSelectedFuenteEmpresa();
+    const isExterna = fuenteEmpresa === "externa";
+    const internaGroup = document.getElementById("empresa-interna-group");
+    const externaGroup = document.getElementById("empresa-externa-group");
+    if (internaGroup) internaGroup.style.display = isExterna ? "none" : "";
+    if (externaGroup) externaGroup.style.display = isExterna ? "" : "none";
+    document.getElementById("fuente_empresa_hidden").value = fuenteEmpresa;
   }
 
   // Inicializar autocompletes
-  setupAutocomplete("company_name_sector",  "company_name_sector_list",  EMPRESAS_INTERNAS);
-  setupAutocomplete("company_name_empresa", "company_name_empresa_list", EMPRESAS_TODAS);
+  setupAutocomplete("company_name_sector",  "company_name_sector_list",  () => getSectorTargetCandidates());
 
-  // Escuchar cambios de radio fuente
+  // Escuchar cambios de radio fuente y sector
   document.querySelectorAll("input[name='fuente']").forEach(r => {
-    r.addEventListener("change", updateAutocomplete);
+    r.addEventListener("change", syncSectorTargetState);
   });
+  document.querySelectorAll("input[name='fuente_empresa']").forEach(r => {
+    r.addEventListener("change", syncEmpresaSourceState);
+  });
+  document.getElementById("sector").addEventListener("change", syncSectorTargetState);
+  syncSectorTargetState();
+  syncEmpresaSourceState();
 
   // --- Preparar submit segun modo activo ---
   function prepareSubmit() {
@@ -255,17 +360,25 @@
     document.getElementById("search_mode").value = currentMode;
 
     if (currentMode === "empresa") {
-      const val = document.getElementById("company_name_empresa").value.trim();
+      const fuenteEmpresa = getSelectedFuenteEmpresa();
+      const val = fuenteEmpresa === "interna"
+        ? document.getElementById("company_name_empresa_interna").value.trim()
+        : document.getElementById("company_name_empresa_externa").value.trim();
       document.getElementById("company_name_hidden").value = val;
+      document.getElementById("company_name_empresa_resolved").value = val;
+      document.getElementById("fuente_empresa_hidden").value = fuenteEmpresa;
+      document.getElementById("search_notes").value = document.getElementById("notes_empresa").value.trim();
       // Limpiar sector y geografia para que el backend sepa el modo
       form.querySelector("#sector") && (form.querySelector("#sector").value = "");
       form.querySelector("#geografia") && (form.querySelector("#geografia").value = "");
     } else if (currentMode === "sector") {
       document.getElementById("company_name_hidden").value =
         document.getElementById("company_name_sector").value.trim();
+      document.getElementById("search_notes").value = document.getElementById("notes_sector").value.trim();
       form.querySelector("#geografia") && (form.querySelector("#geografia").value = "");
     } else if (currentMode === "geografia") {
       document.getElementById("company_name_hidden").value = "";
+      document.getElementById("search_notes").value = document.getElementById("notes_geografia").value.trim();
       form.querySelector("#sector") && (form.querySelector("#sector").value = "");
       // La fuente ya esta seleccionada en el radio del modo geografia
     }

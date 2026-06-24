@@ -1,0 +1,124 @@
+{
+  "run_id": "20260624134835",
+  "sector": "No especificado",
+  "company_name": "Hispania Biotech Labs SA",
+  "fuente": "interna",
+  "geografia": null,
+  "analyst_notes": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Hispania Biotech Labs SA",
+    "oportunidades": [],
+    "resumen": "No se han proporcionado empresas detectadas en la lista de entrada, por lo que no es posible priorizar oportunidades comerciales ni inferir necesidades de financiación/asesoramiento. Si compartes el listado de compañías (o filtros mínimos: país, subsegmento biotech, tamaño), puedo devolver el ranking de prioridades y el racional por empresa."
+  },
+  "earnings_summary": "Hispania Biotech Labs SA muestra un crecimiento sostenido de ingresos: 14,8m€ (2022) → 17,5m€ (2023, +18,2% YoY) → 20,6m€ (2024, +17,7% YoY), lo que sugiere una expansión comercial consistente. La rentabilidad operativa también mejora, con EBITDA de 2,1m€ → 2,65m€ → 3,2m€ y un margen EBITDA que se expande de ~14,2% (2022) a ~15,1% (2023) y ~15,5% (2024); en paralelo, el margen EBIT se mantiene sólido y ligeramente al alza (~11,2% → ~12,1% → ~12,5%). En la estructura de costes, el coste de ventas se mantiene relativamente estable en torno al 73% de ingresos, mientras que los gastos de explotación crecen en términos absolutos pero se mantienen en ~12% de ventas, apoyando el apalancamiento operativo. No se reporta CAPEX explícito; no obstante, el aumento de amortizaciones (444k€ → 525k€ → 618k€) apunta a una base de activos en crecimiento, potencialmente ligada a inversión en capacidad/lab o intangibles. El endeudamiento financiero aumenta de 5,2m€ a 6,8m€ (2022–2024, +30,8%), aunque el apalancamiento se mantiene contenido al bajar Deuda/EBITDA de ~2,5x a ~2,1x, y el patrimonio neto sube de 4,7m€ a 6,9m€; aun así, los gastos financieros crecen (280k€ → 390k€), elevando su peso sobre ventas (~1,9% en 2022 a ~1,9% en 2024) y consumiendo parte del resultado. La compañía presenta crecimiento rentable con mejora de márgenes y aumento moderado de deuda para sostener la expansión, lo que puede implicar necesidad de financiación adicional (o refinanciación) si continúa el ritmo de inversión y crecimiento, si bien falta detalle de CAPEX y generación de caja para confirmarlo.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos",
+        "valor": "14,8m€ (2022) → 17,5m€ (2023, +18,2% YoY) → 20,6m€ (2024, +17,7% YoY)"
+      },
+      {
+        "nombre": "EBITDA",
+        "valor": "2,1m€ → 2,65m€ → 3,2m€ (2022–2024)"
+      },
+      {
+        "nombre": "Margen EBITDA",
+        "valor": "~14,2% (2022) → ~15,1% (2023) → ~15,5% (2024)"
+      },
+      {
+        "nombre": "Deuda financiera",
+        "valor": "5,2m€ (2022) → 6,8m€ (2024) (+30,8%)"
+      },
+      {
+        "nombre": "Deuda/EBITDA",
+        "valor": "~2,5x (2022) → ~2,1x (2024)"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Crecimiento sostenido de ingresos con expansión comercial consistente (doble dígito YoY en 2023–2024).",
+      "Mejora gradual de la rentabilidad operativa con expansión de márgenes EBITDA y EBIT (apalancamiento operativo).",
+      "Estructura de costes estable: coste de ventas ~73% de ingresos y OPEX ~12% de ventas pese a crecer en términos absolutos.",
+      "Base de activos en crecimiento sugerida por el aumento de amortizaciones (444k€ → 618k€), potencialmente ligada a inversión en capacidad/lab o intangibles."
+    ],
+    "interpretacion": "La compañía combina crecimiento y mejora de márgenes, lo que apunta a un modelo rentable en expansión y con cierto apalancamiento operativo. El aumento de deuda (5,2m€ a 6,8m€) parece estar financiando parte del crecimiento, aunque el apalancamiento mejora (Deuda/EBITDA baja a ~2,1x), señal de que el EBITDA crece más rápido que la deuda. Podría requerir financiación adicional o refinanciación si mantiene el ritmo de inversión/crecimiento, pero falta visibilidad sobre CAPEX y generación de caja para confirmarlo.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Hispania Biotech Labs SA es una compañía del sector biotech/laboratorio con una trayectoria reciente de crecimiento sostenido de ingresos. Presenta mejora gradual de la rentabilidad operativa (expansión de márgenes) y una base de activos en aumento, sugerida por el crecimiento de amortizaciones.",
+    "situacion_actual": "Entre 2022 y 2024 la empresa crece a doble dígito en ingresos (14,8m€ → 20,6m€) y mejora EBITDA (2,1m€ → 3,2m€), elevando el margen EBITDA (~14,2% → ~15,5%). La deuda financiera aumenta (5,2m€ → 6,8m€), pero el apalancamiento mejora (Deuda/EBITDA ~2,5x → ~2,1x); a la vez, suben los gastos financieros (280k€ → 390k€). No constan operaciones activas ni impagos; antigüedad y rating interno no disponibles.",
+    "necesidades_potenciales": [
+      "Financiación para sostener el crecimiento y posibles inversiones en capacidad/lab o intangibles (consistente con el aumento de amortizaciones).",
+      "Refinanciación u optimización de estructura de deuda para contener el coste financiero ante el aumento de gastos financieros.",
+      "Clarificación y, en su caso, financiación de CAPEX y necesidades de caja (no reportadas explícitamente) para validar la sostenibilidad del plan de expansión."
+    ],
+    "riesgos": [
+      "Visibilidad limitada sobre CAPEX y generación de caja, lo que dificulta confirmar necesidades reales de financiación y capacidad de repago.",
+      "Incremento del coste financiero (gastos financieros al alza) que puede presionar el resultado si continúan subiendo tipos o aumenta la deuda.",
+      "Dependencia de mantener el ritmo de crecimiento para sostener la mejora de apalancamiento; una desaceleración podría deteriorar métricas (Deuda/EBITDA)."
+    ],
+    "talking_points": [
+      "Confirmar drivers del crecimiento 2023–2024 (+18,2% y +17,7% YoY): mix de clientes/productos, recurrencia y pipeline comercial.",
+      "Entender el plan de inversión: CAPEX previsto, expansión de capacidad/lab e intangibles (aumento de amortizaciones 444k€ → 618k€) y calendario.",
+      "Revisar estructura de deuda actual (6,8m€) y objetivos: vencimientos, tipo fijo/variable y opciones de refinanciación para reducir/estabilizar el coste financiero (280k€ → 390k€).",
+      "Validar generación de caja y necesidades de circulante: si el crecimiento está consumiendo caja y qué colchón de liquidez requieren.",
+      "Alinear métricas objetivo: nivel de apalancamiento deseado (hoy ~2,1x Deuda/EBITDA) y umbrales internos para financiar la siguiente fase de crecimiento."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Hispania Biotech Labs SA",
+    "subtitulo": "Acompañar el crecimiento rentable con una estructura de financiación más eficiente y preparada para la siguiente fase de inversión",
+    "oportunidad_detectada": "Hispania Biotech Labs SA combina crecimiento sostenido de ingresos y mejora de márgenes, mientras incrementa moderadamente su deuda para sostener la expansión. La oportunidad consiste en estructurar una solución de financiación y/o refinanciación que estabilice el coste financiero, preserve flexibilidad y permita ejecutar el plan de inversión (capacidad/lab e intangibles) con visibilidad y disciplina de caja.",
+    "contexto_financiero": [
+      "Crecimiento de ingresos a doble dígito: 14,8m€ (2022) → 17,5m€ (2023, +18,2% YoY) → 20,6m€ (2024, +17,7% YoY)",
+      "Mejora operativa: EBITDA 2,1m€ → 2,65m€ → 3,2m€ y expansión de margen EBITDA ~14,2% → ~15,5% (2022–2024); margen EBIT ~11,2% → ~12,5%",
+      "Deuda al alza pero apalancamiento contenido: deuda financiera 5,2m€ → 6,8m€ (2022–2024) y Deuda/EBITDA ~2,5x → ~2,1x; gastos financieros 280k€ → 390k€ con presión potencial si sube el coste de la deuda"
+    ],
+    "encaje_productos": [
+      "Financiación de crecimiento (deuda senior / préstamo a plazo / línea revolving) para inversión y necesidades de circulante, con estructura de covenants alineada al plan",
+      "Refinanciación y optimización de pasivo (reperfilado de vencimientos, combinación fijo/variable, simplificación de garantías) para reducir volatilidad del coste financiero y mejorar flexibilidad"
+    ],
+    "comparables": [
+      "Laboratorios de servicios analíticos y control de calidad (CRO/CDMO y testing) de tamaño medio en Europa",
+      "Compañías de diagnóstico y servicios de laboratorio con crecimiento orgánico y expansión de capacidad"
+    ],
+    "argumentos_valor": [
+      "Estructura a medida para sostener el crecimiento: dimensionamiento de deuda y liquidez en función de inversión prevista, estacionalidad y consumo de circulante, evitando tensiones de caja",
+      "Reducción de fricción financiera: revisión de vencimientos, precio y mix fijo/variable para contener el aumento de gastos financieros y proteger el resultado",
+      "Preparación para escenarios: diseño de métricas y covenants realistas (p. ej., apalancamiento objetivo y headroom) que permitan ejecutar el plan incluso con desaceleración temporal del crecimiento"
+    ],
+    "proximos_pasos": [
+      "Sesión de diagnóstico (60–90 min): drivers de crecimiento, pipeline, mix de clientes/productos, recurrencia y sensibilidad de márgenes",
+      "Paquete de información y modelización: detalle de CAPEX (histórico y plan), generación de caja, circulante, calendario de amortizaciones y vencimientos de deuda; construcción de caso base y sensibilidades",
+      "Propuesta de estructura y proceso: alternativas de financiación/refinanciación, términos indicativos, cronograma y lista de documentación para ejecución"
+    ],
+    "narrativa_markdown": "Hispania Biotech Labs SA presenta un perfil atractivo de **crecimiento rentable**: los ingresos aumentan de 14,8m€ (2022) a 20,6m€ (2024) con crecimientos YoY de ~18% en 2023 y ~18% en 2024, mientras el EBITDA sube de 2,1m€ a 3,2m€ y el margen EBITDA se expande hasta ~15,5%. Esta combinación sugiere un modelo con **apalancamiento operativo** y capacidad de absorber mayor escala.\n\nEn paralelo, la compañía incrementa su deuda financiera (5,2m€ → 6,8m€), aunque el apalancamiento mejora (Deuda/EBITDA ~2,5x → ~2,1x). Sin embargo, el **coste financiero** aumenta (280k€ → 390k€), lo que puede empezar a consumir parte del avance operativo si se mantiene un entorno de tipos elevados o si la empresa acelera la inversión.\n\nLa evolución de amortizaciones (444k€ → 618k€) apunta a una base de activos en crecimiento, potencialmente asociada a inversión en capacidad/lab o intangibles. Dado que no se reporta CAPEX explícito, el foco inicial debe ser **clarificar el plan de inversión y la generación de caja**, para dimensionar correctamente la financiación y asegurar holgura de liquidez durante la ejecución.\n\nProponemos acompañar a Hispania Biotech Labs SA con una solución combinada de **financiación de crecimiento** (para inversión y circulante) y/o **refinanciación/optimización de pasivo** (reperfilado de vencimientos y estabilización del coste), con covenants alineados al plan y sensibilidad a escenarios. El objetivo es preservar flexibilidad, reducir volatilidad financiera y habilitar la siguiente fase de expansión sin comprometer la trayectoria de márgenes.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {
+    "operaciones_anteriores": 3,
+    "incidencias": [],
+    "impagos": 0,
+    "productos_contratados": [
+      "linea de circulante 2023",
+      "leasing equipamiento laboratorio",
+      "confirming proveedores"
+    ],
+    "operaciones_detalle": [
+      {
+        "fecha": "2023-03-15",
+        "tipo": "linea_circulante",
+        "importe": 8400000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-07-10",
+        "tipo": "financiacion_inversion",
+        "importe": 4800000,
+        "estado": "vigente_al_corriente"
+      }
+    ],
+    "resumen_historial": "Relacion historica con 3 operaciones registradas; impagos=0; incidencias=0."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "titulo": "Propuesta comercial | Hispania Biotech Labs SA",
+  "subtitulo": "Acompañar el crecimiento rentable con una estructura de financiación más eficiente y preparada para la siguiente fase de inversión",
+  "oportunidad_detectada": "Hispania Biotech Labs SA combina crecimiento sostenido de ingresos y mejora de márgenes, mientras incrementa moderadamente su deuda para sostener la expansión. La oportunidad consiste en estructurar una solución de financiación y/o refinanciación que estabilice el coste financiero, preserve flexibilidad y permita ejecutar el plan de inversión (capacidad/lab e intangibles) con visibilidad y disciplina de caja.",
+  "contexto_financiero": [
+    "Crecimiento de ingresos a doble dígito: 14,8m€ (2022) → 17,5m€ (2023, +18,2% YoY) → 20,6m€ (2024, +17,7% YoY)",
+    "Mejora operativa: EBITDA 2,1m€ → 2,65m€ → 3,2m€ y expansión de margen EBITDA ~14,2% → ~15,5% (2022–2024); margen EBIT ~11,2% → ~12,5%",
+    "Deuda al alza pero apalancamiento contenido: deuda financiera 5,2m€ → 6,8m€ (2022–2024) y Deuda/EBITDA ~2,5x → ~2,1x; gastos financieros 280k€ → 390k€ con presión potencial si sube el coste de la deuda"
+  ],
+  "encaje_productos": [
+    "Financiación de crecimiento (deuda senior / préstamo a plazo / línea revolving) para inversión y necesidades de circulante, con estructura de covenants alineada al plan",
+    "Refinanciación y optimización de pasivo (reperfilado de vencimientos, combinación fijo/variable, simplificación de garantías) para reducir volatilidad del coste financiero y mejorar flexibilidad"
+  ],
+  "comparables": [
+    "Laboratorios de servicios analíticos y control de calidad (CRO/CDMO y testing) de tamaño medio en Europa",
+    "Compañías de diagnóstico y servicios de laboratorio con crecimiento orgánico y expansión de capacidad"
+  ],
+  "argumentos_valor": [
+    "Estructura a medida para sostener el crecimiento: dimensionamiento de deuda y liquidez en función de inversión prevista, estacionalidad y consumo de circulante, evitando tensiones de caja",
+    "Reducción de fricción financiera: revisión de vencimientos, precio y mix fijo/variable para contener el aumento de gastos financieros y proteger el resultado",
+    "Preparación para escenarios: diseño de métricas y covenants realistas (p. ej., apalancamiento objetivo y headroom) que permitan ejecutar el plan incluso con desaceleración temporal del crecimiento"
+  ],
+  "proximos_pasos": [
+    "Sesión de diagnóstico (60–90 min): drivers de crecimiento, pipeline, mix de clientes/productos, recurrencia y sensibilidad de márgenes",
+    "Paquete de información y modelización: detalle de CAPEX (histórico y plan), generación de caja, circulante, calendario de amortizaciones y vencimientos de deuda; construcción de caso base y sensibilidades",
+    "Propuesta de estructura y proceso: alternativas de financiación/refinanciación, términos indicativos, cronograma y lista de documentación para ejecución"
+  ],
+  "narrativa_markdown": "Hispania Biotech Labs SA presenta un perfil atractivo de **crecimiento rentable**: los ingresos aumentan de 14,8m€ (2022) a 20,6m€ (2024) con crecimientos YoY de ~18% en 2023 y ~18% en 2024, mientras el EBITDA sube de 2,1m€ a 3,2m€ y el margen EBITDA se expande hasta ~15,5%. Esta combinación sugiere un modelo con **apalancamiento operativo** y capacidad de absorber mayor escala.\n\nEn paralelo, la compañía incrementa su deuda financiera (5,2m€ → 6,8m€), aunque el apalancamiento mejora (Deuda/EBITDA ~2,5x → ~2,1x). Sin embargo, el **coste financiero** aumenta (280k€ → 390k€), lo que puede empezar a consumir parte del avance operativo si se mantiene un entorno de tipos elevados o si la empresa acelera la inversión.\n\nLa evolución de amortizaciones (444k€ → 618k€) apunta a una base de activos en crecimiento, potencialmente asociada a inversión en capacidad/lab o intangibles. Dado que no se reporta CAPEX explícito, el foco inicial debe ser **clarificar el plan de inversión y la generación de caja**, para dimensionar correctamente la financiación y asegurar holgura de liquidez durante la ejecución.\n\nProponemos acompañar a Hispania Biotech Labs SA con una solución combinada de **financiación de crecimiento** (para inversión y circulante) y/o **refinanciación/optimización de pasivo** (reperfilado de vencimientos y estabilización del coste), con covenants alineados al plan y sensibilidad a escenarios. El objetivo es preservar flexibilidad, reducir volatilidad financiera y habilitar la siguiente fase de expansión sin comprometer la trayectoria de márgenes.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+  "pptx_path": "5_pitch_builder/pitchbook.pptx",
+  "pdf_path": "5_pitch_builder/pitchbook.pdf"
+}

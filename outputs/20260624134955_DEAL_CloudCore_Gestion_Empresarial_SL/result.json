@@ -1,0 +1,83 @@
+{
+  "run_id": "20260624134955",
+  "sector": "No especificado",
+  "company_name": "CloudCore Gestion Empresarial SL",
+  "fuente": "externa",
+  "geografia": null,
+  "analyst_notes": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "CloudCore Gestion Empresarial SL",
+    "oportunidades": [],
+    "resumen": "No se han proporcionado empresas detectadas para evaluar señales de necesidad de financiación o asesoramiento. Para poder priorizar oportunidades, necesito al menos una lista de compañías (nombre legal y, si es posible, país/actividad) vinculadas al sector/zona indicado."
+  },
+  "earnings_summary": "CloudCore Gestión Empresarial SL (SaaS B2B para pymes) muestra, según señales públicas, una trayectoria de crecimiento recurrente “de doble dígito”, apoyada por la ampliación de operaciones en Iberia con incremento del equipo comercial y técnico (mayo 2026), lo que sugiere una estrategia de aceleración de ARR vía inversión en go-to-market. No se aportan cifras de ingresos, EBITDA/margen operativo ni series interanuales, por lo que no es posible cuantificar la evolución de ventas ni confirmar si el margen operativo está mejorando o sufriendo compresión por el aumento de OPEX asociado al escalado. Tampoco hay datos de CAPEX; en un modelo SaaS, el esfuerzo de inversión podría estar más ligado a gasto operativo (personal, marketing) y/o activación de desarrollo, pero esto no puede verificarse con la información disponible. En paralelo, la compañía está evaluando una adquisición de un proveedor vertical (marzo 2026) que “podría requerir financiación puente”, lo que apunta a un potencial incremento de necesidades de liquidez para M&A e integración. No hay datos de endeudamiento actual, aunque se menciona explícitamente la posibilidad de “venture debt” como apoyo, consistente con un perfil de crecimiento y necesidad de caja para escalado comercial en un entorno competitivo.\n\nLa compañía presenta señales de expansión orgánica y potencial operación corporativa, lo que puede implicar una necesidad de financiación (puente y/o deuda de crecimiento) para sostener el escalado y ejecutar la adquisición.",
+  "model_output": {
+    "indicadores_clave": [],
+    "tendencias_estructurales": [
+      "Crecimiento recurrente de doble dígito (sin cuantificación) apoyado por expansión en Iberia.",
+      "Aumento de inversión en go-to-market mediante incremento del equipo comercial y técnico para acelerar ARR.",
+      "Evaluación de adquisición de un proveedor vertical que podría añadir complejidad de integración y requerir liquidez adicional.",
+      "Posible uso de financiación alternativa (venture debt) alineada con un perfil de crecimiento y consumo de caja."
+    ],
+    "interpretacion": "La información disponible sugiere una fase de aceleración comercial y expansión orgánica, pero sin datos financieros no puede evaluarse la rentabilidad ni la evolución de márgenes. La potencial adquisición y el escalado de OPEX podrían elevar las necesidades de caja en el corto plazo, especialmente si se requiere financiación puente para M&A. En ausencia de visibilidad sobre endeudamiento actual, la mención de venture debt apunta a una probable búsqueda de deuda de crecimiento para sostener el plan de expansión y la operación corporativa.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "CloudCore Gestión Empresarial SL es una compañía SaaS B2B orientada a pymes. Según señales públicas, se encuentra en una fase de expansión en Iberia, reforzando capacidades comerciales y técnicas para acelerar el crecimiento de ingresos recurrentes (ARR).",
+    "situacion_actual": "La empresa muestra indicios de crecimiento recurrente “de doble dígito” sin cifras publicadas que permitan cuantificar ingresos, márgenes o rentabilidad. En mayo de 2026 habría incrementado equipo comercial y técnico, lo que sugiere mayor OPEX para impulsar go-to-market. En paralelo, evalúa una adquisición (marzo 2026) que podría requerir financiación puente y se menciona la opción de venture debt como apoyo.",
+    "necesidades_potenciales": [
+      "Financiación puente para ejecutar una adquisición de proveedor vertical y cubrir necesidades de liquidez de corto plazo.",
+      "Deuda de crecimiento (p.ej., venture debt) para sostener el escalado comercial/técnico y acelerar ARR.",
+      "Estructuración de financiación para costes de integración post-adquisición (sinergias, onboarding, sistemas, retención de talento).",
+      "Asesoramiento sobre alternativas de financiación y calendario (puente vs. tramo a plazo) ante falta de visibilidad pública de métricas financieras."
+    ],
+    "riesgos": [
+      "Falta de datos financieros públicos: no se puede validar crecimiento, burn, márgenes, ni capacidad de servicio de deuda.",
+      "Posible compresión de márgenes por incremento de OPEX asociado al escalado de go-to-market.",
+      "Riesgo de ejecución e integración si se materializa la adquisición (costes, plazos, retención de clientes/equipo).",
+      "Riesgo de liquidez si la operación corporativa requiere desembolsos antes de capturar sinergias o si el crecimiento no acompaña."
+    ],
+    "talking_points": [
+      "Confirmar objetivos 12-18 meses: ritmo de crecimiento (ARR), expansión en Iberia y prioridades de inversión (ventas, producto, soporte).",
+      "Entender la operación de M&A: tamaño, timing, estructura prevista, necesidades de caja (puente) y plan de integración.",
+      "Explorar encaje de venture debt/deuda de crecimiento: uso de fondos, covenants esperables y capacidad de repago (métricas internas).",
+      "Mapear estructura actual de capital y endeudamiento (si existe) y cualquier restricción para nueva financiación.",
+      "Acordar próximos pasos: información mínima a compartir (KPIs SaaS, pipeline, churn, unit economics) para dimensionar una propuesta preliminar."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | CloudCore Gestión Empresarial SL",
+    "subtitulo": "Estructurar financiación puente y deuda de crecimiento para ejecutar M&A y acelerar ARR en Iberia con control de liquidez y flexibilidad operativa",
+    "oportunidad_detectada": "CloudCore muestra señales públicas de expansión (refuerzo comercial y técnico) orientada a acelerar ingresos recurrentes, en paralelo a la evaluación de una adquisición de un proveedor vertical que podría requerir financiación puente. La combinación de escalado de OPEX y potencial desembolso de M&A sugiere una necesidad de liquidez de corto plazo y una solución de financiación de crecimiento que preserve flexibilidad mientras se ejecuta el plan y se integra el activo adquirido.",
+    "contexto_financiero": [
+      "Crecimiento recurrente “de doble dígito” indicado públicamente, pero sin cifras disponibles para cuantificar ARR, ingresos, churn o márgenes; se requiere validación con KPIs internos.",
+      "Incremento de inversión en go-to-market (equipo comercial y técnico) que podría presionar márgenes en el corto plazo y elevar consumo de caja antes de capturar el crecimiento.",
+      "Potencial adquisición de proveedor vertical con necesidad de financiación puente e implicaciones de integración (costes one-off, retención de talento, migración de producto y clientes)."
+    ],
+    "encaje_productos": [
+      "Asesoramiento en alternativas de financiación (puente vs. tramo a plazo) y estructuración de deuda de crecimiento",
+      "Financiación puente para M&A + deuda de crecimiento (tipo venture debt) para expansión comercial y costes de integración"
+    ],
+    "comparables": [
+      "SaaS B2B para pymes (ERP/gestión/vertical software) en fase de expansión regional",
+      "Proveedores de software vertical con ingresos recurrentes y estrategia buy-and-build"
+    ],
+    "argumentos_valor": [
+      "Diseño de una estructura por tramos (puente + crecimiento) que alinee calendario de caja con hitos de M&A e integración, minimizando riesgo de liquidez.",
+      "Proceso ágil de preparación de información y “data pack” de KPIs SaaS para acelerar decisiones de financiación y mejorar condiciones (covenants, amortización, flexibilidad).",
+      "Análisis de capacidad de servicio de deuda basado en métricas internas (ARR, retención, margen bruto, CAC payback, burn) y escenarios (base / downside) para dimensionar importe y estructura.",
+      "Soporte integral en la operación corporativa: necesidades de caja, estructura de compra, costes de integración y plan de sinergias, con foco en continuidad comercial y retención de clientes."
+    ],
+    "proximos_pasos": [
+      "Reunión de 60–90 minutos para confirmar objetivos 12–18 meses (crecimiento ARR, expansión Iberia, prioridades de inversión) y parámetros de la adquisición (tamaño, timing, estructura).",
+      "Solicitud de información mínima (últimos 12–24 meses): ARR/MRR, net revenue retention, churn, margen bruto, CAC y payback, pipeline, burn mensual, caja disponible, deuda existente y calendario de pagos.",
+      "Entrega de una propuesta preliminar de estructura (puente + crecimiento) con rango indicativo de tamaño, vencimiento, amortización, covenants y usos de fondos, sujeta a validación de KPIs y due diligence.",
+      "Definición de calendario de ejecución: preparación de materiales, contacto con financiadores, recepción de términos, selección y cierre coordinado con el calendario de M&A."
+    ],
+    "narrativa_markdown": "CloudCore Gestión Empresarial SL presenta señales públicas consistentes con una fase de aceleración: refuerzo del equipo comercial y técnico para impulsar el crecimiento de ingresos recurrentes en Iberia, junto con la evaluación de una adquisición de un proveedor vertical. Esta combinación suele incrementar las necesidades de caja en el corto plazo (OPEX de go-to-market + costes de transacción e integración) antes de capturar plenamente el crecimiento y las sinergias.\n\nProponemos estructurar una solución de financiación que combine **liquidez inmediata** (financiación puente para ejecutar la adquisición y cubrir desembolsos de corto plazo) con **deuda de crecimiento** para sostener el plan comercial/técnico y los costes de integración, preservando flexibilidad operativa. El objetivo es alinear el calendario de caja con hitos verificables (cierre de M&A, integración, evolución de ARR) y reducir el riesgo de tensiones de liquidez.\n\nDada la ausencia de cifras públicas, el foco inicial será construir un **data pack de KPIs SaaS** (ARR/MRR, retención, churn, margen bruto, unit economics, burn y runway) y un análisis de escenarios que permita dimensionar el importe y la estructura (vencimiento, amortización, covenants) de forma prudente. Esto mejora la calidad del proceso y aumenta la probabilidad de obtener condiciones competitivas.\n\nComo siguiente paso, proponemos una sesión de trabajo para entender objetivos 12–18 meses y los detalles de la operación corporativa, seguida de una solicitud de información mínima y la entrega de una estructura preliminar (puente + crecimiento) sujeta a validación. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {}
+}

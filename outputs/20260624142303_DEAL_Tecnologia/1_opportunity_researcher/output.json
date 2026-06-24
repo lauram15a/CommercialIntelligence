@@ -1,0 +1,30 @@
+{
+  "sector": "Tecnologia",
+  "oportunidades": [
+    {
+      "empresa": "DataNexa Cloud Systems SL",
+      "motivo": "La compañía tiene un plan activo de adquisición de un competidor vertical, lo que típicamente requiere financiación puente y estructuración de deuda para ejecutar el cierre y la integración.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "Existe un evento corporativo (M&A) con necesidad de fondos en el corto plazo, lo que eleva la urgencia y la probabilidad de mandato frente a casos de CAPEX incremental o refinanciación a más largo plazo.",
+      "ingresos_estimados": 15200000,
+      "empleados": 128
+    },
+    {
+      "empresa": "Tecnologia Holdings SL",
+      "motivo": "Presenta crecimiento operativo con una necesidad potencial de financiación en 2027 ligada a CAPEX y/o refinanciación, con deuda estimada de 4,2M EUR, abriendo la puerta a optimización de estructura y planificación de vencimientos.",
+      "prioridad": "media",
+      "justificacion_prioridad": "La señal apunta a una necesidad próxima pero no inmediata (horizonte 2027), por lo que el encaje es claro para originación temprana, aunque con menor urgencia que un proceso de adquisición en curso.",
+      "ingresos_estimados": 10000000,
+      "empleados": 120
+    },
+    {
+      "empresa": "VectorIA Analytics SA",
+      "motivo": "El aumento de CAPEX en producto e infraestructura para escalar internacionalmente sugiere necesidad de financiación de crecimiento y potenciales líneas de circulante para soportar la expansión y el ciclo de cobro enterprise.",
+      "prioridad": "media",
+      "justificacion_prioridad": "Hay una necesidad plausible asociada a expansión, pero sin hito transaccional fechado (p.ej., adquisición o refinanciación con vencimiento cercano), por lo que la urgencia es similar a otras oportunidades de crecimiento y menor que M&A.",
+      "ingresos_estimados": 11800000,
+      "empleados": 104
+    }
+  ],
+  "resumen": "En tecnología, las oportunidades más accionables suelen venir de eventos (M&A) y de planes de expansión que elevan CAPEX y necesidades de circulante. En este conjunto, destaca una operación de adquisición con probable necesidad inmediata de financiación, seguida de casos de crecimiento con necesidades más graduales (CAPEX/escala y refinanciación planificada)."
+}

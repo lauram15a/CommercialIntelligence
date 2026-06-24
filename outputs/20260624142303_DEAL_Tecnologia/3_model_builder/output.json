@@ -1,0 +1,16 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos estimados",
+      "valor": "~15,2 M€"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Visibilidad limitada de métricas financieras históricas (sin desglose por ejercicios).",
+    "Estrategia de crecimiento inorgánico mediante adquisición de un competidor vertical.",
+    "Falta de información sobre rentabilidad (margen operativo/EBITDA) y CAPEX, lo que impide evaluar eficiencia e intensidad inversora.",
+    "Sin datos de deuda ni caja, por lo que no puede inferirse capacidad de apalancamiento ni holgura financiera."
+  ],
+  "interpretacion": "Con la información disponible solo puede afirmarse un nivel de ingresos estimado, sin poder evaluar crecimiento, rentabilidad ni generación de caja. El plan activo de adquisición sugiere probables necesidades de liquidez a corto plazo (financiación puente) y posterior estructuración de financiación para cierre e integración. La viabilidad y el coste de esa financiación dependerán de la capacidad de generación de caja y del apalancamiento actual, que no están disponibles.",
+  "disponible": true
+}

@@ -74,7 +74,7 @@ def _load_noticias(entity_name: str) -> str:
         return "No hay noticias disponibles en la base de datos interna."
 
     try:
-        with open(bbdd_path, encoding="utf-8") as f:
+        with open(bbdd_path, encoding="utf-8-sig") as f:
             bbdd = json.load(f)
     except (json.JSONDecodeError, OSError):
         return "Error al leer la base de datos interna."

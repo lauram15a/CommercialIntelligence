@@ -32,7 +32,7 @@ def local_screening_lookup(name: str) -> dict:
     bbdd_path = DATA_DIR / "bbdd.json"
     registros = []
     if bbdd_path.exists():
-        with open(bbdd_path, encoding="utf-8") as f:
+        with open(bbdd_path, encoding="utf-8-sig") as f:
             bbdd = json.load(f)
         registros = bbdd.get("listas_sanciones", []) or []
 
@@ -40,7 +40,7 @@ def local_screening_lookup(name: str) -> dict:
         sanciones_path = DATA_DIR / "listas_sanciones.json"
         if not sanciones_path.exists():
             return {"name": name, "hits": [], "source": "local_db", "note": "fichero de sanciones no encontrado"}
-        with open(sanciones_path, encoding="utf-8") as f:
+        with open(sanciones_path, encoding="utf-8-sig") as f:
             registros = json.load(f)
 
     name_lower = name.strip().lower()

@@ -53,14 +53,17 @@ def setup_run_logging(
     logger = logging.getLogger(logger_name)
     logger.setLevel(logging.INFO)
     logger.handlers.clear()
-    formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(name)s: %(message)s")
+    # app.log legible para trazabilidad funcional; el detalle tecnico de nivel/fecha
+    # queda en consola si se necesita.
+    file_formatter = logging.Formatter("%(message)s")
+    console_formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 
     fh = logging.FileHandler(run_dir / "app.log", encoding="utf-8")
-    fh.setFormatter(formatter)
+    fh.setFormatter(file_formatter)
     logger.addHandler(fh)
 
     ch = logging.StreamHandler()
-    ch.setFormatter(formatter)
+    ch.setFormatter(console_formatter)
     logger.addHandler(ch)
 
     logger.propagate = False

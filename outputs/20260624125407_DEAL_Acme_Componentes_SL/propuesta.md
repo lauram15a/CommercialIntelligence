@@ -1,7 +1,0 @@
-Acme Componentes SL presenta una trayectoria de **crecimiento rentable**: los ingresos aumentan de 32,0m€ (2022) a 42,0m€ (2024), mientras los márgenes mejoran (EBITDA 11,9%→13,8%; EBIT 8,9%→10,8%), reflejando apalancamiento operativo y una evolución positiva de la eficiencia.
-
-En paralelo, se observa un **incremento del apalancamiento financiero** (deuda 8,0m€→12,0m€) y del gasto financiero (0,45m€→0,61m€). Este contexto abre una oportunidad para **optimizar la estructura de capital** (plazos, mix fijo/variable y flexibilidad) y asegurar que el coste financiero no limite la capacidad de inversión y crecimiento.
-
-Adicionalmente, el aumento de amortizaciones (0,96m€→1,26m€) sugiere una **mayor base de activos** y potencial intensificación de inversión, aunque es necesario confirmar CAPEX y calendario. Proponemos una solución combinada: financiación a medio/largo plazo para inversión y crecimiento, complementada con herramientas de circulante para acompañar el aumento de escala y posibles necesidades estacionales.
-
-El siguiente paso es un diagnóstico conjunto para confirmar el plan 2025, el ciclo inversor y la estructura actual de deuda, y con ello presentar una propuesta preliminar con alternativas de estructura y sensibilidad a escenarios. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

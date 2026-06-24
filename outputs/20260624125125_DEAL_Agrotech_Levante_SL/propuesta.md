@@ -1,9 +1,0 @@
-Agrotech Levante SL se encuentra en una fase de fuerte escalado, respaldada por una ronda de financiación de **6M EUR (febrero 2026)** y un plan de expansión nacional de su plataforma de riego inteligente. La compañía opera actualmente en **15.000 hectáreas** y prevé alcanzar **40.000 hectáreas en 2026-2027** (≈**+167%**), apoyándose en **12 cooperativas** y una alianza tecnológica satelital.
-
-El crecimiento proyectado, junto con la naturaleza del modelo (IoT con despliegue en campo), sugiere un aumento relevante de necesidades de inversión en equipamiento/instalación y de recursos operativos para soporte y operación. Adicionalmente, el incremento de actividad puede requerir **capital circulante** para gestionar el desfase entre costes de implantación y cobros, especialmente en un entorno condicionado por el **ciclo agrícola**.
-
-Proponemos acompañar este plan con una **estructura de financiación complementaria** a la ronda, diseñada para alinearse con hitos de despliegue y con la generación de caja esperada a medida que crece la base de hectáreas activas. En paralelo, planteamos soluciones de **financiación de activos y circulante** para absorber picos de instalación y reducir fricciones de tesorería durante el ramp-up.
-
-Finalmente, a medida que aumente el volumen de operaciones con cooperativas y partners, existe una oportunidad para reforzar la **operativa bancaria** (cobros/pagos, control de tesorería y reporting), aportando visibilidad y disciplina financiera en una etapa de crecimiento acelerado.
-
-El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

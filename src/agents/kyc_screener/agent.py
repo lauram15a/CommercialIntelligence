@@ -94,7 +94,11 @@ def _collect_names_for_screening(extracted_entities: list[dict]) -> list[str]:
     """Extrae todos los nombres (empresa, titulares, admins) para el screening."""
     names = set()
     for entity in extracted_entities:
+        if not isinstance(entity, dict):
+            continue
         entidad = entity.get("entidad", {}) or {}
+        if not isinstance(entidad, dict):
+            continue
 
         if entidad.get("nombre_legal"):
             names.add(entidad["nombre_legal"])

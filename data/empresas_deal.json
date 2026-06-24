@@ -2,170 +2,233 @@
   "Industrial": [
     {
       "empresa": "Acme Componentes SL",
-      "descripcion": "Fabricante de componentes industriales de precisión, con sede en Zaragoza.",
-      "señal": "Expansión internacional significativa en los últimos 12 meses, con apertura de nueva planta en Polonia. Necesidades de financiación estructurada estimadas en 8-12M EUR.",
+      "descripcion": "Fabricante de precisiÃ³n con socio europeo consolidado. ExpansiÃ³n con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
+      "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 12000000 EUR.",
       "ingresos_estimados": 42000000,
       "empleados": 310,
-      "prioridad": "alta",
-      "oportunidad": "Financiación estructurada para expansión internacional"
-    },
-    {
-      "empresa": "Norte Logística SA",
-      "descripcion": "Operador logístico especializado en transporte intermodal para el sector industrial, con sede en Vitoria-Gasteiz.",
-      "señal": "Crecimiento sostenido de ingresos durante tres ejercicios consecutivos sin financiación externa reciente. Potencial interés en renting de flota ampliada.",
-      "ingresos_estimados": 28000000,
-      "empleados": 180,
       "prioridad": "media",
-      "oportunidad": "Renting de flota y línea de circulante"
+      "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
     },
     {
-      "empresa": "Vertia Energía SL",
-      "descripcion": "Proveedor de soluciones de eficiencia energética para plantas industriales, con sede en Alcobendas.",
-      "señal": "Incremento del 59% en el endeudamiento financiero durante el último ejercicio para financiar nuevos contratos. Posible necesidad de refinanciación.",
-      "ingresos_estimados": 19500000,
-      "empleados": 95,
+      "empresa": "MetalCore Zaragoza SL",
+      "descripcion": "Proveedor industrial con cartera exportadora y plan de automatizacion para 2027.",
+      "señal": "Necesidad de financiacion CAPEX y circulante por aumento de pedidos internacionales.",
+      "ingresos_estimados": 28500000,
+      "empleados": 190,
       "prioridad": "alta",
-      "oportunidad": "Refinanciación y project finance para contratos energéticos"
+      "oportunidad": "Financiacion de inversion y cobertura de circulante"
+    },
+    {
+      "empresa": "IberMold Precision SA",
+      "descripcion": "Fabricante de moldes tecnicos con demanda creciente en automocion y defensa.",
+      "señal": "Refinanciacion de deuda 2027 y potencial de factoring internacional.",
+      "ingresos_estimados": 21400000,
+      "empleados": 142,
+      "prioridad": "media",
+      "oportunidad": "Refinanciacion estructurada y soluciones de circulante"
     }
   ],
-  "Tecnología": [
+  "Tecnologia": [
     {
-      "empresa": "Datalyx Iberia SL",
-      "descripcion": "Proveedor de software de analítica de datos para el sector financiero, con sede en Barcelona.",
-      "señal": "Ronda de financiación privada reciente que podría preceder a una operación de adquisición o aceleración internacional. Interés potencial en venture debt adicional.",
-      "ingresos_estimados": 15000000,
+      "empresa": "Tecnologia Holdings SL",
+      "descripcion": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+      "ingresos_estimados": 10000000,
       "empleados": 120,
-      "prioridad": "alta",
-      "oportunidad": "Venture debt para expansión y posible M&A"
+      "prioridad": "media",
+      "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
     },
     {
-      "empresa": "Nexuria Tech Solutions SL",
-      "descripcion": "Empresa de tecnología de la información especializada en soluciones para pymes, con sede en Barcelona.",
-      "señal": "Crecimiento de ingresos del 47% en 2024. Proceso de captación de inversores estratégicos. Necesidades de financiación puente.",
-      "ingresos_estimados": 5600000,
-      "empleados": 62,
+      "empresa": "DataNexa Cloud Systems SL",
+      "descripcion": "Empresa SaaS B2B con crecimiento recurrente y expansion comercial en Iberia.",
+      "señal": "Plan de adquisicion de competidor vertical y necesidad de financiacion puente.",
+      "ingresos_estimados": 15200000,
+      "empleados": 128,
+      "prioridad": "alta",
+      "oportunidad": "M&A financing y venture debt"
+    },
+    {
+      "empresa": "VectorIA Analytics SA",
+      "descripcion": "Plataforma analitica para banca y seguros con contratos enterprise en expansion.",
+      "señal": "Incremento de CAPEX en producto e infraestructura para escalar internacionalmente.",
+      "ingresos_estimados": 11800000,
+      "empleados": 104,
       "prioridad": "media",
-      "oportunidad": "Financiación puente y asesoramiento en M&A"
+      "oportunidad": "Financiacion de crecimiento y lineas de circulante"
     }
   ],
   "Inmobiliario": [
     {
-      "empresa": "Promotora Levante Residencial SL",
-      "descripcion": "Promotora inmobiliaria especializada en residencial de obra nueva en la Comunidad Valenciana.",
-      "señal": "Lanzamiento de dos nuevas promociones en 2025 con necesidades de financiación promotor. Búsqueda activa de entidades financiadoras.",
-      "ingresos_estimados": 18000000,
-      "empleados": 35,
-      "prioridad": "alta",
-      "oportunidad": "Financiación promotor para nuevas promociones"
-    },
-    {
-      "empresa": "Patrimonios Centrales SA",
-      "descripcion": "Sociedad patrimonialista con cartera diversificada de activos comerciales y de oficinas en Madrid.",
-      "señal": "Refinanciación de cartera hipotecaria prevista para el segundo semestre de 2025. Activos valorados en 95M EUR.",
-      "ingresos_estimados": 7500000,
-      "empleados": 12,
-      "prioridad": "alta",
-      "oportunidad": "Refinanciación hipotecaria de cartera patrimonial"
-    }
-  ],
-  "Construcción": [
-    {
-      "empresa": "Grupo Caldas Infraestructuras SA",
-      "descripcion": "Constructora de obra pública especializada en infraestructuras viarias, con sede en Madrid.",
-      "señal": "Sobrecostes en proyectos activos han reducido márgenes. Exploración de nuevas fuentes de financiación para mantener el pipeline de licitaciones.",
-      "ingresos_estimados": 69500000,
-      "empleados": 420,
+      "empresa": "Inmobiliario Holdings SL",
+      "descripcion": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+      "ingresos_estimados": 10000000,
+      "empleados": 120,
       "prioridad": "media",
-      "oportunidad": "Línea de avales y crédito para licitaciones"
+      "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
     },
     {
-      "empresa": "Constructora Bermejo e Hijos SL",
-      "descripcion": "Empresa constructora familiar especializada en rehabilitación y obra civil en Andalucía.",
-      "señal": "Adjudicación de un contrato de rehabilitación urbana de 12M EUR. Necesita línea de avales y financiación del circulante.",
-      "ingresos_estimados": 22000000,
-      "empleados": 165,
+      "empresa": "Urbana Levante Promociones SL",
+      "descripcion": "Promotora residencial con suelo finalista y pipeline de obra en Valencia.",
+      "señal": "Necesidad de financiacion promotor y avales tecnicos para nuevas fases.",
+      "ingresos_estimados": 24600000,
+      "empleados": 86,
       "prioridad": "alta",
-      "oportunidad": "Línea de avales técnicos y financiación de circulante"
-    }
-  ],
-  "Energía": [
-    {
-      "empresa": "Alcántara Energía Renovable SL",
-      "descripcion": "Promotora y operadora de plantas fotovoltaicas en Extremadura y Castilla-La Mancha.",
-      "señal": "Nueva planta de 60M de inversión en fase de cierre financiero. Búsqueda de financiación project finance y posibles inversores institucionales.",
-      "ingresos_estimados": 5900000,
-      "empleados": 28,
-      "prioridad": "alta",
-      "oportunidad": "Project finance para nueva planta fotovoltaica"
+      "oportunidad": "Financiacion promotor y avales"
     },
     {
-      "empresa": "Ibérica Solar Partners SL",
-      "descripcion": "Agregador de proyectos de energía solar y almacenamiento en la península ibérica.",
-      "señal": "Cartera de proyectos en desarrollo con potencial de desinversión. Interesados en estructurar un vehículo de inversión para atracción de capital.",
-      "ingresos_estimados": 9800000,
-      "empleados": 48,
-      "prioridad": "alta",
-      "oportunidad": "Estructuración de vehículo de inversión y asesoramiento M&A"
-    }
-  ],
-  "Retail y Distribución": [
-    {
-      "empresa": "Distribuciones Monteverde SA",
-      "descripcion": "Distribuidor mayorista multisectorial con sede en Valencia y red de clientes en todo el Levante.",
-      "señal": "Proceso activo de reestructuración financiera. Potencial interés en factoring sin recurso para mejorar el capital circulante.",
-      "ingresos_estimados": 33000000,
-      "empleados": 195,
+      "empresa": "Arcadia Patrimonio Prime SA",
+      "descripcion": "Gestora de activos inmobiliarios terciarios en reposicionamiento.",
+      "señal": "Refinanciacion de activos y potencial de estructuracion de deuda senior.",
+      "ingresos_estimados": 19600000,
+      "empleados": 63,
       "prioridad": "media",
-      "oportunidad": "Factoring y reestructuración de deuda"
+      "oportunidad": "Refinanciacion y asesoramiento de estructura de capital"
+    }
+  ],
+  "Retail y Distribucion": [
+    {
+      "empresa": "Retail y Distribucion Holdings SL",
+      "descripcion": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+      "ingresos_estimados": 10000000,
+      "empleados": 120,
+      "prioridad": "media",
+      "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
     },
     {
-      "empresa": "Cadena Distribuidora Atlántica SL",
-      "descripcion": "Red de distribución de productos de gran consumo en el noroeste de España.",
-      "señal": "Adquisición de un competidor regional en proceso de due diligence. Financiación de adquisición por un importe estimado de 15M EUR.",
-      "ingresos_estimados": 45000000,
-      "empleados": 280,
+      "empresa": "FreshRoute Distribucion SA",
+      "descripcion": "Mayorista alimentario con expansion de red logistica en arco mediterraneo.",
+      "señal": "Tension de caja estacional y necesidad de factoring/confirming.",
+      "ingresos_estimados": 33800000,
+      "empleados": 212,
       "prioridad": "alta",
-      "oportunidad": "Financiación de adquisición y asesoramiento M&A"
+      "oportunidad": "Soluciones de circulante y confirming"
+    },
+    {
+      "empresa": "Canal Norte Retail Partners SL",
+      "descripcion": "Distribuidor omnicanal con inversion en digitalizacion de almacenes.",
+      "señal": "CAPEX tecnologico y optimizacion del ciclo de cobro.",
+      "ingresos_estimados": 22400000,
+      "empleados": 156,
+      "prioridad": "media",
+      "oportunidad": "Leasing tecnologico y financiacion de inversion"
+    }
+  ],
+  "Construccion": [
+    {
+      "empresa": "Construccion Holdings SL",
+      "descripcion": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+      "ingresos_estimados": 10000000,
+      "empleados": 120,
+      "prioridad": "media",
+      "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
+    },
+    {
+      "empresa": "InfraSur Proyectos EPC SA",
+      "descripcion": "Constructora EPC con contratos en renovables y obra civil regional.",
+      "señal": "Necesidad de avales y circulante para ejecutar nuevas adjudicaciones.",
+      "ingresos_estimados": 36200000,
+      "empleados": 238,
+      "prioridad": "alta",
+      "oportunidad": "Lineas de avales y financiacion de ejecucion"
+    },
+    {
+      "empresa": "UrbanBuild Rehabilitacion SL",
+      "descripcion": "Especialista en rehabilitacion urbana con pipeline creciente de contratos.",
+      "señal": "Incremento de plazos de cobro y necesidad de circulante operativo.",
+      "ingresos_estimados": 17800000,
+      "empleados": 121,
+      "prioridad": "media",
+      "oportunidad": "Factoring y linea de credito circulante"
+    }
+  ],
+  "Energia": [
+    {
+      "empresa": "Energia Holdings SL",
+      "descripcion": "Grupo energetico ficticio con UBO identificado, expansion de activos y necesidades de financiacion 2027.",
+      "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+      "ingresos_estimados": 10000000,
+      "empleados": 120,
+      "prioridad": "media",
+      "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
+    },
+    {
+      "empresa": "SolarGrid Iberia Partners SL",
+      "descripcion": "Desarrollador fotovoltaico con cartera de proyectos utility en fase avanzada.",
+      "señal": "Cierre financiero pendiente y necesidad de project finance para 2027.",
+      "ingresos_estimados": 17200000,
+      "empleados": 98,
+      "prioridad": "alta",
+      "oportunidad": "Project finance y coberturas"
+    },
+    {
+      "empresa": "GreenStorage Assets SA",
+      "descripcion": "Operador de almacenamiento energetico para clientes industriales.",
+      "señal": "Expansion de activos con necesidad de deuda a medio y largo plazo.",
+      "ingresos_estimados": 12600000,
+      "empleados": 74,
+      "prioridad": "media",
+      "oportunidad": "Financiacion de activos y cobertura de tipos"
     }
   ],
   "Salud y Farmacia": [
     {
-      "empresa": "BioMédica Ibérica SA",
-      "descripcion": "Fabricante de dispositivos médicos de diagnóstico in vitro, con planta en Murcia.",
-      "señal": "Expansión de capacidad productiva con inversión prevista de 20M EUR. Búsqueda de financiación a largo plazo y posible socio industrial.",
-      "ingresos_estimados": 31000000,
-      "empleados": 240,
-      "prioridad": "alta",
-      "oportunidad": "Financiación CAPEX y asesoramiento para entrada de socio industrial"
+      "empresa": "Hispania Biotech Labs SA",
+      "descripcion": "Empresa biotech en expansiÃ³n internacional con pipeline de diagnÃ³stico oncolÃ³gico. KYC renovado en 2025 y documentaciÃ³n societaria completa.",
+      "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 6800000 EUR.",
+      "ingresos_estimados": 20600000,
+      "empleados": 132,
+      "prioridad": "media",
+      "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
     },
     {
-      "empresa": "Red Clínicas Meridional SL",
-      "descripcion": "Grupo de clínicas privadas especializadas en traumatología y fisioterapia en Andalucía.",
-      "señal": "Adquisición de dos nuevos centros en proceso de negociación. Interés en financiación de adquisiciones y leasing de equipamiento médico.",
-      "ingresos_estimados": 14500000,
-      "empleados": 180,
+      "empresa": "MedAxis Diagnostica SA",
+      "descripcion": "Compania medtech con expansion de capacidad de produccion diagnostica.",
+      "señal": "CAPEX industrial y potencial internacionalizacion comercial.",
+      "ingresos_estimados": 24800000,
+      "empleados": 176,
+      "prioridad": "alta",
+      "oportunidad": "Financiacion de expansion y comercio exterior"
+    },
+    {
+      "empresa": "IberPharma Specialty SL",
+      "descripcion": "Laboratorio especializado en terapias hospitalarias con fuerte crecimiento.",
+      "señal": "Necesidad de financiacion de circulante por ampliacion de catalogo.",
+      "ingresos_estimados": 19200000,
+      "empleados": 133,
       "prioridad": "media",
-      "oportunidad": "Financiación de adquisiciones y leasing médico"
+      "oportunidad": "Circulante estructurado y lineas de importacion"
     }
   ],
   "Agroindustria": [
     {
-      "empresa": "Cooperativa Olivarera del Sur SCOOP",
-      "descripcion": "Cooperativa olivarera con almazara propia y exportación directa a 22 países.",
-      "señal": "Proyecto de modernización de planta y certificación internacional. Necesita financiación a largo plazo y cobertura de tipo de cambio.",
-      "ingresos_estimados": 28000000,
-      "empleados": 95,
+      "empresa": "MediterrÃ¡nea Foods Export SA",
+      "descripcion": "Exportador agroalimentario con exposiciÃ³n a divisa USD y GBP. Historial crediticio positivo con operaciones de comercio exterior.",
+      "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 7600000 EUR.",
+      "ingresos_estimados": 27900000,
+      "empleados": 176,
       "prioridad": "media",
-      "oportunidad": "Financiación CAPEX y coberturas FX"
+      "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
     },
     {
-      "empresa": "Bodegas Ribera del Viento SA",
-      "descripcion": "Bodega con denominación de origen en Ribera del Duero, con exportación activa en Europa y Asia.",
-      "señal": "Plan de expansión en mercado asiático con necesidad de financiación de circulante exportador y crédito documentario.",
-      "ingresos_estimados": 11200000,
-      "empleados": 62,
+      "empresa": "AgroVal Export Partners SL",
+      "descripcion": "Exportador agroalimentario con fuerte estacionalidad y ventas en Reino Unido.",
+      "señal": "Necesidad de coberturas FX y financiacion de campana 2027.",
+      "ingresos_estimados": 26800000,
+      "empleados": 167,
+      "prioridad": "alta",
+      "oportunidad": "Trade finance y coberturas de divisa"
+    },
+    {
+      "empresa": "CitrusChain Logistics SA",
+      "descripcion": "Operador de cadena fria para exportacion hortofruticola.",
+      "señal": "Tension de circulante por ampliacion de contratos de exportacion.",
+      "ingresos_estimados": 18300000,
+      "empleados": 129,
       "prioridad": "media",
-      "oportunidad": "Financiación de comercio exterior y crédito documentario"
+      "oportunidad": "Factoring internacional y financiacion de campana"
     }
   ]
 }

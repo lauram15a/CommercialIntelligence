@@ -10,6 +10,7 @@ function setupAutocomplete(inputId, listId, items) {
   const input = document.getElementById(inputId);
   const list  = document.getElementById(listId);
   if (!input || !list) return;
+  const getItems = (typeof items === 'function') ? items : () => (items || []);
 
   let activeIdx = -1;
 
@@ -20,11 +21,12 @@ function setupAutocomplete(inputId, listId, items) {
 
   function showSuggestions(query) {
     const q = normalize(query.trim());
+    const sourceItems = getItems() || [];
     list.innerHTML = '';
     activeIdx = -1;
     if (!q) { list.classList.remove('is-open'); return; }
 
-    const matches = items.filter(item => normalize(item).includes(q));
+    const matches = sourceItems.filter(item => normalize(item).includes(q));
     if (!matches.length) { list.classList.remove('is-open'); return; }
 
     matches.slice(0, 8).forEach((item, idx) => {

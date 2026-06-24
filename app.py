@@ -39,7 +39,7 @@ SSO_DATA_PATH = DATA_DIR / "sso" / "sso.json"
 
 def _load_sso_data() -> dict:
     if SSO_DATA_PATH.exists():
-        with open(SSO_DATA_PATH, encoding="utf-8") as f:
+        with open(SSO_DATA_PATH, encoding="utf-8-sig") as f:
             return json.load(f)
     return {}
 
@@ -295,7 +295,7 @@ def _list_runs(use_case: str) -> list[dict]:
         if not result_path.exists():
             continue
         try:
-            with open(result_path, encoding="utf-8") as f:
+            with open(result_path, encoding="utf-8-sig") as f:
                 data = json.load(f)
         except (json.JSONDecodeError, OSError):
             continue
@@ -342,7 +342,7 @@ def _load_run(use_case: str, run_id: str, extra_text_files: dict | None = None) 
     result = {}
     result_path = run_dir / "result.json"
     if result_path.exists():
-        with open(result_path, encoding="utf-8") as f:
+        with open(result_path, encoding="utf-8-sig") as f:
             result = json.load(f)
 
     run = {
@@ -384,7 +384,7 @@ def _load_empresas_kyc() -> dict:
     """Carga empresas KYC desde data/bbdd.json (fallback a data/empresas_kyc.json)."""
     bbdd_path = DATA_DIR / "bbdd.json"
     if bbdd_path.exists():
-        with open(bbdd_path, encoding="utf-8") as f:
+        with open(bbdd_path, encoding="utf-8-sig") as f:
             data = json.load(f)
         empresas = data.get("empresas_kyc")
         if isinstance(empresas, dict):
@@ -393,7 +393,7 @@ def _load_empresas_kyc() -> dict:
     path = DATA_DIR / "empresas_kyc.json"
     if not path.exists():
         return {}
-    with open(path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8-sig") as f:
         return json.load(f)
 
 
@@ -401,7 +401,7 @@ def _load_empresas_deal() -> dict:
     """Carga empresas Deal desde data/bbdd.json (fallback a data/empresas_deal.json)."""
     bbdd_path = DATA_DIR / "bbdd.json"
     if bbdd_path.exists():
-        with open(bbdd_path, encoding="utf-8") as f:
+        with open(bbdd_path, encoding="utf-8-sig") as f:
             data = json.load(f)
         empresas = data.get("empresas_deal")
         if isinstance(empresas, dict):
@@ -412,7 +412,7 @@ def _load_empresas_deal() -> dict:
         path = DATA_DIR / "empresas_mock.json"
     if not path.exists():
         return {}
-    with open(path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8-sig") as f:
         return json.load(f)
 
 
@@ -554,7 +554,7 @@ def _load_fuentes_externas() -> dict:
     path = DATA_DIR / "fuentes_externas.json"
     if not path.exists():
         return {}
-    with open(path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8-sig") as f:
         data = json.load(f)
     return data.get("empresas", {})
 
@@ -679,6 +679,15 @@ def _run_kyc_pipeline_background(run_id, entity_name, documents):
                           current_step=None,
                           real_run_id=result["run_id"])
     except Exception as exc:  # noqa: BLE001
+        try:
+            from logging_utils import get_logger as get_run_logger
+            get_run_logger("kyc").exception(
+                "Error en pipeline KYC en background | run_id=%s | entity=%s",
+                run_id,
+                entity_name,
+            )
+        except Exception:
+            pass
         logger.exception("Error en pipeline KYC en background | run_id=%s | entity=%s", run_id, entity_name)
         _update_run_state(
             _RUNS_STATE,
@@ -749,7 +758,7 @@ def kyc_download_informe(run_id):
     entity_name = ""
     result_path = run_dir / "result.json"
     if result_path.exists():
-        with open(result_path, encoding="utf-8") as f:
+        with open(result_path, encoding="utf-8-sig") as f:
             entity_name = json.load(f).get("entity_name", "")
     try:
         from docx_builder import build_informe_docx
@@ -801,7 +810,8 @@ def kyc_nueva_solicitud():
 
 def _run_deal_pipeline_background(run_id, sector, company_name,
                                    financial_documents, fuente="interna",
-                                   geografia="", empresas_geografia=None):
+                                   geografia="", empresas_geografia=None,
+                                   analyst_notes=""):
     try:
         from deal_orchestrator import run_deal_intelligence_pipeline
 
@@ -818,6 +828,7 @@ def _run_deal_pipeline_background(run_id, sector, company_name,
             fuente=fuente,
             geografia=geografia,
             empresas_geografia=empresas_geografia or [],
+            analyst_notes=analyst_notes,
             use_mock=False,
             step_callback=step_cb,
         )
@@ -826,6 +837,16 @@ def _run_deal_pipeline_background(run_id, sector, company_name,
                           current_step=None,
                           real_run_id=result["run_id"])
     except Exception as exc:  # noqa: BLE001
+        try:
+            from logging_utils import get_logger as get_run_logger
+            get_run_logger("deal").exception(
+                "Error en pipeline DEAL en background | run_id=%s | sector=%s | company=%s",
+                run_id,
+                sector,
+                company_name,
+            )
+        except Exception:
+            pass
         logger.exception(
             "Error en pipeline DEAL en background | run_id=%s | sector=%s | company=%s",
             run_id,
@@ -846,7 +867,12 @@ def deal_index():
     runs = _list_runs("deal")[:6]
 
     # Nombres para autocomplete por fuente
-    empresa_names_internas = sorted(_load_empresas_kyc().keys())
+    empresas_kyc = _load_empresas_kyc()
+    empresa_names_internas = sorted(empresas_kyc.keys())
+    empresa_sector_map_internas = {
+        name: (emp.get("sector", "") if isinstance(emp, dict) else "")
+        for name, emp in empresas_kyc.items()
+    }
     empresa_names_externas = sorted(_load_fuentes_externas().keys())
     empresa_names_todas    = sorted(set(empresa_names_internas + empresa_names_externas))
 
@@ -858,6 +884,7 @@ def deal_index():
         agent_steps=DEAL_AGENT_STEPS,
         empresa_names=empresa_names_todas,
         empresa_names_internas=empresa_names_internas,
+        empresa_sector_map_internas=empresa_sector_map_internas,
         empresa_names_externas=empresa_names_externas,
         comunidades=comunidades,
     )
@@ -913,7 +940,7 @@ def deal_download_pitchbook(run_id):
     result_path = run_dir / "result.json"
     if not result_path.exists():
         abort(404)
-    with open(result_path, encoding="utf-8") as f:
+    with open(result_path, encoding="utf-8-sig") as f:
         result = json.load(f)
     pptx_rel = result.get("pitch_output", {}).get("pptx_path")
     if not pptx_rel:
@@ -936,7 +963,7 @@ def deal_download_pitchbook_pdf(run_id):
     result_path = run_dir / "result.json"
     if not result_path.exists():
         abort(404)
-    with open(result_path, encoding="utf-8") as f:
+    with open(result_path, encoding="utf-8-sig") as f:
         result = json.load(f)
     pdf_rel = result.get("pitch_output", {}).get("pdf_path")
     if not pdf_rel:
@@ -961,6 +988,11 @@ def deal_nueva_solicitud():
     company_name_empresa  = request.form.get("company_name_empresa", "").strip()
     geografia_raw         = request.form.get("geografia", "").strip()
     fuente_raw            = request.form.get("fuente", "interna")
+    fuente_empresa_raw    = request.form.get("fuente_empresa", "interna")
+    notes_sector_raw      = request.form.get("notes_sector", "").strip()
+    notes_empresa_raw     = request.form.get("notes_empresa", "").strip()
+    notes_geografia_raw   = request.form.get("notes_geografia", "").strip()
+    analyst_notes_raw     = request.form.get("search_notes", "").strip()
 
     # Resolver parametros efectivos por modo de busqueda para que las pestanas
     # sean independientes entre si.
@@ -968,19 +1000,25 @@ def deal_nueva_solicitud():
     company_name = ""
     geografia = ""
     fuente = fuente_raw
+    analyst_notes = ""
 
     if search_mode == "empresa":
         company_name = company_name_raw or company_name_empresa
+        fuente = fuente_empresa_raw or "interna"
+        analyst_notes = analyst_notes_raw or notes_empresa_raw
     elif search_mode == "geografia":
         geografia = geografia_raw
+        analyst_notes = analyst_notes_raw or notes_geografia_raw
     elif search_mode == "sector":
         sector = sector_raw
         company_name = company_name_raw or company_name_sector
+        analyst_notes = analyst_notes_raw or notes_sector_raw
     else:
         # Fallback retrocompatible si llega una version antigua del formulario.
         sector = sector_raw
         company_name = company_name_raw or company_name_empresa or company_name_sector
         geografia = geografia_raw
+        analyst_notes = analyst_notes_raw or notes_sector_raw or notes_empresa_raw or notes_geografia_raw
 
     confirmar_externa = request.form.get("confirmar_externa", "")
 
@@ -1001,18 +1039,25 @@ def deal_nueva_solicitud():
         empresa_es_cliente = company_name.strip().lower() in {
             k.strip().lower() for k in db_kyc.keys()
         }
-        # Si no es cliente y no ha confirmado, devolver pagina de confirmacion
-        if not empresa_es_cliente and not confirmar_externa:
+        # En modo empresa, respetar la seleccion explicita del usuario.
+        if search_mode == "empresa":
+            if fuente == "interna" and not empresa_es_cliente:
+                abort(400, "Has seleccionado cliente interno, pero la empresa no existe en la base interna.")
+            if fuente == "externa":
+                empresa_es_cliente = False
+        # En modo legacy, mantener confirmacion para fuentes externas.
+        elif not empresa_es_cliente and not confirmar_externa:
             return render_template(
                 "deal_confirmar_externa.html",
                 company_name=company_name,
                 department_name_deal=BankConfig.DEPARTMENT_NAME_DEAL,
             )
-        # Si es cliente, forzar fuente interna
-        if empresa_es_cliente:
-            fuente = "interna"
-        else:
-            fuente = "externa"
+        if search_mode != "empresa":
+            # Si es cliente, forzar fuente interna; si no, externa.
+            if empresa_es_cliente:
+                fuente = "interna"
+            else:
+                fuente = "externa"
 
     # Si hay geografia, construir lista de empresas del area
     empresas_geografia = []
@@ -1032,7 +1077,7 @@ def deal_nueva_solicitud():
     threading.Thread(
         target=_run_deal_pipeline_background,
         args=(provisional_run_id, sector, company_name, financial_documents,
-              fuente, geografia, empresas_geografia),
+              fuente, geografia, empresas_geografia, analyst_notes),
         daemon=True,
     ).start()
 

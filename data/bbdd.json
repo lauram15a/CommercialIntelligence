@@ -1,1764 +1,22 @@
 {
-  "version": "2026-06-16.2",
-  "descripcion": "BBDD unificada KYC/Deal con enriquecimiento global de cuentas, historial y screening operativo para todas las empresas.",
+  "version": "2026-06-24.2",
+  "descripcion": "BBDD compacta para demos KYC/Deal con sectores curados y datos densos para evitar resultados vacios.",
   "empresas_kyc": {
-    "Alcántara Energía Renovable SL": {
-      "nombre_legal": "Alcántara Energía Renovable SL",
-      "nif": "B85234701",
-      "sector": "Energía",
-      "cnae": "3511 - Producción de energía eléctrica",
-      "forma_juridica": "Sociedad de Responsabilidad Limitada",
-      "domicilio_social": "Calle Mayor 45, 2ºA, 06001 Badajoz",
-      "fecha_constitucion": "2015-03-12",
-      "capital_social": 300000,
-      "empleados": 28,
-      "titulares_reales": [
-        {
-          "nombre": "Carlos Alcántara Rivas",
-          "participacion": 60.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Inversiones Meridional SL",
-          "participacion": 40.0,
-          "nacionalidad": "española"
-        }
-      ],
-      "administradores": [
-        {
-          "nombre": "Carlos Alcántara Rivas",
-          "cargo": "Administrador Único"
-        }
-      ],
-      "balances": [
-        {
-          "periodo": "2022",
-          "ingresos": 3200000,
-          "ebitda": 820000,
-          "gastos_financieros": 95000,
-          "deuda_financiera": 1800000,
-          "activo_corriente": 650000,
-          "pasivo_corriente": 420000,
-          "patrimonio_neto": 1100000
-        },
-        {
-          "periodo": "2023",
-          "ingresos": 4800000,
-          "ebitda": 1350000,
-          "gastos_financieros": 130000,
-          "deuda_financiera": 3200000,
-          "activo_corriente": 1100000,
-          "pasivo_corriente": 560000,
-          "patrimonio_neto": 1600000
-        },
-        {
-          "periodo": "2024",
-          "ingresos": 5900000,
-          "ebitda": 1720000,
-          "gastos_financieros": 180000,
-          "deuda_financiera": 4100000,
-          "activo_corriente": 1450000,
-          "pasivo_corriente": 680000,
-          "patrimonio_neto": 2200000
-        }
-      ],
-      "alertas_kyc": [],
-      "observaciones": "Empresa en expansión en el sector fotovoltaico extremeño. Expediente KYC completo en BBDD del banco. Última revisión de titular real validada en 2024.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 2295000,
-            "activo_corriente": 650000,
-            "patrimonio_neto": 1100000,
-            "pasivo_no_corriente": 1425000,
-            "pasivo_corriente": 420000,
-            "total_activo": 2945000,
-            "total_pasivo_patrimonio": 2945000
-          },
-          "2023": {
-            "activo_no_corriente": 3540000,
-            "activo_corriente": 1100000,
-            "patrimonio_neto": 1600000,
-            "pasivo_no_corriente": 2480000,
-            "pasivo_corriente": 560000,
-            "total_activo": 4640000,
-            "total_pasivo_patrimonio": 4640000
-          },
-          "2024": {
-            "activo_no_corriente": 4630000,
-            "activo_corriente": 1450000,
-            "patrimonio_neto": 2200000,
-            "pasivo_no_corriente": 3200000,
-            "pasivo_corriente": 680000,
-            "total_activo": 6080000,
-            "total_pasivo_patrimonio": 6080000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 3200000,
-            "coste_ventas": 1996000,
-            "gastos_explotacion": 384000,
-            "ebitda": 820000,
-            "amortizaciones": 96000,
-            "ebit": 724000,
-            "gastos_financieros": 95000,
-            "resultado_antes_impuestos": 629000,
-            "impuesto_sociedades": 157250,
-            "resultado_neto": 471750
-          },
-          "2023": {
-            "ingresos": 4800000,
-            "coste_ventas": 2874000,
-            "gastos_explotacion": 576000,
-            "ebitda": 1350000,
-            "amortizaciones": 144000,
-            "ebit": 1206000,
-            "gastos_financieros": 130000,
-            "resultado_antes_impuestos": 1076000,
-            "impuesto_sociedades": 269000,
-            "resultado_neto": 807000
-          },
-          "2024": {
-            "ingresos": 5900000,
-            "coste_ventas": 3472000,
-            "gastos_explotacion": 708000,
-            "ebitda": 1720000,
-            "amortizaciones": 177000,
-            "ebit": 1543000,
-            "gastos_financieros": 180000,
-            "resultado_antes_impuestos": 1363000,
-            "impuesto_sociedades": 340750,
-            "resultado_neto": 1022250
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 590400,
-            "flujo_inversion": -256000,
-            "flujo_financiacion": 492500,
-            "variacion_neta_caja": 826900
-          },
-          "2023": {
-            "flujo_operativo": 972000,
-            "flujo_inversion": -384000,
-            "flujo_financiacion": 895000,
-            "variacion_neta_caja": 1483000
-          },
-          "2024": {
-            "flujo_operativo": 1238400,
-            "flujo_inversion": -472000,
-            "flujo_financiacion": 1140000,
-            "variacion_neta_caja": 1906400
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 820000,
-            "deuda": 1800000,
-            "liquidez": 1.55,
-            "patrimonio": 1100000
-          },
-          "2023": {
-            "ebitda": 1350000,
-            "deuda": 3200000,
-            "liquidez": 1.96,
-            "patrimonio": 1600000
-          },
-          "2024": {
-            "ebitda": 1720000,
-            "deuda": 4100000,
-            "liquidez": 2.13,
-            "patrimonio": 2200000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 195000,
-            "clientes": 292500,
-            "caja": 130000,
-            "otros": 32500
-          },
-          "2023": {
-            "existencias": 330000,
-            "clientes": 495000,
-            "caja": 220000,
-            "otros": 55000
-          },
-          "2024": {
-            "existencias": 435000,
-            "clientes": 652500,
-            "caja": 290000,
-            "otros": 72500
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 1230000,
-          "deuda_largo_plazo": 2870000,
-          "tipo_interes_medio": 0.045,
-          "vencimientos": {
-            "2026": 738000,
-            "2027": 902000,
-            "2028": 984000,
-            "2029+": 1476000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Alcántara Energía Renovable SL.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
-        {
-          "sujeto": "Alcántara Energía Renovable SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Carlos Alcántara Rivas",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Inversiones Meridional SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        }
-      ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Alcántara Energía Renovable SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Carlos Alcántara Rivas",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Inversiones Meridional SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
-      "comunidad_autonoma": "Extremadura"
-    },
-    "Grupo Caldas Infraestructuras SA": {
-      "nombre_legal": "Grupo Caldas Infraestructuras SA",
-      "nif": "A28476390",
-      "sector": "Construcción",
-      "cnae": "4211 - Construcción de carreteras y autopistas",
-      "forma_juridica": "Sociedad Anónima",
-      "domicilio_social": "Paseo de la Castellana 110, 4ºB, 28046 Madrid",
-      "fecha_constitucion": "2001-06-20",
-      "capital_social": 5000000,
-      "empleados": 420,
-      "titulares_reales": [
-        {
-          "nombre": "Grupo Caldas Holding SA",
-          "participacion": 75.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Infraestructuras del Norte SL",
-          "participacion": 25.0,
-          "nacionalidad": "española"
-        }
-      ],
-      "administradores": [
-        {
-          "nombre": "Pedro Caldas Fuentes",
-          "cargo": "Consejero Delegado"
-        },
-        {
-          "nombre": "María Jesús Prieto Valls",
-          "cargo": "Consejera"
-        }
-      ],
-      "balances": [
-        {
-          "periodo": "2022",
-          "ingresos": 68000000,
-          "ebitda": 5200000,
-          "gastos_financieros": 980000,
-          "deuda_financiera": 22000000,
-          "activo_corriente": 18500000,
-          "pasivo_corriente": 16200000,
-          "patrimonio_neto": 9800000
-        },
-        {
-          "periodo": "2023",
-          "ingresos": 72000000,
-          "ebitda": 4800000,
-          "gastos_financieros": 1100000,
-          "deuda_financiera": 25000000,
-          "activo_corriente": 19200000,
-          "pasivo_corriente": 18400000,
-          "patrimonio_neto": 10100000
-        },
-        {
-          "periodo": "2024",
-          "ingresos": 69500000,
-          "ebitda": 3100000,
-          "gastos_financieros": 1350000,
-          "deuda_financiera": 27500000,
-          "activo_corriente": 16800000,
-          "pasivo_corriente": 17900000,
-          "patrimonio_neto": 9300000
-        }
-      ],
-      "alertas_kyc": [
-        "Retraso puntual en pagos registrado en 2023"
-      ],
-      "observaciones": "Grupo consolidado en obra pública. Tensión de márgenes por sobrecostes en contratos de carreteras. Historial crediticio con 1 impago registrado en el banco.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 24370000,
-            "activo_corriente": 18500000,
-            "patrimonio_neto": 9800000,
-            "pasivo_no_corriente": 16870000,
-            "pasivo_corriente": 16200000,
-            "total_activo": 42870000,
-            "total_pasivo_patrimonio": 42870000
-          },
-          "2023": {
-            "activo_no_corriente": 28315000,
-            "activo_corriente": 19200000,
-            "patrimonio_neto": 10100000,
-            "pasivo_no_corriente": 19015000,
-            "pasivo_corriente": 18400000,
-            "total_activo": 47515000,
-            "total_pasivo_patrimonio": 47515000
-          },
-          "2024": {
-            "activo_no_corriente": 31045000,
-            "activo_corriente": 16800000,
-            "patrimonio_neto": 9300000,
-            "pasivo_no_corriente": 20645000,
-            "pasivo_corriente": 17900000,
-            "total_activo": 47845000,
-            "total_pasivo_patrimonio": 47845000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 68000000,
-            "coste_ventas": 54640000,
-            "gastos_explotacion": 8160000,
-            "ebitda": 5200000,
-            "amortizaciones": 2040000,
-            "ebit": 3160000,
-            "gastos_financieros": 980000,
-            "resultado_antes_impuestos": 2180000,
-            "impuesto_sociedades": 545000,
-            "resultado_neto": 1635000
-          },
-          "2023": {
-            "ingresos": 72000000,
-            "coste_ventas": 58560000,
-            "gastos_explotacion": 8640000,
-            "ebitda": 4800000,
-            "amortizaciones": 2160000,
-            "ebit": 2640000,
-            "gastos_financieros": 1100000,
-            "resultado_antes_impuestos": 1540000,
-            "impuesto_sociedades": 385000,
-            "resultado_neto": 1155000
-          },
-          "2024": {
-            "ingresos": 69500000,
-            "coste_ventas": 58060000,
-            "gastos_explotacion": 8340000,
-            "ebitda": 3100000,
-            "amortizaciones": 2085000,
-            "ebit": 1015000,
-            "gastos_financieros": 1350000,
-            "resultado_antes_impuestos": -335000,
-            "impuesto_sociedades": 0,
-            "resultado_neto": -335000
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 3744000,
-            "flujo_inversion": -5440000,
-            "flujo_financiacion": 6110000,
-            "variacion_neta_caja": 4414000
-          },
-          "2023": {
-            "flujo_operativo": 3456000,
-            "flujo_inversion": -5760000,
-            "flujo_financiacion": 6950000,
-            "variacion_neta_caja": 4646000
-          },
-          "2024": {
-            "flujo_operativo": 2232000,
-            "flujo_inversion": -5560000,
-            "flujo_financiacion": 7575000,
-            "variacion_neta_caja": 4247000
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 5200000,
-            "deuda": 22000000,
-            "liquidez": 1.14,
-            "patrimonio": 9800000
-          },
-          "2023": {
-            "ebitda": 4800000,
-            "deuda": 25000000,
-            "liquidez": 1.04,
-            "patrimonio": 10100000
-          },
-          "2024": {
-            "ebitda": 3100000,
-            "deuda": 27500000,
-            "liquidez": 0.94,
-            "patrimonio": 9300000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 5550000,
-            "clientes": 8325000,
-            "caja": 3700000,
-            "otros": 925000
-          },
-          "2023": {
-            "existencias": 5760000,
-            "clientes": 8640000,
-            "caja": 3840000,
-            "otros": 960000
-          },
-          "2024": {
-            "existencias": 5040000,
-            "clientes": 7560000,
-            "caja": 3360000,
-            "otros": 840000
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 8250000,
-          "deuda_largo_plazo": 19250000,
-          "tipo_interes_medio": 0.048,
-          "vencimientos": {
-            "2026": 4950000,
-            "2027": 6050000,
-            "2028": 6600000,
-            "2029+": 9900000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Grupo Caldas Infraestructuras SA.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
-        {
-          "sujeto": "Grupo Caldas Infraestructuras SA",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Grupo Caldas Holding SA",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Infraestructuras del Norte SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Pedro Caldas Fuentes",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "María Jesús Prieto Valls",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        }
-      ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Grupo Caldas Infraestructuras SA",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Grupo Caldas Holding SA",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Infraestructuras del Norte SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Pedro Caldas Fuentes",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "María Jesús Prieto Valls",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
-      "comunidad_autonoma": "Comunidad de Madrid"
-    },
-    "Nexuria Tech Solutions SL": {
-      "nombre_legal": "Nexuria Tech Solutions SL",
-      "nif": "B66123409",
-      "sector": "Tecnología",
-      "cnae": "6201 - Actividades de programación informática",
-      "forma_juridica": "Sociedad de Responsabilidad Limitada",
-      "domicilio_social": "Calle Provença 236, 3º1ª, 08008 Barcelona",
-      "fecha_constitucion": "2019-11-05",
-      "capital_social": 150000,
-      "empleados": 62,
-      "titulares_reales": [
-        {
-          "nombre": "Adrián Nexuria Pujol",
-          "participacion": 55.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Vertex Ventures Spain SL",
-          "participacion": 30.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Laura Morales Sanz",
-          "participacion": 15.0,
-          "nacionalidad": "española"
-        }
-      ],
-      "administradores": [
-        {
-          "nombre": "Adrián Nexuria Pujol",
-          "cargo": "Administrador Solidario"
-        },
-        {
-          "nombre": "Laura Morales Sanz",
-          "cargo": "Administradora Solidaria"
-        }
-      ],
-      "balances": [
-        {
-          "periodo": "2022",
-          "ingresos": 2100000,
-          "ebitda": 280000,
-          "gastos_financieros": 45000,
-          "deuda_financiera": 600000,
-          "activo_corriente": 980000,
-          "pasivo_corriente": 450000,
-          "patrimonio_neto": 820000
-        },
-        {
-          "periodo": "2023",
-          "ingresos": 3800000,
-          "ebitda": 620000,
-          "gastos_financieros": 72000,
-          "deuda_financiera": 1200000,
-          "activo_corriente": 1850000,
-          "pasivo_corriente": 720000,
-          "patrimonio_neto": 1400000
-        },
-        {
-          "periodo": "2024",
-          "ingresos": 5600000,
-          "ebitda": 950000,
-          "gastos_financieros": 110000,
-          "deuda_financiera": 2000000,
-          "activo_corriente": 3100000,
-          "pasivo_corriente": 950000,
-          "patrimonio_neto": 2600000
-        }
-      ],
-      "alertas_kyc": [],
-      "observaciones": "Startup tecnológica de alto crecimiento. Ronda de venture debt con el banco en 2024. Titular real principal validado. Sin incidencias KYC.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 833000,
-            "activo_corriente": 980000,
-            "patrimonio_neto": 820000,
-            "pasivo_no_corriente": 543000,
-            "pasivo_corriente": 450000,
-            "total_activo": 1813000,
-            "total_pasivo_patrimonio": 1813000
-          },
-          "2023": {
-            "activo_no_corriente": 1320000,
-            "activo_corriente": 1850000,
-            "patrimonio_neto": 1400000,
-            "pasivo_no_corriente": 1050000,
-            "pasivo_corriente": 720000,
-            "total_activo": 3170000,
-            "total_pasivo_patrimonio": 3170000
-          },
-          "2024": {
-            "activo_no_corriente": 2240000,
-            "activo_corriente": 3100000,
-            "patrimonio_neto": 2600000,
-            "pasivo_no_corriente": 1790000,
-            "pasivo_corriente": 950000,
-            "total_activo": 5340000,
-            "total_pasivo_patrimonio": 5340000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 2100000,
-            "coste_ventas": 1568000,
-            "gastos_explotacion": 252000,
-            "ebitda": 280000,
-            "amortizaciones": 63000,
-            "ebit": 217000,
-            "gastos_financieros": 45000,
-            "resultado_antes_impuestos": 172000,
-            "impuesto_sociedades": 43000,
-            "resultado_neto": 129000
-          },
-          "2023": {
-            "ingresos": 3800000,
-            "coste_ventas": 2724000,
-            "gastos_explotacion": 456000,
-            "ebitda": 620000,
-            "amortizaciones": 114000,
-            "ebit": 506000,
-            "gastos_financieros": 72000,
-            "resultado_antes_impuestos": 434000,
-            "impuesto_sociedades": 108500,
-            "resultado_neto": 325500
-          },
-          "2024": {
-            "ingresos": 5600000,
-            "coste_ventas": 3978000,
-            "gastos_explotacion": 672000,
-            "ebitda": 950000,
-            "amortizaciones": 168000,
-            "ebit": 782000,
-            "gastos_financieros": 110000,
-            "resultado_antes_impuestos": 672000,
-            "impuesto_sociedades": 168000,
-            "resultado_neto": 504000
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 201600,
-            "flujo_inversion": -168000,
-            "flujo_financiacion": 157500,
-            "variacion_neta_caja": 191100
-          },
-          "2023": {
-            "flujo_operativo": 446400,
-            "flujo_inversion": -304000,
-            "flujo_financiacion": 324000,
-            "variacion_neta_caja": 466400
-          },
-          "2024": {
-            "flujo_operativo": 684000,
-            "flujo_inversion": -448000,
-            "flujo_financiacion": 545000,
-            "variacion_neta_caja": 781000
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 280000,
-            "deuda": 600000,
-            "liquidez": 2.18,
-            "patrimonio": 820000
-          },
-          "2023": {
-            "ebitda": 620000,
-            "deuda": 1200000,
-            "liquidez": 2.57,
-            "patrimonio": 1400000
-          },
-          "2024": {
-            "ebitda": 950000,
-            "deuda": 2000000,
-            "liquidez": 3.26,
-            "patrimonio": 2600000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 117600,
-            "clientes": 470400,
-            "caja": 343000,
-            "otros": 49000
-          },
-          "2023": {
-            "existencias": 222000,
-            "clientes": 888000,
-            "caja": 647500,
-            "otros": 92500
-          },
-          "2024": {
-            "existencias": 372000,
-            "clientes": 1488000,
-            "caja": 1085000,
-            "otros": 155000
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 600000,
-          "deuda_largo_plazo": 1400000,
-          "tipo_interes_medio": 0.045,
-          "vencimientos": {
-            "2026": 360000,
-            "2027": 440000,
-            "2028": 480000,
-            "2029+": 720000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Nexuria Tech Solutions SL.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
-        {
-          "sujeto": "Nexuria Tech Solutions SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Adrián Nexuria Pujol",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Vertex Ventures Spain SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Laura Morales Sanz",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        }
-      ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Nexuria Tech Solutions SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Adrián Nexuria Pujol",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Vertex Ventures Spain SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Laura Morales Sanz",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
-      "comunidad_autonoma": "Cataluña"
-    },
-    "Distribuciones Monteverde SA": {
-      "nombre_legal": "Distribuciones Monteverde SA",
-      "nif": "A46987231",
-      "sector": "Retail y Distribución",
-      "cnae": "4690 - Comercio al por mayor no especializado",
-      "forma_juridica": "Sociedad Anónima",
-      "domicilio_social": "Polígono Industrial La Fuente, Nave 12, 46100 Burjassot (Valencia)",
-      "fecha_constitucion": "1997-04-15",
-      "capital_social": 1800000,
-      "empleados": 195,
-      "titulares_reales": [
-        {
-          "nombre": "Ramón Monteverde Llopis",
-          "participacion": 52.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Carmen Llopis de Monteverde",
-          "participacion": 28.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Inversiones Familiares Monteverde SL",
-          "participacion": 20.0,
-          "nacionalidad": "española"
-        }
-      ],
-      "administradores": [
-        {
-          "nombre": "Ramón Monteverde Llopis",
-          "cargo": "Consejero Delegado"
-        },
-        {
-          "nombre": "Carmen Llopis de Monteverde",
-          "cargo": "Consejera"
-        }
-      ],
-      "balances": [
-        {
-          "periodo": "2022",
-          "ingresos": 38000000,
-          "ebitda": 1800000,
-          "gastos_financieros": 680000,
-          "deuda_financiera": 12500000,
-          "activo_corriente": 9200000,
-          "pasivo_corriente": 9800000,
-          "patrimonio_neto": 3200000
-        },
-        {
-          "periodo": "2023",
-          "ingresos": 35500000,
-          "ebitda": 1200000,
-          "gastos_financieros": 820000,
-          "deuda_financiera": 14200000,
-          "activo_corriente": 8100000,
-          "pasivo_corriente": 10900000,
-          "patrimonio_neto": 2800000
-        },
-        {
-          "periodo": "2024",
-          "ingresos": 33000000,
-          "ebitda": 850000,
-          "gastos_financieros": 950000,
-          "deuda_financiera": 15800000,
-          "activo_corriente": 7400000,
-          "pasivo_corriente": 11600000,
-          "patrimonio_neto": 2100000
-        }
-      ],
-      "alertas_kyc": [
-        "Reestructuración de deuda en 2020",
-        "Retrasos recurrentes en pagos a proveedores"
-      ],
-      "observaciones": "Empresa familiar con tensión financiera sostenida desde 2020. Reestructuración acordada con el banco. 2 impagos registrados. Requiere seguimiento reforzado.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 13030000,
-            "activo_corriente": 9200000,
-            "patrimonio_neto": 3200000,
-            "pasivo_no_corriente": 9230000,
-            "pasivo_corriente": 9800000,
-            "total_activo": 22230000,
-            "total_pasivo_patrimonio": 22230000
-          },
-          "2023": {
-            "activo_no_corriente": 15960000,
-            "activo_corriente": 8100000,
-            "patrimonio_neto": 2800000,
-            "pasivo_no_corriente": 10360000,
-            "pasivo_corriente": 10900000,
-            "total_activo": 24060000,
-            "total_pasivo_patrimonio": 24060000
-          },
-          "2024": {
-            "activo_no_corriente": 17675000,
-            "activo_corriente": 7400000,
-            "patrimonio_neto": 2100000,
-            "pasivo_no_corriente": 11375000,
-            "pasivo_corriente": 11600000,
-            "total_activo": 25075000,
-            "total_pasivo_patrimonio": 25075000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 38000000,
-            "coste_ventas": 31640000,
-            "gastos_explotacion": 4560000,
-            "ebitda": 1800000,
-            "amortizaciones": 1140000,
-            "ebit": 660000,
-            "gastos_financieros": 680000,
-            "resultado_antes_impuestos": -20000,
-            "impuesto_sociedades": 0,
-            "resultado_neto": -20000
-          },
-          "2023": {
-            "ingresos": 35500000,
-            "coste_ventas": 30040000,
-            "gastos_explotacion": 4260000,
-            "ebitda": 1200000,
-            "amortizaciones": 1065000,
-            "ebit": 135000,
-            "gastos_financieros": 820000,
-            "resultado_antes_impuestos": -685000,
-            "impuesto_sociedades": 0,
-            "resultado_neto": -685000
-          },
-          "2024": {
-            "ingresos": 33000000,
-            "coste_ventas": 28190000,
-            "gastos_explotacion": 3960000,
-            "ebitda": 850000,
-            "amortizaciones": 990000,
-            "ebit": -140000,
-            "gastos_financieros": 950000,
-            "resultado_antes_impuestos": -1090000,
-            "impuesto_sociedades": 0,
-            "resultado_neto": -1090000
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 1296000,
-            "flujo_inversion": -3040000,
-            "flujo_financiacion": 3410000,
-            "variacion_neta_caja": 1666000
-          },
-          "2023": {
-            "flujo_operativo": 864000,
-            "flujo_inversion": -2840000,
-            "flujo_financiacion": 3850000,
-            "variacion_neta_caja": 1874000
-          },
-          "2024": {
-            "flujo_operativo": 612000,
-            "flujo_inversion": -2640000,
-            "flujo_financiacion": 4265000,
-            "variacion_neta_caja": 2237000
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 1800000,
-            "deuda": 12500000,
-            "liquidez": 0.94,
-            "patrimonio": 3200000
-          },
-          "2023": {
-            "ebitda": 1200000,
-            "deuda": 14200000,
-            "liquidez": 0.74,
-            "patrimonio": 2800000
-          },
-          "2024": {
-            "ebitda": 850000,
-            "deuda": 15800000,
-            "liquidez": 0.64,
-            "patrimonio": 2100000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 2760000,
-            "clientes": 4140000,
-            "caja": 1840000,
-            "otros": 460000
-          },
-          "2023": {
-            "existencias": 2430000,
-            "clientes": 3645000,
-            "caja": 1620000,
-            "otros": 405000
-          },
-          "2024": {
-            "existencias": 2220000,
-            "clientes": 3330000,
-            "caja": 1480000,
-            "otros": 370000
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 4740000,
-          "deuda_largo_plazo": 11060000,
-          "tipo_interes_medio": 0.051,
-          "vencimientos": {
-            "2026": 2844000,
-            "2027": 3476000,
-            "2028": 3792000,
-            "2029+": 5688000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Distribuciones Monteverde SA.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
-        {
-          "sujeto": "Distribuciones Monteverde SA",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Ramón Monteverde Llopis",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Carmen Llopis de Monteverde",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Inversiones Familiares Monteverde SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        }
-      ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Distribuciones Monteverde SA",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Ramón Monteverde Llopis",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Carmen Llopis de Monteverde",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Inversiones Familiares Monteverde SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
-      "comunidad_autonoma": "Comunidad Valenciana"
-    },
-    "Logística Transibérica SL": {
-      "nombre_legal": "Logística Transibérica SL",
-      "nif": "B39872156",
-      "sector": "Logística y Transporte",
-      "cnae": "4941 - Transporte de mercancías por carretera",
-      "forma_juridica": "Sociedad de Responsabilidad Limitada",
-      "domicilio_social": "Calle Industria 78, Nave B, 50197 Zaragoza",
-      "fecha_constitucion": "2008-09-22",
-      "capital_social": 500000,
-      "empleados": 148,
-      "titulares_reales": [
-        {
-          "nombre": "Javier Transibérica Hernando",
-          "participacion": 70.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Patricia Hernando Moya",
-          "participacion": 30.0,
-          "nacionalidad": "española"
-        }
-      ],
-      "administradores": [
-        {
-          "nombre": "Javier Transibérica Hernando",
-          "cargo": "Administrador Único"
-        }
-      ],
-      "balances": [
-        {
-          "periodo": "2022",
-          "ingresos": 21500000,
-          "ebitda": 2100000,
-          "gastos_financieros": 310000,
-          "deuda_financiera": 5800000,
-          "activo_corriente": 3200000,
-          "pasivo_corriente": 2900000,
-          "patrimonio_neto": 2600000
-        },
-        {
-          "periodo": "2023",
-          "ingresos": 23800000,
-          "ebitda": 2350000,
-          "gastos_financieros": 340000,
-          "deuda_financiera": 6200000,
-          "activo_corriente": 3500000,
-          "pasivo_corriente": 3100000,
-          "patrimonio_neto": 3000000
-        },
-        {
-          "periodo": "2024",
-          "ingresos": 22100000,
-          "ebitda": 1750000,
-          "gastos_financieros": 390000,
-          "deuda_financiera": 7100000,
-          "activo_corriente": 2900000,
-          "pasivo_corriente": 3400000,
-          "patrimonio_neto": 2800000
-        }
-      ],
-      "alertas_kyc": [
-        "Tensión de liquidez en Q2 2024"
-      ],
-      "observaciones": "Operador logístico con flota propia. Márgenes afectados por el encarecimiento del combustible en 2024. Sin impagos registrados. Expediente completo.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 6750000,
-            "activo_corriente": 3200000,
-            "patrimonio_neto": 2600000,
-            "pasivo_no_corriente": 4450000,
-            "pasivo_corriente": 2900000,
-            "total_activo": 9950000,
-            "total_pasivo_patrimonio": 9950000
-          },
-          "2023": {
-            "activo_no_corriente": 7390000,
-            "activo_corriente": 3500000,
-            "patrimonio_neto": 3000000,
-            "pasivo_no_corriente": 4790000,
-            "pasivo_corriente": 3100000,
-            "total_activo": 10890000,
-            "total_pasivo_patrimonio": 10890000
-          },
-          "2024": {
-            "activo_no_corriente": 8690000,
-            "activo_corriente": 2900000,
-            "patrimonio_neto": 2800000,
-            "pasivo_no_corriente": 5390000,
-            "pasivo_corriente": 3400000,
-            "total_activo": 11590000,
-            "total_pasivo_patrimonio": 11590000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 21500000,
-            "coste_ventas": 16820000,
-            "gastos_explotacion": 2580000,
-            "ebitda": 2100000,
-            "amortizaciones": 645000,
-            "ebit": 1455000,
-            "gastos_financieros": 310000,
-            "resultado_antes_impuestos": 1145000,
-            "impuesto_sociedades": 286250,
-            "resultado_neto": 858750
-          },
-          "2023": {
-            "ingresos": 23800000,
-            "coste_ventas": 18594000,
-            "gastos_explotacion": 2856000,
-            "ebitda": 2350000,
-            "amortizaciones": 714000,
-            "ebit": 1636000,
-            "gastos_financieros": 340000,
-            "resultado_antes_impuestos": 1296000,
-            "impuesto_sociedades": 324000,
-            "resultado_neto": 972000
-          },
-          "2024": {
-            "ingresos": 22100000,
-            "coste_ventas": 17698000,
-            "gastos_explotacion": 2652000,
-            "ebitda": 1750000,
-            "amortizaciones": 663000,
-            "ebit": 1087000,
-            "gastos_financieros": 390000,
-            "resultado_antes_impuestos": 697000,
-            "impuesto_sociedades": 174250,
-            "resultado_neto": 522750
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 1512000,
-            "flujo_inversion": -1720000,
-            "flujo_financiacion": 1585000,
-            "variacion_neta_caja": 1377000
-          },
-          "2023": {
-            "flujo_operativo": 1692000,
-            "flujo_inversion": -1904000,
-            "flujo_financiacion": 1690000,
-            "variacion_neta_caja": 1478000
-          },
-          "2024": {
-            "flujo_operativo": 1260000,
-            "flujo_inversion": -1768000,
-            "flujo_financiacion": 1935000,
-            "variacion_neta_caja": 1427000
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 2100000,
-            "deuda": 5800000,
-            "liquidez": 1.1,
-            "patrimonio": 2600000
-          },
-          "2023": {
-            "ebitda": 2350000,
-            "deuda": 6200000,
-            "liquidez": 1.13,
-            "patrimonio": 3000000
-          },
-          "2024": {
-            "ebitda": 1750000,
-            "deuda": 7100000,
-            "liquidez": 0.85,
-            "patrimonio": 2800000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 960000,
-            "clientes": 1440000,
-            "caja": 640000,
-            "otros": 160000
-          },
-          "2023": {
-            "existencias": 1050000,
-            "clientes": 1575000,
-            "caja": 700000,
-            "otros": 175000
-          },
-          "2024": {
-            "existencias": 870000,
-            "clientes": 1305000,
-            "caja": 580000,
-            "otros": 145000
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 2130000,
-          "deuda_largo_plazo": 4970000,
-          "tipo_interes_medio": 0.048,
-          "vencimientos": {
-            "2026": 1278000,
-            "2027": 1562000,
-            "2028": 1704000,
-            "2029+": 2556000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Logística Transibérica SL.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
-        {
-          "sujeto": "Logística Transibérica SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Javier Transibérica Hernando",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Patricia Hernando Moya",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        }
-      ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Logística Transibérica SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Javier Transibérica Hernando",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Patricia Hernando Moya",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
-      "comunidad_autonoma": "Aragón"
-    },
-    "Datalyx Iberia SL": {
-      "nombre_legal": "Datalyx Iberia SL",
-      "nif": "B87654321",
-      "sector": "Tecnología",
-      "cnae": "6202 - Actividades de consultoría informática",
-      "forma_juridica": "Sociedad de Responsabilidad Limitada",
-      "domicilio_social": "Paseo de Gracia 55, 7ºA, 08007 Barcelona",
-      "fecha_constitucion": "2018-02-14",
-      "capital_social": 200000,
-      "empleados": 120,
-      "titulares_reales": [
-        {
-          "nombre": "Sofía Datalyx Ferrer",
-          "participacion": 45.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Nordic Capital Iberia BV",
-          "participacion": 35.0,
-          "nacionalidad": "holandesa"
-        },
-        {
-          "nombre": "Marc Ribera Vidal",
-          "participacion": 20.0,
-          "nacionalidad": "española"
-        }
-      ],
-      "administradores": [
-        {
-          "nombre": "Sofía Datalyx Ferrer",
-          "cargo": "CEO y Administradora Mancomunada"
-        },
-        {
-          "nombre": "Marc Ribera Vidal",
-          "cargo": "CTO y Administrador Mancomunado"
-        }
-      ],
-      "balances": [
-        {
-          "periodo": "2022",
-          "ingresos": 8200000,
-          "ebitda": 1100000,
-          "gastos_financieros": 85000,
-          "deuda_financiera": 1500000,
-          "activo_corriente": 2800000,
-          "pasivo_corriente": 1200000,
-          "patrimonio_neto": 2200000
-        },
-        {
-          "periodo": "2023",
-          "ingresos": 11500000,
-          "ebitda": 1650000,
-          "gastos_financieros": 110000,
-          "deuda_financiera": 2100000,
-          "activo_corriente": 4100000,
-          "pasivo_corriente": 1600000,
-          "patrimonio_neto": 3800000
-        },
-        {
-          "periodo": "2024",
-          "ingresos": 15000000,
-          "ebitda": 2400000,
-          "gastos_financieros": 145000,
-          "deuda_financiera": 3000000,
-          "activo_corriente": 6200000,
-          "pasivo_corriente": 2100000,
-          "patrimonio_neto": 5600000
-        }
-      ],
-      "alertas_kyc": [],
-      "observaciones": "Empresa tecnológica de alto crecimiento en analítica financiera. Socio con participación extranjera (Nordic Capital). Expediente actualizado en 2025.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 1980000,
-            "activo_corriente": 2800000,
-            "patrimonio_neto": 2200000,
-            "pasivo_no_corriente": 1380000,
-            "pasivo_corriente": 1200000,
-            "total_activo": 4780000,
-            "total_pasivo_patrimonio": 4780000
-          },
-          "2023": {
-            "activo_no_corriente": 3340000,
-            "activo_corriente": 4100000,
-            "patrimonio_neto": 3800000,
-            "pasivo_no_corriente": 2040000,
-            "pasivo_corriente": 1600000,
-            "total_activo": 7440000,
-            "total_pasivo_patrimonio": 7440000
-          },
-          "2024": {
-            "activo_no_corriente": 4440000,
-            "activo_corriente": 6200000,
-            "patrimonio_neto": 5600000,
-            "pasivo_no_corriente": 2940000,
-            "pasivo_corriente": 2100000,
-            "total_activo": 10640000,
-            "total_pasivo_patrimonio": 10640000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 8200000,
-            "coste_ventas": 6116000,
-            "gastos_explotacion": 984000,
-            "ebitda": 1100000,
-            "amortizaciones": 246000,
-            "ebit": 854000,
-            "gastos_financieros": 85000,
-            "resultado_antes_impuestos": 769000,
-            "impuesto_sociedades": 192250,
-            "resultado_neto": 576750
-          },
-          "2023": {
-            "ingresos": 11500000,
-            "coste_ventas": 8470000,
-            "gastos_explotacion": 1380000,
-            "ebitda": 1650000,
-            "amortizaciones": 345000,
-            "ebit": 1305000,
-            "gastos_financieros": 110000,
-            "resultado_antes_impuestos": 1195000,
-            "impuesto_sociedades": 298750,
-            "resultado_neto": 896250
-          },
-          "2024": {
-            "ingresos": 15000000,
-            "coste_ventas": 10800000,
-            "gastos_explotacion": 1800000,
-            "ebitda": 2400000,
-            "amortizaciones": 450000,
-            "ebit": 1950000,
-            "gastos_financieros": 145000,
-            "resultado_antes_impuestos": 1805000,
-            "impuesto_sociedades": 451250,
-            "resultado_neto": 1353750
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 792000,
-            "flujo_inversion": -656000,
-            "flujo_financiacion": 407500,
-            "variacion_neta_caja": 543500
-          },
-          "2023": {
-            "flujo_operativo": 1188000,
-            "flujo_inversion": -920000,
-            "flujo_financiacion": 575000,
-            "variacion_neta_caja": 843000
-          },
-          "2024": {
-            "flujo_operativo": 1728000,
-            "flujo_inversion": -1200000,
-            "flujo_financiacion": 827500,
-            "variacion_neta_caja": 1355500
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 1100000,
-            "deuda": 1500000,
-            "liquidez": 2.33,
-            "patrimonio": 2200000
-          },
-          "2023": {
-            "ebitda": 1650000,
-            "deuda": 2100000,
-            "liquidez": 2.56,
-            "patrimonio": 3800000
-          },
-          "2024": {
-            "ebitda": 2400000,
-            "deuda": 3000000,
-            "liquidez": 2.95,
-            "patrimonio": 5600000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 336000,
-            "clientes": 1344000,
-            "caja": 980000,
-            "otros": 140000
-          },
-          "2023": {
-            "existencias": 492000,
-            "clientes": 1968000,
-            "caja": 1435000,
-            "otros": 205000
-          },
-          "2024": {
-            "existencias": 744000,
-            "clientes": 2976000,
-            "caja": 2170000,
-            "otros": 310000
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 900000,
-          "deuda_largo_plazo": 2100000,
-          "tipo_interes_medio": 0.045,
-          "vencimientos": {
-            "2026": 540000,
-            "2027": 660000,
-            "2028": 720000,
-            "2029+": 1080000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Datalyx Iberia SL.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
-        {
-          "sujeto": "Datalyx Iberia SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Sofía Datalyx Ferrer",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Nordic Capital Iberia BV",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Marc Ribera Vidal",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        }
-      ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Datalyx Iberia SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Sofía Datalyx Ferrer",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Nordic Capital Iberia BV",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Marc Ribera Vidal",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
-      "comunidad_autonoma": "Cataluña"
-    },
     "Acme Componentes SL": {
       "nombre_legal": "Acme Componentes SL",
       "nif": "B50123987",
       "sector": "Industrial",
       "cnae": "2562 - Tratamiento y revestimiento de metales",
       "forma_juridica": "Sociedad de Responsabilidad Limitada",
-      "domicilio_social": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza",
+      "domicilio_social": "PolÃ­gono Malpica, Calle E nÂº 18, 50016 Zaragoza",
       "fecha_constitucion": "2003-07-10",
       "capital_social": 800000,
       "empleados": 310,
       "titulares_reales": [
         {
-          "nombre": "Roberto Acme Jiménez",
+          "nombre": "Roberto Acme JimÃ©nez",
           "participacion": 65.0,
-          "nacionalidad": "española"
+          "nacionalidad": "espaÃ±ola"
         },
         {
           "nombre": "Acme Europe Holding GmbH",
@@ -1768,7 +26,7 @@
       ],
       "administradores": [
         {
-          "nombre": "Roberto Acme Jiménez",
+          "nombre": "Roberto Acme JimÃ©nez",
           "cargo": "Consejero Delegado"
         },
         {
@@ -1809,7 +67,7 @@
         }
       ],
       "alertas_kyc": [],
-      "observaciones": "Fabricante de precisión con socio europeo consolidado. Expansión con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
+      "observaciones": "Fabricante de precisiÃ³n con socio europeo consolidado. ExpansiÃ³n con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
       "cuentas_empresa": {
         "balance": {
           "2022": {
@@ -1978,7 +236,7 @@
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
         },
         {
-          "sujeto": "Roberto Acme Jiménez",
+          "sujeto": "Roberto Acme JimÃ©nez",
           "resultado": "SIN_HITS",
           "confianza": "NO_CONCLUYENTE",
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -2013,7 +271,7 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           },
           {
-            "sujeto": "Roberto Acme Jiménez",
+            "sujeto": "Roberto Acme JimÃ©nez",
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -2032,579 +290,315 @@
           }
         ]
       },
-      "comunidad_autonoma": "Aragón"
+      "comunidad_autonoma": "Comunidad Valenciana"
     },
-    "Norte Logística SA": {
-      "nombre_legal": "Norte Logística SA",
-      "nif": "A39451278",
-      "sector": "Logística y Transporte",
-      "cnae": "4941 - Transporte de mercancías por carretera",
-      "forma_juridica": "Sociedad Anónima",
-      "domicilio_social": "Polígono Industrial Júndiz, Calle B nº 5, 01015 Vitoria-Gasteiz",
-      "fecha_constitucion": "2005-03-08",
-      "capital_social": 1200000,
-      "empleados": 180,
+    "Tecnologia Holdings SL": {
+      "nombre_legal": "Tecnologia Holdings SL",
+      "nif": "B00000000",
+      "sector": "Tecnologia",
+      "cnae": "0000",
+      "forma_juridica": "Sociedad Limitada",
+      "domicilio_social": "Calle Ficticia 1, Madrid",
+      "fecha_constitucion": "2018-01-01",
+      "capital_social": 300000,
+      "empleados": 120,
       "titulares_reales": [
         {
-          "nombre": "Grupo Logístico del Norte SA",
-          "participacion": 80.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Felipe Arrizabalaga Uriarte",
-          "participacion": 20.0,
-          "nacionalidad": "española"
+          "nombre": "Socio Principal",
+          "participacion": 70,
+          "nacionalidad": "espanola"
         }
       ],
       "administradores": [
         {
-          "nombre": "Felipe Arrizabalaga Uriarte",
-          "cargo": "Administrador Único"
+          "nombre": "Administrador Demo",
+          "cargo": "Administrador Unico"
         }
       ],
       "balances": [
         {
           "periodo": "2022",
-          "ingresos": 22000000,
-          "ebitda": 2400000,
-          "gastos_financieros": 280000,
-          "deuda_financiera": 4500000,
-          "activo_corriente": 5600000,
-          "pasivo_corriente": 4200000,
-          "patrimonio_neto": 4800000
+          "ingresos": 10000000,
+          "ebitda": 1600000,
+          "gastos_financieros": 180000,
+          "deuda_financiera": 4200000,
+          "activo_corriente": 2600000,
+          "pasivo_corriente": 1800000,
+          "patrimonio_neto": 3200000
         },
         {
           "periodo": "2023",
-          "ingresos": 25000000,
-          "ebitda": 2900000,
-          "gastos_financieros": 295000,
-          "deuda_financiera": 4800000,
-          "activo_corriente": 6400000,
-          "pasivo_corriente": 4600000,
-          "patrimonio_neto": 5600000
+          "ingresos": 11800000,
+          "ebitda": 1900000,
+          "gastos_financieros": 210000,
+          "deuda_financiera": 4700000,
+          "activo_corriente": 3000000,
+          "pasivo_corriente": 2000000,
+          "patrimonio_neto": 3700000
         },
         {
           "periodo": "2024",
-          "ingresos": 28000000,
-          "ebitda": 3400000,
-          "gastos_financieros": 310000,
-          "deuda_financiera": 5200000,
-          "activo_corriente": 7200000,
-          "pasivo_corriente": 5100000,
-          "patrimonio_neto": 6500000
-        }
-      ],
-      "alertas_kyc": [],
-      "observaciones": "Operador intermodal con crecimiento sostenido y sólida estructura patrimonial. Sin incidencias KYC. Relación bancaria de larga trayectoria.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 7270000,
-            "activo_corriente": 5600000,
-            "patrimonio_neto": 4800000,
-            "pasivo_no_corriente": 3870000,
-            "pasivo_corriente": 4200000,
-            "total_activo": 12870000,
-            "total_pasivo_patrimonio": 12870000
-          },
-          "2023": {
-            "activo_no_corriente": 8000000,
-            "activo_corriente": 6400000,
-            "patrimonio_neto": 5600000,
-            "pasivo_no_corriente": 4200000,
-            "pasivo_corriente": 4600000,
-            "total_activo": 14400000,
-            "total_pasivo_patrimonio": 14400000
-          },
-          "2024": {
-            "activo_no_corriente": 9015000,
-            "activo_corriente": 7200000,
-            "patrimonio_neto": 6500000,
-            "pasivo_no_corriente": 4615000,
-            "pasivo_corriente": 5100000,
-            "total_activo": 16215000,
-            "total_pasivo_patrimonio": 16215000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 22000000,
-            "coste_ventas": 16960000,
-            "gastos_explotacion": 2640000,
-            "ebitda": 2400000,
-            "amortizaciones": 660000,
-            "ebit": 1740000,
-            "gastos_financieros": 280000,
-            "resultado_antes_impuestos": 1460000,
-            "impuesto_sociedades": 365000,
-            "resultado_neto": 1095000
-          },
-          "2023": {
-            "ingresos": 25000000,
-            "coste_ventas": 19100000,
-            "gastos_explotacion": 3000000,
-            "ebitda": 2900000,
-            "amortizaciones": 750000,
-            "ebit": 2150000,
-            "gastos_financieros": 295000,
-            "resultado_antes_impuestos": 1855000,
-            "impuesto_sociedades": 463750,
-            "resultado_neto": 1391250
-          },
-          "2024": {
-            "ingresos": 28000000,
-            "coste_ventas": 21240000,
-            "gastos_explotacion": 3360000,
-            "ebitda": 3400000,
-            "amortizaciones": 840000,
-            "ebit": 2560000,
-            "gastos_financieros": 310000,
-            "resultado_antes_impuestos": 2250000,
-            "impuesto_sociedades": 562500,
-            "resultado_neto": 1687500
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 1728000,
-            "flujo_inversion": -1760000,
-            "flujo_financiacion": 1210000,
-            "variacion_neta_caja": 1178000
-          },
-          "2023": {
-            "flujo_operativo": 2088000,
-            "flujo_inversion": -2000000,
-            "flujo_financiacion": 1292500,
-            "variacion_neta_caja": 1380500
-          },
-          "2024": {
-            "flujo_operativo": 2448000,
-            "flujo_inversion": -2240000,
-            "flujo_financiacion": 1405000,
-            "variacion_neta_caja": 1613000
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 2400000,
-            "deuda": 4500000,
-            "liquidez": 1.33,
-            "patrimonio": 4800000
-          },
-          "2023": {
-            "ebitda": 2900000,
-            "deuda": 4800000,
-            "liquidez": 1.39,
-            "patrimonio": 5600000
-          },
-          "2024": {
-            "ebitda": 3400000,
-            "deuda": 5200000,
-            "liquidez": 1.41,
-            "patrimonio": 6500000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 1680000,
-            "clientes": 2520000,
-            "caja": 1120000,
-            "otros": 280000
-          },
-          "2023": {
-            "existencias": 1920000,
-            "clientes": 2880000,
-            "caja": 1280000,
-            "otros": 320000
-          },
-          "2024": {
-            "existencias": 2160000,
-            "clientes": 3240000,
-            "caja": 1440000,
-            "otros": 360000
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 1560000,
-          "deuda_largo_plazo": 3640000,
-          "tipo_interes_medio": 0.045,
-          "vencimientos": {
-            "2026": 936000,
-            "2027": 1144000,
-            "2028": 1248000,
-            "2029+": 1872000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Norte Logística SA.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
-        {
-          "sujeto": "Norte Logística SA",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Grupo Logístico del Norte SA",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Felipe Arrizabalaga Uriarte",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        }
-      ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Norte Logística SA",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Grupo Logístico del Norte SA",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Felipe Arrizabalaga Uriarte",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
-      "comunidad_autonoma": "País Vasco"
-    },
-    "Vertia Energía SL": {
-      "nombre_legal": "Vertia Energía SL",
-      "nif": "B81230056",
-      "sector": "Energía",
-      "cnae": "7112 - Servicios técnicos de ingeniería",
-      "forma_juridica": "Sociedad de Responsabilidad Limitada",
-      "domicilio_social": "Avenida de la Industria 32, 28108 Alcobendas (Madrid)",
-      "fecha_constitucion": "2016-09-30",
-      "capital_social": 120000,
-      "empleados": 95,
-      "titulares_reales": [
-        {
-          "nombre": "Isabel Vertia Castillo",
-          "participacion": 50.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Green Tech Investments SL",
-          "participacion": 50.0,
-          "nacionalidad": "española"
-        }
-      ],
-      "administradores": [
-        {
-          "nombre": "Isabel Vertia Castillo",
-          "cargo": "Administradora Solidaria"
-        },
-        {
-          "nombre": "Antonio Fuentes del Pino",
-          "cargo": "Administrador Solidario"
-        }
-      ],
-      "balances": [
-        {
-          "periodo": "2022",
-          "ingresos": 8500000,
-          "ebitda": 920000,
-          "gastos_financieros": 150000,
-          "deuda_financiera": 3200000,
-          "activo_corriente": 2800000,
-          "pasivo_corriente": 2100000,
-          "patrimonio_neto": 1900000
-        },
-        {
-          "periodo": "2023",
           "ingresos": 13500000,
-          "ebitda": 1400000,
-          "gastos_financieros": 250000,
-          "deuda_financiera": 5800000,
-          "activo_corriente": 4200000,
-          "pasivo_corriente": 3200000,
-          "patrimonio_neto": 2600000
-        },
-        {
-          "periodo": "2024",
-          "ingresos": 19500000,
-          "ebitda": 2000000,
-          "gastos_financieros": 380000,
-          "deuda_financiera": 9200000,
-          "activo_corriente": 6100000,
-          "pasivo_corriente": 4800000,
-          "patrimonio_neto": 3400000
+          "ebitda": 2300000,
+          "gastos_financieros": 240000,
+          "deuda_financiera": 5200000,
+          "activo_corriente": 3400000,
+          "pasivo_corriente": 2200000,
+          "patrimonio_neto": 4200000
         }
       ],
       "alertas_kyc": [],
-      "observaciones": "Empresa de eficiencia energética en fuerte expansión. Incremento de deuda del 59% en 2024 vinculado a nuevos contratos. Sin incidencias KYC. Expediente en revisión.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 3725000,
-            "activo_corriente": 2800000,
-            "patrimonio_neto": 1900000,
-            "pasivo_no_corriente": 2525000,
-            "pasivo_corriente": 2100000,
-            "total_activo": 6525000,
-            "total_pasivo_patrimonio": 6525000
-          },
-          "2023": {
-            "activo_no_corriente": 6050000,
-            "activo_corriente": 4200000,
-            "patrimonio_neto": 2600000,
-            "pasivo_no_corriente": 4450000,
-            "pasivo_corriente": 3200000,
-            "total_activo": 10250000,
-            "total_pasivo_patrimonio": 10250000
-          },
-          "2024": {
-            "activo_no_corriente": 9050000,
-            "activo_corriente": 6100000,
-            "patrimonio_neto": 3400000,
-            "pasivo_no_corriente": 6950000,
-            "pasivo_corriente": 4800000,
-            "total_activo": 15150000,
-            "total_pasivo_patrimonio": 15150000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 8500000,
-            "coste_ventas": 6560000,
-            "gastos_explotacion": 1020000,
-            "ebitda": 920000,
-            "amortizaciones": 255000,
-            "ebit": 665000,
-            "gastos_financieros": 150000,
-            "resultado_antes_impuestos": 515000,
-            "impuesto_sociedades": 128750,
-            "resultado_neto": 386250
-          },
-          "2023": {
-            "ingresos": 13500000,
-            "coste_ventas": 10480000,
-            "gastos_explotacion": 1620000,
-            "ebitda": 1400000,
-            "amortizaciones": 405000,
-            "ebit": 995000,
-            "gastos_financieros": 250000,
-            "resultado_antes_impuestos": 745000,
-            "impuesto_sociedades": 186250,
-            "resultado_neto": 558750
-          },
-          "2024": {
-            "ingresos": 19500000,
-            "coste_ventas": 15160000,
-            "gastos_explotacion": 2340000,
-            "ebitda": 2000000,
-            "amortizaciones": 585000,
-            "ebit": 1415000,
-            "gastos_financieros": 380000,
-            "resultado_antes_impuestos": 1035000,
-            "impuesto_sociedades": 258750,
-            "resultado_neto": 776250
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 662400,
-            "flujo_inversion": -680000,
-            "flujo_financiacion": 885000,
-            "variacion_neta_caja": 867400
-          },
-          "2023": {
-            "flujo_operativo": 1008000,
-            "flujo_inversion": -1080000,
-            "flujo_financiacion": 1615000,
-            "variacion_neta_caja": 1543000
-          },
-          "2024": {
-            "flujo_operativo": 1440000,
-            "flujo_inversion": -1560000,
-            "flujo_financiacion": 2570000,
-            "variacion_neta_caja": 2450000
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 920000,
-            "deuda": 3200000,
-            "liquidez": 1.33,
-            "patrimonio": 1900000
-          },
-          "2023": {
-            "ebitda": 1400000,
-            "deuda": 5800000,
-            "liquidez": 1.31,
-            "patrimonio": 2600000
-          },
-          "2024": {
-            "ebitda": 2000000,
-            "deuda": 9200000,
-            "liquidez": 1.27,
-            "patrimonio": 3400000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 840000,
-            "clientes": 1260000,
-            "caja": 560000,
-            "otros": 140000
-          },
-          "2023": {
-            "existencias": 1260000,
-            "clientes": 1890000,
-            "caja": 840000,
-            "otros": 210000
-          },
-          "2024": {
-            "existencias": 1830000,
-            "clientes": 2745000,
-            "caja": 1220000,
-            "otros": 305000
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 2760000,
-          "deuda_largo_plazo": 6440000,
-          "tipo_interes_medio": 0.045,
-          "vencimientos": {
-            "2026": 1656000,
-            "2027": 2024000,
-            "2028": 2208000,
-            "2029+": 3312000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Vertia Energía SL.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
+      "observaciones": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "comunidad_autonoma": "Comunidad de Madrid"
+    },
+    "Inmobiliario Holdings SL": {
+      "nombre_legal": "Inmobiliario Holdings SL",
+      "nif": "B00000000",
+      "sector": "Inmobiliario",
+      "cnae": "0000",
+      "forma_juridica": "Sociedad Limitada",
+      "domicilio_social": "Calle Ficticia 1, Madrid",
+      "fecha_constitucion": "2018-01-01",
+      "capital_social": 300000,
+      "empleados": 120,
+      "titulares_reales": [
         {
-          "sujeto": "Vertia Energía SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Isabel Vertia Castillo",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Green Tech Investments SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Antonio Fuentes del Pino",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
+          "nombre": "Socio Principal",
+          "participacion": 70,
+          "nacionalidad": "espanola"
         }
       ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Vertia Energía SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Isabel Vertia Castillo",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Green Tech Investments SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Antonio Fuentes del Pino",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
+      "administradores": [
+        {
+          "nombre": "Administrador Demo",
+          "cargo": "Administrador Unico"
+        }
+      ],
+      "balances": [
+        {
+          "periodo": "2022",
+          "ingresos": 10000000,
+          "ebitda": 1600000,
+          "gastos_financieros": 180000,
+          "deuda_financiera": 4200000,
+          "activo_corriente": 2600000,
+          "pasivo_corriente": 1800000,
+          "patrimonio_neto": 3200000
+        },
+        {
+          "periodo": "2023",
+          "ingresos": 11800000,
+          "ebitda": 1900000,
+          "gastos_financieros": 210000,
+          "deuda_financiera": 4700000,
+          "activo_corriente": 3000000,
+          "pasivo_corriente": 2000000,
+          "patrimonio_neto": 3700000
+        },
+        {
+          "periodo": "2024",
+          "ingresos": 13500000,
+          "ebitda": 2300000,
+          "gastos_financieros": 240000,
+          "deuda_financiera": 5200000,
+          "activo_corriente": 3400000,
+          "pasivo_corriente": 2200000,
+          "patrimonio_neto": 4200000
+        }
+      ],
+      "alertas_kyc": [],
+      "observaciones": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "comunidad_autonoma": "Andalucia"
+    },
+    "Retail y Distribucion Holdings SL": {
+      "nombre_legal": "Retail y Distribucion Holdings SL",
+      "nif": "B00000000",
+      "sector": "Retail y Distribucion",
+      "cnae": "0000",
+      "forma_juridica": "Sociedad Limitada",
+      "domicilio_social": "Calle Ficticia 1, Madrid",
+      "fecha_constitucion": "2018-01-01",
+      "capital_social": 300000,
+      "empleados": 120,
+      "titulares_reales": [
+        {
+          "nombre": "Socio Principal",
+          "participacion": 70,
+          "nacionalidad": "espanola"
+        }
+      ],
+      "administradores": [
+        {
+          "nombre": "Administrador Demo",
+          "cargo": "Administrador Unico"
+        }
+      ],
+      "balances": [
+        {
+          "periodo": "2022",
+          "ingresos": 10000000,
+          "ebitda": 1600000,
+          "gastos_financieros": 180000,
+          "deuda_financiera": 4200000,
+          "activo_corriente": 2600000,
+          "pasivo_corriente": 1800000,
+          "patrimonio_neto": 3200000
+        },
+        {
+          "periodo": "2023",
+          "ingresos": 11800000,
+          "ebitda": 1900000,
+          "gastos_financieros": 210000,
+          "deuda_financiera": 4700000,
+          "activo_corriente": 3000000,
+          "pasivo_corriente": 2000000,
+          "patrimonio_neto": 3700000
+        },
+        {
+          "periodo": "2024",
+          "ingresos": 13500000,
+          "ebitda": 2300000,
+          "gastos_financieros": 240000,
+          "deuda_financiera": 5200000,
+          "activo_corriente": 3400000,
+          "pasivo_corriente": 2200000,
+          "patrimonio_neto": 4200000
+        }
+      ],
+      "alertas_kyc": [],
+      "observaciones": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "comunidad_autonoma": "Comunidad Valenciana"
+    },
+    "Construccion Holdings SL": {
+      "nombre_legal": "Construccion Holdings SL",
+      "nif": "B00000000",
+      "sector": "Construccion",
+      "cnae": "0000",
+      "forma_juridica": "Sociedad Limitada",
+      "domicilio_social": "Calle Ficticia 1, Madrid",
+      "fecha_constitucion": "2018-01-01",
+      "capital_social": 300000,
+      "empleados": 120,
+      "titulares_reales": [
+        {
+          "nombre": "Socio Principal",
+          "participacion": 70,
+          "nacionalidad": "espanola"
+        }
+      ],
+      "administradores": [
+        {
+          "nombre": "Administrador Demo",
+          "cargo": "Administrador Unico"
+        }
+      ],
+      "balances": [
+        {
+          "periodo": "2022",
+          "ingresos": 10000000,
+          "ebitda": 1600000,
+          "gastos_financieros": 180000,
+          "deuda_financiera": 4200000,
+          "activo_corriente": 2600000,
+          "pasivo_corriente": 1800000,
+          "patrimonio_neto": 3200000
+        },
+        {
+          "periodo": "2023",
+          "ingresos": 11800000,
+          "ebitda": 1900000,
+          "gastos_financieros": 210000,
+          "deuda_financiera": 4700000,
+          "activo_corriente": 3000000,
+          "pasivo_corriente": 2000000,
+          "patrimonio_neto": 3700000
+        },
+        {
+          "periodo": "2024",
+          "ingresos": 13500000,
+          "ebitda": 2300000,
+          "gastos_financieros": 240000,
+          "deuda_financiera": 5200000,
+          "activo_corriente": 3400000,
+          "pasivo_corriente": 2200000,
+          "patrimonio_neto": 4200000
+        }
+      ],
+      "alertas_kyc": [],
+      "observaciones": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "comunidad_autonoma": "Andalucia"
+    },
+    "Energia Holdings SL": {
+      "nombre_legal": "Energia Holdings SL",
+      "nif": "B74125896",
+      "sector": "Energia",
+      "cnae": "3511 - Produccion de energia electrica",
+      "forma_juridica": "Sociedad Limitada",
+      "domicilio_social": "Calle Ficticia 1, Madrid",
+      "fecha_constitucion": "2018-01-01",
+      "capital_social": 300000,
+      "empleados": 120,
+      "titulares_reales": [
+        {
+          "nombre": "Laura Vega Martin",
+          "participacion": 55,
+          "nacionalidad": "espanola"
+        },
+        {
+          "nombre": "Iberica Green Capital SL",
+          "participacion": 45,
+          "nacionalidad": "espanola"
+        }
+      ],
+      "administradores": [
+        {
+          "nombre": "Laura Vega Martin",
+          "cargo": "Administradora Unica"
+        }
+      ],
+      "balances": [
+        {
+          "periodo": "2022",
+          "ingresos": 10000000,
+          "ebitda": 1600000,
+          "gastos_financieros": 180000,
+          "deuda_financiera": 4200000,
+          "activo_corriente": 2600000,
+          "pasivo_corriente": 1800000,
+          "patrimonio_neto": 3200000
+        },
+        {
+          "periodo": "2023",
+          "ingresos": 11800000,
+          "ebitda": 1900000,
+          "gastos_financieros": 210000,
+          "deuda_financiera": 4700000,
+          "activo_corriente": 3000000,
+          "pasivo_corriente": 2000000,
+          "patrimonio_neto": 3700000
+        },
+        {
+          "periodo": "2024",
+          "ingresos": 13500000,
+          "ebitda": 2300000,
+          "gastos_financieros": 240000,
+          "deuda_financiera": 5200000,
+          "activo_corriente": 3400000,
+          "pasivo_corriente": 2200000,
+          "patrimonio_neto": 4200000
+        }
+      ],
+      "alertas_kyc": [],
+      "observaciones": "Grupo energetico ficticio con informacion completa para pruebas KYC y crediticias. Datos UBO y administracion consolidados para screening.",
       "comunidad_autonoma": "Comunidad de Madrid"
     },
     "Hispania Biotech Labs SA": {
       "nombre_legal": "Hispania Biotech Labs SA",
       "nif": "A96325874",
       "sector": "Salud y Farmacia",
-      "cnae": "7211 - Investigación y desarrollo experimental en biotecnología",
-      "forma_juridica": "Sociedad Anónima",
-      "domicilio_social": "Parque Tecnológico de Paterna, Edificio I+D 4, 46980 Valencia",
+      "cnae": "7211 - InvestigaciÃ³n y desarrollo experimental en biotecnologÃ­a",
+      "forma_juridica": "Sociedad AnÃ³nima",
+      "domicilio_social": "Parque TecnolÃ³gico de Paterna, Edificio I+D 4, 46980 Valencia",
       "fecha_constitucion": "2014-05-08",
       "capital_social": 2400000,
       "empleados": 132,
@@ -2612,17 +606,17 @@
         {
           "nombre": "Elena Aguirre Mateo",
           "participacion": 41.0,
-          "nacionalidad": "española"
+          "nacionalidad": "espaÃ±ola"
         },
         {
           "nombre": "Health Ventures Iberia FCR",
           "participacion": 34.0,
-          "nacionalidad": "española"
+          "nacionalidad": "espaÃ±ola"
         },
         {
           "nombre": "Javier Solans Pardo",
           "participacion": 25.0,
-          "nacionalidad": "española"
+          "nacionalidad": "espaÃ±ola"
         }
       ],
       "administradores": [
@@ -2668,7 +662,7 @@
         }
       ],
       "alertas_kyc": [],
-      "observaciones": "Empresa biotech en expansión internacional con pipeline de diagnóstico oncológico. KYC renovado en 2025 y documentación societaria completa.",
+      "observaciones": "Empresa biotech en expansiÃ³n internacional con pipeline de diagnÃ³stico oncolÃ³gico. KYC renovado en 2025 y documentaciÃ³n societaria completa.",
       "cuentas_empresa": {
         "balance": {
           "2022": {
@@ -2891,290 +885,14 @@
           }
         ]
       },
-      "comunidad_autonoma": "Comunidad Valenciana"
+      "comunidad_autonoma": "Cataluna"
     },
-    "Atlas Infra Rail SL": {
-      "nombre_legal": "Atlas Infra Rail SL",
-      "nif": "B74185296",
-      "sector": "Construcción",
-      "cnae": "4212 - Construcción de vías férreas",
-      "forma_juridica": "Sociedad de Responsabilidad Limitada",
-      "domicilio_social": "Avenida de la Ingeniería 22, 41015 Sevilla",
-      "fecha_constitucion": "2011-10-17",
-      "capital_social": 950000,
-      "empleados": 214,
-      "titulares_reales": [
-        {
-          "nombre": "Álvaro Torres Cifuentes",
-          "participacion": 58.0,
-          "nacionalidad": "española"
-        },
-        {
-          "nombre": "Infra Capital Sur SL",
-          "participacion": 42.0,
-          "nacionalidad": "española"
-        }
-      ],
-      "administradores": [
-        {
-          "nombre": "Álvaro Torres Cifuentes",
-          "cargo": "Administrador Único"
-        }
-      ],
-      "balances": [
-        {
-          "periodo": "2022",
-          "ingresos": 26800000,
-          "ebitda": 2700000,
-          "gastos_financieros": 510000,
-          "deuda_financiera": 9200000,
-          "activo_corriente": 7600000,
-          "pasivo_corriente": 6500000,
-          "patrimonio_neto": 4200000
-        },
-        {
-          "periodo": "2023",
-          "ingresos": 30100000,
-          "ebitda": 3200000,
-          "gastos_financieros": 560000,
-          "deuda_financiera": 10400000,
-          "activo_corriente": 8900000,
-          "pasivo_corriente": 7200000,
-          "patrimonio_neto": 5100000
-        },
-        {
-          "periodo": "2024",
-          "ingresos": 33700000,
-          "ebitda": 3650000,
-          "gastos_financieros": 610000,
-          "deuda_financiera": 11300000,
-          "activo_corriente": 9800000,
-          "pasivo_corriente": 7900000,
-          "patrimonio_neto": 5900000
-        }
-      ],
-      "alertas_kyc": [
-        "Concentración de cartera en contratos públicos > 70%"
-      ],
-      "observaciones": "Contratista ferroviario con fuerte actividad en Andalucía y Extremadura. Sin impagos históricos en el banco.",
-      "cuentas_empresa": {
-        "balance": {
-          "2022": {
-            "activo_no_corriente": 10170000,
-            "activo_corriente": 7600000,
-            "patrimonio_neto": 4200000,
-            "pasivo_no_corriente": 7070000,
-            "pasivo_corriente": 6500000,
-            "total_activo": 17770000,
-            "total_pasivo_patrimonio": 17770000
-          },
-          "2023": {
-            "activo_no_corriente": 11445000,
-            "activo_corriente": 8900000,
-            "patrimonio_neto": 5100000,
-            "pasivo_no_corriente": 8045000,
-            "pasivo_corriente": 7200000,
-            "total_activo": 20345000,
-            "total_pasivo_patrimonio": 20345000
-          },
-          "2024": {
-            "activo_no_corriente": 12795000,
-            "activo_corriente": 9800000,
-            "patrimonio_neto": 5900000,
-            "pasivo_no_corriente": 8795000,
-            "pasivo_corriente": 7900000,
-            "total_activo": 22595000,
-            "total_pasivo_patrimonio": 22595000
-          }
-        },
-        "pyg": {
-          "2022": {
-            "ingresos": 26800000,
-            "coste_ventas": 20884000,
-            "gastos_explotacion": 3216000,
-            "ebitda": 2700000,
-            "amortizaciones": 804000,
-            "ebit": 1896000,
-            "gastos_financieros": 510000,
-            "resultado_antes_impuestos": 1386000,
-            "impuesto_sociedades": 346500,
-            "resultado_neto": 1039500
-          },
-          "2023": {
-            "ingresos": 30100000,
-            "coste_ventas": 23288000,
-            "gastos_explotacion": 3612000,
-            "ebitda": 3200000,
-            "amortizaciones": 903000,
-            "ebit": 2297000,
-            "gastos_financieros": 560000,
-            "resultado_antes_impuestos": 1737000,
-            "impuesto_sociedades": 434250,
-            "resultado_neto": 1302750
-          },
-          "2024": {
-            "ingresos": 33700000,
-            "coste_ventas": 26006000,
-            "gastos_explotacion": 4044000,
-            "ebitda": 3650000,
-            "amortizaciones": 1011000,
-            "ebit": 2639000,
-            "gastos_financieros": 610000,
-            "resultado_antes_impuestos": 2029000,
-            "impuesto_sociedades": 507250,
-            "resultado_neto": 1521750
-          }
-        },
-        "flujo_caja": {
-          "2022": {
-            "flujo_operativo": 1944000,
-            "flujo_inversion": -2144000,
-            "flujo_financiacion": 2505000,
-            "variacion_neta_caja": 2305000
-          },
-          "2023": {
-            "flujo_operativo": 2304000,
-            "flujo_inversion": -2408000,
-            "flujo_financiacion": 2840000,
-            "variacion_neta_caja": 2736000
-          },
-          "2024": {
-            "flujo_operativo": 2628000,
-            "flujo_inversion": -2696000,
-            "flujo_financiacion": 3085000,
-            "variacion_neta_caja": 3017000
-          }
-        },
-        "indicadores_clave": {
-          "2022": {
-            "ebitda": 2700000,
-            "deuda": 9200000,
-            "liquidez": 1.17,
-            "patrimonio": 4200000
-          },
-          "2023": {
-            "ebitda": 3200000,
-            "deuda": 10400000,
-            "liquidez": 1.24,
-            "patrimonio": 5100000
-          },
-          "2024": {
-            "ebitda": 3650000,
-            "deuda": 11300000,
-            "liquidez": 1.24,
-            "patrimonio": 5900000
-          }
-        },
-        "detalle_activo_corriente": {
-          "2022": {
-            "existencias": 2280000,
-            "clientes": 3420000,
-            "caja": 1520000,
-            "otros": 380000
-          },
-          "2023": {
-            "existencias": 2670000,
-            "clientes": 4005000,
-            "caja": 1780000,
-            "otros": 445000
-          },
-          "2024": {
-            "existencias": 2940000,
-            "clientes": 4410000,
-            "caja": 1960000,
-            "otros": 490000
-          }
-        },
-        "detalle_deuda": {
-          "deuda_corto_plazo": 3390000,
-          "deuda_largo_plazo": 7910000,
-          "tipo_interes_medio": 0.048,
-          "vencimientos": {
-            "2026": 2034000,
-            "2027": 2486000,
-            "2028": 2712000,
-            "2029+": 4068000
-          },
-          "covenants_actuales": [
-            "debt_ebitda_max_3_5x",
-            "cobertura_intereses_min_3_0x"
-          ]
-        }
-      },
-      "documentacion_kyc_requerida": [
-        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
-        "DNI/NIE/Pasaporte vigente de administradores personas fisicas",
-        "Escrituras y poderes vigentes",
-        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
-        "Informe de auditoria (si aplica)",
-        "Detalle de deuda: vencimientos, tipo y covenants"
-      ],
-      "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Atlas Infra Rail SL.",
-        "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
-        "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
-        "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
-        "Definir mitigantes de riesgo (covenants/garantias) antes de cualquier propuesta de financiacion.",
-        "Escalar a Cumplimiento y Comite cuando existan gaps de identificacion o screening no concluyente."
-      ],
-      "screening_estado_operativo": [
-        {
-          "sujeto": "Atlas Infra Rail SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Álvaro Torres Cifuentes",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        },
-        {
-          "sujeto": "Infra Capital Sur SL",
-          "resultado": "SIN_HITS",
-          "confianza": "NO_CONCLUYENTE",
-          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-        }
-      ],
-      "sanciones": {
-        "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": [
-          "UE Consolidated",
-          "OFAC SDN",
-          "ONU",
-          "HMT UK",
-          "listas internas de cumplimiento"
-        ],
-        "detalle_sujetos": [
-          {
-            "sujeto": "Atlas Infra Rail SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Álvaro Torres Cifuentes",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          },
-          {
-            "sujeto": "Infra Capital Sur SL",
-            "resultado": "SIN_HITS",
-            "confianza": "NO_CONCLUYENTE",
-            "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
-          }
-        ]
-      },
-      "comunidad_autonoma": "Andalucía"
-    },
-    "Mediterránea Foods Export SA": {
-      "nombre_legal": "Mediterránea Foods Export SA",
+    "MediterrÃ¡nea Foods Export SA": {
+      "nombre_legal": "MediterrÃ¡nea Foods Export SA",
       "nif": "A15935748",
       "sector": "Agroindustria",
-      "cnae": "1039 - Otro procesado y conservación de frutas y hortalizas",
-      "forma_juridica": "Sociedad Anónima",
+      "cnae": "1039 - Otro procesado y conservaciÃ³n de frutas y hortalizas",
+      "forma_juridica": "Sociedad AnÃ³nima",
       "domicilio_social": "Camino de la Huerta 7, 30012 Murcia",
       "fecha_constitucion": "2009-02-26",
       "capital_social": 1300000,
@@ -3183,21 +901,21 @@
         {
           "nombre": "Grupo Alimentario Levante SA",
           "participacion": 62.0,
-          "nacionalidad": "española"
+          "nacionalidad": "espaÃ±ola"
         },
         {
-          "nombre": "Lucía Montalbán Ruiz",
+          "nombre": "LucÃ­a MontalbÃ¡n Ruiz",
           "participacion": 38.0,
-          "nacionalidad": "española"
+          "nacionalidad": "espaÃ±ola"
         }
       ],
       "administradores": [
         {
-          "nombre": "Lucía Montalbán Ruiz",
+          "nombre": "LucÃ­a MontalbÃ¡n Ruiz",
           "cargo": "Consejera Delegada"
         },
         {
-          "nombre": "Diego Montalbán Ruiz",
+          "nombre": "Diego MontalbÃ¡n Ruiz",
           "cargo": "Consejero"
         }
       ],
@@ -3234,7 +952,7 @@
         }
       ],
       "alertas_kyc": [],
-      "observaciones": "Exportador agroalimentario con exposición a divisa USD y GBP. Historial crediticio positivo con operaciones de comercio exterior.",
+      "observaciones": "Exportador agroalimentario con exposiciÃ³n a divisa USD y GBP. Historial crediticio positivo con operaciones de comercio exterior.",
       "cuentas_empresa": {
         "balance": {
           "2022": {
@@ -3388,7 +1106,7 @@
         "Detalle de deuda: vencimientos, tipo y covenants"
       ],
       "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Mediterránea Foods Export SA.",
+        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de MediterrÃ¡nea Foods Export SA.",
         "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
         "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
         "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
@@ -3397,7 +1115,7 @@
       ],
       "screening_estado_operativo": [
         {
-          "sujeto": "Mediterránea Foods Export SA",
+          "sujeto": "MediterrÃ¡nea Foods Export SA",
           "resultado": "SIN_HITS",
           "confianza": "NO_CONCLUYENTE",
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -3409,13 +1127,13 @@
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
         },
         {
-          "sujeto": "Lucía Montalbán Ruiz",
+          "sujeto": "LucÃ­a MontalbÃ¡n Ruiz",
           "resultado": "SIN_HITS",
           "confianza": "NO_CONCLUYENTE",
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
         },
         {
-          "sujeto": "Diego Montalbán Ruiz",
+          "sujeto": "Diego MontalbÃ¡n Ruiz",
           "resultado": "SIN_HITS",
           "confianza": "NO_CONCLUYENTE",
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -3432,7 +1150,7 @@
         ],
         "detalle_sujetos": [
           {
-            "sujeto": "Mediterránea Foods Export SA",
+            "sujeto": "MediterrÃ¡nea Foods Export SA",
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -3444,222 +1162,258 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           },
           {
-            "sujeto": "Lucía Montalbán Ruiz",
+            "sujeto": "LucÃ­a MontalbÃ¡n Ruiz",
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           },
           {
-            "sujeto": "Diego Montalbán Ruiz",
+            "sujeto": "Diego MontalbÃ¡n Ruiz",
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
       },
-      "comunidad_autonoma": "Región de Murcia"
+      "comunidad_autonoma": "Comunidad Valenciana"
     }
   },
   "empresas_deal": {
     "Industrial": [
       {
         "empresa": "Acme Componentes SL",
-        "descripcion": "Fabricante de componentes industriales de precisión, con sede en Zaragoza.",
-        "señal": "Expansión internacional significativa en los últimos 12 meses, con apertura de nueva planta en Polonia. Necesidades de financiación estructurada estimadas en 8-12M EUR.",
+        "descripcion": "Fabricante de precisiÃ³n con socio europeo consolidado. ExpansiÃ³n con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
+        "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 12000000 EUR.",
         "ingresos_estimados": 42000000,
         "empleados": 310,
-        "prioridad": "alta",
-        "oportunidad": "Financiación estructurada para expansión internacional"
-      },
-      {
-        "empresa": "Norte Logística SA",
-        "descripcion": "Operador logístico especializado en transporte intermodal para el sector industrial, con sede en Vitoria-Gasteiz.",
-        "señal": "Crecimiento sostenido de ingresos durante tres ejercicios consecutivos sin financiación externa reciente. Potencial interés en renting de flota ampliada.",
-        "ingresos_estimados": 28000000,
-        "empleados": 180,
         "prioridad": "media",
-        "oportunidad": "Renting de flota y línea de circulante"
+        "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
       },
       {
-        "empresa": "Vertia Energía SL",
-        "descripcion": "Proveedor de soluciones de eficiencia energética para plantas industriales, con sede en Alcobendas.",
-        "señal": "Incremento del 59% en el endeudamiento financiero durante el último ejercicio para financiar nuevos contratos. Posible necesidad de refinanciación.",
-        "ingresos_estimados": 19500000,
-        "empleados": 95,
+        "empresa": "MetalCore Zaragoza SL",
+        "descripcion": "Proveedor industrial con cartera exportadora y plan de automatizacion para 2027.",
+        "señal": "Necesidad de financiacion CAPEX y circulante por aumento de pedidos internacionales.",
+        "ingresos_estimados": 28500000,
+        "empleados": 190,
         "prioridad": "alta",
-        "oportunidad": "Refinanciación y project finance para contratos energéticos"
+        "oportunidad": "Financiacion de inversion y cobertura de circulante"
+      },
+      {
+        "empresa": "IberMold Precision SA",
+        "descripcion": "Fabricante de moldes tecnicos con demanda creciente en automocion y defensa.",
+        "señal": "Refinanciacion de deuda 2027 y potencial de factoring internacional.",
+        "ingresos_estimados": 21400000,
+        "empleados": 142,
+        "prioridad": "media",
+        "oportunidad": "Refinanciacion estructurada y soluciones de circulante"
       }
     ],
-    "Tecnología": [
+    "Tecnologia": [
       {
-        "empresa": "Datalyx Iberia SL",
-        "descripcion": "Proveedor de software de analítica de datos para el sector financiero, con sede en Barcelona.",
-        "señal": "Ronda de financiación privada reciente que podría preceder a una operación de adquisición o aceleración internacional. Interés potencial en venture debt adicional.",
-        "ingresos_estimados": 15000000,
+        "empresa": "Tecnologia Holdings SL",
+        "descripcion": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+        "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+        "ingresos_estimados": 10000000,
         "empleados": 120,
-        "prioridad": "alta",
-        "oportunidad": "Venture debt para expansión y posible M&A"
+        "prioridad": "media",
+        "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
       },
       {
-        "empresa": "Nexuria Tech Solutions SL",
-        "descripcion": "Empresa de tecnología de la información especializada en soluciones para pymes, con sede en Barcelona.",
-        "señal": "Crecimiento de ingresos del 47% en 2024. Proceso de captación de inversores estratégicos. Necesidades de financiación puente.",
-        "ingresos_estimados": 5600000,
-        "empleados": 62,
+        "empresa": "DataNexa Cloud Systems SL",
+        "descripcion": "Empresa SaaS B2B con crecimiento recurrente y expansion comercial en Iberia.",
+        "señal": "Plan de adquisicion de competidor vertical y necesidad de financiacion puente.",
+        "ingresos_estimados": 15200000,
+        "empleados": 128,
+        "prioridad": "alta",
+        "oportunidad": "M&A financing y venture debt"
+      },
+      {
+        "empresa": "VectorIA Analytics SA",
+        "descripcion": "Plataforma analitica para banca y seguros con contratos enterprise en expansion.",
+        "señal": "Incremento de CAPEX en producto e infraestructura para escalar internacionalmente.",
+        "ingresos_estimados": 11800000,
+        "empleados": 104,
         "prioridad": "media",
-        "oportunidad": "Financiación puente y asesoramiento en M&A"
+        "oportunidad": "Financiacion de crecimiento y lineas de circulante"
       }
     ],
     "Inmobiliario": [
       {
-        "empresa": "Promotora Levante Residencial SL",
-        "descripcion": "Promotora inmobiliaria especializada en residencial de obra nueva en la Comunidad Valenciana.",
-        "señal": "Lanzamiento de dos nuevas promociones en 2025 con necesidades de financiación promotor. Búsqueda activa de entidades financiadoras.",
-        "ingresos_estimados": 18000000,
-        "empleados": 35,
-        "prioridad": "alta",
-        "oportunidad": "Financiación promotor para nuevas promociones"
-      },
-      {
-        "empresa": "Patrimonios Centrales SA",
-        "descripcion": "Sociedad patrimonialista con cartera diversificada de activos comerciales y de oficinas en Madrid.",
-        "señal": "Refinanciación de cartera hipotecaria prevista para el segundo semestre de 2025. Activos valorados en 95M EUR.",
-        "ingresos_estimados": 7500000,
-        "empleados": 12,
-        "prioridad": "alta",
-        "oportunidad": "Refinanciación hipotecaria de cartera patrimonial"
-      }
-    ],
-    "Construcción": [
-      {
-        "empresa": "Grupo Caldas Infraestructuras SA",
-        "descripcion": "Constructora de obra pública especializada en infraestructuras viarias, con sede en Madrid.",
-        "señal": "Sobrecostes en proyectos activos han reducido márgenes. Exploración de nuevas fuentes de financiación para mantener el pipeline de licitaciones.",
-        "ingresos_estimados": 69500000,
-        "empleados": 420,
+        "empresa": "Inmobiliario Holdings SL",
+        "descripcion": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+        "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+        "ingresos_estimados": 10000000,
+        "empleados": 120,
         "prioridad": "media",
-        "oportunidad": "Línea de avales y crédito para licitaciones"
+        "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
       },
       {
-        "empresa": "Constructora Bermejo e Hijos SL",
-        "descripcion": "Empresa constructora familiar especializada en rehabilitación y obra civil en Andalucía.",
-        "señal": "Adjudicación de un contrato de rehabilitación urbana de 12M EUR. Necesita línea de avales y financiación del circulante.",
-        "ingresos_estimados": 22000000,
-        "empleados": 165,
+        "empresa": "Urbana Levante Promociones SL",
+        "descripcion": "Promotora residencial con suelo finalista y pipeline de obra en Valencia.",
+        "señal": "Necesidad de financiacion promotor y avales tecnicos para nuevas fases.",
+        "ingresos_estimados": 24600000,
+        "empleados": 86,
         "prioridad": "alta",
-        "oportunidad": "Línea de avales técnicos y financiación de circulante"
+        "oportunidad": "Financiacion promotor y avales"
       },
       {
-        "empresa": "Atlas Infra Rail SL",
-        "descripcion": "Contratista ferroviario especializado en modernización y mantenimiento de infraestructuras de vía.",
-        "señal": "Cartera de contratos públicos en crecimiento y necesidad de avales técnicos para nuevas licitaciones.",
-        "ingresos_estimados": 33700000,
-        "empleados": 214,
-        "prioridad": "alta",
-        "oportunidad": "Línea de avales técnicos y financiación de circulante"
-      }
-    ],
-    "Energía": [
-      {
-        "empresa": "Alcántara Energía Renovable SL",
-        "descripcion": "Promotora y operadora de plantas fotovoltaicas en Extremadura y Castilla-La Mancha.",
-        "señal": "Nueva planta de 60M de inversión en fase de cierre financiero. Búsqueda de financiación project finance y posibles inversores institucionales.",
-        "ingresos_estimados": 5900000,
-        "empleados": 28,
-        "prioridad": "alta",
-        "oportunidad": "Project finance para nueva planta fotovoltaica"
-      },
-      {
-        "empresa": "Ibérica Solar Partners SL",
-        "descripcion": "Agregador de proyectos de energía solar y almacenamiento en la península ibérica.",
-        "señal": "Cartera de proyectos en desarrollo con potencial de desinversión. Interesados en estructurar un vehículo de inversión para atracción de capital.",
-        "ingresos_estimados": 9800000,
-        "empleados": 48,
-        "prioridad": "alta",
-        "oportunidad": "Estructuración de vehículo de inversión y asesoramiento M&A"
-      }
-    ],
-    "Retail y Distribución": [
-      {
-        "empresa": "Distribuciones Monteverde SA",
-        "descripcion": "Distribuidor mayorista multisectorial con sede en Valencia y red de clientes en todo el Levante.",
-        "señal": "Proceso activo de reestructuración financiera. Potencial interés en factoring sin recurso para mejorar el capital circulante.",
-        "ingresos_estimados": 33000000,
-        "empleados": 195,
+        "empresa": "Arcadia Patrimonio Prime SA",
+        "descripcion": "Gestora de activos inmobiliarios terciarios en reposicionamiento.",
+        "señal": "Refinanciacion de activos y potencial de estructuracion de deuda senior.",
+        "ingresos_estimados": 19600000,
+        "empleados": 63,
         "prioridad": "media",
-        "oportunidad": "Factoring y reestructuración de deuda"
+        "oportunidad": "Refinanciacion y asesoramiento de estructura de capital"
+      }
+    ],
+    "Retail y Distribucion": [
+      {
+        "empresa": "Retail y Distribucion Holdings SL",
+        "descripcion": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+        "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+        "ingresos_estimados": 10000000,
+        "empleados": 120,
+        "prioridad": "media",
+        "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
       },
       {
-        "empresa": "Cadena Distribuidora Atlántica SL",
-        "descripcion": "Red de distribución de productos de gran consumo en el noroeste de España.",
-        "señal": "Adquisición de un competidor regional en proceso de due diligence. Financiación de adquisición por un importe estimado de 15M EUR.",
-        "ingresos_estimados": 45000000,
-        "empleados": 280,
+        "empresa": "FreshRoute Distribucion SA",
+        "descripcion": "Mayorista alimentario con expansion de red logistica en arco mediterraneo.",
+        "señal": "Tension de caja estacional y necesidad de factoring/confirming.",
+        "ingresos_estimados": 33800000,
+        "empleados": 212,
         "prioridad": "alta",
-        "oportunidad": "Financiación de adquisición y asesoramiento M&A"
+        "oportunidad": "Soluciones de circulante y confirming"
+      },
+      {
+        "empresa": "Canal Norte Retail Partners SL",
+        "descripcion": "Distribuidor omnicanal con inversion en digitalizacion de almacenes.",
+        "señal": "CAPEX tecnologico y optimizacion del ciclo de cobro.",
+        "ingresos_estimados": 22400000,
+        "empleados": 156,
+        "prioridad": "media",
+        "oportunidad": "Leasing tecnologico y financiacion de inversion"
+      }
+    ],
+    "Construccion": [
+      {
+        "empresa": "Construccion Holdings SL",
+        "descripcion": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+        "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+        "ingresos_estimados": 10000000,
+        "empleados": 120,
+        "prioridad": "media",
+        "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
+      },
+      {
+        "empresa": "InfraSur Proyectos EPC SA",
+        "descripcion": "Constructora EPC con contratos en renovables y obra civil regional.",
+        "señal": "Necesidad de avales y circulante para ejecutar nuevas adjudicaciones.",
+        "ingresos_estimados": 36200000,
+        "empleados": 238,
+        "prioridad": "alta",
+        "oportunidad": "Lineas de avales y financiacion de ejecucion"
+      },
+      {
+        "empresa": "UrbanBuild Rehabilitacion SL",
+        "descripcion": "Especialista en rehabilitacion urbana con pipeline creciente de contratos.",
+        "señal": "Incremento de plazos de cobro y necesidad de circulante operativo.",
+        "ingresos_estimados": 17800000,
+        "empleados": 121,
+        "prioridad": "media",
+        "oportunidad": "Factoring y linea de credito circulante"
+      }
+    ],
+    "Energia": [
+      {
+        "empresa": "Energia Holdings SL",
+        "descripcion": "Grupo energetico ficticio con UBO identificado, expansion de activos y necesidades de financiacion 2027.",
+        "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 4200000 EUR.",
+        "ingresos_estimados": 10000000,
+        "empleados": 120,
+        "prioridad": "media",
+        "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
+      },
+      {
+        "empresa": "SolarGrid Iberia Partners SL",
+        "descripcion": "Desarrollador fotovoltaico con cartera de proyectos utility en fase avanzada.",
+        "señal": "Cierre financiero pendiente y necesidad de project finance para 2027.",
+        "ingresos_estimados": 17200000,
+        "empleados": 98,
+        "prioridad": "alta",
+        "oportunidad": "Project finance y coberturas"
+      },
+      {
+        "empresa": "GreenStorage Assets SA",
+        "descripcion": "Operador de almacenamiento energetico para clientes industriales.",
+        "señal": "Expansion de activos con necesidad de deuda a medio y largo plazo.",
+        "ingresos_estimados": 12600000,
+        "empleados": 74,
+        "prioridad": "media",
+        "oportunidad": "Financiacion de activos y cobertura de tipos"
       }
     ],
     "Salud y Farmacia": [
       {
-        "empresa": "BioMédica Ibérica SA",
-        "descripcion": "Fabricante de dispositivos médicos de diagnóstico in vitro, con planta en Murcia.",
-        "señal": "Expansión de capacidad productiva con inversión prevista de 20M EUR. Búsqueda de financiación a largo plazo y posible socio industrial.",
-        "ingresos_estimados": 31000000,
-        "empleados": 240,
-        "prioridad": "alta",
-        "oportunidad": "Financiación CAPEX y asesoramiento para entrada de socio industrial"
-      },
-      {
-        "empresa": "Red Clínicas Meridional SL",
-        "descripcion": "Grupo de clínicas privadas especializadas en traumatología y fisioterapia en Andalucía.",
-        "señal": "Adquisición de dos nuevos centros en proceso de negociación. Interés en financiación de adquisiciones y leasing de equipamiento médico.",
-        "ingresos_estimados": 14500000,
-        "empleados": 180,
-        "prioridad": "media",
-        "oportunidad": "Financiación de adquisiciones y leasing médico"
-      },
-      {
         "empresa": "Hispania Biotech Labs SA",
-        "descripcion": "Compañía biotecnológica con foco en diagnóstico oncológico y expansión de capacidad productiva.",
-        "señal": "Entrada en fase precomercial de dos kits de diagnóstico y necesidades de financiación para escalado industrial en 2026.",
+        "descripcion": "Empresa biotech en expansiÃ³n internacional con pipeline de diagnÃ³stico oncolÃ³gico. KYC renovado en 2025 y documentaciÃ³n societaria completa.",
+        "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 6800000 EUR.",
         "ingresos_estimados": 20600000,
         "empleados": 132,
+        "prioridad": "media",
+        "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
+      },
+      {
+        "empresa": "MedAxis Diagnostica SA",
+        "descripcion": "Compania medtech con expansion de capacidad de produccion diagnostica.",
+        "señal": "CAPEX industrial y potencial internacionalizacion comercial.",
+        "ingresos_estimados": 24800000,
+        "empleados": 176,
         "prioridad": "alta",
-        "oportunidad": "Financiación de escalado industrial y asesoramiento estratégico"
+        "oportunidad": "Financiacion de expansion y comercio exterior"
+      },
+      {
+        "empresa": "IberPharma Specialty SL",
+        "descripcion": "Laboratorio especializado en terapias hospitalarias con fuerte crecimiento.",
+        "señal": "Necesidad de financiacion de circulante por ampliacion de catalogo.",
+        "ingresos_estimados": 19200000,
+        "empleados": 133,
+        "prioridad": "media",
+        "oportunidad": "Circulante estructurado y lineas de importacion"
       }
     ],
     "Agroindustria": [
       {
-        "empresa": "Cooperativa Olivarera del Sur SCOOP",
-        "descripcion": "Cooperativa olivarera con almazara propia y exportación directa a 22 países.",
-        "señal": "Proyecto de modernización de planta y certificación internacional. Necesita financiación a largo plazo y cobertura de tipo de cambio.",
-        "ingresos_estimados": 28000000,
-        "empleados": 95,
-        "prioridad": "media",
-        "oportunidad": "Financiación CAPEX y coberturas FX"
-      },
-      {
-        "empresa": "Bodegas Ribera del Viento SA",
-        "descripcion": "Bodega con denominación de origen en Ribera del Duero, con exportación activa en Europa y Asia.",
-        "señal": "Plan de expansión en mercado asiático con necesidad de financiación de circulante exportador y crédito documentario.",
-        "ingresos_estimados": 11200000,
-        "empleados": 62,
-        "prioridad": "media",
-        "oportunidad": "Financiación de comercio exterior y crédito documentario"
-      },
-      {
-        "empresa": "Mediterránea Foods Export SA",
-        "descripcion": "Exportador de conservas vegetales premium con presencia en UE, Reino Unido y Oriente Medio.",
-        "señal": "Plan de ampliación de planta y aumento de exportaciones; demanda de instrumentos de trade finance y coberturas FX.",
+        "empresa": "MediterrÃ¡nea Foods Export SA",
+        "descripcion": "Exportador agroalimentario con exposiciÃ³n a divisa USD y GBP. Historial crediticio positivo con operaciones de comercio exterior.",
+        "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 7600000 EUR.",
         "ingresos_estimados": 27900000,
         "empleados": 176,
+        "prioridad": "media",
+        "oportunidad": "Financiacion de crecimiento y optimizacion de estructura de deuda"
+      },
+      {
+        "empresa": "AgroVal Export Partners SL",
+        "descripcion": "Exportador agroalimentario con fuerte estacionalidad y ventas en Reino Unido.",
+        "señal": "Necesidad de coberturas FX y financiacion de campana 2027.",
+        "ingresos_estimados": 26800000,
+        "empleados": 167,
         "prioridad": "alta",
-        "oportunidad": "Trade finance, coberturas de divisa y financiación CAPEX"
+        "oportunidad": "Trade finance y coberturas de divisa"
+      },
+      {
+        "empresa": "CitrusChain Logistics SA",
+        "descripcion": "Operador de cadena fria para exportacion hortofruticola.",
+        "señal": "Tension de circulante por ampliacion de contratos de exportacion.",
+        "ingresos_estimados": 18300000,
+        "empleados": 129,
+        "prioridad": "media",
+        "oportunidad": "Factoring internacional y financiacion de campana"
       }
     ]
   },
   "historial": {
-    "Alcántara Energía Renovable SL": {
+    "AlcÃ¡ntara EnergÃ­a Renovable SL": {
       "operaciones_anteriores": 3,
       "incidencias": [],
       "impagos": 0,
@@ -3762,7 +1516,7 @@
       ],
       "resumen_historial": "Relacion historica con 9 operaciones registradas; impagos=2; incidencias=2."
     },
-    "Logística Transibérica SL": {
+    "LogÃ­stica TransibÃ©rica SL": {
       "operaciones_anteriores": 4,
       "incidencias": [
         "tension de liquidez Q2 2024"
@@ -3841,7 +1595,7 @@
       ],
       "resumen_historial": "Relacion historica con 5 operaciones registradas; impagos=0; incidencias=1."
     },
-    "Mediterránea Foods Export SA": {
+    "MediterrÃ¡nea Foods Export SA": {
       "operaciones_anteriores": 4,
       "incidencias": [],
       "impagos": 0,
@@ -3912,7 +1666,30 @@
           "estado": "vigente"
         }
       ],
-      "resumen_historial": "Cliente con relacion operativa activa desde 2022, sin impagos, con incidencias documentales menores ya regularizadas."
+      "resumen_historial": "Cliente con relacion operativa activa desde 2022, sin impagos, con incidencias documentales menores ya regularizadas.",
+      "cliente_desde": "2021-03-15",
+      "rating_interno": "A-",
+      "segmento": "Corporate Industrial",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 5200000,
+          "cuota_mensual_EUR": 88000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 2500000,
+          "dispuesto_EUR": 1300000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad internacional creciente y necesidad de optimizar estructura de deuda en 2027."
     },
     "Datalyx Iberia SL": {
       "operaciones_anteriores": 2,
@@ -3938,7 +1715,7 @@
       ],
       "resumen_historial": "Relacion historica con 2 operaciones registradas; impagos=0; incidencias=0."
     },
-    "Norte Logística SA": {
+    "Norte LogÃ­stica SA": {
       "operaciones_anteriores": 3,
       "incidencias": [],
       "impagos": 0,
@@ -3962,7 +1739,7 @@
       ],
       "resumen_historial": "Relacion historica con 3 operaciones registradas; impagos=0; incidencias=0."
     },
-    "Vertia Energía SL": {
+    "Vertia EnergÃ­a SL": {
       "operaciones_anteriores": 2,
       "incidencias": [],
       "impagos": 0,
@@ -3986,13 +1763,13 @@
       ],
       "resumen_historial": "Relacion historica con 2 operaciones registradas; impagos=0; incidencias=0."
     },
-    "BioMédica Ibérica SA": {
+    "BioMÃ©dica IbÃ©rica SA": {
       "operaciones_anteriores": 0,
       "incidencias": [],
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
     },
     "Bodegas Ribera del Viento SA": {
       "operaciones_anteriores": 0,
@@ -4000,15 +1777,15 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
     },
-    "Cadena Distribuidora Atlántica SL": {
+    "Cadena Distribuidora AtlÃ¡ntica SL": {
       "operaciones_anteriores": 0,
       "incidencias": [],
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
     },
     "Constructora Bermejo e Hijos SL": {
       "operaciones_anteriores": 0,
@@ -4016,7 +1793,7 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
     },
     "Cooperativa Olivarera del Sur SCOOP": {
       "operaciones_anteriores": 0,
@@ -4024,15 +1801,15 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
     },
-    "Ibérica Solar Partners SL": {
+    "IbÃ©rica Solar Partners SL": {
       "operaciones_anteriores": 0,
       "incidencias": [],
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
     },
     "Patrimonios Centrales SA": {
       "operaciones_anteriores": 0,
@@ -4040,7 +1817,7 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
     },
     "Promotora Levante Residencial SL": {
       "operaciones_anteriores": 0,
@@ -4048,331 +1825,561 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
     },
-    "Red Clínicas Meridional SL": {
+    "Red ClÃ­nicas Meridional SL": {
       "operaciones_anteriores": 0,
       "incidencias": [],
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relación histórica registrada con el banco."
+      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+    },
+    "MetalCore Zaragoza SL": {
+      "cliente_desde": "2019-03-15",
+      "rating_interno": "BBB",
+      "impagos": 0,
+      "segmento": "Corporate Industrial",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 3700000,
+          "cuota_mensual_EUR": 66000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 2100000,
+          "dispuesto_EUR": 1080000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "IberMold Precision SA": {
+      "cliente_desde": "20110-04-15",
+      "rating_interno": "A",
+      "impagos": 1,
+      "segmento": "Corporate Industrial",
+      "gestor": "Equipo Norte",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 3950000,
+          "cuota_mensual_EUR": 68000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 2250000,
+          "dispuesto_EUR": 1170000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "Tecnologia Holdings SL": {
+      "cliente_desde": "20111-05-15",
+      "rating_interno": "A-",
+      "impagos": 0,
+      "segmento": "Corporate Tecnologia",
+      "gestor": "Equipo Centro",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 4200000,
+          "cuota_mensual_EUR": 70000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 2400000,
+          "dispuesto_EUR": 1260000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "DataNexa Cloud Systems SL": {
+      "cliente_desde": "20112-06-15",
+      "rating_interno": "BBB+",
+      "impagos": 0,
+      "segmento": "Corporate Tecnologia",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 4450000,
+          "cuota_mensual_EUR": 72000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 2550000,
+          "dispuesto_EUR": 1350000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "VectorIA Analytics SA": {
+      "cliente_desde": "2017-07-15",
+      "rating_interno": "BBB",
+      "impagos": 1,
+      "segmento": "Corporate Tecnologia",
+      "gestor": "Equipo Norte",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 4700000,
+          "cuota_mensual_EUR": 74000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 2700000,
+          "dispuesto_EUR": 1440000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "Inmobiliario Holdings SL": {
+      "cliente_desde": "2018-08-15",
+      "rating_interno": "A",
+      "impagos": 0,
+      "segmento": "Corporate Inmobiliario",
+      "gestor": "Equipo Centro",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 4950000,
+          "cuota_mensual_EUR": 76000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 2850000,
+          "dispuesto_EUR": 1530000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "Urbana Levante Promociones SL": {
+      "cliente_desde": "2019-01-15",
+      "rating_interno": "A-",
+      "impagos": 0,
+      "segmento": "Corporate Inmobiliario",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 5200000,
+          "cuota_mensual_EUR": 78000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 3000000,
+          "dispuesto_EUR": 1620000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "Arcadia Patrimonio Prime SA": {
+      "cliente_desde": "20110-02-15",
+      "rating_interno": "BBB+",
+      "impagos": 1,
+      "segmento": "Corporate Inmobiliario",
+      "gestor": "Equipo Norte",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 5450000,
+          "cuota_mensual_EUR": 80000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 3150000,
+          "dispuesto_EUR": 1710000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "Retail y Distribucion Holdings SL": {
+      "cliente_desde": "20111-03-15",
+      "rating_interno": "BBB",
+      "impagos": 0,
+      "segmento": "Corporate Retail y Distribucion",
+      "gestor": "Equipo Centro",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 5700000,
+          "cuota_mensual_EUR": 82000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 3300000,
+          "dispuesto_EUR": 1800000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "FreshRoute Distribucion SA": {
+      "cliente_desde": "20112-04-15",
+      "rating_interno": "A",
+      "impagos": 0,
+      "segmento": "Corporate Retail y Distribucion",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 5950000,
+          "cuota_mensual_EUR": 84000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 3450000,
+          "dispuesto_EUR": 1890000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "Canal Norte Retail Partners SL": {
+      "cliente_desde": "2017-05-15",
+      "rating_interno": "A-",
+      "impagos": 1,
+      "segmento": "Corporate Retail y Distribucion",
+      "gestor": "Equipo Norte",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 6200000,
+          "cuota_mensual_EUR": 86000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 3600000,
+          "dispuesto_EUR": 1980000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "Construccion Holdings SL": {
+      "cliente_desde": "2018-06-15",
+      "rating_interno": "BBB+",
+      "impagos": 0,
+      "segmento": "Corporate Construccion",
+      "gestor": "Equipo Centro",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 6450000,
+          "cuota_mensual_EUR": 88000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 3750000,
+          "dispuesto_EUR": 2070000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "InfraSur Proyectos EPC SA": {
+      "cliente_desde": "2019-07-15",
+      "rating_interno": "BBB",
+      "impagos": 0,
+      "segmento": "Corporate Construccion",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 6700000,
+          "cuota_mensual_EUR": 90000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 3900000,
+          "dispuesto_EUR": 2160000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "UrbanBuild Rehabilitacion SL": {
+      "cliente_desde": "20110-08-15",
+      "rating_interno": "A",
+      "impagos": 1,
+      "segmento": "Corporate Construccion",
+      "gestor": "Equipo Norte",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 6950000,
+          "cuota_mensual_EUR": 92000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 4050000,
+          "dispuesto_EUR": 2250000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "Energia Holdings SL": {
+      "cliente_desde": "20111-01-15",
+      "rating_interno": "A-",
+      "impagos": 0,
+      "segmento": "Corporate Energia",
+      "gestor": "Equipo Centro",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 7200000,
+          "cuota_mensual_EUR": 94000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 4200000,
+          "dispuesto_EUR": 2340000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "SolarGrid Iberia Partners SL": {
+      "cliente_desde": "20112-02-15",
+      "rating_interno": "BBB+",
+      "impagos": 0,
+      "segmento": "Corporate Energia",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 7450000,
+          "cuota_mensual_EUR": 96000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 4350000,
+          "dispuesto_EUR": 2430000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "GreenStorage Assets SA": {
+      "cliente_desde": "2017-03-15",
+      "rating_interno": "BBB",
+      "impagos": 1,
+      "segmento": "Corporate Energia",
+      "gestor": "Equipo Norte",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 7700000,
+          "cuota_mensual_EUR": 98000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 4500000,
+          "dispuesto_EUR": 2520000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "MedAxis Diagnostica SA": {
+      "cliente_desde": "2019-05-15",
+      "rating_interno": "A-",
+      "impagos": 0,
+      "segmento": "Corporate Salud y Farmacia",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 8200000,
+          "cuota_mensual_EUR": 102000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 4800000,
+          "dispuesto_EUR": 2700000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "IberPharma Specialty SL": {
+      "cliente_desde": "20110-06-15",
+      "rating_interno": "BBB+",
+      "impagos": 1,
+      "segmento": "Corporate Salud y Farmacia",
+      "gestor": "Equipo Norte",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 8450000,
+          "cuota_mensual_EUR": 104000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 4950000,
+          "dispuesto_EUR": 2790000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "AgroVal Export Partners SL": {
+      "cliente_desde": "20112-08-15",
+      "rating_interno": "A",
+      "impagos": 0,
+      "segmento": "Corporate Agroindustria",
+      "gestor": "Equipo Levante",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 8950000,
+          "cuota_mensual_EUR": 108000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 5250000,
+          "dispuesto_EUR": 2970000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+    },
+    "CitrusChain Logistics SA": {
+      "cliente_desde": "2017-01-15",
+      "rating_interno": "A-",
+      "impagos": 1,
+      "segmento": "Corporate Agroindustria",
+      "gestor": "Equipo Norte",
+      "operaciones_activas": [
+        {
+          "tipo": "Prestamo corporativo",
+          "importe_EUR": 9200000,
+          "cuota_mensual_EUR": 110000,
+          "fecha_inicio": "2024-03-01",
+          "vencimiento": "2029-03-01",
+          "al_corriente": true
+        },
+        {
+          "tipo": "Linea de circulante",
+          "limite_EUR": 5400000,
+          "dispuesto_EUR": 3060000,
+          "fecha_inicio": "2025-01-10",
+          "vencimiento": "2026-12-31",
+          "al_corriente": true
+        }
+      ],
+      "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     }
-  },
-  "listas_sanciones": [
-    {
-      "nombre": "Baltic Industrial Exports Ltd",
-      "tipo": "sanciones",
-      "lista": "OFAC SDN",
-      "confianza": 0.94
-    },
-    {
-      "nombre": "Orion Petrochemical Trading FZE",
-      "tipo": "sanciones",
-      "lista": "EU Consolidated Sanctions",
-      "confianza": 0.91
-    },
-    {
-      "nombre": "Alejandro Vargas Ibarra",
-      "tipo": "PEP",
-      "lista": "PEP Internacional",
-      "confianza": 0.89
-    },
-    {
-      "nombre": "Carmen Hidalgo Serrano",
-      "tipo": "PEP",
-      "lista": "PEP Nacional",
-      "confianza": 0.93
-    },
-    {
-      "nombre": "Eastbridge Holdings PLC",
-      "tipo": "sanciones",
-      "lista": "UK Sanctions List",
-      "confianza": 0.92
-    },
-    {
-      "nombre": "Global Meridian Trade FZE",
-      "tipo": "sanciones",
-      "lista": "EU Consolidated Sanctions",
-      "confianza": 0.88
-    },
-    {
-      "nombre": "Iván Petrov Smirnov",
-      "tipo": "PEP",
-      "lista": "PEP Internacional",
-      "confianza": 0.86
-    }
-  ],
-  "noticias_empresas": [
-    {
-      "empresa": "Acme Componentes SL",
-      "titulo": "Acme Componentes inaugura su primera planta de producción en Polonia",
-      "fuente": "Expansión",
-      "fecha": "2025-05-15",
-      "resumen": "La empresa zaragozana completa su expansión internacional con una planta en Wroclaw con capacidad para 120 empleados y una inversión de 9 millones de euros."
-    },
-    {
-      "empresa": "Acme Componentes SL",
-      "titulo": "Acme Componentes consolida su posición como proveedor de primer nivel para la automoción alemana",
-      "fuente": "El Economista",
-      "fecha": "2025-12-01",
-      "resumen": "La empresa ha renovado y ampliado sus contratos con dos fabricantes alemanes de primer nivel, asegurando ingresos por más de 15 millones hasta 2027."
-    },
-    {
-      "empresa": "Alcántara Energía Renovable SL",
-      "titulo": "Alcántara Energía obtiene la autorización administrativa para su segunda planta en Badajoz",
-      "fuente": "Cinco Días",
-      "fecha": "2025-02-05",
-      "resumen": "La Junta de Extremadura ha concedido la autorización definitiva para la planta de 45 MW que la empresa tiene previsto construir en el término municipal de Mérida."
-    },
-    {
-      "empresa": "Alcántara Energía Renovable SL",
-      "titulo": "Alcántara Energía impulsará una nueva planta fotovoltaica en Extremadura",
-      "fuente": "El Economista",
-      "fecha": "2025-07-14",
-      "resumen": "La compañía invertirá más de 60 millones de euros en una nueva planta que incrementará su capacidad instalada en un 35%. El proyecto está en fase de cierre financiero."
-    },
-    {
-      "empresa": "Atlas Infra Rail SL",
-      "titulo": "Atlas Infra Rail se adjudica dos contratos ferroviarios por 64 millones",
-      "fuente": "Expansión",
-      "fecha": "2026-01-30",
-      "resumen": "La empresa andaluza refuerza su cartera con proyectos de modernización de infraestructura ferroviaria en Andalucía y Castilla-La Mancha."
-    },
-    {
-      "empresa": "BioMédica Ibérica SA",
-      "titulo": "BioMédica Ibérica SA: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Salud y Farmacia con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "BioMédica Ibérica SA",
-      "titulo": "BioMédica Ibérica SA: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Bodegas Ribera del Viento SA",
-      "titulo": "Bodegas Ribera del Viento SA: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Agroindustria con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "Bodegas Ribera del Viento SA",
-      "titulo": "Bodegas Ribera del Viento SA: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Cadena Distribuidora Atlántica SL",
-      "titulo": "Cadena Distribuidora Atlántica SL: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Retail y Distribución con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "Cadena Distribuidora Atlántica SL",
-      "titulo": "Cadena Distribuidora Atlántica SL: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Constructora Bermejo e Hijos SL",
-      "titulo": "Constructora Bermejo e Hijos SL: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Construcción con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "Constructora Bermejo e Hijos SL",
-      "titulo": "Constructora Bermejo e Hijos SL: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Cooperativa Olivarera del Sur SCOOP",
-      "titulo": "Cooperativa Olivarera del Sur SCOOP: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Agroindustria con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "Cooperativa Olivarera del Sur SCOOP",
-      "titulo": "Cooperativa Olivarera del Sur SCOOP: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Datalyx Iberia SL",
-      "titulo": "Datalyx Iberia recibe inversión de Nordic Capital para acelerar su expansión en banca",
-      "fuente": "Expansión",
-      "fecha": "2025-11-20",
-      "resumen": "El fondo de capital riesgo nórdico entra en el capital de la empresa barcelonesa con una participación del 35%, valorando la compañía en 42 millones de euros."
-    },
-    {
-      "empresa": "Datalyx Iberia SL",
-      "titulo": "Datalyx firma contrato con tres entidades financieras españolas de primer nivel",
-      "fuente": "CincoDías",
-      "fecha": "2026-03-05",
-      "resumen": "La empresa de analítica de datos cerrará 2026 con más de 20 millones en ingresos anuales recurrentes tras la incorporación de tres nuevos clientes institucionales."
-    },
-    {
-      "empresa": "Distribuciones Monteverde SA",
-      "titulo": "Monteverde renegocia su deuda tras varios trimestres de tensión de liquidez",
-      "fuente": "La Información",
-      "fecha": "2024-12-12",
-      "resumen": "La compañía ha alcanzado un acuerdo con varias entidades para reestructurar su deuda financiera y evitar incumplimientos. El proceso implica una quita parcial de intereses."
-    },
-    {
-      "empresa": "Distribuciones Monteverde SA",
-      "titulo": "Distribuciones Monteverde registra su tercer año consecutivo de caída de ingresos",
-      "fuente": "El Economista",
-      "fecha": "2025-04-30",
-      "resumen": "La distribuidora valenciana cerró 2024 con unos ingresos de 33 millones, un 7% menos que en 2023. La dirección apunta a la pérdida de contratos con grandes cadenas como causa principal."
-    },
-    {
-      "empresa": "Grupo Caldas Infraestructuras SA",
-      "titulo": "Sobrecostes en proyectos de obra pública tensionan márgenes de Grupo Caldas",
-      "fuente": "Cinco Días",
-      "fecha": "2025-03-22",
-      "resumen": "La compañía ha reconocido desviaciones relevantes en varios contratos, impactando negativamente en su rentabilidad. El EBITDA cayó un 35% en 2024."
-    },
-    {
-      "empresa": "Grupo Caldas Infraestructuras SA",
-      "titulo": "Grupo Caldas gana el contrato de ampliación de la A-4 por 87 millones",
-      "fuente": "El País",
-      "fecha": "2025-06-01",
-      "resumen": "El grupo constructor se adjudica un nuevo contrato con el Ministerio de Transportes, lo que aliviaría su cartera de pedidos para 2026."
-    },
-    {
-      "empresa": "Hispania Biotech Labs SA",
-      "titulo": "Hispania Biotech acelera su expansión con nueva línea de producción en Valencia",
-      "fuente": "CincoDías",
-      "fecha": "2026-02-19",
-      "resumen": "La compañía invertirá 14 millones de euros para duplicar su capacidad de producción de kits de diagnóstico durante los próximos 18 meses."
-    },
-    {
-      "empresa": "Ibérica Solar Partners SL",
-      "titulo": "Ibérica Solar Partners SL: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Energía con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "Ibérica Solar Partners SL",
-      "titulo": "Ibérica Solar Partners SL: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Logística Transibérica SL",
-      "titulo": "El encarecimiento del combustible impacta en los costes del sector logístico",
-      "fuente": "Expansión",
-      "fecha": "2025-02-18",
-      "resumen": "Empresas del sector, incluyendo Transibérica, han visto reducidos sus márgenes debido al incremento de costes operativos. El EBITDA del sector cayó de media un 15% en 2024."
-    },
-    {
-      "empresa": "Logística Transibérica SL",
-      "titulo": "Logística Transibérica amplía su red de almacenes en el corredor mediterráneo",
-      "fuente": "Logística Profesional",
-      "fecha": "2025-09-10",
-      "resumen": "La empresa aragonesa ha inaugurado un nuevo almacén de 12.000 m² en Valencia para reforzar su presencia en el Arco Mediterráneo. La inversión asciende a 3,5 millones de euros."
-    },
-    {
-      "empresa": "Mediterránea Foods Export SA",
-      "titulo": "Mediterránea Foods incrementa un 22% sus exportaciones en 2025",
-      "fuente": "El Economista",
-      "fecha": "2026-03-11",
-      "resumen": "El grupo murciano prevé ampliar planta en 2026 para atender mayor demanda internacional y reducir cuellos de botella logísticos."
-    },
-    {
-      "empresa": "Nexuria Tech Solutions SL",
-      "titulo": "Nexuria cierra una ronda de financiación de 8 millones para expandirse en Europa",
-      "fuente": "Expansión",
-      "fecha": "2025-10-03",
-      "resumen": "La startup tecnológica busca acelerar su crecimiento en mercados internacionales y ampliar su equipo de producto. La ronda fue liderada por Vertex Ventures Spain."
-    },
-    {
-      "empresa": "Nexuria Tech Solutions SL",
-      "titulo": "Nexuria lanza su plataforma de gestión financiera para pymes en Portugal y Francia",
-      "fuente": "CincoDías",
-      "fecha": "2026-01-18",
-      "resumen": "La empresa barcelonesa expande su presencia internacional tras completar la ronda de financiación. Prevé alcanzar los 8 millones de euros en ingresos recurrentes en 2026."
-    },
-    {
-      "empresa": "Norte Logística SA",
-      "titulo": "Norte Logística lanza su servicio de transporte intermodal ferroviario en el corredor atlántico",
-      "fuente": "Logística Profesional",
-      "fecha": "2025-04-08",
-      "resumen": "La empresa vasca amplía su oferta con soluciones ferroviarias para reducir la huella de carbono de sus clientes industriales. La inversión en material rodante supera los 4 millones."
-    },
-    {
-      "empresa": "Patrimonios Centrales SA",
-      "titulo": "Patrimonios Centrales SA: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Inmobiliario con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "Patrimonios Centrales SA",
-      "titulo": "Patrimonios Centrales SA: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Promotora Levante Residencial SL",
-      "titulo": "Promotora Levante Residencial SL: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Inmobiliario con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "Promotora Levante Residencial SL",
-      "titulo": "Promotora Levante Residencial SL: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Red Clínicas Meridional SL",
-      "titulo": "Red Clínicas Meridional SL: seguimiento de crecimiento y posicion sectorial",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-04-10",
-      "resumen": "Se observan senales de actividad en Salud y Farmacia con foco en expansion y eficiencia operativa."
-    },
-    {
-      "empresa": "Red Clínicas Meridional SL",
-      "titulo": "Red Clínicas Meridional SL: analisis publico de entorno competitivo",
-      "fuente": "DeepResearch Mock Feed",
-      "fecha": "2026-05-20",
-      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
-    },
-    {
-      "empresa": "Vertia Energía SL",
-      "titulo": "Vertia Energía firma contratos de eficiencia energética por 28 millones en 2025",
-      "fuente": "El Economista",
-      "fecha": "2025-08-22",
-      "resumen": "La empresa madrileña ha cerrado cinco nuevos proyectos de eficiencia energética con grandes plantas industriales en Castilla y León y Aragón, impulsando su crecimiento al 45%."
-    }
-  ],
-  "catalogo_fuentes_screening": {
-    "estado_fuente_local": "parcial_demo",
-    "fuentes_objetivo_recomendadas": [
-      "UE Consolidated",
-      "OFAC SDN",
-      "ONU",
-      "HMT UK",
-      "listas internas de cumplimiento"
-    ],
-    "nota": "Cuando la fuente local no sea concluyente, repetir screening en herramienta operativa y documentar evidencia manual."
   }
 }

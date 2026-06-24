@@ -23,6 +23,18 @@
     </div>
   </div>
 
+  {% if run.result.get('analyst_notes') %}
+  <div class="card" style="margin-bottom: 20px;">
+    <div class="card__header">
+      <h2>Notas del gestor usadas en la búsqueda</h2>
+      <p>Contexto adicional incorporado en el análisis de oportunidades</p>
+    </div>
+    <div class="card__body">
+      <p style="white-space: pre-wrap; margin: 0; font-size: 14px; line-height: 1.7;">{{ run.result.get('analyst_notes') }}</p>
+    </div>
+  </div>
+  {% endif %}
+
   <div class="run-tabs" role="tablist">
     <button class="run-tab is-active" data-tab="propuesta">Propuesta final</button>
     <button class="run-tab" data-tab="oportunidades">1 · Oportunidades</button>
@@ -74,6 +86,7 @@
               <th>Empresa</th>
               <th>Motivo</th>
               <th>Prioridad</th>
+              <th>Por qué esta prioridad</th>
             </tr>
           </thead>
           <tbody>
@@ -95,10 +108,40 @@
                   <span class="badge badge-pass">Baja</span>
                 {% endif %}
               </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-priority-detail"
+                  data-empresa="{{ o.get('empresa', '') }}"
+                  data-prioridad="{{ o.get('prioridad', 'media') }}"
+                  data-justificacion="{{ o.get('justificacion_prioridad', o.get('motivo', 'Sin detalle')) }}"
+                >
+                  Ver detalle
+                </button>
+              </td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="priority-modal" id="priority-modal" aria-hidden="true">
+    <div class="priority-modal__backdrop" data-close-modal="1"></div>
+    <div class="priority-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="priority-modal-title">
+      <div class="priority-modal__header">
+        <h3 id="priority-modal-title">Detalle de prioridad</h3>
+        <button type="button" class="priority-modal__close" aria-label="Cerrar" data-close-modal="1">×</button>
+      </div>
+      <div class="priority-modal__body">
+        <p class="priority-modal__meta">
+          <strong>Empresa:</strong> <span id="priority-modal-company">--</span>
+        </p>
+        <p class="priority-modal__meta">
+          <strong>Prioridad:</strong> <span id="priority-modal-level">--</span>
+        </p>
+        <div class="priority-modal__reason" id="priority-modal-reason">Sin detalle.</div>
       </div>
     </div>
   </div>
@@ -426,5 +469,43 @@
 
   renderMarkdown('propuesta-markdown', propuestaMd,
     '*No se ha generado una propuesta narrativa para esta ejecución.*');
+
+  const priorityModal = document.getElementById('priority-modal');
+  const priorityModalCompany = document.getElementById('priority-modal-company');
+  const priorityModalLevel = document.getElementById('priority-modal-level');
+  const priorityModalReason = document.getElementById('priority-modal-reason');
+
+  function openPriorityModal(empresa, prioridad, justificacion) {
+    priorityModalCompany.textContent = empresa || '--';
+    priorityModalLevel.textContent = (prioridad || 'media').toUpperCase();
+    priorityModalReason.textContent = justificacion || 'Sin detalle.';
+    priorityModal.classList.add('is-open');
+    priorityModal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closePriorityModal() {
+    priorityModal.classList.remove('is-open');
+    priorityModal.setAttribute('aria-hidden', 'true');
+  }
+
+  document.querySelectorAll('.btn-priority-detail').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      openPriorityModal(
+        btn.dataset.empresa,
+        btn.dataset.prioridad,
+        btn.dataset.justificacion
+      );
+    });
+  });
+
+  priorityModal.querySelectorAll('[data-close-modal="1"]').forEach((el) => {
+    el.addEventListener('click', closePriorityModal);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && priorityModal.classList.contains('is-open')) {
+      closePriorityModal();
+    }
+  });
 </script>
 {% endblock %}

@@ -1,0 +1,21 @@
+{
+  "perfil": "Hispania Biotech Labs SA es una compañía del sector biotech/laboratorio con una trayectoria reciente de crecimiento sostenido de ingresos. Presenta mejora gradual de la rentabilidad operativa (expansión de márgenes) y una base de activos en aumento, sugerida por el crecimiento de amortizaciones.",
+  "situacion_actual": "Entre 2022 y 2024 la empresa crece a doble dígito en ingresos (14,8m€ → 20,6m€) y mejora EBITDA (2,1m€ → 3,2m€), elevando el margen EBITDA (~14,2% → ~15,5%). La deuda financiera aumenta (5,2m€ → 6,8m€), pero el apalancamiento mejora (Deuda/EBITDA ~2,5x → ~2,1x); a la vez, suben los gastos financieros (280k€ → 390k€). No constan operaciones activas ni impagos; antigüedad y rating interno no disponibles.",
+  "necesidades_potenciales": [
+    "Financiación para sostener el crecimiento y posibles inversiones en capacidad/lab o intangibles (consistente con el aumento de amortizaciones).",
+    "Refinanciación u optimización de estructura de deuda para contener el coste financiero ante el aumento de gastos financieros.",
+    "Clarificación y, en su caso, financiación de CAPEX y necesidades de caja (no reportadas explícitamente) para validar la sostenibilidad del plan de expansión."
+  ],
+  "riesgos": [
+    "Visibilidad limitada sobre CAPEX y generación de caja, lo que dificulta confirmar necesidades reales de financiación y capacidad de repago.",
+    "Incremento del coste financiero (gastos financieros al alza) que puede presionar el resultado si continúan subiendo tipos o aumenta la deuda.",
+    "Dependencia de mantener el ritmo de crecimiento para sostener la mejora de apalancamiento; una desaceleración podría deteriorar métricas (Deuda/EBITDA)."
+  ],
+  "talking_points": [
+    "Confirmar drivers del crecimiento 2023–2024 (+18,2% y +17,7% YoY): mix de clientes/productos, recurrencia y pipeline comercial.",
+    "Entender el plan de inversión: CAPEX previsto, expansión de capacidad/lab e intangibles (aumento de amortizaciones 444k€ → 618k€) y calendario.",
+    "Revisar estructura de deuda actual (6,8m€) y objetivos: vencimientos, tipo fijo/variable y opciones de refinanciación para reducir/estabilizar el coste financiero (280k€ → 390k€).",
+    "Validar generación de caja y necesidades de circulante: si el crecimiento está consumiendo caja y qué colchón de liquidez requieren.",
+    "Alinear métricas objetivo: nivel de apalancamiento deseado (hoy ~2,1x Deuda/EBITDA) y umbrales internos para financiar la siguiente fase de crecimiento."
+  ]
+}

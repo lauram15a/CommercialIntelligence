@@ -565,9 +565,47 @@ def chat_completion(messages, profile: str = "gpt52", tools=None, tool_choice=No
     client = get_azure_client(profile)
     deployment = get_deployment_name(profile)
 
+    normalized_messages = list(messages or [])
+
+    # Azure/OpenAI requires that, when response_format=json_object is requested,
+    # at least one message explicitly mentions "json".
+    response_format = kwargs.get("response_format")
+    if isinstance(response_format, dict) and response_format.get("type") == "json_object":
+        def _contains_json_token(content) -> bool:
+            if isinstance(content, str):
+                return "json" in content.lower()
+            if isinstance(content, list):
+                for part in content:
+                    if isinstance(part, dict):
+                        text_value = part.get("text")
+                        if isinstance(text_value, str) and "json" in text_value.lower():
+                            return True
+            return False
+
+        has_json_hint = any(
+            isinstance(msg, dict) and _contains_json_token(msg.get("content"))
+            for msg in normalized_messages
+        )
+
+        if not has_json_hint:
+            json_hint = "Responde en formato json valido."
+            if (
+                normalized_messages
+                and isinstance(normalized_messages[0], dict)
+                and normalized_messages[0].get("role") == "system"
+                and isinstance(normalized_messages[0].get("content"), str)
+            ):
+                first = dict(normalized_messages[0])
+                first["content"] = f"{first['content'].rstrip()}\n\n{json_hint}"
+                normalized_messages[0] = first
+            else:
+                normalized_messages.insert(0, {"role": "system", "content": json_hint})
+
+            logger.info("[LLM] Added json hint to messages for response_format=json_object")
+
     params = {
         "model": deployment,
-        "messages": messages,
+        "messages": normalized_messages,
         **kwargs,
     }
     if tools:

@@ -1,0 +1,210 @@
+{
+  "run_id": "20260624134148",
+  "sector": "Industrial",
+  "company_name": "Acme Componentes SL",
+  "fuente": "interna",
+  "geografia": null,
+  "analyst_notes": "Foco en oportunidades de financiacion 2027 (refinanciacion, CAPEX, circulante) y posibles necesidades de advisory.",
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Industrial",
+    "oportunidades": [
+      {
+        "empresa": "Acme Componentes SL",
+        "motivo": "La expansión con nueva planta en Polonia (2025) sugiere CAPEX relevante y posible necesidad de estructurar financiación y/o circulante asociado. Además, se identifica una potencial refinanciación en 2027 con deuda estimada de 12000000 EUR, lo que abre ventana para refinanciación, extensión de vencimientos y optimización de coste/estructura.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "Existe una señal explícita de necesidad próxima (2027) ligada a CAPEX/refinanciación y un importe de deuda ya estimado, lo que la convierte en una oportunidad accionable frente a casos sin evento financiero identificado. Adicionalmente, es cliente desde 2021 y sin incidencias KYC, reduciendo fricción de ejecución.",
+        "ingresos_estimados": 42000000,
+        "empleados": 310,
+        "historial_banco": "Cliente desde N/D. Rating interno: N/D. Operaciones activas: 0. Impagos: 0.",
+        "_historial_completo": {
+          "operaciones_anteriores": 5,
+          "incidencias": [
+            "Discrepancia documental puntual en poderes de firma (subsanada en 2023)",
+            "Entrega tardia de cuentas auditadas 2022 (10 dias de retraso)"
+          ],
+          "impagos": 0,
+          "productos_contratados": [
+            "Linea de circulante 2022",
+            "Prestamo CAPEX para automatizacion de planta",
+            "Leasing industrial",
+            "Cobertura de tipo de interes",
+            "Confirming proveedores"
+          ],
+          "operaciones_detalle": [
+            {
+              "fecha": "2022-04-15",
+              "tipo": "linea_circulante",
+              "importe": 2500000,
+              "estado": "cancelada_ok"
+            },
+            {
+              "fecha": "2023-02-10",
+              "tipo": "prestamo_capex",
+              "importe": 3200000,
+              "estado": "vigente_al_corriente"
+            },
+            {
+              "fecha": "2023-10-03",
+              "tipo": "leasing_maquinaria",
+              "importe": 1400000,
+              "estado": "vigente_al_corriente"
+            },
+            {
+              "fecha": "2024-03-21",
+              "tipo": "confirming",
+              "importe": 900000,
+              "estado": "vigente_al_corriente"
+            },
+            {
+              "fecha": "2024-11-12",
+              "tipo": "cobertura_tipos",
+              "importe": 12000000,
+              "estado": "vigente"
+            }
+          ],
+          "resumen_historial": "Cliente con relacion operativa activa desde 2022, sin impagos, con incidencias documentales menores ya regularizadas."
+        }
+      }
+    ],
+    "resumen": "En Industrial, las mejores oportunidades 2027 suelen concentrarse en compañías con expansión productiva (CAPEX) y eventos de refinanciación identificables. En este universo, Acme Componentes SL destaca por combinar crecimiento (nueva planta) con una necesidad financiera temporalmente definida (refinanciación 2027)."
+  },
+  "earnings_summary": "Acme Componentes SL muestra un crecimiento sostenido de ingresos: 32,0m€ (2022) → 38,0m€ (2023, +18,8% interanual) → 42,0m€ (2024, +10,5%), indicando desaceleración del ritmo pero manteniendo expansión. La rentabilidad operativa mejora: el margen EBITDA pasa de 11,9% (3,8m€/32,0m€) en 2022 a 12,9% en 2023 y 13,8% en 2024, y el margen EBIT sube de 8,9% a 9,9% y 10,8%, respectivamente, pese al aumento de gastos de explotación (3,84m€ → 5,04m€). En paralelo, las amortizaciones crecen (0,96m€ → 1,26m€), lo que sugiere mayor base de activos; no obstante, no hay dato explícito de CAPEX para confirmar el nivel de inversión y su intensidad. El endeudamiento aumenta de 8,0m€ a 10,5m€ y 12,0m€, elevando la deuda/EBITDA de ~2,1x (2022) a ~2,1x (2023) y ~2,1x (2024), mientras los gastos financieros suben de 0,45m€ a 0,61m€, señalando mayor coste financiero absoluto. Aun así, el patrimonio neto se refuerza (6,8m€ → 9,9m€) y el beneficio neto crece (1,79m€ → 2,95m€), apoyando la capacidad de absorción de deuda.\n\nLa compañía presenta crecimiento con mejora de márgenes y un apalancamiento en aumento pero estable en términos de deuda/EBITDA, lo que puede implicar necesidad de financiación para sostener inversiones/crecimiento y optimizar su estructura de capital.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos",
+        "valor": "32,0m€ (2022) → 38,0m€ (2023, +18,8% interanual) → 42,0m€ (2024, +10,5%)"
+      },
+      {
+        "nombre": "Margen EBITDA",
+        "valor": "11,9% (2022) → 12,9% (2023) → 13,8% (2024)"
+      },
+      {
+        "nombre": "Margen EBIT",
+        "valor": "8,9% (2022) → 9,9% (2023) → 10,8% (2024)"
+      },
+      {
+        "nombre": "Deuda / EBITDA",
+        "valor": "~2,1x (2022) → ~2,1x (2023) → ~2,1x (2024)"
+      },
+      {
+        "nombre": "Deuda financiera",
+        "valor": "8,0m€ (2022) → 10,5m€ (2023) → 12,0m€ (2024)"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Crecimiento de ingresos sostenido con desaceleración del ritmo (de +18,8% a +10,5%).",
+      "Mejora progresiva de la rentabilidad operativa (expansión de márgenes EBITDA y EBIT).",
+      "Aumento de amortizaciones, sugiriendo mayor base de activos (posible ciclo inversor, sin CAPEX explícito).",
+      "Apalancamiento nominal al alza, pero estable en términos de deuda/EBITDA (~2,1x), con mayor gasto financiero absoluto."
+    ],
+    "interpretacion": "Acme Componentes SL combina crecimiento con expansión de márgenes, lo que apunta a una mejora de eficiencia/mezcla pese al aumento de gastos de explotación. El endeudamiento aumenta, pero el ratio deuda/EBITDA se mantiene estable, mientras el mayor gasto financiero refleja un coste financiero absoluto más alto. Dado el incremento de amortizaciones (posible inversión) y el crecimiento, podría requerir financiación adicional para sostener inversiones y optimizar la estructura de capital, apoyándose en el refuerzo de patrimonio neto y el aumento del beneficio neto.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Acme Componentes SL es una compañía industrial (componentes) con crecimiento sostenido de ingresos entre 2022 y 2024 (32,0m€ → 42,0m€) y mejora progresiva de márgenes operativos. Presenta una base de activos en expansión (amortizaciones al alza), compatible con un ciclo inversor y crecimiento orgánico.",
+    "situacion_actual": "La empresa mantiene expansión, aunque con desaceleración del crecimiento interanual (+18,8% en 2023 vs +10,5% en 2024), y mejora de rentabilidad (margen EBITDA 11,9% → 13,8%). El endeudamiento aumenta (8,0m€ → 12,0m€) pero el apalancamiento se mantiene estable en deuda/EBITDA (~2,1x), con mayor gasto financiero absoluto; además, se anticipa CAPEX relevante por nueva planta en Polonia (2025) y una potencial refinanciación en 2027 (deuda estimada 12,0m€).",
+    "necesidades_potenciales": [
+      "Financiación de CAPEX para la nueva planta en Polonia (2025): estructuración de deuda de inversión y calendario de desembolsos.",
+      "Financiación de circulante asociada al crecimiento/expansión (líneas de crédito, confirming/factoring u otras soluciones de working capital).",
+      "Refinanciación 2027 (deuda estimada 12,0m€): extensión de vencimientos, optimización de coste y estructura (posible sindicación/club deal según tamaño final).",
+      "Revisión de estructura de capital para sostener el crecimiento manteniendo métricas de apalancamiento en niveles objetivo."
+    ],
+    "riesgos": [
+      "Ejecución del proyecto de expansión (planta en Polonia): riesgo de desviaciones de CAPEX/plazos y presión temporal sobre liquidez.",
+      "Aumento del coste financiero: los gastos financieros suben (0,45m€ → 0,61m€), lo que puede tensionar cobertura si el entorno de tipos se mantiene elevado o si sube la deuda.",
+      "Crecimiento desacelerando: menor ritmo de ventas podría afectar la capacidad de absorber mayor endeudamiento si el plan de expansión no se materializa según lo previsto.",
+      "Visibilidad limitada del CAPEX real (no hay dato explícito), lo que dificulta dimensionar necesidades y estructura óptima de financiación."
+    ],
+    "talking_points": [
+      "Plan de inversión 2025 (Polonia): importe total, calendario, hitos, proveedores y cómo se financiará (deuda vs recursos propios).",
+      "Necesidades de circulante ligadas al crecimiento: evolución de cobros/pagos, inventarios y si prevén picos de caja durante la puesta en marcha.",
+      "Mapa de deuda actual y vencimientos: confirmar estructura, garantías, covenants y preparar con antelación la ventana de refinanciación 2027 (12,0m€ estimados).",
+      "Evolución de márgenes y drivers: qué explica la mejora de EBITDA/EBIT y cómo se protege en el escenario de expansión.",
+      "Objetivo de apalancamiento: con deuda/EBITDA ~2,1x estable, validar tolerancia a mayor deuda durante el CAPEX y plan de desapalancamiento posterior."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Acme Componentes SL (Industrial) – Financiación de expansión 2025 y preparación de refinanciación 2027",
+    "subtitulo": "Estructurar una solución integral para CAPEX + circulante de la nueva planta en Polonia (2025) y optimizar/anticipar la refinanciación estimada de 12,0m€ en 2027.",
+    "oportunidad_detectada": "La puesta en marcha de una nueva planta en Polonia en 2025 sugiere un pico de inversión (CAPEX) y necesidades de liquidez asociadas (desembolsos por hitos, ramp-up operativo y potencial aumento de circulante). En paralelo, la existencia de una ventana de refinanciación en 2027 (deuda estimada 12,0m€) permite planificar con antelación una extensión de vencimientos y una optimización de coste/estructura, reduciendo riesgo de ejecución y mejorando flexibilidad financiera.",
+    "contexto_financiero": [
+      "Crecimiento de ingresos con desaceleración: 32,0m€ (2022) → 38,0m€ (2023, +18,8%) → 42,0m€ (2024, +10,5%), manteniendo expansión pero con menor ritmo.",
+      "Mejora de rentabilidad: margen EBITDA 11,9% (2022) → 12,9% (2023) → 13,8% (2024); margen EBIT 8,9% → 9,9% → 10,8%, lo que respalda capacidad de servicio de deuda.",
+      "Endeudamiento al alza pero apalancamiento estable: deuda financiera 8,0m€ (2022) → 10,5m€ (2023) → 12,0m€ (2024) con deuda/EBITDA ~2,1x; aumento de gasto financiero (0,45m€ → 0,61m€) sugiere foco en coste y estructura."
+    ],
+    "encaje_productos": [
+      "Financiación de inversión (CAPEX): préstamo a largo plazo / financiación de proyecto con calendario de disposiciones por hitos, posible tramo puente a subvenciones y estructura de amortización alineada al ramp-up.",
+      "Soluciones de circulante: línea revolving, financiación de inventarios, confirming/factoring sin recurso (según elegibilidad) y herramientas de gestión de pagos/cobros para absorber picos de caja durante la puesta en marcha.",
+      "Refinanciación 2027: refinanciación bilateral/club deal o sindicación (según tamaño final), extensión de vencimientos, posible combinación de tramo amortizable + tramo bullet, y revisión de covenants para acomodar el ciclo inversor.",
+      "Coberturas de tipo de interés y divisa: estrategia de cobertura para mitigar volatilidad de tipos y exposición operativa/financiera asociada a Polonia (según estructura de costes e ingresos)."
+    ],
+    "comparables": [
+      "Fabricantes europeos de componentes industriales (mid-market) con expansión internacional y márgenes EBITDA ~10–15% [UNSOURCED]",
+      "Proveedores Tier-2/Tier-3 de componentes para automoción/maquinaria con apalancamiento objetivo ~2,0–3,0x Deuda/EBITDA [UNSOURCED]"
+    ],
+    "argumentos_valor": [
+      "Enfoque integral (CAPEX + circulante + refinanciación): una estructura coordinada reduce fricción operativa, evita soluciones ad-hoc y mejora visibilidad de liquidez durante el ramp-up de la planta.",
+      "Preparación temprana de 2027: iniciar ahora el trabajo de diagnóstico (deuda, garantías, covenants, plan industrial) permite llegar a mercado con narrativa sólida, mayor opcionalidad de estructura y menor riesgo de ejecución.",
+      "Estructura alineada al negocio: amortización y covenants calibrados a la curva de puesta en marcha (capex y capital circulante) para proteger flexibilidad sin comprometer disciplina financiera.",
+      "Optimización de coste y resiliencia: revisión de mix fijo/variable, coberturas y potencial diversificación de fuentes (banca comercial + alternativas) para contener el coste financiero y mejorar la cobertura."
+    ],
+    "proximos_pasos": [
+      "Sesión de trabajo (60–90 min) para dimensionar el plan Polonia: CAPEX total, calendario de hitos, proveedores, subvenciones/incentivos, necesidades de circulante y supuestos de ramp-up.",
+      "Recopilación de información y diagnóstico: estructura de deuda actual, vencimientos, garantías, covenants, detalle de working capital (DSO/DPO/DIO) y sensibilidad de caja (base/downside).",
+      "Propuesta de estructura y term sheet indicativo: alternativas de financiación (inversión + revolving + circulante), escenarios de covenants y plan de coberturas; definición de ruta para refinanciación 2027 (timing, documentación y estrategia de mercado)."
+    ],
+    "narrativa_markdown": "Acme Componentes SL combina crecimiento sostenido (32,0m€ en 2022 a 42,0m€ en 2024) con una mejora progresiva de márgenes (EBITDA 11,9% → 13,8%), lo que sugiere una base operativa más eficiente y capacidad creciente de generación de resultados. En paralelo, el endeudamiento aumenta (8,0m€ → 12,0m€) manteniendo un apalancamiento estable en torno a ~2,1x Deuda/EBITDA, aunque con mayor gasto financiero absoluto, reforzando la conveniencia de optimizar coste y estructura.\n\nLa expansión con una nueva planta en Polonia en 2025 anticipa un ciclo inversor relevante y, típicamente, un incremento temporal de necesidades de liquidez por desembolsos de CAPEX, ramp-up productivo y potencial aumento de capital circulante (inventarios, plazos de cobro/pago, picos de caja). Una solución de financiación bien estructurada —con disposiciones por hitos y amortización alineada al plan industrial— puede reducir el riesgo de ejecución y proteger la flexibilidad durante la puesta en marcha.\n\nAdicionalmente, la potencial refinanciación en 2027 (deuda estimada 12,0m€) abre una ventana para preparar con antelación una extensión de vencimientos y una revisión de covenants, evitando concentraciones de riesgo y mejorando la resiliencia financiera. Abordar ahora el diagnóstico (deuda, garantías, covenants, working capital y sensibilidades) permite llegar a mercado con una narrativa robusta y mayor opcionalidad de estructura.\n\nProponemos un enfoque integral que combine financiación de inversión (CAPEX), soluciones de circulante (línea revolving y herramientas de financiación de cobros/pagos) y una hoja de ruta para la refinanciación 2027, incluyendo una estrategia de coberturas de tipo y, si aplica, divisa. El objetivo es sostener el crecimiento, absorber el ciclo inversor y optimizar el perfil de vencimientos y el coste financiero.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {
+    "operaciones_anteriores": 5,
+    "incidencias": [
+      "Discrepancia documental puntual en poderes de firma (subsanada en 2023)",
+      "Entrega tardia de cuentas auditadas 2022 (10 dias de retraso)"
+    ],
+    "impagos": 0,
+    "productos_contratados": [
+      "Linea de circulante 2022",
+      "Prestamo CAPEX para automatizacion de planta",
+      "Leasing industrial",
+      "Cobertura de tipo de interes",
+      "Confirming proveedores"
+    ],
+    "operaciones_detalle": [
+      {
+        "fecha": "2022-04-15",
+        "tipo": "linea_circulante",
+        "importe": 2500000,
+        "estado": "cancelada_ok"
+      },
+      {
+        "fecha": "2023-02-10",
+        "tipo": "prestamo_capex",
+        "importe": 3200000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2023-10-03",
+        "tipo": "leasing_maquinaria",
+        "importe": 1400000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-03-21",
+        "tipo": "confirming",
+        "importe": 900000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-11-12",
+        "tipo": "cobertura_tipos",
+        "importe": 12000000,
+        "estado": "vigente"
+      }
+    ],
+    "resumen_historial": "Cliente con relacion operativa activa desde 2022, sin impagos, con incidencias documentales menores ya regularizadas."
+  }
+}

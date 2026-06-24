@@ -63,7 +63,7 @@ def _load_datos_empresa(company_name: str, fuente: str) -> list[dict]:
         bbdd_path = DATA_DIR / "bbdd.json"
         if not bbdd_path.exists():
             return []
-        with open(bbdd_path, encoding="utf-8") as f:
+        with open(bbdd_path, encoding="utf-8-sig") as f:
             bbdd = json.load(f)
         empresas_kyc = bbdd.get("empresas_kyc", {})
         # Busqueda case-insensitive
@@ -106,7 +106,7 @@ def _load_datos_empresa(company_name: str, fuente: str) -> list[dict]:
         ext_path = DATA_DIR / "fuentes_externas.json"
         if not ext_path.exists():
             return []
-        with open(ext_path, encoding="utf-8") as f:
+        with open(ext_path, encoding="utf-8-sig") as f:
             ext = json.load(f)
         empresas_ext = ext.get("empresas", {})
         nombre_lower = company_name.strip().lower()
@@ -147,6 +147,78 @@ def _load_datos_empresa(company_name: str, fuente: str) -> list[dict]:
         return [{"name": f"datos_externos_{company_name}.txt", "text": "\n".join(lines)}]
 
 
+def _load_empresas_deal_internas() -> dict:
+    bbdd_path = DATA_DIR / "bbdd.json"
+    if not bbdd_path.exists():
+        return {}
+    with open(bbdd_path, encoding="utf-8-sig") as f:
+        bbdd = json.load(f)
+    empresas = bbdd.get("empresas_deal", {})
+    return empresas if isinstance(empresas, dict) else {}
+
+
+def _get_sector_empresa(company_name: str, fuente: str) -> str:
+    nombre = (company_name or "").strip().lower()
+    if not nombre:
+        return ""
+
+    if fuente == "interna":
+        for sector, empresas in _load_empresas_deal_internas().items():
+            for emp in empresas:
+                if (emp.get("empresa", "").strip().lower() == nombre):
+                    return sector
+        # Fallback al maestro KYC si no estuviera en empresas_deal
+        bbdd_path = DATA_DIR / "bbdd.json"
+        if bbdd_path.exists():
+            with open(bbdd_path, encoding="utf-8-sig") as f:
+                bbdd = json.load(f)
+            for key, val in (bbdd.get("empresas_kyc", {}) or {}).items():
+                if key.strip().lower() == nombre:
+                    return val.get("sector", "")
+        return ""
+
+    # fuente externa
+    ext_path = DATA_DIR / "fuentes_externas.json"
+    if not ext_path.exists():
+        return ""
+    with open(ext_path, encoding="utf-8-sig") as f:
+        ext = json.load(f)
+    for key, val in (ext.get("empresas", {}) or {}).items():
+        if key.strip().lower() == nombre:
+            return (val.get("perfil_publico", {}) or {}).get("sector", "")
+    return ""
+
+
+def _get_empresas_sector_para_oportunidades(sector: str, fuente: str) -> list[dict]:
+    sector_norm = (sector or "").strip().lower()
+    if not sector_norm:
+        return []
+
+    if fuente == "interna":
+        for key, empresas in _load_empresas_deal_internas().items():
+            if key.strip().lower() == sector_norm:
+                return empresas if isinstance(empresas, list) else []
+        return []
+
+    ext_path = DATA_DIR / "fuentes_externas.json"
+    if not ext_path.exists():
+        return []
+    with open(ext_path, encoding="utf-8-sig") as f:
+        ext = json.load(f)
+    results = []
+    for nombre, emp in (ext.get("empresas", {}) or {}).items():
+        perfil = emp.get("perfil_publico", {}) or {}
+        if perfil.get("sector", "").strip().lower() == sector_norm:
+            results.append({
+                "empresa": nombre,
+                "descripcion": perfil.get("descripcion", ""),
+                "señal": perfil.get("senal_mercado", ""),
+                "ingresos_estimados": perfil.get("ingresos_estimados"),
+                "empleados": perfil.get("empleados"),
+            })
+    return results
+
+
 def run_deal_intelligence_pipeline(
     sector: str,
     company_name: str | None = None,
@@ -154,6 +226,7 @@ def run_deal_intelligence_pipeline(
     fuente: str = "interna",
     geografia: str = "",
     empresas_geografia: list[dict] | None = None,
+    analyst_notes: str = "",
     use_mock: bool = False,
     step_callback=None,
 ) -> dict:
@@ -188,8 +261,9 @@ def run_deal_intelligence_pipeline(
     )
 
     logger.info("================================================================")
-    logger.info("INICIO PIPELINE DEAL | run_id=%s | fuente=%s | sector=%s | empresa=%s | zona=%s",
-                run_id, fuente, sector or "-", company_name or "-", geografia or "-")
+    logger.info("INICIO PIPELINE DEAL | run_id=%s | fuente=%s | sector=%s | empresa=%s | zona=%s | notas=%s",
+                run_id, fuente, sector or "-", company_name or "-", geografia or "-",
+                "si" if analyst_notes else "no")
     logger.info("================================================================")
 
     # ---- Paso 1: Opportunity Researcher ----
@@ -204,6 +278,10 @@ def run_deal_intelligence_pipeline(
                 {
                     "empresa":   e.get("empresa", ""),
                     "motivo":    e.get("señal", e.get("descripcion", "")),
+                    "justificacion_prioridad": (
+                        "Clasificada como media por pertenecer al universo geográfico "
+                        "seleccionado; requiere validación comercial adicional."
+                    ),
                     "prioridad": "media",
                     "ingresos_estimados": e.get("ingresos_estimados"),
                     "empleados": e.get("empleados"),
@@ -218,13 +296,74 @@ def run_deal_intelligence_pipeline(
                 sector or geografia,
                 use_mock=use_mock,
                 empresas_override=empresas_geografia,
+                analyst_notes=analyst_notes,
             )
     else:
-        opportunity_output = run_opportunity_researcher_agent(
-            sector or company_name or geografia,
-            use_mock=use_mock,
-            fuente=fuente,
-        )
+        company_mode = bool(company_name and not sector and not geografia)
+        if company_mode:
+            detected_sector = _get_sector_empresa(company_name, fuente)
+            universe = _get_empresas_sector_para_oportunidades(detected_sector, fuente)
+            lookup_label = detected_sector or company_name
+
+            if universe:
+                logger.info(
+                    "  -> modo empresa: sector detectado '%s' con %d candidatas",
+                    detected_sector or "(sin detectar)",
+                    len(universe),
+                )
+                opportunity_output = run_opportunity_researcher_agent(
+                    lookup_label,
+                    use_mock=use_mock,
+                    empresas_override=universe,
+                    analyst_notes=analyst_notes,
+                )
+
+                # Fallback robusto si el LLM devolviera vacio: generar lista base.
+                if not (opportunity_output.get("oportunidades") or []):
+                    opportunity_output = {
+                        "sector": lookup_label,
+                        "oportunidades": [
+                            {
+                                "empresa": e.get("empresa", ""),
+                                "motivo": e.get("señal", e.get("descripcion", "")),
+                                "prioridad": e.get("prioridad", "media"),
+                                "justificacion_prioridad": (
+                                    "Prioridad basada en la señal comercial y contexto del sector."
+                                ),
+                                "ingresos_estimados": e.get("ingresos_estimados"),
+                                "empleados": e.get("empleados"),
+                            }
+                            for e in universe
+                        ],
+                        "resumen": (
+                            "Se muestran oportunidades del mismo sector de la empresa seleccionada "
+                            "para comparar alternativas."
+                        ),
+                    }
+            else:
+                logger.info("  -> modo empresa: sin universo sectorial, se usa busqueda directa")
+                opportunity_output = run_opportunity_researcher_agent(
+                    lookup_label,
+                    use_mock=use_mock,
+                    fuente=fuente,
+                    analyst_notes=analyst_notes,
+                )
+        else:
+            opportunity_output = run_opportunity_researcher_agent(
+                sector or company_name or geografia,
+                use_mock=use_mock,
+                fuente=fuente,
+                analyst_notes=analyst_notes,
+            )
+
+    # Compatibilidad: garantizar explicación de clasificación aunque el LLM
+    # devuelva formato antiguo.
+    for op in opportunity_output.get("oportunidades", []) or []:
+        if not op.get("justificacion_prioridad"):
+            op["justificacion_prioridad"] = (
+                op.get("motivo")
+                or "Prioridad asignada por señales de mercado y contexto sectorial."
+            )
 
     _write_json(run_dir / "1_opportunity_researcher" / "output.json", opportunity_output)
     _notify("opportunity_researcher", "completed")
@@ -317,6 +456,7 @@ def run_deal_intelligence_pipeline(
         "company_name":       target_company,
         "fuente":             fuente,
         "geografia":          geografia or None,
+        "analyst_notes":      analyst_notes or None,
         "use_case":           "deal",
         "opportunity_output": opportunity_output,
         "earnings_summary":   earnings_summary,
@@ -336,7 +476,7 @@ def _load_historial_cliente(company_name: str) -> dict:
     bbdd_path = DATA_DIR / "bbdd.json"
     if not bbdd_path.exists():
         return {}
-    with open(bbdd_path, encoding="utf-8") as f:
+    with open(bbdd_path, encoding="utf-8-sig") as f:
         bbdd = json.load(f)
     historial = bbdd.get("historial", {})
     nombre_lower = company_name.strip().lower()

@@ -1,0 +1,31 @@
+{
+  "titulo": "Propuesta comercial | Financiación puente y estructuración de deuda para adquisición (DataNexa Cloud Systems SL)",
+  "subtitulo": "Acompañar el cierre de la adquisición con liquidez inmediata y una estructura de deuda escalable que preserve flexibilidad para la integración.",
+  "oportunidad_detectada": "DataNexa Cloud Systems SL está ejecutando un plan activo de adquisición de un competidor vertical, lo que típicamente exige disponibilidad de fondos en plazos cortos y certidumbre de ejecución. La oportunidad consiste en estructurar una financiación puente para el cierre y diseñar una solución de deuda “take-out” posterior (y potencial refinanciación) alineada con el plan de integración y la capacidad de generación de caja, actualmente no documentada con detalle.",
+  "contexto_financiero": [
+    "Ingresos estimados: ~15,2 M€; sin desglose histórico por ejercicios, lo que impide cuantificar crecimiento y estacionalidad con la información disponible.",
+    "No se dispone de EBITDA/margen operativo, CAPEX, deuda ni caja; por tanto, la capacidad de apalancamiento, cobertura de servicio de deuda y holgura financiera deben confirmarse antes de fijar tamaño, precio y covenants.",
+    "La naturaleza de la operación (adquisición de competidor vertical) sugiere necesidades de liquidez de corto plazo para el cierre y recursos adicionales para costes de integración y captura de sinergias."
+  ],
+  "encaje_productos": [
+    "Financiación puente para adquisición (préstamo puente / línea puente) con calendario de desembolsos y condiciones sujetas a due diligence financiera.",
+    "Estructuración de deuda de medio plazo (tramo a plazo + línea revolving para circulante) y potencial refinanciación post-cierre para optimizar coste, covenants y perfil de amortización."
+  ],
+  "comparables": [
+    "Proveedores de software y servicios cloud B2B de tamaño medio (Europa) con estrategia de consolidación vertical [UNSOURCED]",
+    "Integradores/managed service providers (MSP) con ingresos 10–50 M€ y foco en soluciones cloud y ciberseguridad [UNSOURCED]"
+  ],
+  "argumentos_valor": [
+    "Certidumbre de ejecución: capacidad de estructurar una solución puente que asegure fondos en el cierre y reduzca riesgo de ruptura por calendario.",
+    "Estructura a medida para integración: diseño de covenants, periodos de carencia y flexibilidad de amortización para absorber costes de integración y variabilidad de caja post-adquisición.",
+    "Ruta clara de salida (take-out): planificación desde el día 1 de la financiación definitiva (deuda a plazo / revolving / refinanciación) en función de métricas verificadas y plan de sinergias."
+  ],
+  "proximos_pasos": [
+    "Confirmar parámetros de la transacción: precio/estructura (asset vs share deal), calendario, necesidades de fondos en cierre, y usos (compra, fees, integración, circulante).",
+    "Solicitar paquete mínimo de información para estructuración: histórico 3 años de P&L y balance, LTM, EBITDA normalizado, CAPEX, deuda/caja, detalle de clientes/contratos, y proyecciones standalone vs. proforma con sinergias.",
+    "Preparar propuesta indicativa: tamaño de puente, tenor, pricing, garantías, covenants preliminares y esquema de take-out; acordar cronograma de due diligence y aprobación interna."
+  ],
+  "narrativa_markdown": "DataNexa Cloud Systems SL se encuentra en un momento de alta prioridad estratégica al estar ejecutando un plan activo de adquisición de un competidor vertical. Este tipo de operación suele requerir liquidez inmediata para asegurar el cierre en plazo y, posteriormente, una estructura de financiación que acompañe la integración sin tensionar la operativa.\n\nCon la información disponible, la compañía presenta ingresos estimados de ~15,2 M€, pero no se dispone de desglose histórico, EBITDA/margen operativo, CAPEX, deuda ni caja. Esta limitación impide dimensionar con precisión la capacidad de apalancamiento y el perfil de repago; por ello, la propuesta se plantea en dos fases: (i) financiación puente para garantizar ejecución del cierre y (ii) estructuración de deuda de medio plazo (con posible refinanciación) una vez verificada la generación de caja y el desempeño proforma.\n\nNuestra propuesta de valor se centra en aportar certidumbre de fondos y velocidad de ejecución, junto con una arquitectura de deuda diseñada para el periodo de integración: covenants calibrados, flexibilidad de amortización y herramientas de liquidez (p. ej., línea revolving) para absorber costes de integración y necesidades de circulante. En paralelo, se define desde el inicio una ruta de salida del puente (“take-out”) para optimizar coste y términos cuando la información financiera esté completa.\n\nPara avanzar, proponemos una sesión de trabajo para confirmar los parámetros de la transacción (estructura, calendario, usos de fondos) y acordar el paquete mínimo de información financiera y operativa. Con ello, prepararemos una propuesta indicativa con alternativas de estructura, términos preliminares y un cronograma de due diligence y aprobaciones.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+  "pptx_path": "5_pitch_builder/pitchbook.pptx",
+  "pdf_path": "5_pitch_builder/pitchbook.pdf"
+}

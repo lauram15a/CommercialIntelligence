@@ -25,6 +25,7 @@ def run_opportunity_researcher_agent(
     use_mock: bool = False,
     fuente: str = "interna",
     empresas_override: list[dict] | None = None,
+    analyst_notes: str = "",
 ) -> dict:
     """
     sector:             sector o zona a analizar
@@ -44,7 +45,8 @@ def run_opportunity_researcher_agent(
     system_prompt = get_system_prompt(
         extra=(
             f"Sector / zona a analizar: {sector}\n"
-            f"Fuente de datos: {'base de datos interna del banco (clientes)' if fuente == 'interna' else 'fuentes externas publicas (no clientes)'}"
+            f"Fuente de datos: {'base de datos interna del banco (clientes)' if fuente == 'interna' else 'fuentes externas publicas (no clientes)'}\n"
+            f"Notas del analista (si aplica): {analyst_notes or 'Sin notas adicionales'}"
         )
     )
 
@@ -90,7 +92,7 @@ def _load_empresas_sector(sector: str, fuente: str = "interna") -> list[dict]:
         bbdd_path = DATA_DIR / "bbdd.json"
         if not bbdd_path.exists():
             return []
-        with open(bbdd_path, encoding="utf-8") as f:
+        with open(bbdd_path, encoding="utf-8-sig") as f:
             bbdd = json.load(f)
         empresas_deal = bbdd.get("empresas_deal", {})
         sector_lower  = sector.strip().lower()
@@ -102,7 +104,7 @@ def _load_empresas_sector(sector: str, fuente: str = "interna") -> list[dict]:
         ext_path = DATA_DIR / "fuentes_externas.json"
         if not ext_path.exists():
             return []
-        with open(ext_path, encoding="utf-8") as f:
+        with open(ext_path, encoding="utf-8-sig") as f:
             ext = json.load(f)
         sector_lower = sector.strip().lower()
         results = []

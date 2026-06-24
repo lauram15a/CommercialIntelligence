@@ -1,0 +1,21 @@
+{
+  "perfil": "Energia Holdings SL es una compañía con trayectoria bancaria desde 2011 y rating interno A-, sin historial de impagos. Presenta un perfil de crecimiento rentable, con mejora gradual de márgenes y refuerzo de patrimonio neto en el periodo analizado.",
+  "situacion_actual": "La empresa muestra expansión sostenida de ingresos (10,0m€ en 2022 a 13,5m€ en 2024) y aceleración del EBITDA (1,6m€ a 2,3m€), con margen EBITDA al alza (~16,0% a ~17,0%). La deuda financiera aumenta (4,2m€ a 5,2m€), pero el apalancamiento Deuda/EBITDA desciende (~2,6x a ~2,3x), sugiriendo que el crecimiento operativo está absorbiendo el mayor endeudamiento.",
+  "necesidades_potenciales": [
+    "Financiación para sostener la expansión comercial (especialmente si el CAPEX estuviera creciendo, dato no disponible).",
+    "Optimización de estructura de capital ante el aumento de deuda con apalancamiento contenido (posible refinanciación/ajuste de plazos o condiciones).",
+    "Revisión de necesidades de liquidez y planificación financiera para acompañar el crecimiento del balance (sin datos de flujo de caja/CAPEX)."
+  ],
+  "riesgos": [
+    "Incremento de endeudamiento financiero (4,2m€ → 5,2m€) que podría tensionar la capacidad financiera si el crecimiento se desacelera.",
+    "Falta de visibilidad sobre EBIT, CAPEX e intensidad inversora, limitando la evaluación de sostenibilidad del flujo de caja.",
+    "Dependencia implícita de mantener el ritmo de crecimiento para conservar el apalancamiento en niveles contenidos."
+  ],
+  "talking_points": [
+    "Confirmar drivers del crecimiento de ingresos 2022-2024 y si es recurrente (mix de clientes/contratos, expansión geográfica o de capacidad).",
+    "Profundizar en el plan de inversión (CAPEX) y su calendario: ¿crecimiento vs. mantenimiento? ¿impacto esperado en EBITDA y caja?",
+    "Revisar estructura de deuda actual (vencimientos, coste, covenants) y si el aumento de deuda responde a inversión, circulante o M&A.",
+    "Validar tolerancia a apalancamiento y objetivos financieros: con Deuda/EBITDA bajando a ~2,3x, explorar margen para financiar crecimiento sin deteriorar el perfil de riesgo.",
+    "Alinear próximos pasos: información adicional necesaria (EBIT, CAPEX, flujo de caja) para dimensionar una propuesta de financiación u optimización."
+  ]
+}

@@ -36,6 +36,7 @@ FORMATO DE SALIDA (JSON estricto, sin markdown fences):
       "empresa": "...",
       "motivo": "1-2 frases explicando por que es una oportunidad ahora",
       "prioridad": "alta|media|baja",
+      "justificacion_prioridad": "1-2 frases explicando por que esa prioridad (alta/media/baja) frente al resto",
       "ingresos_estimados": 12345678,
       "empleados": 100
     }

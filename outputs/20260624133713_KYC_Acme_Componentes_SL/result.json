@@ -1,0 +1,942 @@
+{
+  "run_id": "20260624133713",
+  "entity_name": "Acme Componentes SL",
+  "use_case": "kyc",
+  "kyc_output": {
+    "extracted_entities": {
+      "applicant": {
+        "applicant_type": "entity",
+        "legal_name": "Acme Componentes SL",
+        "legal_form": "Sociedad de Responsabilidad Limitada",
+        "identifier": {
+          "type": "NIF/CIF",
+          "value": "B50123987"
+        },
+        "formation_date": "2003-07-10",
+        "jurisdiction": "España",
+        "registered_address": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza",
+        "industry": {
+          "cnae": "2562",
+          "description": "Tratamiento y revestimiento de metales",
+          "sector": "Industrial"
+        },
+        "share_capital_eur": 800000,
+        "employees": 310
+      },
+      "beneficial_owners": [
+        {
+          "name": "Roberto Acme Jiménez",
+          "type": "individual",
+          "nationality": "española",
+          "ownership_pct": 65.0,
+          "control_basis": "ownership"
+        },
+        {
+          "name": "Acme Europe Holding GmbH",
+          "type": "entity",
+          "nationality_or_jurisdiction": "alemana",
+          "ownership_pct": 35.0,
+          "control_basis": "ownership"
+        }
+      ],
+      "controllers": [
+        {
+          "name": "Roberto Acme Jiménez",
+          "role": "Consejero Delegado"
+        },
+        {
+          "name": "Klaus Meier",
+          "role": "Consejero (representante Acme Europe)"
+        }
+      ],
+      "addresses": [
+        {
+          "type": "registered_address",
+          "value": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza"
+        }
+      ],
+      "documents_inventory": [
+        {
+          "type": "entity_formation",
+          "ref": "escritura_constitucion.txt",
+          "date": null
+        },
+        {
+          "type": "financial_statements",
+          "ref": "balance_2022.txt",
+          "date": "2022-12-31"
+        },
+        {
+          "type": "financial_statements",
+          "ref": "balance_2023.txt",
+          "date": "2023-12-31"
+        },
+        {
+          "type": "financial_statements",
+          "ref": "balance_2024.txt",
+          "date": "2024-12-31"
+        }
+      ],
+      "financials": [
+        {
+          "period_year": 2022,
+          "revenue_eur": 32000000,
+          "ebitda_eur": 3800000,
+          "financial_expenses_eur": 450000,
+          "current_assets_eur": 9500000,
+          "current_liabilities_eur": 7200000,
+          "net_financial_debt_eur": 8000000,
+          "equity_eur": 6800000,
+          "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+        },
+        {
+          "period_year": 2023,
+          "revenue_eur": 38000000,
+          "ebitda_eur": 4900000,
+          "financial_expenses_eur": 520000,
+          "current_assets_eur": 12100000,
+          "current_liabilities_eur": 8900000,
+          "net_financial_debt_eur": 10500000,
+          "equity_eur": 8200000,
+          "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+        },
+        {
+          "period_year": 2024,
+          "revenue_eur": 42000000,
+          "ebitda_eur": 5800000,
+          "financial_expenses_eur": 610000,
+          "current_assets_eur": 14500000,
+          "current_liabilities_eur": 9800000,
+          "net_financial_debt_eur": 12000000,
+          "equity_eur": 9900000,
+          "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+        }
+      ],
+      "internal_notes": {
+        "bank_db_alerts": "Sin alertas registradas",
+        "observations": "Fabricante de precisión con socio europeo consolidado. Expansión con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
+        "analyst_note": "Revisar vencimientos de deuda 2027 y necesidad de refinanciacion parcial."
+      }
+    },
+    "kyc_results": {
+      "rules_engine": {
+        "risk_rating_recommendation": "medium",
+        "risk_factors": [
+          {
+            "factor": "Tipo de solicitante",
+            "value": "Entidad (SL)",
+            "impact": "baseline"
+          },
+          {
+            "factor": "Jurisdicción",
+            "value": "España (empresa); UBOs: España y Alemania",
+            "impact": "low"
+          },
+          {
+            "factor": "Estructura de propiedad",
+            "value": "2 UBOs declarados; uno es entidad (GmbH) al 35%",
+            "impact": "medium"
+          },
+          {
+            "factor": "Sector/actividad",
+            "value": "Industrial (CNAE 2562)",
+            "impact": "low"
+          },
+          {
+            "factor": "PEP/Sanciones/Adverse media",
+            "value": "No aportado en el expediente; no se ha realizado screening externo en este análisis",
+            "impact": "unknown"
+          },
+          {
+            "factor": "Fuente de fondos / riqueza",
+            "value": "No declarada explícitamente; solo estados financieros",
+            "impact": "medium"
+          }
+        ],
+        "required_document_check": [
+          {
+            "requirement": "Documento de constitución / escritura",
+            "status": "received",
+            "evidence": "escritura_constitucion.txt"
+          },
+          {
+            "requirement": "Declaración/registro de titulares reales (UBO) con % y base de control",
+            "status": "received_partial",
+            "evidence": "escritura_constitucion.txt (UBOs listados, sin DOB/IDs ni verificación del UBO entidad)"
+          },
+          {
+            "requirement": "Identificación y verificación de UBOs individuales (ID + DOB)",
+            "status": "missing",
+            "evidence": "No consta documento de identidad ni fecha de nacimiento de Roberto Acme Jiménez"
+          },
+          {
+            "requirement": "Documentación del UBO entidad (Acme Europe Holding GmbH): registro mercantil, domicilio, y UBOs finales",
+            "status": "missing",
+            "evidence": "Solo se menciona como UBO al 35% sin documentación soporte"
+          },
+          {
+            "requirement": "Identificación de administradores/representantes (ID si aplica) y poderes/autorización",
+            "status": "missing",
+            "evidence": "Se listan administradores, pero no hay poderes, acta, ni IDs"
+          },
+          {
+            "requirement": "Prueba de domicilio (≤ 3 meses) de la entidad",
+            "status": "missing",
+            "evidence": "No hay recibo/estado bancario/otro justificante de domicilio"
+          },
+          {
+            "requirement": "Declaración de actividad y propósito de la relación",
+            "status": "missing",
+            "evidence": "No consta formulario KYC de propósito/uso de cuenta"
+          },
+          {
+            "requirement": "Fuente de fondos / riqueza (descripción + soporte)",
+            "status": "missing_partial",
+            "evidence": "Balances 2022-2024 aportan contexto financiero, pero no una declaración formal de SoF/SoW"
+          },
+          {
+            "requirement": "Formularios fiscales (CRS/FATCA, W-8/W-9 si aplica)",
+            "status": "missing",
+            "evidence": "No consta CRS/FATCA ni equivalentes"
+          }
+        ],
+        "rule_outcomes": [
+          {
+            "rule_id": "KYC-ENT-01",
+            "rule_text": "Debe constar nombre legal y NIF/CIF de la entidad.",
+            "outcome": "pass",
+            "evidence": "escritura_constitucion.txt: Nombre legal y NIF/CIF B50123987"
+          },
+          {
+            "rule_id": "KYC-ENT-02",
+            "rule_text": "Debe constar domicilio social de la entidad.",
+            "outcome": "pass",
+            "evidence": "escritura_constitucion.txt: Domicilio social en Zaragoza"
+          },
+          {
+            "rule_id": "KYC-UBO-01",
+            "rule_text": "Identificar UBOs con % de participación y base de control.",
+            "outcome": "pass_partial",
+            "evidence": "escritura_constitucion.txt: UBOs con %; base de control implícita por propiedad"
+          },
+          {
+            "rule_id": "KYC-UBO-02",
+            "rule_text": "Verificar UBO individual con documento de identidad y fecha de nacimiento.",
+            "outcome": "fail",
+            "evidence": "No se aporta ID ni DOB de Roberto Acme Jiménez"
+          },
+          {
+            "rule_id": "KYC-UBO-03",
+            "rule_text": "Si un UBO es entidad, obtener documentación corporativa y determinar UBO(s) final(es).",
+            "outcome": "fail",
+            "evidence": "Acme Europe Holding GmbH mencionada sin documentación ni UBO final"
+          },
+          {
+            "rule_id": "KYC-CTRL-01",
+            "rule_text": "Identificar administradores/controladores y verificar autoridad de firma.",
+            "outcome": "fail",
+            "evidence": "Administradores listados sin poderes/acta/mandato ni verificación"
+          },
+          {
+            "rule_id": "KYC-SOF-01",
+            "rule_text": "Debe declararse fuente de fondos/riqueza y estar razonablemente soportada.",
+            "outcome": "fail_partial",
+            "evidence": "Balances 2022-2024 existen, pero falta declaración formal de SoF/SoW"
+          },
+          {
+            "rule_id": "KYC-SCR-01",
+            "rule_text": "Realizar screening de sanciones/PEP/adverse media sobre entidad, UBOs y administradores.",
+            "outcome": "fail",
+            "evidence": "No hay resultados de screening en el expediente (solo 'sin alertas en BBDD del banco')"
+          },
+          {
+            "rule_id": "KYC-TAX-01",
+            "rule_text": "Recabar auto-certificación fiscal (CRS/FATCA) y formularios aplicables.",
+            "outcome": "fail",
+            "evidence": "No consta documentación fiscal"
+          }
+        ],
+        "disposition_recommendation": "request-docs",
+        "missing_documents_summary": [
+          "ID + fecha de nacimiento del UBO individual (Roberto Acme Jiménez)",
+          "Documentación corporativa de Acme Europe Holding GmbH + determinación de UBO(s) final(es)",
+          "Poderes/acta de nombramiento y autorización de firma de administradores/representantes",
+          "Prueba de domicilio de la entidad (≤ 3 meses)",
+          "Formulario KYC: propósito de la relación, actividad detallada, volumen esperado",
+          "Declaración de fuente de fondos/riqueza + soporte",
+          "CRS/FATCA (y formularios fiscales aplicables)",
+          "Resultados de screening sanciones/PEP/adverse media para entidad, UBOs y administradores"
+        ],
+        "escalation_triggers": [
+          "Screening no realizado/documentado (KYC-SCR-01)",
+          "UBO entidad sin transparencia hasta beneficiario final (KYC-UBO-03)"
+        ]
+      },
+      "screening": {
+        "status": "not_performed_in_this_run",
+        "parties_to_screen": [
+          "Acme Componentes SL",
+          "Roberto Acme Jiménez",
+          "Acme Europe Holding GmbH",
+          "Klaus Meier"
+        ],
+        "results": null
+      }
+    },
+    "screening_results": [],
+    "screening_resumen": "Screening sin entidades para revisar.",
+    "screening_conclusion": "NO_CONCLUYENTE",
+    "evidencias": [
+      {
+        "tipo": "fuente_externa_noticias",
+        "id": "MKT-001",
+        "resultado": "OK",
+        "descripcion": "Registro de señales externas para riesgo reputacional/legal.",
+        "fuente": "Busqueda externa (local_db/fuentes_externas.json o fuente configurada)",
+        "fecha_extraccion": "2026-06-24T11:38:19+00:00",
+        "trazabilidad": "Market Researcher Agent -> entidad=Acme Componentes SL",
+        "nota": "La decision final requiere validacion manual de Cumplimiento y Riesgos.",
+        "contenido_referencia": "## Resumen (markdown) — Señales externas relevantes para el análisis de riesgo  \n**Empresa:** Acme Componentes SL  \n**Partes vinculadas:** No identificadas  \n**Noticias/señales en base de datos interna:** No hay registros\n\n### 1) Situación de información disponible\n- **Ausencia de señales internas registradas**: no hay noticias ni alertas en la base de datos interna, por lo que **no se observan “red flags” documentadas** desde esa fuente.\n- **Riesgo operativo para el análisis**: la falta de señales internas **no equivale a ausencia de riesgo**; implica que el análisis depende de **fuentes externas** (registros mercantiles, prensa, litigios, sanciones, insolvencias, cambios societarios, etc.).\n\n### 2) Señales externas a revisar (checklist de riesgo)\nA falta de eventos ya capturados, las señales externas típicamente más relevantes para una empresa industrial/de componentes incluyen:\n\n**A. "
+      }
+    ]
+  },
+  "modelo_financiero": {
+    "normalized_financials": {
+      "entity": {
+        "legal_name": "Acme Componentes SL",
+        "identifier": {
+          "type": "NIF/CIF",
+          "value": "B50123987"
+        },
+        "jurisdiction": "ES",
+        "currency": "EUR",
+        "units": "EUR"
+      },
+      "periodicity": "annual",
+      "period_end_month_day": "12-31",
+      "statements_coverage": {
+        "income_statement": [
+          "revenue",
+          "ebitda",
+          "financial_expenses"
+        ],
+        "balance_sheet": [
+          "current_assets",
+          "current_liabilities",
+          "equity",
+          "net_financial_debt"
+        ],
+        "cash_flow_statement": []
+      },
+      "line_items_definition": {
+        "revenue": "Ingresos (ventas netas) del ejercicio",
+        "ebitda": "Resultado bruto de explotación (EBITDA)",
+        "financial_expenses": "Gastos financieros del ejercicio",
+        "current_assets": "Activo corriente",
+        "current_liabilities": "Pasivo corriente",
+        "equity": "Patrimonio neto",
+        "net_financial_debt": "Deuda financiera neta (deuda financiera bruta menos caja y equivalentes, según definición interna)"
+      },
+      "periods": [
+        {
+          "period_year": 2022,
+          "period_start_date": "2022-01-01",
+          "period_end_date": "2022-12-31",
+          "income_statement": {
+            "revenue": {
+              "value": 32000000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "ebitda": {
+              "value": 3800000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "financial_expenses": {
+              "value": 450000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            }
+          },
+          "balance_sheet": {
+            "current_assets": {
+              "value": 9500000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "current_liabilities": {
+              "value": 7200000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "equity": {
+              "value": 6800000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "net_financial_debt": {
+              "value": 8000000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            }
+          },
+          "derived_metrics": {
+            "ebitda_margin": {
+              "value": 0.11875,
+              "unit": "ratio",
+              "formula": "ebitda / revenue"
+            },
+            "current_ratio": {
+              "value": 1.3194444444,
+              "unit": "x",
+              "formula": "current_assets / current_liabilities"
+            },
+            "net_debt_to_ebitda": {
+              "value": 2.1052631579,
+              "unit": "x",
+              "formula": "net_financial_debt / ebitda"
+            },
+            "interest_coverage_ebitda": {
+              "value": 8.4444444444,
+              "unit": "x",
+              "formula": "ebitda / financial_expenses"
+            }
+          }
+        },
+        {
+          "period_year": 2023,
+          "period_start_date": "2023-01-01",
+          "period_end_date": "2023-12-31",
+          "income_statement": {
+            "revenue": {
+              "value": 38000000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "ebitda": {
+              "value": 4900000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "financial_expenses": {
+              "value": 520000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            }
+          },
+          "balance_sheet": {
+            "current_assets": {
+              "value": 12100000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "current_liabilities": {
+              "value": 8900000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "equity": {
+              "value": 8200000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "net_financial_debt": {
+              "value": 10500000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            }
+          },
+          "derived_metrics": {
+            "yoy_revenue_growth": {
+              "value": 0.1875,
+              "unit": "ratio",
+              "formula": "(revenue_2023 - revenue_2022) / revenue_2022"
+            },
+            "yoy_ebitda_growth": {
+              "value": 0.2894736842,
+              "unit": "ratio",
+              "formula": "(ebitda_2023 - ebitda_2022) / ebitda_2022"
+            },
+            "ebitda_margin": {
+              "value": 0.1289473684,
+              "unit": "ratio",
+              "formula": "ebitda / revenue"
+            },
+            "current_ratio": {
+              "value": 1.3595505618,
+              "unit": "x",
+              "formula": "current_assets / current_liabilities"
+            },
+            "net_debt_to_ebitda": {
+              "value": 2.1428571429,
+              "unit": "x",
+              "formula": "net_financial_debt / ebitda"
+            },
+            "interest_coverage_ebitda": {
+              "value": 9.4230769231,
+              "unit": "x",
+              "formula": "ebitda / financial_expenses"
+            }
+          }
+        },
+        {
+          "period_year": 2024,
+          "period_start_date": "2024-01-01",
+          "period_end_date": "2024-12-31",
+          "income_statement": {
+            "revenue": {
+              "value": 42000000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "ebitda": {
+              "value": 5800000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "financial_expenses": {
+              "value": 610000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            }
+          },
+          "balance_sheet": {
+            "current_assets": {
+              "value": 14500000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "current_liabilities": {
+              "value": 9800000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "equity": {
+              "value": 9900000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            },
+            "net_financial_debt": {
+              "value": 12000000,
+              "currency": "EUR",
+              "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+            }
+          },
+          "derived_metrics": {
+            "yoy_revenue_growth": {
+              "value": 0.1052631579,
+              "unit": "ratio",
+              "formula": "(revenue_2024 - revenue_2023) / revenue_2023"
+            },
+            "yoy_ebitda_growth": {
+              "value": 0.1836734694,
+              "unit": "ratio",
+              "formula": "(ebitda_2024 - ebitda_2023) / ebitda_2023"
+            },
+            "ebitda_margin": {
+              "value": 0.1380952381,
+              "unit": "ratio",
+              "formula": "ebitda / revenue"
+            },
+            "current_ratio": {
+              "value": 1.4795918367,
+              "unit": "x",
+              "formula": "current_assets / current_liabilities"
+            },
+            "net_debt_to_ebitda": {
+              "value": 2.0689655172,
+              "unit": "x",
+              "formula": "net_financial_debt / ebitda"
+            },
+            "interest_coverage_ebitda": {
+              "value": 9.5081967213,
+              "unit": "x",
+              "formula": "ebitda / financial_expenses"
+            }
+          }
+        }
+      ],
+      "data_quality": {
+        "sources_present": [
+          "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+        ],
+        "missing_fields": [
+          "total_assets",
+          "total_liabilities",
+          "cash_and_equivalents",
+          "gross_debt",
+          "net_income",
+          "ebit",
+          "tax_expense",
+          "depreciation_amortization",
+          "capex",
+          "operating_cash_flow",
+          "free_cash_flow"
+        ],
+        "notes": [
+          "La 'deuda financiera neta' se mantiene como métrica provista; no se descompone en caja y deuda bruta por falta de datos.",
+          "No se puede validar el balance (Activos = Pasivos + Patrimonio) al no disponer de total de activos/pasivos."
+        ]
+      }
+    }
+  },
+  "valuation_output": {
+    "entity": {
+      "legal_name": "Acme Componentes SL",
+      "identifier": {
+        "type": "NIF/CIF",
+        "value": "B50123987"
+      },
+      "currency": "EUR",
+      "as_of_periods_reviewed": [
+        2022,
+        2023,
+        2024
+      ]
+    },
+    "financial_model_review": {
+      "trend_summary": {
+        "revenue": {
+          "2022": 32000000,
+          "2023": 38000000,
+          "2024": 42000000,
+          "cagr_2022_2024": 0.1456439237,
+          "commentary": "Crecimiento sólido 2022-2024; desaceleración en 2024 vs 2023 (18,8% -> 10,5%)."
+        },
+        "ebitda": {
+          "2022": 3800000,
+          "2023": 4900000,
+          "2024": 5800000,
+          "cagr_2022_2024": 0.2357022604,
+          "commentary": "EBITDA crece por encima de ventas, indicando apalancamiento operativo/mejora de mix."
+        },
+        "ebitda_margin": {
+          "2022": 0.11875,
+          "2023": 0.1289473684,
+          "2024": 0.1380952381,
+          "change_pp_2022_2024": 0.0193452381,
+          "commentary": "Expansión de margen de ~1,93 pp en 2 años."
+        },
+        "liquidity": {
+          "current_ratio": {
+            "2022": 1.3194444444,
+            "2023": 1.3595505618,
+            "2024": 1.4795918367
+          },
+          "working_capital_proxy": {
+            "definition": "current_assets - current_liabilities",
+            "2022": 2300000,
+            "2023": 3200000,
+            "2024": 4700000
+          },
+          "commentary": "Mejora gradual de liquidez (current ratio al alza) y mayor colchón de circulante."
+        },
+        "leverage_and_debt_service": {
+          "net_financial_debt": {
+            "2022": 8000000,
+            "2023": 10500000,
+            "2024": 12000000,
+            "commentary": "Aumento de deuda neta consistente con financiación de crecimiento/CAPEX; no se dispone de desglose caja/deuda bruta."
+          },
+          "net_debt_to_ebitda": {
+            "2022": 2.1052631579,
+            "2023": 2.1428571429,
+            "2024": 2.0689655172,
+            "commentary": "Apalancamiento estable ~2,1x; ligera mejora en 2024 por crecimiento de EBITDA."
+          },
+          "interest_coverage_ebitda": {
+            "2022": 8.4444444444,
+            "2023": 9.4230769231,
+            "2024": 9.5081967213,
+            "commentary": "Cobertura holgada (>8x) pese a aumento de gastos financieros."
+          },
+          "implied_avg_interest_rate_on_net_debt": {
+            "definition": "financial_expenses / net_financial_debt (aprox.; usa deuda neta como denominador)",
+            "2022": 0.05625,
+            "2023": 0.0495238095,
+            "2024": 0.0508333333,
+            "commentary": "Coste implícito ~5,0%-5,6% (aproximación; puede distorsionarse por uso de deuda neta y por coberturas)."
+          }
+        },
+        "capital_structure": {
+          "equity": {
+            "2022": 6800000,
+            "2023": 8200000,
+            "2024": 9900000
+          },
+          "net_debt_to_equity": {
+            "definition": "net_financial_debt / equity",
+            "2022": 1.1764705882,
+            "2023": 1.2804878049,
+            "2024": 1.2121212121
+          },
+          "commentary": "Patrimonio neto crece; relación deuda neta/patrimonio se mantiene ~1,2x."
+        }
+      },
+      "internal_consistency_checks": {
+        "recomputed_metrics_match_provided": true,
+        "notes": [
+          "Los márgenes EBITDA, current ratio, net debt/EBITDA e interest coverage recalculan coherentemente con los importes provistos.",
+          "No es posible cuadrar balance (Activos = Pasivos + Patrimonio) por ausencia de total activos/pasivos.",
+          "No es posible validar generación de caja (OCF/FCF) por ausencia de cash flow, CAPEX y variación de circulante detallada."
+        ]
+      },
+      "data_gaps_and_limitations": {
+        "missing_fields_material_for_credit": [
+          "cash_and_equivalents",
+          "gross_debt",
+          "capex",
+          "operating_cash_flow",
+          "free_cash_flow",
+          "depreciation_amortization",
+          "ebit",
+          "tax_expense",
+          "net_income",
+          "total_assets",
+          "total_liabilities"
+        ],
+        "impact": [
+          "No se puede estimar DSCR ni capacidad de repago basada en caja.",
+          "No se puede evaluar estructura de deuda (vencimientos, tipo fijo/variable, garantías) ni reconciliar gastos financieros con deuda bruta.",
+          "No se puede analizar intensidad de CAPEX ni sostenibilidad del margen (EBIT vs EBITDA)."
+        ]
+      }
+    },
+    "banking_history_review": {
+      "relationship_summary": {
+        "since": 2022,
+        "operaciones_anteriores": 5,
+        "impagos": 0,
+        "overall_commentary": "Historial operativo positivo: sin impagos y con uso recurrente de productos (circulante, CAPEX, leasing, confirming y cobertura de tipos)."
+      },
+      "incidents": {
+        "count": 2,
+        "items": [
+          {
+            "issue": "Discrepancia documental puntual en poderes de firma",
+            "status": "subsanada en 2023",
+            "severity": "baja"
+          },
+          {
+            "issue": "Entrega tardía de cuentas auditadas 2022 (10 días)",
+            "status": "cerrada",
+            "severity": "baja"
+          }
+        ],
+        "commentary": "Incidencias de naturaleza administrativa, sin impacto observado en comportamiento de pago."
+      },
+      "products_and_operations": {
+        "productos_contratados": [
+          "Linea de circulante 2022",
+          "Prestamo CAPEX para automatizacion de planta",
+          "Leasing industrial",
+          "Cobertura de tipo de interes",
+          "Confirming proveedores"
+        ],
+        "operaciones_detalle": [
+          {
+            "fecha": "2022-04-15",
+            "tipo": "linea_circulante",
+            "importe": 2500000,
+            "estado": "cancelada_ok"
+          },
+          {
+            "fecha": "2023-02-10",
+            "tipo": "prestamo_capex",
+            "importe": 3200000,
+            "estado": "vigente_al_corriente"
+          },
+          {
+            "fecha": "2023-10-03",
+            "tipo": "leasing_maquinaria",
+            "importe": 1400000,
+            "estado": "vigente_al_corriente"
+          },
+          {
+            "fecha": "2024-03-21",
+            "tipo": "confirming",
+            "importe": 900000,
+            "estado": "vigente_al_corriente"
+          },
+          {
+            "fecha": "2024-11-12",
+            "tipo": "cobertura_tipos",
+            "importe": 12000000,
+            "estado": "vigente"
+          }
+        ],
+        "commentary": "La presencia de cobertura de tipos es consistente con un perfil de deuda relevante y gestión de riesgo de tipos; faltan detalles para evaluar efectividad/contabilidad."
+      }
+    },
+    "comparison_model_vs_banking_history": {
+      "alignment": {
+        "payment_behavior_vs_leverage": "Consistente: apalancamiento moderado (~2,1x ND/EBITDA) y cobertura de intereses holgada (>8x) encajan con ausencia de impagos.",
+        "debt_growth_vs_products": "Consistente: aumento de deuda neta 2022-2024 es coherente con préstamo CAPEX (2023) y leasing (2023), además de necesidades de circulante/confirming (2024).",
+        "liquidity_vs_working_capital_products": "Consistente: current ratio >1,3x y mejora del circulante neto, junto con uso de confirming/circulante como herramientas de gestión."
+      },
+      "potential_mismatches_or_questions": [
+        {
+          "topic": "Gastos financieros vs cobertura de tipos",
+          "observation": "Los gastos financieros suben (450k -> 610k) mientras la tasa implícita se mantiene ~5%.",
+          "why_it_matters": "Necesario entender si el aumento proviene de mayor deuda bruta, menor caja, comisiones, o estructura de cobertura.",
+          "data_needed": [
+            "deuda bruta por instrumento, calendario de amortización",
+            "caja y equivalentes",
+            "detalle de intereses vs comisiones",
+            "términos de la cobertura (notional, strike, vencimiento)"
+          ]
+        },
+        {
+          "topic": "Capacidad de repago en caja",
+          "observation": "El modelo muestra mejora de EBITDA, pero no hay cash flow ni CAPEX para validar FCF.",
+          "why_it_matters": "Para crédito/seguimiento bancario, EBITDA puede no traducirse en caja si CAPEX o circulante consumen liquidez.",
+          "data_needed": [
+            "CAPEX 2022-2024 y plan 2025",
+            "OCF/FCF",
+            "variación de circulante (clientes, inventario, proveedores)"
+          ]
+        }
+      ]
+    },
+    "risk_flags_and_monitoring_points": {
+      "flags": [
+        {
+          "flag": "Data completeness",
+          "severity": "media",
+          "detail": "Faltan partidas clave (caja, deuda bruta, CAPEX, cash flow) para análisis de caja y estructura de deuda."
+        },
+        {
+          "flag": "Growth deceleration",
+          "severity": "baja",
+          "detail": "Desaceleración de crecimiento de ingresos en 2024; monitorizar si es normalización o pérdida de demanda."
+        }
+      ],
+      "monitoring_kpis_recommended": [
+        "Net Debt / EBITDA (objetivo mantener ~<=2,5x salvo plan de inversión)",
+        "EBITDA margin (tendencia y drivers)",
+        "Interest coverage (EBITDA / gastos financieros)",
+        "Current ratio y evolución de circulante neto",
+        "CAPEX y FCF (cuando se disponga)",
+        "Cumplimiento de reporting (timeliness de auditadas y paquetes mensuales)"
+      ]
+    },
+    "overall_conclusion": {
+      "summary": "El desempeño financiero 2022-2024 es positivo (crecimiento y expansión de margen), con apalancamiento moderado y cobertura de intereses holgada. El historial bancario respalda un perfil de riesgo operativo razonable (sin impagos) y es coherente con el aumento de deuda por CAPEX/leasing. La principal limitación para una comparación completa es la falta de información de caja, deuda bruta y CAPEX/FCF.",
+      "confidence_level": "media",
+      "confidence_drivers": [
+        "Datos financieros provienen de sistemas del banco validados internamente.",
+        "Historial bancario sin impagos y con operaciones vigentes al corriente.",
+        "Limitaciones por ausencia de cash flow y desglose de deuda/caja."
+      ]
+    }
+  },
+  "market_research_output": "## Resumen (markdown) — Señales externas relevantes para el análisis de riesgo  \n**Empresa:** Acme Componentes SL  \n**Partes vinculadas:** No identificadas  \n**Noticias/señales en base de datos interna:** No hay registros\n\n### 1) Situación de información disponible\n- **Ausencia de señales internas registradas**: no hay noticias ni alertas en la base de datos interna, por lo que **no se observan “red flags” documentadas** desde esa fuente.\n- **Riesgo operativo para el análisis**: la falta de señales internas **no equivale a ausencia de riesgo**; implica que el análisis depende de **fuentes externas** (registros mercantiles, prensa, litigios, sanciones, insolvencias, cambios societarios, etc.).\n\n### 2) Señales externas a revisar (checklist de riesgo)\nA falta de eventos ya capturados, las señales externas típicamente más relevantes para una empresa industrial/de componentes incluyen:\n\n**A. Riesgo legal y de cumplimiento**\n- Procedimientos judiciales (civil/mercantil/laboral) y **litigios recurrentes**.\n- **Sanciones administrativas** (consumo, competencia, medioambiente, seguridad industrial).\n- Señales AML/FT: menciones en listas de sanciones, PEPs, adverse media.\n\n**B. Riesgo financiero / continuidad**\n- Indicadores de **estrés de liquidez**: impagos reportados, ejecuciones, embargos, protestos.\n- **Insolvencia**: preconcurso/concurso, acuerdos de refinanciación, reestructuraciones.\n- Cambios bruscos en cuentas depositadas (caídas de ventas/márgenes, patrimonio neto bajo, fondo de maniobra negativo).\n\n**C. Riesgo societario y de gobierno**\n- Cambios frecuentes de administradores, domicilio, objeto social o estructura accionarial.\n- Creación/cierre de filiales, operaciones corporativas atípicas.\n- Señales de **opacidad**: falta de depósito de cuentas, retrasos recurrentes, auditorías con salvedades (si aplica).\n\n**D. Riesgo comercial y de cadena de suministro**\n- Dependencia elevada de pocos clientes/proveedores (si se identifica por fuentes públicas).\n- Incidencias de calidad/recalls, paradas de planta, accidentes laborales relevantes.\n- Exposición a shocks sectoriales (automoción, industrial, construcción, etc.) y a precios de materias primas/energía.\n\n**E. Riesgo reputacional (adverse media)**\n- Noticias negativas: fraude, conflictos laborales, incumplimientos contractuales, disputas con clientes, prácticas anticompetitivas.\n- Señales en redes/foros sectoriales (con cautela; requieren verificación).\n\n### 3) Conclusión preliminar (con la evidencia actual)\n- **No hay señales externas concretas aportadas** en el input (solo consta que la base interna no tiene noticias).  \n- Por tanto, el resultado actual es: **“sin señales registradas”**, con **necesidad de completar** el análisis mediante un barrido externo estructurado.\n\n### 4) Información mínima necesaria para convertir esto en un resumen “con señales”\nSi me indicas cualquiera de estos datos, puedo aterrizar el resumen con señales reales (y no solo el checklist):\n- **NIF/CIF** y **provincia/municipio** (para evitar homónimos).\n- Sector/end-market principal (p. ej., automoción, electrónica, metalmecánica).\n- Fuentes externas disponibles en tu entorno (Registro Mercantil, BORME, bases de litigios, listas de sanciones, prensa, etc.) o si quieres que proponga un set estándar.\n\nSi quieres, también puedo devolverte el resumen en formato de **matriz de riesgo** (señal → severidad → probabilidad → evidencia → acción recomendada).",
+  "historial": {
+    "operaciones_anteriores": 5,
+    "incidencias": [
+      "Discrepancia documental puntual en poderes de firma (subsanada en 2023)",
+      "Entrega tardia de cuentas auditadas 2022 (10 dias de retraso)"
+    ],
+    "impagos": 0,
+    "productos_contratados": [
+      "Linea de circulante 2022",
+      "Prestamo CAPEX para automatizacion de planta",
+      "Leasing industrial",
+      "Cobertura de tipo de interes",
+      "Confirming proveedores"
+    ],
+    "operaciones_detalle": [
+      {
+        "fecha": "2022-04-15",
+        "tipo": "linea_circulante",
+        "importe": 2500000,
+        "estado": "cancelada_ok"
+      },
+      {
+        "fecha": "2023-02-10",
+        "tipo": "prestamo_capex",
+        "importe": 3200000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2023-10-03",
+        "tipo": "leasing_maquinaria",
+        "importe": 1400000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-03-21",
+        "tipo": "confirming",
+        "importe": 900000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-11-12",
+        "tipo": "cobertura_tipos",
+        "importe": 12000000,
+        "estado": "vigente"
+      }
+    ],
+    "resumen_historial": "Cliente con relacion operativa activa desde 2022, sin impagos, con incidencias documentales menores ya regularizadas."
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_kyc_screener",
+      "id": "AGT-KYC-001",
+      "agente": "KYC Screener Agent",
+      "resultado": "OK",
+      "descripcion": "Extraccion documental, reglas KYC y screening ejecutados.",
+      "fuente": "Fuentes internas + screening local/operativo",
+      "fecha_extraccion": "2026-06-24T11:37:42+00:00",
+      "trazabilidad": "1_kyc_screener/output.json",
+      "nota": "Documentos procesados: 7; reglas evaluadas: 2; sujetos screeneados: 0."
+    },
+    {
+      "tipo": "agente_model_builder",
+      "id": "AGT-KYC-002",
+      "agente": "Model Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Normalizacion financiera multi-periodo y deteccion de audit flags.",
+      "fuente": "Datos financieros extraidos del expediente",
+      "fecha_extraccion": "2026-06-24T11:38:00+00:00",
+      "trazabilidad": "2_model_builder/output.json",
+      "nota": "Periodos normalizados: 0; audit_flags: 0."
+    },
+    {
+      "tipo": "agente_market_researcher",
+      "id": "AGT-KYC-003",
+      "agente": "Market Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Recopilacion y sintesis de señales externas reputacionales y legales.",
+      "fuente": "fuentes_externas.json / agregador configurado",
+      "fecha_extraccion": "2026-06-24T11:38:19+00:00",
+      "trazabilidad": "4_market_researcher/output.txt",
+      "nota": "Hallazgos externos sujetos a verificacion manual de Cumplimiento y Riesgos.",
+      "contenido_referencia": "## Resumen (markdown) — Señales externas relevantes para el análisis de riesgo  \n**Empresa:** Acme Componentes SL  \n**Partes vinculadas:** No identificadas  \n**Noticias/señales en base de datos interna:** No hay registros\n\n### 1) Situación de información disponible\n- **Ausencia de señales internas registradas**: no hay noticias ni alertas en la base de datos interna, por lo que **no se observan “red flags” documentadas** desde esa fuente.\n- **Riesgo operativo para el análisis**: la falta de señales internas **no equivale a ausencia de riesgo**; implica que el análisis depende de **fuentes externas** (registros mercantiles, prensa, litigios, sanciones, insolvencias, cambios societarios, etc.).\n\n### 2) Señales externas a revisar (checklist de riesgo)\nA falta de eventos ya capturados, las señales externas típicamente más relevantes para una empresa industrial/de componentes incluyen:\n\n**A. "
+    },
+    {
+      "tipo": "agente_valuation_reviewer",
+      "id": "AGT-KYC-004",
+      "agente": "Valuation Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Calculo de ratios y analisis de riesgo cruzado con historial del cliente.",
+      "fuente": "Modelo financiero normalizado + historial interno",
+      "fecha_extraccion": "2026-06-24T11:38:53+00:00",
+      "trazabilidad": "3_valuation_reviewer/output.json",
+      "nota": "Ratios calculados para 0 periodos; historial disponible: si."
+    },
+    {
+      "tipo": "agente_credit_risk_report",
+      "id": "AGT-KYC-005",
+      "agente": "Credit Risk Report Agent",
+      "resultado": "OK",
+      "descripcion": "Sintesis integral para comite de riesgos con recomendaciones operativas.",
+      "fuente": "Outputs de KYC Screener, Model Builder, Market Researcher y Valuation Reviewer",
+      "fecha_extraccion": "2026-06-24T11:39:34+00:00",
+      "trazabilidad": "informe.md",
+      "nota": "La decision final de riesgo corresponde al analista y al comite.",
+      "contenido_referencia": "## 1. Resumen ejecutivo\n\nAcme Componentes SL presenta un desempeño financiero **positivo** en 2022–2024, con **crecimiento de ingresos**, **expansión de margen EBITDA** y **apalancamiento moderado** (ND/EBITDA ~2,1x) con **cobertura de intereses holgada** (>8x). El historial con el banco es **favorable** (sin impagos; operaciones vigentes al corriente), coherente con el perfil financiero observado. No obstante, existen **brechas KYC materiales** y un resultado de screening **NO CONCLUYENTE**: **no se ha realizado/documentado screening de sanciones/PEP/adverse media** y falta transparencia/soporte del **UBO entidad** (Acme Europe Holding GmbH), además de documentación de poderes y fiscalidad. En consecuencia, el nivel de riesgo consolidado se considera **MEDIO**, con necesidad de **condicionar** cualquier avance crediticio a la regularización KYC y a completar información de caja/deuda pa"
+    }
+  ]
+}

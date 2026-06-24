@@ -17,7 +17,7 @@ CONFIG_FILE = os.environ.get("BANK_CONFIG_FILE", str(_BASE_DIR / "config_cliente
 def _load_client_config() -> dict:
     path = Path(CONFIG_FILE)
     if path.exists():
-        with open(path, encoding="utf-8") as f:
+           with open(path, encoding="utf-8-sig") as f:
             return json.load(f)
     return {}
 

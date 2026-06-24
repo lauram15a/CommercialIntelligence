@@ -36,7 +36,7 @@ def _normalize_name(value: str) -> str:
 def load_historial(entity_name: str) -> dict:
     bbdd_path = DATA_DIR / "bbdd.json"
     if bbdd_path.exists():
-        with open(bbdd_path, encoding="utf-8") as f:
+        with open(bbdd_path, encoding="utf-8-sig") as f:
             bbdd = json.load(f)
         historial = bbdd.get("historial", {}) or {}
     else:
@@ -44,7 +44,7 @@ def load_historial(entity_name: str) -> dict:
 
     path = DATA_DIR / "historial.json"
     if not historial and path.exists():
-        with open(path, encoding="utf-8") as f:
+        with open(path, encoding="utf-8-sig") as f:
             historial = json.load(f)
 
     if not historial:
@@ -64,11 +64,25 @@ def load_historial(entity_name: str) -> dict:
 def _collect_related_names(extracted_entities: list[dict]) -> list[str]:
     names = set()
     for d in extracted_entities:
+        if not isinstance(d, dict):
+            continue
         entidad = d.get("entidad", {}) or {}
+        if not isinstance(entidad, dict):
+            continue
         for owner in entidad.get("titulares_reales") or []:
-            names.add(owner)
+            if isinstance(owner, str) and owner.strip():
+                names.add(owner)
+            elif isinstance(owner, dict):
+                owner_name = owner.get("nombre")
+                if isinstance(owner_name, str) and owner_name.strip():
+                    names.add(owner_name)
         for admin in entidad.get("administradores") or []:
-            names.add(admin)
+            if isinstance(admin, str) and admin.strip():
+                names.add(admin)
+            elif isinstance(admin, dict):
+                admin_name = admin.get("nombre")
+                if isinstance(admin_name, str) and admin_name.strip():
+                    names.add(admin_name)
     return sorted(names)
 
 
@@ -136,7 +150,7 @@ def run_multiagent_pipeline(
     })
     _notify("kyc_screener", "completed")
 
-    related_names = _collect_related_names(kyc_output["extracted_entities"])
+    related_names = _collect_related_names(kyc_output.get("extracted_entities", []) or [])
 
     logger.info("FASE 2/5: Model Builder Agent")
     _notify("model_builder", "started")

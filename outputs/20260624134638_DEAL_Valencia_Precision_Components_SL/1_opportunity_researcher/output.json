@@ -1,0 +1,14 @@
+{
+  "sector": "Industrial",
+  "oportunidades": [
+    {
+      "empresa": "Valencia Precision Components SL",
+      "motivo": "La compañía anticipa una ampliación de planta (2027) y ya identifica necesidad de financiación para CAPEX, lo que abre una ventana para estructurar financiación de inversión y/o líneas puente de preparación del proyecto.",
+      "prioridad": "media",
+      "justificacion_prioridad": "Existe una señal explícita de CAPEX, pero el hito principal está indicado para 2027; sin evidencia adicional de ejecución inmediata (compra de terreno, pedidos de maquinaria, permisos), la probabilidad de cierre en 6–12 meses es moderada frente a oportunidades con refinanciación o M&A inminente.",
+      "ingresos_estimados": null,
+      "empleados": null
+    }
+  ],
+  "resumen": "En Industrial, las oportunidades más accionables suelen venir de CAPEX de expansión, automatización y eficiencia energética, además de refinanciaciones. En este caso hay un driver claro (ampliación), pero el calendario comunicado sugiere trabajo de originación temprana para capturar la financiación cuando el proyecto entre en fase de ejecución."
+}

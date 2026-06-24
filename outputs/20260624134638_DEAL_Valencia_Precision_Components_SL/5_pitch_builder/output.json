@@ -1,0 +1,31 @@
+{
+  "titulo": "Propuesta comercial | Financiación de inversión y circulante para ampliación de capacidad (horizonte 2027)",
+  "subtitulo": "Estructurar una solución de financiación escalonada para CAPEX y ramp-up, combinando deuda de inversión y líneas puente para preparar la ampliación de planta 2027.",
+  "oportunidad_detectada": "Valencia Precision Components SL anticipa una ampliación de planta con foco en automatización/robótica y una nueva línea de mecanizado con horizonte 2027, lo que previsiblemente incrementará las necesidades de CAPEX y de circulante durante el periodo de puesta en marcha. La ventana actual permite diseñar con antelación una estructura de financiación alineada al calendario de desembolsos y a la generación de caja esperada, incorporando holguras para riesgos de ejecución y ramp-up. Dada la falta de visibilidad cuantitativa (ingresos, EBITDA y deuda), la oportunidad inmediata es liderar el diagnóstico financiero y proponer un paquete de financiación modular y condicionado a hitos.",
+  "contexto_financiero": [
+    "Expansión de capacidad prevista (2027) con perfil inversor creciente: necesidad de dimensionar CAPEX total, calendario de desembolsos y contingencias (coste/plazo).",
+    "Probable incremento de necesidades de circulante en el arranque (ramp-up) por mayor inventario, WIP y plazos de cobro/pago asociados a nuevos contratos marco.",
+    "Riesgos a gestionar: presión de márgenes por insumos, desviaciones de ejecución del proyecto y tensión de caja durante la curva de aprendizaje; ausencia de datos de endeudamiento impide evaluar headroom y covenants objetivo."
+  ],
+  "encaje_productos": [
+    "Financiación de inversión (deuda a medio/largo plazo) para CAPEX de ampliación, con desembolsos por hitos y periodo de carencia parcial durante instalación y puesta en marcha.",
+    "Líneas de circulante y/o línea puente de preparación del proyecto (pre-CAPEX) para cubrir necesidades previas y el ramp-up (incluyendo colchón de liquidez y flexibilidad estacional)."
+  ],
+  "comparables": [
+    "Fabricantes industriales de componentes de precisión con inversión en automatización y exposición a contratos marco (peer set indicativo; pendiente de confirmar subsegmento y mix de clientes).",
+    "Proveedores industriales de mecanizado/metalworking orientados a series medias y altas exigencias de calidad (peer set indicativo; pendiente de datos financieros para calibrar estructura)."
+  ],
+  "argumentos_valor": [
+    "Estructura a medida y escalonada: diseño de financiación por fases (preparación → CAPEX → ramp-up) para minimizar coste de carry y asegurar disponibilidad cuando se necesite.",
+    "Gestión de riesgos y holguras: incorporación de carencias, amortización adaptada y colchones de liquidez para cubrir desviaciones de ejecución y la curva de aprendizaje de la nueva capacidad.",
+    "Acompañamiento analítico: diagnóstico de capacidad de endeudamiento y generación de caja (sensibilidades) para definir tamaño óptimo, covenants y calendario, reduciendo incertidumbre para la dirección."
+  ],
+  "proximos_pasos": [
+    "Reunión de descubrimiento (60–90 min): confirmar alcance del proyecto, calendario 2025–2027, presupuesto preliminar, proveedores críticos y plan de ramp-up.",
+    "Solicitud de información mínima (data pack): últimos estados financieros disponibles, detalle de deuda actual, CAPEX histórico y planificado, cartera/pedidos, política de precios y principales términos de cobro/pago.",
+    "Entrega de propuesta indicativa: alternativas de estructura (inversión + circulante/puente), rango de importes, calendario de desembolsos, esquema de amortización y lista de condiciones precedentes/hitos."
+  ],
+  "narrativa_markdown": "Valencia Precision Components SL se encuentra en una fase de expansión industrial impulsada por señales de crecimiento comercial (cartera al alza y nuevos contratos marco) y por una agenda de inversión orientada a automatización/robótica, incluyendo una nueva línea de mecanizado con horizonte 2027. Este contexto sugiere un aumento relevante de necesidades de financiación, tanto para CAPEX como para el circulante asociado al arranque y ramp-up de la nueva capacidad.\n\nLa oportunidad para el banco consiste en anticiparse al calendario del proyecto y estructurar una solución modular por fases: (i) una línea puente o financiación de preparación para cubrir hitos previos y gastos iniciales, (ii) financiación de inversión a medio/largo plazo para el CAPEX principal con desembolsos por hitos y carencia parcial durante instalación, y (iii) líneas de circulante para absorber el incremento temporal de working capital durante la puesta en marcha.\n\nDado que la información disponible no incluye ingresos, márgenes/EBITDA ni endeudamiento, el primer valor diferencial es liderar un diagnóstico financiero rápido que permita dimensionar capacidad de repago, holguras y covenants objetivo. En paralelo, se recomienda incorporar desde el diseño mitigantes para riesgos de ejecución (plazos/costes) y para la potencial presión de márgenes por insumos, evitando tensiones de caja en el periodo de transición.\n\nProponemos un proceso ágil: reunión de descubrimiento para cerrar alcance y calendario, solicitud de un data pack mínimo para modelizar caja y sensibilidades, y entrega de una propuesta indicativa con alternativas de estructura y condiciones por hitos. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+  "pptx_path": "5_pitch_builder/pitchbook.pptx",
+  "pdf_path": "5_pitch_builder/pitchbook.pdf"
+}

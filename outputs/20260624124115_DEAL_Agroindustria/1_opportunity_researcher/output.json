@@ -1,0 +1,27 @@
+{
+  "sector": "Agroindustria",
+  "oportunidades": [
+    {
+      "empresa": "Mediterránea Foods Export SA",
+      "motivo": "Plan de ampliación de planta (CAPEX) y aumento de exportaciones, lo que sugiere necesidad inmediata de financiación a largo plazo y soluciones de circulante ligadas a comercio exterior, además de coberturas de divisa por mayor exposición FX.",
+      "prioridad": "alta",
+      "ingresos_estimados": 27900000,
+      "empleados": 176
+    },
+    {
+      "empresa": "Cooperativa Olivarera del Sur SCOOP",
+      "motivo": "Proyecto de modernización de planta y certificación internacional, típicamente asociado a inversión relevante y plazos largos; adicionalmente, la exportación a 22 países incrementa la necesidad de coberturas de tipo de cambio y potencial financiación de circulante estacional.",
+      "prioridad": "alta",
+      "ingresos_estimados": 28000000,
+      "empleados": 95
+    },
+    {
+      "empresa": "Bodegas Ribera del Viento SA",
+      "motivo": "Expansión comercial en Asia con foco en financiación de circulante exportador (pre/post-embarque) y uso de crédito documentario/garantías; necesidad más táctica y escalable según tracción de ventas.",
+      "prioridad": "media",
+      "ingresos_estimados": 11200000,
+      "empleados": 62
+    }
+  ],
+  "resumen": "El sector agroindustrial muestra oportunidades claras en dos frentes: inversión productiva (modernización/ampliación de plantas) y crecimiento exportador, que elevan la demanda de financiación a largo plazo, circulante estacional y soluciones de trade finance. La internacionalización incrementa la relevancia de coberturas FX y estructuración de cobros/pagos para proteger márgenes."
+}

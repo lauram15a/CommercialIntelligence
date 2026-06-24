@@ -1,0 +1,9 @@
+Mediterránea Foods Export SA se encuentra en un punto de inflexión estratégico: un plan de ampliación de planta (CAPEX) orientado a incrementar capacidad productiva y sostener un mayor volumen de exportaciones. Este movimiento, por su naturaleza, suele concentrar necesidades de caja en el corto plazo (ejecución de inversión) y trasladar la generación de retornos a medida que la capacidad entra en operación y se completa el ramp-up comercial.
+
+En este contexto, proponemos una solución de financiación integral que combine deuda a largo plazo para el CAPEX —con estructura y calendario alineados a hitos de ejecución y puesta en marcha— con herramientas de circulante específicas para comercio exterior. El objetivo es que el crecimiento internacional no se vea limitado por el ciclo de caja (producción, inventarios, tránsito, plazos de cobro) y que la compañía mantenga holgura financiera durante el periodo de inversión.
+
+Adicionalmente, el aumento del mix exportador incrementa la exposición a divisa (FX), lo que puede introducir volatilidad en márgenes y en la capacidad de servicio de deuda. Recomendamos establecer un marco de coberturas FX (por divisa, horizonte y nivel de cobertura) y una gobernanza de riesgos que permita proteger resultados ante movimientos adversos del tipo de cambio.
+
+Dado que actualmente no se dispone de información crítica (márgenes/EBITDA, deuda neta y vencimientos, importe y calendario de CAPEX, métricas de circulante), el siguiente paso es un levantamiento de datos estructurado para dimensionar capacidad de repago, definir el mix óptimo entre largo plazo y líneas operativas, y construir un paquete financiero robusto y ejecutable.
+
+El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

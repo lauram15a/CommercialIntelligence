@@ -1,0 +1,30 @@
+{
+  "titulo": "Propuesta comercial | Financiación estructurada para expansión internacional (Planta Polonia)",
+  "subtitulo": "Estructurar 8–12M EUR de financiación de CAPEX y circulante para asegurar la puesta en marcha y el ramp-up de la nueva planta en Polonia",
+  "oportunidad_detectada": "Acme Componentes SL está ejecutando una expansión internacional con una nueva planta en Polonia y ha explicitado una necesidad inmediata de financiación estructurada estimada en 8–12M EUR. Esto abre una ventana de alta prioridad para diseñar un paquete de deuda de inversión alineado al calendario de CAPEX y al ramp-up, complementado con soluciones de circulante y coberturas asociadas a la operativa internacional, sujeto a confirmar exposiciones y métricas financieras clave.",
+  "contexto_financiero": [
+    "Ingresos estimados de ~42,0M EUR; no se dispone de comparativa interanual ni desglose temporal para evaluar crecimiento.",
+    "No se reportan métricas de rentabilidad (EBIT/EBITDA) ni generación de caja, lo que limita el análisis de capacidad de repago y covenants.",
+    "Proyecto de inversión en curso (nueva planta en Polonia) con incremento material de CAPEX y potencial tensión de liquidez durante la fase de puesta en marcha y ramp-up; necesidad explícita de financiación 8–12M EUR."
+  ],
+  "encaje_productos": [
+    "Financiación de inversión / deuda a medio-largo plazo para CAPEX (tramos con disposiciones por hitos, periodo de carencia y amortización escalonada)",
+    "Financiación de circulante (línea revolvente, confirming/anticipo de facturas, avales y garantías operativas) y coberturas (tipo de interés y divisa) vinculadas a la financiación y a la operativa internacional"
+  ],
+  "comparables": [
+    "Fabricante europeo de componentes industriales con expansión greenfield en Europa Central (financiación CAPEX + línea de circulante para ramp-up)",
+    "Proveedor industrial mid-cap con nueva planta y aumento de capacidad (estructura con carencia inicial, covenants de apalancamiento y capex drawdowns)"
+  ],
+  "argumentos_valor": [
+    "Estructura a medida del ciclo de inversión: calendario de disposiciones y amortización alineados a hitos de obra, puesta en marcha y ramp-up para minimizar fricción de caja en el periodo crítico.",
+    "Paquete integral CAPEX + circulante: combinación de deuda de inversión y herramientas de working capital para absorber el incremento de necesidades operativas (inventario, proveedores, plazos de cobro) durante el arranque.",
+    "Gestión de riesgos financieros: diseño de covenants y colchones de liquidez acordes al riesgo de ejecución, y propuesta de coberturas de tipo de interés/divisa para estabilizar el coste financiero y la exposición internacional."
+  ],
+  "proximos_pasos": [
+    "Reunión de diagnóstico (60–90 min): confirmar CAPEX total, calendario de desembolsos, hitos, fecha objetivo de SOP/ramp-up y desglose del rango 8–12M EUR (CAPEX vs. circulante).",
+    "Solicitud de información mínima para estructuración: últimos estados financieros disponibles, EBITDA/EBIT, deuda actual y vencimientos, CapEx plan, previsión de caja 12–24 meses y detalle de clientes/proveedores (plazos).",
+    "Entrega de propuesta indicativa: alternativas de estructura (plazo, carencia, amortización, garantías, covenants), dimensionamiento de línea de circulante y recomendación preliminar de coberturas; validación conjunta y lanzamiento de ejecución."
+  ],
+  "narrativa_markdown": "Acme Componentes SL se encuentra en un momento de alta intensidad inversora al estar ejecutando una expansión internacional mediante una nueva planta en Polonia. La compañía ha identificado de forma explícita una necesidad de financiación estructurada estimada en **8–12M EUR**, lo que sugiere una ventana inmediata para diseñar una solución de deuda orientada a CAPEX y a la fase de puesta en marcha.\n\nProponemos estructurar un paquete de financiación que combine **deuda de inversión a medio-largo plazo** (con disposiciones por hitos, posible carencia inicial y un perfil de amortización alineado al ramp-up) junto con **soluciones de circulante** para cubrir necesidades operativas adicionales típicas del arranque (inventario, proveedores, plazos de cobro y garantías operativas). Esta aproximación busca proteger la liquidez durante el periodo crítico y reducir el riesgo de ejecución financiera del proyecto.\n\nDado que actualmente no se dispone de métricas de rentabilidad (EBIT/EBITDA), generación de caja ni detalle de endeudamiento, el foco inicial será completar un set mínimo de información para dimensionar capacidad de repago y definir covenants razonables. En paralelo, evaluaremos la conveniencia de **coberturas de tipo de interés y divisa** vinculadas tanto a la financiación como a la operativa internacional, sujeto a confirmar exposición.\n\nEl siguiente paso recomendado es una reunión de diagnóstico para aterrizar el uso de fondos (CAPEX vs. circulante), el calendario de inversión y los hitos de puesta en marcha, seguida de la entrega de una propuesta indicativa con alternativas de estructura y términos económicos. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+  "pptx_path": "5_pitch_builder/pitchbook.pptx"
+}

@@ -1,0 +1,27 @@
+{
+  "sector": "Industrial",
+  "oportunidades": [
+    {
+      "empresa": "Acme Componentes SL",
+      "motivo": "Expansión internacional ya en ejecución (nueva planta en Polonia) con necesidades explícitas de financiación estructurada estimadas en 8-12M EUR, lo que sugiere ventana inmediata para estructurar deuda/capex financing y posibles coberturas asociadas.",
+      "prioridad": "alta",
+      "ingresos_estimados": 42000000,
+      "empleados": 310
+    },
+    {
+      "empresa": "Vertia Energía SL",
+      "motivo": "Aumento del 59% del endeudamiento en el último ejercicio para financiar nuevos contratos, señal típica de tensión de estructura de capital y potencial refinanciación a corto plazo; oportunidad para refinanciación, project finance por contrato y optimización de vencimientos/garantías.",
+      "prioridad": "alta",
+      "ingresos_estimados": 19500000,
+      "empleados": 95
+    },
+    {
+      "empresa": "Norte Logística SA",
+      "motivo": "Crecimiento sostenido sin financiación externa reciente, con posible plan de ampliación de flota vía renting; oportunidad comercial de renting/leasing y línea de circulante para acompañar el crecimiento, aunque sin urgencia financiera evidente.",
+      "prioridad": "media",
+      "ingresos_estimados": 28000000,
+      "empleados": 180
+    }
+  ],
+  "resumen": "En Industrial, las señales más accionables suelen venir de expansión de capacidad (capex/planta) y de incrementos rápidos de apalancamiento ligados a nuevos contratos. En esta muestra, destacan dos necesidades inmediatas (financiación de expansión y refinanciación/project finance) y una oportunidad de acompañamiento al crecimiento vía activos (renting de flota) y circulante."
+}

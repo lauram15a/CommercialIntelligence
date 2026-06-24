@@ -1,0 +1,164 @@
+{
+  "run_id": "20260624123646",
+  "sector": "Industrial",
+  "company_name": "Acme Componentes SL",
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Industrial",
+    "oportunidades": [
+      {
+        "empresa": "Acme Componentes SL",
+        "motivo": "Expansión internacional ya en ejecución (nueva planta en Polonia) con necesidades explícitas de financiación estructurada estimadas en 8-12M EUR, lo que sugiere ventana inmediata para estructurar deuda/capex financing y posibles coberturas asociadas.",
+        "prioridad": "alta",
+        "ingresos_estimados": 42000000,
+        "empleados": 310
+      },
+      {
+        "empresa": "Vertia Energía SL",
+        "motivo": "Aumento del 59% del endeudamiento en el último ejercicio para financiar nuevos contratos, señal típica de tensión de estructura de capital y potencial refinanciación a corto plazo; oportunidad para refinanciación, project finance por contrato y optimización de vencimientos/garantías.",
+        "prioridad": "alta",
+        "ingresos_estimados": 19500000,
+        "empleados": 95
+      },
+      {
+        "empresa": "Norte Logística SA",
+        "motivo": "Crecimiento sostenido sin financiación externa reciente, con posible plan de ampliación de flota vía renting; oportunidad comercial de renting/leasing y línea de circulante para acompañar el crecimiento, aunque sin urgencia financiera evidente.",
+        "prioridad": "media",
+        "ingresos_estimados": 28000000,
+        "empleados": 180
+      }
+    ],
+    "resumen": "En Industrial, las señales más accionables suelen venir de expansión de capacidad (capex/planta) y de incrementos rápidos de apalancamiento ligados a nuevos contratos. En esta muestra, destacan dos necesidades inmediatas (financiación de expansión y refinanciación/project finance) y una oportunidad de acompañamiento al crecimiento vía activos (renting de flota) y circulante."
+  },
+  "earnings_summary": "Acme Componentes SL presenta unos ingresos estimados de ~42,0M EUR, si bien el documento no aporta comparativa interanual ni desglose temporal que permita cuantificar crecimiento o desaceleración. Tampoco se incluyen métricas de rentabilidad (EBIT/EBITDA) para evaluar la evolución del margen operativo, por lo que no es posible determinar si hay mejora o compresión de márgenes. La tendencia más relevante es estratégica: la compañía ya está ejecutando una expansión internacional mediante una nueva planta en Polonia, lo que apunta a un incremento material del CAPEX en el corto plazo. En línea con ello, se explicitan necesidades de financiación estructurada estimadas en 8–12M EUR, coherentes con un proyecto de inversión y puesta en marcha (capex financing) y potenciales necesidades de circulante asociadas al ramp-up. No hay datos sobre endeudamiento actual, estructura de capital o generación de caja, limitando el análisis de apalancamiento y capacidad de repago.\n\nLa compañía presenta una fase de crecimiento/inversión intensiva (nueva planta) con requerimiento de 8–12M EUR, lo que puede implicar una necesidad inmediata de financiación para CAPEX y soporte de la expansión internacional.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos estimados",
+        "valor": "~42,0M EUR"
+      },
+      {
+        "nombre": "Necesidades de financiación estructurada",
+        "valor": "8–12M EUR"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Expansión internacional en ejecución mediante una nueva planta en Polonia.",
+      "Incremento material del CAPEX en el corto plazo asociado al proyecto de inversión y puesta en marcha.",
+      "Potenciales mayores necesidades de circulante ligadas al ramp-up de la nueva capacidad."
+    ],
+    "interpretacion": "La compañía se encuentra en una fase de inversión intensiva orientada a crecimiento (nueva planta), con un requerimiento explícito de financiación estructurada de 8–12M EUR. La ausencia de métricas de rentabilidad, caja y endeudamiento actual impide evaluar apalancamiento y capacidad de repago, pero el perfil descrito sugiere una necesidad inmediata de financiación para CAPEX y soporte operativo de la expansión.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Acme Componentes SL es una compañía con ingresos estimados de ~42,0M EUR. Está ejecutando una expansión internacional mediante la puesta en marcha de una nueva planta en Polonia, lo que sugiere un foco estratégico en crecimiento y aumento de capacidad productiva.",
+    "situacion_actual": "La empresa se encuentra en una fase de inversión intensiva por el incremento material de CAPEX asociado a la nueva planta en Polonia. Ha explicitado necesidades de financiación estructurada estimadas en 8–12M EUR, lo que apunta a una ventana inmediata para estructurar financiación de inversión y posibles necesidades operativas ligadas al ramp-up.",
+    "necesidades_potenciales": [
+      "Financiación de CAPEX (deuda/financiación estructurada) para la nueva planta en Polonia por 8–12M EUR.",
+      "Estructuración de un paquete de financiación que contemple el periodo de puesta en marcha (gracia, calendario de amortización alineado al ramp-up).",
+      "Soporte de circulante asociado al incremento de actividad durante el ramp-up de la nueva capacidad.",
+      "Coberturas asociadas a la expansión internacional (p. ej., vinculadas a la financiación y a la operativa internacional), sujeto a confirmar exposición."
+    ],
+    "riesgos": [
+      "Falta de información sobre rentabilidad (EBIT/EBITDA) que impide evaluar márgenes y resiliencia operativa.",
+      "Ausencia de datos de endeudamiento actual, estructura de capital y generación de caja, limitando el análisis de apalancamiento y capacidad de repago.",
+      "Riesgo de ejecución del proyecto (costes, plazos y ramp-up de la nueva planta) que podría tensionar liquidez y necesidades de financiación.",
+      "Posibles mayores necesidades de circulante durante la puesta en marcha que no estén contempladas en el rango 8–12M EUR."
+    ],
+    "talking_points": [
+      "Confirmar alcance del proyecto en Polonia: CAPEX total, calendario de desembolsos, hitos de puesta en marcha y fecha objetivo de ramp-up.",
+      "Aterrizar la necesidad de financiación 8–12M EUR: uso de fondos (CAPEX vs. circulante), estructura deseada, plazo y flexibilidad requerida (carencias/covenants).",
+      "Solicitar métricas clave para dimensionar capacidad de repago: EBITDA/EBIT, márgenes, generación de caja, deuda actual y vencimientos.",
+      "Explorar necesidades de circulante durante el ramp-up y si requieren líneas específicas o un componente revolvente.",
+      "Identificar exposiciones derivadas de la expansión internacional para valorar coberturas asociadas a la financiación y a la operativa, sujeto a datos adicionales."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Financiación estructurada para expansión internacional (Planta Polonia)",
+    "subtitulo": "Estructurar 8–12M EUR de financiación de CAPEX y circulante para asegurar la puesta en marcha y el ramp-up de la nueva planta en Polonia",
+    "oportunidad_detectada": "Acme Componentes SL está ejecutando una expansión internacional con una nueva planta en Polonia y ha explicitado una necesidad inmediata de financiación estructurada estimada en 8–12M EUR. Esto abre una ventana de alta prioridad para diseñar un paquete de deuda de inversión alineado al calendario de CAPEX y al ramp-up, complementado con soluciones de circulante y coberturas asociadas a la operativa internacional, sujeto a confirmar exposiciones y métricas financieras clave.",
+    "contexto_financiero": [
+      "Ingresos estimados de ~42,0M EUR; no se dispone de comparativa interanual ni desglose temporal para evaluar crecimiento.",
+      "No se reportan métricas de rentabilidad (EBIT/EBITDA) ni generación de caja, lo que limita el análisis de capacidad de repago y covenants.",
+      "Proyecto de inversión en curso (nueva planta en Polonia) con incremento material de CAPEX y potencial tensión de liquidez durante la fase de puesta en marcha y ramp-up; necesidad explícita de financiación 8–12M EUR."
+    ],
+    "encaje_productos": [
+      "Financiación de inversión / deuda a medio-largo plazo para CAPEX (tramos con disposiciones por hitos, periodo de carencia y amortización escalonada)",
+      "Financiación de circulante (línea revolvente, confirming/anticipo de facturas, avales y garantías operativas) y coberturas (tipo de interés y divisa) vinculadas a la financiación y a la operativa internacional"
+    ],
+    "comparables": [
+      "Fabricante europeo de componentes industriales con expansión greenfield en Europa Central (financiación CAPEX + línea de circulante para ramp-up)",
+      "Proveedor industrial mid-cap con nueva planta y aumento de capacidad (estructura con carencia inicial, covenants de apalancamiento y capex drawdowns)"
+    ],
+    "argumentos_valor": [
+      "Estructura a medida del ciclo de inversión: calendario de disposiciones y amortización alineados a hitos de obra, puesta en marcha y ramp-up para minimizar fricción de caja en el periodo crítico.",
+      "Paquete integral CAPEX + circulante: combinación de deuda de inversión y herramientas de working capital para absorber el incremento de necesidades operativas (inventario, proveedores, plazos de cobro) durante el arranque.",
+      "Gestión de riesgos financieros: diseño de covenants y colchones de liquidez acordes al riesgo de ejecución, y propuesta de coberturas de tipo de interés/divisa para estabilizar el coste financiero y la exposición internacional."
+    ],
+    "proximos_pasos": [
+      "Reunión de diagnóstico (60–90 min): confirmar CAPEX total, calendario de desembolsos, hitos, fecha objetivo de SOP/ramp-up y desglose del rango 8–12M EUR (CAPEX vs. circulante).",
+      "Solicitud de información mínima para estructuración: últimos estados financieros disponibles, EBITDA/EBIT, deuda actual y vencimientos, CapEx plan, previsión de caja 12–24 meses y detalle de clientes/proveedores (plazos).",
+      "Entrega de propuesta indicativa: alternativas de estructura (plazo, carencia, amortización, garantías, covenants), dimensionamiento de línea de circulante y recomendación preliminar de coberturas; validación conjunta y lanzamiento de ejecución."
+    ],
+    "narrativa_markdown": "Acme Componentes SL se encuentra en un momento de alta intensidad inversora al estar ejecutando una expansión internacional mediante una nueva planta en Polonia. La compañía ha identificado de forma explícita una necesidad de financiación estructurada estimada en **8–12M EUR**, lo que sugiere una ventana inmediata para diseñar una solución de deuda orientada a CAPEX y a la fase de puesta en marcha.\n\nProponemos estructurar un paquete de financiación que combine **deuda de inversión a medio-largo plazo** (con disposiciones por hitos, posible carencia inicial y un perfil de amortización alineado al ramp-up) junto con **soluciones de circulante** para cubrir necesidades operativas adicionales típicas del arranque (inventario, proveedores, plazos de cobro y garantías operativas). Esta aproximación busca proteger la liquidez durante el periodo crítico y reducir el riesgo de ejecución financiera del proyecto.\n\nDado que actualmente no se dispone de métricas de rentabilidad (EBIT/EBITDA), generación de caja ni detalle de endeudamiento, el foco inicial será completar un set mínimo de información para dimensionar capacidad de repago y definir covenants razonables. En paralelo, evaluaremos la conveniencia de **coberturas de tipo de interés y divisa** vinculadas tanto a la financiación como a la operativa internacional, sujeto a confirmar exposición.\n\nEl siguiente paso recomendado es una reunión de diagnóstico para aterrizar el uso de fondos (CAPEX vs. circulante), el calendario de inversión y los hitos de puesta en marcha, seguida de la entrega de una propuesta indicativa con alternativas de estructura y términos económicos. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx"
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_opportunity_researcher",
+      "id": "AGT-DEAL-001",
+      "agente": "Opportunity Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Identificacion y priorizacion de oportunidades por sector.",
+      "fuente": "BBDD interna + criterios de priorizacion del agente",
+      "fecha_extraccion": "2026-06-24T10:37:02+00:00",
+      "trazabilidad": "1_opportunity_researcher/output.json",
+      "nota": "Oportunidades evaluadas: 3."
+    },
+    {
+      "tipo": "agente_earnings_reviewer",
+      "id": "AGT-DEAL-002",
+      "agente": "Earnings Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Analisis de resultados financieros y tendencias clave.",
+      "fuente": "Documentacion financiera aportada + contexto de oportunidad",
+      "fecha_extraccion": "2026-06-24T10:37:12+00:00",
+      "trazabilidad": "2_earnings_reviewer/output.txt",
+      "nota": "Documentos de entrada: 1.",
+      "contenido_referencia": "Acme Componentes SL presenta unos ingresos estimados de ~42,0M EUR, si bien el documento no aporta comparativa interanual ni desglose temporal que permita cuantificar crecimiento o desaceleración. Tampoco se incluyen métricas de rentabilidad (EBIT/EBITDA) para evaluar la evolución del margen operativo, por lo que no es posible determinar si hay mejora o compresión de márgenes. La tendencia más relevante es estratégica: la compañía ya está ejecutando una expansión internacional mediante una nueva planta en Polonia, lo que apunta a un incremento material del CAPEX en el corto plazo. En línea con ello, se explicitan necesidades de financiación estructurada estimadas en 8–12M EUR, coherentes con un proyecto de inversión y puesta en marcha (capex financing) y potenciales necesidades de circulante asociadas al ramp-up. No hay datos sobre endeudamiento actual, estructura de capital o generación"
+    },
+    {
+      "tipo": "agente_model_builder_deal",
+      "id": "AGT-DEAL-003",
+      "agente": "Model Builder Agent (Deal)",
+      "resultado": "OK",
+      "descripcion": "Extraccion de indicadores y tendencias estructurales para soporte comercial.",
+      "fuente": "Resumen de Earnings Reviewer",
+      "fecha_extraccion": "2026-06-24T10:37:17+00:00",
+      "trazabilidad": "3_model_builder/output.json",
+      "nota": "Paso opcional en el pipeline Deal."
+    },
+    {
+      "tipo": "agente_meeting_preparer",
+      "id": "AGT-DEAL-004",
+      "agente": "Meeting Preparer Agent",
+      "resultado": "OK",
+      "descripcion": "Generacion de briefing comercial: perfil, riesgos, necesidades y talking points.",
+      "fuente": "Opportunity context + analisis financiero + modelo opcional",
+      "fecha_extraccion": "2026-06-24T10:37:26+00:00",
+      "trazabilidad": "4_meeting_preparer/output.json"
+    },
+    {
+      "tipo": "agente_pitch_builder",
+      "id": "AGT-DEAL-005",
+      "agente": "Pitch Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Construccion de propuesta final y pitchbook para revision comercial.",
+      "fuente": "Briefing de cliente + contexto de oportunidad + analisis financiero",
+      "fecha_extraccion": "2026-06-24T10:37:46+00:00",
+      "trazabilidad": "5_pitch_builder/output.json",
+      "nota": "Pitchbook generado: si.",
+      "contenido_referencia": "Acme Componentes SL se encuentra en un momento de alta intensidad inversora al estar ejecutando una expansión internacional mediante una nueva planta en Polonia. La compañía ha identificado de forma explícita una necesidad de financiación estructurada estimada en **8–12M EUR**, lo que sugiere una ventana inmediata para diseñar una solución de deuda orientada a CAPEX y a la fase de puesta en marcha.\n\nProponemos estructurar un paquete de financiación que combine **deuda de inversión a medio-largo plazo** (con disposiciones por hitos, posible carencia inicial y un perfil de amortización alineado al ramp-up) junto con **soluciones de circulante** para cubrir necesidades operativas adicionales típicas del arranque (inventario, proveedores, plazos de cobro y garantías operativas). Esta aproximación busca proteger la liquidez durante el periodo crítico y reducir el riesgo de ejecución financier"
+    }
+  ]
+}

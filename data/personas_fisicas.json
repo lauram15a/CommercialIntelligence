@@ -1,0 +1,222 @@
+{
+  "version": "2026-06-25.1",
+  "descripcion": "Dataset demo de personas fisicas para Deal Intelligence en banca retail, personal y privada.",
+  "personas": [
+    {
+      "nombre": "Marta Salas Ortega",
+      "nief": "12345678Z",
+      "segmento": "retail",
+      "es_cliente": true,
+      "territorial": "Centro",
+      "oficina": "Madrid - Sede Central",
+      "comunidad_autonoma": "Comunidad de Madrid",
+      "perfil": "Profesional asalariada con antiguedad elevada y uso activo de productos transaccionales.",
+      "ingresos_anuales_estimados": 58000,
+      "ahorro_liquido_estimado": 42000,
+      "patrimonio_invertible_estimado": 68000,
+      "productos_actuales": ["nomina", "tarjeta", "prestamo consumo"],
+      "senales": [
+        "Cancelacion parcial de prestamo prevista en 2027.",
+        "Aumento de saldo medio y ahorro recurrente en cuenta.",
+        "Interes manifestado por consolidacion de deuda y mejora de condiciones."
+      ],
+      "oportunidades_base": [
+        {
+          "motivo": "Refinanciacion y ordenacion de deuda minorista para reducir cuota y mejorar vinculacion.",
+          "prioridad": "alta",
+          "justificacion_prioridad": "Existe una necesidad concreta y temporalmente cercana, con potencial inmediato de venta consultiva y mayor vinculacion."
+        },
+        {
+          "motivo": "Migracion de excedente liquido hacia soluciones de ahorro programado e inversion conservadora.",
+          "prioridad": "media",
+          "justificacion_prioridad": "La capacidad de ahorro es visible, aunque la necesidad no es tan urgente como la optimizacion de deuda."
+        },
+        {
+          "motivo": "Proteccion personal y familiar mediante cobertura basica y planificacion de pagos recurrentes.",
+          "prioridad": "baja",
+          "justificacion_prioridad": "Es una palanca complementaria de vinculacion, con menor urgencia comercial que las dos anteriores."
+        }
+      ]
+    },
+    {
+      "nombre": "Alvaro Serrano Vidal",
+      "nief": "23456789X",
+      "segmento": "personal",
+      "es_cliente": true,
+      "territorial": "Este",
+      "oficina": "Barcelona - Diagonal",
+      "comunidad_autonoma": "Cataluna",
+      "perfil": "Directivo con remuneracion variable, exposicion internacional y mayor complejidad financiera personal.",
+      "ingresos_anuales_estimados": 145000,
+      "ahorro_liquido_estimado": 130000,
+      "patrimonio_invertible_estimado": 410000,
+      "productos_actuales": ["nomina premium", "hipoteca", "fondos mixtos"],
+      "senales": [
+        "Bonificacion extraordinaria prevista en el segundo semestre.",
+        "Interes en segunda residencia y estructuracion patrimonial.",
+        "Incremento de saldos en productos de inversion en los ultimos 12 meses."
+      ],
+      "oportunidades_base": [
+        {
+          "motivo": "Financiacion residencial y estructuracion patrimonial ligada a compra de segunda vivienda.",
+          "prioridad": "alta",
+          "justificacion_prioridad": "Hay un evento concreto de inversion personal con capacidad inmediata de generar financiacion y cross-sell."
+        },
+        {
+          "motivo": "Reasignacion de liquidez hacia carteras delegadas y soluciones de proteccion patrimonial.",
+          "prioridad": "media",
+          "justificacion_prioridad": "La base patrimonial y la liquidez son claras, aunque la activacion depende de una conversacion de asesoramiento."
+        },
+        {
+          "motivo": "Optimizacion de endeudamiento existente y coberturas de tipo sobre hipoteca vigente.",
+          "prioridad": "media",
+          "justificacion_prioridad": "La oportunidad es real, pero menos transformacional que la operacion de segunda residencia."
+        }
+      ]
+    },
+    {
+      "nombre": "Lucia Ferrer Gomez",
+      "nief": "34567890P",
+      "segmento": "privada",
+      "es_cliente": true,
+      "territorial": "Levante",
+      "oficina": "Valencia - Colon",
+      "comunidad_autonoma": "Comunidad Valenciana",
+      "perfil": "Cliente de banca privada con patrimonio financiero elevado y preferencia por asesoria personalizada.",
+      "ingresos_anuales_estimados": 320000,
+      "ahorro_liquido_estimado": 510000,
+      "patrimonio_invertible_estimado": 2300000,
+      "productos_actuales": ["gestion discrecional", "cartera de fondos", "tesoreria estructurada"],
+      "senales": [
+        "Proceso de liquidez por venta parcial de participacion empresarial.",
+        "Interes en planificacion sucesoria y estructuras de preservacion patrimonial.",
+        "Mayor apetito por activos alternativos con control de riesgo."
+      ],
+      "oportunidades_base": [
+        {
+          "motivo": "Reinversion de liquidez extraordinaria con mandato patrimonial y arquitectura abierta.",
+          "prioridad": "alta",
+          "justificacion_prioridad": "La inminencia de liquidez relevante crea una ventana clara de originacion patrimonial de alto valor."
+        },
+        {
+          "motivo": "Planificacion sucesoria y estructuracion de patrimonio familiar con vehiculos especializados.",
+          "prioridad": "alta",
+          "justificacion_prioridad": "La complejidad patrimonial y el perfil del cliente justifican una propuesta consultiva inmediata."
+        },
+        {
+          "motivo": "Acceso a estrategias de diversificacion y soluciones de financiacion lombarda sobre cartera.",
+          "prioridad": "media",
+          "justificacion_prioridad": "Es una palanca potente, aunque normalmente posterior a la reorganizacion principal de liquidez y sucesion."
+        }
+      ]
+    },
+    {
+      "nombre": "Javier Romero Pardo",
+      "nief": "45678901H",
+      "segmento": "retail",
+      "es_cliente": false,
+      "territorial": "Sur",
+      "oficina": "Sevilla - Nervion",
+      "comunidad_autonoma": "Andalucia",
+      "perfil": "Autonomo con actividad comercial estable y necesidad de liquidez recurrente.",
+      "ingresos_anuales_estimados": 47000,
+      "ahorro_liquido_estimado": 18000,
+      "patrimonio_invertible_estimado": 22000,
+      "productos_actuales": [],
+      "senales": [
+        "Patron de ingresos estacional con tension de tesoreria puntual.",
+        "Interes en cambiar de entidad por experiencia digital y rapidez de respuesta.",
+        "Potencial necesidad de financiacion de circulante de pequena escala."
+      ],
+      "oportunidades_base": [
+        {
+          "motivo": "Captacion con propuesta de liquidez y operativa diaria para sustituir entidad principal.",
+          "prioridad": "alta",
+          "justificacion_prioridad": "Existe una necesidad funcional inmediata y predisposicion expresa a cambiar de banco."
+        },
+        {
+          "motivo": "Financiacion sencilla para circulante y calendario de cobros/pagos.",
+          "prioridad": "media",
+          "justificacion_prioridad": "La necesidad es recurrente, aunque de menor importe y dependiente de validacion documental."
+        },
+        {
+          "motivo": "Ahorro automatico y proteccion basica vinculados a ingresos del negocio.",
+          "prioridad": "baja",
+          "justificacion_prioridad": "Es una extension comercial natural, pero posterior a la captacion principal."
+        }
+      ]
+    },
+    {
+      "nombre": "Elena Costa Miret",
+      "nief": "56789012L",
+      "segmento": "personal",
+      "es_cliente": false,
+      "territorial": "Centro",
+      "oficina": "Madrid - Paseo de la Castellana",
+      "comunidad_autonoma": "Comunidad de Madrid",
+      "perfil": "Profesional liberal con patrimonio financiero medio y foco en optimizacion fiscal y liquidez.",
+      "ingresos_anuales_estimados": 118000,
+      "ahorro_liquido_estimado": 76000,
+      "patrimonio_invertible_estimado": 280000,
+      "productos_actuales": [],
+      "senales": [
+        "Analiza cambio de entidad para centralizar patrimonio financiero.",
+        "Preve desinversion inmobiliaria parcial en 12 meses.",
+        "Interes en asesoramiento personalizado y soluciones de inversion."
+      ],
+      "oportunidades_base": [
+        {
+          "motivo": "Captacion patrimonial con propuesta integrada de liquidez, inversion y fiscalidad personal.",
+          "prioridad": "alta",
+          "justificacion_prioridad": "Hay predisposicion a cambiar de entidad y un evento de liquidez potencial en el horizonte cercano."
+        },
+        {
+          "motivo": "Financiacion puente o preliquidez asociada a desinversion inmobiliaria futura.",
+          "prioridad": "media",
+          "justificacion_prioridad": "La oportunidad existe, pero depende del calendario real de la operacion inmobiliaria."
+        },
+        {
+          "motivo": "Construccion de cartera delegada y proteccion patrimonial progresiva.",
+          "prioridad": "media",
+          "justificacion_prioridad": "El potencial de activos es claro, aunque requiere primero ganar confianza y principalidad."
+        }
+      ]
+    },
+    {
+      "nombre": "Nicolas Weber Klein",
+      "nief": "67890123M",
+      "segmento": "privada",
+      "es_cliente": false,
+      "territorial": "Islas",
+      "oficina": "Palma - Jaime III",
+      "comunidad_autonoma": "Illes Balears",
+      "perfil": "Empresario internacional con liquidez elevada, necesidades multicustodia y sensibilidad fiscal.",
+      "ingresos_anuales_estimados": 410000,
+      "ahorro_liquido_estimado": 940000,
+      "patrimonio_invertible_estimado": 4100000,
+      "productos_actuales": [],
+      "senales": [
+        "Estudia reorganizacion de activos tras venta de negocio participada.",
+        "Busca entidad con capacidad de servicio internacional y asesoria sofisticada.",
+        "Interes en vehiculos de preservacion patrimonial y diversificacion."
+      ],
+      "oportunidades_base": [
+        {
+          "motivo": "Captacion de patrimonio internacional con propuesta de arquitectura abierta y servicio personalizado.",
+          "prioridad": "alta",
+          "justificacion_prioridad": "El volumen potencial y la ventana de reorganizacion patrimonial hacen la oportunidad muy accionable."
+        },
+        {
+          "motivo": "Estructuracion sucesoria y proteccion fiscal con enfoque transfronterizo.",
+          "prioridad": "alta",
+          "justificacion_prioridad": "La complejidad internacional eleva el valor del asesoramiento y la urgencia de planificacion."
+        },
+        {
+          "motivo": "Financiacion sobre activos liquidos y soluciones de diversificacion alternativa.",
+          "prioridad": "media",
+          "justificacion_prioridad": "Es un segundo movimiento comercial potente, aunque normalmente posterior a la captacion patrimonial."
+        }
+      ]
+    }
+  ]
+}

@@ -26,6 +26,8 @@ Cierra siempre con una frase interpretativa del tipo:
 "La compania presenta [...], lo que puede implicar [necesidad / oportunidad]."
 
 No tomes decisiones de inversion ni recomiendes productos concretos.
+Si falta un dato puntual, completa con hipotesis razonable y explicita de forma breve
+la base usada. Evita frases como "informacion insuficiente" o "informacion no encontrada".
 """
 
 

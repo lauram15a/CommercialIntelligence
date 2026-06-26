@@ -41,6 +41,9 @@ REGLAS:
 - Si hay alertas KYC o de sanciones, destacalas en el resumen ejecutivo
 - Usa formato markdown: encabezados ##, listas con -, negrita para terminos
   clave y alertas
+- Si algun dato no llega en los inputs, utiliza una estimacion prudente y deja
+  explicita la base de inferencia; evita frases "desconocido", "informacion no encontrada"
+  o "informacion insuficiente"
 """
 
 

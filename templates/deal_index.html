@@ -22,35 +22,60 @@
       </div>
       <div class="card__body">
 
-        <!-- Selector de modo de búsqueda -->
-        <div class="search-mode-tabs" role="tablist" style="display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid var(--color-border); padding-bottom: 0;">
-          <button type="button" class="search-mode-tab is-active" data-mode="sector"
+        <div class="search-mode-tabs" role="tablist" style="display: flex; gap: 8px; margin-bottom: 18px; border-bottom: 2px solid var(--color-border); padding-bottom: 0;">
+          <button type="button" class="entity-family-tab is-active" data-family="juridica"
+                  style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 700; color: var(--color-primary); border-bottom: 2px solid var(--color-primary); margin-bottom: -2px; cursor: pointer;">
+            Personas jurídicas
+          </button>
+          <button type="button" class="entity-family-tab" data-family="fisica"
+                  style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 700; color: var(--color-ink-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer;">
+            Personas físicas
+          </button>
+        </div>
+
+        <div class="search-mode-tabs family-mode-tabs" data-family="juridica" role="tablist" style="display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid var(--color-border); padding-bottom: 0;">
+          <button type="button" class="search-mode-tab is-active" data-family="juridica" data-mode="sector"
                   style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-primary); border-bottom: 2px solid var(--color-primary); margin-bottom: -2px; cursor: pointer;">
             Por sector
           </button>
-          <button type="button" class="search-mode-tab" data-mode="empresa"
+          <button type="button" class="search-mode-tab" data-family="juridica" data-mode="empresa"
                   style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-ink-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer;">
             Por empresa
           </button>
-          <button type="button" class="search-mode-tab" data-mode="geografia"
+          <button type="button" class="search-mode-tab" data-family="juridica" data-mode="geografia"
                   style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-ink-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer;">
-            Por zona geográfica
+            Por geografía
+          </button>
+        </div>
+
+        <div class="search-mode-tabs family-mode-tabs" data-family="fisica" role="tablist" style="display: none; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid var(--color-border); padding-bottom: 0;">
+          <button type="button" class="search-mode-tab is-active" data-family="fisica" data-mode="segmento"
+                  style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-primary); border-bottom: 2px solid var(--color-primary); margin-bottom: -2px; cursor: pointer;">
+            Por segmento
+          </button>
+          <button type="button" class="search-mode-tab" data-family="fisica" data-mode="persona"
+                  style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-ink-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer;">
+            Por persona
+          </button>
+          <button type="button" class="search-mode-tab" data-family="fisica" data-mode="geografia"
+                  style="padding: 8px 20px; border: none; background: none; font-size: 14px; font-weight: 600; color: var(--color-ink-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer;">
+            Por geografía
           </button>
         </div>
 
         <form action="{{ url_for('deal_nueva_solicitud') }}" method="post" id="deal-request-form">
 
-          <!-- ======= MODO: POR SECTOR ======= -->
-          <div class="search-mode-panel" data-mode="sector">
+          <!-- ======= MODO: POR SECTOR (JURIDICA) ======= -->
+          <div class="search-mode-panel" data-family="juridica" data-mode="sector">
 
             <div class="form-group">
               <label>Tipo de empresas</label>
               <div class="deal-radio-group" style="margin-top: 6px;">
                 <label class="deal-radio">
-                  <input type="radio" name="fuente" value="interna" checked> Clientes del banco
+                  <input type="radio" name="fuente_sector" value="interna" checked> Clientes del banco
                 </label>
                 <label class="deal-radio">
-                  <input type="radio" name="fuente" value="externa"> No clientes (fuentes externas)
+                  <input type="radio" name="fuente_sector" value="externa"> No clientes (fuentes externas)
                 </label>
               </div>
               <span class="form-hint">Los clientes del banco se analizan con datos internos. Los no clientes, con información pública disponible.</span>
@@ -92,8 +117,8 @@
 
           </div>
 
-          <!-- ======= MODO: POR EMPRESA ======= -->
-          <div class="search-mode-panel" data-mode="empresa" style="display: none;">
+          <!-- ======= MODO: POR EMPRESA (JURIDICA) ======= -->
+          <div class="search-mode-panel" data-family="juridica" data-mode="empresa" style="display: none;">
 
             <div class="form-group">
               <label>Tipo de empresa</label>
@@ -117,7 +142,7 @@
                   {% endfor %}
                 </select>
               </div>
-              <span class="form-hint">Si eliges cliente interno, selecciona la empresa desde este listado.</span>
+              <span class="form-hint">Se estudiarán distintas oportunidades sobre esta misma empresa.</span>
             </div>
 
             <div class="form-group" id="empresa-externa-group" style="display: none;">
@@ -125,7 +150,7 @@
               <input type="text" id="company_name_empresa_externa"
                      placeholder="Escribe el nombre de la empresa externa..."
                      autocomplete="off">
-              <span class="form-hint">Si eliges cliente externo, escribe el nombre manualmente.</span>
+              <span class="form-hint">Se analizarán distintas palancas comerciales sobre esa empresa.</span>
             </div>
 
             <div class="form-group">
@@ -136,48 +161,166 @@
 
           </div>
 
-          <!-- ======= MODO: POR GEOGRAFIA ======= -->
-          <div class="search-mode-panel" data-mode="geografia" style="display: none;">
+          <!-- ======= MODO: POR GEOGRAFIA (JURIDICA) ======= -->
+          <div class="search-mode-panel" data-family="juridica" data-mode="geografia" style="display: none;">
 
             <div class="form-group">
               <label>Tipo de empresas</label>
               <div class="deal-radio-group" style="margin-top: 6px;">
                 <label class="deal-radio">
-                  <input type="radio" name="fuente" value="interna" checked> Clientes del banco
+                  <input type="radio" name="fuente_geografia" value="interna" checked> Clientes del banco
                 </label>
                 <label class="deal-radio">
-                  <input type="radio" name="fuente" value="externa"> No clientes (fuentes externas)
+                  <input type="radio" name="fuente_geografia" value="externa"> No clientes (fuentes externas)
                 </label>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="geografia">Comunidad autónoma</label>
+              <label>Ámbito geográfico</label>
+              <div class="deal-radio-group" style="margin-top: 6px; margin-bottom: 12px;">
+                <label class="deal-radio">
+                  <input type="radio" name="geografia_kind_juridica" value="territorial" checked> Territorial
+                </label>
+                <label class="deal-radio">
+                  <input type="radio" name="geografia_kind_juridica" value="oficina"> Oficinas
+                </label>
+              </div>
+              <label for="geografia">Selección</label>
               <div class="deal-select-wrap">
                 <select id="geografia" name="geografia" class="deal-select">
-                  <option value="">Selecciona una zona</option>
-                  {% for ca in comunidades %}
-                  <option value="{{ ca }}">{{ ca }}</option>
+                  <option value="">Selecciona una territorial</option>
+                  {% for item in geografia_juridica.territoriales %}
+                  <option value="{{ item }}">{{ item }}</option>
                   {% endfor %}
                 </select>
               </div>
-              <span class="form-hint">El sistema buscará empresas con oportunidades en la zona seleccionada.</span>
+              <span class="form-hint">El sistema buscará empresas por territorial u oficina, según el selector activo.</span>
             </div>
 
             <div class="form-group">
               <label for="notes_geografia">Apuntes del gestor (opcional)</label>
-              <textarea id="notes_geografia" name="notes_geografia" placeholder="Ejemplo: foco en empresas exportadoras de la zona con tensión de circulante por estacionalidad."></textarea>
+              <textarea id="notes_geografia" name="notes_geografia" placeholder="Ejemplo: priorizar clientes con potencial de vinculación, refinanciación o capex en la territorial."></textarea>
               <span class="form-hint">Estas notas se usan como contexto adicional para priorizar oportunidades.</span>
             </div>
 
+          </div>
+
+          <!-- ======= MODO: PERSONAS FISICAS / SEGMENTO ======= -->
+          <div class="search-mode-panel" data-family="fisica" data-mode="segmento" style="display: none;">
+            <div class="form-group">
+              <label for="person_segment">Segmento</label>
+              <div class="deal-select-wrap">
+                <select id="person_segment" name="person_segment" class="deal-select">
+                  <option value="">Selecciona un segmento</option>
+                  {% for segment in personas_filters.segmentos %}
+                  <option value="{{ segment }}">{{ segment | capitalize }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <span class="form-hint">Busca oportunidades sobre personas físicas del segmento seleccionado.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="notes_segmento">Anotaciones</label>
+              <textarea id="notes_segmento" name="notes_segmento" placeholder="Ejemplo: foco en captación patrimonial, hipotecas o consolidación de relación por segmento."></textarea>
+            </div>
+          </div>
+
+          <!-- ======= MODO: PERSONAS FISICAS / PERSONA ======= -->
+          <div class="search-mode-panel" data-family="fisica" data-mode="persona" style="display: none;">
+            <div class="form-group">
+              <label for="person_segment_persona">Segmento (opcional)</label>
+              <div class="deal-select-wrap">
+                <select id="person_segment_persona" class="deal-select">
+                  <option value="">Todos los segmentos</option>
+                  {% for segment in personas_filters.segmentos %}
+                  <option value="{{ segment }}">{{ segment | capitalize }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Relación con el banco</label>
+              <div class="deal-radio-group" style="margin-top: 6px;">
+                <label class="deal-radio">
+                  <input type="radio" name="person_client_type" value="cliente" checked> Cliente
+                </label>
+                <label class="deal-radio">
+                  <input type="radio" name="person_client_type" value="no_cliente"> No cliente
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="person_name">Nombre</label>
+              <div class="autocomplete-wrapper">
+                <input type="text" id="person_name" name="person_name" placeholder="Escribe el nombre de la persona" autocomplete="off">
+                <ul class="autocomplete-list" id="person_name_list"></ul>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="person_nief">NIF/NIE/F (opcional)</label>
+              <input type="text" id="person_nief" name="person_nief" placeholder="Ejemplo: 12345678Z">
+            </div>
+
+            <div class="form-group">
+              <label for="notes_persona">Anotaciones</label>
+              <textarea id="notes_persona" name="notes_persona" placeholder="Ejemplo: revisar liquidez, hipoteca, patrimonio invertible o reorganización financiera personal."></textarea>
+            </div>
+          </div>
+
+          <!-- ======= MODO: PERSONAS FISICAS / GEOGRAFIA ======= -->
+          <div class="search-mode-panel" data-family="fisica" data-mode="geografia" style="display: none;">
+            <div class="form-group">
+              <label>Ámbito geográfico</label>
+              <div class="deal-radio-group" style="margin-top: 6px; margin-bottom: 12px;">
+                <label class="deal-radio">
+                  <input type="radio" name="geografia_kind_fisica" value="territorial" checked> Territorial
+                </label>
+                <label class="deal-radio">
+                  <input type="radio" name="geografia_kind_fisica" value="oficina"> Oficinas
+                </label>
+              </div>
+              <label for="geografia_pf">Selección</label>
+              <div class="deal-select-wrap">
+                <select id="geografia_pf" class="deal-select">
+                  <option value="">Selecciona una territorial</option>
+                  {% for item in geografia_personas.territoriales %}
+                  <option value="{{ item }}">{{ item }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="person_segment_geografia">Segmento (opcional)</label>
+              <div class="deal-select-wrap">
+                <select id="person_segment_geografia" class="deal-select">
+                  <option value="">Todos los segmentos</option>
+                  {% for segment in personas_filters.segmentos %}
+                  <option value="{{ segment }}">{{ segment | capitalize }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes_geografia_pf">Anotaciones</label>
+              <textarea id="notes_geografia_pf" name="notes_geografia_pf" placeholder="Ejemplo: priorizar captación en banca privada o clientes personal de alto valor por oficina."></textarea>
+            </div>
           </div>
 
           <!-- Campo oculto que recibe el company_name del modo empresa -->
           <input type="hidden" id="company_name_hidden" name="company_name" value="">
           <input type="hidden" id="company_name_empresa_resolved" name="company_name_empresa" value="">
           <input type="hidden" id="fuente_empresa_hidden" name="fuente_empresa" value="interna">
+          <input type="hidden" id="entity_family" name="entity_family" value="juridica">
           <input type="hidden" id="search_mode" name="search_mode" value="sector">
           <input type="hidden" id="search_notes" name="search_notes" value="">
+          <input type="hidden" id="person_segment_dynamic" name="person_segment" value="">
 
           <div class="form-actions">
             <span class="form-hint">El análisis tarda entre 1 y 2 minutos.</span>
@@ -252,7 +395,10 @@
   const EMPRESAS_INTERNAS = {{ empresa_names_internas | tojson }};
   const EMPRESAS_EXTERNAS = {{ empresa_names_externas | tojson }};
   const EMPRESA_SECTOR_MAP_INTERNAS = {{ empresa_sector_map_internas | tojson }};
+  const PERSONAS_FILTERS = {{ personas_filters | tojson }};
+  const GEOGRAFIA_PERSONAS = {{ geografia_personas | tojson }};
 
+  let currentFamily = "juridica";
   let currentMode = "sector";
 
   function normalizeText(str) {
@@ -263,26 +409,65 @@
       .trim();
   }
 
-  // --- Cambio de modo ---
-  document.querySelectorAll(".search-mode-tab").forEach(tab => {
-    tab.addEventListener("click", () => {
-      currentMode = tab.dataset.mode;
-      document.getElementById("search_mode").value = currentMode;
-      document.querySelectorAll(".search-mode-tab").forEach(t => {
-        t.style.color = "var(--color-ink-muted)";
-        t.style.borderBottomColor = "transparent";
-      });
-      tab.style.color = "var(--color-primary)";
-      tab.style.borderBottomColor = "var(--color-primary)";
-      document.querySelectorAll(".search-mode-panel").forEach(p => {
-        p.style.display = p.dataset.mode === currentMode ? "" : "none";
-      });
-      syncSectorTargetState();
+  function setTabVisualState(tab, isActive) {
+    tab.style.color = isActive ? "var(--color-primary)" : "var(--color-ink-muted)";
+    tab.style.borderBottomColor = isActive ? "var(--color-primary)" : "transparent";
+  }
+
+  function activateMode(family, mode) {
+    currentFamily = family;
+    currentMode = mode;
+    document.getElementById("entity_family").value = currentFamily;
+    document.getElementById("search_mode").value = currentMode;
+
+    document.querySelectorAll(".search-mode-tab").forEach(t => {
+      const isActive = t.dataset.family === family && t.dataset.mode === mode;
+      setTabVisualState(t, isActive);
     });
+
+    document.querySelectorAll(".search-mode-panel").forEach(panel => {
+      const isVisible = panel.dataset.family === family && panel.dataset.mode === mode;
+      panel.style.display = isVisible ? "" : "none";
+    });
+
+    syncSectorTargetState();
+    syncPersonaGeografiaOptions();
+  }
+
+  function activateFamily(family) {
+    currentFamily = family;
+    document.getElementById("entity_family").value = currentFamily;
+
+    document.querySelectorAll(".entity-family-tab").forEach(tab => {
+      const isActive = tab.dataset.family === family;
+      setTabVisualState(tab, isActive);
+      tab.style.fontWeight = isActive ? "700" : "700";
+    });
+
+    document.querySelectorAll(".family-mode-tabs").forEach(group => {
+      group.style.display = group.dataset.family === family ? "flex" : "none";
+    });
+
+    const firstModeTab = document.querySelector(`.search-mode-tab[data-family="${family}"]`);
+    activateMode(family, firstModeTab ? firstModeTab.dataset.mode : "sector");
+  }
+
+  // --- Cambio de familia y modo ---
+  document.querySelectorAll(".entity-family-tab").forEach(tab => {
+    tab.addEventListener("click", () => activateFamily(tab.dataset.family));
   });
 
-  function getSelectedFuente() {
-    const fuente = document.querySelector("input[name='fuente']:checked");
+  document.querySelectorAll(".search-mode-tab").forEach(tab => {
+    tab.addEventListener("click", () => activateMode(tab.dataset.family, tab.dataset.mode));
+  });
+
+  function getSelectedFuenteSector() {
+    const fuente = document.querySelector("input[name='fuente_sector']:checked");
+    return fuente ? fuente.value : "interna";
+  }
+
+  function getSelectedFuenteGeografia() {
+    const fuente = document.querySelector("input[name='fuente_geografia']:checked");
     return fuente ? fuente.value : "interna";
   }
 
@@ -303,14 +488,14 @@
   }
 
   function getSectorTargetCandidates() {
-    if (getSelectedFuente() !== "interna") {
+    if (getSelectedFuenteSector() !== "interna") {
       return [];
     }
     return getInternalCompaniesBySector();
   }
 
   function syncSectorTargetState() {
-    const isExterna = getSelectedFuente() === "externa";
+    const isExterna = getSelectedFuenteSector() === "externa";
     const sectorInput = document.getElementById("company_name_sector");
     const sectorList = document.getElementById("company_name_sector_list");
     const sectorHint = document.getElementById("company_name_sector_hint");
@@ -340,24 +525,105 @@
     document.getElementById("fuente_empresa_hidden").value = fuenteEmpresa;
   }
 
+  function syncPersonaGeografiaOptions() {
+    const kind = document.querySelector("input[name='geografia_kind_fisica']:checked")?.value || "territorial";
+    const select = document.getElementById("geografia_pf");
+    if (!select) return;
+
+    const options = kind === "oficina"
+      ? (GEOGRAFIA_PERSONAS.oficinas || [])
+      : (GEOGRAFIA_PERSONAS.territoriales || []);
+
+    const currentValue = select.value;
+    select.innerHTML = "";
+
+    const placeholder = document.createElement("option");
+    placeholder.value = "";
+    placeholder.textContent = kind === "oficina" ? "Selecciona una oficina" : "Selecciona una territorial";
+    select.appendChild(placeholder);
+
+    options.forEach(item => {
+      const option = document.createElement("option");
+      option.value = item;
+      option.textContent = item;
+      select.appendChild(option);
+    });
+
+    if (currentValue && options.includes(currentValue)) {
+      select.value = currentValue;
+    }
+  }
+
   // Inicializar autocompletes
   setupAutocomplete("company_name_sector",  "company_name_sector_list",  () => getSectorTargetCandidates());
+  setupAutocomplete("person_name", "person_name_list", () => PERSONAS_FILTERS.nombres || []);
 
   // Escuchar cambios de radio fuente y sector
-  document.querySelectorAll("input[name='fuente']").forEach(r => {
+  document.querySelectorAll("input[name='fuente_sector']").forEach(r => {
     r.addEventListener("change", syncSectorTargetState);
+  });
+  document.querySelectorAll("input[name='fuente_geografia']").forEach(r => {
+    r.addEventListener("change", () => {
+      if (currentMode === "geografia") {
+        document.getElementById("company_name_hidden").value = "";
+      }
+    });
   });
   document.querySelectorAll("input[name='fuente_empresa']").forEach(r => {
     r.addEventListener("change", syncEmpresaSourceState);
   });
   document.getElementById("sector").addEventListener("change", syncSectorTargetState);
+  document.querySelectorAll("input[name='geografia_kind_fisica']").forEach(r => {
+    r.addEventListener("change", syncPersonaGeografiaOptions);
+  });
+
+  // Defaults robustos por modo.
+  const srcSector = document.querySelector("input[name='fuente_sector'][value='interna']");
+  const srcGeo = document.querySelector("input[name='fuente_geografia'][value='interna']");
+  const srcEmpresa = document.querySelector("input[name='fuente_empresa'][value='interna']");
+  if (srcSector) srcSector.checked = true;
+  if (srcGeo) srcGeo.checked = true;
+  if (srcEmpresa) srcEmpresa.checked = true;
+
   syncSectorTargetState();
   syncEmpresaSourceState();
+  syncPersonaGeografiaOptions();
+  activateFamily("juridica");
 
   // --- Preparar submit segun modo activo ---
   function prepareSubmit() {
     const form = document.getElementById("deal-request-form");
+    const geografiaHidden = form.querySelector("#geografia");
+    const sectorHidden = form.querySelector("#sector");
+
+    document.getElementById("entity_family").value = currentFamily;
     document.getElementById("search_mode").value = currentMode;
+
+    if (currentFamily === "fisica") {
+      const personaSegmentDynamic = document.getElementById("person_segment_dynamic");
+      let segmentValue = "";
+
+      if (currentMode === "segmento") {
+        segmentValue = document.getElementById("person_segment").value.trim();
+        document.getElementById("search_notes").value = document.getElementById("notes_segmento").value.trim();
+        document.getElementById("company_name_hidden").value = "";
+        if (geografiaHidden) geografiaHidden.value = "";
+      } else if (currentMode === "persona") {
+        segmentValue = document.getElementById("person_segment_persona").value.trim();
+        document.getElementById("search_notes").value = document.getElementById("notes_persona").value.trim();
+        document.getElementById("company_name_hidden").value = document.getElementById("person_name").value.trim();
+        if (geografiaHidden) geografiaHidden.value = "";
+      } else if (currentMode === "geografia") {
+        segmentValue = document.getElementById("person_segment_geografia").value.trim();
+        document.getElementById("search_notes").value = document.getElementById("notes_geografia_pf").value.trim();
+        document.getElementById("company_name_hidden").value = "";
+        if (geografiaHidden) geografiaHidden.value = document.getElementById("geografia_pf").value.trim();
+      }
+
+      personaSegmentDynamic.value = segmentValue;
+      if (sectorHidden) sectorHidden.value = "";
+      return;
+    }
 
     if (currentMode === "empresa") {
       const fuenteEmpresa = getSelectedFuenteEmpresa();

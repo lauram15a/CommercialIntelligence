@@ -1,0 +1,254 @@
+{
+  "extracted_entities": {
+    "applicant": {
+      "applicant_type": "entity",
+      "legal_name": "Acme Componentes SL",
+      "legal_form": "Sociedad de Responsabilidad Limitada",
+      "identifiers": [
+        {
+          "type": "NIF/CIF",
+          "value": "B50123987",
+          "issuer_country": "ES"
+        }
+      ],
+      "formation_date": "2003-07-10",
+      "registered_address": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza",
+      "jurisdiction": "España",
+      "industry": {
+        "cnae": "2562",
+        "description": "Tratamiento y revestimiento de metales",
+        "sector": "Industrial"
+      },
+      "capital_social_eur": 800000,
+      "employees": 310
+    },
+    "beneficial_owners": [
+      {
+        "name": "Roberto Acme Jiménez",
+        "type": "individual",
+        "ownership_pct": 65.0,
+        "nationality": "española",
+        "control_basis": "ownership",
+        "dob": null,
+        "identifiers": []
+      },
+      {
+        "name": "Acme Europe Holding GmbH",
+        "type": "entity",
+        "ownership_pct": 35.0,
+        "nationality_or_jurisdiction": "alemana",
+        "control_basis": "ownership",
+        "formation_date": null,
+        "identifiers": []
+      }
+    ],
+    "controllers": [
+      {
+        "name": "Roberto Acme Jiménez",
+        "role": "Consejero Delegado"
+      },
+      {
+        "name": "Klaus Meier",
+        "role": "Consejero (representante Acme Europe)"
+      }
+    ],
+    "addresses": [
+      {
+        "type": "registered",
+        "value": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza",
+        "country": "ES"
+      }
+    ],
+    "documents_inventory": [
+      {
+        "type": "entity_formation",
+        "ref": "escritura_constitucion.txt",
+        "date": "2003-07-10"
+      },
+      {
+        "type": "financial_statements",
+        "ref": "balance_2022.txt",
+        "date": null,
+        "period": "2022"
+      },
+      {
+        "type": "financial_statements",
+        "ref": "balance_2023.txt",
+        "date": null,
+        "period": "2023"
+      },
+      {
+        "type": "financial_statements",
+        "ref": "balance_2024.txt",
+        "date": null,
+        "period": "2024"
+      }
+    ],
+    "source_of_funds_or_wealth": {
+      "description": "Actividad industrial (CNAE 2562) con ingresos operativos reportados 2022-2024; estados financieros aportados/validados internamente.",
+      "evidence_refs": [
+        "balance_2022.txt",
+        "balance_2023.txt",
+        "balance_2024.txt"
+      ]
+    },
+    "pep_declared": null,
+    "internal_notes": {
+      "bank_kyc_alerts": "Sin alertas registradas",
+      "relationship_since": "2021",
+      "other": "Expansión con nueva planta en Polonia en 2025."
+    },
+    "financials": [
+      {
+        "year": 2022,
+        "revenue_eur": 32000000,
+        "ebitda_eur": 3800000,
+        "financial_expenses_eur": 450000,
+        "current_assets_eur": 9500000,
+        "current_liabilities_eur": 7200000,
+        "net_financial_debt_eur": 8000000,
+        "equity_eur": 6800000,
+        "ref": "balance_2022.txt"
+      },
+      {
+        "year": 2023,
+        "revenue_eur": 38000000,
+        "ebitda_eur": 4900000,
+        "financial_expenses_eur": 520000,
+        "current_assets_eur": 12100000,
+        "current_liabilities_eur": 8900000,
+        "net_financial_debt_eur": 10500000,
+        "equity_eur": 8200000,
+        "ref": "balance_2023.txt"
+      },
+      {
+        "year": 2024,
+        "revenue_eur": 42000000,
+        "ebitda_eur": 5800000,
+        "financial_expenses_eur": 610000,
+        "current_assets_eur": 14500000,
+        "current_liabilities_eur": 9800000,
+        "net_financial_debt_eur": 12000000,
+        "equity_eur": 9900000,
+        "ref": "balance_2024.txt"
+      }
+    ]
+  },
+  "kyc_results": {
+    "risk_assessment_recommendation": {
+      "recommended_risk_rating": "medium",
+      "factors": [
+        {
+          "factor": "Jurisdicción",
+          "value": "España (UBO adicional: Alemania)",
+          "impact": "lower"
+        },
+        {
+          "factor": "Tipo de cliente",
+          "value": "Entidad mercantil (SL)",
+          "impact": "lower"
+        },
+        {
+          "factor": "Estructura de propiedad",
+          "value": "2 UBO declarados; uno es entidad (GmbH) sin desglose de UBO final",
+          "impact": "higher"
+        },
+        {
+          "factor": "Sector/actividad",
+          "value": "Industrial (tratamiento/revestimiento de metales)",
+          "impact": "neutral"
+        },
+        {
+          "factor": "PEP/Sanciones/Adverse media",
+          "value": "No aportado / no verificado en el expediente",
+          "impact": "higher"
+        },
+        {
+          "factor": "Fuente de fondos",
+          "value": "Coherente con actividad y EEFF 2022-2024; falta declaración formal/contratos si aplica",
+          "impact": "neutral"
+        }
+      ]
+    },
+    "rules_engine": {
+      "rule_outcomes": [
+        {
+          "rule_id": "DOC-ENTITY-01",
+          "rule_text": "Para entidades: acreditar constitución y forma jurídica (escritura/registro mercantil).",
+          "outcome": "pass",
+          "evidence": "escritura_constitucion.txt (fecha constitución 2003-07-10; SL; NIF B50123987)"
+        },
+        {
+          "rule_id": "DOC-ENTITY-02",
+          "rule_text": "Para entidades: disponer de NIF/CIF válido.",
+          "outcome": "pass",
+          "evidence": "escritura_constitucion.txt (NIF/CIF B50123987)"
+        },
+        {
+          "rule_id": "UBO-01",
+          "rule_text": "Identificar titulares reales (≥25%) con % de participación y base de control.",
+          "outcome": "partial",
+          "evidence": "escritura_constitucion.txt (Roberto Acme Jiménez 65%; Acme Europe Holding GmbH 35%)"
+        },
+        {
+          "rule_id": "UBO-02",
+          "rule_text": "Para UBO persona física: obtener fecha de nacimiento y documento identificativo.",
+          "outcome": "fail",
+          "evidence": "No consta DOB ni documento ID de Roberto Acme Jiménez en el expediente."
+        },
+        {
+          "rule_id": "UBO-03",
+          "rule_text": "Para UBO entidad: identificar beneficiario final/controladores de la entidad interpuesta hasta persona física.",
+          "outcome": "fail",
+          "evidence": "No consta desglose de UBO final de Acme Europe Holding GmbH (35%)."
+        },
+        {
+          "rule_id": "CTRL-01",
+          "rule_text": "Identificar administradores/controladores (directores/representantes).",
+          "outcome": "pass",
+          "evidence": "escritura_constitucion.txt (Roberto Acme Jiménez; Klaus Meier)"
+        },
+        {
+          "rule_id": "ADDR-01",
+          "rule_text": "Verificar domicilio social con evidencia documental (p.ej., registro/recibo ≤3 meses si aplica).",
+          "outcome": "partial",
+          "evidence": "Domicilio indicado en escritura_constitucion.txt; no hay prueba de domicilio reciente en el paquete."
+        },
+        {
+          "rule_id": "SOF-01",
+          "rule_text": "Fuente de fondos: descripción y evidencia razonable acorde al perfil.",
+          "outcome": "partial",
+          "evidence": "EEFF 2022-2024 (balances) soportan actividad; falta declaración formal de SoF/SoW y documentación específica si requerida."
+        },
+        {
+          "rule_id": "TAX-01",
+          "rule_text": "Recabar formularios fiscales aplicables (W-8/W-9/CRS).",
+          "outcome": "fail",
+          "evidence": "No se aportan formularios fiscales en el expediente."
+        },
+        {
+          "rule_id": "SCREEN-01",
+          "rule_text": "Screening obligatorio (sanciones/PEP/adverse media) para entidad, UBOs y administradores.",
+          "outcome": "fail",
+          "evidence": "No hay resultados de screening en el expediente (Acme Componentes SL; Roberto Acme Jiménez; Acme Europe Holding GmbH; Klaus Meier)."
+        }
+      ],
+      "missing_or_gap_items": [
+        "Documento de identidad + fecha de nacimiento de Roberto Acme Jiménez (UBO 65%).",
+        "Estructura/UBO final de Acme Europe Holding GmbH (35%) hasta persona física (registro mercantil/organigrama/declaración UBO).",
+        "Resultados de screening (sanciones/PEP/adverse media) para: Acme Componentes SL, Roberto Acme Jiménez, Acme Europe Holding GmbH, Klaus Meier.",
+        "Formularios fiscales (CRS/autocertificación; y/o W-8/W-9 según aplique).",
+        "Evidencia de domicilio/registro actualizada si la política exige prueba reciente (no incluida).",
+        "Declaración formal de fuente de fondos/fuente de riqueza (si requerida por política) y soporte adicional si procede."
+      ],
+      "disposition_recommendation": "request-docs",
+      "escalation_triggers": [
+        "Estructura con UBO entidad sin transparencia hasta persona física (UBO-03).",
+        "Screening no realizado/documentado (SCREEN-01)."
+      ]
+    }
+  },
+  "screening_results": [],
+  "screening_resumen": "Screening sin entidades para revisar.",
+  "screening_conclusion": "NO_CONCLUYENTE"
+}

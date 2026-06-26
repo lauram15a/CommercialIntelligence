@@ -1,9 +1,0 @@
-DataNexa Cloud Systems SL se encuentra en un momento de alta prioridad estratégica al estar ejecutando un plan activo de adquisición de un competidor vertical. Este tipo de operación suele requerir liquidez inmediata para asegurar el cierre en plazo y, posteriormente, una estructura de financiación que acompañe la integración sin tensionar la operativa.
-
-Con la información disponible, la compañía presenta ingresos estimados de ~15,2 M€, pero no se dispone de desglose histórico, EBITDA/margen operativo, CAPEX, deuda ni caja. Esta limitación impide dimensionar con precisión la capacidad de apalancamiento y el perfil de repago; por ello, la propuesta se plantea en dos fases: (i) financiación puente para garantizar ejecución del cierre y (ii) estructuración de deuda de medio plazo (con posible refinanciación) una vez verificada la generación de caja y el desempeño proforma.
-
-Nuestra propuesta de valor se centra en aportar certidumbre de fondos y velocidad de ejecución, junto con una arquitectura de deuda diseñada para el periodo de integración: covenants calibrados, flexibilidad de amortización y herramientas de liquidez (p. ej., línea revolving) para absorber costes de integración y necesidades de circulante. En paralelo, se define desde el inicio una ruta de salida del puente (“take-out”) para optimizar coste y términos cuando la información financiera esté completa.
-
-Para avanzar, proponemos una sesión de trabajo para confirmar los parámetros de la transacción (estructura, calendario, usos de fondos) y acordar el paquete mínimo de información financiera y operativa. Con ello, prepararemos una propuesta indicativa con alternativas de estructura, términos preliminares y un cronograma de due diligence y aprobaciones.
-
-El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

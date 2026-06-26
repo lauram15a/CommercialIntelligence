@@ -29,6 +29,9 @@ FORMATO DE SALIDA (JSON estricto, sin markdown fences):
 
 Usa nombres genericos de producto de banca.
 No uses marcas registradas de terceros.
+Si falta algun dato, usa una hipotesis prudente y declarativa, manteniendo
+la narrativa accionable. Evita expresiones "desconocido", "informacion no encontrada"
+o "informacion insuficiente".
 Termina narrativa_markdown con: "El equipo comercial revisa, ajusta y
 personaliza esta propuesta antes de cualquier interaccion con el cliente."
 """

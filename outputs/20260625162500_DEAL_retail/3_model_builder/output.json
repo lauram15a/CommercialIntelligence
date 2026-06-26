@@ -1,0 +1,27 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos anuales estimados",
+      "valor": "~58.000 EUR/año"
+    },
+    {
+      "nombre": "Ahorro líquido estimado",
+      "valor": "~42.000 EUR"
+    },
+    {
+      "nombre": "Patrimonio invertible estimado",
+      "valor": "~68.000 EUR"
+    },
+    {
+      "nombre": "Préstamo de consumo vigente",
+      "valor": "cancelación parcial prevista en 2027"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Capacidad de generación de ingresos estable (perfil no empresarial).",
+    "Acumulación de liquidez y perfil de ahorro creciente (aumento de saldo medio y ahorro recurrente).",
+    "Interés por consolidación/refinanciación de deuda para optimizar coste financiero y estructura de pagos."
+  ],
+  "interpretacion": "Con la información disponible, el perfil muestra una posición de liquidez en fortalecimiento y excedente potencial para canalizar hacia ahorro/inversión. La existencia de un préstamo de consumo y el interés explícito por consolidación sugieren una posible necesidad de optimización de pasivos (refinanciación) más que de financiación incremental. Para evaluar sostenibilidad y capacidad de endeudamiento harían falta datos cuantitativos de deuda total, tipo, cuota y ratios de endeudamiento.",
+  "disponible": true
+}

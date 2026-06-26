@@ -36,7 +36,10 @@ def run_pitch_builder_agent(
         )
     )
 
-    model_block = "Sin vision financiera adicional del Model Builder Agent (paso opcional no disponible)."
+    model_block = (
+        "Vision financiera base construida con senales operativas del pipeline; "
+        "complementar con due diligence comercial en la reunion."
+    )
     if model_output and model_output.get("disponible"):
         model_block = json.dumps(model_output, ensure_ascii=False, indent=2)
 

@@ -290,6 +290,108 @@
           }
         ]
       },
+      "historial_banco": {
+        "cliente_desde": "2021-03-15",
+        "gestor_responsable": "Carmen Palau Rodríguez",
+        "oficina": "Zaragoza - Empresa",
+        "segmento": "Empresa Mediana",
+        "rating_interno": "BB+",
+        "ultima_revision_kyc": "2025-04-10",
+        "proxima_revision_kyc": "2026-04-10",
+        "incidencias_historicas": [],
+        "notas_relacion": "Relacion bancaria consolidada desde 2021. Cliente con alto grado de vinculación. Operaciones de financiación activas con vencimientos clave en 2027. Expansión internacional en curso (planta Polonia). Sin incidencias de impago ni alertas KYC.",
+        "cross_sell_activo": ["cobertura tipo de interés", "seguro de crédito exportación", "cuenta de tesorería multicurrency"]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Préstamo sindicado",
+          "importe": 7000000,
+          "fecha_formalizacion": "2022-09-01",
+          "vencimiento": "2027-09-01",
+          "tipo_interes": "Euribor 12M + 185pb",
+          "saldo_vivo": 4200000,
+          "estado": "Vigente",
+          "garantias": "Garantía hipotecaria sobre instalaciones Zaragoza",
+          "covenant_debtEbitda": "máx 3.5x",
+          "covenant_cobertura_intereses": "mín 3.0x",
+          "notas": "Vencimiento relevante 2027 (2.64M). Se anticipa necesidad de refinanciación parcial."
+        },
+        {
+          "tipo": "Línea de crédito circulante",
+          "importe": 3500000,
+          "fecha_formalizacion": "2023-03-15",
+          "vencimiento": "2026-03-15",
+          "tipo_interes": "Euribor 3M + 150pb",
+          "saldo_vivo": 1800000,
+          "estado": "Vigente - renovación pendiente",
+          "garantias": "Aval corporativo",
+          "notas": "Utilización media 51%. Renovación prevista Q1 2026. Candidata a ampliación por crecimiento de circulante."
+        },
+        {
+          "tipo": "Leasing financiero (maquinaria precision)",
+          "importe": 1200000,
+          "fecha_formalizacion": "2023-06-01",
+          "vencimiento": "2028-06-01",
+          "tipo_interes": "fijo 4.20%",
+          "saldo_vivo": 820000,
+          "estado": "Vigente",
+          "garantias": "Prenda sobre bienes financiados",
+          "notas": "Cuota mensual 22.400 EUR. Sin incidencias de pago."
+        },
+        {
+          "tipo": "Confirming proveedores",
+          "importe": 2000000,
+          "fecha_formalizacion": "2024-01-10",
+          "vencimiento": "Renovable anual",
+          "tipo_interes": "coste 0 para cliente; proveedor paga descuento",
+          "saldo_vivo": 950000,
+          "estado": "Activo",
+          "garantias": "Sin garantía adicional",
+          "notas": "24 proveedores adheridos. Ahorro en gestión de pagos y mejora de DPO."
+        },
+        {
+          "tipo": "Cobertura tipo de interés (IRS)",
+          "importe_nocional": 4000000,
+          "fecha_inicio": "2022-09-01",
+          "fecha_vencimiento": "2027-09-01",
+          "tipo_fijo_pagado": "2.85%",
+          "estado": "Vigente",
+          "notas": "Cubre el 57% del préstamo sindicado. Valoración actual: +184.000 EUR a favor del cliente."
+        }
+      ],
+      "plan_comercial": {
+        "objetivo_2026_2027": "Refinanciar préstamo sindicado antes de vencimiento 2027, ampliar línea de circulante para expansión internacional y captar operaciones de cobertura adicionales.",
+        "oportunidades_identificadas": [
+          {
+            "producto": "Refinanciación préstamo sindicado 2027",
+            "importe_estimado": 6000000,
+            "probabilidad": "alta",
+            "plazo_ejecucion": "Q3-Q4 2026",
+            "justificacion": "Vencimiento 2027 con 2.64M en ese año. El cliente necesita extender plazo y ajustar estructura a plan de expansión Polonia."
+          },
+          {
+            "producto": "Ampliación línea circulante",
+            "importe_estimado": 2000000,
+            "probabilidad": "alta",
+            "plazo_ejecucion": "Q1 2026",
+            "justificacion": "Crecimiento de ventas del 10% en 2024 y nuevos contratos alemanes requieren mayor capital circulante."
+          },
+          {
+            "producto": "Financiación CAPEX Polonia (deuda inversión)",
+            "importe_estimado": 4500000,
+            "probabilidad": "media",
+            "plazo_ejecucion": "Q2-Q3 2026",
+            "justificacion": "Nueva planta Wroclaw en operación. El cliente puede necesitar financiación de equipamiento adicional o expansión de capacidad."
+          },
+          {
+            "producto": "Cobertura tipo cambio EUR/USD y EUR/PLN",
+            "importe_estimado": 2000000,
+            "probabilidad": "media",
+            "plazo_ejecucion": "Q1 2026",
+            "justificacion": "Ventas en USD (mercado americano) y costes en PLN (planta Polonia) generan exposición creciente."
+          }
+        ]
+      },
       "comunidad_autonoma": "Comunidad Valenciana"
     },
     "Tecnologia Holdings SL": {
@@ -1172,6 +1274,983 @@
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
+          }
+        ]
+      },
+      "comunidad_autonoma": "Comunidad Valenciana"
+    },
+    "DataNexa Cloud Systems SL": {
+      "nombre_legal": "DataNexa Cloud Systems SL",
+      "nif": "B87234561",
+      "sector": "Tecnologia",
+      "cnae": "6201 - Actividades de programación informática",
+      "forma_juridica": "Sociedad de Responsabilidad Limitada",
+      "domicilio_social": "Calle Príncipe de Vergara 112, 28002 Madrid",
+      "fecha_constitucion": "2016-03-22",
+      "capital_social": 500000,
+      "empleados": 128,
+      "titulares_reales": [
+        {
+          "nombre": "Marcos Delgado Vidal",
+          "participacion": 45.0,
+          "nacionalidad": "española"
+        },
+        {
+          "nombre": "Nuria Alonso Ferrer",
+          "participacion": 30.0,
+          "nacionalidad": "española"
+        },
+        {
+          "nombre": "Vertex Ventures Iberia SL",
+          "participacion": 25.0,
+          "nacionalidad": "española"
+        }
+      ],
+      "administradores": [
+        {
+          "nombre": "Marcos Delgado Vidal",
+          "cargo": "Consejero Delegado"
+        },
+        {
+          "nombre": "Nuria Alonso Ferrer",
+          "cargo": "Consejera y Directora de Producto"
+        }
+      ],
+      "balances": [
+        {
+          "periodo": "2022",
+          "ingresos": 8900000,
+          "ebitda": 1510000,
+          "gastos_financieros": 140000,
+          "deuda_financiera": 3200000,
+          "activo_corriente": 3800000,
+          "pasivo_corriente": 2100000,
+          "patrimonio_neto": 2900000
+        },
+        {
+          "periodo": "2023",
+          "ingresos": 11600000,
+          "ebitda": 2030000,
+          "gastos_financieros": 185000,
+          "deuda_financiera": 4100000,
+          "activo_corriente": 5200000,
+          "pasivo_corriente": 2700000,
+          "patrimonio_neto": 3900000
+        },
+        {
+          "periodo": "2024",
+          "ingresos": 15200000,
+          "ebitda": 2890000,
+          "gastos_financieros": 240000,
+          "deuda_financiera": 5400000,
+          "activo_corriente": 7100000,
+          "pasivo_corriente": 3500000,
+          "patrimonio_neto": 5300000
+        }
+      ],
+      "alertas_kyc": [],
+      "observaciones": "Plataforma SaaS B2B de gestión de operaciones y reporting financiero para empresas medianas. Crecimiento recurrente con ARR de 11.2M€ en 2024. Inversora Vertex con participación del 25%. Proceso de M&A activo: análisis de adquisición de VerticalSync ERP SL. Cliente del banco desde 2022.",
+      "cuentas_empresa": {
+        "balance": {
+          "2022": {
+            "activo_no_corriente": 2650000,
+            "activo_corriente": 3800000,
+            "patrimonio_neto": 2900000,
+            "pasivo_no_corriente": 1550000,
+            "pasivo_corriente": 2100000,
+            "total_activo": 6450000,
+            "total_pasivo_patrimonio": 6450000
+          },
+          "2023": {
+            "activo_no_corriente": 3480000,
+            "activo_corriente": 5200000,
+            "patrimonio_neto": 3900000,
+            "pasivo_no_corriente": 2080000,
+            "pasivo_corriente": 2700000,
+            "total_activo": 8680000,
+            "total_pasivo_patrimonio": 8680000
+          },
+          "2024": {
+            "activo_no_corriente": 4600000,
+            "activo_corriente": 7100000,
+            "patrimonio_neto": 5300000,
+            "pasivo_no_corriente": 2900000,
+            "pasivo_corriente": 3500000,
+            "total_activo": 11700000,
+            "total_pasivo_patrimonio": 11700000
+          }
+        },
+        "pyg": {
+          "2022": {
+            "ingresos": 8900000,
+            "coste_ventas": 5340000,
+            "gastos_explotacion": 2050000,
+            "ebitda": 1510000,
+            "amortizaciones": 356000,
+            "ebit": 1154000,
+            "gastos_financieros": 140000,
+            "resultado_antes_impuestos": 1014000,
+            "impuesto_sociedades": 253500,
+            "resultado_neto": 760500
+          },
+          "2023": {
+            "ingresos": 11600000,
+            "coste_ventas": 6960000,
+            "gastos_explotacion": 2610000,
+            "ebitda": 2030000,
+            "amortizaciones": 464000,
+            "ebit": 1566000,
+            "gastos_financieros": 185000,
+            "resultado_antes_impuestos": 1381000,
+            "impuesto_sociedades": 345250,
+            "resultado_neto": 1035750
+          },
+          "2024": {
+            "ingresos": 15200000,
+            "coste_ventas": 9120000,
+            "gastos_explotacion": 3190000,
+            "ebitda": 2890000,
+            "amortizaciones": 608000,
+            "ebit": 2282000,
+            "gastos_financieros": 240000,
+            "resultado_antes_impuestos": 2042000,
+            "impuesto_sociedades": 510500,
+            "resultado_neto": 1531500
+          }
+        },
+        "flujo_caja": {
+          "2022": {
+            "flujo_operativo": 1087000,
+            "flujo_inversion": -890000,
+            "flujo_financiacion": 1200000,
+            "variacion_neta_caja": 1397000
+          },
+          "2023": {
+            "flujo_operativo": 1461600,
+            "flujo_inversion": -1160000,
+            "flujo_financiacion": 1540000,
+            "variacion_neta_caja": 1841600
+          },
+          "2024": {
+            "flujo_operativo": 2080800,
+            "flujo_inversion": -1520000,
+            "flujo_financiacion": 1980000,
+            "variacion_neta_caja": 2540800
+          }
+        },
+        "indicadores_clave": {
+          "2022": {
+            "ebitda": 1510000,
+            "deuda": 3200000,
+            "liquidez": 1.81,
+            "patrimonio": 2900000
+          },
+          "2023": {
+            "ebitda": 2030000,
+            "deuda": 4100000,
+            "liquidez": 1.93,
+            "patrimonio": 3900000
+          },
+          "2024": {
+            "ebitda": 2890000,
+            "deuda": 5400000,
+            "liquidez": 2.03,
+            "patrimonio": 5300000
+          }
+        },
+        "detalle_activo_corriente": {
+          "2022": {
+            "existencias": 0,
+            "clientes": 2280000,
+            "caja": 1220000,
+            "otros": 300000
+          },
+          "2023": {
+            "existencias": 0,
+            "clientes": 3250000,
+            "caja": 1580000,
+            "otros": 370000
+          },
+          "2024": {
+            "existencias": 0,
+            "clientes": 4560000,
+            "caja": 2100000,
+            "otros": 440000
+          }
+        },
+        "detalle_deuda": {
+          "deuda_corto_plazo": 1620000,
+          "deuda_largo_plazo": 3780000,
+          "tipo_interes_medio": 0.048,
+          "vencimientos": {
+            "2026": 810000,
+            "2027": 1080000,
+            "2028": 1620000,
+            "2029+": 1890000
+          },
+          "covenants_actuales": [
+            "debt_ebitda_max_4_0x",
+            "cobertura_intereses_min_2_5x",
+            "arr_growth_min_15pct"
+          ]
+        }
+      },
+      "documentacion_kyc_requerida": [
+        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
+        "Documentación societaria de Vertex Ventures Iberia SL (UBO indirecto)",
+        "Escrituras y poderes vigentes",
+        "Cuentas anuales completas (balance, PyG, memoria) de los 3 ultimos ejercicios",
+        "Informe de auditoria (si aplica)",
+        "Detalle ARR/MRR y métricas SaaS (churn, NRR)",
+        "Detalle de deuda: vencimientos, tipo y covenants",
+        "Documentación del proceso M&A en curso (NDA, carta de intención si disponible)"
+      ],
+      "plan_accion_kyc_credit_risk": [
+        "Verificar identidad y UBO de Vertex Ventures Iberia SL como socio institucional.",
+        "Completar screening sanciones/PEP/adverse media para todos los titulares y administradores.",
+        "Solicitar métricas SaaS actualizadas: ARR, NRR, churn y pipeline comercial.",
+        "Analizar la operación M&A en curso: importe, estructura, fuente de fondos y sinergias.",
+        "Evaluar covenants y capacidad de servicio de deuda tras la potencial adquisición.",
+        "Escalar a Comité si la operación M&A supera el umbral de riesgo concentrado."
+      ],
+      "screening_estado_operativo": [
+        {
+          "sujeto": "DataNexa Cloud Systems SL",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas."
+        },
+        {
+          "sujeto": "Marcos Delgado Vidal",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas."
+        },
+        {
+          "sujeto": "Nuria Alonso Ferrer",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas."
+        },
+        {
+          "sujeto": "Vertex Ventures Iberia SL",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Resultado de fuente local de demo; requiere verificación de UBO de fondo inversor."
+        }
+      ],
+      "sanciones": {
+        "estado_global": "REVISION_MANUAL_REQUERIDA",
+        "fuentes_objetivo": ["UE Consolidated", "OFAC SDN", "ONU", "HMT UK", "listas internas de cumplimiento"],
+        "detalle_sujetos": [
+          {
+            "sujeto": "DataNexa Cloud Systems SL",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere re-screening oficial."
+          },
+          {
+            "sujeto": "Marcos Delgado Vidal",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere re-screening oficial."
+          },
+          {
+            "sujeto": "Nuria Alonso Ferrer",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere re-screening oficial."
+          },
+          {
+            "sujeto": "Vertex Ventures Iberia SL",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere verificacion de UBO de fondo inversor."
+          }
+        ]
+      },
+      "historial_banco": {
+        "cliente_desde": "2022-06-01",
+        "gestor_responsable": "Jorge Navarro Pérez",
+        "oficina": "Madrid - Empresa",
+        "segmento": "Empresa Mediana - Tecnología",
+        "rating_interno": "BB",
+        "ultima_revision_kyc": "2025-06-01",
+        "proxima_revision_kyc": "2026-06-01",
+        "incidencias_historicas": [],
+        "notas_relacion": "Cliente de alto crecimiento en sector SaaS B2B. Relación activa con operaciones de financiación y tesorería. Proceso M&A en análisis puede requerir deuda puente. Sin incidencias de impago.",
+        "cross_sell_activo": ["cuenta empresa", "TPV virtual", "seguros de empresa", "forwards divisa EUR/USD"]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Línea de crédito revolving",
+          "importe": 2500000,
+          "fecha_formalizacion": "2023-01-15",
+          "vencimiento": "2026-01-15",
+          "tipo_interes": "Euribor 3M + 175pb",
+          "saldo_vivo": 1200000,
+          "estado": "Vigente - renovación Q1 2026",
+          "garantias": "Cesión de derechos de cobro sobre contratos SaaS enterprise",
+          "notas": "Utilización media 48%. Se anticipa ampliación por crecimiento de ARR y proceso M&A."
+        },
+        {
+          "tipo": "Préstamo venture debt",
+          "importe": 2000000,
+          "fecha_formalizacion": "2024-04-01",
+          "vencimiento": "2027-04-01",
+          "tipo_interes": "Euribor 12M + 220pb + warrant",
+          "saldo_vivo": 1800000,
+          "estado": "Vigente",
+          "garantias": "Prenda sobre acciones y activos intangibles",
+          "notas": "Estructurado para financiar escalado comercial. Warrant sobre el 2% del capital si hay evento de liquidez."
+        },
+        {
+          "tipo": "Cuenta de tesorería multicurrency",
+          "importe": null,
+          "fecha_formalizacion": "2022-06-01",
+          "vencimiento": "Indefinido",
+          "tipo_interes": "remunerada 3.10% sobre saldo medio",
+          "saldo_vivo": 2100000,
+          "estado": "Activo",
+          "garantias": null,
+          "notas": "Cuenta principal de cobro de clientes SaaS. Saldo creciente."
+        }
+      ],
+      "plan_comercial": {
+        "objetivo_2026_2027": "Financiar adquisición M&A con deuda puente, ampliar línea revolving post-cierre y captar operaciones de tesorería corporativa para la entidad resultante.",
+        "oportunidades_identificadas": [
+          {
+            "producto": "Deuda puente M&A (adquisición VerticalSync ERP SL)",
+            "importe_estimado": 4000000,
+            "probabilidad": "alta",
+            "plazo_ejecucion": "Q2 2026",
+            "justificacion": "El proceso de adquisición está avanzado. DataNexa necesita financiación puente para cerrar la operación antes de completar la ronda de capital."
+          },
+          {
+            "producto": "Ampliación línea revolving post-adquisición",
+            "importe_estimado": 2000000,
+            "probabilidad": "alta",
+            "plazo_ejecucion": "Q3 2026",
+            "justificacion": "Tras la integración, el ARR combinado y la base de clientes mayor justifican una línea más amplia."
+          },
+          {
+            "producto": "Financiación CAPEX digital (infraestructura cloud)",
+            "importe_estimado": 1500000,
+            "probabilidad": "media",
+            "plazo_ejecucion": "Q4 2026",
+            "justificacion": "El escalado de producto post-adquisición requerirá inversión en infraestructura cloud y seguridad."
+          },
+          {
+            "producto": "Coberturas tipo de interés y divisa",
+            "importe_estimado": 2000000,
+            "probabilidad": "media",
+            "plazo_ejecucion": "Q2 2026",
+            "justificacion": "La deuda puente a tipo variable y los cobros en USD de clientes internacionales crean exposición a cubrir."
+          }
+        ]
+      },
+      "comunidad_autonoma": "Comunidad de Madrid"
+    },
+    "AgroVal Export Partners SL": {
+      "nombre_legal": "AgroVal Export Partners SL",
+      "nif": "B46781234",
+      "sector": "Agroindustria",
+      "cnae": "0113 - Cultivo de hortalizas, raíces y tubérculos",
+      "forma_juridica": "Sociedad de Responsabilidad Limitada",
+      "domicilio_social": "Polígono Industrial Nazaret, Calle B nº 14, 46023 Valencia",
+      "fecha_constitucion": "2008-09-14",
+      "capital_social": 950000,
+      "empleados": 167,
+      "titulares_reales": [
+        {
+          "nombre": "José Antonio Valero Gimeno",
+          "participacion": 55.0,
+          "nacionalidad": "española"
+        },
+        {
+          "nombre": "Cooperativa Hortofruticola Levante COOP",
+          "participacion": 45.0,
+          "nacionalidad": "española"
+        }
+      ],
+      "administradores": [
+        {
+          "nombre": "José Antonio Valero Gimeno",
+          "cargo": "Consejero Delegado"
+        },
+        {
+          "nombre": "Amparo Roca Blanco",
+          "cargo": "Directora Financiera y Consejera"
+        }
+      ],
+      "balances": [
+        {
+          "periodo": "2022",
+          "ingresos": 21300000,
+          "ebitda": 1860000,
+          "gastos_financieros": 290000,
+          "deuda_financiera": 5900000,
+          "activo_corriente": 7400000,
+          "pasivo_corriente": 6100000,
+          "patrimonio_neto": 3200000
+        },
+        {
+          "periodo": "2023",
+          "ingresos": 24100000,
+          "ebitda": 2170000,
+          "gastos_financieros": 330000,
+          "deuda_financiera": 6500000,
+          "activo_corriente": 8600000,
+          "pasivo_corriente": 6800000,
+          "patrimonio_neto": 3800000
+        },
+        {
+          "periodo": "2024",
+          "ingresos": 26800000,
+          "ebitda": 2490000,
+          "gastos_financieros": 380000,
+          "deuda_financiera": 7200000,
+          "activo_corriente": 9800000,
+          "pasivo_corriente": 7500000,
+          "patrimonio_neto": 4500000
+        }
+      ],
+      "alertas_kyc": [],
+      "observaciones": "Exportador hortofruticola con fuerte presencia en Reino Unido (35% ventas) y Europa Central. Exposición a divisa GBP y EUR/USD. Estacionalidad en campañas de primavera y otoño. Cliente del banco desde 2019. Sin incidencias crediticias.",
+      "cuentas_empresa": {
+        "balance": {
+          "2022": {
+            "activo_no_corriente": 5600000,
+            "activo_corriente": 7400000,
+            "patrimonio_neto": 3200000,
+            "pasivo_no_corriente": 3700000,
+            "pasivo_corriente": 6100000,
+            "total_activo": 13000000,
+            "total_pasivo_patrimonio": 13000000
+          },
+          "2023": {
+            "activo_no_corriente": 6200000,
+            "activo_corriente": 8600000,
+            "patrimonio_neto": 3800000,
+            "pasivo_no_corriente": 4200000,
+            "pasivo_corriente": 6800000,
+            "total_activo": 14800000,
+            "total_pasivo_patrimonio": 14800000
+          },
+          "2024": {
+            "activo_no_corriente": 6900000,
+            "activo_corriente": 9800000,
+            "patrimonio_neto": 4500000,
+            "pasivo_no_corriente": 4700000,
+            "pasivo_corriente": 7500000,
+            "total_activo": 16700000,
+            "total_pasivo_patrimonio": 16700000
+          }
+        },
+        "pyg": {
+          "2022": {
+            "ingresos": 21300000,
+            "coste_ventas": 16640000,
+            "gastos_explotacion": 2800000,
+            "ebitda": 1860000,
+            "amortizaciones": 558000,
+            "ebit": 1302000,
+            "gastos_financieros": 290000,
+            "resultado_antes_impuestos": 1012000,
+            "impuesto_sociedades": 253000,
+            "resultado_neto": 759000
+          },
+          "2023": {
+            "ingresos": 24100000,
+            "coste_ventas": 18800000,
+            "gastos_explotacion": 3130000,
+            "ebitda": 2170000,
+            "amortizaciones": 651000,
+            "ebit": 1519000,
+            "gastos_financieros": 330000,
+            "resultado_antes_impuestos": 1189000,
+            "impuesto_sociedades": 297250,
+            "resultado_neto": 891750
+          },
+          "2024": {
+            "ingresos": 26800000,
+            "coste_ventas": 20890000,
+            "gastos_explotacion": 3420000,
+            "ebitda": 2490000,
+            "amortizaciones": 747000,
+            "ebit": 1743000,
+            "gastos_financieros": 380000,
+            "resultado_antes_impuestos": 1363000,
+            "impuesto_sociedades": 340750,
+            "resultado_neto": 1022250
+          }
+        },
+        "flujo_caja": {
+          "2022": {
+            "flujo_operativo": 1339200,
+            "flujo_inversion": -1704000,
+            "flujo_financiacion": 1618000,
+            "variacion_neta_caja": 1253200
+          },
+          "2023": {
+            "flujo_operativo": 1562400,
+            "flujo_inversion": -1928000,
+            "flujo_financiacion": 1781000,
+            "variacion_neta_caja": 1415400
+          },
+          "2024": {
+            "flujo_operativo": 1792800,
+            "flujo_inversion": -2144000,
+            "flujo_financiacion": 1978000,
+            "variacion_neta_caja": 1626800
+          }
+        },
+        "indicadores_clave": {
+          "2022": {
+            "ebitda": 1860000,
+            "deuda": 5900000,
+            "liquidez": 1.21,
+            "patrimonio": 3200000
+          },
+          "2023": {
+            "ebitda": 2170000,
+            "deuda": 6500000,
+            "liquidez": 1.26,
+            "patrimonio": 3800000
+          },
+          "2024": {
+            "ebitda": 2490000,
+            "deuda": 7200000,
+            "liquidez": 1.31,
+            "patrimonio": 4500000
+          }
+        },
+        "detalle_activo_corriente": {
+          "2022": {
+            "existencias": 2960000,
+            "clientes": 2960000,
+            "caja": 1110000,
+            "otros": 370000
+          },
+          "2023": {
+            "existencias": 3440000,
+            "clientes": 3440000,
+            "caja": 1290000,
+            "otros": 430000
+          },
+          "2024": {
+            "existencias": 3920000,
+            "clientes": 3920000,
+            "caja": 1470000,
+            "otros": 490000
+          }
+        },
+        "detalle_deuda": {
+          "deuda_corto_plazo": 2160000,
+          "deuda_largo_plazo": 5040000,
+          "tipo_interes_medio": 0.043,
+          "vencimientos": {
+            "2026": 1296000,
+            "2027": 1584000,
+            "2028": 1728000,
+            "2029+": 2592000
+          },
+          "covenants_actuales": [
+            "debt_ebitda_max_3_5x",
+            "cobertura_intereses_min_3_0x"
+          ]
+        }
+      },
+      "documentacion_kyc_requerida": [
+        "DNI/NIE/Pasaporte vigente de titulares reales personas fisicas",
+        "Documentación de Cooperativa Hortofruticola Levante COOP (UBO corporativo)",
+        "Escrituras y poderes vigentes",
+        "Cuentas anuales completas de los 3 ultimos ejercicios",
+        "Informe de auditoria",
+        "Detalle exposición divisa GBP y USD (contratos de cobertura vigentes)",
+        "Contratos marco de exportación UK y Europa Central"
+      ],
+      "plan_accion_kyc_credit_risk": [
+        "Verificar identidad y estructura de la Cooperativa como UBO indirecto.",
+        "Completar screening sanciones/PEP/adverse media para todos los sujetos.",
+        "Revisar exposición neta en divisas y cobertura contratada.",
+        "Analizar estacionalidad y necesidades de campaña para sizing de líneas.",
+        "Proponer ampliación de trade finance y coberturas FX para campaña 2027.",
+        "Escalar a Comité si se detectan concentraciones de riesgo en divisa no cubiertas."
+      ],
+      "screening_estado_operativo": [
+        {
+          "sujeto": "AgroVal Export Partners SL",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Requiere re-screening oficial."
+        },
+        {
+          "sujeto": "José Antonio Valero Gimeno",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Requiere re-screening oficial."
+        },
+        {
+          "sujeto": "Cooperativa Hortofruticola Levante COOP",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Requiere verificacion de estructura cooperativa y socios relevantes."
+        }
+      ],
+      "sanciones": {
+        "estado_global": "REVISION_MANUAL_REQUERIDA",
+        "fuentes_objetivo": ["UE Consolidated", "OFAC SDN", "ONU", "HMT UK"],
+        "detalle_sujetos": [
+          {"sujeto": "AgroVal Export Partners SL", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening oficial."},
+          {"sujeto": "José Antonio Valero Gimeno", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening oficial."},
+          {"sujeto": "Cooperativa Hortofruticola Levante COOP", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere verificacion."}
+        ]
+      },
+      "historial_banco": {
+        "cliente_desde": "2019-02-20",
+        "gestor_responsable": "Dolores Vilar Mas",
+        "oficina": "Valencia - Empresa",
+        "segmento": "Empresa Mediana - Agroindustria",
+        "rating_interno": "BB",
+        "ultima_revision_kyc": "2025-02-20",
+        "proxima_revision_kyc": "2026-02-20",
+        "incidencias_historicas": [],
+        "notas_relacion": "Cliente con larga trayectoria exportadora. Gran estacionalidad en ciclos de campaña. Uso intensivo de trade finance y coberturas GBP. Sin incidencias crediticias históricas.",
+        "cross_sell_activo": ["confirming proveedores", "cobertura FX GBP/EUR", "seguro de crédito exportación", "carta de crédito documentario"]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Línea de trade finance (póliza exportación)",
+          "importe": 3000000,
+          "fecha_formalizacion": "2023-10-01",
+          "vencimiento": "2026-10-01",
+          "tipo_interes": "Euribor 3M + 160pb",
+          "saldo_vivo": 1700000,
+          "estado": "Vigente",
+          "garantias": "Cesión de derechos de cobro de contratos de exportación",
+          "notas": "Cubre financiación de campaña primavera y otoño. Se renueva anualmente con ajuste de límite."
+        },
+        {
+          "tipo": "Cobertura FX GBP/EUR (forward)",
+          "importe_nocional": 1500000,
+          "fecha_inicio": "2025-01-01",
+          "fecha_vencimiento": "2026-12-31",
+          "tipo_cambio_fijo": "0.8620 GBP/EUR",
+          "estado": "Vigente",
+          "notas": "Cubre 60% de la exposición GBP en ventas UK. Valoración actual: +67.000 EUR a favor del cliente."
+        },
+        {
+          "tipo": "Confirming proveedores agrícolas",
+          "importe": 1500000,
+          "fecha_formalizacion": "2024-03-01",
+          "vencimiento": "Renovable anual",
+          "tipo_interes": "0 para cliente",
+          "saldo_vivo": 780000,
+          "estado": "Activo",
+          "garantias": null,
+          "notas": "18 proveedores de materia prima adheridos. Mejora DPO y liquidez estacional."
+        }
+      ],
+      "plan_comercial": {
+        "objetivo_2026_2027": "Ampliar trade finance para campaña 2027, aumentar cobertura FX ante exposición creciente GBP/USD, y proponer seguro de crédito a la exportación para mercados emergentes.",
+        "oportunidades_identificadas": [
+          {
+            "producto": "Ampliación póliza trade finance campaña 2027",
+            "importe_estimado": 1500000,
+            "probabilidad": "alta",
+            "plazo_ejecucion": "Q4 2026",
+            "justificacion": "Crecimiento de ingresos del 11% en 2024 y nuevos contratos en Alemania y Polonia exigen mayor límite."
+          },
+          {
+            "producto": "Cobertura FX USD/EUR (nuevos mercados)",
+            "importe_estimado": 800000,
+            "probabilidad": "media",
+            "plazo_ejecucion": "Q1 2027",
+            "justificacion": "Inicio de exportaciones a EE.UU. en Q3 2026 genera exposición en USD aun no cubierta."
+          },
+          {
+            "producto": "Seguro de crédito a la exportación",
+            "importe_estimado": null,
+            "probabilidad": "media",
+            "plazo_ejecucion": "Q1 2027",
+            "justificacion": "Ampliación a mercados de mayor riesgo (Europa del Este) requiere cobertura de impago comercial."
+          }
+        ]
+      },
+      "comunidad_autonoma": "Comunidad Valenciana"
+    },
+    "FreshRoute Distribucion SA": {
+      "nombre_legal": "FreshRoute Distribucion SA",
+      "nif": "A46923145",
+      "sector": "Retail y Distribucion",
+      "cnae": "4631 - Comercio al por mayor de frutas y hortalizas",
+      "forma_juridica": "Sociedad Anónima",
+      "domicilio_social": "Avenida del Port, 118, 46023 Valencia",
+      "fecha_constitucion": "2011-05-30",
+      "capital_social": 1200000,
+      "empleados": 212,
+      "titulares_reales": [
+        {
+          "nombre": "Grupo Alimentario FreshRoute Holding SL",
+          "participacion": 80.0,
+          "nacionalidad": "española"
+        },
+        {
+          "nombre": "Rafael Sanchis Bonet",
+          "participacion": 20.0,
+          "nacionalidad": "española"
+        }
+      ],
+      "administradores": [
+        {
+          "nombre": "Rafael Sanchis Bonet",
+          "cargo": "Consejero Delegado"
+        },
+        {
+          "nombre": "Marta Ferris Grau",
+          "cargo": "Consejera y CFO"
+        }
+      ],
+      "balances": [
+        {
+          "periodo": "2022",
+          "ingresos": 28100000,
+          "ebitda": 1970000,
+          "gastos_financieros": 310000,
+          "deuda_financiera": 6200000,
+          "activo_corriente": 8900000,
+          "pasivo_corriente": 7400000,
+          "patrimonio_neto": 3700000
+        },
+        {
+          "periodo": "2023",
+          "ingresos": 31200000,
+          "ebitda": 2340000,
+          "gastos_financieros": 360000,
+          "deuda_financiera": 7100000,
+          "activo_corriente": 10200000,
+          "pasivo_corriente": 8200000,
+          "patrimonio_neto": 4500000
+        },
+        {
+          "periodo": "2024",
+          "ingresos": 33800000,
+          "ebitda": 2700000,
+          "gastos_financieros": 420000,
+          "deuda_financiera": 8100000,
+          "activo_corriente": 11400000,
+          "pasivo_corriente": 9100000,
+          "patrimonio_neto": 5200000
+        }
+      ],
+      "alertas_kyc": [],
+      "observaciones": "Mayorista alimentario con red logística en arco mediterráneo y expansión reciente a Madrid. Operaciones de confirming y factoring activas. Estacionalidad marcada en verano y Navidad. Cliente del banco desde 2020.",
+      "cuentas_empresa": {
+        "balance": {
+          "2022": {
+            "activo_no_corriente": 5850000,
+            "activo_corriente": 8900000,
+            "patrimonio_neto": 3700000,
+            "pasivo_no_corriente": 3650000,
+            "pasivo_corriente": 7400000,
+            "total_activo": 14750000,
+            "total_pasivo_patrimonio": 14750000
+          },
+          "2023": {
+            "activo_no_corriente": 6560000,
+            "activo_corriente": 10200000,
+            "patrimonio_neto": 4500000,
+            "pasivo_no_corriente": 4060000,
+            "pasivo_corriente": 8200000,
+            "total_activo": 16760000,
+            "total_pasivo_patrimonio": 16760000
+          },
+          "2024": {
+            "activo_no_corriente": 7380000,
+            "activo_corriente": 11400000,
+            "patrimonio_neto": 5200000,
+            "pasivo_no_corriente": 4580000,
+            "pasivo_corriente": 9100000,
+            "total_activo": 18780000,
+            "total_pasivo_patrimonio": 18780000
+          }
+        },
+        "pyg": {
+          "2022": {
+            "ingresos": 28100000,
+            "coste_ventas": 22480000,
+            "gastos_explotacion": 3650000,
+            "ebitda": 1970000,
+            "amortizaciones": 591000,
+            "ebit": 1379000,
+            "gastos_financieros": 310000,
+            "resultado_antes_impuestos": 1069000,
+            "impuesto_sociedades": 267250,
+            "resultado_neto": 801750
+          },
+          "2023": {
+            "ingresos": 31200000,
+            "coste_ventas": 24960000,
+            "gastos_explotacion": 3900000,
+            "ebitda": 2340000,
+            "amortizaciones": 702000,
+            "ebit": 1638000,
+            "gastos_financieros": 360000,
+            "resultado_antes_impuestos": 1278000,
+            "impuesto_sociedades": 319500,
+            "resultado_neto": 958500
+          },
+          "2024": {
+            "ingresos": 33800000,
+            "coste_ventas": 27040000,
+            "gastos_explotacion": 4060000,
+            "ebitda": 2700000,
+            "amortizaciones": 810000,
+            "ebit": 1890000,
+            "gastos_financieros": 420000,
+            "resultado_antes_impuestos": 1470000,
+            "impuesto_sociedades": 367500,
+            "resultado_neto": 1102500
+          }
+        },
+        "flujo_caja": {
+          "2022": {"flujo_operativo": 1418400, "flujo_inversion": -1685000, "flujo_financiacion": 1700000, "variacion_neta_caja": 1433400},
+          "2023": {"flujo_operativo": 1684800, "flujo_inversion": -1872000, "flujo_financiacion": 1950000, "variacion_neta_caja": 1762800},
+          "2024": {"flujo_operativo": 1944000, "flujo_inversion": -2030000, "flujo_financiacion": 2220000, "variacion_neta_caja": 2134000}
+        },
+        "indicadores_clave": {
+          "2022": {"ebitda": 1970000, "deuda": 6200000, "liquidez": 1.20, "patrimonio": 3700000},
+          "2023": {"ebitda": 2340000, "deuda": 7100000, "liquidez": 1.24, "patrimonio": 4500000},
+          "2024": {"ebitda": 2700000, "deuda": 8100000, "liquidez": 1.25, "patrimonio": 5200000}
+        },
+        "detalle_activo_corriente": {
+          "2022": {"existencias": 3560000, "clientes": 3560000, "caja": 1335000, "otros": 445000},
+          "2023": {"existencias": 4080000, "clientes": 4080000, "caja": 1530000, "otros": 510000},
+          "2024": {"existencias": 4560000, "clientes": 4560000, "caja": 1710000, "otros": 570000}
+        },
+        "detalle_deuda": {
+          "deuda_corto_plazo": 2430000,
+          "deuda_largo_plazo": 5670000,
+          "tipo_interes_medio": 0.044,
+          "vencimientos": {
+            "2026": 1458000,
+            "2027": 1782000,
+            "2028": 1944000,
+            "2029+": 2916000
+          },
+          "covenants_actuales": ["debt_ebitda_max_3_5x", "cobertura_intereses_min_3_0x"]
+        }
+      },
+      "documentacion_kyc_requerida": [
+        "DNI/NIE/Pasaporte vigente de Rafael Sanchis Bonet y Marta Ferris Grau",
+        "Documentación de Grupo Alimentario FreshRoute Holding SL (UBO corporativo)",
+        "Escrituras y poderes vigentes",
+        "Cuentas anuales completas de los 3 ultimos ejercicios",
+        "Contratos de confirming y factoring vigentes"
+      ],
+      "plan_accion_kyc_credit_risk": [
+        "Verificar UBO de Grupo Alimentario FreshRoute Holding SL.",
+        "Completar screening para todos los titulares y administradores.",
+        "Revisar concentración de clientes y exposición al canal horeca.",
+        "Proponer ampliación de confirming y factoring para campaña 2027.",
+        "Escalar a Comité si hay concentración de deuda por encima del covenant."
+      ],
+      "screening_estado_operativo": [
+        {"sujeto": "FreshRoute Distribucion SA", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening oficial."},
+        {"sujeto": "Rafael Sanchis Bonet", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening oficial."},
+        {"sujeto": "Grupo Alimentario FreshRoute Holding SL", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere verificacion UBO corporativo."}
+      ],
+      "sanciones": {
+        "estado_global": "REVISION_MANUAL_REQUERIDA",
+        "fuentes_objetivo": ["UE Consolidated", "OFAC SDN", "ONU", "HMT UK"],
+        "detalle_sujetos": [
+          {"sujeto": "FreshRoute Distribucion SA", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening."},
+          {"sujeto": "Rafael Sanchis Bonet", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening."},
+          {"sujeto": "Grupo Alimentario FreshRoute Holding SL", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere verificacion."}
+        ]
+      },
+      "historial_banco": {
+        "cliente_desde": "2020-09-01",
+        "gestor_responsable": "Dolores Vilar Mas",
+        "oficina": "Valencia - Empresa",
+        "segmento": "Empresa Mediana - Distribución",
+        "rating_interno": "BB-",
+        "ultima_revision_kyc": "2025-09-01",
+        "proxima_revision_kyc": "2026-09-01",
+        "incidencias_historicas": [],
+        "notas_relacion": "Cliente con uso intensivo de circulante estacional. Confirming con 31 proveedores adheridos. Expansión logística en curso. Sin incidencias de impago.",
+        "cross_sell_activo": ["confirming proveedores", "factoring clientes HORECA", "leasing vehículos industriales", "seguro de responsabilidad civil logística"]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Línea de crédito circulante estacional",
+          "importe": 3000000,
+          "fecha_formalizacion": "2024-01-15",
+          "vencimiento": "2026-01-15",
+          "tipo_interes": "Euribor 3M + 155pb",
+          "saldo_vivo": 1850000,
+          "estado": "Vigente - renovación Q1 2026",
+          "garantias": "Aval corporativo Grupo FreshRoute Holding",
+          "notas": "Pico de uso en verano y Navidad (>80%). Candidata a ampliación en renovación."
+        },
+        {
+          "tipo": "Factoring sin recurso (clientes HORECA)",
+          "importe": 2500000,
+          "fecha_formalizacion": "2023-06-01",
+          "vencimiento": "Renovable anual",
+          "tipo_interes": "0.45% sobre facturas cedidas",
+          "saldo_vivo": 1200000,
+          "estado": "Activo",
+          "garantias": "Cesión de facturas clientes HORECA",
+          "notas": "42 clientes cedentes activos. Reduce PMC de 62 a 18 días."
+        },
+        {
+          "tipo": "Confirming proveedores",
+          "importe": 2000000,
+          "fecha_formalizacion": "2022-03-01",
+          "vencimiento": "Renovable anual",
+          "tipo_interes": "0 para cliente",
+          "saldo_vivo": 1100000,
+          "estado": "Activo",
+          "garantias": null,
+          "notas": "31 proveedores adheridos. Mejora de DPO operativo."
+        },
+        {
+          "tipo": "Leasing flota de vehículos frigoríficos",
+          "importe": 850000,
+          "fecha_formalizacion": "2024-04-01",
+          "vencimiento": "2029-04-01",
+          "tipo_interes": "fijo 4.50%",
+          "saldo_vivo": 720000,
+          "estado": "Vigente",
+          "garantias": "Prenda sobre vehículos financiados",
+          "notas": "8 camiones frigoríficos para expansión Madrid."
+        }
+      ],
+      "plan_comercial": {
+        "objetivo_2026_2027": "Ampliar línea circulante, incrementar factoring con nuevos cedentes y proponer financiación de nueva plataforma logística en Madrid.",
+        "oportunidades_identificadas": [
+          {
+            "producto": "Ampliación línea circulante estacional",
+            "importe_estimado": 1000000,
+            "probabilidad": "alta",
+            "plazo_ejecucion": "Q1 2026",
+            "justificacion": "Crecimiento del 8% en 2024 y expansión a Madrid superan capacidad de la línea actual."
+          },
+          {
+            "producto": "Financiación plataforma logística Madrid (CAPEX)",
+            "importe_estimado": 2500000,
+            "probabilidad": "media",
+            "plazo_ejecucion": "Q3 2026",
+            "justificacion": "El plan de expansión a Madrid requiere un nuevo almacén de 8.000 m² y equipamiento frigorífico."
+          },
+          {
+            "producto": "Ampliación factoring (nuevos clientes)",
+            "importe_estimado": 800000,
+            "probabilidad": "media",
+            "plazo_ejecucion": "Q2 2026",
+            "justificacion": "15 nuevos clientes HORECA captados en 2025 aún no adheridos al programa de factoring."
           }
         ]
       },

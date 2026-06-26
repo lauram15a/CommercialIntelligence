@@ -1,0 +1,35 @@
+{
+  "titulo": "Propuesta comercial | Refinanciación y ordenación de deuda minorista",
+  "subtitulo": "Reducir cuota mensual y coste financiero, simplificar pasivos y mejorar condiciones mediante mayor vinculación y una planificación de liquidez sostenible.",
+  "oportunidad_detectada": "El perfil muestra ingresos estables (~58.000 EUR/año) y una mejora reciente de liquidez (~42.000 EUR), junto con interés explícito por consolidación/refinanciación de deuda. Esto habilita una propuesta integral para (i) ordenar pasivos y reducir cuota, (ii) optimizar el coste total de la deuda y (iii) reforzar la vinculación para acceder a mejores condiciones, manteniendo un colchón de seguridad y un plan de ahorro/inversión.",
+  "contexto_financiero": [
+    "Ingresos estables estimados (~58.000 EUR/año), lo que permite estructurar una cuota objetivo consistente con capacidad de pago y estabilidad.",
+    "Liquidez relevante (~42.000 EUR) y patrimonio invertible estimado (~68.000 EUR), con señales de ahorro creciente (mejora de saldo medio y ahorro recurrente).",
+    "Existe un préstamo de consumo vigente con cancelación parcial prevista en 2027 e interés por consolidación/mejora de condiciones; falta el mapa cuantitativo completo de deuda (importe, TAE, cuota, vencimientos) para optimizar la estructura."
+  ],
+  "encaje_productos": [
+    "Refinanciación / consolidación de deuda de consumo (préstamos y tarjetas) con estructura de cuota objetivo, plazo y tipo (preferencia por estabilidad si el objetivo principal es reducir incertidumbre).",
+    "Paquete de vinculación y servicios (domiciliación de nómina/recibos, medios de pago, protección básica) para mejorar condiciones financieras y consolidar relación, complementado con un plan de ahorro/inversión para el excedente de liquidez."
+  ],
+  "comparables": [
+    "Consolidación de préstamos y tarjetas en una única cuota con reducción de TAE vía mejora de perfil y vinculación",
+    "Reordenación de deuda combinando amortización parcial con liquidez y refinanciación del remanente para optimizar coste total vs. alivio de caja"
+  ],
+  "argumentos_valor": [
+    "Alivio inmediato de caja: diseño de una cuota mensual objetivo y simplificación a una sola obligación, reduciendo fricción y riesgo de impagos por dispersión de pagos.",
+    "Optimización del coste total: comparación estructurada entre mantener deuda actual vs. refinanciar (TAE, comisiones, plazo) y uso eficiente de liquidez para amortización parcial sin descapitalizarse.",
+    "Mejora de condiciones por vinculación: acceso a mejores tipos/comisiones mediante un paquete de relación (nómina/recibos/medios de pago/protección), con seguimiento periódico para capturar mejoras futuras.",
+    "Sostenibilidad financiera: definición explícita de colchón de emergencia y reglas de amortización anticipada, evitando el riesgo de extender plazos solo para bajar cuota a costa de mayor coste total.",
+    "Relación a largo plazo: canalización del excedente (una vez estabilizada la deuda) hacia ahorro/inversión con aportaciones periódicas, alineado con objetivos personales y horizonte."
+  ],
+  "proximos_pasos": [
+    "Diagnóstico 360º de pasivos (15–20 min): recopilar importes, TAE/TIN, cuotas, vencimientos, comisiones y entidad de cada préstamo/tarjeta; confirmar si hay tipo variable y condiciones de cancelación anticipada.",
+    "Definir objetivos y restricciones: priorizar entre (i) bajar cuota, (ii) reducir coste total, o (iii) equilibrio; acordar cuota objetivo y colchón mínimo de liquidez a mantener.",
+    "Simulación de 2–3 escenarios: (A) consolidación total, (B) amortización parcial + refinanciación del remanente, (C) mantener y optimizar con amortizaciones selectivas; presentar comparativa de cuota, coste total y plazo.",
+    "Propuesta de vinculación: seleccionar servicios a domiciliar/contratar para mejorar condiciones y calendarizar activación (nómina/recibos/medios de pago/protección).",
+    "Cierre y ejecución: checklist documental, aprobación, formalización y plan de seguimiento trimestral (deuda + liquidez + ahorro/inversión)."
+  ],
+  "narrativa_markdown": "### Resumen ejecutivo\nMarta Salas Ortega presenta un perfil retail con ingresos estables (~58.000 EUR/año) y una trayectoria reciente de ahorro creciente, reflejada en una liquidez relevante (~42.000 EUR) y un patrimonio invertible estimado (~68.000 EUR). En paralelo, existe un préstamo de consumo vigente (con cancelación parcial prevista en 2027) y un interés explícito por consolidación/refinanciación, lo que configura una oportunidad prioritaria para reducir cuota y ordenar pasivos.\n\nLa propuesta se centra en estructurar una **refinanciación/consolidación de deuda** orientada a una cuota objetivo sostenible, comparando alternativas para equilibrar **alivio de caja** y **coste total** (tipo, plazo y comisiones). Dado que aún no se dispone del mapa cuantitativo completo de deuda (importe, TAE, cuota total, vencimientos y otras entidades), el primer paso es un diagnóstico 360º que permita diseñar la solución óptima y evitar decisiones subóptimas (p. ej., alargar plazos en exceso).\n\nEn paralelo, se plantea una **mejora de vinculación** (domiciliaciones y servicios transaccionales y de protección) como palanca para acceder a mejores condiciones financieras y consolidar la relación. Esta capa de vinculación se complementa con un plan de uso de la liquidez: definir un **colchón de emergencia** y, una vez estabilizada la deuda, canalizar excedentes hacia ahorro/inversión con aportaciones periódicas.\n\nEl resultado esperado es una estructura financiera más simple (menos obligaciones dispersas), una cuota mensual más cómoda y predecible, y una relación más sólida que permita capturar mejoras futuras de condiciones. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.",
+  "pptx_path": "5_pitch_builder/pitchbook.pptx",
+  "pdf_path": "5_pitch_builder/pitchbook.pdf"
+}

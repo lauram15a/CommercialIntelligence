@@ -1,9 +1,0 @@
-Acme Componentes SL combina crecimiento sostenido (32,0m€ en 2022 a 42,0m€ en 2024) con una mejora progresiva de márgenes (EBITDA 11,9% → 13,8%), lo que sugiere una base operativa más eficiente y capacidad creciente de generación de resultados. En paralelo, el endeudamiento aumenta (8,0m€ → 12,0m€) manteniendo un apalancamiento estable en torno a ~2,1x Deuda/EBITDA, aunque con mayor gasto financiero absoluto, reforzando la conveniencia de optimizar coste y estructura.
-
-La expansión con una nueva planta en Polonia en 2025 anticipa un ciclo inversor relevante y, típicamente, un incremento temporal de necesidades de liquidez por desembolsos de CAPEX, ramp-up productivo y potencial aumento de capital circulante (inventarios, plazos de cobro/pago, picos de caja). Una solución de financiación bien estructurada —con disposiciones por hitos y amortización alineada al plan industrial— puede reducir el riesgo de ejecución y proteger la flexibilidad durante la puesta en marcha.
-
-Adicionalmente, la potencial refinanciación en 2027 (deuda estimada 12,0m€) abre una ventana para preparar con antelación una extensión de vencimientos y una revisión de covenants, evitando concentraciones de riesgo y mejorando la resiliencia financiera. Abordar ahora el diagnóstico (deuda, garantías, covenants, working capital y sensibilidades) permite llegar a mercado con una narrativa robusta y mayor opcionalidad de estructura.
-
-Proponemos un enfoque integral que combine financiación de inversión (CAPEX), soluciones de circulante (línea revolving y herramientas de financiación de cobros/pagos) y una hoja de ruta para la refinanciación 2027, incluyendo una estrategia de coberturas de tipo y, si aplica, divisa. El objetivo es sostener el crecimiento, absorber el ciclo inversor y optimizar el perfil de vencimientos y el coste financiero.
-
-El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

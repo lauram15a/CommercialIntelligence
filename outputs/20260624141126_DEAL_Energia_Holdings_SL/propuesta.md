@@ -1,7 +1,0 @@
-Energia Holdings SL combina crecimiento rentable y mejora gradual de márgenes, con un aumento de deuda que no ha elevado el apalancamiento gracias al avance del EBITDA. Este perfil sugiere una compañía en fase de expansión que puede beneficiarse de una estructura financiera más alineada con su plan de crecimiento.
-
-La oportunidad comercial se centra en (i) acompañar la expansión con financiación a medio-largo plazo para inversión y/o crecimiento, y (ii) optimizar la estructura de deuda actual mediante un posible reperfilado de vencimientos y condiciones, preservando flexibilidad operativa. Con Deuda/EBITDA descendiendo hacia ~2,3x, existe margen para estructurar soluciones sin deteriorar el perfil de riesgo, siempre que la generación de caja sea consistente.
-
-Dado que no se dispone de información de EBIT, CAPEX ni flujos de caja, el siguiente paso clave es completar el diagnóstico para entender la intensidad inversora y la sostenibilidad de la caja. Con esa visibilidad, se puede dimensionar una estructura objetivo (plazos, amortización, covenants y líneas de circulante) que minimice riesgo de liquidez y maximice capacidad de ejecución del plan.
-
-Proponemos un proceso ágil en tres fases: recopilación de información y diagnóstico, definición de estructura objetivo y presentación de alternativas con comparativa de términos. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

@@ -1,0 +1,246 @@
+{
+  "entity": {
+    "legal_name": "Acme Componentes SL",
+    "applicant_type": "entity",
+    "legal_form": "Sociedad de Responsabilidad Limitada",
+    "jurisdiction": "ES",
+    "formation_date": "2003-07-10",
+    "registered_address": {
+      "full_address": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza",
+      "country": "ES"
+    },
+    "industry": {
+      "cnae": "2562",
+      "description": "Tratamiento y revestimiento de metales",
+      "sector": "Industrial"
+    },
+    "identifiers": [
+      {
+        "type": "NIF/CIF",
+        "value": "B50123987",
+        "issuer_country": "ES"
+      }
+    ],
+    "capital_social": {
+      "amount": 800000,
+      "currency": "EUR"
+    },
+    "employees": 310
+  },
+  "ownership_and_control": {
+    "beneficial_owners": [
+      {
+        "name": "Roberto Acme Jiménez",
+        "type": "individual",
+        "ownership_pct": 65.0,
+        "nationality": "ES",
+        "control_basis": "ownership",
+        "dob": null,
+        "identifiers": []
+      },
+      {
+        "name": "Acme Europe Holding GmbH",
+        "type": "entity",
+        "ownership_pct": 35.0,
+        "nationality_or_jurisdiction": "DE",
+        "control_basis": "ownership",
+        "formation_date": null,
+        "identifiers": []
+      }
+    ],
+    "controllers": [
+      {
+        "name": "Roberto Acme Jiménez",
+        "role": "Consejero Delegado"
+      },
+      {
+        "name": "Klaus Meier",
+        "role": "Consejero (representante Acme Europe)"
+      }
+    ],
+    "ownership_checks": {
+      "total_beneficial_ownership_pct": 100.0,
+      "ownership_total_ok": true
+    }
+  },
+  "addresses": [
+    {
+      "type": "registered",
+      "value": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza",
+      "country": "ES"
+    }
+  ],
+  "documents": {
+    "inventory": [
+      {
+        "type": "entity_formation",
+        "ref": "escritura_constitucion.txt",
+        "date": "2003-07-10",
+        "period": null
+      },
+      {
+        "type": "financial_statements",
+        "ref": "balance_2022.txt",
+        "date": null,
+        "period": "2022"
+      },
+      {
+        "type": "financial_statements",
+        "ref": "balance_2023.txt",
+        "date": null,
+        "period": "2023"
+      },
+      {
+        "type": "financial_statements",
+        "ref": "balance_2024.txt",
+        "date": null,
+        "period": "2024"
+      }
+    ],
+    "evidence_refs": {
+      "source_of_funds_or_wealth": [
+        "balance_2022.txt",
+        "balance_2023.txt",
+        "balance_2024.txt"
+      ]
+    }
+  },
+  "source_of_funds_or_wealth": {
+    "description": "Actividad industrial (CNAE 2562) con ingresos operativos reportados 2022-2024; estados financieros aportados/validados internamente.",
+    "evidence_refs": [
+      "balance_2022.txt",
+      "balance_2023.txt",
+      "balance_2024.txt"
+    ]
+  },
+  "pep": {
+    "pep_declared": null,
+    "pep_status": "unknown"
+  },
+  "internal_notes": {
+    "bank_kyc_alerts": "Sin alertas registradas",
+    "relationship_since": "2021",
+    "other": "Expansión con nueva planta en Polonia en 2025."
+  },
+  "financials_normalized": {
+    "currency": "EUR",
+    "period_type": "FY",
+    "years": [
+      {
+        "year": 2022,
+        "income_statement": {
+          "revenue": 32000000,
+          "ebitda": 3800000
+        },
+        "cash_flow_or_pnl_items": {
+          "financial_expenses": 450000
+        },
+        "balance_sheet": {
+          "current_assets": 9500000,
+          "current_liabilities": 7200000,
+          "equity": 6800000,
+          "net_financial_debt": 8000000
+        },
+        "derived_metrics": {
+          "ebitda_margin": 0.11875,
+          "current_ratio": 1.3194444444444444,
+          "working_capital": 2300000,
+          "net_debt_to_ebitda": 2.1052631578947367,
+          "interest_coverage_ebitda": 8.444444444444445
+        },
+        "source_ref": "balance_2022.txt"
+      },
+      {
+        "year": 2023,
+        "income_statement": {
+          "revenue": 38000000,
+          "ebitda": 4900000
+        },
+        "cash_flow_or_pnl_items": {
+          "financial_expenses": 520000
+        },
+        "balance_sheet": {
+          "current_assets": 12100000,
+          "current_liabilities": 8900000,
+          "equity": 8200000,
+          "net_financial_debt": 10500000
+        },
+        "derived_metrics": {
+          "revenue_yoy_growth": 0.1875,
+          "ebitda_yoy_growth": 0.2894736842105263,
+          "ebitda_margin": 0.12894736842105264,
+          "current_ratio": 1.3595505617977528,
+          "working_capital": 3200000,
+          "net_debt_to_ebitda": 2.142857142857143,
+          "interest_coverage_ebitda": 9.423076923076923
+        },
+        "source_ref": "balance_2023.txt"
+      },
+      {
+        "year": 2024,
+        "income_statement": {
+          "revenue": 42000000,
+          "ebitda": 5800000
+        },
+        "cash_flow_or_pnl_items": {
+          "financial_expenses": 610000
+        },
+        "balance_sheet": {
+          "current_assets": 14500000,
+          "current_liabilities": 9800000,
+          "equity": 9900000,
+          "net_financial_debt": 12000000
+        },
+        "derived_metrics": {
+          "revenue_yoy_growth": 0.10526315789473684,
+          "ebitda_yoy_growth": 0.1836734693877551,
+          "ebitda_margin": 0.1380952380952381,
+          "current_ratio": 1.4795918367346939,
+          "working_capital": 4700000,
+          "net_debt_to_ebitda": 2.0689655172413794,
+          "interest_coverage_ebitda": 9.508196721311476
+        },
+        "source_ref": "balance_2024.txt"
+      }
+    ],
+    "time_series_checks": {
+      "years_present": [
+        2022,
+        2023,
+        2024
+      ],
+      "monotonicity_flags": {
+        "revenue_increasing_each_year": true,
+        "ebitda_increasing_each_year": true,
+        "net_financial_debt_increasing_each_year": true,
+        "equity_increasing_each_year": true
+      }
+    }
+  },
+  "data_quality_flags": [
+    {
+      "severity": "warning",
+      "field": "pep_declared",
+      "issue": "No informado (null).",
+      "suggested_action": "Solicitar declaración PEP y, si aplica, detalles (cargo, país, fechas) y documentación soporte."
+    },
+    {
+      "severity": "info",
+      "field": "beneficial_owners[0].dob",
+      "issue": "Fecha de nacimiento no disponible para UBO individual.",
+      "suggested_action": "Recabar DOB y documento identificativo del UBO (DNI/pasaporte) según política KYC."
+    },
+    {
+      "severity": "info",
+      "field": "beneficial_owners[*].identifiers",
+      "issue": "Identificadores de UBOs no informados.",
+      "suggested_action": "Recabar NIF/DNI/pasaporte para individuo y número de registro/LEI (si existe) para la entidad alemana."
+    },
+    {
+      "severity": "info",
+      "field": "financials[*].date",
+      "issue": "Estados financieros sin fecha de emisión/auditoría.",
+      "suggested_action": "Confirmar si son auditados, fecha de cierre y fecha de aprobación/deposito."
+    }
+  ]
+}

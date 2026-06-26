@@ -24,6 +24,9 @@ FORMATO DE SALIDA (JSON estricto, sin markdown fences):
 }
 
 Basate unicamente en la informacion proporcionada.
+Si algun campo viene incompleto, formula una hipotesis operativa breve y util
+para el banker. Evita "desconocido", "informacion no encontrada" o
+"informacion insuficiente".
 No tomes decisiones finales por el equipo comercial.
 El briefing es un punto de partida para que el equipo revise y ajuste.
 """

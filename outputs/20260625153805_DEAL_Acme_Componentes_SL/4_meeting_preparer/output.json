@@ -1,0 +1,25 @@
+{
+  "perfil": "Acme Componentes SL es una compañía industrial de componentes con crecimiento sostenido y mejora de rentabilidad en 2022–2024. Mantiene una estructura de costes estable y parece estar ejecutando un plan de inversión que incrementa su base de activos, apoyándose en deuda de forma controlada.",
+  "situacion_actual": "Desde 2022 a 2024 los ingresos crecen de 32,0m€ a 42,0m€ con desaceleración moderada del ritmo (+18,8% a +10,5%), mientras los márgenes mejoran (EBITDA 3,8m€→5,8m€; margen 11,9%→13,8%). La deuda aumenta de 8,0m€ a 12,0m€ manteniendo Deuda/EBITDA ~2,1x, pero con mayor gasto financiero (0,45m€→0,61m€), lo que sugiere sensibilidad a tipos y oportunidad de optimización. La oportunidad identificada es la expansión con nueva planta en Polonia en 2025 y una potencial refinanciación/CAPEX en 2027 (deuda estimada 12,0m€) para financiar crecimiento transfronterizo con calendario y covenants adecuados.",
+  "necesidades_potenciales": [
+    "Financiación de CAPEX para la nueva planta en Polonia (2025): préstamo de inversión/term loan, leasing de maquinaria y/o líneas para puesta en marcha.",
+    "Estructura de financiación transfronteriza: coordinación España-Polonia, garantías, cash pooling y gestión de divisa si aplica.",
+    "Refinanciación/optimización de la deuda hacia 2027: extensión de vencimientos, ajuste de amortización al ramp-up de la planta y covenants alineados con el ciclo inversor.",
+    "Coberturas de tipos para mitigar el aumento de gastos financieros y estabilizar el coste de la deuda.",
+    "Líneas de circulante (póliza/confirming/factoring) para soportar crecimiento de ventas y posibles tensiones de working capital durante el arranque de la planta."
+  ],
+  "riesgos": [
+    "Riesgo de ejecución del proyecto en Polonia (plazos, sobrecostes, ramp-up más lento) que presione caja y métricas de apalancamiento.",
+    "Sensibilidad a tipos: el aumento del gasto financiero ya es visible y puede erosionar la mejora de márgenes si no se gestiona.",
+    "Desaceleración del crecimiento de ingresos: si continúa, puede limitar la capacidad de absorber mayor deuda manteniendo Deuda/EBITDA estable.",
+    "Riesgo de covenants y calendario de vencimientos: estructura actual podría no encajar con el perfil de inversión 2025–2027 si hay picos de CAPEX.",
+    "Riesgo operativo/industrial: costes de ventas estables (~76%) implican que shocks en materias primas/energía o pricing podrían afectar márgenes."
+  ],
+  "talking_points": [
+    "Plan Polonia 2025: alcance del CAPEX, calendario, hitos de puesta en marcha y necesidades de financiación por fases (inversión vs circulante).",
+    "Estructura de deuda actual y ventana 2027: qué vencimientos existen, flexibilidad de amortización y qué covenants serían “operables” durante el ramp-up.",
+    "Coste financiero y estrategia de tipos: interés actual, mix fijo/variable y posibilidad de coberturas para estabilizar el gasto financiero.",
+    "Capacidad de repago: evolución de EBITDA/márgenes y escenarios (base/estresado) para mantener Deuda/EBITDA alrededor de ~2,1x o dentro de un rango objetivo.",
+    "Propuesta de paquete bancario: combinación de term loan + líneas de circulante + soluciones transfronterizas (cash management/garantías) para acompañar el crecimiento."
+  ]
+}

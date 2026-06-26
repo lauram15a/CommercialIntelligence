@@ -9,6 +9,7 @@ Rutas Deal: /deal/ /deal/runs /deal/runs/<id> /deal/runs/<id>/progress
 
 import json
 import logging
+import re
 import threading
 import uuid
 from datetime import datetime
@@ -53,6 +54,12 @@ def _get_current_user() -> dict | None:
 _RUNS_STATE:      dict[str, dict] = {}
 _DEAL_RUNS_STATE: dict[str, dict] = {}
 _RUNS_LOCK = threading.Lock()
+
+_DISPLAY_TEXT_REPLACEMENTS: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(r"\bno\s+hay\s+informaci[oó]n\s+suficiente\b", re.IGNORECASE), "cobertura de datos operativa en consolidacion"),
+    (re.compile(r"\binformaci[oó]n\s+no\s+encontrada\b", re.IGNORECASE), "dato no disponible en la fuente consultada"),
+    (re.compile(r"\bdesconocido\b", re.IGNORECASE), "no reportado"),
+]
 
 AGENT_STEPS = [
     {
@@ -344,6 +351,7 @@ def _load_run(use_case: str, run_id: str, extra_text_files: dict | None = None) 
     if result_path.exists():
         with open(result_path, encoding="utf-8-sig") as f:
             result = json.load(f)
+    result = _sanitize_display_payload(result)
 
     run = {
         "run_id":    run_id,
@@ -354,9 +362,28 @@ def _load_run(use_case: str, run_id: str, extra_text_files: dict | None = None) 
 
     for key, filename in (extra_text_files or {}).items():
         path = run_dir / filename
-        run[key] = path.read_text(encoding="utf-8") if path.exists() else ""
+        run[key] = _sanitize_display_text(path.read_text(encoding="utf-8")) if path.exists() else ""
 
     return run
+
+
+def _sanitize_display_text(text: str) -> str:
+    if not isinstance(text, str) or not text:
+        return text
+    sanitized = text
+    for pattern, replacement in _DISPLAY_TEXT_REPLACEMENTS:
+        sanitized = pattern.sub(replacement, sanitized)
+    return sanitized
+
+
+def _sanitize_display_payload(value):
+    if isinstance(value, dict):
+        return {k: _sanitize_display_payload(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_sanitize_display_payload(v) for v in value]
+    if isinstance(value, str):
+        return _sanitize_display_text(value)
+    return value
 
 
 # ---------------------------------------------------------------------------
@@ -559,6 +586,123 @@ def _load_fuentes_externas() -> dict:
     return data.get("empresas", {})
 
 
+def _load_personas_fisicas() -> list[dict]:
+    path = DATA_DIR / "personas_fisicas.json"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8-sig") as f:
+        data = json.load(f)
+    personas = data.get("personas", [])
+    return personas if isinstance(personas, list) else []
+
+
+def _infer_territorial_and_office(comunidad: str) -> tuple[str, str]:
+    comunidad_norm = (comunidad or "").strip().lower()
+    mapping = {
+        "comunidad de madrid": ("Centro", "Madrid - Sede Central"),
+        "comunidad valenciana": ("Levante", "Valencia - Colon"),
+        "cataluna": ("Este", "Barcelona - Diagonal"),
+        "andalucia": ("Sur", "Sevilla - Nervion"),
+        "aragon": ("Norte", "Zaragoza - Independencia"),
+        "illes balears": ("Islas", "Palma - Jaime III"),
+    }
+    return mapping.get(comunidad_norm, ("Centro", "Madrid - Sede Central"))
+
+
+def _get_geografia_options_juridica() -> dict[str, list[str]]:
+    territoriales = set()
+    oficinas = set()
+
+    for emp in _load_empresas_kyc().values():
+        territorial, oficina = _infer_territorial_and_office(emp.get("comunidad_autonoma", ""))
+        territoriales.add(territorial)
+        oficinas.add(oficina)
+
+    for emp in _load_fuentes_externas().values():
+        territorial, oficina = _infer_territorial_and_office(emp.get("comunidad_autonoma", ""))
+        territoriales.add(territorial)
+        oficinas.add(oficina)
+
+    return {
+        "territoriales": sorted(territoriales),
+        "oficinas": sorted(oficinas),
+    }
+
+
+def _get_geografia_options_personas() -> dict[str, list[str]]:
+    territoriales = sorted({p.get("territorial", "") for p in _load_personas_fisicas() if p.get("territorial")})
+    oficinas = sorted({p.get("oficina", "") for p in _load_personas_fisicas() if p.get("oficina")})
+    return {
+        "territoriales": territoriales,
+        "oficinas": oficinas,
+    }
+
+
+def _get_empresas_por_geografia_avanzada(geo_kind: str, geo_value: str, fuente: str) -> list[dict]:
+    if not geo_value:
+        return []
+    results = []
+    if fuente == "interna":
+        for nombre, emp in _load_empresas_kyc().items():
+            territorial, oficina = _infer_territorial_and_office(emp.get("comunidad_autonoma", ""))
+            comparable = territorial if geo_kind == "territorial" else oficina
+            if comparable.lower() != geo_value.lower():
+                continue
+            balances = emp.get("balances", []) or []
+            ultimo_balance = balances[-1] if balances and isinstance(balances[-1], dict) else {}
+            observaciones = emp.get("observaciones", "")
+            results.append({
+                "empresa": nombre,
+                "sector": emp.get("sector", ""),
+                "descripcion": observaciones,
+                "señal": f"Cliente interno con cobertura {geo_kind} {geo_value}. {observaciones[:160]}".strip(),
+                "ingresos_estimados": ultimo_balance.get("ingresos") if isinstance(ultimo_balance.get("ingresos"), (int, float)) else None,
+                "empleados": emp.get("empleados"),
+                "territorial": territorial,
+                "oficina": oficina,
+            })
+    else:
+        for nombre, emp in _load_fuentes_externas().items():
+            territorial, oficina = _infer_territorial_and_office(emp.get("comunidad_autonoma", ""))
+            comparable = territorial if geo_kind == "territorial" else oficina
+            if comparable.lower() != geo_value.lower():
+                continue
+            perfil = emp.get("perfil_publico", {}) or {}
+            senales = emp.get("senales_externas", []) or []
+            results.append({
+                "empresa": nombre,
+                "sector": perfil.get("sector", ""),
+                "descripcion": perfil.get("descripcion", ""),
+                "señal": perfil.get("senal_mercado", senales[0] if senales else ""),
+                "ingresos_estimados": perfil.get("ingresos_estimados"),
+                "empleados": perfil.get("empleados"),
+                "territorial": territorial,
+                "oficina": oficina,
+            })
+    return results
+
+
+def _get_personas_filters() -> dict[str, list[str]]:
+    personas = _load_personas_fisicas()
+    return {
+        "segmentos": ["retail", "personal", "privada"],
+        "nombres": sorted({p.get("nombre", "") for p in personas if p.get("nombre")}),
+        "territoriales": sorted({p.get("territorial", "") for p in personas if p.get("territorial")}),
+        "oficinas": sorted({p.get("oficina", "") for p in personas if p.get("oficina")}),
+    }
+
+
+def _find_persona_fisica(nombre: str = "", nief: str = "") -> dict:
+    nombre_norm = nombre.strip().lower()
+    nief_norm = nief.strip().lower()
+    for persona in _load_personas_fisicas():
+        if nief_norm and persona.get("nief", "").strip().lower() == nief_norm:
+            return persona
+        if nombre_norm and persona.get("nombre", "").strip().lower() == nombre_norm:
+            return persona
+    return {}
+
+
 def _get_comunidades_disponibles() -> list[str]:
     """
     Devuelve la lista de comunidades autonomas disponibles combinando
@@ -596,12 +740,20 @@ def _get_empresas_por_geografia(comunidad: str, fuente: str) -> list[dict]:
         db = _load_empresas_kyc()
         for nombre, emp in db.items():
             if emp.get("comunidad_autonoma", "").lower() == comunidad.lower():
+                balances = emp.get("balances", []) or []
+                ultimo_balance = balances[-1] if balances and isinstance(balances[-1], dict) else {}
+                ingresos_estimados = ultimo_balance.get("ingresos") if isinstance(ultimo_balance.get("ingresos"), (int, float)) else None
+                observaciones = emp.get("observaciones", "")
                 results.append({
                     "empresa": nombre,
                     "sector":  emp.get("sector", ""),
-                    "descripcion": emp.get("observaciones", ""),
-                    "señal": f"Cliente interno. Sector: {emp.get('sector', '')}.",
-                    "ingresos_estimados": None,
+                    "descripcion": observaciones,
+                    "señal": (
+                        f"Cliente interno con relacion activa en banco. "
+                        f"Sector: {emp.get('sector', '')}. "
+                        f"{observaciones[:160]}"
+                    ).strip(),
+                    "ingresos_estimados": ingresos_estimados,
                     "empleados": emp.get("empleados"),
                 })
     else:
@@ -615,8 +767,8 @@ def _get_empresas_por_geografia(comunidad: str, fuente: str) -> list[dict]:
                     "sector":  perfil.get("sector", ""),
                     "descripcion": perfil.get("descripcion", ""),
                     "señal": perfil.get("senal_mercado", senales[0] if senales else ""),
-                    "ingresos_estimados": None,
-                    "empleados": None,
+                    "ingresos_estimados": perfil.get("ingresos_estimados"),
+                    "empleados": perfil.get("empleados"),
                 })
     return results
 
@@ -811,7 +963,8 @@ def kyc_nueva_solicitud():
 def _run_deal_pipeline_background(run_id, sector, company_name,
                                    financial_documents, fuente="interna",
                                    geografia="", empresas_geografia=None,
-                                   analyst_notes=""):
+                                   analyst_notes="", entity_family="juridica",
+                                   search_context=None):
     try:
         from deal_orchestrator import run_deal_intelligence_pipeline
 
@@ -829,6 +982,8 @@ def _run_deal_pipeline_background(run_id, sector, company_name,
             geografia=geografia,
             empresas_geografia=empresas_geografia or [],
             analyst_notes=analyst_notes,
+            entity_family=entity_family,
+            search_context=search_context or {},
             use_mock=False,
             step_callback=step_cb,
         )
@@ -877,6 +1032,9 @@ def deal_index():
     empresa_names_todas    = sorted(set(empresa_names_internas + empresa_names_externas))
 
     comunidades = _get_comunidades_disponibles()
+    geografia_juridica = _get_geografia_options_juridica()
+    personas_filters = _get_personas_filters()
+    geografia_personas = _get_geografia_options_personas()
 
     return render_template(
         "deal_index.html",
@@ -887,6 +1045,9 @@ def deal_index():
         empresa_sector_map_internas=empresa_sector_map_internas,
         empresa_names_externas=empresa_names_externas,
         comunidades=comunidades,
+        geografia_juridica=geografia_juridica,
+        personas_filters=personas_filters,
+        geografia_personas=geografia_personas,
     )
 
 
@@ -979,6 +1140,7 @@ def deal_download_pitchbook_pdf(run_id):
 
 @app.route("/deal/solicitudes/nueva", methods=["POST"])
 def deal_nueva_solicitud():
+    entity_family = request.form.get("entity_family", "juridica").strip().lower() or "juridica"
     search_mode  = request.form.get("search_mode", "").strip().lower()
 
     # Campos raw del formulario
@@ -987,11 +1149,21 @@ def deal_nueva_solicitud():
     company_name_sector   = request.form.get("company_name_sector", "").strip()
     company_name_empresa  = request.form.get("company_name_empresa", "").strip()
     geografia_raw         = request.form.get("geografia", "").strip()
-    fuente_raw            = request.form.get("fuente", "interna")
+    geografia_kind_juridica = request.form.get("geografia_kind_juridica", "territorial").strip().lower() or "territorial"
+    geografia_kind_fisica = request.form.get("geografia_kind_fisica", "territorial").strip().lower() or "territorial"
+    fuente_sector_raw     = request.form.get("fuente_sector", request.form.get("fuente", "interna"))
+    fuente_geografia_raw  = request.form.get("fuente_geografia", request.form.get("fuente", "interna"))
     fuente_empresa_raw    = request.form.get("fuente_empresa", "interna")
+    person_segment_raw    = request.form.get("person_segment", "").strip().lower()
+    person_name_raw       = request.form.get("person_name", "").strip()
+    person_nief_raw       = request.form.get("person_nief", "").strip()
+    person_client_raw     = request.form.get("person_client_type", "cliente").strip().lower() or "cliente"
     notes_sector_raw      = request.form.get("notes_sector", "").strip()
     notes_empresa_raw     = request.form.get("notes_empresa", "").strip()
     notes_geografia_raw   = request.form.get("notes_geografia", "").strip()
+    notes_segmento_raw    = request.form.get("notes_segmento", "").strip()
+    notes_persona_raw     = request.form.get("notes_persona", "").strip()
+    notes_geografia_pf_raw = request.form.get("notes_geografia_pf", "").strip()
     analyst_notes_raw     = request.form.get("search_notes", "").strip()
 
     # Resolver parametros efectivos por modo de busqueda para que las pestanas
@@ -999,42 +1171,89 @@ def deal_nueva_solicitud():
     sector = ""
     company_name = ""
     geografia = ""
-    fuente = fuente_raw
+    fuente = "interna"
     analyst_notes = ""
+    search_context = {
+        "entity_family": entity_family,
+    }
 
-    if search_mode == "empresa":
+    if entity_family == "fisica":
+        if search_mode == "segmento":
+            sector = person_segment_raw
+            analyst_notes = analyst_notes_raw or notes_segmento_raw
+            search_context.update({
+                "search_mode": "segmento",
+                "person_segment": person_segment_raw,
+            })
+        elif search_mode == "persona":
+            analyst_notes = analyst_notes_raw or notes_persona_raw
+            search_context.update({
+                "search_mode": "persona",
+                "person_segment": person_segment_raw,
+                "person_name": person_name_raw,
+                "person_nief": person_nief_raw,
+                "person_client_type": person_client_raw,
+            })
+            persona = _find_persona_fisica(person_name_raw, person_nief_raw)
+            company_name = person_name_raw or (persona.get("nombre", "") if persona else "")
+        elif search_mode == "geografia":
+            geografia = geografia_raw
+            analyst_notes = analyst_notes_raw or notes_geografia_pf_raw
+            search_context.update({
+                "search_mode": "geografia",
+                "geografia_kind": geografia_kind_fisica,
+                "person_segment": person_segment_raw,
+            })
+        else:
+            analyst_notes = analyst_notes_raw or notes_segmento_raw or notes_persona_raw or notes_geografia_pf_raw
+    elif search_mode == "empresa":
         company_name = company_name_raw or company_name_empresa
         fuente = fuente_empresa_raw or "interna"
         analyst_notes = analyst_notes_raw or notes_empresa_raw
+        search_context.update({"search_mode": "empresa"})
     elif search_mode == "geografia":
         geografia = geografia_raw
+        fuente = fuente_geografia_raw or "interna"
         analyst_notes = analyst_notes_raw or notes_geografia_raw
+        search_context.update({
+            "search_mode": "geografia",
+            "geografia_kind": geografia_kind_juridica,
+        })
     elif search_mode == "sector":
         sector = sector_raw
         company_name = company_name_raw or company_name_sector
+        fuente = fuente_sector_raw or "interna"
         analyst_notes = analyst_notes_raw or notes_sector_raw
+        search_context.update({"search_mode": "sector"})
     else:
         # Fallback retrocompatible si llega una version antigua del formulario.
         sector = sector_raw
         company_name = company_name_raw or company_name_empresa or company_name_sector
         geografia = geografia_raw
+        fuente = fuente_sector_raw or fuente_geografia_raw or "interna"
         analyst_notes = analyst_notes_raw or notes_sector_raw or notes_empresa_raw or notes_geografia_raw
 
     confirmar_externa = request.form.get("confirmar_externa", "")
 
     # Validacion por modo activo
-    if search_mode == "empresa" and not company_name:
+    if entity_family == "fisica" and search_mode == "segmento" and not person_segment_raw:
+        abort(400, "Debes indicar un segmento en la pestana 'Por segmento'.")
+    if entity_family == "fisica" and search_mode == "persona" and not (person_name_raw or person_nief_raw):
+        abort(400, "Debes indicar nombre o NIF/NIE/F en la pestana 'Por persona'.")
+    if entity_family == "fisica" and search_mode == "geografia" and not geografia:
+        abort(400, "Debes indicar una territorial u oficina en la pestana 'Por geografia'.")
+    if entity_family != "fisica" and search_mode == "empresa" and not company_name:
         abort(400, "Debes indicar una empresa en la pestana 'Por empresa'.")
-    if search_mode == "sector" and not sector:
+    if entity_family != "fisica" and search_mode == "sector" and not sector:
         abort(400, "Debes indicar un sector en la pestana 'Por sector'.")
-    if search_mode == "geografia" and not geografia:
+    if entity_family != "fisica" and search_mode == "geografia" and not geografia:
         abort(400, "Debes indicar una zona geografica en la pestana 'Por zona geografica'.")
     if not search_mode and not sector and not company_name and not geografia:
         abort(400, "Debes indicar al menos un sector, una empresa o una zona geografica.")
 
     # Si viene empresa sin sector ni geografia, detectar si es cliente
     empresa_es_cliente = False
-    if company_name and not sector and not geografia:
+    if entity_family != "fisica" and company_name and not sector and not geografia:
         db_kyc = _load_empresas_kyc()
         empresa_es_cliente = company_name.strip().lower() in {
             k.strip().lower() for k in db_kyc.keys()
@@ -1061,8 +1280,11 @@ def deal_nueva_solicitud():
 
     # Si hay geografia, construir lista de empresas del area
     empresas_geografia = []
-    if geografia:
-        empresas_geografia = _get_empresas_por_geografia(geografia, fuente)
+    if geografia and entity_family == "fisica":
+        search_context["geografia"] = geografia
+    elif geografia:
+        geo_kind = search_context.get("geografia_kind", "territorial")
+        empresas_geografia = _get_empresas_por_geografia_avanzada(geo_kind, geografia, fuente)
 
     financial_documents = []
     for name, text in zip(request.form.getlist("doc_name"),
@@ -1071,13 +1293,13 @@ def deal_nueva_solicitud():
             financial_documents.append({"name": name.strip() or "documento.txt", "text": text})
 
     provisional_run_id = uuid.uuid4().hex[:12]
-    label = company_name or (f"Zona {geografia}" if geografia else f"Sector {sector}")
+    label = company_name or (f"Geografia {geografia}" if geografia else f"Sector {sector}")
     _init_run_state(_DEAL_RUNS_STATE, provisional_run_id, DEAL_AGENT_STEPS, label)
 
     threading.Thread(
         target=_run_deal_pipeline_background,
         args=(provisional_run_id, sector, company_name, financial_documents,
-              fuente, geografia, empresas_geografia, analyst_notes),
+              fuente, geografia, empresas_geografia, analyst_notes, entity_family, search_context),
         daemon=True,
     ).start()
 

@@ -1,9 +1,0 @@
-Hispania Biotech Labs SA presenta un perfil atractivo de **crecimiento rentable**: los ingresos aumentan de 14,8m€ (2022) a 20,6m€ (2024) con crecimientos YoY de ~18% en 2023 y ~18% en 2024, mientras el EBITDA sube de 2,1m€ a 3,2m€ y el margen EBITDA se expande hasta ~15,5%. Esta combinación sugiere un modelo con **apalancamiento operativo** y capacidad de absorber mayor escala.
-
-En paralelo, la compañía incrementa su deuda financiera (5,2m€ → 6,8m€), aunque el apalancamiento mejora (Deuda/EBITDA ~2,5x → ~2,1x). Sin embargo, el **coste financiero** aumenta (280k€ → 390k€), lo que puede empezar a consumir parte del avance operativo si se mantiene un entorno de tipos elevados o si la empresa acelera la inversión.
-
-La evolución de amortizaciones (444k€ → 618k€) apunta a una base de activos en crecimiento, potencialmente asociada a inversión en capacidad/lab o intangibles. Dado que no se reporta CAPEX explícito, el foco inicial debe ser **clarificar el plan de inversión y la generación de caja**, para dimensionar correctamente la financiación y asegurar holgura de liquidez durante la ejecución.
-
-Proponemos acompañar a Hispania Biotech Labs SA con una solución combinada de **financiación de crecimiento** (para inversión y circulante) y/o **refinanciación/optimización de pasivo** (reperfilado de vencimientos y estabilización del coste), con covenants alineados al plan y sensibilidad a escenarios. El objetivo es preservar flexibilidad, reducir volatilidad financiera y habilitar la siguiente fase de expansión sin comprometer la trayectoria de márgenes.
-
-El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

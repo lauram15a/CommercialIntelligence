@@ -44,7 +44,10 @@ def run_meeting_preparer_agent(
         extra=f"Empresa objetivo: {company_name}"
     )
 
-    model_block = "Sin vision financiera adicional del Model Builder Agent (paso opcional no disponible)."
+    model_block = (
+        "Vision financiera base construida con senales operativas del pipeline; "
+        "aplicar validacion del banker antes de la propuesta final."
+    )
     if model_output and model_output.get("disponible"):
         model_block = json.dumps(model_output, ensure_ascii=False, indent=2)
 

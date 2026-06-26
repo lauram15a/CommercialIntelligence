@@ -1,0 +1,35 @@
+## Resumen (markdown) — Señales externas relevantes para el análisis de riesgo  
+**Empresa:** Acme Componentes SL  
+**Partes vinculadas:** No identificadas  
+**Señales internas disponibles:** No hay noticias registradas en la base de datos interna.
+
+### 1) Disponibilidad de señales externas
+No se han aportado (ni constan en el extracto recibido) **fuentes externas** concretas (p. ej., BORME/Registro Mercantil, BOE, listas de sanciones, prensa, litigios, ratings, incidencias regulatorias, etc.). Por tanto, **no es posible redactar un resumen factual de señales externas** sin incurrir en suposiciones.
+
+### 2) Señales externas típicamente relevantes (checklist para riesgo)
+A falta de evidencias específicas, estas son las **categorías de señales externas** que normalmente se revisan para una empresa española como *Acme Componentes SL* (y que convendría consultar para completar el análisis):
+
+- **Registro Mercantil / BORME**
+  - Cambios de administradores, apoderados, domicilio, objeto social
+  - Depósito de cuentas (retrasos, falta de depósito)
+  - Ampliaciones/reducciones de capital, disolución/liquidación, concursos
+- **Insolvencias y procedimientos**
+  - Concurso de acreedores, preconcurso, acuerdos de refinanciación
+  - Incidencias en registros de morosidad/impagos (si aplica en vuestra metodología)
+- **Litigios y reclamaciones públicas**
+  - Procedimientos judiciales relevantes (laborales, mercantiles, administrativos)
+  - Embargos o ejecuciones (cuando sean publicables/traceables)
+- **Cumplimiento y sanciones**
+  - Sanciones administrativas (medioambientales, laborales, consumo, competencia)
+  - **Listas de sanciones** (UE/OFAC/ONU/UK) y PEPs (si hay personas físicas asociadas)
+- **Reputación y prensa**
+  - Noticias negativas: accidentes, conflictos laborales, fraude, calidad/retiradas de producto
+  - Dependencia de un cliente/proveedor crítico (si aparece en prensa sectorial)
+- **Señales sectoriales (componentes/industria)**
+  - Riesgo de ciclo industrial, presión de márgenes, disrupción tecnológica
+  - Exposición a materias primas/energía y volatilidad de costes
+  - Concentración geográfica de demanda y riesgo de cadena de suministro
+
+### 3) Conclusión operativa
+- **Estado actual:** *Sin señales externas documentadas en el material recibido* → **riesgo no evaluable por señales externas** (gap de información).
+- **Siguiente paso recomendado:** facilitar al menos **NIF/CIF**, provincia y/o razón social exacta (para evitar homónimos) y autorizar qué **fuentes externas** queréis priorizar (Registro Mercantil/BORME, sanciones, litigios, prensa). Con eso puedo devolver un **resumen de señales externas** ya en formato de riesgo (qué es, por qué importa, severidad, fecha y fuente).

@@ -8,15 +8,15 @@
       "sector": "Industrial",
       "cnae": "2562 - Tratamiento y revestimiento de metales",
       "forma_juridica": "Sociedad de Responsabilidad Limitada",
-      "domicilio_social": "PolÃ­gono Malpica, Calle E nÂº 18, 50016 Zaragoza",
+      "domicilio_social": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza",
       "fecha_constitucion": "2003-07-10",
       "capital_social": 800000,
       "empleados": 310,
       "titulares_reales": [
         {
-          "nombre": "Roberto Acme JimÃ©nez",
+          "nombre": "Roberto Acme Jiménez",
           "participacion": 65.0,
-          "nacionalidad": "espaÃ±ola"
+          "nacionalidad": "española"
         },
         {
           "nombre": "Acme Europe Holding GmbH",
@@ -26,7 +26,7 @@
       ],
       "administradores": [
         {
-          "nombre": "Roberto Acme JimÃ©nez",
+          "nombre": "Roberto Acme Jiménez",
           "cargo": "Consejero Delegado"
         },
         {
@@ -67,7 +67,7 @@
         }
       ],
       "alertas_kyc": [],
-      "observaciones": "Fabricante de precisiÃ³n con socio europeo consolidado. ExpansiÃ³n con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
+      "observaciones": "Fabricante de precisión con socio europeo consolidado. Expansión con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
       "cuentas_empresa": {
         "balance": {
           "2022": {
@@ -236,7 +236,7 @@
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
         },
         {
-          "sujeto": "Roberto Acme JimÃ©nez",
+          "sujeto": "Roberto Acme Jiménez",
           "resultado": "SIN_HITS",
           "confianza": "NO_CONCLUYENTE",
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -271,7 +271,7 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           },
           {
-            "sujeto": "Roberto Acme JimÃ©nez",
+            "sujeto": "Roberto Acme Jiménez",
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -300,7 +300,11 @@
         "proxima_revision_kyc": "2026-04-10",
         "incidencias_historicas": [],
         "notas_relacion": "Relacion bancaria consolidada desde 2021. Cliente con alto grado de vinculación. Operaciones de financiación activas con vencimientos clave en 2027. Expansión internacional en curso (planta Polonia). Sin incidencias de impago ni alertas KYC.",
-        "cross_sell_activo": ["cobertura tipo de interés", "seguro de crédito exportación", "cuenta de tesorería multicurrency"]
+        "cross_sell_activo": [
+          "cobertura tipo de interés",
+          "seguro de crédito exportación",
+          "cuenta de tesorería multicurrency"
+        ]
       },
       "operaciones_banco": [
         {
@@ -392,7 +396,7 @@
           }
         ]
       },
-      "comunidad_autonoma": "Comunidad Valenciana"
+      "comunidad_autonoma": "Aragon"
     },
     "Tecnologia Holdings SL": {
       "nombre_legal": "Tecnologia Holdings SL",
@@ -413,8 +417,12 @@
       ],
       "administradores": [
         {
-          "nombre": "Administrador Demo",
-          "cargo": "Administrador Unico"
+          "nombre": "Carlos Infante Ruiz",
+          "cargo": "Consejero Delegado"
+        },
+        {
+          "nombre": "Ana Villanueva Soto",
+          "cargo": "Directora Financiera"
         }
       ],
       "balances": [
@@ -451,7 +459,47 @@
       ],
       "alertas_kyc": [],
       "observaciones": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
-      "comunidad_autonoma": "Comunidad de Madrid"
+      "comunidad_autonoma": "Comunidad de Madrid",
+      "historial_banco": {
+        "cliente_desde": "2020-09-01",
+        "gestor_responsable": "Laura Montoya Vidal",
+        "oficina": "Madrid - Empresa",
+        "segmento": "Empresa Mediana - Tecnología",
+        "rating_interno": "BB",
+        "ultima_revision_kyc": "2025-03-01",
+        "proxima_revision_kyc": "2026-03-01",
+        "incidencias_historicas": [],
+        "notas_relacion": "Cliente de perfil tecnológico con crecimiento estable. Sin incidencias de impago.",
+        "cross_sell_activo": [
+          "cuenta empresa",
+          "seguro de empresa",
+          "leasing tecnológico"
+        ]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Préstamo inversión tecnológica",
+          "importe": 1500000,
+          "fecha_formalizacion": "2022-05-01",
+          "vencimiento": "2027-05-01",
+          "tipo_interes": "Euribor 12M + 175pb",
+          "saldo_vivo": 800000,
+          "estado": "Vigente",
+          "garantias": "Aval corporativo",
+          "notas": "Cuota mensual 28.000 EUR. Sin incidencias."
+        },
+        {
+          "tipo": "Línea de circulante",
+          "importe": 600000,
+          "fecha_formalizacion": "2023-09-01",
+          "vencimiento": "2026-09-01",
+          "tipo_interes": "Euribor 3M + 160pb",
+          "saldo_vivo": 320000,
+          "estado": "Vigente",
+          "garantias": "Sin garantía adicional",
+          "notas": "Utilización media 53%."
+        }
+      ]
     },
     "Inmobiliario Holdings SL": {
       "nombre_legal": "Inmobiliario Holdings SL",
@@ -510,7 +558,36 @@
       ],
       "alertas_kyc": [],
       "observaciones": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
-      "comunidad_autonoma": "Andalucia"
+      "comunidad_autonoma": "Andalucia",
+      "historial_banco": {
+        "cliente_desde": "2021-04-01",
+        "gestor_responsable": "Fernando Ortiz Blanco",
+        "oficina": "Sevilla - Empresa",
+        "segmento": "Empresa Mediana - Inmobiliario",
+        "rating_interno": "BB",
+        "ultima_revision_kyc": "2025-04-05",
+        "proxima_revision_kyc": "2026-04-05",
+        "incidencias_historicas": [],
+        "notas_relacion": "Gestora de activos inmobiliarios terciarios. Sin incidencias. Potencial de refinanciación de activos.",
+        "cross_sell_activo": [
+          "cuenta empresa",
+          "seguros de activo inmobiliario",
+          "avales técnicos promotor"
+        ]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Préstamo hipotecario activo terciario",
+          "importe": 3500000,
+          "fecha_formalizacion": "2022-09-01",
+          "vencimiento": "2030-09-01",
+          "tipo_interes": "fijo 3.80%",
+          "saldo_vivo": 2800000,
+          "estado": "Vigente",
+          "garantias": "Hipoteca sobre edificio de oficinas",
+          "notas": "LTV inicial 65%. Cuota mensual 42.000 EUR. Al corriente."
+        }
+      ]
     },
     "Retail y Distribucion Holdings SL": {
       "nombre_legal": "Retail y Distribucion Holdings SL",
@@ -569,7 +646,47 @@
       ],
       "alertas_kyc": [],
       "observaciones": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
-      "comunidad_autonoma": "Comunidad Valenciana"
+      "comunidad_autonoma": "Comunidad Valenciana",
+      "historial_banco": {
+        "cliente_desde": "2020-07-01",
+        "gestor_responsable": "Cristina Bosch Palau",
+        "oficina": "Valencia - Empresa",
+        "segmento": "Empresa Mediana - Retail",
+        "rating_interno": "BB",
+        "ultima_revision_kyc": "2025-07-01",
+        "proxima_revision_kyc": "2026-07-01",
+        "incidencias_historicas": [],
+        "notas_relacion": "Distribuidora omnicanal con inversión en digitalización. Sin incidencias. Tensión estacional de caja Q1 y Q3.",
+        "cross_sell_activo": [
+          "cuenta empresa",
+          "confirming proveedores",
+          "línea de circulante estacional"
+        ]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Línea de crédito estacional",
+          "importe": 1800000,
+          "fecha_formalizacion": "2023-01-01",
+          "vencimiento": "2026-01-01",
+          "tipo_interes": "Euribor 3M + 155pb",
+          "saldo_vivo": 900000,
+          "estado": "Vigente",
+          "garantias": "Aval corporativo",
+          "notas": "Uso concentrado en Q1 y Q3 por estacionalidad."
+        },
+        {
+          "tipo": "Confirming proveedores",
+          "importe": 1200000,
+          "fecha_formalizacion": "2024-03-01",
+          "vencimiento": "Renovable anual",
+          "tipo_interes": "coste 0 para cliente",
+          "saldo_vivo": 650000,
+          "estado": "Activo",
+          "garantias": "Sin garantía adicional",
+          "notas": "18 proveedores adheridos. Mejora de DPO."
+        }
+      ]
     },
     "Construccion Holdings SL": {
       "nombre_legal": "Construccion Holdings SL",
@@ -628,7 +745,49 @@
       ],
       "alertas_kyc": [],
       "observaciones": "Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
-      "comunidad_autonoma": "Andalucia"
+      "comunidad_autonoma": "Andalucia",
+      "historial_banco": {
+        "cliente_desde": "2019-10-01",
+        "gestor_responsable": "María Fernández Lagos",
+        "oficina": "Sevilla - Empresa",
+        "segmento": "Empresa Mediana - Construcción",
+        "rating_interno": "BB-",
+        "ultima_revision_kyc": "2025-02-01",
+        "proxima_revision_kyc": "2026-02-01",
+        "incidencias_historicas": [
+          "Retraso en entrega de cuentas auditadas 2023 (resuelto)"
+        ],
+        "notas_relacion": "Constructora con cartera de contratos en obra civil. Incidencia documental menor resuelta. Potencial de avales y circulante.",
+        "cross_sell_activo": [
+          "cuenta empresa",
+          "línea de avales",
+          "confirming proveedores"
+        ]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Línea de avales técnicos y económicos",
+          "importe": 2000000,
+          "fecha_formalizacion": "2022-01-01",
+          "vencimiento": "2027-01-01",
+          "tipo_interes": "comisión aval 0.90% anual",
+          "saldo_vivo": 1400000,
+          "estado": "Activo",
+          "garantias": "Contragarantía hipotecaria",
+          "notas": "Avales ante organismos públicos para licitaciones."
+        },
+        {
+          "tipo": "Línea de circulante obra",
+          "importe": 1500000,
+          "fecha_formalizacion": "2023-06-01",
+          "vencimiento": "2026-06-01",
+          "tipo_interes": "Euribor 3M + 190pb",
+          "saldo_vivo": 900000,
+          "estado": "Vigente",
+          "garantias": "Cesión de créditos de obra",
+          "notas": "Financia certificaciones de obra pendientes de cobro."
+        }
+      ]
     },
     "Energia Holdings SL": {
       "nombre_legal": "Energia Holdings SL",
@@ -692,15 +851,55 @@
       ],
       "alertas_kyc": [],
       "observaciones": "Grupo energetico ficticio con informacion completa para pruebas KYC y crediticias. Datos UBO y administracion consolidados para screening.",
-      "comunidad_autonoma": "Comunidad de Madrid"
+      "comunidad_autonoma": "Comunidad de Madrid",
+      "historial_banco": {
+        "cliente_desde": "2020-01-15",
+        "gestor_responsable": "Antonio Rivas Moreno",
+        "oficina": "Madrid - Empresa",
+        "segmento": "Empresa Mediana - Energía",
+        "rating_interno": "BB",
+        "ultima_revision_kyc": "2025-01-20",
+        "proxima_revision_kyc": "2026-01-20",
+        "incidencias_historicas": [],
+        "notas_relacion": "Grupo energético con expansión de activos fotovoltaicos. Sin incidencias. Necesidades de financiación de proyecto en 2027.",
+        "cross_sell_activo": [
+          "cuenta empresa",
+          "coberturas de tipo de interés",
+          "avales técnicos"
+        ]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Préstamo project finance renovables",
+          "importe": 3000000,
+          "fecha_formalizacion": "2022-07-01",
+          "vencimiento": "2032-07-01",
+          "tipo_interes": "Euribor 12M + 210pb",
+          "saldo_vivo": 2400000,
+          "estado": "Vigente",
+          "garantias": "Prenda sobre activos fotovoltaicos y contratos PPA",
+          "notas": "Cuota semestral 220.000 EUR. Al corriente. DSCR mínimo 1.15x."
+        },
+        {
+          "tipo": "Línea de avales técnicos",
+          "importe": 1200000,
+          "fecha_formalizacion": "2023-04-01",
+          "vencimiento": "2027-04-01",
+          "tipo_interes": "comisión aval 0.80% anual",
+          "saldo_vivo": 800000,
+          "estado": "Activo",
+          "garantias": "Contragarantía corporativa",
+          "notas": "Avales ante operador de red y administraciones para parques fotovoltaicos."
+        }
+      ]
     },
     "Hispania Biotech Labs SA": {
       "nombre_legal": "Hispania Biotech Labs SA",
       "nif": "A96325874",
       "sector": "Salud y Farmacia",
-      "cnae": "7211 - InvestigaciÃ³n y desarrollo experimental en biotecnologÃ­a",
-      "forma_juridica": "Sociedad AnÃ³nima",
-      "domicilio_social": "Parque TecnolÃ³gico de Paterna, Edificio I+D 4, 46980 Valencia",
+      "cnae": "7211 - Investigación y desarrollo experimental en biotecnología",
+      "forma_juridica": "Sociedad Anónima",
+      "domicilio_social": "Parque Tecnológico de Paterna, Edificio I+D 4, 46980 Valencia",
       "fecha_constitucion": "2014-05-08",
       "capital_social": 2400000,
       "empleados": 132,
@@ -708,17 +907,17 @@
         {
           "nombre": "Elena Aguirre Mateo",
           "participacion": 41.0,
-          "nacionalidad": "espaÃ±ola"
+          "nacionalidad": "española"
         },
         {
           "nombre": "Health Ventures Iberia FCR",
           "participacion": 34.0,
-          "nacionalidad": "espaÃ±ola"
+          "nacionalidad": "española"
         },
         {
           "nombre": "Javier Solans Pardo",
           "participacion": 25.0,
-          "nacionalidad": "espaÃ±ola"
+          "nacionalidad": "española"
         }
       ],
       "administradores": [
@@ -764,7 +963,7 @@
         }
       ],
       "alertas_kyc": [],
-      "observaciones": "Empresa biotech en expansiÃ³n internacional con pipeline de diagnÃ³stico oncolÃ³gico. KYC renovado en 2025 y documentaciÃ³n societaria completa.",
+      "observaciones": "Empresa biotech en expansión internacional con pipeline de diagnóstico oncológico. KYC renovado en 2025 y documentación societaria completa.",
       "cuentas_empresa": {
         "balance": {
           "2022": {
@@ -987,14 +1186,54 @@
           }
         ]
       },
-      "comunidad_autonoma": "Cataluna"
+      "comunidad_autonoma": "Cataluna",
+      "historial_banco": {
+        "cliente_desde": "2021-11-01",
+        "gestor_responsable": "Pere Castelló Mir",
+        "oficina": "Barcelona - Diagonal",
+        "segmento": "Empresa Mediana - Salud y Tecnología",
+        "rating_interno": "BB+",
+        "ultima_revision_kyc": "2025-06-15",
+        "proxima_revision_kyc": "2026-06-15",
+        "incidencias_historicas": [],
+        "notas_relacion": "Empresa biotech con expansión internacional activa. KYC renovado en 2025. Sin incidencias.",
+        "cross_sell_activo": [
+          "cuenta empresa",
+          "seguro de crédito exportación",
+          "leasing industrial"
+        ]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Préstamo CAPEX industrial",
+          "importe": 5000000,
+          "fecha_formalizacion": "2023-07-01",
+          "vencimiento": "2028-07-01",
+          "tipo_interes": "Euribor 12M + 195pb",
+          "saldo_vivo": 3800000,
+          "estado": "Vigente",
+          "garantias": "Hipoteca sobre instalaciones Valencia",
+          "notas": "Cuota mensual 88.000 EUR. Financia nueva línea de producción."
+        },
+        {
+          "tipo": "Línea de circulante I+D",
+          "importe": 1500000,
+          "fecha_formalizacion": "2024-02-01",
+          "vencimiento": "2026-02-01",
+          "tipo_interes": "Euribor 3M + 170pb",
+          "saldo_vivo": 900000,
+          "estado": "Vigente",
+          "garantias": "Aval de los socios",
+          "notas": "Utilización media 60%. Fondea gastos de I+D."
+        }
+      ]
     },
-    "MediterrÃ¡nea Foods Export SA": {
-      "nombre_legal": "MediterrÃ¡nea Foods Export SA",
+    "Mediterránea Foods Export SA": {
+      "nombre_legal": "Mediterránea Foods Export SA",
       "nif": "A15935748",
       "sector": "Agroindustria",
-      "cnae": "1039 - Otro procesado y conservaciÃ³n de frutas y hortalizas",
-      "forma_juridica": "Sociedad AnÃ³nima",
+      "cnae": "1039 - Otro procesado y conservación de frutas y hortalizas",
+      "forma_juridica": "Sociedad Anónima",
       "domicilio_social": "Camino de la Huerta 7, 30012 Murcia",
       "fecha_constitucion": "2009-02-26",
       "capital_social": 1300000,
@@ -1003,21 +1242,21 @@
         {
           "nombre": "Grupo Alimentario Levante SA",
           "participacion": 62.0,
-          "nacionalidad": "espaÃ±ola"
+          "nacionalidad": "española"
         },
         {
-          "nombre": "LucÃ­a MontalbÃ¡n Ruiz",
+          "nombre": "Lucía Montalbán Ruiz",
           "participacion": 38.0,
-          "nacionalidad": "espaÃ±ola"
+          "nacionalidad": "española"
         }
       ],
       "administradores": [
         {
-          "nombre": "LucÃ­a MontalbÃ¡n Ruiz",
+          "nombre": "Lucía Montalbán Ruiz",
           "cargo": "Consejera Delegada"
         },
         {
-          "nombre": "Diego MontalbÃ¡n Ruiz",
+          "nombre": "Diego Montalbán Ruiz",
           "cargo": "Consejero"
         }
       ],
@@ -1054,7 +1293,7 @@
         }
       ],
       "alertas_kyc": [],
-      "observaciones": "Exportador agroalimentario con exposiciÃ³n a divisa USD y GBP. Historial crediticio positivo con operaciones de comercio exterior.",
+      "observaciones": "Exportador agroalimentario con exposición a divisa USD y GBP. Historial crediticio positivo con operaciones de comercio exterior.",
       "cuentas_empresa": {
         "balance": {
           "2022": {
@@ -1208,7 +1447,7 @@
         "Detalle de deuda: vencimientos, tipo y covenants"
       ],
       "plan_accion_kyc_credit_risk": [
-        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de MediterrÃ¡nea Foods Export SA.",
+        "Subsanar KYC-001: verificar identificacion vigente de titulares y administradores de Mediterránea Foods Export SA.",
         "Completar screening sanciones/PEP/adverse media en fuentes oficiales y proveedor operativo.",
         "Aclarar audit flags financieros (si aplica) y documentar cambios de criterio/reclasificaciones.",
         "Solicitar soporte financiero complementario (memoria, auditoria, detalle de deuda y covenants).",
@@ -1217,7 +1456,7 @@
       ],
       "screening_estado_operativo": [
         {
-          "sujeto": "MediterrÃ¡nea Foods Export SA",
+          "sujeto": "Mediterránea Foods Export SA",
           "resultado": "SIN_HITS",
           "confianza": "NO_CONCLUYENTE",
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -1229,13 +1468,13 @@
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
         },
         {
-          "sujeto": "LucÃ­a MontalbÃ¡n Ruiz",
+          "sujeto": "Lucía Montalbán Ruiz",
           "resultado": "SIN_HITS",
           "confianza": "NO_CONCLUYENTE",
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
         },
         {
-          "sujeto": "Diego MontalbÃ¡n Ruiz",
+          "sujeto": "Diego Montalbán Ruiz",
           "resultado": "SIN_HITS",
           "confianza": "NO_CONCLUYENTE",
           "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -1252,7 +1491,7 @@
         ],
         "detalle_sujetos": [
           {
-            "sujeto": "MediterrÃ¡nea Foods Export SA",
+            "sujeto": "Mediterránea Foods Export SA",
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
@@ -1264,20 +1503,61 @@
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           },
           {
-            "sujeto": "LucÃ­a MontalbÃ¡n Ruiz",
+            "sujeto": "Lucía Montalbán Ruiz",
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           },
           {
-            "sujeto": "Diego MontalbÃ¡n Ruiz",
+            "sujeto": "Diego Montalbán Ruiz",
             "resultado": "SIN_HITS",
             "confianza": "NO_CONCLUYENTE",
             "nota": "Resultado de fuente local de demo; requiere re-screening en fuentes oficiales actualizadas (UE/OFAC/ONU/HMT y/o proveedor interno)."
           }
         ]
       },
-      "comunidad_autonoma": "Comunidad Valenciana"
+      "comunidad_autonoma": "Murcia",
+      "historial_banco": {
+        "cliente_desde": "2019-05-01",
+        "gestor_responsable": "Pilar Sánchez Ruiz",
+        "oficina": "Murcia - Empresa",
+        "segmento": "Empresa Mediana - Agroindustria",
+        "rating_interno": "BB+",
+        "ultima_revision_kyc": "2025-05-10",
+        "proxima_revision_kyc": "2026-05-10",
+        "incidencias_historicas": [],
+        "notas_relacion": "Exportador agroalimentario con historial crediticio positivo. Operaciones de comercio exterior activas. Sin incidencias.",
+        "cross_sell_activo": [
+          "cuenta empresa",
+          "coberturas FX",
+          "seguro de crédito exportación",
+          "confirming proveedores"
+        ]
+      },
+      "operaciones_banco": [
+        {
+          "tipo": "Línea de financiación exportación",
+          "importe": 4000000,
+          "fecha_formalizacion": "2022-03-01",
+          "vencimiento": "2027-03-01",
+          "tipo_interes": "Euribor 12M + 165pb",
+          "saldo_vivo": 2200000,
+          "estado": "Vigente",
+          "garantias": "Aval corporativo + seguro exportación",
+          "notas": "Cubre financiación de campañas de exportación 6-9 meses. Sin incidencias."
+        },
+        {
+          "tipo": "Coberturas FX (forwards EUR/USD y EUR/GBP)",
+          "importe": 3500000,
+          "fecha_formalizacion": "2024-01-01",
+          "vencimiento": "2026-12-31",
+          "tipo_interes": "n/a",
+          "saldo_vivo": null,
+          "estado": "Activo",
+          "garantias": "Sin garantía adicional",
+          "notas": "Cubre exposición a divisa de exportaciones anuales."
+        }
+      ]
     },
     "DataNexa Cloud Systems SL": {
       "nombre_legal": "DataNexa Cloud Systems SL",
@@ -1541,7 +1821,13 @@
       ],
       "sanciones": {
         "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": ["UE Consolidated", "OFAC SDN", "ONU", "HMT UK", "listas internas de cumplimiento"],
+        "fuentes_objetivo": [
+          "UE Consolidated",
+          "OFAC SDN",
+          "ONU",
+          "HMT UK",
+          "listas internas de cumplimiento"
+        ],
         "detalle_sujetos": [
           {
             "sujeto": "DataNexa Cloud Systems SL",
@@ -1579,41 +1865,46 @@
         "proxima_revision_kyc": "2026-06-01",
         "incidencias_historicas": [],
         "notas_relacion": "Cliente de alto crecimiento en sector SaaS B2B. Relación activa con operaciones de financiación y tesorería. Proceso M&A en análisis puede requerir deuda puente. Sin incidencias de impago.",
-        "cross_sell_activo": ["cuenta empresa", "TPV virtual", "seguros de empresa", "forwards divisa EUR/USD"]
+        "cross_sell_activo": [
+          "cuenta empresa",
+          "TPV virtual",
+          "seguros de empresa",
+          "forwards divisa EUR/USD"
+        ]
       },
       "operaciones_banco": [
         {
           "tipo": "Línea de crédito revolving",
           "importe": 2500000,
-          "fecha_formalizacion": "2023-01-15",
-          "vencimiento": "2026-01-15",
-          "tipo_interes": "Euribor 3M + 175pb",
-          "saldo_vivo": 1200000,
-          "estado": "Vigente - renovación Q1 2026",
-          "garantias": "Cesión de derechos de cobro sobre contratos SaaS enterprise",
-          "notas": "Utilización media 48%. Se anticipa ampliación por crecimiento de ARR y proceso M&A."
+          "fecha_formalizacion": "2023-03-01",
+          "vencimiento": "2026-03-01",
+          "tipo_interes": "Euribor 3M + 200pb",
+          "saldo_vivo": 1400000,
+          "estado": "Vigente - renovación pendiente",
+          "garantias": "Aval personal de los socios fundadores",
+          "notas": "Utilización media 56%. Candidata a ampliación por crecimiento de ARR."
         },
         {
           "tipo": "Préstamo venture debt",
           "importe": 2000000,
-          "fecha_formalizacion": "2024-04-01",
-          "vencimiento": "2027-04-01",
-          "tipo_interes": "Euribor 12M + 220pb + warrant",
-          "saldo_vivo": 1800000,
+          "fecha_formalizacion": "2024-01-15",
+          "vencimiento": "2027-01-15",
+          "tipo_interes": "fijo 5.50%",
+          "saldo_vivo": 1600000,
           "estado": "Vigente",
-          "garantias": "Prenda sobre acciones y activos intangibles",
-          "notas": "Estructurado para financiar escalado comercial. Warrant sobre el 2% del capital si hay evento de liquidez."
+          "garantias": "Prenda sobre cartera de contratos ARR",
+          "notas": "Cuota mensual 45.000 EUR. Sin incidencias. Proceso M&A puede requerir deuda puente adicional."
         },
         {
           "tipo": "Cuenta de tesorería multicurrency",
           "importe": null,
           "fecha_formalizacion": "2022-06-01",
           "vencimiento": "Indefinido",
-          "tipo_interes": "remunerada 3.10% sobre saldo medio",
-          "saldo_vivo": 2100000,
+          "tipo_interes": "n/a",
+          "saldo_vivo": null,
           "estado": "Activo",
-          "garantias": null,
-          "notas": "Cuenta principal de cobro de clientes SaaS. Saldo creciente."
+          "garantias": "Sin garantía",
+          "notas": "Operativa transaccional EUR/USD. Forwards divisa activos."
         }
       ],
       "plan_comercial": {
@@ -1900,11 +2191,31 @@
       ],
       "sanciones": {
         "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": ["UE Consolidated", "OFAC SDN", "ONU", "HMT UK"],
+        "fuentes_objetivo": [
+          "UE Consolidated",
+          "OFAC SDN",
+          "ONU",
+          "HMT UK"
+        ],
         "detalle_sujetos": [
-          {"sujeto": "AgroVal Export Partners SL", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening oficial."},
-          {"sujeto": "José Antonio Valero Gimeno", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening oficial."},
-          {"sujeto": "Cooperativa Hortofruticola Levante COOP", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere verificacion."}
+          {
+            "sujeto": "AgroVal Export Partners SL",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere re-screening oficial."
+          },
+          {
+            "sujeto": "José Antonio Valero Gimeno",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere re-screening oficial."
+          },
+          {
+            "sujeto": "Cooperativa Hortofruticola Levante COOP",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere verificacion."
+          }
         ]
       },
       "historial_banco": {
@@ -1917,7 +2228,12 @@
         "proxima_revision_kyc": "2026-02-20",
         "incidencias_historicas": [],
         "notas_relacion": "Cliente con larga trayectoria exportadora. Gran estacionalidad en ciclos de campaña. Uso intensivo de trade finance y coberturas GBP. Sin incidencias crediticias históricas.",
-        "cross_sell_activo": ["confirming proveedores", "cobertura FX GBP/EUR", "seguro de crédito exportación", "carta de crédito documentario"]
+        "cross_sell_activo": [
+          "confirming proveedores",
+          "cobertura FX GBP/EUR",
+          "seguro de crédito exportación",
+          "carta de crédito documentario"
+        ]
       },
       "operaciones_banco": [
         {
@@ -2115,19 +2431,64 @@
           }
         },
         "flujo_caja": {
-          "2022": {"flujo_operativo": 1418400, "flujo_inversion": -1685000, "flujo_financiacion": 1700000, "variacion_neta_caja": 1433400},
-          "2023": {"flujo_operativo": 1684800, "flujo_inversion": -1872000, "flujo_financiacion": 1950000, "variacion_neta_caja": 1762800},
-          "2024": {"flujo_operativo": 1944000, "flujo_inversion": -2030000, "flujo_financiacion": 2220000, "variacion_neta_caja": 2134000}
+          "2022": {
+            "flujo_operativo": 1418400,
+            "flujo_inversion": -1685000,
+            "flujo_financiacion": 1700000,
+            "variacion_neta_caja": 1433400
+          },
+          "2023": {
+            "flujo_operativo": 1684800,
+            "flujo_inversion": -1872000,
+            "flujo_financiacion": 1950000,
+            "variacion_neta_caja": 1762800
+          },
+          "2024": {
+            "flujo_operativo": 1944000,
+            "flujo_inversion": -2030000,
+            "flujo_financiacion": 2220000,
+            "variacion_neta_caja": 2134000
+          }
         },
         "indicadores_clave": {
-          "2022": {"ebitda": 1970000, "deuda": 6200000, "liquidez": 1.20, "patrimonio": 3700000},
-          "2023": {"ebitda": 2340000, "deuda": 7100000, "liquidez": 1.24, "patrimonio": 4500000},
-          "2024": {"ebitda": 2700000, "deuda": 8100000, "liquidez": 1.25, "patrimonio": 5200000}
+          "2022": {
+            "ebitda": 1970000,
+            "deuda": 6200000,
+            "liquidez": 1.2,
+            "patrimonio": 3700000
+          },
+          "2023": {
+            "ebitda": 2340000,
+            "deuda": 7100000,
+            "liquidez": 1.24,
+            "patrimonio": 4500000
+          },
+          "2024": {
+            "ebitda": 2700000,
+            "deuda": 8100000,
+            "liquidez": 1.25,
+            "patrimonio": 5200000
+          }
         },
         "detalle_activo_corriente": {
-          "2022": {"existencias": 3560000, "clientes": 3560000, "caja": 1335000, "otros": 445000},
-          "2023": {"existencias": 4080000, "clientes": 4080000, "caja": 1530000, "otros": 510000},
-          "2024": {"existencias": 4560000, "clientes": 4560000, "caja": 1710000, "otros": 570000}
+          "2022": {
+            "existencias": 3560000,
+            "clientes": 3560000,
+            "caja": 1335000,
+            "otros": 445000
+          },
+          "2023": {
+            "existencias": 4080000,
+            "clientes": 4080000,
+            "caja": 1530000,
+            "otros": 510000
+          },
+          "2024": {
+            "existencias": 4560000,
+            "clientes": 4560000,
+            "caja": 1710000,
+            "otros": 570000
+          }
         },
         "detalle_deuda": {
           "deuda_corto_plazo": 2430000,
@@ -2139,7 +2500,10 @@
             "2028": 1944000,
             "2029+": 2916000
           },
-          "covenants_actuales": ["debt_ebitda_max_3_5x", "cobertura_intereses_min_3_0x"]
+          "covenants_actuales": [
+            "debt_ebitda_max_3_5x",
+            "cobertura_intereses_min_3_0x"
+          ]
         }
       },
       "documentacion_kyc_requerida": [
@@ -2157,17 +2521,52 @@
         "Escalar a Comité si hay concentración de deuda por encima del covenant."
       ],
       "screening_estado_operativo": [
-        {"sujeto": "FreshRoute Distribucion SA", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening oficial."},
-        {"sujeto": "Rafael Sanchis Bonet", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening oficial."},
-        {"sujeto": "Grupo Alimentario FreshRoute Holding SL", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere verificacion UBO corporativo."}
+        {
+          "sujeto": "FreshRoute Distribucion SA",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Requiere re-screening oficial."
+        },
+        {
+          "sujeto": "Rafael Sanchis Bonet",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Requiere re-screening oficial."
+        },
+        {
+          "sujeto": "Grupo Alimentario FreshRoute Holding SL",
+          "resultado": "SIN_HITS",
+          "confianza": "NO_CONCLUYENTE",
+          "nota": "Requiere verificacion UBO corporativo."
+        }
       ],
       "sanciones": {
         "estado_global": "REVISION_MANUAL_REQUERIDA",
-        "fuentes_objetivo": ["UE Consolidated", "OFAC SDN", "ONU", "HMT UK"],
+        "fuentes_objetivo": [
+          "UE Consolidated",
+          "OFAC SDN",
+          "ONU",
+          "HMT UK"
+        ],
         "detalle_sujetos": [
-          {"sujeto": "FreshRoute Distribucion SA", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening."},
-          {"sujeto": "Rafael Sanchis Bonet", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere re-screening."},
-          {"sujeto": "Grupo Alimentario FreshRoute Holding SL", "resultado": "SIN_HITS", "confianza": "NO_CONCLUYENTE", "nota": "Requiere verificacion."}
+          {
+            "sujeto": "FreshRoute Distribucion SA",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere re-screening."
+          },
+          {
+            "sujeto": "Rafael Sanchis Bonet",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere re-screening."
+          },
+          {
+            "sujeto": "Grupo Alimentario FreshRoute Holding SL",
+            "resultado": "SIN_HITS",
+            "confianza": "NO_CONCLUYENTE",
+            "nota": "Requiere verificacion."
+          }
         ]
       },
       "historial_banco": {
@@ -2180,7 +2579,12 @@
         "proxima_revision_kyc": "2026-09-01",
         "incidencias_historicas": [],
         "notas_relacion": "Cliente con uso intensivo de circulante estacional. Confirming con 31 proveedores adheridos. Expansión logística en curso. Sin incidencias de impago.",
-        "cross_sell_activo": ["confirming proveedores", "factoring clientes HORECA", "leasing vehículos industriales", "seguro de responsabilidad civil logística"]
+        "cross_sell_activo": [
+          "confirming proveedores",
+          "factoring clientes HORECA",
+          "leasing vehículos industriales",
+          "seguro de responsabilidad civil logística"
+        ]
       },
       "operaciones_banco": [
         {
@@ -2261,7 +2665,7 @@
     "Industrial": [
       {
         "empresa": "Acme Componentes SL",
-        "descripcion": "Fabricante de precisiÃ³n con socio europeo consolidado. ExpansiÃ³n con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
+        "descripcion": "Fabricante de precisión con socio europeo consolidado. Expansión con nueva planta en Polonia en 2025. Sin incidencias KYC. Primer cliente del banco desde 2021.",
         "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 12000000 EUR.",
         "ingresos_estimados": 42000000,
         "empleados": 310,
@@ -2435,7 +2839,7 @@
     "Salud y Farmacia": [
       {
         "empresa": "Hispania Biotech Labs SA",
-        "descripcion": "Empresa biotech en expansiÃ³n internacional con pipeline de diagnÃ³stico oncolÃ³gico. KYC renovado en 2025 y documentaciÃ³n societaria completa.",
+        "descripcion": "Empresa biotech en expansión internacional con pipeline de diagnóstico oncológico. KYC renovado en 2025 y documentación societaria completa.",
         "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 6800000 EUR.",
         "ingresos_estimados": 20600000,
         "empleados": 132,
@@ -2463,8 +2867,8 @@
     ],
     "Agroindustria": [
       {
-        "empresa": "MediterrÃ¡nea Foods Export SA",
-        "descripcion": "Exportador agroalimentario con exposiciÃ³n a divisa USD y GBP. Historial crediticio positivo con operaciones de comercio exterior.",
+        "empresa": "Mediterránea Foods Export SA",
+        "descripcion": "Exportador agroalimentario con exposición a divisa USD y GBP. Historial crediticio positivo con operaciones de comercio exterior.",
         "señal": "Crecimiento operativo y necesidad potencial de financiacion en 2027 (CAPEX/refinanciacion) con deuda estimada de 7600000 EUR.",
         "ingresos_estimados": 27900000,
         "empleados": 176,
@@ -2492,7 +2896,7 @@
     ]
   },
   "historial": {
-    "AlcÃ¡ntara EnergÃ­a Renovable SL": {
+    "Alcántara Energía Renovable SL": {
       "operaciones_anteriores": 3,
       "incidencias": [],
       "impagos": 0,
@@ -2595,7 +2999,7 @@
       ],
       "resumen_historial": "Relacion historica con 9 operaciones registradas; impagos=2; incidencias=2."
     },
-    "LogÃ­stica TransibÃ©rica SL": {
+    "Logística Transibérica SL": {
       "operaciones_anteriores": 4,
       "incidencias": [
         "tension de liquidez Q2 2024"
@@ -2674,7 +3078,7 @@
       ],
       "resumen_historial": "Relacion historica con 5 operaciones registradas; impagos=0; incidencias=1."
     },
-    "MediterrÃ¡nea Foods Export SA": {
+    "Mediterránea Foods Export SA": {
       "operaciones_anteriores": 4,
       "incidencias": [],
       "impagos": 0,
@@ -2794,7 +3198,7 @@
       ],
       "resumen_historial": "Relacion historica con 2 operaciones registradas; impagos=0; incidencias=0."
     },
-    "Norte LogÃ­stica SA": {
+    "Norte Logística SA": {
       "operaciones_anteriores": 3,
       "incidencias": [],
       "impagos": 0,
@@ -2818,7 +3222,7 @@
       ],
       "resumen_historial": "Relacion historica con 3 operaciones registradas; impagos=0; incidencias=0."
     },
-    "Vertia EnergÃ­a SL": {
+    "Vertia Energía SL": {
       "operaciones_anteriores": 2,
       "incidencias": [],
       "impagos": 0,
@@ -2842,13 +3246,13 @@
       ],
       "resumen_historial": "Relacion historica con 2 operaciones registradas; impagos=0; incidencias=0."
     },
-    "BioMÃ©dica IbÃ©rica SA": {
+    "BioMédica Ibérica SA": {
       "operaciones_anteriores": 0,
       "incidencias": [],
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
     "Bodegas Ribera del Viento SA": {
       "operaciones_anteriores": 0,
@@ -2856,15 +3260,15 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
-    "Cadena Distribuidora AtlÃ¡ntica SL": {
+    "Cadena Distribuidora Atlántica SL": {
       "operaciones_anteriores": 0,
       "incidencias": [],
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
     "Constructora Bermejo e Hijos SL": {
       "operaciones_anteriores": 0,
@@ -2872,7 +3276,7 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
     "Cooperativa Olivarera del Sur SCOOP": {
       "operaciones_anteriores": 0,
@@ -2880,15 +3284,15 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
-    "IbÃ©rica Solar Partners SL": {
+    "Ibérica Solar Partners SL": {
       "operaciones_anteriores": 0,
       "incidencias": [],
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
     "Patrimonios Centrales SA": {
       "operaciones_anteriores": 0,
@@ -2896,7 +3300,7 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
     "Promotora Levante Residencial SL": {
       "operaciones_anteriores": 0,
@@ -2904,15 +3308,15 @@
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
-    "Red ClÃ­nicas Meridional SL": {
+    "Red Clínicas Meridional SL": {
       "operaciones_anteriores": 0,
       "incidencias": [],
       "impagos": 0,
       "productos_contratados": [],
       "operaciones_detalle": [],
-      "resumen_historial": "Sin relaciÃ³n histÃ³rica registrada con el banco."
+      "resumen_historial": "Sin relación histórica registrada con el banco."
     },
     "MetalCore Zaragoza SL": {
       "cliente_desde": "2019-03-15",
@@ -3460,5 +3864,347 @@
       ],
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     }
-  }
+  },
+  "noticias": [
+    {
+      "empresa": "Acme Componentes SL",
+      "titulo": "Acme Componentes inaugura su primera planta de producción en Polonia",
+      "fuente": "Expansión",
+      "fecha": "2025-05-15",
+      "resumen": "La empresa zaragozana completa su expansión internacional con una planta en Wroclaw con capacidad para 120 empleados y una inversión de 9 millones de euros."
+    },
+    {
+      "empresa": "Acme Componentes SL",
+      "titulo": "Acme Componentes consolida su posición como proveedor de primer nivel para la automoción alemana",
+      "fuente": "El Economista",
+      "fecha": "2025-12-01",
+      "resumen": "La empresa ha renovado y ampliado sus contratos con dos fabricantes alemanes de primer nivel, asegurando ingresos por más de 15 millones hasta 2027."
+    },
+    {
+      "empresa": "Alcántara Energía Renovable SL",
+      "titulo": "Alcántara Energía obtiene la autorización administrativa para su segunda planta en Badajoz",
+      "fuente": "Cinco Días",
+      "fecha": "2025-02-05",
+      "resumen": "La Junta de Extremadura ha concedido la autorización definitiva para la planta de 45 MW que la empresa tiene previsto construir en el término municipal de Mérida."
+    },
+    {
+      "empresa": "Alcántara Energía Renovable SL",
+      "titulo": "Alcántara Energía impulsará una nueva planta fotovoltaica en Extremadura",
+      "fuente": "El Economista",
+      "fecha": "2025-07-14",
+      "resumen": "La compañía invertirá más de 60 millones de euros en una nueva planta que incrementará su capacidad instalada en un 35%. El proyecto está en fase de cierre financiero."
+    },
+    {
+      "empresa": "Atlas Infra Rail SL",
+      "titulo": "Atlas Infra Rail se adjudica dos contratos ferroviarios por 64 millones",
+      "fuente": "Expansión",
+      "fecha": "2026-01-30",
+      "resumen": "La empresa andaluza refuerza su cartera con proyectos de modernización de infraestructura ferroviaria en Andalucía y Castilla-La Mancha."
+    },
+    {
+      "empresa": "BioMédica Ibérica SA",
+      "titulo": "BioMédica Ibérica SA: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Salud y Farmacia con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "BioMédica Ibérica SA",
+      "titulo": "BioMédica Ibérica SA: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Bodegas Ribera del Viento SA",
+      "titulo": "Bodegas Ribera del Viento SA: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Agroindustria con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "Bodegas Ribera del Viento SA",
+      "titulo": "Bodegas Ribera del Viento SA: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Cadena Distribuidora Atlántica SL",
+      "titulo": "Cadena Distribuidora Atlántica SL: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Retail y Distribución con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "Cadena Distribuidora Atlántica SL",
+      "titulo": "Cadena Distribuidora Atlántica SL: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Constructora Bermejo e Hijos SL",
+      "titulo": "Constructora Bermejo e Hijos SL: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Construcción con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "Constructora Bermejo e Hijos SL",
+      "titulo": "Constructora Bermejo e Hijos SL: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Cooperativa Olivarera del Sur SCOOP",
+      "titulo": "Cooperativa Olivarera del Sur SCOOP: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Agroindustria con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "Cooperativa Olivarera del Sur SCOOP",
+      "titulo": "Cooperativa Olivarera del Sur SCOOP: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Datalyx Iberia SL",
+      "titulo": "Datalyx Iberia recibe inversión de Nordic Capital para acelerar su expansión en banca",
+      "fuente": "Expansión",
+      "fecha": "2025-11-20",
+      "resumen": "El fondo de capital riesgo nórdico entra en el capital de la empresa barcelonesa con una participación del 35%, valorando la compañía en 42 millones de euros."
+    },
+    {
+      "empresa": "Datalyx Iberia SL",
+      "titulo": "Datalyx firma contrato con tres entidades financieras españolas de primer nivel",
+      "fuente": "CincoDías",
+      "fecha": "2026-03-05",
+      "resumen": "La empresa de analítica de datos cerrará 2026 con más de 20 millones en ingresos anuales recurrentes tras la incorporación de tres nuevos clientes institucionales."
+    },
+    {
+      "empresa": "Distribuciones Monteverde SA",
+      "titulo": "Monteverde renegocia su deuda tras varios trimestres de tensión de liquidez",
+      "fuente": "La Información",
+      "fecha": "2024-12-12",
+      "resumen": "La compañía ha alcanzado un acuerdo con varias entidades para reestructurar su deuda financiera y evitar incumplimientos. El proceso implica una quita parcial de intereses."
+    },
+    {
+      "empresa": "Distribuciones Monteverde SA",
+      "titulo": "Distribuciones Monteverde registra su tercer año consecutivo de caída de ingresos",
+      "fuente": "El Economista",
+      "fecha": "2025-04-30",
+      "resumen": "La distribuidora valenciana cerró 2024 con unos ingresos de 33 millones, un 7% menos que en 2023. La dirección apunta a la pérdida de contratos con grandes cadenas como causa principal."
+    },
+    {
+      "empresa": "Grupo Caldas Infraestructuras SA",
+      "titulo": "Sobrecostes en proyectos de obra pública tensionan márgenes de Grupo Caldas",
+      "fuente": "Cinco Días",
+      "fecha": "2025-03-22",
+      "resumen": "La compañía ha reconocido desviaciones relevantes en varios contratos, impactando negativamente en su rentabilidad. El EBITDA cayó un 35% en 2024."
+    },
+    {
+      "empresa": "Grupo Caldas Infraestructuras SA",
+      "titulo": "Grupo Caldas gana el contrato de ampliación de la A-4 por 87 millones",
+      "fuente": "El País",
+      "fecha": "2025-06-01",
+      "resumen": "El grupo constructor se adjudica un nuevo contrato con el Ministerio de Transportes, lo que aliviaría su cartera de pedidos para 2026."
+    },
+    {
+      "empresa": "Hispania Biotech Labs SA",
+      "titulo": "Hispania Biotech acelera su expansión con nueva línea de producción en Valencia",
+      "fuente": "CincoDías",
+      "fecha": "2026-02-19",
+      "resumen": "La compañía invertirá 14 millones de euros para duplicar su capacidad de producción de kits de diagnóstico durante los próximos 18 meses."
+    },
+    {
+      "empresa": "Ibérica Solar Partners SL",
+      "titulo": "Ibérica Solar Partners SL: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Energía con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "Ibérica Solar Partners SL",
+      "titulo": "Ibérica Solar Partners SL: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Logística Transibérica SL",
+      "titulo": "El encarecimiento del combustible impacta en los costes del sector logístico",
+      "fuente": "Expansión",
+      "fecha": "2025-02-18",
+      "resumen": "Empresas del sector, incluyendo Transibérica, han visto reducidos sus márgenes debido al incremento de costes operativos. El EBITDA del sector cayó de media un 15% en 2024."
+    },
+    {
+      "empresa": "Logística Transibérica SL",
+      "titulo": "Logística Transibérica amplía su red de almacenes en el corredor mediterráneo",
+      "fuente": "Logística Profesional",
+      "fecha": "2025-09-10",
+      "resumen": "La empresa aragonesa ha inaugurado un nuevo almacén de 12.000 m² en Valencia para reforzar su presencia en el Arco Mediterráneo. La inversión asciende a 3,5 millones de euros."
+    },
+    {
+      "empresa": "Mediterránea Foods Export SA",
+      "titulo": "Mediterránea Foods incrementa un 22% sus exportaciones en 2025",
+      "fuente": "El Economista",
+      "fecha": "2026-03-11",
+      "resumen": "El grupo murciano prevé ampliar planta en 2026 para atender mayor demanda internacional y reducir cuellos de botella logísticos."
+    },
+    {
+      "empresa": "Nexuria Tech Solutions SL",
+      "titulo": "Nexuria cierra una ronda de financiación de 8 millones para expandirse en Europa",
+      "fuente": "Expansión",
+      "fecha": "2025-10-03",
+      "resumen": "La startup tecnológica busca acelerar su crecimiento en mercados internacionales y ampliar su equipo de producto. La ronda fue liderada por Vertex Ventures Spain."
+    },
+    {
+      "empresa": "Nexuria Tech Solutions SL",
+      "titulo": "Nexuria lanza su plataforma de gestión financiera para pymes en Portugal y Francia",
+      "fuente": "CincoDías",
+      "fecha": "2026-01-18",
+      "resumen": "La empresa barcelonesa expande su presencia internacional tras completar la ronda de financiación. Prevé alcanzar los 8 millones de euros en ingresos recurrentes en 2026."
+    },
+    {
+      "empresa": "Norte Logística SA",
+      "titulo": "Norte Logística lanza su servicio de transporte intermodal ferroviario en el corredor atlántico",
+      "fuente": "Logística Profesional",
+      "fecha": "2025-04-08",
+      "resumen": "La empresa vasca amplía su oferta con soluciones ferroviarias para reducir la huella de carbono de sus clientes industriales. La inversión en material rodante supera los 4 millones."
+    },
+    {
+      "empresa": "Patrimonios Centrales SA",
+      "titulo": "Patrimonios Centrales SA: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Inmobiliario con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "Patrimonios Centrales SA",
+      "titulo": "Patrimonios Centrales SA: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Promotora Levante Residencial SL",
+      "titulo": "Promotora Levante Residencial SL: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Inmobiliario con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "Promotora Levante Residencial SL",
+      "titulo": "Promotora Levante Residencial SL: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Red Clínicas Meridional SL",
+      "titulo": "Red Clínicas Meridional SL: seguimiento de crecimiento y posicion sectorial",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-04-10",
+      "resumen": "Se observan senales de actividad en Salud y Farmacia con foco en expansion y eficiencia operativa."
+    },
+    {
+      "empresa": "Red Clínicas Meridional SL",
+      "titulo": "Red Clínicas Meridional SL: analisis publico de entorno competitivo",
+      "fuente": "DeepResearch Mock Feed",
+      "fecha": "2026-05-20",
+      "resumen": "No se detectan incidencias publicas concluyentes; se recomienda contraste en fuentes oficiales y registrales."
+    },
+    {
+      "empresa": "Vertia Energía SL",
+      "titulo": "Vertia Energía firma contratos de eficiencia energética por 28 millones en 2025",
+      "fuente": "El Economista",
+      "fecha": "2025-08-22",
+      "resumen": "La empresa madrileña ha cerrado cinco nuevos proyectos de eficiencia energética con grandes plantas industriales en Castilla y León y Aragón, impulsando su crecimiento al 45%."
+    },
+    {
+      "empresa": "DataNexa Cloud Systems SL",
+      "titulo": "DataNexa Cloud Systems crece un 35% en ARR y estudia adquisición vertical en Iberia",
+      "fuente": "Expansión",
+      "fecha": "2026-02-15",
+      "resumen": "La empresa SaaS B2B reporta crecimiento de ingresos recurrentes del 35% interanual y analiza la adquisición de un competidor vertical para ampliar su oferta en el mercado ibérico."
+    },
+    {
+      "empresa": "DataNexa Cloud Systems SL",
+      "titulo": "DataNexa consolida contratos con tres grandes corporaciones financieras en España",
+      "fuente": "CincoDías",
+      "fecha": "2026-04-20",
+      "resumen": "La plataforma SaaS cierra tres contratos enterprise con entidades del sector financiero, elevando su ARR previsto a más de 18 millones de euros a cierre de 2026."
+    },
+    {
+      "empresa": "Iberian Solar Storage Partners SL",
+      "titulo": "Iberian Solar Storage inicia el cierre financiero de su primer parque de almacenamiento en Castilla-La Mancha",
+      "fuente": "El Economista",
+      "fecha": "2026-03-10",
+      "resumen": "La empresa ha cerrado los permisos administrativos del proyecto de 80 MWh y está en fase de estructuración de project finance para iniciar construcción en 2027."
+    },
+    {
+      "empresa": "Iberian Solar Storage Partners SL",
+      "titulo": "Iberian Solar Storage capta 5 millones en ronda seed para acelerar su cartera de proyectos",
+      "fuente": "Cinco Días",
+      "fecha": "2025-11-05",
+      "resumen": "La startup energética cierra su primera ronda de inversión liderada por un fondo de infraestructuras renovables, con planes de desarrollar 250 MWh de almacenamiento para 2028."
+    },
+    {
+      "empresa": "CloudCore Gestion Empresarial SL",
+      "titulo": "CloudCore Gestión cierra contratos con 12 pymes industriales y proyecta duplicar ingresos en 2026",
+      "fuente": "CincoDías",
+      "fecha": "2026-01-22",
+      "resumen": "La empresa SaaS de gestión empresarial para pymes industriales ha firmado 12 nuevos contratos en el último trimestre y estima cerrar 2026 con ingresos de 8 millones de euros."
+    },
+    {
+      "empresa": "FreshRoute Distribucion SA",
+      "titulo": "FreshRoute Distribución amplía su red logística al corredor mediterráneo",
+      "fuente": "Logística Profesional",
+      "fecha": "2025-09-15",
+      "resumen": "La mayorista alimentaria inaugura dos nuevas plataformas logísticas en Valencia y Alicante para atender el crecimiento del arco mediterráneo, con una inversión de 4,5 millones."
+    },
+    {
+      "empresa": "AgroVal Export Partners SL",
+      "titulo": "AgroVal Export cierra su mejor campaña de exportación con un 18% más de volumen hacia Reino Unido",
+      "fuente": "El Economista",
+      "fecha": "2026-02-10",
+      "resumen": "El exportador agroalimentario logra su récord histórico de exportaciones, impulsado por la demanda en Reino Unido. La empresa estudia ampliar coberturas FX y financiación de campaña 2027."
+    }
+  ],
+  "listas_sanciones": [
+    {
+      "nombre": "Baltic Industrial Exports Ltd",
+      "tipo": "sanciones",
+      "lista": "OFAC SDN",
+      "confianza": 0.94
+    },
+    {
+      "nombre": "Orion Petrochemical Trading FZE",
+      "tipo": "sanciones",
+      "lista": "EU Consolidated Sanctions",
+      "confianza": 0.91
+    },
+    {
+      "nombre": "Alejandro Vargas Ibarra",
+      "tipo": "PEP",
+      "lista": "PEP Internacional",
+      "confianza": 0.89
+    },
+    {
+      "nombre": "Carmen Hidalgo Serrano",
+      "tipo": "PEP",
+      "lista": "PEP Nacional",
+      "confianza": 0.93
+    },
+    {
+      "nombre": "Eastbridge Holdings PLC",
+      "tipo": "sanciones",
+      "lista": "UK Sanctions List",
+      "confianza": 0.92
+    }
+  ]
 }

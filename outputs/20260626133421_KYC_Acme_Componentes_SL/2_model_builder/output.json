@@ -1,0 +1,223 @@
+{
+  "normalized_kyc_profile": {
+    "applicant": {
+      "type": "entity",
+      "legal_name": "Acme Componentes SL",
+      "legal_form": "Sociedad de Responsabilidad Limitada",
+      "registration": {
+        "country": "ES",
+        "tax_id": {
+          "type": "NIF/CIF",
+          "value": "B50123987"
+        },
+        "jurisdiction": "España",
+        "formation_date": "2003-07-10"
+      },
+      "addresses": {
+        "registered_address": {
+          "full_address": "Polígono Malpica, Calle E nº 18, 50016 Zaragoza",
+          "country": "ES",
+          "city": "Zaragoza",
+          "postal_code": "50016"
+        }
+      },
+      "industry": {
+        "classification": {
+          "system": "CNAE",
+          "code": "2562"
+        },
+        "description": "Tratamiento y revestimiento de metales",
+        "sector": "Industrial"
+      },
+      "size": {
+        "employees": 310,
+        "share_capital": {
+          "currency": "EUR",
+          "amount": 800000
+        }
+      }
+    },
+    "ownership_and_control": {
+      "beneficial_owners": [
+        {
+          "name": "Roberto Acme Jiménez",
+          "type": "individual",
+          "ownership_pct": 65.0,
+          "control_basis": "ownership",
+          "nationality": "ES",
+          "identifiers": {
+            "date_of_birth": null,
+            "id_document": null
+          }
+        },
+        {
+          "name": "Acme Europe Holding GmbH",
+          "type": "entity",
+          "ownership_pct": 35.0,
+          "control_basis": "ownership",
+          "jurisdiction_or_nationality": "DE",
+          "identifiers": {
+            "registration_number": null
+          },
+          "addresses": {
+            "registered_address": null
+          }
+        }
+      ],
+      "controllers": [
+        {
+          "name": "Roberto Acme Jiménez",
+          "role": "Consejero Delegado"
+        },
+        {
+          "name": "Klaus Meier",
+          "role": "Consejero (representante Acme Europe)"
+        }
+      ],
+      "ownership_summary": {
+        "total_declared_ownership_pct": 100.0,
+        "ownership_gaps_pct": 0.0
+      }
+    },
+    "financials_normalized": {
+      "currency": "EUR",
+      "periodicity": "annual",
+      "years": [
+        {
+          "fiscal_year": 2022,
+          "income_statement": {
+            "revenue": 32000000,
+            "ebitda": 3800000,
+            "financial_expenses": 450000
+          },
+          "balance_sheet": {
+            "current_assets": 9500000,
+            "current_liabilities": 7200000,
+            "equity": 6800000,
+            "net_financial_debt": 8000000
+          },
+          "derived_metrics": {
+            "ebitda_margin": 0.11875,
+            "current_ratio": 1.3194444444,
+            "working_capital": 2300000,
+            "net_debt_to_ebitda": 2.1052631579,
+            "interest_coverage_ebitda": 8.4444444444
+          },
+          "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+        },
+        {
+          "fiscal_year": 2023,
+          "income_statement": {
+            "revenue": 38000000,
+            "ebitda": 4900000,
+            "financial_expenses": 520000
+          },
+          "balance_sheet": {
+            "current_assets": 12100000,
+            "current_liabilities": 8900000,
+            "equity": 8200000,
+            "net_financial_debt": 10500000
+          },
+          "derived_metrics": {
+            "ebitda_margin": 0.1289473684,
+            "current_ratio": 1.3595505618,
+            "working_capital": 3200000,
+            "net_debt_to_ebitda": 2.1428571429,
+            "interest_coverage_ebitda": 9.4230769231
+          },
+          "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+        },
+        {
+          "fiscal_year": 2024,
+          "income_statement": {
+            "revenue": 42000000,
+            "ebitda": 5800000,
+            "financial_expenses": 610000
+          },
+          "balance_sheet": {
+            "current_assets": 14500000,
+            "current_liabilities": 9800000,
+            "equity": 9900000,
+            "net_financial_debt": 12000000
+          },
+          "derived_metrics": {
+            "ebitda_margin": 0.1380952381,
+            "current_ratio": 1.4795918367,
+            "working_capital": 4700000,
+            "net_debt_to_ebitda": 2.0689655172,
+            "interest_coverage_ebitda": 9.5081967213
+          },
+          "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)"
+        }
+      ],
+      "yoy_changes": [
+        {
+          "from_year": 2022,
+          "to_year": 2023,
+          "revenue_growth": 0.1875,
+          "ebitda_growth": 0.2894736842,
+          "net_financial_debt_growth": 0.3125,
+          "equity_growth": 0.2058823529
+        },
+        {
+          "from_year": 2023,
+          "to_year": 2024,
+          "revenue_growth": 0.1052631579,
+          "ebitda_growth": 0.1836734694,
+          "net_financial_debt_growth": 0.1428571429,
+          "equity_growth": 0.2073170732
+        }
+      ]
+    },
+    "documents_normalized": [
+      {
+        "ref": "escritura_constitucion.txt",
+        "type": "entity_formation_and_ownership",
+        "document_date": null
+      },
+      {
+        "ref": "balance_2022.txt",
+        "type": "financial_statements",
+        "document_date": "2022-12-31"
+      },
+      {
+        "ref": "balance_2023.txt",
+        "type": "financial_statements",
+        "document_date": "2023-12-31"
+      },
+      {
+        "ref": "balance_2024.txt",
+        "type": "financial_statements",
+        "document_date": "2024-12-31"
+      }
+    ],
+    "declared_flags_normalized": {
+      "bank_internal_kyc_alerts": {
+        "status": "none",
+        "raw": "Sin alertas registradas"
+      },
+      "pep_declared": null,
+      "sanctions_declared": null
+    }
+  },
+  "data_quality_notes": {
+    "missing_fields": [
+      "beneficial_owners[0].dob",
+      "beneficial_owners[0].id_document",
+      "beneficial_owners[1].registration_number",
+      "beneficial_owners[1].registered_address",
+      "documents_inventory[0].date"
+    ],
+    "standardization_applied": [
+      "Mapped country/jurisdiction to ISO-like codes where possible (ES/DE)",
+      "Normalized financials into Income Statement and Balance Sheet blocks",
+      "Computed derived metrics (margins, liquidity, leverage, coverage) from provided figures",
+      "Computed YoY growth rates for key metrics"
+    ],
+    "consistency_checks": {
+      "ownership_total_pct_equals_100": true,
+      "financial_years_contiguous": true,
+      "currency_consistent": true
+    }
+  }
+}

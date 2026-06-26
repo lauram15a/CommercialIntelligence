@@ -1,0 +1,33 @@
+## Señales externas relevantes para el análisis de riesgo — Acme Componentes SL (markdown)
+
+### 1) Expansión internacional / riesgo operativo (Polonia)
+- **Señal:** Inauguración de la **primera planta de producción en Polonia (Wroclaw)**.  
+- **Fecha / fuente:** *Expansión*, **2025-05-15**.  
+- **Hechos clave:** Capacidad para **120 empleados** e **inversión de 9 millones de euros**.  
+- **Implicaciones de riesgo (lectura externa):**
+  - **Riesgo de ejecución (ramp-up):** puesta en marcha, curva de aprendizaje, calidad y productividad en una nueva localización.
+  - **Riesgo de capex y retorno:** presión de caja/endeudamiento y necesidad de alcanzar volúmenes para rentabilizar la inversión.
+  - **Riesgo laboral y de costes:** disponibilidad de mano de obra, inflación salarial local, rotación.
+  - **Riesgo regulatorio y de cumplimiento:** licencias, normativa laboral/medioambiental y requisitos de seguridad industrial en un nuevo país.
+  - **Riesgo de cadena de suministro:** reconfiguración logística, dependencia de proveedores locales y posibles cuellos de botella transfronterizos.
+
+---
+
+### 2) Concentración de clientes / dependencia sectorial (automoción alemana)
+- **Señal:** Renovación y ampliación de contratos con **dos fabricantes alemanes de primer nivel**; refuerzo como proveedor “tier 1”.  
+- **Fecha / fuente:** *El Economista*, **2025-12-01**.  
+- **Hechos clave:** Contratos que aseguran **>15 millones de ingresos hasta 2027**.  
+- **Implicaciones de riesgo (lectura externa):**
+  - **Riesgo de concentración:** mayor exposición a un número reducido de OEMs (poder de negociación, presión de precios, cambios de plataforma).
+  - **Riesgo de ciclo automoción:** sensibilidad a caídas de producción, paradas de planta, cambios de mix (ICE/EV) y ajustes de inventario.
+  - **Riesgo contractual:** penalizaciones por calidad/entrega (PPM, OTIF), cláusulas de revisión de precios, y riesgo de rescisión/renegociación.
+  - **Riesgo país/mercado final:** exposición a Alemania (demanda, regulación, energía, disrupciones industriales).
+  - **Riesgo de capacidad:** necesidad de asegurar capacidad productiva y logística para cumplir volúmenes (posible relación con la nueva planta).
+
+---
+
+### 3) Lectura agregada (qué “dice” el flujo de señales)
+- **Perfil de riesgo en transición:** señales apuntan a **crecimiento** (nueva planta + contratos) pero con **más complejidad operativa** y potencial **aumento de concentración** en automoción alemana.
+- **Horizonte temporal:** visibilidad de ingresos hasta **2027** por contratos, mientras que el riesgo principal a corto plazo es el **arranque y estabilización** de la planta en Polonia.
+
+**Fuentes:** *Expansión* (2025-05-15); *El Economista* (2025-12-01).

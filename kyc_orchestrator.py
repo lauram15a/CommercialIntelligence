@@ -22,6 +22,233 @@ from src.agents.valuation_reviewer.agent import run_valuation_reviewer_agent
 from src.agents.market_researcher.agent import run_market_researcher_agent
 from src.agents.credit_risk_report.agent import run_credit_risk_report_agent
 
+# ── Normalización de outputs ──────────────────────────────────────────────────
+"""
+Funciones de normalización del output del KYC Screener Agent
+para que el result.json tenga el formato que espera run_detail.html.
+
+Añadir estas funciones al kyc_orchestrator.py y llamarlas antes de
+guardar result.json.
+"""
+
+
+def normalize_kyc_output(kyc_output: dict) -> dict:
+    """
+    Normaliza el output del KYC Screener Agent al formato que espera el template.
+
+    Cambios:
+    - kyc_results: convierte dict anidado -> lista plana de reglas
+    - extracted_entities: convierte dict -> lista de documentos
+    """
+    normalized = dict(kyc_output)
+
+    # ── 1. Normalizar kyc_results ──────────────────────────────────────────
+    kr = kyc_output.get("kyc_results", {})
+
+    if isinstance(kr, dict):
+        rule_outcomes = (
+            kr.get("rule_outcomes")
+            or (kr.get("rules_engine") or {}).get("rule_outcomes", [])
+            or []
+        )
+
+        STATUS_MAP = {
+            "pass": "PASS", "partial": "WARN", "fail": "FAIL",
+            "PASS": "PASS", "WARN": "WARN", "FAIL": "FAIL",
+            "n/a": "WARN",
+        }
+
+        rules_list = []
+        for r in rule_outcomes:
+            if not isinstance(r, dict):
+                continue
+            rules_list.append({
+                "rule_id":  r.get("rule_id", ""),
+                "name":     r.get("rule_text") or r.get("name") or r.get("rule_id", ""),
+                "status":   STATUS_MAP.get(str(r.get("outcome", r.get("status", ""))).lower(), "WARN"),
+                "evidence": r.get("evidence", ""),
+            })
+
+        normalized["kyc_results"] = rules_list
+
+    # ── 2. Normalizar extracted_entities ──────────────────────────────────
+    ee = kyc_output.get("extracted_entities", {})
+
+    if isinstance(ee, dict):
+        docs_list = []
+        inventory = ee.get("documents_inventory", []) or []
+        applicant = ee.get("applicant", {}) or {}
+        applicant_name = applicant.get("legal_name", "")
+
+        if inventory:
+            for doc in inventory:
+                ref  = doc.get("ref", "")
+                tipo = doc.get("type", "otro")
+                tipo_display = (
+                    "Escritura / Ficha registral" if "formation" in tipo
+                    else "Estados financieros"    if "financial"  in tipo
+                    else tipo.replace("_", " ").capitalize()
+                )
+                docs_list.append({
+                    "tipo_documento": tipo_display,
+                    "entidad":        {"nombre_legal": applicant_name},
+                    "observaciones":  ref,
+                })
+        else:
+            if applicant_name:
+                docs_list.append({
+                    "tipo_documento": "Ficha identificativa",
+                    "entidad":        {"nombre_legal": applicant_name},
+                    "observaciones":  f"NIF: {applicant.get('nif_cif', applicant.get('nif', ''))}",
+                })
+            for bo in (ee.get("beneficial_owners") or []):
+                if isinstance(bo, dict) and bo.get("name"):
+                    docs_list.append({
+                        "tipo_documento": "Titular real (UBO)",
+                        "entidad":        {"nombre_legal": bo["name"]},
+                        "observaciones":  f"{bo.get('ownership_pct', '')}% - {bo.get('nationality', bo.get('nationality_or_jurisdiction', ''))}",
+                    })
+
+        normalized["extracted_entities"] = docs_list
+
+    return normalized
+
+
+def normalize_modelo_financiero(modelo_financiero: dict) -> dict:
+    """
+    Normaliza el output del Model Builder Agent al formato que espera el template.
+
+    Cambios:
+    - convierte normalized_kyc_profile.financials_normalized.years[] -> periodos[]
+    """
+    if modelo_financiero.get("periodos"):
+        return modelo_financiero
+
+    normalized = dict(modelo_financiero)
+    periodos = []
+
+    # Intentar desde normalized_kyc_profile.financials_normalized.years
+    profile   = modelo_financiero.get("normalized_kyc_profile") or {}
+    fin_norm  = profile.get("financials_normalized") or {}      if isinstance(profile, dict) else {}
+    years     = fin_norm.get("years") or []                     if isinstance(fin_norm, dict) else []
+
+    # Fallback: financial_model.periods / years
+    if not years:
+        fin_model = modelo_financiero.get("financial_model") or {}
+        years = (fin_model.get("periods") or fin_model.get("years") or []) if isinstance(fin_model, dict) else []
+
+    for y in years:
+        if not isinstance(y, dict):
+            continue
+        periodo = str(y.get("fiscal_year") or y.get("year") or y.get("period") or "")
+        inc = y.get("income_statement") or {}
+        bal = y.get("balance_sheet") or {}
+        periodos.append({
+            "periodo":            periodo,
+            "ebitda":             inc.get("ebitda"),
+            "deuda_financiera":   bal.get("net_financial_debt"),
+            "activo_corriente":   bal.get("current_assets"),
+            "pasivo_corriente":   bal.get("current_liabilities"),
+            "gastos_financieros": inc.get("financial_expenses"),
+        })
+
+    normalized["periodos"] = periodos
+
+    if not normalized.get("resumen"):
+        notes = modelo_financiero.get("data_quality_notes")
+        if isinstance(notes, dict):
+            std = notes.get("standardization_applied") or []
+            normalized["resumen"] = "; ".join(std[:2]) if std else ""
+        elif isinstance(notes, list):
+            normalized["resumen"] = "; ".join(notes[:2])
+        else:
+            normalized["resumen"] = ""
+
+    if not normalized.get("audit_flags"):
+        notes = modelo_financiero.get("data_quality_notes")
+        if isinstance(notes, dict):
+            normalized["audit_flags"] = notes.get("missing_fields") or []
+        elif isinstance(notes, list):
+            normalized["audit_flags"] = notes
+        else:
+            normalized["audit_flags"] = []
+
+    return normalized
+
+
+def normalize_valuation_output(valuation_output: dict) -> dict:
+    """
+    Normaliza el output del Valuation Reviewer Agent al formato que espera el template.
+
+    Cambios:
+    - construye ratios.ratios_por_periodo[] desde comparativa_modelo_vs_historial_bancario
+    - extrae interpretacion desde conclusiones o comparativa
+    """
+    existing_ratios = valuation_output.get("ratios") or {}
+    if isinstance(existing_ratios, dict) and existing_ratios.get("ratios_por_periodo"):
+        return valuation_output
+
+    normalized = dict(valuation_output)
+
+    # ── Extraer ratios por periodo ─────────────────────────────────────────
+    comparativa   = valuation_output.get("comparativa_modelo_vs_historial_bancario") or {}
+    tendencias    = comparativa.get("tendencias_financieras_normalizadas") or {}
+    apalancamiento = tendencias.get("apalancamiento_y_cobertura") or {}
+    liquidez      = tendencias.get("liquidez_y_circulante") or {}
+
+    debt_ebitda  = apalancamiento.get("net_debt_to_ebitda") or {}
+    interest_cov = apalancamiento.get("interest_coverage_ebitda") or {}
+    current_ratio = liquidez.get("current_ratio") or {}
+
+    years = sorted([k for k in debt_ebitda.keys() if isinstance(k, str) and k.isdigit()])
+
+    ratios_por_periodo = []
+    for year in years:
+        ratios_por_periodo.append({
+            "periodo":             year,
+            "debt_ebitda":         debt_ebitda.get(year),
+            "liquidez_corriente":  current_ratio.get(year),
+            "cobertura_intereses": interest_cov.get(year),
+        })
+
+    variacion = {}
+    if len(ratios_por_periodo) >= 2:
+        first = ratios_por_periodo[0]
+        last  = ratios_por_periodo[-1]
+        if first.get("debt_ebitda") and last.get("debt_ebitda"):
+            delta = ((last["debt_ebitda"] - first["debt_ebitda"]) / first["debt_ebitda"]) * 100
+            variacion["variacion_deuda_ebitda_pct"] = round(delta, 1)
+
+    normalized["ratios"] = {
+        "ratios_por_periodo": ratios_por_periodo,
+        "variacion": variacion,
+    }
+
+    # ── Extraer interpretación ─────────────────────────────────────────────
+    if not normalized.get("interpretacion"):
+        conclusions = (
+            valuation_output.get("conclusiones")
+            or valuation_output.get("conclusions")
+            or {}
+        )
+        if isinstance(conclusions, dict):
+            normalized["interpretacion"] = (
+                conclusions.get("credit_view")
+                or conclusions.get("vista_credito")
+                or conclusions.get("sintesis")
+                or ""
+            )
+        elif isinstance(conclusions, str):
+            normalized["interpretacion"] = conclusions
+
+        if not normalized.get("interpretacion"):
+            consistencia = comparativa.get("consistencia_general") or {}
+            normalized["interpretacion"] = consistencia.get("comentario", "")
+
+    return normalized
+
+# ──────────────────────────────────────────────────────────────────────────────
+
 DATA_DIR = Path(__file__).resolve().parent / "data"
 
 
@@ -131,7 +358,9 @@ def run_multiagent_pipeline(
 
     logger.info("FASE 1/5: KYC Screener Agent")
     _notify("kyc_screener", "started")
-    kyc_output = run_kyc_screener_agent(documents, use_mock_screening)
+    kyc_output_raw = run_kyc_screener_agent(documents, use_mock_screening)
+    _raw_extracted_entities = kyc_output_raw.get("extracted_entities", {})
+    kyc_output = normalize_kyc_output(kyc_output_raw)
     _write_json(run_dir / "1_kyc_screener" / "output.json", kyc_output)
     evidencias_agentes.append({
         "tipo": "agente_kyc_screener",
@@ -154,7 +383,8 @@ def run_multiagent_pipeline(
 
     logger.info("FASE 2/5: Model Builder Agent")
     _notify("model_builder", "started")
-    modelo_financiero = run_model_builder_agent(kyc_output["extracted_entities"])
+    modelo_financiero = run_model_builder_agent(_raw_extracted_entities or kyc_output.get("extracted_entities", []))
+    modelo_financiero = normalize_modelo_financiero(modelo_financiero)
     _write_json(run_dir / "2_model_builder" / "output.json", modelo_financiero)
     evidencias_agentes.append({
         "tipo": "agente_model_builder",
@@ -211,6 +441,7 @@ def run_multiagent_pipeline(
     _notify("valuation_reviewer", "started")
     historial        = load_historial(entity_name)
     valuation_output = run_valuation_reviewer_agent(modelo_financiero, historial)
+    valuation_output = normalize_valuation_output(valuation_output)
     _write_json(run_dir / "3_valuation_reviewer" / "output.json", valuation_output)
     evidencias_agentes.append({
         "tipo": "agente_valuation_reviewer",

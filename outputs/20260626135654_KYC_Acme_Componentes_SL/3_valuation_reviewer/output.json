@@ -1,0 +1,219 @@
+{
+  "entidad": {
+    "legal_name": "Acme Componentes SL",
+    "nif": "B50123987",
+    "moneda": "EUR",
+    "segmento_bancario": "Corporate Industrial",
+    "rating_interno_banco": "A-",
+    "cliente_desde": "2021-03-15"
+  },
+  "periodo_analizado": {
+    "historico_financiero": [
+      2022,
+      2023,
+      2024
+    ],
+    "historial_bancario_hasta": "2025-01-10",
+    "as_of_financials": "2024-12-31"
+  },
+  "resumen_financiero_normalizado": {
+    "cuenta_resultados": {
+      "revenue": {
+        "2022": 32000000,
+        "2023": 38000000,
+        "2024": 42000000,
+        "cagr_2022_2024": 0.1456439237
+      },
+      "ebitda": {
+        "2022": 3800000,
+        "2023": 4900000,
+        "2024": 5800000,
+        "cagr_2022_2024": 0.2358898944
+      },
+      "margen_ebitda": {
+        "2022": 0.11875,
+        "2023": 0.1289473684,
+        "2024": 0.1380952381,
+        "tendencia": "mejora sostenida (+1.93 pp 2022->2024)"
+      },
+      "gastos_financieros": {
+        "2022": 450000,
+        "2023": 520000,
+        "2024": 610000
+      },
+      "cobertura_intereses_ebitda": {
+        "2022": 8.4444444444,
+        "2023": 9.4230769231,
+        "2024": 9.5081967213,
+        "lectura": "holgada (EBITDA cubre >8x gastos financieros en todo el periodo)"
+      }
+    },
+    "balance_y_liquidez": {
+      "capital_circulante": {
+        "2022": 2300000,
+        "2023": 3200000,
+        "2024": 4700000,
+        "lectura": "mejora de liquidez operativa; mayor inversión/holgura en circulante"
+      },
+      "current_ratio": {
+        "2022": 1.3194444444,
+        "2023": 1.3595505618,
+        "2024": 1.4795918367,
+        "lectura": "liquidez corriente cómoda y en mejora"
+      },
+      "equity": {
+        "2022": 6800000,
+        "2023": 8200000,
+        "2024": 9900000,
+        "lectura": "refuerzo patrimonial (+3.1m en 2 años)"
+      }
+    },
+    "apalancamiento": {
+      "deuda_financiera_neta": {
+        "2022": 8000000,
+        "2023": 10500000,
+        "2024": 12000000,
+        "lectura": "incremento de deuda neta (+4.0m 2022->2024) compatible con crecimiento, pero a vigilar"
+      },
+      "net_debt_to_ebitda": {
+        "2022": 2.1052631579,
+        "2023": 2.1428571429,
+        "2024": 2.0689655172,
+        "lectura": "estable ~2.1x; el crecimiento de EBITDA compensa el aumento de deuda"
+      },
+      "net_debt_to_equity": {
+        "2022": 1.1764705882,
+        "2023": 1.2804878049,
+        "2024": 1.2121212121,
+        "lectura": "moderado ~1.2x; equity crece y contiene el ratio"
+      }
+    }
+  },
+  "historial_bancario_y_comportamiento": {
+    "operaciones_anteriores": 5,
+    "impagos": 0,
+    "incidencias": [
+      {
+        "descripcion": "Discrepancia documental puntual en poderes de firma (subsanada en 2023)",
+        "materialidad": "baja",
+        "estado": "cerrada"
+      },
+      {
+        "descripcion": "Entrega tardía de cuentas auditadas 2022 (10 días de retraso)",
+        "materialidad": "baja-media",
+        "estado": "cerrada"
+      }
+    ],
+    "productos_contratados": [
+      "Linea de circulante 2022",
+      "Prestamo CAPEX para automatizacion de planta",
+      "Leasing industrial",
+      "Cobertura de tipo de interes",
+      "Confirming proveedores"
+    ],
+    "operaciones_activas": [
+      {
+        "tipo": "Prestamo corporativo",
+        "importe_EUR": 5200000,
+        "cuota_mensual_EUR": 88000,
+        "fecha_inicio": "2024-03-01",
+        "vencimiento": "2029-03-01",
+        "al_corriente": true
+      },
+      {
+        "tipo": "Linea de circulante",
+        "limite_EUR": 2500000,
+        "dispuesto_EUR": 1300000,
+        "fecha_inicio": "2025-01-10",
+        "vencimiento": "2026-12-31",
+        "al_corriente": true,
+        "utilizacion": 0.52
+      }
+    ],
+    "lectura_global": "Relación activa desde 2022, sin impagos y con incidencias operativas/documentales menores ya regularizadas. Perfil de cumplimiento positivo."
+  },
+  "comparativa_modelo_vs_historial_bancario": {
+    "consistencias": [
+      {
+        "tema": "Capacidad de servicio de deuda",
+        "evidencia_modelo": "Cobertura de intereses EBITDA 8.4x (2022) -> 9.5x (2024)",
+        "evidencia_banco": "Operaciones vigentes al corriente; 0 impagos",
+        "conclusion": "Consistente: generación operativa soporta carga financiera y se refleja en buen comportamiento bancario"
+      },
+      {
+        "tema": "Uso de financiación para crecimiento/Capex",
+        "evidencia_modelo": "Deuda neta sube 8.0m -> 12.0m mientras EBITDA sube 3.8m -> 5.8m",
+        "evidencia_banco": "Préstamo CAPEX (2023), leasing maquinaria (2023), préstamo corporativo (2024)",
+        "conclusion": "Consistente: incremento de deuda alineado con inversiones y expansión"
+      },
+      {
+        "tema": "Liquidez y circulante",
+        "evidencia_modelo": "Working capital 2.3m -> 4.7m; current ratio 1.32 -> 1.48",
+        "evidencia_banco": "Línea de circulante activa (2025) con utilización 52%; confirming vigente",
+        "conclusion": "Consistente: gestión activa de circulante con holgura; instrumentos de corto plazo coherentes con operativa"
+      },
+      {
+        "tema": "Riesgo de tipo de interés",
+        "evidencia_modelo": "Gastos financieros aumentan 450k -> 610k con deuda creciente",
+        "evidencia_banco": "Cobertura de tipos contratada (notional 12.0m) en 2024-11",
+        "conclusion": "Consistente: mitigación del riesgo de tipos ante mayor endeudamiento"
+      }
+    ],
+    "tensiones_o_puntos_a_validar": [
+      {
+        "tema": "Incremento de deuda neta vs. detalle de deuda bancaria",
+        "observacion": "La deuda financiera neta 2024 (12.0m) excede el principal explícito de operaciones activas listadas (p.ej., préstamo corporativo 5.2m + otros productos no cuantificados como deuda).",
+        "posibles_explicaciones": [
+          "Existencia de otras líneas/préstamos fuera del banco o no listados (otras entidades)",
+          "Componentes de deuda no desglosados (leasing/confirming contabilizado como deuda, pólizas, factoring con recurso, etc.)",
+          "Caja no informada: 'deuda neta' depende de efectivo; sin caja no se puede reconciliar"
+        ],
+        "impacto": "medio",
+        "accion_recomendada": "Solicitar conciliación de deuda bruta, caja y deuda neta a 2024-12-31 (por entidad financiera e instrumentos)"
+      },
+      {
+        "tema": "Calidad de datos limitada para análisis de solvencia completa",
+        "observacion": "Faltan total activos, caja, deuda bruta, impuestos, capex y flujo de caja; no se puede evaluar DSCR/FCF ni estructura de vencimientos.",
+        "impacto": "medio",
+        "accion_recomendada": "Pedir estado de flujos, detalle de deuda (vencimientos, tipos), y capex 2022-2024 para validar sostenibilidad del apalancamiento"
+      },
+      {
+        "tema": "Gobernanza/reporting",
+        "observacion": "Hubo retraso de 10 días en entrega de auditadas 2022.",
+        "impacto": "bajo",
+        "accion_recomendada": "Confirmar calendario de auditoría 2025 y covenants de reporting si aplica"
+      }
+    ]
+  },
+  "indicadores_de_riesgo_y_flags": {
+    "fortalezas": [
+      "Crecimiento sólido: ingresos CAGR ~14.6% (2022-2024) y EBITDA CAGR ~23.6%",
+      "Mejora de margen EBITDA (+1.93 pp en 2 años)",
+      "Apalancamiento estable ~2.1x ND/EBITDA pese a mayor deuda",
+      "Cobertura de intereses holgada (~9.5x en 2024)",
+      "Historial bancario sin impagos; operaciones al corriente"
+    ],
+    "alertas": [
+      "Necesidad de reconciliar deuda neta reportada con deuda bancaria detallada y caja",
+      "Falta de información de cash flow para confirmar capacidad de amortización (más allá de EBITDA)",
+      "Nota del gestor: necesidad de optimizar estructura de deuda en 2027 (posible pico de vencimientos/refinanciación)"
+    ],
+    "semaforo_global": {
+      "financiero": "verde-amarillo",
+      "comportamiento_bancario": "verde",
+      "calidad_datos": "amarillo"
+    }
+  },
+  "preguntas_clave_para_cierre_de_revision": [
+    "Detalle de deuda a 2024-12-31: deuda bruta por instrumento/entidad, tipo fijo/variable, spreads, covenants y calendario de vencimientos.",
+    "Caja y equivalentes a 2024-12-31 para reconciliar deuda neta (12.0m).",
+    "Estado de flujos 2022-2024 (FCF, capex, variación de circulante) para estimar DSCR y capacidad real de repago.",
+    "Detalle de confirming/factoring: con o sin recurso y tratamiento contable (deuda vs. proveedores).",
+    "Alcance y efectividad de la cobertura de tipos (notional 12.0m): vencimiento, strike, porcentaje cubierto y contabilidad hedge."
+  ],
+  "ratios": {
+    "ratios_por_periodo": [],
+    "variacion": {}
+  },
+  "interpretacion": ""
+}

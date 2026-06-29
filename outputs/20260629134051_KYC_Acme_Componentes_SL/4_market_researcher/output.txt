@@ -1,0 +1,27 @@
+## Señales externas relevantes para el análisis de riesgo — Acme Componentes SL
+
+### 1) Expansión internacional y riesgo de ejecución (operativo / capex)
+- **Señal:** Inauguración de la **primera planta de producción en Polonia (Wroclaw)**, con **capacidad para 120 empleados** y **9M€ de inversión**.  
+- **Relevancia para riesgo:**
+  - **Riesgo de puesta en marcha (ramp-up):** posibles desviaciones en plazos, costes, calidad y productividad durante el arranque.
+  - **Riesgo laboral y de disponibilidad de talento:** contratación y retención de plantilla en un nuevo mercado.
+  - **Riesgo de concentración de capex:** mayor apalancamiento operativo/financiero si la demanda no acompaña o si hay retrasos.
+  - **Riesgo regulatorio y de cumplimiento local:** licencias, normativa laboral, fiscal y medioambiental en Polonia.
+  - **Riesgo de cadena de suministro transfronteriza:** complejidad logística y dependencia de proveedores locales/nuevos.
+- **Fuente:** *Expansión* (2025-05-15).  
+
+### 2) Dependencia del ciclo de automoción alemana y concentración de clientes (comercial / sectorial)
+- **Señal:** Renovación y ampliación de contratos con **dos fabricantes alemanes “de primer nivel”**, asegurando **>15M€ de ingresos hasta 2027**.  
+- **Relevancia para riesgo:**
+  - **Riesgo de concentración de clientes:** si una parte material de ingresos depende de pocos OEMs, aumenta la sensibilidad a renegociaciones, cambios de plataforma o pérdida de adjudicaciones.
+  - **Riesgo sectorial (automoción):** exposición a volatilidad de producción, transición tecnológica (electrificación), presión de precios y ajustes de inventario.
+  - **Riesgo país/mercado final:** dependencia de la demanda y del desempeño industrial en Alemania/Europa.
+  - **Riesgo contractual:** aunque aporta visibilidad, puede implicar **cláusulas de desempeño/penalizaciones**, exigencias de calidad y presión de costes.
+- **Fuente:** *El Economista* (2025-12-01).  
+
+### 3) Señales mixtas: mayor visibilidad vs. mayor complejidad
+- **Lectura de conjunto para riesgo:**
+  - **Positivo:** contratos hasta 2027 aportan **visibilidad de ingresos** y la planta en Polonia puede **mejorar capacidad y proximidad** a clientes europeos.
+  - **A vigilar:** simultaneidad de **expansión industrial** + **exigencias de clientes Tier-1** eleva el **riesgo de ejecución** (calidad, entregas, costes) y la **sensibilidad a shocks del sector**.
+
+> **Nota:** No se han identificado “partes vinculadas” en la información aportada; el resumen se limita a señales externas derivadas de las noticias listadas.

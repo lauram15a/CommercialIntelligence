@@ -1,0 +1,37 @@
+{
+  "indicadores_clave": [],
+  "tendencias_estructurales": [
+    "Empresa industrial (CNAE 2562: tratamiento y revestimiento de metales) con base operativa en Zaragoza y una plantilla de 310 empleados, lo que sugiere una operación de tamaño medio con potencial intensidad de capital y consumo energético.",
+    "Estructura accionarial concentrada: un beneficiario efectivo individual con 65% (Roberto Acme Jiménez) y un socio corporativo extranjero con 35% (Acme Europe Holding GmbH), lo que implica control claro y posible influencia estratégica del accionista alemán.",
+    "Disponibilidad documental financiera: existen estados financieros anuales 2022, 2023 y 2024, pero no se han aportado aún cifras en el extracto recibido, por lo que no es posible inferir evolución de ingresos, márgenes, apalancamiento o liquidez."
+  ],
+  "interpretacion": "Con la información disponible solo puede describirse la estructura corporativa y el perfil operativo, pero no la situación financiera. Para evaluar necesidades de financiación y capacidad de repago se requieren, como mínimo, las principales magnitudes de 2022–2024 (ventas, EBITDA/resultado, deuda financiera, caja, capital circulante y CapEx), además de detalle de líneas de crédito vigentes y calendario de vencimientos. Dado el sector industrial, también sería relevante conocer concentración de clientes/proveedores y exposición a costes de energía y materias primas.",
+  "periodos": [
+    {
+      "periodo": "2022",
+      "ebitda": 3800000,
+      "deuda_financiera": 8000000,
+      "activo_corriente": 9500000,
+      "pasivo_corriente": 7200000,
+      "gastos_financieros": 450000
+    },
+    {
+      "periodo": "2023",
+      "ebitda": 4900000,
+      "deuda_financiera": 10500000,
+      "activo_corriente": 12100000,
+      "pasivo_corriente": 8900000,
+      "gastos_financieros": 520000
+    },
+    {
+      "periodo": "2024",
+      "ebitda": 5800000,
+      "deuda_financiera": 12000000,
+      "activo_corriente": 14500000,
+      "pasivo_corriente": 9800000,
+      "gastos_financieros": 610000
+    }
+  ],
+  "resumen": "Datos financieros cargados directamente desde base de datos interna.",
+  "audit_flags": []
+}

@@ -1,0 +1,35 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 2.1053,
+        "liquidez_corriente": 1.3194,
+        "cobertura_intereses": 8.4444
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 2.1429,
+        "liquidez_corriente": 1.3596,
+        "cobertura_intereses": 9.4231
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 2.069,
+        "liquidez_corriente": 1.4796,
+        "cobertura_intereses": 9.5082
+      }
+    ],
+    "variacion": {
+      "variacion_deuda_ebitda_pct": -1.7
+    }
+  },
+  "interpretacion": "Los ratios muestran apalancamiento estable y moderado (Debt/EBITDA ~2,1x) con ligera mejora neta 2022–2024, junto con una liquidez corriente en aumento (1,32x a 1,48x), lo que sugiere mejor posición de circulante. La cobertura de intereses es holgada y mejora (8,4x a ~9,5x), consistente con capacidad de servicio de deuda incluso con subida de gastos financieros. El historial bancario refuerza esta lectura: 0 impagos, operaciones activas al corriente y rating interno A-, con incidencias documentales menores ya subsanadas; la contratación de cobertura de tipos también mitiga riesgo de tipos. A vigilar: crecimiento de deuda nominal (8,0m a 12,0m) y la nota del gestor sobre optimización de estructura en 2027, que apunta a potencial concentración de vencimientos/refinanciación.",
+  "conclusions": {
+    "credit_view": "Perfil crediticio sólido para segmento Corporate Industrial: apalancamiento contenido, liquidez adecuada y cobertura de intereses holgada, respaldado por comportamiento bancario sin impagos y rating interno A-. El principal foco de riesgo es la evolución del endeudamiento y la planificación de vencimientos/refinanciación a partir de 2027.",
+    "data_requests_priority": [
+      "Detalle de deuda financiera por instrumento (préstamos, leasing, líneas), calendario de amortización/vencimientos 2025–2029 y covenants aplicables (incluyendo posibles concentraciones en 2027).",
+      "Evidencia de generación de caja: estado de flujos de efectivo 2022–2024 y desglose de CapEx (mantenimiento vs. expansión) y variación de capital circulante (clientes/inventario/proveedores)."
+    ]
+  }
+}

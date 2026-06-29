@@ -1,0 +1,35 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 2.1053,
+        "liquidez_corriente": 1.3194,
+        "cobertura_intereses": 8.4444
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 2.1429,
+        "liquidez_corriente": 1.3596,
+        "cobertura_intereses": 9.4231
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 2.069,
+        "liquidez_corriente": 1.4796,
+        "cobertura_intereses": 9.5082
+      }
+    ],
+    "variacion": {
+      "variacion_deuda_ebitda_pct": -1.7
+    }
+  },
+  "interpretacion": "Los ratios muestran un apalancamiento estable y ligeramente a la baja (Debt/EBITDA ~2,1x en 2022 a ~2,07x en 2024) con mejora de liquidez corriente (1,32x a 1,48x) y una cobertura de intereses holgada y creciente (>8,4x a >9,5x), consistente con una capacidad de servicio de deuda cómoda. El historial bancario refuerza esta lectura: 0 impagos, operaciones vigentes al corriente y rating interno A-, con incidencias documentales menores ya subsanadas. La combinación de crecimiento de EBITDA y uso de productos de circulante/CAPEX sugiere una empresa en fase de inversión y expansión operativa, con riesgo crediticio moderado-bajo siempre que se controle el incremento de deuda y el capital circulante asociado al crecimiento internacional.",
+  "conclusions": {
+    "credit_view": "Perfil crediticio sólido (A-) con apalancamiento contenido (~2,1x) y cobertura de intereses alta, respaldado por comportamiento bancario sin impagos y relación operativa activa. Riesgo principal: necesidades futuras de optimización/refinanciación (mencionada para 2027) y gestión de circulante en crecimiento.",
+    "data_requests_priority": [
+      "Detalle de deuda financiera 2024-2025 por instrumento (incl. préstamo corporativo, CAPEX, leasing), calendario de amortización y tipo (fijo/variable) para validar el plan de refinanciación 2027 y sensibilidad a tipos.",
+      "P&L y cash flow 2022-2024 (y YTD 2025 si existe): ventas, margen EBITDA, CapEx, variación de circulante y FCF para confirmar que la mejora de ratios no depende de efectos puntuales y dimensionar necesidades de circulante."
+    ]
+  }
+}

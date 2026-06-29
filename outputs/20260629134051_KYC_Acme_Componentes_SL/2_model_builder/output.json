@@ -1,0 +1,38 @@
+{
+  "indicadores_clave": [],
+  "tendencias_estructurales": [
+    "La información aportada corresponde a datos KYC corporativos (forma jurídica, actividad CNAE, estructura accionarial y administradores), pero no incluye magnitudes financieras (ventas, EBITDA, deuda, caja) para inferir tendencias.",
+    "Existen estados financieros disponibles para 2022, 2023 y 2024 (referenciados como balance_2022.txt, balance_2023.txt, balance_2024.txt), lo que permitiría analizar evolución de solvencia, liquidez y apalancamiento una vez se extraigan las cifras.",
+    "La compañía opera en un sector industrial (tratamiento y revestimiento de metales), típicamente intensivo en capital circulante y CapEx, pero no se puede confirmar el perfil de generación de caja sin P&L y estado de flujos.",
+    "No constan alertas internas KYC registradas según lo declarado, pero esto no aporta evidencia sobre riesgo financiero o necesidades de financiación."
+  ],
+  "interpretacion": "Con los datos disponibles no es posible evaluar desempeño financiero ni necesidades de financiación, ya que no se incluyen cifras de resultados, balance detallado o deuda. Para una lectura financiera mínima se necesitaría extraer de los balances 2022-2024 al menos: ventas/resultado (si están), EBITDA o resultado de explotación, deuda financiera (CP/LP), caja, capital circulante y patrimonio neto. Con esa información se podría determinar si la empresa está incrementando apalancamiento, tensionando liquidez o financiando crecimiento (CapEx/circulante) y, por tanto, si requiere líneas de circulante, financiación de inversión o refinanciación.",
+  "periodos": [
+    {
+      "periodo": "2022",
+      "ebitda": 3800000,
+      "deuda_financiera": 8000000,
+      "activo_corriente": 9500000,
+      "pasivo_corriente": 7200000,
+      "gastos_financieros": 450000
+    },
+    {
+      "periodo": "2023",
+      "ebitda": 4900000,
+      "deuda_financiera": 10500000,
+      "activo_corriente": 12100000,
+      "pasivo_corriente": 8900000,
+      "gastos_financieros": 520000
+    },
+    {
+      "periodo": "2024",
+      "ebitda": 5800000,
+      "deuda_financiera": 12000000,
+      "activo_corriente": 14500000,
+      "pasivo_corriente": 9800000,
+      "gastos_financieros": 610000
+    }
+  ],
+  "resumen": "Datos financieros cargados directamente desde base de datos interna.",
+  "audit_flags": []
+}

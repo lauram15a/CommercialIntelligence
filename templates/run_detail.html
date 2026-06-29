@@ -87,13 +87,25 @@
         <div style="padding: 12px 0; {% if not loop.last %}border-bottom: 1px solid var(--color-border);{% endif %}">
           <strong>{{ s.name }}</strong>
           {% if s.hits %}
-            <span class="badge badge-fail" style="margin-left: 10px;">{{ s.hits | length }} hit(s)</span>
+            <span class="badge badge-fail" style="margin-left: 10px;">⚠ {{ s.hits | length }} alerta(s)</span>
+            {% for hit in s.hits %}
+            <div style="margin: 6px 0 2px; padding: 6px 10px; background: #fff4ed; border-left: 3px solid #e85d00; border-radius: 4px; font-size: 13px;">
+              <span style="font-weight: 600; text-transform: uppercase; color: #e85d00;">{{ hit.tipo }}</span>
+              <span style="margin: 0 6px; color: #999;">·</span>
+              <span style="color: #333;">{{ hit.lista }}</span>
+              <span style="margin: 0 6px; color: #999;">·</span>
+              <span style="color: #666;">Confianza: {% if hit.confianza %}{{ (hit.confianza | float * 100) | int }}%{% else %}N/D{% endif %}</span>
+              {% if hit.detalle %}
+              <div style="margin-top: 3px; color: #555;">{{ hit.detalle }}</div>
+              {% endif %}
+            </div>
+            {% endfor %}
           {% else %}
             <span class="badge badge-pass" style="margin-left: 10px;">Sin coincidencias</span>
           {% endif %}
-          {% if s.note %}
-            <p style="margin: 6px 0 0; font-size: 13px; color: var(--color-ink-muted);">{{ s.note }} (fuente: {{ s.source }})</p>
-          {% endif %}
+          <p style="margin: 4px 0 0; font-size: 12px; color: var(--color-ink-muted);">
+            Fuente: {{ s.source or 'local_db' }} · Confirmar en fuente operativa actualizada (UE/OFAC/ONU/HMT).
+          </p>
         </div>
         {% endfor %}
       </div>
@@ -429,11 +441,22 @@
   const marketMd     = {{ (run.result.get('market_research_output') or '') | tojson }};
   const valuationMd  = {{ (run.result.get('valuation_output', {}).get('interpretacion') or '') | tojson }};
 
+  function stripStrikethrough(md) {
+    if (!md) return md;
+    // Regex con flag 's' (dotAll) para cubrir tachado multilinea
+    return md.replace(/~~([\s\S]+?)~~/g, '$1');
+  }
+
+  function stripHtmlDel(html) {
+    // Por si marked convirtió algún ~~ en <del> antes del strip
+    return html.replace(/<del>([\s\S]*?)<\/del>/gi, '$1');
+  }
+
   function renderMarkdown(elId, md, emptyMsg) {
     const el   = document.getElementById(elId);
-    const text = md || emptyMsg;
+    const text = stripStrikethrough(md) || emptyMsg;
     if (typeof marked !== 'undefined') {
-      el.innerHTML = marked.parse(text);
+      el.innerHTML = stripHtmlDel(marked.parse(text));
     } else {
       el.innerHTML = '<pre style="white-space: pre-wrap; font-family: inherit; font-size: 15px; line-height: 1.75; margin: 0;"></pre>';
       el.querySelector('pre').textContent = text;

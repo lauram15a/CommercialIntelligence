@@ -1,0 +1,97 @@
+{
+  "extracted_entities": [
+    {
+      "tipo_documento": "Escritura / Ficha registral",
+      "entidad": {
+        "nombre_legal": "AgroVal Export Partners SL"
+      },
+      "observaciones": "escritura_constitucion.txt"
+    },
+    {
+      "tipo_documento": "Estados financieros",
+      "entidad": {
+        "nombre_legal": "AgroVal Export Partners SL"
+      },
+      "observaciones": "balance_2022.txt"
+    },
+    {
+      "tipo_documento": "Estados financieros",
+      "entidad": {
+        "nombre_legal": "AgroVal Export Partners SL"
+      },
+      "observaciones": "balance_2023.txt"
+    },
+    {
+      "tipo_documento": "Estados financieros",
+      "entidad": {
+        "nombre_legal": "AgroVal Export Partners SL"
+      },
+      "observaciones": "balance_2024.txt"
+    }
+  ],
+  "kyc_results": [
+    {
+      "rule_id": "R-ENT-01",
+      "name": "Identificación completa de la entidad: nombre legal, forma jurídica, NIF/CIF, domicilio social y fecha de constitución.",
+      "status": "PASS",
+      "evidence": "escritura_constitucion.txt: Nombre legal 'AgroVal Export Partners SL'; NIF/CIF B46781234; Forma jurídica 'Sociedad de Responsabilidad Limitada'; Domicilio social 'Polígono Industrial Nazaret, Calle B nº 14, 46023 Valencia'; Fecha de constitución 2008-09-14."
+    },
+    {
+      "rule_id": "R-OWN-01",
+      "name": "Titulares reales (UBO) declarados con % de participación y base de control.",
+      "status": "PASS",
+      "evidence": "escritura_constitucion.txt: UBOs declarados: José Antonio Valero Gimeno 55.0% y Cooperativa Hortofruticola Levante COOP 45.0% (base: participación/ownership)."
+    },
+    {
+      "rule_id": "R-OWN-02",
+      "name": "Para UBO corporativo: cadena de titularidad hasta persona física final.",
+      "status": "FAIL",
+      "evidence": "escritura_constitucion.txt: existe UBO corporativo 'Cooperativa Hortofruticola Levante COOP' (45.0%) pero no se aporta cadena de titularidad/beneficiario final persona física de dicha entidad."
+    },
+    {
+      "rule_id": "R-CTRL-01",
+      "name": "Administradores/controladores identificados con nombre y cargo.",
+      "status": "PASS",
+      "evidence": "escritura_constitucion.txt: Administradores: José Antonio Valero Gimeno (Consejero Delegado) y Amparo Roca Blanco (Directora Financiera y Consejera)."
+    },
+    {
+      "rule_id": "R-ID-01",
+      "name": "Documentos de identidad vigentes de administradores y UBOs personas físicas.",
+      "status": "FAIL",
+      "evidence": "No se aportan documentos de identidad (DNI/pasaporte) ni vigencias para José Antonio Valero Gimeno (UBO y administrador) ni para Amparo Roca Blanco (administradora). Información no disponible en el expediente aportado."
+    },
+    {
+      "rule_id": "R-ADDR-01",
+      "name": "Prueba de domicilio social (registro mercantil o recibo ≤ 3 meses).",
+      "status": "WARN",
+      "evidence": "escritura_constitucion.txt incluye domicilio social, pero no se aporta prueba de domicilio reciente (recibo/estado bancario ≤ 3 meses) ni nota registral actual. Información no disponible en el expediente aportado."
+    },
+    {
+      "rule_id": "R-TAX-01",
+      "name": "Formularios fiscales aplicables (CRS/FATCA; W-8/W-9 si aplica).",
+      "status": "FAIL",
+      "evidence": "No se aportan formularios CRS/FATCA ni otros formularios fiscales. Información no disponible en el expediente aportado."
+    },
+    {
+      "rule_id": "R-SOF-01",
+      "name": "Fuente de fondos/riqueza documentada y coherente con la actividad.",
+      "status": "WARN",
+      "evidence": "escritura_constitucion.txt describe actividad (exportador hortofrutícola) y balances 2022-2024 muestran operativa, pero no hay declaración/documentación explícita de fuente de fondos/riqueza (p.ej., origen de aportaciones, contratos, extractos, etc.)."
+    },
+    {
+      "rule_id": "R-FIN-01",
+      "name": "Información financiera reciente disponible (últimos estados financieros).",
+      "status": "PASS",
+      "evidence": "balance_2022.txt, balance_2023.txt, balance_2024.txt: estados financieros por ejercicio 2022-2024 (fuente: sistemas contables del banco, validados internamente)."
+    },
+    {
+      "rule_id": "R-PEP-01",
+      "name": "Declaración PEP y screening PEP/sanciones para entidad, UBOs y admins.",
+      "status": "FAIL",
+      "evidence": "No consta declaración PEP ni resultados de screening PEP/sanciones para la entidad, UBOs y administradores. Información no disponible en el expediente aportado."
+    }
+  ],
+  "screening_results": [],
+  "screening_resumen": "Screening sin entidades para revisar.",
+  "screening_conclusion": "NO_CONCLUYENTE"
+}

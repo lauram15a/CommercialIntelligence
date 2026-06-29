@@ -1,0 +1,39 @@
+## Señales externas relevantes para el análisis de riesgo — DataNexa Cloud Systems SL (markdown)
+
+> Nota de alcance: en la información aportada solo constan **dos señales “externas”** (prensa: *Expansión* y *CincoDías*). No se incluyen aquí métricas financieras auditadas, registros mercantiles, litigios, sanciones, cambios accionariales o señales de crédito porque **no han sido proporcionados**.  
+
+### 1) Crecimiento acelerado + posible M&A (riesgo de ejecución e integración)
+- **Señal**: DataNexa “crece un 35% en ARR” y “estudia adquisición vertical en Iberia” para ampliar oferta.  
+- **Implicación de riesgo**:
+  - **Riesgo de integración** (producto, equipos, cultura, tecnología, clientes) si se materializa la adquisición.
+  - **Riesgo financiero**: potencial aumento de apalancamiento, consumo de caja o dilución (según estructura de la operación).  
+  - **Riesgo comercial**: distracción del management y posible deterioro de foco en retención/expansión del core durante el proceso de M&A.
+  - **Riesgo regulatorio/contractual**: en SaaS B2B, cambios de control pueden activar cláusulas en contratos enterprise (consentimientos, renegociaciones).
+- **Fuente**: *Expansión* (2026-02-15).
+
+### 2) Concentración en clientes enterprise del sector financiero (riesgo de concentración y compliance)
+- **Señal**: cierre de **tres contratos enterprise** con corporaciones financieras en España; ARR previsto **> €18m** a cierre de 2026.  
+- **Implicación de riesgo**:
+  - **Riesgo de concentración**: si una parte material del ARR depende de pocos clientes grandes, aumenta la sensibilidad a:
+    - cancelaciones/no renovaciones,
+    - recortes presupuestarios,
+    - cambios de proveedor por políticas internas o consolidación bancaria.
+  - **Riesgo de ciclo de ventas y cobro**: enterprise financiero suele implicar ciclos largos, hitos de implantación y posibles retenciones/penalizaciones ligadas a SLAs.
+  - **Riesgo de cumplimiento**: mayores exigencias en **seguridad, continuidad de negocio, auditorías, protección de datos** y gestión de terceros (vendor risk). Un incidente puede tener impacto reputacional y contractual.
+- **Fuente**: *CincoDías* (2026-04-20).
+
+### 3) Señales “positivas” que también cambian el perfil de riesgo (escala y expectativas)
+- **Señal**: narrativa pública de fuerte crecimiento (35% ARR) y expansión en enterprise.  
+- **Implicación de riesgo**:
+  - **Riesgo de expectativas**: cuanto más se comunica crecimiento, mayor presión por sostenerlo; si se desacelera, puede haber tensión en pricing, churn o gasto comercial.
+  - **Riesgo operativo**: escalar soporte/implementación y mantener niveles de servicio (SLA) en clientes regulados.
+- **Fuentes**: *Expansión* (2026-02-15); *CincoDías* (2026-04-20).
+
+---
+
+### Principales “watch items” para el analista de riesgo (derivados de las señales)
+- Confirmar si el **35% ARR** es orgánico vs. incluye upsell/one-offs; y si hay **churn** o concentración por cliente.  
+- Si avanza el M&A: estructura (cash/deuda/equity), due diligence (tecnología, IP, ciber, contratos) y plan de integración.  
+- En sector financiero: evidencias de **certificaciones** (p.ej., ISO 27001), auditorías, historial de incidentes, y robustez de **BCP/DRP**.
+
+Si quieres, puedo convertir esto en una **matriz de riesgos** (riesgo → probabilidad/impacto → mitigantes → evidencias requeridas) para incorporarlo directamente al informe.

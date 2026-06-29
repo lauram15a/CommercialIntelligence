@@ -1,0 +1,91 @@
+{
+  "extracted_entities": [
+    {
+      "tipo_documento": "Escritura / Ficha registral",
+      "entidad": {
+        "nombre_legal": "DataNexa Cloud Systems SL"
+      },
+      "observaciones": "escritura_constitucion.txt"
+    },
+    {
+      "tipo_documento": "Financial statements",
+      "entidad": {
+        "nombre_legal": "DataNexa Cloud Systems SL"
+      },
+      "observaciones": "balance_2022.txt"
+    },
+    {
+      "tipo_documento": "Financial statements",
+      "entidad": {
+        "nombre_legal": "DataNexa Cloud Systems SL"
+      },
+      "observaciones": "balance_2023.txt"
+    },
+    {
+      "tipo_documento": "Financial statements",
+      "entidad": {
+        "nombre_legal": "DataNexa Cloud Systems SL"
+      },
+      "observaciones": "balance_2024.txt"
+    }
+  ],
+  "kyc_results": [
+    {
+      "rule_id": "ENT-01",
+      "name": "Identificar entidad: nombre legal, forma jurídica, NIF/CIF, domicilio y fecha de constitución.",
+      "status": "PASS",
+      "evidence": "escritura_constitucion.txt (Nombre legal, NIF/CIF, domicilio social, fecha de constitución, forma jurídica)."
+    },
+    {
+      "rule_id": "ENT-02",
+      "name": "Identificar y verificar administradores / personas con control (al menos nombre y cargo; verificación documental según política).",
+      "status": "FAIL",
+      "evidence": "escritura_constitucion.txt incluye nombres y cargos, pero no hay documentos de identidad ni verificación de personas físicas."
+    },
+    {
+      "rule_id": "UBO-01",
+      "name": "Identificar UBOs (≥25%) con porcentaje y base de control.",
+      "status": "PASS",
+      "evidence": "escritura_constitucion.txt lista UBOs con 45%, 30%, 25%."
+    },
+    {
+      "rule_id": "UBO-02",
+      "name": "Para UBOs personas físicas: obtener DOB, nacionalidad y documento de identidad vigente.",
+      "status": "FAIL",
+      "evidence": "Marcos Delgado Vidal y Nuria Alonso Ferrer: nacionalidad indicada, pero DOB e ID no constan."
+    },
+    {
+      "rule_id": "UBO-03",
+      "name": "Para UBO corporativo: obtener datos registrales y cadena de titularidad hasta beneficiario final (look-through).",
+      "status": "FAIL",
+      "evidence": "Vertex Ventures Iberia SL (25%): no consta NIF, domicilio, ni UBOs finales."
+    },
+    {
+      "rule_id": "SCR-01",
+      "name": "Screening obligatorio (sanciones/PEP/adverse media) para entidad, UBOs y administradores.",
+      "status": "FAIL",
+      "evidence": "El expediente solo indica 'Sin alertas registradas' en BBDD del banco; no hay resultado de screening externo ni evidencias de listas consultadas."
+    },
+    {
+      "rule_id": "SOF-01",
+      "name": "Fuente de fondos / actividad económica: descripción y soporte documental acorde al perfil.",
+      "status": "FAIL",
+      "evidence": "Hay descripción de negocio y estados financieros, pero no se aporta declaración/soporte explícito de fuente de fondos (p.ej., ingresos operativos, rondas de inversión, contratos, extractos)."
+    },
+    {
+      "rule_id": "ADDR-01",
+      "name": "Verificación de domicilio social (documento válido según política).",
+      "status": "FAIL",
+      "evidence": "Domicilio indicado en escritura_constitucion.txt, pero no hay prueba de domicilio/registro reciente en el paquete."
+    },
+    {
+      "rule_id": "TAX-01",
+      "name": "Documentación fiscal aplicable (CRS/FATCA; W-8/W-9 si aplica).",
+      "status": "FAIL",
+      "evidence": "No se incluyen formularios fiscales en el paquete."
+    }
+  ],
+  "screening_results": [],
+  "screening_resumen": "Screening sin entidades para revisar.",
+  "screening_conclusion": "NO_CONCLUYENTE"
+}

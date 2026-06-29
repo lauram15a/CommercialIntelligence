@@ -24,26 +24,45 @@ from src.agents.credit_risk_report.agent import run_credit_risk_report_agent
 
 # ── Normalización de outputs ──────────────────────────────────────────────────
 """
-Funciones de normalización del output del KYC Screener Agent
-para que el result.json tenga el formato que espera run_detail.html.
-
-Añadir estas funciones al kyc_orchestrator.py y llamarlas antes de
-guardar result.json.
+Funciones de normalización del output de los agentes KYC.
+Soporta todos los formatos conocidos que el LLM puede generar.
 """
+
+
+def _get_val(obj):
+    """Extrae número de {"value": X} o devuelve directamente si ya es número."""
+    if obj is None:
+        return None
+    if isinstance(obj, (int, float)):
+        return obj
+    if isinstance(obj, dict):
+        return obj.get("value") or obj.get("valor")
+    return None
+
+
+def _extract_year_series(d):
+    """Devuelve {año: valor} para claves numéricas de 4 dígitos en un dict."""
+    if not isinstance(d, dict):
+        return {}
+    return {k: v for k, v in d.items()
+            if isinstance(k, str) and k.isdigit() and len(k) == 4
+            and isinstance(v, (int, float))}
 
 
 def normalize_kyc_output(kyc_output: dict) -> dict:
     """
-    Normaliza el output del KYC Screener Agent al formato que espera el template.
-
-    Cambios:
-    - kyc_results: convierte dict anidado -> lista plana de reglas
-    - extracted_entities: convierte dict -> lista de documentos
+    Normaliza el output del KYC Screener Agent.
+    - kyc_results: dict anidado o lista vacía -> lista plana de reglas
+    - extracted_entities: dict -> lista de documentos
     """
     normalized = dict(kyc_output)
 
     # ── 1. Normalizar kyc_results ──────────────────────────────────────────
-    kr = kyc_output.get("kyc_results", {})
+    kr = kyc_output.get("kyc_results", [])
+    STATUS_MAP = {
+        "pass": "PASS", "partial": "WARN", "fail": "FAIL",
+        "PASS": "PASS", "WARN": "WARN", "FAIL": "FAIL", "n/a": "WARN",
+    }
 
     if isinstance(kr, dict):
         rule_outcomes = (
@@ -51,13 +70,6 @@ def normalize_kyc_output(kyc_output: dict) -> dict:
             or (kr.get("rules_engine") or {}).get("rule_outcomes", [])
             or []
         )
-
-        STATUS_MAP = {
-            "pass": "PASS", "partial": "WARN", "fail": "FAIL",
-            "PASS": "PASS", "WARN": "WARN", "FAIL": "FAIL",
-            "n/a": "WARN",
-        }
-
         rules_list = []
         for r in rule_outcomes:
             if not isinstance(r, dict):
@@ -68,16 +80,27 @@ def normalize_kyc_output(kyc_output: dict) -> dict:
                 "status":   STATUS_MAP.get(str(r.get("outcome", r.get("status", ""))).lower(), "WARN"),
                 "evidence": r.get("evidence", ""),
             })
-
         normalized["kyc_results"] = rules_list
+    elif isinstance(kr, list) and all(isinstance(r, dict) and "rule_id" in r for r in kr):
+        # Ya es lista plana con rule_id — normalizar campos
+        rules_list = []
+        for r in kr:
+            rules_list.append({
+                "rule_id":  r.get("rule_id", ""),
+                "name":     r.get("rule_text") or r.get("name") or r.get("rule_id", ""),
+                "status":   STATUS_MAP.get(str(r.get("outcome", r.get("status", ""))).lower(), "WARN"),
+                "evidence": r.get("evidence", ""),
+            })
+        normalized["kyc_results"] = rules_list
+    # Si es lista vacía, queda como está
 
     # ── 2. Normalizar extracted_entities ──────────────────────────────────
-    ee = kyc_output.get("extracted_entities", {})
+    ee = kyc_output.get("extracted_entities")
 
     if isinstance(ee, dict):
         docs_list = []
-        inventory = ee.get("documents_inventory", []) or []
-        applicant = ee.get("applicant", {}) or {}
+        inventory     = ee.get("documents_inventory") or []
+        applicant     = ee.get("applicant") or {}
         applicant_name = applicant.get("legal_name", "")
 
         if inventory:
@@ -108,68 +131,105 @@ def normalize_kyc_output(kyc_output: dict) -> dict:
                         "entidad":        {"nombre_legal": bo["name"]},
                         "observaciones":  f"{bo.get('ownership_pct', '')}% - {bo.get('nationality', bo.get('nationality_or_jurisdiction', ''))}",
                     })
-
         normalized["extracted_entities"] = docs_list
+
+    elif isinstance(ee, list) and ee and isinstance(ee[0], dict):
+        # Ya es lista — asegurar que tiene los campos que espera el template
+        fixed = []
+        for doc in ee:
+            tipo = doc.get("tipo_documento", doc.get("type", "documento"))
+            entidad = doc.get("entidad") or {}
+            nombre = entidad.get("nombre_legal", "") if isinstance(entidad, dict) else ""
+            fixed.append({
+                "tipo_documento": tipo,
+                "entidad":        {"nombre_legal": nombre},
+                "observaciones":  doc.get("observaciones", doc.get("ref", "")),
+            })
+        normalized["extracted_entities"] = fixed
 
     return normalized
 
 
 def normalize_modelo_financiero(modelo_financiero: dict) -> dict:
     """
-    Normaliza el output del Model Builder Agent al formato que espera el template.
-
-    Cambios:
-    - convierte normalized_kyc_profile.financials_normalized.years[] -> periodos[]
+    Normaliza el output del Model Builder Agent.
+    Soporta todos los formatos conocidos de salida del agente.
     """
     if modelo_financiero.get("periodos"):
         return modelo_financiero
 
     normalized = dict(modelo_financiero)
     periodos = []
+    years = []
 
-    # Intentar desde normalized_kyc_profile.financials_normalized.years
-    profile   = modelo_financiero.get("normalized_kyc_profile") or {}
-    fin_norm  = profile.get("financials_normalized") or {}      if isinstance(profile, dict) else {}
-    years     = fin_norm.get("years") or []                     if isinstance(fin_norm, dict) else []
+    # ── Formato A: financials_normalized.statements[] ─────────────────────
+    # balance_sheet_selected (no balance_sheet), period_year (no fiscal_year)
+    fn = modelo_financiero.get("financials_normalized") or {}
+    if isinstance(fn, dict):
+        years = fn.get("statements") or fn.get("periods") or fn.get("years") or []
 
-    # Fallback: financial_model.periods / years
+    # ── Formato B: normalized_financials.periods[] ────────────────────────
+    if not years:
+        nf = modelo_financiero.get("normalized_financials") or {}
+        if isinstance(nf, dict):
+            years = nf.get("periods") or nf.get("statements") or nf.get("years") or []
+
+    # ── Formato C: normalized_kyc_profile.financials_normalized.years[] ───
+    if not years:
+        profile  = modelo_financiero.get("normalized_kyc_profile") or {}
+        fin_norm = profile.get("financials_normalized") or {} if isinstance(profile, dict) else {}
+        years    = fin_norm.get("years") or [] if isinstance(fin_norm, dict) else []
+
+    # ── Formato D: financial_model.periods ────────────────────────────────
     if not years:
         fin_model = modelo_financiero.get("financial_model") or {}
-        years = (fin_model.get("periods") or fin_model.get("years") or []) if isinstance(fin_model, dict) else []
+        years = fin_model.get("periods") or fin_model.get("years") or []
 
     for y in years:
         if not isinstance(y, dict):
             continue
-        periodo = str(y.get("fiscal_year") or y.get("year") or y.get("period") or "")
+        # period_year (Formato A) o fiscal_year (Formatos B/C) o year/period
+        periodo = str(
+            y.get("period_year") or y.get("fiscal_year")
+            or y.get("year") or y.get("period") or ""
+        )
         inc = y.get("income_statement") or {}
-        bal = y.get("balance_sheet") or {}
+        # balance_sheet_selected (Formato A) o balance_sheet (Formatos B/C)
+        bal = y.get("balance_sheet_selected") or y.get("balance_sheet") or {}
+
         periodos.append({
             "periodo":            periodo,
-            "ebitda":             inc.get("ebitda"),
-            "deuda_financiera":   bal.get("net_financial_debt"),
-            "activo_corriente":   bal.get("current_assets"),
-            "pasivo_corriente":   bal.get("current_liabilities"),
-            "gastos_financieros": inc.get("financial_expenses"),
+            "ebitda":             _get_val(inc.get("ebitda")),
+            "deuda_financiera":   _get_val(bal.get("net_financial_debt")),
+            "activo_corriente":   _get_val(bal.get("current_assets")),
+            "pasivo_corriente":   _get_val(bal.get("current_liabilities")),
+            "gastos_financieros": _get_val(inc.get("financial_expenses")),
         })
 
     normalized["periodos"] = periodos
 
+    # resumen y audit_flags
     if not normalized.get("resumen"):
-        notes = modelo_financiero.get("data_quality_notes")
+        notes = (modelo_financiero.get("data_quality_notes")
+                 or modelo_financiero.get("data_quality")
+                 or [])
         if isinstance(notes, dict):
-            std = notes.get("standardization_applied") or []
-            normalized["resumen"] = "; ".join(std[:2]) if std else ""
+            std = notes.get("standardization_applied") or notes.get("notes") or []
+            normalized["resumen"] = ("; ".join(std[:2]) if isinstance(std, list)
+                                     else str(std)[:200])
         elif isinstance(notes, list):
-            normalized["resumen"] = "; ".join(notes[:2])
+            # data_quality_flags es lista de dicts con "issue"
+            issues = [n.get("issue", str(n)) for n in notes if isinstance(n, dict)]
+            normalized["resumen"] = "; ".join(issues[:2]) if issues else ""
         else:
             normalized["resumen"] = ""
 
     if not normalized.get("audit_flags"):
-        notes = modelo_financiero.get("data_quality_notes")
-        if isinstance(notes, dict):
-            normalized["audit_flags"] = notes.get("missing_fields") or []
-        elif isinstance(notes, list):
-            normalized["audit_flags"] = notes
+        flags = modelo_financiero.get("data_quality_flags") or []
+        if isinstance(flags, list):
+            normalized["audit_flags"] = [
+                f.get("issue", str(f)) for f in flags if isinstance(f, dict)
+            ]
         else:
             normalized["audit_flags"] = []
 
@@ -178,72 +238,118 @@ def normalize_modelo_financiero(modelo_financiero: dict) -> dict:
 
 def normalize_valuation_output(valuation_output: dict) -> dict:
     """
-    Normaliza el output del Valuation Reviewer Agent al formato que espera el template.
-
-    Cambios:
-    - construye ratios.ratios_por_periodo[] desde comparativa_modelo_vs_historial_bancario
-    - extrae interpretacion desde conclusiones o comparativa
+    Normaliza el output del Valuation Reviewer Agent.
+    Soporta todos los formatos conocidos de salida del agente.
     """
-    existing_ratios = valuation_output.get("ratios") or {}
-    if isinstance(existing_ratios, dict) and existing_ratios.get("ratios_por_periodo"):
-        return valuation_output
-
     normalized = dict(valuation_output)
 
-    # ── Extraer ratios por periodo ─────────────────────────────────────────
-    comparativa   = valuation_output.get("comparativa_modelo_vs_historial_bancario") or {}
-    tendencias    = comparativa.get("tendencias_financieras_normalizadas") or {}
-    apalancamiento = tendencias.get("apalancamiento_y_cobertura") or {}
-    liquidez      = tendencias.get("liquidez_y_circulante") or {}
+    # ── 1. Normalizar ratios_por_periodo ──────────────────────────────────
+    existing = (valuation_output.get("ratios") or {}).get("ratios_por_periodo") or []
 
-    debt_ebitda  = apalancamiento.get("net_debt_to_ebitda") or {}
-    interest_cov = apalancamiento.get("interest_coverage_ebitda") or {}
-    current_ratio = liquidez.get("current_ratio") or {}
+    if not existing:
+        ratios_por_periodo = []
+        debt_ebitda = current_ratio = interest_cov = {}
 
-    years = sorted([k for k in debt_ebitda.keys() if isinstance(k, str) and k.isdigit()])
+        # ── Formato nuevo: financial_model_vs_bank_history.credit_profile_snapshot
+        fmvbh = valuation_output.get("financial_model_vs_bank_history") or {}
+        cps   = fmvbh.get("credit_profile_snapshot") or {}
+        lc    = cps.get("leverage_and_coverage") or {}
+        liq   = cps.get("liquidity") or {}
 
-    ratios_por_periodo = []
-    for year in years:
-        ratios_por_periodo.append({
-            "periodo":             year,
-            "debt_ebitda":         debt_ebitda.get(year),
-            "liquidez_corriente":  current_ratio.get(year),
-            "cobertura_intereses": interest_cov.get(year),
-        })
+        debt_ebitda   = _extract_year_series(lc.get("net_debt_to_ebitda") or {})
+        current_ratio = _extract_year_series(liq.get("current_ratio") or {})
+        interest_cov  = _extract_year_series(lc.get("interest_coverage_ebitda") or {})
 
-    variacion = {}
-    if len(ratios_por_periodo) >= 2:
-        first = ratios_por_periodo[0]
-        last  = ratios_por_periodo[-1]
-        if first.get("debt_ebitda") and last.get("debt_ebitda"):
-            delta = ((last["debt_ebitda"] - first["debt_ebitda"]) / first["debt_ebitda"]) * 100
-            variacion["variacion_deuda_ebitda_pct"] = round(delta, 1)
-
-    normalized["ratios"] = {
-        "ratios_por_periodo": ratios_por_periodo,
-        "variacion": variacion,
-    }
-
-    # ── Extraer interpretación ─────────────────────────────────────────────
-    if not normalized.get("interpretacion"):
-        conclusions = (
-            valuation_output.get("conclusiones")
-            or valuation_output.get("conclusions")
-            or {}
-        )
-        if isinstance(conclusions, dict):
-            normalized["interpretacion"] = (
-                conclusions.get("credit_view")
-                or conclusions.get("vista_credito")
-                or conclusions.get("sintesis")
-                or ""
+        # ── Formato anterior: resumen_financiero_normalizado
+        if not debt_ebitda:
+            rf  = valuation_output.get("resumen_financiero_normalizado") or {}
+            ap  = rf.get("apalancamiento") or {}
+            bl  = rf.get("balance_y_liquidez") or {}
+            cr_stmt = rf.get("cuenta_resultados") or {}
+            debt_ebitda   = _extract_year_series(ap.get("net_debt_to_ebitda") or {})
+            current_ratio = _extract_year_series(bl.get("current_ratio") or {})
+            interest_cov  = _extract_year_series(
+                cr_stmt.get("cobertura_intereses_ebitda")
+                or cr_stmt.get("interest_coverage_ebitda")
+                or ap.get("interest_coverage_ebitda") or {}
             )
-        elif isinstance(conclusions, str):
-            normalized["interpretacion"] = conclusions
+
+        # ── Formato anterior: comparativa_modelo_vs_historial_bancario
+        if not debt_ebitda:
+            comp = valuation_output.get("comparativa_modelo_vs_historial_bancario") or {}
+            tend = comp.get("tendencias_financieras_normalizadas") or {}
+            apal = tend.get("apalancamiento_y_cobertura") or {}
+            liqu = tend.get("liquidez_y_circulante") or {}
+            debt_ebitda   = _extract_year_series(apal.get("net_debt_to_ebitda") or {})
+            current_ratio = _extract_year_series((liqu.get("current_ratio") or {}))
+            interest_cov  = _extract_year_series(apal.get("interest_coverage_ebitda") or {})
+
+        years = sorted(set(
+            list(debt_ebitda.keys())
+            + list(current_ratio.keys())
+            + list(interest_cov.keys())
+        ))
+
+        for year in years:
+            ratios_por_periodo.append({
+                "periodo":             year,
+                "debt_ebitda":         debt_ebitda.get(year),
+                "liquidez_corriente":  current_ratio.get(year),
+                "cobertura_intereses": interest_cov.get(year),
+            })
+
+        variacion = {}
+        if len(ratios_por_periodo) >= 2:
+            first = ratios_por_periodo[0]
+            last  = ratios_por_periodo[-1]
+            if first.get("debt_ebitda") and last.get("debt_ebitda"):
+                delta = ((last["debt_ebitda"] - first["debt_ebitda"])
+                         / first["debt_ebitda"]) * 100
+                variacion["variacion_deuda_ebitda_pct"] = round(delta, 1)
+
+        normalized["ratios"] = {
+            "ratios_por_periodo": ratios_por_periodo,
+            "variacion": variacion,
+        }
+
+    # ── 2. Normalizar interpretacion ──────────────────────────────────────
+    if not normalized.get("interpretacion"):
+        # Formato nuevo: financial_model_vs_bank_history.overall_assessment.summary
+        fmvbh = valuation_output.get("financial_model_vs_bank_history") or {}
+        overall = fmvbh.get("overall_assessment") or {}
+        if overall.get("summary"):
+            normalized["interpretacion"] = overall["summary"]
+
+        # Formato nuevo: indicadores_de_riesgo_y_flags
+        if not normalized.get("interpretacion"):
+            ind        = valuation_output.get("indicadores_de_riesgo_y_flags") or {}
+            fortalezas = ind.get("fortalezas") or []
+            alertas    = ind.get("alertas") or []
+            if fortalezas or alertas:
+                partes = []
+                if fortalezas:
+                    partes.append("Fortalezas: " + "; ".join(fortalezas[:3]))
+                if alertas:
+                    partes.append("Puntos de atención: " + "; ".join(alertas[:2]))
+                normalized["interpretacion"] = " | ".join(partes)
+
+        # Formatos anteriores
+        if not normalized.get("interpretacion"):
+            conclusions = (valuation_output.get("conclusiones")
+                           or valuation_output.get("conclusions") or {})
+            if isinstance(conclusions, dict):
+                normalized["interpretacion"] = (
+                    conclusions.get("credit_view")
+                    or conclusions.get("vista_credito")
+                    or conclusions.get("sintesis") or ""
+                )
+            elif isinstance(conclusions, str):
+                normalized["interpretacion"] = conclusions
 
         if not normalized.get("interpretacion"):
-            consistencia = comparativa.get("consistencia_general") or {}
-            normalized["interpretacion"] = consistencia.get("comentario", "")
+            comp = valuation_output.get("comparativa_modelo_vs_historial_bancario") or {}
+            cons = comp.get("consistencia_general") or {}
+            normalized["interpretacion"] = cons.get("comentario", "")
 
     return normalized
 
@@ -359,7 +465,7 @@ def run_multiagent_pipeline(
     logger.info("FASE 1/5: KYC Screener Agent")
     _notify("kyc_screener", "started")
     kyc_output_raw = run_kyc_screener_agent(documents, use_mock_screening)
-    _raw_extracted_entities = kyc_output_raw.get("extracted_entities", {})
+    _raw_extracted_entities = kyc_output_raw.get("extracted_entities") or {}
     kyc_output = normalize_kyc_output(kyc_output_raw)
     _write_json(run_dir / "1_kyc_screener" / "output.json", kyc_output)
     evidencias_agentes.append({
@@ -383,7 +489,7 @@ def run_multiagent_pipeline(
 
     logger.info("FASE 2/5: Model Builder Agent")
     _notify("model_builder", "started")
-    modelo_financiero = run_model_builder_agent(_raw_extracted_entities or kyc_output.get("extracted_entities", []))
+    modelo_financiero = run_model_builder_agent(_raw_extracted_entities or kyc_output.get("extracted_entities") or [])
     modelo_financiero = normalize_modelo_financiero(modelo_financiero)
     _write_json(run_dir / "2_model_builder" / "output.json", modelo_financiero)
     evidencias_agentes.append({

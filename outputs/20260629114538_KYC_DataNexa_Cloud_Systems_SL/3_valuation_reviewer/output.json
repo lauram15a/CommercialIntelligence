@@ -1,0 +1,166 @@
+{
+  "entidad": {
+    "legal_name": "DataNexa Cloud Systems SL",
+    "tax_id": "B87234561",
+    "as_of_financials": "2024-12-31",
+    "bank_relationship": {
+      "cliente_desde": "20112-06-15",
+      "cliente_desde_flags": [
+        "fecha_invalida_probable: año 20112 (se espera YYYY). Revisar si es 2012-06-15 o 2021-06-15."
+      ],
+      "rating_interno": "BBB+",
+      "segmento": "Corporate Tecnologia",
+      "impagos": 0,
+      "gestor": "Equipo Levante"
+    }
+  },
+  "comparativa_modelo_vs_historial_bancario": {
+    "coherencias": [
+      {
+        "tema": "Relación con el banco",
+        "modelo_financiero": "bank_relationship_since_year = 2022",
+        "historial_bancario": "cliente_desde = 20112-06-15 (dato con error probable)",
+        "evaluacion": "inconsistente",
+        "impacto": "medio",
+        "comentario": "El modelo indica relación desde 2022; el historial trae una fecha no válida. Si fuese 2012 o 2021, cambiaría la antigüedad y lectura de vinculación."
+      },
+      {
+        "tema": "Endeudamiento neto vs operaciones activas",
+        "modelo_financiero": "Net financial debt 2024 = 5.40M€",
+        "historial_bancario": "Préstamo 4.45M€ + línea circulante dispuesta 1.35M€ (total dispuesto 5.80M€)",
+        "evaluacion": "parcialmente consistente",
+        "impacto": "medio",
+        "comentario": "El dispuesto total (5.80M€) es cercano pero superior a la deuda financiera neta (5.40M€). Diferencia plausible si existe caja ~0.4M€ o si parte del dispuesto no computa como deuda financiera neta / hay otras deudas o ajustes. Falta desglose de caja y composición de deuda."
+      },
+      {
+        "tema": "Capacidad de servicio de deuda (intereses)",
+        "modelo_financiero": "EBITDA 2024 = 2.89M€; gastos financieros 0.24M€; cobertura EBITDA/intereses = 12.04x",
+        "historial_bancario": "Sin incidencias; operaciones al corriente",
+        "evaluacion": "consistente",
+        "impacto": "bajo",
+        "comentario": "Cobertura de intereses holgada y comportamiento de pago sin impagos soportan la lectura de riesgo moderado."
+      },
+      {
+        "tema": "Liquidez (circulante)",
+        "modelo_financiero": "Current ratio 2024 = 2.03x (CA 7.10M€ / CL 3.50M€)",
+        "historial_bancario": "Línea de circulante límite 2.55M€, dispuesto 1.35M€",
+        "evaluacion": "no concluyente",
+        "impacto": "medio",
+        "comentario": "Un current ratio >2x sugiere buena liquidez, pero el uso de circulante indica necesidades operativas o gestión de caja. Sin detalle de caja, clientes, proveedores y estacionalidad no se puede validar."
+      }
+    ],
+    "ratios_y_tendencias_normalizadas": {
+      "crecimiento": {
+        "revenue": {
+          "2022": 8900000,
+          "2023": 11600000,
+          "2024": 15200000,
+          "yoy_2023": 0.3033707865,
+          "yoy_2024": 0.3103448276
+        },
+        "ebitda": {
+          "2022": 1510000,
+          "2023": 2030000,
+          "2024": 2890000,
+          "yoy_2023": 0.3443708609,
+          "yoy_2024": 0.4236453202
+        },
+        "lectura": "Crecimiento fuerte y aceleración de EBITDA vs ventas (apalancamiento operativo)."
+      },
+      "apalancamiento_y_cobertura": {
+        "net_debt_to_ebitda": {
+          "2022": 2.119205298,
+          "2023": 2.0197044335,
+          "2024": 1.8685121107,
+          "lectura": "Desapalancamiento relativo por crecimiento de EBITDA."
+        },
+        "interest_coverage_ebitda": {
+          "2022": 10.7857142857,
+          "2023": 10.972972973,
+          "2024": 12.0416666667,
+          "lectura": "Cobertura holgada y mejorando."
+        }
+      },
+      "liquidez": {
+        "current_ratio": {
+          "2022": 1.8095238095,
+          "2023": 1.9259259259,
+          "2024": 2.0285714286,
+          "lectura": "Liquidez corriente sólida y en mejora."
+        }
+      }
+    },
+    "operaciones_bancarias_y_carga_deuda": {
+      "prestamo_corporativo": {
+        "importe": 4450000,
+        "cuota_mensual": 72000,
+        "inicio": "2024-03-01",
+        "vencimiento": "2029-03-01",
+        "al_corriente": true
+      },
+      "linea_circulante": {
+        "limite": 2550000,
+        "dispuesto": 1350000,
+        "inicio": "2025-01-10",
+        "vencimiento": "2026-12-31",
+        "al_corriente": true,
+        "utilizacion_pct": 0.5294117647
+      },
+      "estimacion_carga_anual_cuotas_prestamo": {
+        "cuota_mensual": 72000,
+        "cuota_anual_estimada": 864000,
+        "dscr_proxy_ebitda_div_cuota_anual": 3.3449074074,
+        "nota": "Proxy: EBITDA/servicio de deuda (solo cuota del préstamo). No incluye intereses/servicio de la línea ni impuestos/capex/variación de circulante."
+      }
+    }
+  },
+  "flags_y_riesgos_para_revision": [
+    {
+      "flag": "Fecha 'cliente_desde' inválida",
+      "severidad": "media",
+      "detalle": "cliente_desde = 20112-06-15 no cumple formato/año. Reconciliar con CRM/core bancario."
+    },
+    {
+      "flag": "Inconsistencia potencial en deuda neta vs dispuesto",
+      "severidad": "media",
+      "detalle": "Deuda neta 5.40M€ vs dispuesto total 5.80M€. Solicitar caja a cierre 2024, detalle de deuda (banco vs otros), y conciliación de net debt."
+    },
+    {
+      "flag": "Estados financieros incompletos",
+      "severidad": "media",
+      "detalle": "Sin cash flow, sin capex/D&A, sin balance completo (no se verifica ecuación contable). Limita análisis de FCF y capacidad real de repago."
+    },
+    {
+      "flag": "KYC/UBO incompleto",
+      "severidad": "media",
+      "detalle": "Faltan DOB y documento ID de UBOs individuales; falta NIF y domicilio de Vertex Ventures Iberia SL."
+    },
+    {
+      "flag": "Riesgo de ejecución M&A",
+      "severidad": "baja-media",
+      "detalle": "Actividad M&A activa (VerticalSync ERP SL). Puede implicar necesidades adicionales de financiación y riesgo de integración; no hay impacto cuantificado en el modelo normalizado."
+    }
+  ],
+  "preguntas_y_datos_requeridos_para_cerrar_analisis": [
+    "Confirmar fecha correcta de alta como cliente (¿2012-06-15 / 2021-06-15 / 2022?).",
+    "Detalle de caja y equivalentes a 2024-12-31 para conciliar deuda neta vs deuda bruta bancaria.",
+    "Desglose de deuda financiera total (por entidad, tipo, tipo de interés, amortización) y si existe deuda fuera de balance (leasing, factoring con recurso).",
+    "Estados financieros completos 2022-2024 (balance completo y cuenta de resultados completa) + estado de flujos de efectivo o, alternativamente, capex, D&A y variación de circulante.",
+    "Condiciones de la línea de circulante (tipo, comisiones, covenants) y uso previsto (estacionalidad vs financiación estructural).",
+    "Plan/impacto financiero del M&A (precio, estructura, sinergias, financiación, proforma leverage)."
+  ],
+  "conclusion_ejecutiva": {
+    "resumen": "El modelo normalizado muestra crecimiento fuerte, mejora de márgenes y desapalancamiento relativo (ND/EBITDA ~1.87x en 2024) con cobertura de intereses holgada (~12x). El historial bancario es coherente con buen comportamiento (sin impagos, operaciones al corriente) y exposición bancaria relevante (préstamo 4.45M€ y circulante dispuesto 1.35M€). No obstante, hay dos puntos a reconciliar: (i) fecha de alta como cliente inválida en el historial y (ii) diferencia entre deuda neta reportada y dispuesto bancario, que requiere detalle de caja y composición de deuda. La falta de cash flow y balance completo limita la validación de generación de caja y capacidad de repago.",
+    "estado": "apto_para_revision_con_datos_adicionales",
+    "prioridad_siguientes_pasos": [
+      "Corregir/validar 'cliente_desde' en sistemas.",
+      "Conciliar deuda neta 2024 con deuda bancaria bruta y caja.",
+      "Completar paquete financiero para análisis de FCF y covenants."
+    ]
+  },
+  "ratios": {
+    "ratios_por_periodo": [],
+    "variacion": {}
+  },
+  "interpretacion": ""
+}

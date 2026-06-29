@@ -1,0 +1,256 @@
+{
+  "normalized_applicant": {
+    "type": "entity",
+    "legal_name": "DataNexa Cloud Systems SL",
+    "legal_form": {
+      "original": "Sociedad de Responsabilidad Limitada",
+      "normalized": "SL"
+    },
+    "tax_id": {
+      "type": "NIF/CIF",
+      "value": "B87234561",
+      "country": "ES"
+    },
+    "jurisdiction": {
+      "country": "España",
+      "iso2": "ES"
+    },
+    "registered_address": {
+      "full_address": "Calle Príncipe de Vergara 112, 28002 Madrid",
+      "country": "España",
+      "city": "Madrid",
+      "postal_code": "28002"
+    },
+    "formation_date": "2016-03-22",
+    "business_activity": {
+      "cnae": "6201",
+      "cnae_description": "Actividades de programación informática",
+      "sector": "Tecnologia",
+      "description_internal": "Plataforma SaaS B2B de gestión de operaciones y reporting financiero para empresas medianas. Crecimiento recurrente con ARR de 11.2M€ en 2024. Proceso de M&A activo: análisis de adquisición de VerticalSync ERP SL. Cliente del banco desde 2022.",
+      "business_model_tags": [
+        "SaaS",
+        "B2B",
+        "Mid-market",
+        "Recurring revenue",
+        "Financial reporting",
+        "Operations management"
+      ],
+      "mna_activity": {
+        "status": "active",
+        "notes": "Análisis de adquisición de VerticalSync ERP SL"
+      },
+      "bank_relationship_since_year": 2022
+    },
+    "capital_social": {
+      "amount": 500000,
+      "currency": "EUR"
+    },
+    "employees": 128
+  },
+  "normalized_ownership": {
+    "beneficial_owners": [
+      {
+        "name": "Marcos Delgado Vidal",
+        "type": "individual",
+        "nationality": "española",
+        "ownership_pct": 45.0,
+        "control_basis": "ownership",
+        "identifiers": {
+          "dob": null,
+          "id_document": null,
+          "tax_id": null
+        },
+        "data_quality_flags": [
+          "missing_dob",
+          "missing_id_document"
+        ]
+      },
+      {
+        "name": "Nuria Alonso Ferrer",
+        "type": "individual",
+        "nationality": "española",
+        "ownership_pct": 30.0,
+        "control_basis": "ownership",
+        "identifiers": {
+          "dob": null,
+          "id_document": null,
+          "tax_id": null
+        },
+        "data_quality_flags": [
+          "missing_dob",
+          "missing_id_document"
+        ]
+      },
+      {
+        "name": "Vertex Ventures Iberia SL",
+        "type": "entity",
+        "nationality": "española",
+        "ownership_pct": 25.0,
+        "control_basis": "ownership",
+        "identifiers": {
+          "tax_id": null,
+          "registered_address": null
+        },
+        "data_quality_flags": [
+          "missing_tax_id",
+          "missing_registered_address"
+        ]
+      }
+    ],
+    "controllers": [
+      {
+        "name": "Marcos Delgado Vidal",
+        "role": "Consejero Delegado"
+      },
+      {
+        "name": "Nuria Alonso Ferrer",
+        "role": "Consejera y Directora de Producto"
+      }
+    ],
+    "ownership_summary": {
+      "total_reported_ownership_pct": 100.0,
+      "ownership_concentration": {
+        "largest_owner_pct": 45.0,
+        "top2_owners_pct": 75.0
+      }
+    }
+  },
+  "normalized_financials": {
+    "currency": "EUR",
+    "scale": "units",
+    "periodicity": "annual",
+    "years": [
+      2022,
+      2023,
+      2024
+    ],
+    "statements_available": {
+      "income_statement_partial": true,
+      "balance_sheet_partial": true,
+      "cash_flow": false
+    },
+    "line_items": [
+      {
+        "year": 2022,
+        "revenue": 8900000,
+        "ebitda": 1510000,
+        "financial_expenses": 140000,
+        "current_assets": 3800000,
+        "current_liabilities": 2100000,
+        "net_financial_debt": 3200000,
+        "equity": 2900000,
+        "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)."
+      },
+      {
+        "year": 2023,
+        "revenue": 11600000,
+        "ebitda": 2030000,
+        "financial_expenses": 185000,
+        "current_assets": 5200000,
+        "current_liabilities": 2700000,
+        "net_financial_debt": 4100000,
+        "equity": 3900000,
+        "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)."
+      },
+      {
+        "year": 2024,
+        "revenue": 15200000,
+        "ebitda": 2890000,
+        "financial_expenses": 240000,
+        "current_assets": 7100000,
+        "current_liabilities": 3500000,
+        "net_financial_debt": 5400000,
+        "equity": 5300000,
+        "source": "Sistemas contables del banco (datos remitidos por la empresa y validados internamente)."
+      }
+    ],
+    "derived_metrics": [
+      {
+        "year": 2022,
+        "ebitda_margin": 0.1696629213,
+        "current_ratio": 1.8095238095,
+        "net_debt_to_ebitda": 2.119205298,
+        "interest_coverage_ebitda": 10.7857142857
+      },
+      {
+        "year": 2023,
+        "ebitda_margin": 0.175,
+        "current_ratio": 1.9259259259,
+        "net_debt_to_ebitda": 2.0197044335,
+        "interest_coverage_ebitda": 10.972972973
+      },
+      {
+        "year": 2024,
+        "ebitda_margin": 0.1901315789,
+        "current_ratio": 2.0285714286,
+        "net_debt_to_ebitda": 1.8685121107,
+        "interest_coverage_ebitda": 12.0416666667
+      }
+    ],
+    "data_quality_notes": [
+      "No se aportan Total Assets / Total Liabilities, por lo que no se puede verificar el balance (Assets = Liabilities + Equity).",
+      "No se aportan Cash Flow ni CapEx/D&A, por lo que no se puede calcular FCF ni conversión de caja.",
+      "Net financial debt se trata como deuda neta (deuda financiera menos caja), pero no se detalla composición."
+    ]
+  },
+  "normalized_documents": {
+    "inventory": [
+      {
+        "ref": "escritura_constitucion.txt",
+        "type": "entity_formation_and_identification",
+        "date": "2016-03-22"
+      },
+      {
+        "ref": "balance_2022.txt",
+        "type": "financial_statements",
+        "date": "2022-12-31"
+      },
+      {
+        "ref": "balance_2023.txt",
+        "type": "financial_statements",
+        "date": "2023-12-31"
+      },
+      {
+        "ref": "balance_2024.txt",
+        "type": "financial_statements",
+        "date": "2024-12-31"
+      }
+    ],
+    "coverage_summary": {
+      "has_formation_document": true,
+      "financial_years_covered": [
+        2022,
+        2023,
+        2024
+      ],
+      "latest_financial_statement_date": "2024-12-31"
+    }
+  },
+  "normalized_alerts": {
+    "internal_kyc_alerts": [
+      {
+        "source": "BBDD del banco",
+        "detail": "Sin alertas registradas",
+        "normalized_status": "no_alerts"
+      }
+    ]
+  },
+  "normalization_checks": {
+    "consistency": {
+      "ownership_sums_to_100_pct": true,
+      "financial_years_consecutive": true,
+      "currency_present": true
+    },
+    "missing_critical_fields": [
+      "beneficial_owners[0].dob",
+      "beneficial_owners[0].id_document",
+      "beneficial_owners[1].dob",
+      "beneficial_owners[1].id_document",
+      "beneficial_owners[2].tax_id",
+      "beneficial_owners[2].registered_address"
+    ]
+  },
+  "periodos": [],
+  "resumen": "",
+  "audit_flags": []
+}

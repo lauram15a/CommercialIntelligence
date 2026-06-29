@@ -1,0 +1,35 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 2.1053,
+        "liquidez_corriente": 1.3194,
+        "cobertura_intereses": 8.4444
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 2.1429,
+        "liquidez_corriente": 1.3596,
+        "cobertura_intereses": 9.4231
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 2.069,
+        "liquidez_corriente": 1.4796,
+        "cobertura_intereses": 9.5082
+      }
+    ],
+    "variacion": {
+      "variacion_deuda_ebitda_pct": -1.73
+    }
+  },
+  "interpretacion": "Los ratios 2022–2024 muestran apalancamiento estable y moderado (Debt/EBITDA ~2,1x con ligera mejora neta del -1,73%), con mejora progresiva de liquidez corriente (1,32x a 1,48x) y una cobertura de intereses holgada y creciente (~8,4x a ~9,5x), consistente con capacidad de servicio de deuda. El historial bancario refuerza esta lectura: 0 impagos, operaciones vigentes al corriente (préstamo corporativo y línea de circulante) y uso de productos de gestión (confirming y cobertura de tipos), lo que sugiere disciplina financiera. Las incidencias registradas son menores (documentación y retraso puntual de auditoría) y no apuntan a estrés de caja, aunque el aumento de deuda financiera 2022–2024 y la nota del gestor sobre optimización en 2027 justifican seguimiento de estructura de vencimientos y coste financiero.",
+  "conclusions": {
+    "credit_view": "Perfil crediticio favorable (rating interno A-) con apalancamiento contenido, liquidez adecuada y fuerte capacidad de cobertura, respaldado por comportamiento bancario sin incidencias de pago. Riesgo principal a vigilar: evolución del endeudamiento y la planificación de refinanciación/optimización hacia 2027.",
+    "data_requests_priority": [
+      "Detalle de deuda por instrumento (bancos/leasing), calendario de vencimientos, tipo (fijo/variable), spreads y garantías/covenants, incluyendo la relación con la cobertura de tipos vigente.",
+      "Estados financieros completos 2022–2024 (PyG, balance y cash flow) y desglose de capital circulante (clientes, existencias, proveedores) para validar generación de caja y estacionalidad de la línea de circulante."
+    ]
+  }
+}

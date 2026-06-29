@@ -23,7 +23,7 @@ def run_kyc_screener_agent(documents: list[dict], use_mock: bool = True) -> dict
 
     Devuelve:
         {
-          "extracted_entities": [...],
+          "extracted_entities": {...},   <- dict raw del agente (se normaliza en el orchestrator)
           "kyc_results": [...],
           "screening_results": [...],
           "screening_resumen": "...",
@@ -36,7 +36,6 @@ def run_kyc_screener_agent(documents: list[dict], use_mock: bool = True) -> dict
         extra=f"Numero de documentos del expediente: {len(documents)}"
     )
 
-    # Construir el mensaje con todos los documentos
     docs_block = "\n\n".join(
         f"--- DOCUMENTO: {d['name']} ---\n{d['text'][:6000]}"
         for d in documents
@@ -70,10 +69,13 @@ def run_kyc_screener_agent(documents: list[dict], use_mock: bool = True) -> dict
             "raw": content[:2000],
         }
 
-    # Recopilar todos los nombres para el screening
-    nombres_a_cribar = _collect_names_for_screening(result.get("extracted_entities", []))
+    # Recopilar todos los nombres para el screening desde el raw del agente
+    nombres_a_cribar = _collect_names_for_screening(result.get("extracted_entities"))
 
-    # Ejecutar screening de sanciones
+    logger.info("[KYC Screener Agent] screening sobre %d nombres: %s",
+                len(nombres_a_cribar), nombres_a_cribar)
+
+    # Ejecutar screening de sanciones/PEP
     screening_output = run_screening(nombres_a_cribar, use_mock=use_mock)
 
     result["screening_results"]    = screening_output["resultados"]
@@ -81,38 +83,93 @@ def run_kyc_screener_agent(documents: list[dict], use_mock: bool = True) -> dict
     result["screening_conclusion"] = screening_output["conclusion"]
 
     logger.info(
-        "[KYC Screener Agent] %d entidades, %d reglas KYC, screening: %s",
-        len(result.get("extracted_entities", [])),
+        "[KYC Screener Agent] %d reglas KYC, screening: %s (%d hits)",
         len(result.get("kyc_results", [])),
         screening_output["conclusion"],
+        sum(len(r.get("hits", [])) for r in screening_output["resultados"]),
     )
     logger.info("=== [KYC Screener Agent] Fin ===")
     return result
 
 
-def _collect_names_for_screening(extracted_entities: list[dict]) -> list[str]:
-    """Extrae todos los nombres (empresa, titulares, admins) para el screening."""
+def _collect_names_for_screening(extracted_entities) -> list[str]:
+    """
+    Extrae todos los nombres (empresa principal, titulares reales, administradores)
+    para pasarlos al screening de sanciones/PEP.
+
+    Soporta todos los formatos que puede devolver el agente:
+      - dict con applicant, beneficial_owners, controllers (formato raw del agente)
+      - lista de dicts con entidad.nombre_legal (formato normalizado)
+    """
     names = set()
-    for entity in extracted_entities:
-        if not isinstance(entity, dict):
-            continue
-        entidad = entity.get("entidad", {}) or {}
-        if not isinstance(entidad, dict):
-            continue
 
-        if entidad.get("nombre_legal"):
-            names.add(entidad["nombre_legal"])
+    if isinstance(extracted_entities, dict):
+        # ── Formato raw del agente ──────────────────────────────────────
+        # applicant
+        applicant = extracted_entities.get("applicant") or {}
+        if isinstance(applicant, dict):
+            name = applicant.get("legal_name") or applicant.get("nombre_legal")
+            if name:
+                names.add(name.strip())
 
-        for tr in entidad.get("titulares_reales", []) or []:
-            if isinstance(tr, str):
-                names.add(tr)
-            elif isinstance(tr, dict) and tr.get("nombre"):
-                names.add(tr["nombre"])
+        # beneficial_owners
+        for bo in (extracted_entities.get("beneficial_owners") or []):
+            if isinstance(bo, str) and bo.strip():
+                names.add(bo.strip())
+            elif isinstance(bo, dict):
+                name = bo.get("name") or bo.get("nombre")
+                if name:
+                    names.add(name.strip())
 
-        for admin in entidad.get("administradores", []) or []:
-            if isinstance(admin, str):
-                names.add(admin)
-            elif isinstance(admin, dict) and admin.get("nombre"):
-                names.add(admin["nombre"])
+        # controllers / administradores
+        for ctrl in (extracted_entities.get("controllers") or
+                     extracted_entities.get("administradores") or []):
+            if isinstance(ctrl, str) and ctrl.strip():
+                names.add(ctrl.strip())
+            elif isinstance(ctrl, dict):
+                name = ctrl.get("name") or ctrl.get("nombre")
+                if name:
+                    names.add(name.strip())
+
+        # ownership_and_control (formato alternativo)
+        oac = extracted_entities.get("ownership_and_control") or {}
+        if isinstance(oac, dict):
+            for bo in (oac.get("beneficial_owners") or []):
+                if isinstance(bo, dict):
+                    name = bo.get("name") or bo.get("nombre")
+                    if name:
+                        names.add(name.strip())
+            for ctrl in (oac.get("controllers") or []):
+                if isinstance(ctrl, dict):
+                    name = ctrl.get("name") or ctrl.get("nombre")
+                    if name:
+                        names.add(name.strip())
+
+    elif isinstance(extracted_entities, list):
+        # ── Formato normalizado (lista de docs) ────────────────────────
+        for entity in extracted_entities:
+            if not isinstance(entity, dict):
+                continue
+            # Formato lista normalizada: entidad.nombre_legal
+            entidad = entity.get("entidad") or {}
+            if isinstance(entidad, dict):
+                name = entidad.get("nombre_legal") or entidad.get("nombre")
+                if name:
+                    names.add(name.strip())
+            # Formato lista con titulares_reales y administradores dentro de entidad
+            for tr in (entidad.get("titulares_reales") or []):
+                if isinstance(tr, str) and tr.strip():
+                    names.add(tr.strip())
+                elif isinstance(tr, dict):
+                    name = tr.get("nombre") or tr.get("name")
+                    if name:
+                        names.add(name.strip())
+            for admin in (entidad.get("administradores") or []):
+                if isinstance(admin, str) and admin.strip():
+                    names.add(admin.strip())
+                elif isinstance(admin, dict):
+                    name = admin.get("nombre") or admin.get("name")
+                    if name:
+                        names.add(name.strip())
 
     return sorted(names)

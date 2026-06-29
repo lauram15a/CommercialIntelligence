@@ -1,0 +1,273 @@
+{
+  "run_id": "20260629122459",
+  "entity_name": "Acme Componentes SL",
+  "use_case": "kyc",
+  "kyc_output": {
+    "extracted_entities": [
+      {
+        "tipo_documento": "Escritura / Ficha registral",
+        "entidad": {
+          "nombre_legal": "Acme Componentes SL"
+        },
+        "observaciones": "escritura_constitucion.txt"
+      },
+      {
+        "tipo_documento": "Estados financieros",
+        "entidad": {
+          "nombre_legal": "Acme Componentes SL"
+        },
+        "observaciones": "balance_2022.txt"
+      },
+      {
+        "tipo_documento": "Estados financieros",
+        "entidad": {
+          "nombre_legal": "Acme Componentes SL"
+        },
+        "observaciones": "balance_2023.txt"
+      },
+      {
+        "tipo_documento": "Estados financieros",
+        "entidad": {
+          "nombre_legal": "Acme Componentes SL"
+        },
+        "observaciones": "balance_2024.txt"
+      }
+    ],
+    "kyc_results": [
+      {
+        "rule_id": "R-ENT-01",
+        "name": "Identificación completa de la entidad: nombre legal, forma jurídica, NIF/CIF, domicilio social y fecha de constitución.",
+        "status": "PASS",
+        "evidence": "escritura_constitucion.txt: Nombre legal 'Acme Componentes SL'; NIF/CIF 'B50123987'; forma jurídica 'Sociedad de Responsabilidad Limitada'; domicilio social 'Polígono Malpica, Calle E nº 18, 50016 Zaragoza'; fecha de constitución '2003-07-10'."
+      },
+      {
+        "rule_id": "R-OWN-01",
+        "name": "Titulares reales (UBO) declarados con % de participación y base de control.",
+        "status": "PASS",
+        "evidence": "escritura_constitucion.txt: UBOs declarados: Roberto Acme Jiménez 65.0% (base: participación); Acme Europe Holding GmbH 35.0% (base: participación)."
+      },
+      {
+        "rule_id": "R-OWN-02",
+        "name": "Para UBO corporativo: cadena de titularidad hasta persona física final.",
+        "status": "FAIL",
+        "evidence": "escritura_constitucion.txt: Se declara UBO corporativo 'Acme Europe Holding GmbH' (35.0%) pero no se aporta cadena de titularidad/beneficiario final persona física de dicha entidad."
+      },
+      {
+        "rule_id": "R-CTRL-01",
+        "name": "Administradores/controladores identificados con nombre y cargo.",
+        "status": "PASS",
+        "evidence": "escritura_constitucion.txt: Administradores: Roberto Acme Jiménez (Consejero Delegado) y Klaus Meier (Consejero, representante de Acme Europe)."
+      },
+      {
+        "rule_id": "R-ID-01",
+        "name": "Documentos de identidad vigentes de administradores y UBOs personas físicas.",
+        "status": "FAIL",
+        "evidence": "No se aportan documentos de identidad (DNI/pasaporte) ni vigencia para Roberto Acme Jiménez (UBO y administrador) ni para Klaus Meier (administrador) en el expediente."
+      },
+      {
+        "rule_id": "R-ADDR-01",
+        "name": "Prueba de domicilio social (registro mercantil o recibo ≤ 3 meses).",
+        "status": "WARN",
+        "evidence": "escritura_constitucion.txt incluye domicilio social, pero no se aporta prueba de domicilio actual (p.ej., nota simple/registro mercantil reciente o recibo ≤ 3 meses)."
+      },
+      {
+        "rule_id": "R-TAX-01",
+        "name": "Formularios fiscales aplicables (CRS/FATCA; W-8/W-9 si aplica).",
+        "status": "FAIL",
+        "evidence": "No se aportan formularios fiscales (CRS/FATCA u otros aplicables) en los documentos del expediente."
+      },
+      {
+        "rule_id": "R-SOF-01",
+        "name": "Fuente de fondos/riqueza documentada y coherente con la actividad.",
+        "status": "WARN",
+        "evidence": "La actividad (CNAE 2562, sector industrial) y los estados financieros 2022-2024 sugieren generación operativa de fondos, pero no hay declaración/documentación explícita de fuente de fondos/riqueza (p.ej., explicación de origen de aportaciones, contratos, detalle de ingresos) en el expediente."
+      },
+      {
+        "rule_id": "R-FIN-01",
+        "name": "Información financiera reciente disponible (últimos estados financieros).",
+        "status": "PASS",
+        "evidence": "balance_2022.txt, balance_2023.txt y balance_2024.txt: estados financieros por ejercicio (2022-2024) con cuenta de resultados y balance; fuente: sistemas contables del banco validados internamente."
+      },
+      {
+        "rule_id": "R-PEP-01",
+        "name": "Declaración PEP y screening PEP/sanciones para entidad, UBOs y admins.",
+        "status": "FAIL",
+        "evidence": "No consta declaración PEP/sanciones ni resultados de screening para la entidad, UBOs (Roberto Acme Jiménez; Acme Europe Holding GmbH) y administradores (Roberto Acme Jiménez; Klaus Meier) en el expediente."
+      }
+    ],
+    "screening_results": [],
+    "screening_resumen": "Screening sin entidades para revisar.",
+    "screening_conclusion": "NO_CONCLUYENTE",
+    "evidencias": [
+      {
+        "tipo": "fuente_externa_noticias",
+        "id": "MKT-001",
+        "resultado": "OK",
+        "descripcion": "Registro de señales externas para riesgo reputacional/legal.",
+        "fuente": "Busqueda externa (local_db/fuentes_externas.json o fuente configurada)",
+        "fecha_extraccion": "2026-06-29T10:25:26+00:00",
+        "trazabilidad": "Market Researcher Agent -> entidad=Acme Componentes SL",
+        "nota": "La decision final requiere validacion manual de Cumplimiento y Riesgos.",
+        "contenido_referencia": "## Señales externas relevantes para el análisis de riesgo — Acme Componentes SL (resumen)\n\n### 1) Expansión internacional y riesgo operativo (planta en Polonia)\n- **Señal**: Inauguración de la **primera planta de producción en Polonia (Wroclaw)**, con **capacidad para 120 empleados** y **€9m de inversión**.  \n  **Fuente**: *Expansión* (2025-05-15).\n- **Relevancia para riesgo**:\n  - **Riesgo de ejecución / ramp-up**: puesta en marcha industrial (calidad, scrap, OEE, homologaciones) y curva de aprendizaje en una nueva localización.\n  - **Riesgo de costes**: desviaciones de CAPEX/OPEX, presión salarial local, costes energéticos y de logística intraeuropea.\n  - **Riesgo laboral y regulatorio**: cumplimiento normativo local (laboral, medioambiental, permisos) y potenciales fricciones sindicales/rotación.\n  - **Riesgo de cadena de suministro**: necesidad de desarrollar base de proveedores loca"
+      }
+    ]
+  },
+  "modelo_financiero": {
+    "indicadores_clave": [],
+    "tendencias_estructurales": [
+      "Empresa industrial española (CNAE 2562: tratamiento y revestimiento de metales) con base operativa en Zaragoza y una plantilla declarada de 310 empleados.",
+      "Estructura accionarial concentrada: un socio persona física con 65% (Roberto Acme Jiménez) y un socio corporativo extranjero con 35% (Acme Europe Holding GmbH, Alemania).",
+      "Gobierno y control alineados con la propiedad: el socio mayoritario actúa como Consejero Delegado y existe representación del socio alemán en el consejo.",
+      "Existe disponibilidad documental de estados financieros anuales 2022–2024, pero no se han aportado aún cifras en el extracto recibido."
+    ],
+    "interpretacion": "Con la información disponible solo puede describirse el perfil corporativo y de control, pero no es posible evaluar desempeño, solvencia, liquidez ni necesidades de financiación al no incluirse magnitudes financieras. Para una lectura financiera y de riesgo se requieren, como mínimo, ventas, EBITDA/resultado, deuda financiera, caja, capital circulante y detalle de garantías/contingencias a partir de los balances 2022–2024 (y, si aplica, cuentas de PyG y memoria).",
+    "periodos": [],
+    "resumen": "",
+    "audit_flags": []
+  },
+  "valuation_output": {
+    "ratios": {
+      "ratios_por_periodo": [],
+      "variacion": {}
+    },
+    "interpretacion": "No es posible calcular Debt/EBITDA, liquidez corriente ni cobertura de intereses porque el modelo financiero no incluye periodos ni magnitudes (deuda financiera, EBITDA, activo/pasivo corriente, gastos financieros). Desde el punto de vista bancario, el comportamiento es positivo: 0 impagos, operaciones vigentes al corriente y relación activa con productos de circulante, CAPEX y confirming; las incidencias registradas son menores y ya subsanadas. El rating interno A- y la continuidad de financiación sugieren un perfil de riesgo actualmente contenido, pero la ausencia de cifras impide validar si el apalancamiento y la capacidad de servicio de deuda son consistentes con el nivel de endeudamiento activo (préstamo corporativo y línea de circulante).",
+    "conclusions": {
+      "credit_view": "Perfil bancario favorable (sin impagos, operaciones al corriente, rating A-), pero la evaluación cuantitativa de solvencia y liquidez queda indeterminada por falta de estados financieros con cifras 2022–2024.",
+      "data_requests_priority": [
+        "Estados financieros 2022–2024 con cifras (balance y PyG) y desglose de deuda financiera (corto/largo), caja y gastos financieros para calcular Debt/EBITDA y cobertura",
+        "Detalle de activo y pasivo corriente (incl. clientes, existencias, proveedores) y calendario de vencimientos de deuda/confirming para evaluar liquidez y refinanciación (especialmente de cara a 2027)"
+      ]
+    }
+  },
+  "market_research_output": "## Señales externas relevantes para el análisis de riesgo — Acme Componentes SL (resumen)\n\n### 1) Expansión internacional y riesgo operativo (planta en Polonia)\n- **Señal**: Inauguración de la **primera planta de producción en Polonia (Wroclaw)**, con **capacidad para 120 empleados** y **€9m de inversión**.  \n  **Fuente**: *Expansión* (2025-05-15).\n- **Relevancia para riesgo**:\n  - **Riesgo de ejecución / ramp-up**: puesta en marcha industrial (calidad, scrap, OEE, homologaciones) y curva de aprendizaje en una nueva localización.\n  - **Riesgo de costes**: desviaciones de CAPEX/OPEX, presión salarial local, costes energéticos y de logística intraeuropea.\n  - **Riesgo laboral y regulatorio**: cumplimiento normativo local (laboral, medioambiental, permisos) y potenciales fricciones sindicales/rotación.\n  - **Riesgo de cadena de suministro**: necesidad de desarrollar base de proveedores local y asegurar continuidad de materiales.\n  - **Riesgo financiero**: mayor **apalancamiento operativo** (costes fijos) y posible tensión de liquidez si el ramp-up se retrasa.\n\n### 2) Concentración de clientes y dependencia del ciclo automoción (contratos en Alemania)\n- **Señal**: Renovación y ampliación de contratos con **dos fabricantes alemanes de primer nivel**, asegurando **>€15m de ingresos hasta 2027**.  \n  **Fuente**: *El Economista* (2025-12-01).\n- **Relevancia para riesgo**:\n  - **Riesgo de concentración**: mayor dependencia de un número reducido de OEMs/Tier-1 alemanes; impacto elevado ante recortes de producción, cambios de plataforma o pérdida de adjudicaciones.\n  - **Riesgo contractual**: exposición a cláusulas típicas del sector (presión de precios, revisiones anuales, penalizaciones por calidad/entrega, “take-or-pay” limitado).\n  - **Riesgo sectorial**: sensibilidad al **ciclo de automoción europea** (demanda, inventarios, transición a EV, paradas de planta).\n  - **Riesgo de contraparte**: aunque sean clientes “de primer nivel”, existe riesgo de **renegociación** por presión de costes en la cadena o cambios en mix de modelos.\n\n### 3) Riesgo geopolítico/regional y de continuidad de negocio (exposición Europa Central)\n- **Señal (derivada)**: La nueva huella industrial en Polonia incrementa exposición a **riesgos regionales** (energía, logística, entorno regulatorio) y a la **continuidad operativa** en Europa Central.  \n  **Fuentes**: *Expansión* (2025-05-15) + implicaciones de localización.\n- **Relevancia para riesgo**:\n  - **Riesgo de interrupción** (energía, transporte, proveedores) y necesidad de planes de contingencia multi-planta.\n  - **Riesgo FX**: si parte de costes/contratos se denominan en PLN vs. EUR (no confirmado en las señales disponibles).\n\n---\n\n### Observaciones para el analista (qué vigilar a partir de estas señales)\n- Evidencia de **ramp-up**: hitos de producción, tasas de rechazo, certificaciones, cumplimiento OTIF.\n- **Estructura de contratos** con OEMs alemanes: duración real, indexación, pass-through de materias primas/energía, penalizaciones.\n- **Mix de clientes** post-expansión: si la planta en Polonia implica **mayor concentración** o diversificación.\n- Indicadores adelantados del sector: producción auto Alemania/UE, anuncios de recortes de plataformas, presión de precios a proveedores.\n\n> Nota: el resumen se basa únicamente en las señales/noticias proporcionadas (Expansión 2025-05-15; El Economista 2025-12-01). No se han incluido otras fuentes externas adicionales.",
+  "historial": {
+    "operaciones_anteriores": 5,
+    "incidencias": [
+      "Discrepancia documental puntual en poderes de firma (subsanada en 2023)",
+      "Entrega tardia de cuentas auditadas 2022 (10 dias de retraso)"
+    ],
+    "impagos": 0,
+    "productos_contratados": [
+      "Linea de circulante 2022",
+      "Prestamo CAPEX para automatizacion de planta",
+      "Leasing industrial",
+      "Cobertura de tipo de interes",
+      "Confirming proveedores"
+    ],
+    "operaciones_detalle": [
+      {
+        "fecha": "2022-04-15",
+        "tipo": "linea_circulante",
+        "importe": 2500000,
+        "estado": "cancelada_ok"
+      },
+      {
+        "fecha": "2023-02-10",
+        "tipo": "prestamo_capex",
+        "importe": 3200000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2023-10-03",
+        "tipo": "leasing_maquinaria",
+        "importe": 1400000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-03-21",
+        "tipo": "confirming",
+        "importe": 900000,
+        "estado": "vigente_al_corriente"
+      },
+      {
+        "fecha": "2024-11-12",
+        "tipo": "cobertura_tipos",
+        "importe": 12000000,
+        "estado": "vigente"
+      }
+    ],
+    "resumen_historial": "Cliente con relacion operativa activa desde 2022, sin impagos, con incidencias documentales menores ya regularizadas.",
+    "cliente_desde": "2021-03-15",
+    "rating_interno": "A-",
+    "segmento": "Corporate Industrial",
+    "gestor": "Equipo Levante",
+    "operaciones_activas": [
+      {
+        "tipo": "Prestamo corporativo",
+        "importe_EUR": 5200000,
+        "cuota_mensual_EUR": 88000,
+        "fecha_inicio": "2024-03-01",
+        "vencimiento": "2029-03-01",
+        "al_corriente": true
+      },
+      {
+        "tipo": "Linea de circulante",
+        "limite_EUR": 2500000,
+        "dispuesto_EUR": 1300000,
+        "fecha_inicio": "2025-01-10",
+        "vencimiento": "2026-12-31",
+        "al_corriente": true
+      }
+    ],
+    "notas_gestor": "Cliente con actividad internacional creciente y necesidad de optimizar estructura de deuda en 2027."
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_kyc_screener",
+      "id": "AGT-KYC-001",
+      "agente": "KYC Screener Agent",
+      "resultado": "OK",
+      "descripcion": "Extraccion documental, reglas KYC y screening ejecutados.",
+      "fuente": "Fuentes internas + screening local/operativo",
+      "fecha_extraccion": "2026-06-29T10:25:10+00:00",
+      "trazabilidad": "1_kyc_screener/output.json",
+      "nota": "Documentos procesados: 4; reglas evaluadas: 10; sujetos screeneados: 0."
+    },
+    {
+      "tipo": "agente_model_builder",
+      "id": "AGT-KYC-002",
+      "agente": "Model Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Normalizacion financiera multi-periodo y deteccion de audit flags.",
+      "fuente": "Datos financieros extraidos del expediente",
+      "fecha_extraccion": "2026-06-29T10:25:14+00:00",
+      "trazabilidad": "2_model_builder/output.json",
+      "nota": "Periodos normalizados: 0; audit_flags: 0."
+    },
+    {
+      "tipo": "agente_market_researcher",
+      "id": "AGT-KYC-003",
+      "agente": "Market Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Recopilacion y sintesis de señales externas reputacionales y legales.",
+      "fuente": "fuentes_externas.json / agregador configurado",
+      "fecha_extraccion": "2026-06-29T10:25:26+00:00",
+      "trazabilidad": "4_market_researcher/output.txt",
+      "nota": "Hallazgos externos sujetos a verificacion manual de Cumplimiento y Riesgos.",
+      "contenido_referencia": "## Señales externas relevantes para el análisis de riesgo — Acme Componentes SL (resumen)\n\n### 1) Expansión internacional y riesgo operativo (planta en Polonia)\n- **Señal**: Inauguración de la **primera planta de producción en Polonia (Wroclaw)**, con **capacidad para 120 empleados** y **€9m de inversión**.  \n  **Fuente**: *Expansión* (2025-05-15).\n- **Relevancia para riesgo**:\n  - **Riesgo de ejecución / ramp-up**: puesta en marcha industrial (calidad, scrap, OEE, homologaciones) y curva de aprendizaje en una nueva localización.\n  - **Riesgo de costes**: desviaciones de CAPEX/OPEX, presión salarial local, costes energéticos y de logística intraeuropea.\n  - **Riesgo laboral y regulatorio**: cumplimiento normativo local (laboral, medioambiental, permisos) y potenciales fricciones sindicales/rotación.\n  - **Riesgo de cadena de suministro**: necesidad de desarrollar base de proveedores loca"
+    },
+    {
+      "tipo": "agente_valuation_reviewer",
+      "id": "AGT-KYC-004",
+      "agente": "Valuation Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Calculo de ratios y analisis de riesgo cruzado con historial del cliente.",
+      "fuente": "Modelo financiero normalizado + historial interno",
+      "fecha_extraccion": "2026-06-29T10:25:31+00:00",
+      "trazabilidad": "3_valuation_reviewer/output.json",
+      "nota": "Ratios calculados para 0 periodos; historial disponible: si."
+    },
+    {
+      "tipo": "agente_credit_risk_report",
+      "id": "AGT-KYC-005",
+      "agente": "Credit Risk Report Agent",
+      "resultado": "OK",
+      "descripcion": "Sintesis integral para comite de riesgos con recomendaciones operativas.",
+      "fuente": "Outputs de KYC Screener, Model Builder, Market Researcher y Valuation Reviewer",
+      "fecha_extraccion": "2026-06-29T10:26:09+00:00",
+      "trazabilidad": "informe.md",
+      "nota": "La decision final de riesgo corresponde al analista y al comite.",
+      "contenido_referencia": "## 1) Resumen ejecutivo\n\nAcme Componentes SL presenta un **perfil bancario históricamente favorable** (operaciones al corriente, **0 impagos** y **rating interno A-**), pero la **evaluación cuantitativa de solvencia, liquidez y capacidad de repago** queda **no validada** por ausencia de magnitudes financieras en el modelo consolidado (ratios no calculables). En KYC existen **alertas relevantes**: **screening PEP/sanciones NO CONCLUYENTE** por falta de ejecución/documentación, **falta de cadena de titularidad** del socio corporativo (35%) y **ausencia de IDs** de administradores/UBO persona física. A nivel de negocio, las señales externas apuntan a **crecimiento y mayor complejidad operativa** por apertura de planta en Polonia (inversión ~€9m) y **potencial concentración** por contratos con OEMs alemanes hasta 2027 (>€15m). Recomendación técnica: **ESCALAR** para cierre KYC/screening y co"
+    }
+  ]
+}

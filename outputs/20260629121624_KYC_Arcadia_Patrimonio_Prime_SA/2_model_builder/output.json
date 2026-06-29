@@ -1,0 +1,12 @@
+{
+  "indicadores_clave": [],
+  "tendencias_estructurales": [
+    "La entidad opera como gestora de activos inmobiliarios terciarios en reposicionamiento, lo que sugiere un perfil de negocio ligado a ciclos inmobiliarios y a la ejecución de planes de mejora/ocupación.",
+    "La plantilla declarada es de 63 empleados, lo que apunta a una estructura operativa de tamaño medio para una plataforma de gestión inmobiliaria.",
+    "No constan alertas internas KYC registradas, pero faltan datos críticos de identificación (NIF/CIF, jurisdicción, domicilio, fecha de constitución) y de titularidad real/control."
+  ],
+  "interpretacion": "Con la información disponible no es posible evaluar la situación financiera (no hay estados financieros, métricas de rentabilidad, apalancamiento ni liquidez). El perfil de actividad (reposicionamiento de activos terciarios) suele implicar necesidades de financiación variables por proyecto (capex, circulante y/o deuda puente) y sensibilidad a ocupación y tipos de interés. Para concluir sobre necesidades de financiación y riesgo, se requiere al menos: estructura accionarial/UBO y administradores, identificación registral completa, cartera de activos bajo gestión (AUM, ocupación, yields), y estados financieros recientes (PyG/Balance/CF) junto con detalle de deuda y vencimientos.",
+  "periodos": [],
+  "resumen": "",
+  "audit_flags": []
+}

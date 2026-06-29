@@ -3345,7 +3345,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "IberMold Precision SA": {
-      "cliente_desde": "20110-04-15",
+      "cliente_desde": "2011-04-15",
       "rating_interno": "A",
       "impagos": 1,
       "segmento": "Corporate Industrial",
@@ -3371,7 +3371,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "Tecnologia Holdings SL": {
-      "cliente_desde": "20111-05-15",
+      "cliente_desde": "2011-05-15",
       "rating_interno": "A-",
       "impagos": 0,
       "segmento": "Corporate Tecnologia",
@@ -3397,7 +3397,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "DataNexa Cloud Systems SL": {
-      "cliente_desde": "20112-06-15",
+      "cliente_desde": "2011-06-15",
       "rating_interno": "BBB+",
       "impagos": 0,
       "segmento": "Corporate Tecnologia",
@@ -3501,7 +3501,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "Arcadia Patrimonio Prime SA": {
-      "cliente_desde": "20110-02-15",
+      "cliente_desde": "2011-02-15",
       "rating_interno": "BBB+",
       "impagos": 1,
       "segmento": "Corporate Inmobiliario",
@@ -3527,7 +3527,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "Retail y Distribucion Holdings SL": {
-      "cliente_desde": "20111-03-15",
+      "cliente_desde": "2011-03-15",
       "rating_interno": "BBB",
       "impagos": 0,
       "segmento": "Corporate Retail y Distribucion",
@@ -3553,7 +3553,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "FreshRoute Distribucion SA": {
-      "cliente_desde": "20112-04-15",
+      "cliente_desde": "2011-04-15",
       "rating_interno": "A",
       "impagos": 0,
       "segmento": "Corporate Retail y Distribucion",
@@ -3657,7 +3657,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "UrbanBuild Rehabilitacion SL": {
-      "cliente_desde": "20110-08-15",
+      "cliente_desde": "2011-08-15",
       "rating_interno": "A",
       "impagos": 1,
       "segmento": "Corporate Construccion",
@@ -3683,7 +3683,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "Energia Holdings SL": {
-      "cliente_desde": "20111-01-15",
+      "cliente_desde": "2011-01-15",
       "rating_interno": "A-",
       "impagos": 0,
       "segmento": "Corporate Energia",
@@ -3709,7 +3709,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "SolarGrid Iberia Partners SL": {
-      "cliente_desde": "20112-02-15",
+      "cliente_desde": "2011-02-15",
       "rating_interno": "BBB+",
       "impagos": 0,
       "segmento": "Corporate Energia",
@@ -3787,7 +3787,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "IberPharma Specialty SL": {
-      "cliente_desde": "20110-06-15",
+      "cliente_desde": "2011-06-15",
       "rating_interno": "BBB+",
       "impagos": 1,
       "segmento": "Corporate Salud y Farmacia",
@@ -3813,7 +3813,7 @@
       "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
     },
     "AgroVal Export Partners SL": {
-      "cliente_desde": "20112-08-15",
+      "cliente_desde": "2011-08-15",
       "rating_interno": "A",
       "impagos": 0,
       "segmento": "Corporate Agroindustria",

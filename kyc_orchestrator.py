@@ -431,6 +431,129 @@ def _write_text(path: Path, text: str) -> None:
         f.write(text)
 
 
+
+
+def _extract_periodos_from_raw(raw_extracted: dict | list) -> list[dict]:
+    """
+    Extrae periodos financieros directamente del raw_extracted_entities
+    sin pasar por el LLM, como fallback cuando el Model Builder devuelve
+    periodos vacíos.
+
+    Cubre todos los formatos conocidos de output del KYC Screener Agent.
+    """
+    periodos = []
+
+    def _v(obj):
+        """Extrae número de {"value": X} o devuelve el número directamente."""
+        if isinstance(obj, (int, float)):
+            return obj
+        if isinstance(obj, dict):
+            return obj.get("value") or obj.get("valor")
+        return None
+
+    def _parse_years(years_list):
+        for y in years_list:
+            if not isinstance(y, dict):
+                continue
+            periodo = str(
+                y.get("fiscal_year") or y.get("period_year")
+                or y.get("year") or y.get("period") or ""
+            )
+            if not periodo:
+                continue
+            inc = y.get("income_statement") or {}
+            bal = (y.get("balance_sheet_selected") or y.get("balance_sheet")
+                   or y.get("balance") or {})
+            periodos.append({
+                "periodo":            periodo,
+                "ebitda":             _v(inc.get("ebitda")),
+                "deuda_financiera":   _v(bal.get("net_financial_debt")),
+                "activo_corriente":   _v(bal.get("current_assets")),
+                "pasivo_corriente":   _v(bal.get("current_liabilities")),
+                "gastos_financieros": _v(inc.get("financial_expenses")),
+            })
+
+    if isinstance(raw_extracted, dict):
+        # Formato A: financials[] directamente
+        financials = raw_extracted.get("financials") or []
+        if financials and isinstance(financials, list):
+            for f in financials:
+                if not isinstance(f, dict):
+                    continue
+                yr = f.get("year") or f.get("fiscal_year") or f.get("periodo") or ""
+                periodos.append({
+                    "periodo":            str(yr),
+                    "ebitda":             _v(f.get("ebitda_eur") or f.get("ebitda")),
+                    "deuda_financiera":   _v(f.get("net_financial_debt_eur") or f.get("deuda_financiera")),
+                    "activo_corriente":   _v(f.get("current_assets_eur") or f.get("activo_corriente")),
+                    "pasivo_corriente":   _v(f.get("current_liabilities_eur") or f.get("pasivo_corriente")),
+                    "gastos_financieros": _v(f.get("financial_expenses_eur") or f.get("gastos_financieros")),
+                })
+
+        # Formato B: financials_normalized.statements o .years
+        if not periodos:
+            fn = raw_extracted.get("financials_normalized") or {}
+            if isinstance(fn, dict):
+                _parse_years(fn.get("statements") or fn.get("years") or [])
+
+        # Formato C: normalized_kyc_profile.financials_normalized.years
+        if not periodos:
+            profile = raw_extracted.get("normalized_kyc_profile") or {}
+            fn2 = profile.get("financials_normalized") or {} if isinstance(profile, dict) else {}
+            _parse_years(fn2.get("years") or [] if isinstance(fn2, dict) else [])
+
+        # Formato D: normalized_financials.periods
+        if not periodos:
+            nf = raw_extracted.get("normalized_financials") or {}
+            if isinstance(nf, dict):
+                _parse_years(nf.get("periods") or nf.get("statements") or [])
+
+    return periodos
+
+
+def _load_periodos_from_bbdd(entity_name: str) -> list[dict]:
+    """
+    Fallback de último recurso: lee los balances directamente del bbdd.json
+    cuando el Model Builder Agent no logra extraer periodos financieros.
+    Los datos de bbdd.json son la fuente canónica y siempre están estructurados.
+    """
+    bbdd_path = DATA_DIR / "bbdd.json"
+    if not bbdd_path.exists():
+        return []
+    try:
+        with open(bbdd_path, encoding="utf-8-sig") as f:
+            bbdd = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return []
+
+    # Búsqueda exacta primero, luego normalizada
+    empresas_kyc = bbdd.get("empresas_kyc", {}) or {}
+    empresa_data = empresas_kyc.get(entity_name)
+    if not empresa_data:
+        needle = _normalize_name(entity_name)
+        for key, val in empresas_kyc.items():
+            if _normalize_name(key) == needle:
+                empresa_data = val
+                break
+
+    if not empresa_data:
+        return []
+
+    balances = empresa_data.get("balances") or []
+    periodos = []
+    for b in balances:
+        if not isinstance(b, dict):
+            continue
+        periodos.append({
+            "periodo":            str(b.get("periodo", "")),
+            "ebitda":             b.get("ebitda"),
+            "deuda_financiera":   b.get("deuda_financiera"),
+            "activo_corriente":   b.get("activo_corriente"),
+            "pasivo_corriente":   b.get("pasivo_corriente"),
+            "gastos_financieros": b.get("gastos_financieros"),
+        })
+    return periodos
+
 def run_multiagent_pipeline(
     entity_name: str,
     documents: list[dict],
@@ -491,6 +614,22 @@ def run_multiagent_pipeline(
     _notify("model_builder", "started")
     modelo_financiero = run_model_builder_agent(_raw_extracted_entities or kyc_output.get("extracted_entities") or [])
     modelo_financiero = normalize_modelo_financiero(modelo_financiero)
+    # Fallback 1: si el LLM no extrajo periodos, extraerlos del raw
+    if not modelo_financiero.get("periodos") and _raw_extracted_entities:
+        periodos_directos = _extract_periodos_from_raw(_raw_extracted_entities)
+        if periodos_directos:
+            modelo_financiero["periodos"] = periodos_directos
+            logger.info("[Model Builder] periodos extraídos del raw: %d periodos", len(periodos_directos))
+    # Fallback 2 (último recurso): leer balances directamente del bbdd.json
+    if not modelo_financiero.get("periodos"):
+        periodos_bbdd = _load_periodos_from_bbdd(entity_name)
+        if periodos_bbdd:
+            modelo_financiero["periodos"] = periodos_bbdd
+            modelo_financiero["resumen"] = (
+                modelo_financiero.get("resumen") or
+                "Datos financieros cargados directamente desde base de datos interna."
+            )
+            logger.info("[Model Builder] periodos cargados de bbdd.json: %d periodos", len(periodos_bbdd))
     _write_json(run_dir / "2_model_builder" / "output.json", modelo_financiero)
     evidencias_agentes.append({
         "tipo": "agente_model_builder",

@@ -1,0 +1,206 @@
+{
+  "run_id": "20260629121624",
+  "entity_name": "Arcadia Patrimonio Prime SA",
+  "use_case": "kyc",
+  "kyc_output": {
+    "extracted_entities": [
+      {
+        "tipo_documento": "Escritura / Ficha registral",
+        "entidad": {
+          "nombre_legal": "Arcadia Patrimonio Prime SA"
+        },
+        "observaciones": "escritura_constitucion.txt"
+      }
+    ],
+    "kyc_results": [
+      {
+        "rule_id": "R-ENT-01",
+        "name": "Identificación completa de la entidad: nombre legal, forma jurídica, NIF/CIF, domicilio social y fecha de constitución.",
+        "status": "FAIL",
+        "evidence": "escritura_constitucion.txt: Nombre legal 'Arcadia Patrimonio Prime SA' consta; NIF/CIF, forma jurídica, domicilio social y fecha de constitución figuran como 'No consta'."
+      },
+      {
+        "rule_id": "R-OWN-01",
+        "name": "Titulares reales (UBO) declarados con % de participación y base de control.",
+        "status": "FAIL",
+        "evidence": "escritura_constitucion.txt: apartado 'TITULARES REALES (UBO): No consta'."
+      },
+      {
+        "rule_id": "R-OWN-02",
+        "name": "Para UBO corporativo: cadena de titularidad hasta persona física final.",
+        "status": "FAIL",
+        "evidence": "escritura_constitucion.txt: no se declaran UBOs; no es posible verificar cadena de titularidad."
+      },
+      {
+        "rule_id": "R-CTRL-01",
+        "name": "Administradores/controladores identificados con nombre y cargo.",
+        "status": "FAIL",
+        "evidence": "escritura_constitucion.txt: apartado 'ADMINISTRADORES: No consta'."
+      },
+      {
+        "rule_id": "R-ID-01",
+        "name": "Documentos de identidad vigentes de administradores y UBOs personas físicas.",
+        "status": "FAIL",
+        "evidence": "Expediente solo contiene escritura_constitucion.txt y no incluye IDs de administradores ni UBOs; además no constan administradores/UBOs."
+      },
+      {
+        "rule_id": "R-ADDR-01",
+        "name": "Prueba de domicilio social (registro mercantil o recibo ≤ 3 meses).",
+        "status": "FAIL",
+        "evidence": "escritura_constitucion.txt: 'Domicilio social: No consta' y no se aporta documento de prueba de domicilio."
+      },
+      {
+        "rule_id": "R-TAX-01",
+        "name": "Formularios fiscales aplicables (CRS/FATCA; W-8/W-9 si aplica).",
+        "status": "FAIL",
+        "evidence": "No se aportan formularios fiscales en el expediente (solo escritura_constitucion.txt)."
+      },
+      {
+        "rule_id": "R-SOF-01",
+        "name": "Fuente de fondos/riqueza documentada y coherente con la actividad.",
+        "status": "FAIL",
+        "evidence": "escritura_constitucion.txt: no incluye declaración ni documentación de fuente de fondos/riqueza; solo observaciones internas sobre refinanciación/estructuración de deuda."
+      },
+      {
+        "rule_id": "R-FIN-01",
+        "name": "Información financiera reciente disponible (últimos estados financieros).",
+        "status": "FAIL",
+        "evidence": "No se aportan estados financieros ni cuentas anuales en el expediente (solo escritura_constitucion.txt)."
+      },
+      {
+        "rule_id": "R-PEP-01",
+        "name": "Declaración PEP y screening PEP/sanciones para entidad, UBOs y admins.",
+        "status": "WARN",
+        "evidence": "escritura_constitucion.txt: no consta declaración PEP/sanciones; no hay UBOs ni administradores identificados para screening. Sin alertas internas registradas en BBDD del banco."
+      }
+    ],
+    "screening_results": [],
+    "screening_resumen": "Screening sin entidades para revisar.",
+    "screening_conclusion": "NO_CONCLUYENTE",
+    "evidencias": [
+      {
+        "tipo": "fuente_externa_noticias",
+        "id": "MKT-001",
+        "resultado": "OK",
+        "descripcion": "Registro de señales externas para riesgo reputacional/legal.",
+        "fuente": "Busqueda externa (local_db/fuentes_externas.json o fuente configurada)",
+        "fecha_extraccion": "2026-06-29T10:17:05+00:00",
+        "trazabilidad": "Market Researcher Agent -> entidad=Arcadia Patrimonio Prime SA",
+        "nota": "La decision final requiere validacion manual de Cumplimiento y Riesgos.",
+        "contenido_referencia": "## Resumen (markdown) — Señales externas relevantes para análisis de riesgo  \n**Empresa:** Arcadia Patrimonio Prime SA  \n**Partes vinculadas:** No identificadas  \n**Cobertura en base de datos interna (noticias/señales):** *Sin resultados específicos*  \n\n### 1) Señales externas a priorizar (dado que no hay noticias internas)\nAl no contar con señales internas, el análisis de riesgo debería apoyarse en un “barrido” de fuentes externas para identificar **eventos adversos, cambios de control, deterioro financiero, litigios, sanciones o alertas reputacionales**. Las categorías más relevantes:\n\n#### A. Registro mercantil / información corporativa\n- **Cambios recientes** en: administradores, apoderados, domicilio, objeto social, denominación, capital social, estatutos.  \n- **Reestructuraciones**: fusiones, escisiones, transformaciones, ampliaciones/reducciones de capital.  \n- **Señales de estrés"
+      }
+    ]
+  },
+  "modelo_financiero": {
+    "indicadores_clave": [],
+    "tendencias_estructurales": [
+      "La entidad opera como gestora de activos inmobiliarios terciarios en reposicionamiento, lo que sugiere un perfil de negocio ligado a ciclos inmobiliarios y a la ejecución de planes de mejora/ocupación.",
+      "La plantilla declarada es de 63 empleados, lo que apunta a una estructura operativa de tamaño medio para una plataforma de gestión inmobiliaria.",
+      "No constan alertas internas KYC registradas, pero faltan datos críticos de identificación (NIF/CIF, jurisdicción, domicilio, fecha de constitución) y de titularidad real/control."
+    ],
+    "interpretacion": "Con la información disponible no es posible evaluar la situación financiera (no hay estados financieros, métricas de rentabilidad, apalancamiento ni liquidez). El perfil de actividad (reposicionamiento de activos terciarios) suele implicar necesidades de financiación variables por proyecto (capex, circulante y/o deuda puente) y sensibilidad a ocupación y tipos de interés. Para concluir sobre necesidades de financiación y riesgo, se requiere al menos: estructura accionarial/UBO y administradores, identificación registral completa, cartera de activos bajo gestión (AUM, ocupación, yields), y estados financieros recientes (PyG/Balance/CF) junto con detalle de deuda y vencimientos.",
+    "periodos": [],
+    "resumen": "",
+    "audit_flags": []
+  },
+  "valuation_output": {
+    "ratios": {
+      "ratios_por_periodo": [],
+      "variacion": {}
+    },
+    "interpretacion": "No es posible calcular ratios financieros (Debt/EBITDA, liquidez corriente y cobertura de intereses) porque el modelo no incluye periodos ni estados financieros. Desde el punto de vista bancario, el cliente tiene relación desde 2011, rating interno BBB+ y actualmente mantiene un préstamo corporativo (5,45m€) y una línea de circulante (límite 3,15m€, dispuesto 1,71m€), ambas al corriente, lo que sugiere capacidad operativa para atender servicio de deuda en el corto plazo. No obstante, existe 1 impago histórico y, dado el perfil inmobiliario (reposicionamiento de terciario) con sensibilidad a ocupación y tipos, el riesgo no puede validarse sin visibilidad de EBITDA, apalancamiento real, liquidez y calendario de vencimientos.",
+    "conclusions": {
+      "credit_view": "Perfil bancario actualmente estable (operaciones al corriente, rating BBB+), pero la ausencia total de estados financieros impide confirmar solvencia, apalancamiento y liquidez; riesgo de información elevado para una actividad cíclica inmobiliaria.",
+      "data_requests_priority": [
+        "Estados financieros completos por periodo (Balance, PyG y Cash Flow) de al menos los últimos 2-3 ejercicios y último cierre disponible, incluyendo detalle de EBITDA y gastos financieros.",
+        "Detalle de deuda financiera (por instrumento): saldos, tipos, covenants, garantías, calendario de amortización/vencimientos y conciliación con las operaciones bancarias activas."
+      ]
+    }
+  },
+  "market_research_output": "## Resumen (markdown) — Señales externas relevantes para análisis de riesgo  \n**Empresa:** Arcadia Patrimonio Prime SA  \n**Partes vinculadas:** No identificadas  \n**Cobertura en base de datos interna (noticias/señales):** *Sin resultados específicos*  \n\n### 1) Señales externas a priorizar (dado que no hay noticias internas)\nAl no contar con señales internas, el análisis de riesgo debería apoyarse en un “barrido” de fuentes externas para identificar **eventos adversos, cambios de control, deterioro financiero, litigios, sanciones o alertas reputacionales**. Las categorías más relevantes:\n\n#### A. Registro mercantil / información corporativa\n- **Cambios recientes** en: administradores, apoderados, domicilio, objeto social, denominación, capital social, estatutos.  \n- **Reestructuraciones**: fusiones, escisiones, transformaciones, ampliaciones/reducciones de capital.  \n- **Señales de estrés**: nombramiento de auditor a instancia de parte, depósitos de cuentas atrasados, cierres registrales, revocaciones de poderes.  \n**Riesgo que cubre:** gobierno corporativo, continuidad operativa, opacidad, riesgo de fraude.\n\n#### B. Estados financieros y auditoría (si hay depósito/filing público)\n- **Retrasos** en presentación/deposito de cuentas.  \n- **Opinión del auditor**: salvedades, énfasis de materia, incertidumbre por empresa en funcionamiento (going concern).  \n- **Deterioro**: caída de ingresos, márgenes negativos persistentes, aumento de deuda de corto plazo, tensiones de liquidez.  \n**Riesgo que cubre:** solvencia, liquidez, calidad de información financiera.\n\n#### C. Procedimientos concursales / insolvencia\n- Búsqueda de: **preconcurso**, concurso, acuerdos de refinanciación homologados, ejecuciones relevantes.  \n**Riesgo que cubre:** probabilidad de impago, continuidad del negocio.\n\n#### D. Litigios y reclamaciones públicas\n- Demandas civiles/mercantiles, conflictos societarios, reclamaciones de acreedores, disputas contractuales relevantes.  \n- Señales indirectas: múltiples procedimientos, embargos, ejecuciones.  \n**Riesgo que cubre:** contingencias legales, drenaje de caja, riesgo reputacional.\n\n#### E. Sanciones, regulatorio y compliance\n- **Listas de sanciones** (UE/OFAC/UK), PEPs, listas de vigilancia.  \n- **Sanciones administrativas** (según jurisdicción/sector): consumo, competencia, protección de datos, mercado de valores, prevención de blanqueo (si aplica).  \n**Riesgo que cubre:** riesgo legal/regulatorio, bloqueo de operaciones, riesgo AML.\n\n#### F. Reputación y medios abiertos\n- Prensa generalista y económica, boletines oficiales, blogs sectoriales.  \n- Señales: acusaciones de fraude, quejas recurrentes, investigaciones periodísticas, vínculos con casos previos.  \n**Riesgo que cubre:** riesgo reputacional, riesgo comercial (pérdida de clientes/financiación).\n\n#### G. Señales de mercado / actividad comercial (si aplica)\n- Cambios abruptos en presencia digital, cierres de oficinas, rotación alta de personal (p.ej., LinkedIn), caída de actividad.  \n- Incidencias con proveedores/clientes (impagos reportados, cambios de condiciones).  \n**Riesgo que cubre:** deterioro operativo, riesgo de continuidad.\n\n---\n\n### 2) Señales “red flags” (criterios prácticos)\nMarcar como **alta prioridad** si se detecta cualquiera de las siguientes:\n- **Cuentas no depositadas** o retrasos recurrentes.\n- **Auditoría con salvedades** o mención de *going concern*.\n- **Cambios frecuentes** de administradores/apoderados o domicilio en periodos cortos.\n- **Embargos/ejecuciones** o procedimientos de insolvencia.\n- **Sanciones** o coincidencias en listas de vigilancia (incl. homónimos; requiere verificación).\n- **Litigios múltiples** o de cuantía material.\n\n---\n\n### 3) Limitaciones actuales / próximos pasos recomendados\n- **Limitación:** no hay señales/noticias internas disponibles para la empresa; este resumen define *qué* señales externas son relevantes, pero **no confirma** eventos específicos.  \n- **Siguiente paso (para completar el resumen con hechos):** confirmar **jurisdicción** (país/registro), **sector** y **NIF/ID** de Arcadia Patrimonio Prime SA para evitar homónimos y poder extraer:\n  1) ficha registral y cambios societarios,  \n  2) últimos estados financieros y auditoría,  \n  3) búsqueda de insolvencia/litigios,  \n  4) screening de sanciones y PEP.\n\nSi me indicas **país** y **identificador fiscal/registral**, puedo devolverte un resumen ya “cerrado” con señales externas concretas y fechadas (y separando hallazgos vs. no hallazgos).",
+  "historial": {
+    "cliente_desde": "2011-02-15",
+    "rating_interno": "BBB+",
+    "impagos": 1,
+    "segmento": "Corporate Inmobiliario",
+    "gestor": "Equipo Norte",
+    "operaciones_activas": [
+      {
+        "tipo": "Prestamo corporativo",
+        "importe_EUR": 5450000,
+        "cuota_mensual_EUR": 80000,
+        "fecha_inicio": "2024-03-01",
+        "vencimiento": "2029-03-01",
+        "al_corriente": true
+      },
+      {
+        "tipo": "Linea de circulante",
+        "limite_EUR": 3150000,
+        "dispuesto_EUR": 1710000,
+        "fecha_inicio": "2025-01-10",
+        "vencimiento": "2026-12-31",
+        "al_corriente": true
+      }
+    ],
+    "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+  },
+  "evidencias_agentes": [
+    {
+      "tipo": "agente_kyc_screener",
+      "id": "AGT-KYC-001",
+      "agente": "KYC Screener Agent",
+      "resultado": "OK",
+      "descripcion": "Extraccion documental, reglas KYC y screening ejecutados.",
+      "fuente": "Fuentes internas + screening local/operativo",
+      "fecha_extraccion": "2026-06-29T10:16:43+00:00",
+      "trazabilidad": "1_kyc_screener/output.json",
+      "nota": "Documentos procesados: 1; reglas evaluadas: 10; sujetos screeneados: 0."
+    },
+    {
+      "tipo": "agente_model_builder",
+      "id": "AGT-KYC-002",
+      "agente": "Model Builder Agent",
+      "resultado": "OK",
+      "descripcion": "Normalizacion financiera multi-periodo y deteccion de audit flags.",
+      "fuente": "Datos financieros extraidos del expediente",
+      "fecha_extraccion": "2026-06-29T10:16:48+00:00",
+      "trazabilidad": "2_model_builder/output.json",
+      "nota": "Periodos normalizados: 0; audit_flags: 0."
+    },
+    {
+      "tipo": "agente_market_researcher",
+      "id": "AGT-KYC-003",
+      "agente": "Market Researcher Agent",
+      "resultado": "OK",
+      "descripcion": "Recopilacion y sintesis de señales externas reputacionales y legales.",
+      "fuente": "fuentes_externas.json / agregador configurado",
+      "fecha_extraccion": "2026-06-29T10:17:05+00:00",
+      "trazabilidad": "4_market_researcher/output.txt",
+      "nota": "Hallazgos externos sujetos a verificacion manual de Cumplimiento y Riesgos.",
+      "contenido_referencia": "## Resumen (markdown) — Señales externas relevantes para análisis de riesgo  \n**Empresa:** Arcadia Patrimonio Prime SA  \n**Partes vinculadas:** No identificadas  \n**Cobertura en base de datos interna (noticias/señales):** *Sin resultados específicos*  \n\n### 1) Señales externas a priorizar (dado que no hay noticias internas)\nAl no contar con señales internas, el análisis de riesgo debería apoyarse en un “barrido” de fuentes externas para identificar **eventos adversos, cambios de control, deterioro financiero, litigios, sanciones o alertas reputacionales**. Las categorías más relevantes:\n\n#### A. Registro mercantil / información corporativa\n- **Cambios recientes** en: administradores, apoderados, domicilio, objeto social, denominación, capital social, estatutos.  \n- **Reestructuraciones**: fusiones, escisiones, transformaciones, ampliaciones/reducciones de capital.  \n- **Señales de estrés"
+    },
+    {
+      "tipo": "agente_valuation_reviewer",
+      "id": "AGT-KYC-004",
+      "agente": "Valuation Reviewer Agent",
+      "resultado": "OK",
+      "descripcion": "Calculo de ratios y analisis de riesgo cruzado con historial del cliente.",
+      "fuente": "Modelo financiero normalizado + historial interno",
+      "fecha_extraccion": "2026-06-29T10:17:10+00:00",
+      "trazabilidad": "3_valuation_reviewer/output.json",
+      "nota": "Ratios calculados para 0 periodos; historial disponible: si."
+    },
+    {
+      "tipo": "agente_credit_risk_report",
+      "id": "AGT-KYC-005",
+      "agente": "Credit Risk Report Agent",
+      "resultado": "OK",
+      "descripcion": "Sintesis integral para comite de riesgos con recomendaciones operativas.",
+      "fuente": "Outputs de KYC Screener, Model Builder, Market Researcher y Valuation Reviewer",
+      "fecha_extraccion": "2026-06-29T10:17:47+00:00",
+      "trazabilidad": "informe.md",
+      "nota": "La decision final de riesgo corresponde al analista y al comite.",
+      "contenido_referencia": "## 1) Resumen ejecutivo\n\nArcadia Patrimonio Prime SA presenta un **riesgo de información/KYC elevado**: la documentación aportada (escritura) solo permite confirmar el **nombre legal**, pero **no** acredita **NIF/CIF, domicilio, fecha de constitución, administradores ni titulares reales (UBO)**, impidiendo completar el onboarding y el screening AML/PEP de forma concluyente (KYC Screener, *escritura_constitucion.txt*). En el plano crediticio, la relación bancaria histórica aporta señales de estabilidad operativa (**rating interno BBB+**, operaciones vigentes **al corriente**), pero **no existen estados financieros** para validar solvencia, apalancamiento, liquidez ni cobertura del servicio de deuda (Valuation Reviewer; Model Builder). No se identifican noticias/señales internas específicas en la base consultada; se recomienda un barrido externo una vez se disponga de identificadores para "
+    }
+  ]
+}

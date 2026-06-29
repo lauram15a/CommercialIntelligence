@@ -1,0 +1,29 @@
+## Señales externas relevantes para el análisis de riesgo — Acme Componentes SL (markdown)
+
+### 1) Expansión internacional y riesgo operativo (planta en Polonia)
+- **Señal**: Inauguración de la **primera planta de producción en Polonia (Wroclaw)**, con **capacidad para 120 empleados** e **inversión de 9M€**.  
+  **Fuente**: *Expansión* (2025-05-15)
+- **Relevancia para riesgo**:
+  - **Riesgo de ejecución / ramp-up**: puesta en marcha industrial (calidad, scrap, OEE, homologaciones) y curva de aprendizaje de plantilla.
+  - **Riesgo de capex y retorno**: presión sobre caja/endeudamiento si el ramp-up se retrasa o si la utilización de capacidad queda por debajo del plan.
+  - **Riesgo laboral y de costes**: disponibilidad de mano de obra, inflación salarial local, rotación.
+  - **Riesgo regulatorio y de cumplimiento**: licencias, normativa laboral/medioambiental y requisitos de seguridad industrial en nueva jurisdicción.
+  - **Riesgo de cadena de suministro**: reconfiguración logística y dependencia de proveedores locales/transportes transfronterizos.
+
+### 2) Concentración de clientes y dependencia del ciclo de automoción (contratos Alemania)
+- **Señal**: Renovación y ampliación de contratos con **dos fabricantes alemanes de primer nivel**, asegurando **ingresos >15M€ hasta 2027**.  
+  **Fuente**: *El Economista* (2025-12-01)
+- **Relevancia para riesgo**:
+  - **Riesgo de concentración**: mayor exposición a decisiones de compra, renegociaciones y performance scorecards de un número reducido de OEMs/Tier-1.
+  - **Riesgo de pricing y márgenes**: contratos en automoción suelen incluir presión de costes, cláusulas de productividad y revisiones de precio ligadas a materias primas/energía.
+  - **Riesgo de volumen/ciclo**: sensibilidad a la demanda de automoción alemana/europea (paradas de producción, cambios de mix, recesión).
+  - **Riesgo contractual**: posibles penalizaciones por calidad/entrega (PPM, OTIF), y riesgo de rescisión si no se cumplen KPIs.
+  - **Riesgo tecnológico/transition**: cambios de plataforma (ICE→EV), rediseños y sustitución de componentes que pueden afectar la continuidad del suministro.
+
+### 3) Lectura conjunta (“so what” para riesgo)
+- **Señal compuesta**: La expansión productiva en Polonia sugiere **apuesta por crecimiento y proximidad a clientes centroeuropeos**, mientras que la ampliación de contratos en Alemania indica **visibilidad de ingresos** a medio plazo.
+- **Implicación de riesgo**:
+  - **Mitigante**: mayor visibilidad comercial hasta 2027 puede **respaldar la utilización** de la nueva planta.
+  - **Riesgo clave**: si la planta se dimensiona para esos programas, aumenta la **dependencia de pocos contratos**; cualquier recorte de volúmenes o problema de calidad/entrega puede tener impacto desproporcionado.
+
+> Nota: Las señales anteriores se basan exclusivamente en las noticias internas proporcionadas (prensa). No se han identificado partes vinculadas adicionales en el input.

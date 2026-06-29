@@ -1,0 +1,35 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 2.1053,
+        "liquidez_corriente": 1.3194,
+        "cobertura_intereses": 8.4444
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 2.1429,
+        "liquidez_corriente": 1.3596,
+        "cobertura_intereses": 9.4231
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 2.069,
+        "liquidez_corriente": 1.4796,
+        "cobertura_intereses": 9.5082
+      }
+    ],
+    "variacion": {
+      "variacion_deuda_ebitda_pct": -1.73
+    }
+  },
+  "interpretacion": "El apalancamiento (Debt/EBITDA ~2,1x) se mantiene contenido y mejora ligeramente entre 2022 y 2024 pese al aumento nominal de deuda, apoyado por el crecimiento de EBITDA. La liquidez corriente mejora de 1,32x a 1,48x, sugiriendo mayor holgura de circulante, y la cobertura de intereses se mantiene alta (~8,4x–9,5x), indicando buena capacidad de servicio de deuda. El historial bancario es consistente con este perfil: 0 impagos, operaciones vigentes al corriente y rating interno A-, con incidencias menores (documentación y retraso de auditoría) ya subsanadas. A vigilar: la mayor complejidad financiera (cobertura de tipos por 12,0m y nota del gestor sobre optimización de deuda en 2027) y la gobernanza con socio extranjero, que pueden requerir mayor seguimiento de covenants y vencimientos.",
+  "conclusions": {
+    "credit_view": "Perfil crediticio sólido para segmento Corporate Industrial: apalancamiento moderado, liquidez en mejora y elevada cobertura de intereses, reforzado por comportamiento bancario sin impagos y rating interno A-. Riesgo principal más cualitativo que cuantitativo: estructura accionarial concentrada y planificación de refinanciación/optimización hacia 2027.",
+    "data_requests_priority": [
+      "Detalle de deuda por instrumento (incl. préstamo corporativo, CAPEX, leasing), calendario de vencimientos 2026–2029, covenants y tipo fijo/variable (y confirmación de cómo se relaciona la cobertura de tipos de 12,0m con la deuda subyacente).",
+      "Estados financieros auditados 2023–2024 y desglose de capital circulante (clientes, inventario, proveedores) para validar la mejora de liquidez y la dependencia de líneas de circulante/confirming."
+    ]
+  }
+}

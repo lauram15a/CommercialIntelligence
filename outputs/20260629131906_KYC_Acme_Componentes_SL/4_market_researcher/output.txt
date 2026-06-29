@@ -1,0 +1,31 @@
+## Señales externas relevantes para el análisis de riesgo — Acme Componentes SL
+
+### 1) Expansión internacional y riesgo de ejecución (operativo / capex)
+- **Hecho**: Inauguración de la **primera planta de producción en Polonia (Wroclaw)**, con **capacidad para 120 empleados** y **una inversión de 9 millones de euros**.  
+  **Fuente**: *Expansión* (2025-05-15)
+- **Relevancia para riesgo**:
+  - **Riesgo de puesta en marcha (ramp-up)**: posibles desviaciones en plazos, costes, calidad y productividad durante el arranque.
+  - **Riesgo laboral y de disponibilidad de talento**: contratación y formación de hasta 120 empleados; presión salarial/rotación en el mercado local.
+  - **Riesgo de concentración de capex**: aumento de apalancamiento operativo/financiero si la demanda no acompaña el dimensionamiento de la planta.
+  - **Riesgo regulatorio y de cumplimiento**: licencias, normativa laboral/medioambiental y requisitos de seguridad industrial en una nueva jurisdicción.
+  - **Riesgo de cadena de suministro**: reconfiguración de proveedores/logística transfronteriza (posibles fricciones iniciales).
+
+### 2) Dependencia de clientes “tier 1” alemanes y visibilidad de ingresos (comercial / concentración)
+- **Hecho**: Renovación y ampliación de contratos con **dos fabricantes alemanes de primer nivel**, asegurando **ingresos por más de 15 millones hasta 2027**.  
+  **Fuente**: *El Economista* (2025-12-01)
+- **Relevancia para riesgo**:
+  - **Señal positiva de continuidad**: mejora la **visibilidad de ingresos** a medio plazo y sugiere validación de calidad/servicio.
+  - **Riesgo de concentración**: mayor exposición a **pocos clientes grandes** (poder de negociación, presión de precios, cambios de plataforma/proveedor).
+  - **Riesgo sectorial automoción**: sensibilidad a ciclos de producción, cambios tecnológicos (electrificación), y ajustes de inventario en OEMs/tiers.
+  - **Riesgo contractual**: aunque hay ingresos “asegurados”, puede existir **riesgo de volúmenes**, penalizaciones por calidad/entrega o cláusulas de revisión (detalle no disponible en la señal).
+
+### 3) Señales combinadas: expansión para servir demanda externa (estratégico)
+- **Lectura conjunta**: la nueva planta en Polonia puede interpretarse como **capacidad cercana a clientes centroeuropeos** (p. ej., Alemania), lo que:
+  - **Reduce riesgo logístico** a largo plazo (proximidad), pero
+  - **Aumenta riesgo de ejecución** en el corto plazo (arranque) y **riesgo de dependencia** si la capacidad se orienta principalmente a esos contratos.
+
+---
+
+### Fuentes (base interna)
+- *Expansión* — “Acme Componentes inaugura su primera planta de producción en Polonia” (2025-05-15)  
+- *El Economista* — “Acme Componentes consolida su posición como proveedor de primer nivel para la automoción alemana” (2025-12-01)

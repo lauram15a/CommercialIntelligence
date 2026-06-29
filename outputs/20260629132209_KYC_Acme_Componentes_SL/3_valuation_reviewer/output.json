@@ -1,0 +1,35 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 2.1053,
+        "liquidez_corriente": 1.3194,
+        "cobertura_intereses": 8.4444
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 2.1429,
+        "liquidez_corriente": 1.3596,
+        "cobertura_intereses": 9.4231
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 2.069,
+        "liquidez_corriente": 1.4796,
+        "cobertura_intereses": 9.5082
+      }
+    ],
+    "variacion": {
+      "variacion_deuda_ebitda_pct": -1.73
+    }
+  },
+  "interpretacion": "Los ratios muestran un apalancamiento estable y moderado (Debt/EBITDA ~2,1x) con ligera mejora entre 2022 y 2024, junto con una liquidez corriente en fortalecimiento (1,32x a 1,48x) y una cobertura de intereses holgada (>8x) pese al aumento de gastos financieros. El historial bancario es consistente con este perfil: 0 impagos, operaciones activas al corriente y uso de productos de circulante/CAPEX, con incidencias menores (documentación y retraso de auditoría) ya subsanadas. La contratación de cobertura de tipos por nominal elevado sugiere gestión activa del riesgo de tipos y/o exposición relevante a deuda variable, alineada con el incremento de deuda financiera observado.",
+  "conclusions": {
+    "credit_view": "Perfil crediticio sólido para segmento Corporate Industrial: apalancamiento contenido, buena capacidad de servicio de deuda y comportamiento bancario sin señales de estrés. Riesgo principal a vigilar: evolución de deuda y refinanciación/optimización prevista hacia 2027, además de disciplina en reporting financiero.",
+    "data_requests_priority": [
+      "Desglose de deuda financiera 2022–2024 y actual (corto/largo plazo, tipo fijo/variable, calendario de vencimientos, covenants y garantías), incluyendo conciliación con las operaciones activas reportadas por el banco.",
+      "Estados financieros completos 2022–2024 (PyG, balance y cash flow) y detalle de capital circulante (clientes, inventario, proveedores) para validar generación de caja y estacionalidad del circulante."
+    ]
+  }
+}

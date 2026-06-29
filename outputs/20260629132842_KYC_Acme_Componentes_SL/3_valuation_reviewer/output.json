@@ -1,0 +1,35 @@
+{
+  "ratios": {
+    "ratios_por_periodo": [
+      {
+        "periodo": "2022",
+        "debt_ebitda": 2.1053,
+        "liquidez_corriente": 1.3194,
+        "cobertura_intereses": 8.4444
+      },
+      {
+        "periodo": "2023",
+        "debt_ebitda": 2.1429,
+        "liquidez_corriente": 1.3596,
+        "cobertura_intereses": 9.4231
+      },
+      {
+        "periodo": "2024",
+        "debt_ebitda": 2.069,
+        "liquidez_corriente": 1.4796,
+        "cobertura_intereses": 9.5082
+      }
+    ],
+    "variacion": {
+      "variacion_deuda_ebitda_pct": -1.7
+    }
+  },
+  "interpretacion": "Los ratios muestran un apalancamiento moderado y estable (Debt/EBITDA ~2,1x con ligera mejora 2022–2024), junto con una liquidez corriente en mejora (1,32x a 1,48x), lo que sugiere mayor holgura de circulante. La cobertura de intereses es sólida y creciente (~8,4x a ~9,5x), consistente con capacidad de servicio de deuda incluso con mayores gastos financieros. El historial bancario refuerza esta lectura: 0 impagos, operaciones vigentes al corriente y rating interno A-, con incidencias menores (documentación y retraso de auditoría) ya subsanadas; no obstante, el aumento de deuda absoluta y la nota del gestor sobre optimización en 2027 apuntan a vigilar calendario de vencimientos y coste financiero.",
+  "conclusions": {
+    "credit_view": "Perfil crediticio favorable: apalancamiento contenido, buena cobertura de intereses y mejora de liquidez, respaldado por comportamiento bancario sin impagos y rating interno A-. Principal foco de seguimiento: estructura y vencimientos de deuda ante el incremento de endeudamiento y la necesidad prevista de refinanciación/optimización en 2027.",
+    "data_requests_priority": [
+      "Detalle de deuda financiera por instrumento (importe, tipo fijo/variable, spread, calendario de amortización y vencimientos, garantías/covenants) y conciliación con operaciones activas bancarias.",
+      "Estados financieros completos 2022–2024 (PyG y flujos de caja) y desglose de capital circulante (clientes, inventario, proveedores) para validar generación de caja y estacionalidad."
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sector": "Energia",
+  "oportunidades": [
+    {
+      "empresa": "SolarGrid Iberia Partners SL",
+      "motivo": "Desarrollador fotovoltaico utility con cartera en fase avanzada y cierre financiero pendiente; requiere project finance para 2027 y potencialmente soluciones de coberturas asociadas.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "La señal indica una necesidad transaccional concreta (cierre financiero) y un producto bancario claro (project finance) con ventana temporal definida hacia 2027, lo que eleva la probabilidad de ejecución frente al resto.",
+      "ingresos_estimados": 17200000,
+      "empleados": 98
+    },
+    {
+      "empresa": "Energia Holdings SL",
+      "motivo": "Grupo en expansión de activos con necesidad potencial de financiación en 2027 (CAPEX/refinanciación) y deuda estimada de 4200000 EUR, lo que abre opciones de financiación de crecimiento y optimización de estructura de deuda.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "Aunque el input marca prioridad media, la existencia de deuda cuantificada y una necesidad explícita de CAPEX/refinanciación en 2027 sugiere oportunidad cercana y estructurable (refi/term loan), más inmediata que una expansión genérica.",
+      "ingresos_estimados": 10000000,
+      "empleados": 120
+    },
+    {
+      "empresa": "GreenStorage Assets SA",
+      "motivo": "Operador de almacenamiento con expansión de activos y necesidad de deuda a medio y largo plazo; encaja con financiación de activos y potencial cobertura de tipos para estabilizar el coste financiero.",
+      "prioridad": "media",
+      "justificacion_prioridad": "Hay señal clara de necesidad de deuda, pero sin hito transaccional fechado (p.ej., cierre financiero/refinanciación) ni cuantía de deuda indicada, por lo que la urgencia es menor que en los casos anteriores.",
+      "ingresos_estimados": 12600000,
+      "empleados": 74
+    }
+  ],
+  "resumen": "En Energia, las señales apuntan a un pipeline centrado en renovables y activos (FV utility y almacenamiento), donde el banco puede capturar mandatos de project finance, financiación de CAPEX/refinanciación y coberturas. La mayor tracción potencial está en situaciones con cierre financiero o refinanciación identificada hacia 2027, que permiten estructurar soluciones con alta probabilidad de ejecución."
+}

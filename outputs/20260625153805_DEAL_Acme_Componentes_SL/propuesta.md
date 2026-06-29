@@ -1,9 +1,0 @@
-Acme Componentes SL se encuentra en un punto atractivo para estructurar una solución de financiación de crecimiento: combina expansión de ingresos (32,0m€ en 2022 a 42,0m€ en 2024) con mejora de márgenes (margen EBITDA 11,9% → 13,8%), lo que sugiere una base operativa sólida para abordar un nuevo ciclo inversor.
-
-La nueva planta en Polonia en 2025 introduce necesidades típicas de un despliegue industrial transfronterizo: financiación de CAPEX por fases, leasing de equipamiento, garantías asociadas a proveedores/contratos y refuerzo de circulante durante el ramp-up. En paralelo, el incremento de deuda hasta ~12,0m€ y el aumento del gasto financiero observado refuerzan la conveniencia de planificar una estrategia de coste de deuda y coberturas de tipos.
-
-Proponemos un paquete bancario integral que combine un préstamo de inversión (con carencia parcial y amortización adaptada al ramp-up), leasing de maquinaria, líneas de circulante (póliza/factoring/confirming) y un marco de garantías. Esta estructura se complementa con soluciones de cash management para coordinar la operativa España–Polonia y, cuando aplique, con coberturas de tipos para estabilizar el coste financiero.
-
-De cara a 2027, planteamos preparar con antelación una refinanciación/optimización que alinee vencimientos y covenants con el ciclo inversor, preservando flexibilidad operativa y evitando restricciones en el periodo de máxima inversión. El enfoque se apoya en un análisis por escenarios (base/estresado) para dimensionar holguras y asegurar que el apalancamiento se mantenga en rangos operables.
-
-El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

@@ -1,0 +1,32 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos estimados TTM",
+      "valor": "17,2m€"
+    },
+    {
+      "nombre": "EBITDA estimado TTM",
+      "valor": "3,784m€"
+    },
+    {
+      "nombre": "Margen EBITDA",
+      "valor": "22,0%"
+    },
+    {
+      "nombre": "CAPEX estimado",
+      "valor": "1,376m€ (≈8,0% de ventas)"
+    },
+    {
+      "nombre": "Deuda financiera / EBITDA",
+      "valor": "~2,8x (deuda estimada 10,664m€)"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Perfil operativo sólido para un desarrollador FV, con margen EBITDA estimado del 22,0% sobre ingresos TTM.",
+    "Estructura de inversión compatible con fase de desarrollo/avance de cartera, con CAPEX estimado en torno al 8,0% de ventas, aunque sin visibilidad temporal para evaluar su normalización.",
+    "Apalancamiento ya relevante (~2,8x Deuda/EBITDA), potencialmente alineado con estructuras de project finance si los cierres financieros se ejecutan según plan.",
+    "Limitación de datos (sin series históricas, caja, EBIT ni coste de deuda) que impide evaluar crecimiento real, cobertura de intereses y generación de caja."
+  ],
+  "interpretacion": "Con los datos disponibles, SolarGrid muestra una rentabilidad operativa estimada atractiva (22,0% de margen EBITDA) pero con apalancamiento ya significativo (~2,8x), lo que sugiere una estructura financiera exigente para seguir ejecutando el pipeline. La ausencia de información de caja, EBIT y coste de deuda limita el diagnóstico de liquidez y capacidad de servicio de deuda; sería clave disponer de calendario de CAPEX, métricas de working capital y términos de financiación. Dado el perfil de cartera en fase avanzada, es plausible una necesidad de financiación adicional (project finance hacia 2027 y soporte de circulante) para convertir el pipeline en activos operativos.",
+  "disponible": true
+}

@@ -1,8 +1,0 @@
-### Resumen ejecutivo
-Marta Salas Ortega presenta un perfil retail con ingresos estables (~58.000 EUR/año) y una trayectoria reciente de ahorro creciente, reflejada en una liquidez relevante (~42.000 EUR) y un patrimonio invertible estimado (~68.000 EUR). En paralelo, existe un préstamo de consumo vigente (con cancelación parcial prevista en 2027) y un interés explícito por consolidación/refinanciación, lo que configura una oportunidad prioritaria para reducir cuota y ordenar pasivos.
-
-La propuesta se centra en estructurar una **refinanciación/consolidación de deuda** orientada a una cuota objetivo sostenible, comparando alternativas para equilibrar **alivio de caja** y **coste total** (tipo, plazo y comisiones). Dado que aún no se dispone del mapa cuantitativo completo de deuda (importe, TAE, cuota total, vencimientos y otras entidades), el primer paso es un diagnóstico 360º que permita diseñar la solución óptima y evitar decisiones subóptimas (p. ej., alargar plazos en exceso).
-
-En paralelo, se plantea una **mejora de vinculación** (domiciliaciones y servicios transaccionales y de protección) como palanca para acceder a mejores condiciones financieras y consolidar la relación. Esta capa de vinculación se complementa con un plan de uso de la liquidez: definir un **colchón de emergencia** y, una vez estabilizada la deuda, canalizar excedentes hacia ahorro/inversión con aportaciones periódicas.
-
-El resultado esperado es una estructura financiera más simple (menos obligaciones dispersas), una cuota mensual más cómoda y predecible, y una relación más sólida que permita capturar mejoras futuras de condiciones. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interaccion con el cliente.

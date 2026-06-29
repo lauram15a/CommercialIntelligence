@@ -1,0 +1,180 @@
+{
+  "run_id": "20260629134507",
+  "sector": "Energia",
+  "company_name": "SolarGrid Iberia Partners SL",
+  "entity_family": "juridica",
+  "fuente": "interna",
+  "geografia": null,
+  "analyst_notes": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Energia",
+    "oportunidades": [
+      {
+        "empresa": "SolarGrid Iberia Partners SL",
+        "motivo": "Desarrollador fotovoltaico utility con cartera en fase avanzada y cierre financiero pendiente; requiere project finance para 2027 y potencialmente soluciones de coberturas asociadas.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "La señal indica una necesidad transaccional concreta (cierre financiero) y un producto bancario claro (project finance) con ventana temporal definida hacia 2027, lo que eleva la probabilidad de ejecución frente al resto.",
+        "ingresos_estimados": 17200000,
+        "empleados": 98,
+        "historial_banco": "Cliente desde 2011-02-15. Rating interno: BBB+. Operaciones activas: 2. Impagos: 0.",
+        "_historial_completo": {
+          "cliente_desde": "2011-02-15",
+          "rating_interno": "BBB+",
+          "impagos": 0,
+          "segmento": "Corporate Energia",
+          "gestor": "Equipo Levante",
+          "operaciones_activas": [
+            {
+              "tipo": "Prestamo corporativo",
+              "importe_EUR": 7450000,
+              "cuota_mensual_EUR": 96000,
+              "fecha_inicio": "2024-03-01",
+              "vencimiento": "2029-03-01",
+              "al_corriente": true
+            },
+            {
+              "tipo": "Linea de circulante",
+              "limite_EUR": 4350000,
+              "dispuesto_EUR": 2430000,
+              "fecha_inicio": "2025-01-10",
+              "vencimiento": "2026-12-31",
+              "al_corriente": true
+            }
+          ],
+          "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+        }
+      },
+      {
+        "empresa": "Energia Holdings SL",
+        "motivo": "Grupo en expansión de activos con necesidad potencial de financiación en 2027 (CAPEX/refinanciación) y deuda estimada de 4200000 EUR, lo que abre opciones de financiación de crecimiento y optimización de estructura de deuda.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "Aunque el input marca prioridad media, la existencia de deuda cuantificada y una necesidad explícita de CAPEX/refinanciación en 2027 sugiere oportunidad cercana y estructurable (refi/term loan), más inmediata que una expansión genérica.",
+        "ingresos_estimados": 10000000,
+        "empleados": 120
+      },
+      {
+        "empresa": "GreenStorage Assets SA",
+        "motivo": "Operador de almacenamiento con expansión de activos y necesidad de deuda a medio y largo plazo; encaja con financiación de activos y potencial cobertura de tipos para estabilizar el coste financiero.",
+        "prioridad": "media",
+        "justificacion_prioridad": "Hay señal clara de necesidad de deuda, pero sin hito transaccional fechado (p.ej., cierre financiero/refinanciación) ni cuantía de deuda indicada, por lo que la urgencia es menor que en los casos anteriores.",
+        "ingresos_estimados": 12600000,
+        "empleados": 74
+      }
+    ],
+    "resumen": "En Energia, las señales apuntan a un pipeline centrado en renovables y activos (FV utility y almacenamiento), donde el banco puede capturar mandatos de project finance, financiación de CAPEX/refinanciación y coberturas. La mayor tracción potencial está en situaciones con cierre financiero o refinanciación identificada hacia 2027, que permiten estructurar soluciones con alta probabilidad de ejecución."
+  },
+  "earnings_summary": "SolarGrid Iberia Partners SL presenta unos ingresos estimados TTM de 17,2m€ y un EBITDA estimado de 3,784m€, lo que implica un margen EBITDA del 22,0% (perfil operativo sólido para un desarrollador FV). No se aportan series históricas, por lo que no es posible cuantificar crecimiento interanual real; como referencia sectorial se indica un crecimiento anual del 11,0%, que sugiere una trayectoria de expansión si se materializa. El CAPEX estimado asciende a 1,376m€ (≈8,0% de ventas), consistente con una fase de desarrollo/avance de cartera y preparación de activos, aunque sin detalle temporal no puede evaluarse su aceleración o normalización. La deuda financiera estimada es de 10,664m€, equivalente a ~2,8x EBITDA, apuntando a un apalancamiento relevante pero potencialmente compatible con estructuras de financiación de proyectos si los cierres financieros se ejecutan según plan. No hay datos de margen operativo (EBIT/EBIT margin), caja o coste de deuda, lo que limita el análisis de cobertura de intereses y generación de caja. La compañía presenta un perfil de crecimiento con cartera en fase avanzada y apalancamiento ya significativo, lo que puede implicar necesidad de financiación adicional (project finance hacia 2027 y soporte de circulante) para convertir pipeline en activos operativos.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos estimados TTM",
+        "valor": "17,2m€"
+      },
+      {
+        "nombre": "EBITDA estimado TTM",
+        "valor": "3,784m€"
+      },
+      {
+        "nombre": "Margen EBITDA",
+        "valor": "22,0%"
+      },
+      {
+        "nombre": "CAPEX estimado",
+        "valor": "1,376m€ (≈8,0% de ventas)"
+      },
+      {
+        "nombre": "Deuda financiera / EBITDA",
+        "valor": "~2,8x (deuda estimada 10,664m€)"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Perfil operativo sólido para un desarrollador FV, con margen EBITDA estimado del 22,0% sobre ingresos TTM.",
+      "Estructura de inversión compatible con fase de desarrollo/avance de cartera, con CAPEX estimado en torno al 8,0% de ventas, aunque sin visibilidad temporal para evaluar su normalización.",
+      "Apalancamiento ya relevante (~2,8x Deuda/EBITDA), potencialmente alineado con estructuras de project finance si los cierres financieros se ejecutan según plan.",
+      "Limitación de datos (sin series históricas, caja, EBIT ni coste de deuda) que impide evaluar crecimiento real, cobertura de intereses y generación de caja."
+    ],
+    "interpretacion": "Con los datos disponibles, SolarGrid muestra una rentabilidad operativa estimada atractiva (22,0% de margen EBITDA) pero con apalancamiento ya significativo (~2,8x), lo que sugiere una estructura financiera exigente para seguir ejecutando el pipeline. La ausencia de información de caja, EBIT y coste de deuda limita el diagnóstico de liquidez y capacidad de servicio de deuda; sería clave disponer de calendario de CAPEX, métricas de working capital y términos de financiación. Dado el perfil de cartera en fase avanzada, es plausible una necesidad de financiación adicional (project finance hacia 2027 y soporte de circulante) para convertir el pipeline en activos operativos.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "SolarGrid Iberia Partners SL es un desarrollador fotovoltaico utility en España con una cartera en fase avanzada de desarrollo y foco en llevar proyectos a cierre financiero. Presenta un perfil operativo sólido con ingresos estimados TTM de 17,2m€ y EBITDA estimado de 3,784m€ (margen 22,0%), y una relación bancaria activa desde 2011 con rating interno BBB+ y sin impagos.",
+    "situacion_actual": "La oportunidad es de alta prioridad: la compañía tiene cierres financieros pendientes y previsión de necesidades de project finance de cara a 2027 para convertir pipeline en activos operativos. Con deuda financiera estimada de 10,664m€ (~2,8x EBITDA) y CAPEX estimado de 1,376m€ (~8% de ventas), el punto clave es estructurar financiación adicional y, potencialmente, coberturas asociadas para estabilizar el perfil de riesgo del proyecto.",
+    "necesidades_potenciales": [
+      "Project finance para 2027 ligado a la cartera FV en fase avanzada, con estructuración por proyecto (SPV) y calendario de hitos hasta cierre financiero.",
+      "Soluciones de coberturas asociadas (p. ej., tipos/estructura de deuda y/o coberturas vinculadas a la financiación) para reducir volatilidad y mejorar bancabilidad de los cierres.",
+      "Financiación puente y/o soporte de circulante para el periodo pre-COD (desarrollo, permisos, interconexión, EPC/early works), dado el apalancamiento ya relevante (~2,8x Deuda/EBITDA) y la necesidad de ejecutar pipeline sin tensar liquidez."
+    ],
+    "riesgos": [
+      "Riesgo de apalancamiento y capacidad de servicio: con ~2,8x Deuda/EBITDA y sin datos de caja, EBIT ni coste de deuda, existe incertidumbre sobre cobertura de intereses y holgura financiera durante la fase de inversión.",
+      "Riesgo de ejecución y calendario: cierres financieros pendientes y CAPEX sin desglose temporal; retrasos en hitos (permisos, conexión, contratación) podrían aumentar necesidades de financiación y presionar covenants/condiciones de bancabilidad."
+    ],
+    "talking_points": [
+      "Alinear un “roadmap” a cierre financiero 2027: pipeline priorizado, hitos críticos, necesidades de deuda por fase y estructura objetivo (SPV, tenor, amortización, DSCR objetivo).",
+      "Revisar la estructura de capital actual y la capacidad de endeudamiento: deuda estimada 10,664m€ (~2,8x EBITDA), fuentes/uses previstos y margen de maniobra para nueva financiación sin deteriorar el rating interno BBB+.",
+      "Proponer paquete integrado de financiación + coberturas: qué riesgos quieren mitigar (coste financiero/volatilidad) y cómo impacta en la bancabilidad y en el pricing del project finance.",
+      "Solicitar información mínima para avanzar rápido: calendario CAPEX por proyecto, situación de PPAs/ingresos esperados, términos de deuda vigente y métricas de liquidez/working capital para dimensionar puente y condiciones."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Project finance 2027 y coberturas para cierre financiero de cartera FV utility",
+    "subtitulo": "Estructuramos un paquete integrado de financiación de proyectos + coberturas para acelerar cierres financieros, proteger el coste de la deuda y maximizar la bancabilidad del pipeline.",
+    "oportunidad_detectada": "SolarGrid Iberia Partners SL es un desarrollador fotovoltaico utility con cartera en fase avanzada y cierres financieros pendientes, con una necesidad prevista de project finance de cara a 2027. El momento es ahora por la criticidad del calendario de hitos (permisos, conexión, EPC/early works y PPAs) y porque el apalancamiento actual ya es relevante, lo que hace clave anticipar estructura, covenants y coberturas para evitar fricciones en el cierre. Proponemos iniciar de inmediato un “roadmap” de financiación por proyecto (SPV) y un paquete de coberturas asociado para estabilizar riesgos financieros y mejorar condiciones de bancabilidad.",
+    "contexto_financiero": [
+      "Ingresos estimados TTM: 17,2m€; EBITDA estimado TTM: 3,784m€ → margen EBITDA 22,0% (perfil operativo sólido para un desarrollador FV).",
+      "Deuda financiera estimada: 10,664m€ → ~2,8x Deuda/EBITDA, indicando apalancamiento ya significativo y necesidad de estructurar la siguiente fase de financiación sin tensionar liquidez.",
+      "CAPEX estimado: 1,376m€ (≈8,0% de ventas), consistente con fase de desarrollo/avance de cartera; hipótesis prudente: el CAPEX y necesidades de circulante aumentarán a medida que se acerque el pre-COD y se activen contratos EPC/early works."
+    ],
+    "encaje_productos": [
+      "Financiación de proyectos (project finance) en SPV por activo o clúster: encaja para financiar construcción y puesta en operación con estructura de amortización alineada a flujos del proyecto y métricas de cobertura (p. ej., DSCR objetivo).",
+      "Financiación puente / pre-NTP / desarrollo: encaja para cubrir el periodo previo a COD (permisos, interconexión, garantías, early works) y suavizar el consumo de caja mientras se alcanza el cierre financiero definitivo.",
+      "Coberturas de tipos de interés asociadas a la deuda: encaja para reducir volatilidad del coste financiero, mejorar visibilidad de DSCR y reforzar la bancabilidad ante comités de crédito y coinversores.",
+      "Soluciones de gestión de liquidez y circulante (líneas de crédito, avales y garantías): encaja para soportar garantías de red, obligaciones con EPC/O&M y picos de working capital durante construcción."
+    ],
+    "comparables": [
+      "Desarrolladores FV utility en Iberia con estrategia “build-to-own” o “build-to-sell” que estructuran cierres financieros vía SPV y combinan deuda senior con coberturas para asegurar métricas de cobertura durante construcción y operación.",
+      "Plataformas renovables con pipeline avanzado que utilizan financiación puente en pre-COD y refinancian a project finance una vez asegurados hitos clave (PPA/merchant strategy, permisos, conexión, EPC) para optimizar coste de capital."
+    ],
+    "argumentos_valor": [
+      "Ejecución orientada a cierre: diseñamos un roadmap de hitos hasta 2027 (por proyecto) que alinea permisos, conexión, EPC, estrategia de ingresos y calendario de desembolsos con la estructura de deuda, reduciendo riesgo de retrasos y re-trabajo en el proceso de financiación.",
+      "Paquete integrado financiación + coberturas: estructuramos simultáneamente la deuda y las coberturas para estabilizar el coste financiero y mejorar la bancabilidad (impacto directo en DSCR, covenants y pricing).",
+      "Optimización de estructura y flexibilidad: proponemos arquitectura por SPV/clúster, con opciones de escalabilidad (accordion, tramos, mini-perm/refinanciación) para acompañar el crecimiento del pipeline sin penalizar la estructura corporativa.",
+      "Disciplina de riesgo y preparación de información: definimos desde el inicio el “data pack” mínimo (CAPEX por proyecto, PPAs/ingresos, términos de deuda vigente, liquidez y WC) para acelerar due diligence, acortar tiempos de comité y mejorar condiciones."
+    ],
+    "proximos_pasos": [
+      "En 1 semana: sesión de trabajo con SolarGrid para mapear pipeline priorizado (proyectos, MW, estado de permisos/conexión, estrategia de ingresos) y construir un calendario de hitos hasta cierre financiero 2027.",
+      "En 2 semanas: solicitud y recepción de “data pack” mínimo (CAPEX por proyecto y por fase, contratos/term sheets de EPC, estado de PPAs o estrategia merchant, deuda vigente y vencimientos, métricas de liquidez/working capital) para dimensionar estructura objetivo y necesidades puente.",
+      "En 3–4 semanas: propuesta indicativa de estructura (SPV/clúster, tenor, amortización, covenants/DSCR objetivo, garantías) y diseño preliminar de coberturas de tipos asociadas; validación conjunta de escenarios (sensibilidades de producción/precio/coste financiero).",
+      "En 4–6 semanas: preparación de materiales para aprobación interna y lanzamiento de proceso de financiación (si aplica) con cronograma de due diligence, documentación y ruta a cierre."
+    ],
+    "narrativa_markdown": "SolarGrid Iberia Partners SL se encuentra en un punto de inflexión: cartera fotovoltaica utility en fase avanzada, cierres financieros pendientes y una necesidad clara de project finance hacia 2027 para convertir el pipeline en activos operativos. Dada la prioridad alta y la criticidad del calendario, proponemos activar de inmediato un plan de estructuración que reduzca fricciones y acelere el camino a cierre.\n\nCon los datos disponibles, la compañía muestra un perfil operativo sólido (ingresos estimados TTM de 17,2m€ y EBITDA estimado de 3,784m€, margen 22,0%), pero con apalancamiento ya relevante (deuda estimada 10,664m€, ~2,8x Deuda/EBITDA). En este contexto, anticipar la estructura de financiación y las métricas de cobertura es clave para preservar flexibilidad y evitar tensiones de liquidez durante el pre-COD.\n\nNuestra propuesta se centra en un paquete integrado: (i) financiación de proyectos en SPV por activo o clúster, alineada a flujos y a un DSCR objetivo; (ii) financiación puente/pre-NTP para cubrir necesidades de desarrollo, garantías y early works; y (iii) coberturas de tipos de interés asociadas a la deuda para estabilizar el coste financiero y reforzar la bancabilidad. Complementariamente, planteamos soluciones de avales/garantías y gestión de circulante para acompañar los picos operativos de la fase de construcción.\n\nEl enfoque de trabajo prioriza ejecución: definimos un roadmap de hitos por proyecto, un “data pack” mínimo para acelerar due diligence y una propuesta indicativa de estructura y coberturas con sensibilidades, de forma que SolarGrid pueda tomar decisiones tempranas y llegar a 2027 con una ruta clara a cierre financiero. El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {
+    "cliente_desde": "2011-02-15",
+    "rating_interno": "BBB+",
+    "impagos": 0,
+    "segmento": "Corporate Energia",
+    "gestor": "Equipo Levante",
+    "operaciones_activas": [
+      {
+        "tipo": "Prestamo corporativo",
+        "importe_EUR": 7450000,
+        "cuota_mensual_EUR": 96000,
+        "fecha_inicio": "2024-03-01",
+        "vencimiento": "2029-03-01",
+        "al_corriente": true
+      },
+      {
+        "tipo": "Linea de circulante",
+        "limite_EUR": 4350000,
+        "dispuesto_EUR": 2430000,
+        "fecha_inicio": "2025-01-10",
+        "vencimiento": "2026-12-31",
+        "al_corriente": true
+      }
+    ],
+    "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+  }
+}

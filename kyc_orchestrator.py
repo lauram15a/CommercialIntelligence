@@ -29,6 +29,15 @@ Soporta todos los formatos conocidos que el LLM puede generar.
 """
 
 
+
+def _strip_md(text: str) -> str:
+    """Elimina formato markdown no deseado: tachado (~~), bold (**), italic (*)."""
+    if not isinstance(text, str):
+        return text
+    text = re.sub(r"~~(.+?)~~", r"\1", text)   # ~~tachado~~
+    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)  # **negrita** en interpretacion
+    return text
+
 def _get_val(obj):
     """Extrae número de {"value": X} o devuelve directamente si ya es número."""
     if obj is None:
@@ -318,7 +327,7 @@ def normalize_valuation_output(valuation_output: dict) -> dict:
         fmvbh = valuation_output.get("financial_model_vs_bank_history") or {}
         overall = fmvbh.get("overall_assessment") or {}
         if overall.get("summary"):
-            normalized["interpretacion"] = overall["summary"]
+            normalized["interpretacion"] = _strip_md(overall["summary"])
 
         # Formato nuevo: indicadores_de_riesgo_y_flags
         if not normalized.get("interpretacion"):
@@ -331,7 +340,7 @@ def normalize_valuation_output(valuation_output: dict) -> dict:
                     partes.append("Fortalezas: " + "; ".join(fortalezas[:3]))
                 if alertas:
                     partes.append("Puntos de atención: " + "; ".join(alertas[:2]))
-                normalized["interpretacion"] = " | ".join(partes)
+                normalized["interpretacion"] = _strip_md(" | ".join(partes))
 
         # Formatos anteriores
         if not normalized.get("interpretacion"):
@@ -350,6 +359,10 @@ def normalize_valuation_output(valuation_output: dict) -> dict:
             comp = valuation_output.get("comparativa_modelo_vs_historial_bancario") or {}
             cons = comp.get("consistencia_general") or {}
             normalized["interpretacion"] = cons.get("comentario", "")
+
+    # Limpiar markdown no deseado de la interpretación
+    if normalized.get("interpretacion"):
+        normalized["interpretacion"] = _strip_md(normalized["interpretacion"])
 
     return normalized
 

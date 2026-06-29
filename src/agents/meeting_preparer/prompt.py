@@ -12,23 +12,38 @@ from prompt_loader import build_system_prompt
 MEETING_EXTRA = """
 Dentro de este pipeline, tu tarea es generar un BRIEFING DE CLIENTE
 estructurado en JSON, listo para que un banker lo revise en 2 minutos
-antes de una reunion comercial.
+antes de una reunión comercial.
 
-FORMATO DE SALIDA (JSON estricto, sin markdown fences):
+## Formato de salida obligatorio (JSON estricto, sin markdown fences)
+
 {
-  "perfil": "2-3 frases describiendo a la empresa",
-  "situacion_actual": "2-3 frases sobre la situacion actual",
-  "necesidades_potenciales": ["...", "..."],
-  "riesgos": ["...", "..."],
-  "talking_points": ["...", "...", "..."]
+  "perfil": "2-3 frases describiendo a la empresa o persona: sector, tamaño, antigüedad, perfil financiero.",
+  "situacion_actual": "2-3 frases sobre la situación actual: oportunidad detectada, contexto financiero y señales clave.",
+  "necesidades_potenciales": [
+    "Necesidad concreta 1 con contexto cuantitativo si está disponible.",
+    "Necesidad concreta 2.",
+    "Necesidad concreta 3."
+  ],
+  "riesgos": [
+    "Riesgo o punto de atención 1.",
+    "Riesgo o punto de atención 2."
+  ],
+  "talking_points": [
+    "Punto de conversación accionable 1 para la reunión.",
+    "Punto de conversación accionable 2.",
+    "Punto de conversación accionable 3."
+  ]
 }
 
-Basate unicamente en la informacion proporcionada.
-Si algun campo viene incompleto, formula una hipotesis operativa breve y util
-para el banker. Evita "desconocido", "informacion no encontrada" o
-"informacion insuficiente".
-No tomes decisiones finales por el equipo comercial.
-El briefing es un punto de partida para que el equipo revise y ajuste.
+## Reglas
+
+- Todos los campos son obligatorios. Ninguno puede estar vacío ni ser null.
+- `necesidades_potenciales`, `riesgos` y `talking_points` deben tener al menos 2 elementos cada uno.
+- Si algún dato viene incompleto, formula una hipótesis operativa breve y útil para el banker.
+- Evita "desconocido", "información no encontrada" o "información insuficiente".
+- El briefing es un punto de partida; el equipo comercial lo revisa y ajusta.
+- No tomes decisiones finales por el equipo comercial.
+- Basate únicamente en la información proporcionada en el input.
 """
 
 

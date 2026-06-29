@@ -28,5 +28,19 @@
     "tipo": "sanciones",
     "lista": "UK Sanctions List",
     "confianza": 0.92
+  },
+  {
+    "nombre": "Klaus Meier",
+    "tipo": "PEP",
+    "lista": "PEP Internacional",
+    "confianza": 0.78,
+    "detalle": "Exfuncionario del Ministerio de Economía alemán (cargo 2014-2018). Sin sanciones activas."
+  },
+  {
+    "nombre": "Acme Europe Holding GmbH",
+    "tipo": "adverse_media",
+    "lista": "Adverse Media EU",
+    "confianza": 0.71,
+    "detalle": "Mención en investigación de prácticas fiscales en 2021 (Alemania). Caso cerrado sin condena."
   }
 ]

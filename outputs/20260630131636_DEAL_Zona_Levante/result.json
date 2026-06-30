@@ -1,0 +1,107 @@
+{
+  "run_id": "20260630131636",
+  "sector": "Levante",
+  "company_name": "Empresa sin identificar",
+  "entity_family": "juridica",
+  "fuente": "interna",
+  "geografia": "Levante",
+  "analyst_notes": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Levante",
+    "oportunidades": [],
+    "resumen": "No se han proporcionado empresas en el input (lista vacía), por lo que no es posible identificar y priorizar oportunidades comerciales a nivel compañía. Si compartes el listado (aunque sea con nombre y, si existe, ingresos/empleados), devuelvo la priorización alta/media/baja y el racional por empresa. A nivel general, el Levante suele concentrar oportunidades en industria exportadora, agroalimentario, logística/puertos, turismo e inmobiliario, pero sin compañías concretas no puedo convertirlo en pipeline accionable."
+  },
+  "earnings_summary": "La información disponible es una **estimación operativa TTM** (sin histórico comparativo), con **ingresos estimados de 12,0m€** y **EBITDA de 1,8m€**, lo que implica un **margen EBITDA del 15,0%**; no hay datos para concluir si el margen está mejorando o comprimiéndose frente a años previos. En términos de crecimiento, solo se aporta un **crecimiento anual de referencia del 7,0%**, pero no se facilita una serie de ingresos/EBITDA por periodos para cuantificar variación interanual real. El **CAPEX estimado es 0,6m€**, equivalente a ~**5,0% de ventas**, lo que sugiere un nivel de inversión moderado (posiblemente de mantenimiento y/o soporte al crecimiento), aunque falta desglose para vincularlo con un plan industrial concreto. La **deuda financiera estimada asciende a 5,4m€**, que supone ~**3,0x EBITDA** (5,4/1,8), nivel relevante que apunta a cierta palanca financiera y potencial sensibilidad a tipos, sin detalle de vencimientos ni coste para evaluar refinanciación.  \n\nLa compañía presenta **crecimiento de referencia positivo y rentabilidad operativa razonable con apalancamiento material**, lo que puede implicar **necesidad de financiación para circulante y/o crecimiento** y, en paralelo, **oportunidad de optimización de estructura de deuda y coberturas** (sujeto a confirmar con estados financieros reales e histórico).",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos (TTM, estimado)",
+        "valor": "12,0m€"
+      },
+      {
+        "nombre": "EBITDA (TTM, estimado)",
+        "valor": "1,8m€"
+      },
+      {
+        "nombre": "Margen EBITDA (TTM, estimado)",
+        "valor": "15,0%"
+      },
+      {
+        "nombre": "CAPEX (TTM, estimado)",
+        "valor": "0,6m€ (~5,0% ventas)"
+      },
+      {
+        "nombre": "Deuda financiera (estimada) / EBITDA",
+        "valor": "3,0x (5,4m€ / 1,8m€)"
+      }
+    ],
+    "tendencias_estructurales": [
+      "La información disponible es una foto TTM estimada sin histórico, por lo que no se puede concluir si el margen EBITDA está expandiéndose o comprimiéndose.",
+      "Se reporta un crecimiento anual de referencia del 7,0%, pero sin serie temporal no es posible validar la evolución interanual real de ingresos/EBITDA.",
+      "El CAPEX estimado (~5,0% de ventas) sugiere un perfil de inversión moderado, potencialmente de mantenimiento y/o soporte al crecimiento, pendiente de desglose.",
+      "El apalancamiento estimado (~3,0x EBITDA) es material y podría implicar sensibilidad a tipos y foco en refinanciación/optimización, sin detalle de vencimientos ni coste."
+    ],
+    "interpretacion": "Con los datos TTM estimados, la compañía combina rentabilidad operativa razonable (15,0% margen EBITDA) con apalancamiento relevante (~3,0x), lo que sugiere una estructura financiera que puede requerir gestión activa. Podría existir necesidad de financiación para circulante y/o crecimiento, y en paralelo una oportunidad de optimización de deuda y coberturas, pero faltan estados financieros reales e histórico (incluyendo calendario de vencimientos y coste de la deuda) para confirmar diagnóstico y dimensionar la solución.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Empresa no identificada con una foto financiera operativa TTM estimada: ingresos 12,0m€ y EBITDA 1,8m€ (margen 15,0%), lo que sugiere un negocio de tamaño pequeño/mediano con rentabilidad operativa razonable. Presenta CAPEX moderado (0,6m€, ~5% de ventas) y apalancamiento material (deuda estimada 5,4m€, ~3,0x EBITDA), compatible con una estructura financiera que requiere seguimiento activo.",
+    "situacion_actual": "La oportunidad se basa en una estimación TTM sin histórico comparativo, con una referencia de crecimiento anual del 7,0% pero sin serie temporal para validar la tendencia real. La combinación de margen EBITDA del 15% y deuda ~3,0x sugiere potencial necesidad de financiación (circulante y/o crecimiento) y, en paralelo, margen para optimizar estructura de deuda y coberturas, sujeto a confirmar con estados financieros y detalle de vencimientos/coste.",
+    "necesidades_potenciales": [
+      "Financiación de circulante para sostener crecimiento (referencia +7,0% anual): dimensionar líneas de crédito/confirming/factoring en función de ciclo de cobros y pagos y estacionalidad.",
+      "Refinanciación u optimización de la deuda existente (5,4m€; ~3,0x EBITDA): revisar calendario de vencimientos, coste, covenants y opciones de extensión de plazos o mejora de pricing.",
+      "Gestión de riesgo de tipos y estructura de coberturas: con apalancamiento material, evaluar sensibilidad a tipos y conveniencia de swaps/caps según mix fijo/variable.",
+      "Financiación de CAPEX (0,6m€ TTM; ~5% ventas): explorar leasing/loan específico si el CAPEX está ligado a capacidad productiva o eficiencia y tiene retorno medible."
+    ],
+    "riesgos": [
+      "Calidad y completitud de la información: los datos son estimaciones TTM sin histórico, lo que puede distorsionar margen, crecimiento real y capacidad de servicio de deuda.",
+      "Sensibilidad financiera por apalancamiento (~3,0x EBITDA): riesgo de tensión de liquidez ante subida de tipos, caída de EBITDA o incremento de necesidades de circulante; falta visibilidad de vencimientos y covenants.",
+      "Riesgo de inversión/ejecución: CAPEX moderado sin desglose puede ocultar necesidades de inversión mayores o proyectos con retorno incierto."
+    ],
+    "talking_points": [
+      "Validación rápida del “equity story” financiero: pedir P&L y balance de 24–36 meses para confirmar crecimiento, estabilidad del margen (15%) y generación de caja vs CAPEX (0,6m€).",
+      "Mapa de deuda: solicitar detalle de préstamos/líneas (importe, tipo fijo/variable, coste, vencimientos, garantías, covenants) para identificar palancas de refinanciación y/o reestructuración.",
+      "Diagnóstico de circulante: preguntar por DSO/DPO/DIO, concentración de clientes/proveedores y estacionalidad para proponer soluciones (líneas, factoring, confirming) con tamaño objetivo.",
+      "Sensibilidad a tipos y plan de coberturas: cuantificar impacto de +100/+200 pb en coste financiero y acordar si tiene sentido fijar parte del riesgo (cap/swap).",
+      "Uso de fondos y plan de CAPEX: clarificar si el CAPEX es mantenimiento o crecimiento y si hay proyectos con ROI que justifiquen financiación dedicada."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Optimización de financiación y estructura de deuda para compañía del Levante (TTM estimado)",
+    "subtitulo": "Estructurar una solución integral de circulante + refinanciación + coberturas para sostener el crecimiento y reducir sensibilidad financiera con apalancamiento ~3,0x EBITDA.",
+    "oportunidad_detectada": "La compañía (no identificada) presenta una foto operativa TTM estimada con ingresos de 12,0m€ y EBITDA de 1,8m€ (15,0% margen), junto con deuda financiera estimada de 5,4m€ (~3,0x EBITDA). Este nivel de palanca sugiere que una revisión de la estructura de deuda, el coste y el calendario de vencimientos puede generar mejoras inmediatas en liquidez y resiliencia. En paralelo, con crecimiento de referencia del 7,0% y CAPEX moderado (~5% de ventas), existe una ventana para dimensionar financiación de circulante y/o CAPEX que acompañe el plan de negocio sin tensionar covenants.",
+    "contexto_financiero": [
+      "Ingresos TTM estimados: 12,0m€; EBITDA TTM estimado: 1,8m€ → margen EBITDA 15,0% (rentabilidad operativa razonable para pyme/empresa mediana).",
+      "Deuda financiera estimada: 5,4m€ → apalancamiento ~3,0x EBITDA, nivel material que puede aumentar sensibilidad a tipos y requerir gestión activa de covenants y vencimientos.",
+      "CAPEX TTM estimado: 0,6m€ (~5,0% de ventas), perfil de inversión moderado que podría financiarse de forma específica si está ligado a eficiencia/capacidad con ROI medible.",
+      "Crecimiento anual de referencia: 7,0% (sin serie histórica), lo que apunta a necesidad potencial de circulante si el ciclo de cobros/pagos es exigente o hay estacionalidad."
+    ],
+    "encaje_productos": [
+      "Financiación de circulante (línea de crédito / factoring / confirming): encaja para absorber necesidades derivadas del crecimiento y estabilizar caja en función de DSO/DPO/DIO y estacionalidad.",
+      "Refinanciación/reestructuración de deuda (préstamo a plazo / sindicación bilateral / extensión de vencimientos): encaja para optimizar calendario, coste y covenants con deuda ~3,0x EBITDA y reducir riesgo de refinanciación.",
+      "Coberturas de tipo de interés (swap/cap): encaja para mitigar sensibilidad a subidas de tipos si la deuda es mayoritariamente a tipo variable.",
+      "Financiación de CAPEX (leasing / préstamo de inversión): encaja para alinear vida del activo con el repago y preservar liquidez operativa."
+    ],
+    "comparables": [
+      "Empresas industriales/servicios B2B del Levante con EBITDA 1–3m€ suelen operar con 2,0x–3,5x Deuda Neta/EBITDA en estructuras bancarias tradicionales; el caso actual (~3,0x) se sitúa en la parte alta del rango prudente y justifica revisión de covenants y vencimientos.",
+      "En pymes con margen EBITDA ~15% y CAPEX ~5% de ventas, es habitual separar financiación de circulante (revolving) de financiación de inversión (term/leasing) para evitar presión de caja y mejorar visibilidad de repago."
+    ],
+    "argumentos_valor": [
+      "Diagnóstico rápido y accionable: en 2–3 semanas se puede construir un “mapa de deuda + caja + circulante” para cuantificar palancas (extensión de plazos, mejora de pricing, liberación de caja) y priorizar decisiones.",
+      "Optimización de estructura financiera: separar circulante, inversión y deuda estructural suele mejorar la disciplina de caja, reducir riesgo de refinanciación y facilitar el cumplimiento de covenants en escenarios de estrés.",
+      "Gestión de riesgo de tipos: con apalancamiento ~3,0x, una política de coberturas parcial puede estabilizar el coste financiero y proteger el plan de negocio ante movimientos de tipos.",
+      "Acompañamiento en ejecución: coordinación de documentación, term sheet, negociación y cierre para minimizar fricción operativa y asegurar que la solución final encaje con el ciclo de negocio real."
+    ],
+    "proximos_pasos": [
+      "Solicitar paquete financiero mínimo (cliente, 48h): P&L y balance mensuales/trim. últimos 24–36 meses, detalle de deuda (importe, tipo, coste, vencimientos, garantías, covenants) y estado de tesorería.",
+      "Realizar diagnóstico de circulante (equipo comercial, 1 semana desde recepción): DSO/DPO/DIO, concentración de clientes/proveedores, estacionalidad y necesidades pico para dimensionar línea objetivo y herramientas (factoring/confirming).",
+      "Preparar propuesta de estructura y escenarios (equipo comercial, semana 2–3): alternativas de refinanciación (plazo, amortización, covenants) + recomendación de coberturas (porcentaje fijo/variable) + plan de financiación de CAPEX si aplica.",
+      "Alinear calendario de ejecución (cliente + equipo comercial, semana 3): decisión de ruta (circulante, refinanciación, coberturas) y cronograma de negociación/cierre."
+    ],
+    "narrativa_markdown": "La compañía (no identificada) presenta una foto operativa TTM estimada de **12,0m€ de ingresos** y **1,8m€ de EBITDA** (margen **15,0%**), con **CAPEX ~0,6m€** (~**5%** de ventas) y **deuda financiera estimada de 5,4m€**, equivalente a **~3,0x EBITDA**. Esta combinación sugiere un negocio con rentabilidad operativa razonable, pero con una palanca financiera material que puede amplificar la sensibilidad a tipos, covenants y tensiones de liquidez.\n\nLa oportunidad comercial se centra en estructurar una solución integral que combine **financiación de circulante** (para sostener el crecimiento de referencia del **7,0%** y absorber estacionalidad), **refinanciación/optimización de deuda** (para mejorar calendario de vencimientos, coste y flexibilidad) y **coberturas de tipo** (si existe exposición relevante a tipo variable). Adicionalmente, el CAPEX moderado permite valorar **financiación específica de inversión** (leasing/préstamo) para alinear repago con la vida útil del activo y preservar caja.\n\nEl primer paso es convertir la foto estimada en un diagnóstico verificable: solicitar P&L y balance de 24–36 meses, detalle completo de deuda (importe, coste, vencimientos, garantías y covenants) y métricas de circulante (DSO/DPO/DIO). Con esa base, se puede dimensionar una estructura objetivo (revolving para circulante + term/leasing para inversión + deuda estructural) y preparar escenarios de sensibilidad a EBITDA y tipos.\n\nNuestra propuesta aporta rapidez de ejecución, disciplina de estructura y foco en resiliencia financiera: separar usos de fondos, estabilizar el coste financiero y asegurar que la financiación acompaña el ciclo real del negocio, reduciendo el riesgo de tensiones de liquidez y mejorando la capacidad de inversión.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {}
+}

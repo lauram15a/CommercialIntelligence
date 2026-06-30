@@ -1,0 +1,22 @@
+{
+  "sector": "personal",
+  "oportunidades": [
+    {
+      "empresa": "Alvaro Serrano Vidal",
+      "motivo": "Financiacion residencial y estructuracion patrimonial ligada a compra de segunda vivienda.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "Hay un evento concreto de inversion personal con capacidad inmediata de generar financiacion y cross-sell.",
+      "ingresos_estimados": 145000,
+      "empleados": 1
+    },
+    {
+      "empresa": "Elena Costa Miret",
+      "motivo": "Captacion patrimonial con propuesta integrada de liquidez, inversion y fiscalidad personal.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "Hay predisposicion a cambiar de entidad y un evento de liquidez potencial en el horizonte cercano.",
+      "ingresos_estimados": 118000,
+      "empleados": 1
+    }
+  ],
+  "resumen": "Universo de personas fisicas priorizado por segmento personal. El ranking combina inmediatez comercial, capacidad economica y potencial de vinculacion."
+}

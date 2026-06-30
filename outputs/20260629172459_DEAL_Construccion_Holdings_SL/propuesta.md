@@ -1,0 +1,9 @@
+Construccion Holdings SL se encuentra en un punto favorable para abordar una **refinanciación y optimización de su estructura de deuda** con prioridad alta, centrada en **vencimientos próximos** y en un **calendario de amortización** que, en un negocio de construcción con cobros por hitos, puede generar picos de caja y riesgo de refinanciación.
+
+La evolución reciente respalda una conversación de mejora de condiciones: los **ingresos crecen de 10,0m€ (2022) a 13,5m€ (2024)** (+35,0% acumulado) y el **EBITDA aumenta de 1,6m€ a 2,3m€**, con expansión del margen hasta ~17,0%. A la vez, la deuda financiera sube a **5,2m€ (2024)**, pero el apalancamiento se mantiene estable en **~2,6x–2,7x Deuda/EBITDA**, y el **patrimonio neto** se refuerza hasta **4,2m€**.
+
+La propuesta comercial consiste en **reordenar plazos y suavizar amortizaciones** (incluyendo, si encaja, un componente parcialmente bullet o carencias parciales) para alinear el repago con la generación operativa y reducir el riesgo de liquidez. En paralelo, planteamos **optimizar el coste financiero y la flexibilidad** (covenants y estructura) apoyándonos en la mejora de EBITDA y el fortalecimiento patrimonial.
+
+Adicionalmente, para acompañar el crecimiento y evitar que la deuda a plazo absorba necesidades operativas, proponemos una solución paquetizada con **líneas de circulante** (póliza/confirming/anticipo de certificaciones) y **líneas de avales/garantías de obra**, separando claramente financiación estructural de financiación de operación.
+
+El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.

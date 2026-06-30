@@ -1,0 +1,22 @@
+{
+  "perfil": "Construccion Holdings SL es una compañía del sector construcción con trayectoria bancaria desde 2018 y un perfil de riesgo interno BBB+. Presenta crecimiento sostenido (ingresos 10,0m€ en 2022 a 13,5m€ en 2024) y mejora gradual de rentabilidad (EBITDA 1,6m€ a 2,3m€), con endeudamiento en aumento pero apalancamiento estable (~2,6x–2,7x Deuda/EBITDA).",
+  "situacion_actual": "La oportunidad prioritaria es una refinanciación y optimización de la estructura de deuda, con foco en vencimientos próximos y calendario de amortización. La empresa está creciendo y mejorando márgenes, mientras la deuda financiera sube (4,2m€ a 5,2m€ en 2022–2024) sin deterioro aparente del apalancamiento, lo que abre margen para reordenar plazos/costes y alinear la deuda con el ciclo de proyectos. No registra impagos y mantiene 2 operaciones activas, lo que sugiere una relación estable y capacidad de ejecución si se estructura bien la solución.",
+  "necesidades_potenciales": [
+    "Refinanciación de vencimientos próximos: extensión de plazos y rediseño del calendario de amortización para reducir picos de caja y riesgo de refinanciación, manteniendo Deuda/EBITDA en torno a ~2,6x–2,7x.",
+    "Optimización del coste financiero y condiciones (pricing/covenants) aprovechando la mejora de EBITDA (1,6m€→2,3m€) y el refuerzo de patrimonio neto (3,2m€→4,2m€) como argumentos de crédito.",
+    "Líneas de circulante específicas para construcción (póliza/confirming/anticipo de certificaciones) para acompañar el crecimiento de actividad y mitigar tensiones de caja típicas del ciclo de cobros/pagos del sector.",
+    "Instrumentos para garantías/avales de obra vinculados a nuevos proyectos, evitando consumir capacidad de deuda amortizable y separando necesidades operativas de financiación estructural."
+  ],
+  "riesgos": [
+    "Riesgo de liquidez por concentración de amortizaciones en el corto plazo (picos de vencimiento) en un negocio con cobros por hitos y potencial descalce de circulante.",
+    "Riesgo sectorial/ejecución de proyectos: desviaciones de costes, retrasos o disputas pueden erosionar márgenes y tensionar el servicio de deuda pese a la mejora reciente del EBITDA.",
+    "Visibilidad limitada de CAPEX, EBIT y amortizaciones: posible presión de caja no reflejada en EBITDA que afecte la capacidad real de repago y el diseño óptimo de plazos."
+  ],
+  "talking_points": [
+    "Mapear vencimientos y amortizaciones: pedir detalle de la deuda actual (importe por tramo, tipo fijo/variable, vencimientos, amortización, covenants) y construir un calendario 12–36 meses para identificar picos y necesidades de refinanciación.",
+    "Propuesta de reestructuración: plantear extensión de plazos + posible tramo bullet/parcialmente bullet para suavizar amortización, alineando repago con generación operativa (EBITDA 2,3m€) y ciclo de proyectos.",
+    "Optimización de pricing y condiciones: usar la mejora de margen EBITDA (~17%) y el crecimiento de equity (+31% 2022–2024) para negociar coste y flexibilidad (covenants, carencias parciales, margen sobre índice).",
+    "Paquetizar solución: combinar deuda estructural refinanciada con líneas de circulante y avales para separar necesidades recurrentes (circulante/garantías) de financiación a plazo.",
+    "Siguientes pasos y documentación: acordar entrega de información mínima (detalle deuda, pipeline de proyectos, calendario de cobros/pagos, principales clientes/proveedores) para validar capacidad de repago y dimensionar límites."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos anuales estimados",
+      "valor": "~145.000 EUR"
+    },
+    {
+      "nombre": "Ahorro líquido estimado",
+      "valor": "~130.000 EUR"
+    },
+    {
+      "nombre": "Patrimonio invertible estimado",
+      "valor": "~410.000 EUR"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Perfil de remuneración con componente variable relevante, con posible volatilidad intraanual por bonificación extraordinaria prevista en el 2º semestre.",
+    "Tendencia positiva de acumulación patrimonial, con incremento de saldos en productos de inversión en los últimos 12 meses.",
+    "Mayor complejidad financiera por exposición internacional, lo que sugiere necesidades recurrentes de planificación (divisa/fiscalidad) y estructuración patrimonial.",
+    "Posible evento de liquidez (bonus) y potencial compra de segunda residencia, que podrían elevar necesidades de financiación y de gestión de excedentes de liquidez."
+  ],
+  "interpretacion": "El perfil muestra buena capacidad de generación de ingresos y acumulación de patrimonio, con mejora reciente del componente invertido y un potencial evento de liquidez en el 2º semestre. La existencia de hipoteca y la posible compra de una segunda residencia apuntan a una necesidad potencial de financiación, pero faltan datos clave (saldo hipotecario, ratios de endeudamiento, series históricas de ingresos y gastos) para dimensionarla. Para una recomendación completa sería necesario conocer el saldo y condiciones de la hipoteca, el nivel de gasto/ahorro mensual, la exposición por divisa y la fiscalidad aplicable.",
+  "disponible": true
+}

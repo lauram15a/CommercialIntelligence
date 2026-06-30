@@ -1,0 +1,24 @@
+{
+  "sector": "Construccion",
+  "oportunidades": [
+    {
+      "empresa": "Construccion Holdings SL",
+      "motivo": "Refinanciacion y optimizacion de estructura de deuda con foco en los vencimientos proximos y el calendario de amortizacion.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "Existe una conversacion inmediata de financiacion con capacidad de generar propuesta concreta y multproducto."
+    },
+    {
+      "empresa": "Construccion Holdings SL",
+      "motivo": "Refuerzo de circulante, trade finance y lineas operativas para acompanar crecimiento y expansion. Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+      "prioridad": "media",
+      "justificacion_prioridad": "La necesidad es relevante para sostener crecimiento, aunque normalmente se estructura despues de ordenar la deuda principal."
+    },
+    {
+      "empresa": "Construccion Holdings SL",
+      "motivo": "Paquete de tesoreria, coberturas y vinculacion adicional para mejorar principalidad y rentabilidad relacional.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "La relacion activa permite una conversacion de share of wallet y cross-sell con alta probabilidad comercial."
+    }
+  ],
+  "resumen": "Analisis focalizado en Construccion Holdings SL. Se priorizan palancas sobre la propia empresa, con foco en refinanciacion, circulante y vinculacion financiera asociada al sector construccion."
+}

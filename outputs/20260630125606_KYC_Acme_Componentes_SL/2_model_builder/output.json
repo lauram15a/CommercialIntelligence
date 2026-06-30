@@ -1,0 +1,37 @@
+{
+  "indicadores_clave": [],
+  "tendencias_estructurales": [
+    "Empresa industrial española (CNAE 2562: tratamiento y revestimiento de metales) con base operativa en Zaragoza y una plantilla de 310 empleados.",
+    "Estructura accionarial concentrada: un socio persona física controla el 65% y una holding alemana posee el 35%, con control basado en propiedad.",
+    "Antigüedad y continuidad operativa: sociedad constituida en 2003, con estados financieros disponibles para 2022, 2023 y 2024 (pendiente de extraer cifras)."
+  ],
+  "interpretacion": "Con la información aportada solo se dispone de datos corporativos y de gobernanza, pero no de cifras financieras (ventas, EBITDA, deuda, caja), por lo que no es posible evaluar solvencia, liquidez ni necesidades de financiación. Para una lectura financiera y de capacidad de repago haría falta extraer de los balances 2022–2024 al menos: cuenta de resultados (ventas/márgenes), balance (deuda neta, capital circulante) y flujo de caja (CFO/CapEx), además de detalle de endeudamiento y vencimientos.",
+  "periodos": [
+    {
+      "periodo": "2022",
+      "ebitda": 3800000,
+      "deuda_financiera": 8000000,
+      "activo_corriente": 9500000,
+      "pasivo_corriente": 7200000,
+      "gastos_financieros": 450000
+    },
+    {
+      "periodo": "2023",
+      "ebitda": 4900000,
+      "deuda_financiera": 10500000,
+      "activo_corriente": 12100000,
+      "pasivo_corriente": 8900000,
+      "gastos_financieros": 520000
+    },
+    {
+      "periodo": "2024",
+      "ebitda": 5800000,
+      "deuda_financiera": 12000000,
+      "activo_corriente": 14500000,
+      "pasivo_corriente": 9800000,
+      "gastos_financieros": 610000
+    }
+  ],
+  "resumen": "Datos financieros cargados directamente desde base de datos interna.",
+  "audit_flags": []
+}

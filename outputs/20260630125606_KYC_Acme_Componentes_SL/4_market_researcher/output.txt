@@ -1,0 +1,32 @@
+## Señales externas relevantes para el análisis de riesgo — Acme Componentes SL
+
+### 1) Expansión internacional / riesgo operativo y de ejecución
+- **Evento:** Inauguración de la **primera planta de producción en Polonia (Wroclaw)**.  
+- **Fecha / fuente:** *Expansión*, **2025-05-15**.  
+- **Hechos clave:** **Inversión de ~€9m** y **capacidad para 120 empleados**.  
+- **Lectura de riesgo (externa):**
+  - **Riesgo de ramp-up** (puesta en marcha, productividad, calidad, scrap, OEE) y **curva de aprendizaje** en una nueva geografía.
+  - **Riesgo laboral/regulatorio local** (contratación, cumplimiento H&S, permisos, inspecciones).
+  - **Riesgo de capex y liquidez**: presión de caja por inversión y posible desviación de presupuesto/plazos.
+  - **Riesgo de cadena de suministro**: nuevos proveedores/logística transfronteriza; exposición a disrupciones y costes.
+  - **Riesgo FX** (si parte de costes/ingresos se denominan en PLN vs. EUR) y sensibilidad a inflación salarial local.
+
+### 2) Concentración de clientes / dependencia del ciclo automoción (Alemania)
+- **Evento:** Renovación y ampliación de contratos con **dos fabricantes alemanes de primer nivel**.  
+- **Fecha / fuente:** *El Economista*, **2025-12-01**.  
+- **Hechos clave:** ingresos asegurados por **>€15m hasta 2027**.  
+- **Lectura de riesgo (externa):**
+  - **Riesgo de concentración**: mayor dependencia de pocos clientes “tier-1/OEM” (poder de negociación, presión de precios, cláusulas de calidad/penalizaciones).
+  - **Riesgo sectorial**: exposición al **ciclo de automoción alemana** (producción, inventarios, paradas de planta, transición EV).
+  - **Riesgo contractual**: posibles **revisiones de precios**, requisitos de inversión/industrialización, y **riesgo de cancelación/volúmenes** si cambian plataformas o proveedores.
+  - **Riesgo reputacional/operativo**: fallos de calidad o entregas pueden escalar rápidamente (recalls, chargebacks, pérdida de proveedor preferente).
+
+### 3) Señales mixtas (mitigantes vs. nuevos riesgos)
+- **Mitigantes observables:**
+  - Los contratos hasta 2027 sugieren **visibilidad de ingresos** y validación comercial.
+  - La planta en Polonia puede **acercar capacidad a clientes europeos**, reduciendo lead times y costes logísticos en el medio plazo.
+- **Nuevos focos de riesgo:**
+  - **Complejidad operativa** por expansión (multi-planta, coordinación, control interno).
+  - Potencial **incremento de apalancamiento operativo** (costes fijos) si la demanda no acompaña el ramp-up.
+
+**Fuentes:** Expansión (2025-05-15); El Economista (2025-12-01).

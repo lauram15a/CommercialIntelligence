@@ -1,0 +1,32 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos (TTM, estimado)",
+      "valor": "12,0m€"
+    },
+    {
+      "nombre": "EBITDA (TTM, estimado)",
+      "valor": "1,8m€"
+    },
+    {
+      "nombre": "Margen EBITDA (TTM, estimado)",
+      "valor": "15,0%"
+    },
+    {
+      "nombre": "CAPEX (TTM, estimado)",
+      "valor": "0,6m€ (~5,0% ventas)"
+    },
+    {
+      "nombre": "Deuda financiera (estimada) / EBITDA",
+      "valor": "3,0x (5,4m€ / 1,8m€)"
+    }
+  ],
+  "tendencias_estructurales": [
+    "La información disponible es una foto TTM estimada sin histórico, por lo que no se puede concluir si el margen EBITDA está expandiéndose o comprimiéndose.",
+    "Se reporta un crecimiento anual de referencia del 7,0%, pero sin serie temporal no es posible validar la evolución interanual real de ingresos/EBITDA.",
+    "El CAPEX estimado (~5,0% de ventas) sugiere un perfil de inversión moderado, potencialmente de mantenimiento y/o soporte al crecimiento, pendiente de desglose.",
+    "El apalancamiento estimado (~3,0x EBITDA) es material y podría implicar sensibilidad a tipos y foco en refinanciación/optimización, sin detalle de vencimientos ni coste."
+  ],
+  "interpretacion": "Con los datos TTM estimados, la compañía combina rentabilidad operativa razonable (15,0% margen EBITDA) con apalancamiento relevante (~3,0x), lo que sugiere una estructura financiera que puede requerir gestión activa. Podría existir necesidad de financiación para circulante y/o crecimiento, y en paralelo una oportunidad de optimización de deuda y coberturas, pero faltan estados financieros reales e histórico (incluyendo calendario de vencimientos y coste de la deuda) para confirmar diagnóstico y dimensionar la solución.",
+  "disponible": true
+}

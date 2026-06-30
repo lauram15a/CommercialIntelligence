@@ -1,0 +1,30 @@
+{
+  "sector": "personal",
+  "oportunidades": [
+    {
+      "empresa": "Alvaro Serrano Vidal",
+      "motivo": "Financiacion residencial y estructuracion patrimonial ligada a compra de segunda vivienda.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "Hay un evento concreto de inversion personal con capacidad inmediata de generar financiacion y cross-sell.",
+      "ingresos_estimados": 145000,
+      "empleados": 1
+    },
+    {
+      "empresa": "Alvaro Serrano Vidal",
+      "motivo": "Reasignacion de liquidez hacia carteras delegadas y soluciones de proteccion patrimonial.",
+      "prioridad": "media",
+      "justificacion_prioridad": "La base patrimonial y la liquidez son claras, aunque la activacion depende de una conversacion de asesoramiento.",
+      "ingresos_estimados": 145000,
+      "empleados": 1
+    },
+    {
+      "empresa": "Alvaro Serrano Vidal",
+      "motivo": "Optimizacion de endeudamiento existente y coberturas de tipo sobre hipoteca vigente.",
+      "prioridad": "media",
+      "justificacion_prioridad": "La oportunidad es real, pero menos transformacional que la operacion de segunda residencia.",
+      "ingresos_estimados": 145000,
+      "empleados": 1
+    }
+  ],
+  "resumen": "Analisis focalizado en Alvaro Serrano Vidal, segmento personal. Se priorizan distintas oportunidades sobre la misma persona: liquidez, inversion, financiacion y vinculacion."
+}

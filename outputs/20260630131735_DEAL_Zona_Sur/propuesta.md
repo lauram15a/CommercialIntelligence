@@ -1,0 +1,9 @@
+Javier Romero Pardo es un autónomo con ingresos anuales estimados de ~47.000 EUR y un patrón estacional que sugiere variabilidad de caja. La oportunidad (prioridad alta) consiste en captar y sustituir su entidad principal con una propuesta centrada en operativa diaria digital y una solución de liquidez que reduzca fricción y cubra baches puntuales.
+
+Desde un punto de vista financiero, el cliente cuenta con un ahorro líquido estimado de ~18.000 EUR y un patrimonio invertible de ~22.000 EUR. Esta base permite operar con cierta holgura, pero puede tensionarse si coinciden meses de menor facturación con pagos concentrados (especialmente impuestos). Además, al no disponer de información de endeudamiento, se plantea una hipótesis prudente de ausencia de financiación estructurada, lo que refuerza el encaje de una línea flexible de circulante de pequeña escala.
+
+La propuesta se estructura en dos fases para maximizar la probabilidad de captación: (1) migración de operativa diaria a una cuenta principal para autónomos con foco en rapidez/digitalización (cobros, pagos, impuestos, transferencias inmediatas y control), y (2) activación de un esquema de liquidez (póliza/línea flexible y, si aplica, anticipo de facturas) dimensionado con datos reales de 6–12 meses de movimientos y calendario fiscal.
+
+Como valor añadido, se plantea separar un “saldo mínimo operativo” del excedente para rentabilizar de forma conservadora sin comprometer la disponibilidad en meses valle. El objetivo es convertir la mejora de experiencia (digital/rapidez) en vinculación principal y, a la vez, reducir el riesgo de tensiones de tesorería mediante planificación y financiación puente cuando sea necesario.
+
+El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.

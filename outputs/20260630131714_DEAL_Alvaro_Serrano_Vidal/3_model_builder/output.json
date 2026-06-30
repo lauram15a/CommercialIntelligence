@@ -1,0 +1,24 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos anuales estimados",
+      "valor": "145.000 EUR"
+    },
+    {
+      "nombre": "Ahorro líquido estimado",
+      "valor": "130.000 EUR"
+    },
+    {
+      "nombre": "Patrimonio invertible estimado",
+      "valor": "410.000 EUR"
+    }
+  ],
+  "tendencias_estructurales": [
+    "No hay estados financieros corporativos disponibles; el análisis se limita a métricas patrimoniales y de renta personal.",
+    "Se observa incremento de saldos en productos de inversión en los últimos 12 meses, sugiriendo mayor canalización de excedentes hacia inversión.",
+    "Existe un evento de liquidez a corto plazo (bonificación extraordinaria prevista en el 2º semestre) que podría elevar puntualmente liquidez y patrimonio invertible.",
+    "Interés en segunda residencia y estructuración patrimonial apunta a potenciales necesidades de financiación y planificación en el corto/medio plazo."
+  ],
+  "interpretacion": "La información disponible describe un perfil personal con alta capacidad de generación de renta y una base de liquidez/patrimonio invertible relevante, lo que sugiere margen para acometer inversión inmobiliaria y/o soluciones de planificación patrimonial. La bonificación extraordinaria prevista podría actuar como catalizador de liquidez para una entrada o amortización inicial, pero faltan datos clave (ingresos netos, gastos recurrentes, endeudamiento actual, activos/pasivos detallados y objetivos de compra) para dimensionar capacidad de endeudamiento, estructura óptima y calendario de financiación.",
+  "disponible": true
+}

@@ -1,0 +1,178 @@
+{
+  "run_id": "20260629172459",
+  "sector": "No especificado",
+  "company_name": "Construccion Holdings SL",
+  "entity_family": "juridica",
+  "fuente": "interna",
+  "geografia": null,
+  "analyst_notes": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Construccion",
+    "oportunidades": [
+      {
+        "empresa": "Construccion Holdings SL",
+        "motivo": "Refinanciacion y optimizacion de estructura de deuda con foco en los vencimientos proximos y el calendario de amortizacion.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "Existe una conversacion inmediata de financiacion con capacidad de generar propuesta concreta y multproducto.",
+        "historial_banco": "Cliente desde 2018-06-15. Rating interno: BBB+. Operaciones activas: 2. Impagos: 0.",
+        "_historial_completo": {
+          "cliente_desde": "2018-06-15",
+          "rating_interno": "BBB+",
+          "impagos": 0,
+          "segmento": "Corporate Construccion",
+          "gestor": "Equipo Centro",
+          "operaciones_activas": [
+            {
+              "tipo": "Prestamo corporativo",
+              "importe_EUR": 6450000,
+              "cuota_mensual_EUR": 88000,
+              "fecha_inicio": "2024-03-01",
+              "vencimiento": "2029-03-01",
+              "al_corriente": true
+            },
+            {
+              "tipo": "Linea de circulante",
+              "limite_EUR": 3750000,
+              "dispuesto_EUR": 2070000,
+              "fecha_inicio": "2025-01-10",
+              "vencimiento": "2026-12-31",
+              "al_corriente": true
+            }
+          ],
+          "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+        }
+      },
+      {
+        "empresa": "Construccion Holdings SL",
+        "motivo": "Refuerzo de circulante, trade finance y lineas operativas para acompanar crecimiento y expansion. Empresa ficticia con informacion completa para analisis sectorial y de riesgo.",
+        "prioridad": "media",
+        "justificacion_prioridad": "La necesidad es relevante para sostener crecimiento, aunque normalmente se estructura despues de ordenar la deuda principal."
+      },
+      {
+        "empresa": "Construccion Holdings SL",
+        "motivo": "Paquete de tesoreria, coberturas y vinculacion adicional para mejorar principalidad y rentabilidad relacional.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "La relacion activa permite una conversacion de share of wallet y cross-sell con alta probabilidad comercial."
+      }
+    ],
+    "resumen": "Analisis focalizado en Construccion Holdings SL. Se priorizan palancas sobre la propia empresa, con foco en refinanciacion, circulante y vinculacion financiera asociada al sector construccion."
+  },
+  "earnings_summary": "Construccion Holdings SL muestra un crecimiento sostenido de ingresos: de 10,0m€ en 2022 a 11,8m€ en 2023 (+18,0% interanual) y 13,5m€ en 2024 (+14,4%), acumulando +35,0% vs. 2022. El EBITDA también acelera (1,6m€ → 1,9m€ → 2,3m€), con mejora del margen EBITDA desde ~16,0% (2022) a ~16,1% (2023) y ~17,0% (2024), lo que sugiere apalancamiento operativo y/o mejor ejecución de proyectos. En paralelo, la deuda financiera aumenta de 4,2m€ a 5,2m€ (+23,8% en dos años), aunque el apalancamiento se mantiene relativamente estable en torno a ~2,6x–2,7x Deuda/EBITDA (4,2/1,6; 4,7/1,9; 5,2/2,3) por el crecimiento del resultado operativo. El patrimonio neto crece de 3,2m€ a 4,2m€ (+31,3%), reforzando la base de capital y absorbiendo parte del crecimiento del balance. No hay datos de CAPEX ni de margen operativo (EBIT) para evaluar intensidad inversora o presión de amortizaciones, lo que limita la lectura sobre necesidades de inversión orgánica. La compañía presenta expansión de actividad con mejora gradual de rentabilidad y aumento controlado del endeudamiento, lo que puede implicar necesidad de financiación para sostener el crecimiento (circulante/garantías de obra) y/o optimización de estructura de deuda.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos (2022→2024)",
+        "valor": "10,0m€ → 13,5m€ (+35,0% vs. 2022)"
+      },
+      {
+        "nombre": "Crecimiento ingresos YoY",
+        "valor": "+18,0% (2023) ; +14,4% (2024)"
+      },
+      {
+        "nombre": "EBITDA (2022→2024)",
+        "valor": "1,6m€ → 2,3m€"
+      },
+      {
+        "nombre": "Margen EBITDA",
+        "valor": "~16,0% (2022) ; ~16,1% (2023) ; ~17,0% (2024)"
+      },
+      {
+        "nombre": "Deuda/EBITDA",
+        "valor": "~2,6x–2,7x (2022–2024)"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Crecimiento sostenido de ingresos 2022–2024 con desaceleración moderada del YoY (18,0% a 14,4%) pero expansión acumulada relevante (+35,0% vs. 2022).",
+      "Mejora gradual de rentabilidad operativa (EBITDA y margen EBITDA) consistente con apalancamiento operativo y/o mejor ejecución de proyectos.",
+      "Aumento de deuda financiera en términos absolutos (4,2m€ a 5,2m€) pero apalancamiento relativamente estable gracias al crecimiento del EBITDA.",
+      "Refuerzo de la base de capital vía crecimiento del patrimonio neto (3,2m€ a 4,2m€), lo que sugiere capacidad de absorber parte del crecimiento del balance."
+    ],
+    "interpretacion": "La compañía combina expansión de actividad con mejora gradual de márgenes, lo que apunta a una trayectoria operativa positiva y cierta disciplina en la gestión del apalancamiento (Deuda/EBITDA estable pese al aumento de deuda). El crecimiento del endeudamiento y la naturaleza del negocio de construcción sugieren potencial necesidad de financiación para circulante y garantías de obra, además de posible optimización de la estructura de deuda. Falta información de CAPEX y EBIT/amortizaciones para evaluar intensidad inversora, generación de caja y sostenibilidad del crecimiento sin presión adicional de financiación.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Construccion Holdings SL es una compañía del sector construcción con trayectoria bancaria desde 2018 y un perfil de riesgo interno BBB+. Presenta crecimiento sostenido (ingresos 10,0m€ en 2022 a 13,5m€ en 2024) y mejora gradual de rentabilidad (EBITDA 1,6m€ a 2,3m€), con endeudamiento en aumento pero apalancamiento estable (~2,6x–2,7x Deuda/EBITDA).",
+    "situacion_actual": "La oportunidad prioritaria es una refinanciación y optimización de la estructura de deuda, con foco en vencimientos próximos y calendario de amortización. La empresa está creciendo y mejorando márgenes, mientras la deuda financiera sube (4,2m€ a 5,2m€ en 2022–2024) sin deterioro aparente del apalancamiento, lo que abre margen para reordenar plazos/costes y alinear la deuda con el ciclo de proyectos. No registra impagos y mantiene 2 operaciones activas, lo que sugiere una relación estable y capacidad de ejecución si se estructura bien la solución.",
+    "necesidades_potenciales": [
+      "Refinanciación de vencimientos próximos: extensión de plazos y rediseño del calendario de amortización para reducir picos de caja y riesgo de refinanciación, manteniendo Deuda/EBITDA en torno a ~2,6x–2,7x.",
+      "Optimización del coste financiero y condiciones (pricing/covenants) aprovechando la mejora de EBITDA (1,6m€→2,3m€) y el refuerzo de patrimonio neto (3,2m€→4,2m€) como argumentos de crédito.",
+      "Líneas de circulante específicas para construcción (póliza/confirming/anticipo de certificaciones) para acompañar el crecimiento de actividad y mitigar tensiones de caja típicas del ciclo de cobros/pagos del sector.",
+      "Instrumentos para garantías/avales de obra vinculados a nuevos proyectos, evitando consumir capacidad de deuda amortizable y separando necesidades operativas de financiación estructural."
+    ],
+    "riesgos": [
+      "Riesgo de liquidez por concentración de amortizaciones en el corto plazo (picos de vencimiento) en un negocio con cobros por hitos y potencial descalce de circulante.",
+      "Riesgo sectorial/ejecución de proyectos: desviaciones de costes, retrasos o disputas pueden erosionar márgenes y tensionar el servicio de deuda pese a la mejora reciente del EBITDA.",
+      "Visibilidad limitada de CAPEX, EBIT y amortizaciones: posible presión de caja no reflejada en EBITDA que afecte la capacidad real de repago y el diseño óptimo de plazos."
+    ],
+    "talking_points": [
+      "Mapear vencimientos y amortizaciones: pedir detalle de la deuda actual (importe por tramo, tipo fijo/variable, vencimientos, amortización, covenants) y construir un calendario 12–36 meses para identificar picos y necesidades de refinanciación.",
+      "Propuesta de reestructuración: plantear extensión de plazos + posible tramo bullet/parcialmente bullet para suavizar amortización, alineando repago con generación operativa (EBITDA 2,3m€) y ciclo de proyectos.",
+      "Optimización de pricing y condiciones: usar la mejora de margen EBITDA (~17%) y el crecimiento de equity (+31% 2022–2024) para negociar coste y flexibilidad (covenants, carencias parciales, margen sobre índice).",
+      "Paquetizar solución: combinar deuda estructural refinanciada con líneas de circulante y avales para separar necesidades recurrentes (circulante/garantías) de financiación a plazo.",
+      "Siguientes pasos y documentación: acordar entrega de información mínima (detalle deuda, pipeline de proyectos, calendario de cobros/pagos, principales clientes/proveedores) para validar capacidad de repago y dimensionar límites."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Refinanciación y optimización de deuda para Construccion Holdings SL",
+    "subtitulo": "Reordenar vencimientos y suavizar amortizaciones para reducir riesgo de refinanciación, mejorar coste financiero y alinear la deuda con el ciclo de proyectos.",
+    "oportunidad_detectada": "Construccion Holdings SL presenta una necesidad prioritaria de refinanciación y optimización de su estructura de deuda, con foco en vencimientos próximos y un calendario de amortización potencialmente exigente para un negocio con cobros por hitos. El momento es oportuno porque la compañía ha incrementado ingresos y EBITDA de forma sostenida (2022–2024) y ha reforzado patrimonio neto, lo que permite negociar mejores condiciones y mayor flexibilidad. La propuesta busca reducir picos de caja, mejorar visibilidad de liquidez a 12–36 meses y separar financiación estructural de necesidades operativas (circulante y avales).",
+    "contexto_financiero": [
+      "Crecimiento de ingresos: 10,0m€ (2022) → 11,8m€ (2023, +18,0%) → 13,5m€ (2024, +14,4%), +35,0% acumulado vs. 2022.",
+      "Mejora operativa: EBITDA 1,6m€ (2022) → 1,9m€ (2023) → 2,3m€ (2024) con margen EBITDA ~16,0% → ~16,1% → ~17,0%.",
+      "Endeudamiento en aumento pero apalancamiento estable: deuda financiera 4,2m€ (2022) → 4,7m€ (2023) → 5,2m€ (2024) y Deuda/EBITDA ~2,6x–2,7x.",
+      "Refuerzo de solvencia: patrimonio neto 3,2m€ (2022) → 4,2m€ (2024), +31,3%, apoyando capacidad de negociación de condiciones y covenants."
+    ],
+    "encaje_productos": [
+      "Préstamo a plazo / tramo amortizable para refinanciar vencimientos próximos y extender plazos, reduciendo picos de caja y alineando amortización con la generación operativa.",
+      "Tramo con amortización parcial bullet (o carencia parcial) para suavizar el perfil de repago en periodos de mayor consumo de circulante por ejecución de obra.",
+      "Líneas de circulante (póliza de crédito, confirming, anticipo de certificaciones) para financiar el descalce cobros/pagos típico del sector sin tensionar la deuda estructural.",
+      "Líneas de avales y garantías de obra para licitaciones/ejecución, separando necesidades de garantías de la capacidad de endeudamiento amortizable."
+    ],
+    "comparables": [
+      "Referencia sectorial: compañías de construcción/contratistas de tamaño medio suelen estructurar deuda con mix de financiación a plazo + líneas de circulante + avales para gestionar estacionalidad y cobros por hitos.",
+      "Referencia de mercado: en perfiles con apalancamiento ~2,5x–3,0x Deuda/EBITDA y tendencia positiva de EBITDA, es habitual buscar extensión de plazos y mayor flexibilidad de covenants para mitigar riesgo de refinanciación y volatilidad de proyectos."
+    ],
+    "argumentos_valor": [
+      "Reducción del riesgo de liquidez: construcción de un calendario de deuda 12–36 meses para identificar picos de vencimiento y rediseñar amortizaciones, disminuyendo el riesgo de tensiones de caja.",
+      "Mejora de condiciones: aprovechar el crecimiento de EBITDA (1,6m€ → 2,3m€) y el refuerzo de equity (3,2m€ → 4,2m€) para optimizar pricing, covenants y flexibilidad contractual.",
+      "Estructura “paquetizada” y eficiente: separar deuda estructural (plazo) de necesidades operativas (circulante y avales) para evitar sobredimensionar la deuda amortizable y proteger capacidad de ejecución de nuevos proyectos.",
+      "Disciplina y seguimiento: definición de métricas de control (Deuda/EBITDA, cobertura de servicio de deuda, evolución de circulante) y reporting periódico para anticipar desviaciones de proyecto y actuar antes de que afecten al servicio de deuda."
+    ],
+    "proximos_pasos": [
+      "Solicitud de información (cliente, 48–72h): detalle de deuda por tramo (importe, tipo fijo/variable, vencimiento, amortización, garantías, covenants) y cuadro de amortización vigente.",
+      "Diagnóstico financiero (banco, 3–5 días laborables): modelizar calendario de caja 12–36 meses con foco en picos de amortización y necesidades de circulante; identificar opciones de extensión de plazo y suavización de amortización.",
+      "Diseño de solución (banco + cliente, 1 semana): propuesta de nueva estructura (tramo a plazo + posible bullet parcial + líneas de circulante + avales) y term sheet indicativo con escenarios de sensibilidad.",
+      "Aprobación y ejecución (banco, 2–4 semanas sujeto a documentación): due diligence de riesgos de proyecto (pipeline, principales contratos, calendario cobros/pagos) y formalización de la refinanciación."
+    ],
+    "narrativa_markdown": "Construccion Holdings SL se encuentra en un punto favorable para abordar una **refinanciación y optimización de su estructura de deuda** con prioridad alta, centrada en **vencimientos próximos** y en un **calendario de amortización** que, en un negocio de construcción con cobros por hitos, puede generar picos de caja y riesgo de refinanciación.\n\nLa evolución reciente respalda una conversación de mejora de condiciones: los **ingresos crecen de 10,0m€ (2022) a 13,5m€ (2024)** (+35,0% acumulado) y el **EBITDA aumenta de 1,6m€ a 2,3m€**, con expansión del margen hasta ~17,0%. A la vez, la deuda financiera sube a **5,2m€ (2024)**, pero el apalancamiento se mantiene estable en **~2,6x–2,7x Deuda/EBITDA**, y el **patrimonio neto** se refuerza hasta **4,2m€**.\n\nLa propuesta comercial consiste en **reordenar plazos y suavizar amortizaciones** (incluyendo, si encaja, un componente parcialmente bullet o carencias parciales) para alinear el repago con la generación operativa y reducir el riesgo de liquidez. En paralelo, planteamos **optimizar el coste financiero y la flexibilidad** (covenants y estructura) apoyándonos en la mejora de EBITDA y el fortalecimiento patrimonial.\n\nAdicionalmente, para acompañar el crecimiento y evitar que la deuda a plazo absorba necesidades operativas, proponemos una solución paquetizada con **líneas de circulante** (póliza/confirming/anticipo de certificaciones) y **líneas de avales/garantías de obra**, separando claramente financiación estructural de financiación de operación.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {
+    "cliente_desde": "2018-06-15",
+    "rating_interno": "BBB+",
+    "impagos": 0,
+    "segmento": "Corporate Construccion",
+    "gestor": "Equipo Centro",
+    "operaciones_activas": [
+      {
+        "tipo": "Prestamo corporativo",
+        "importe_EUR": 6450000,
+        "cuota_mensual_EUR": 88000,
+        "fecha_inicio": "2024-03-01",
+        "vencimiento": "2029-03-01",
+        "al_corriente": true
+      },
+      {
+        "tipo": "Linea de circulante",
+        "limite_EUR": 3750000,
+        "dispuesto_EUR": 2070000,
+        "fecha_inicio": "2025-01-10",
+        "vencimiento": "2026-12-31",
+        "al_corriente": true
+      }
+    ],
+    "notas_gestor": "Cliente con actividad comercial recurrente y potencial de ampliar vinculacion financiera en 2027."
+  }
+}

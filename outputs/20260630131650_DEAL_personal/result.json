@@ -1,0 +1,148 @@
+{
+  "run_id": "20260630131650",
+  "sector": "personal",
+  "company_name": "Alvaro Serrano Vidal",
+  "entity_family": "fisica",
+  "fuente": "interna",
+  "geografia": null,
+  "analyst_notes": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "personal",
+    "oportunidades": [
+      {
+        "empresa": "Alvaro Serrano Vidal",
+        "motivo": "Financiacion residencial y estructuracion patrimonial ligada a compra de segunda vivienda.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "Hay un evento concreto de inversion personal con capacidad inmediata de generar financiacion y cross-sell.",
+        "ingresos_estimados": 145000,
+        "empleados": 1,
+        "historial_banco": "Cliente particular del banco. Segmento Personal. Oficina Barcelona - Diagonal.",
+        "_historial_completo": {
+          "cliente_desde": "2021-01-01",
+          "rating_interno": "Vinculacion alta",
+          "impagos": 0,
+          "segmento": "Personal",
+          "gestor": "Barcelona - Diagonal",
+          "operaciones_activas": [
+            {
+              "tipo": "Relacion comercial activa",
+              "importe_EUR": 410000,
+              "fecha_inicio": "2023-01-01",
+              "vencimiento": "Revision anual",
+              "al_corriente": true
+            }
+          ],
+          "notas_gestor": "Directivo con remuneracion variable, exposicion internacional y mayor complejidad financiera personal."
+        }
+      },
+      {
+        "empresa": "Elena Costa Miret",
+        "motivo": "Captacion patrimonial con propuesta integrada de liquidez, inversion y fiscalidad personal.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "Hay predisposicion a cambiar de entidad y un evento de liquidez potencial en el horizonte cercano.",
+        "ingresos_estimados": 118000,
+        "empleados": 1
+      }
+    ],
+    "resumen": "Universo de personas fisicas priorizado por segmento personal. El ranking combina inmediatez comercial, capacidad economica y potencial de vinculacion."
+  },
+  "earnings_summary": "Alvaro Serrano Vidal es un cliente personal (directivo) con ingresos anuales estimados de ~145.000 EUR y un perfil de remuneración variable, lo que sugiere potencial volatilidad intraanual de ingresos por la bonificación extraordinaria prevista en el 2º semestre. En términos de balance personal, presenta un ahorro líquido estimado de ~130.000 EUR y un patrimonio invertible de ~410.000 EUR, con una tendencia positiva al haberse incrementado los saldos en productos de inversión en los últimos 12 meses. No se aportan series históricas de ingresos ni cuenta de resultados, por lo que no es posible cuantificar crecimiento interanual, evolución de margen operativo, CAPEX o endeudamiento corporativo; a nivel personal, sí consta una hipoteca vigente, sin detalle de saldo/ratio de endeudamiento. La exposición internacional y la mayor complejidad financiera apuntan a necesidades de planificación (divisa/fiscalidad) y de estructuración patrimonial, especialmente si se materializa la compra de una segunda residencia. La compañía/cliente presenta aumento de capacidad de ahorro e inversión y un evento de liquidez esperado (bonus), lo que puede implicar necesidad de financiación para segunda residencia y oportunidad de acompañamiento en estructuración patrimonial y gestión de excedentes de liquidez.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos anuales estimados",
+        "valor": "~145.000 EUR"
+      },
+      {
+        "nombre": "Ahorro líquido estimado",
+        "valor": "~130.000 EUR"
+      },
+      {
+        "nombre": "Patrimonio invertible estimado",
+        "valor": "~410.000 EUR"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Perfil de remuneración con componente variable relevante, con posible volatilidad intraanual por bonificación extraordinaria prevista en el 2º semestre.",
+      "Tendencia positiva de acumulación patrimonial, con incremento de saldos en productos de inversión en los últimos 12 meses.",
+      "Mayor complejidad financiera por exposición internacional, lo que sugiere necesidades recurrentes de planificación (divisa/fiscalidad) y estructuración patrimonial.",
+      "Posible evento de liquidez (bonus) y potencial compra de segunda residencia, que podrían elevar necesidades de financiación y de gestión de excedentes de liquidez."
+    ],
+    "interpretacion": "El perfil muestra buena capacidad de generación de ingresos y acumulación de patrimonio, con mejora reciente del componente invertido y un potencial evento de liquidez en el 2º semestre. La existencia de hipoteca y la posible compra de una segunda residencia apuntan a una necesidad potencial de financiación, pero faltan datos clave (saldo hipotecario, ratios de endeudamiento, series históricas de ingresos y gastos) para dimensionarla. Para una recomendación completa sería necesario conocer el saldo y condiciones de la hipoteca, el nivel de gasto/ahorro mensual, la exposición por divisa y la fiscalidad aplicable.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Alvaro Serrano Vidal es un cliente particular (segmento Personal) de la oficina Barcelona - Diagonal, con perfil directivo y remuneración mixta (fijo + variable). Presenta ingresos anuales estimados de ~145.000 EUR, ahorro líquido estimado de ~130.000 EUR y patrimonio invertible estimado de ~410.000 EUR, con incremento de saldos en productos de inversión en los últimos 12 meses.",
+    "situacion_actual": "La oportunidad prioritaria es financiación residencial y estructuración patrimonial vinculada a la compra de una segunda vivienda. El cliente tiene una hipoteca vigente (sin detalle de saldo/condiciones) y se anticipa un evento de liquidez por bonificación extraordinaria en el 2º semestre, lo que puede afectar el timing de la entrada, la necesidad de financiación puente y la estrategia de inversión del excedente.",
+    "necesidades_potenciales": [
+      "Financiación para segunda residencia: dimensionar importe objetivo, % de entrada y estructura (hipoteca 2ª vivienda vs. préstamo con garantía de cartera), considerando que dispone de ~130.000 EUR de liquidez y ~410.000 EUR invertibles.",
+      "Planificación de tesorería por remuneración variable: diseño de un esquema de aportaciones/inversión y colchón de liquidez que absorba la volatilidad intraanual y el cobro del bonus en 2º semestre (posible financiación puente hasta el cobro).",
+      "Estructuración patrimonial y fiscalidad asociada a la compra: optimizar titularidad, impacto fiscal y coordinación con la hipoteca vigente (posible reorganización de activos para mejorar ratios y condiciones).",
+      "Gestión de exposición internacional (divisa/fiscalidad): revisión de riesgos de tipo de cambio y necesidades recurrentes de planificación si parte de ingresos/activos están vinculados al exterior."
+    ],
+    "riesgos": [
+      "Riesgo de sobreapalancamiento o encarecimiento financiero por falta de visibilidad del saldo/condiciones de la hipoteca vigente y del ratio deuda/ingresos antes de asumir una segunda financiación.",
+      "Riesgo de tensión de liquidez por descalce temporal entre la compra (señal/arras/escritura) y el cobro del bonus del 2º semestre, especialmente si se inmoviliza parte de los ~130.000 EUR como entrada.",
+      "Riesgo de volatilidad de ingresos por componente variable: el bonus puede no materializarse en el importe esperado, afectando capacidad de amortización o nivel de entrada.",
+      "Riesgo de complejidad fiscal/divisa por exposición internacional: decisiones de financiación e inversión podrían tener impactos no previstos si no se mapea correctamente la situación fiscal y la moneda de ingresos/activos."
+    ],
+    "talking_points": [
+      "Aterrizar la operación: ¿precio objetivo de la segunda vivienda, calendario (arras/escritura) y % de entrada deseado? Con eso definimos si conviene hipoteca 2ª vivienda, financiación puente o préstamo con garantía de cartera.",
+      "Radiografía de endeudamiento: solicitar saldo, tipo, plazo y cuota de la hipoteca vigente y estimar ratio de esfuerzo con el nuevo préstamo para negociar condiciones y evitar tensiones de caja.",
+      "Plan de liquidez 6-12 meses: separar colchón operativo vs. entrada y diseñar el uso del bonus del 2º semestre (amortización parcial, inversión o refuerzo de liquidez) según escenarios.",
+      "Estructuración patrimonial: revisar titularidad y encaje fiscal de la compra (y de la hipoteca) para minimizar fricciones y alinear con objetivos patrimoniales de medio plazo.",
+      "Revisión de inversiones y exposición internacional: confirmar si hay activos/ingresos en divisa y ajustar la cartera para que la compra no obligue a desinvertir en mal momento o asumir riesgo de tipo de cambio."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Financiación de segunda vivienda + estructuración patrimonial para directivo con liquidez y bonus esperado",
+    "subtitulo": "Estructuramos la compra de una segunda residencia optimizando entrada, financiación y fiscalidad, y alineando la cartera y la liquidez con el cobro del bonus del 2º semestre.",
+    "oportunidad_detectada": "Cliente particular con perfil directivo y remuneración mixta (fijo + variable) que prioriza la compra de una segunda vivienda. La combinación de liquidez disponible hoy y un bonus esperado en el 2º semestre abre la puerta a diseñar una financiación eficiente (incluida financiación puente si el calendario lo exige) y a ordenar el patrimonio para evitar desinversiones inoportunas. Es un momento oportuno para revisar endeudamiento actual (hipoteca vigente) y definir una estructura patrimonial/fiscal coherente antes de formalizar la operación.",
+    "contexto_financiero": [
+      "Ingresos anuales estimados: ~145.000 EUR, con componente variable relevante y posible volatilidad intraanual por bonificación extraordinaria prevista en el 2º semestre.",
+      "Ahorro líquido estimado: ~130.000 EUR, que puede cubrir parte de la entrada/arras y un colchón de seguridad, pero requiere planificación para evitar tensión de tesorería durante el proceso de compra.",
+      "Patrimonio invertible estimado: ~410.000 EUR, con tendencia positiva (incremento de saldos en productos de inversión en los últimos 12 meses), lo que habilita alternativas como financiación con garantía de cartera y una estrategia de inversión del excedente post-compra."
+    ],
+    "encaje_productos": [
+      "Hipoteca para segunda vivienda: financiación a largo plazo para optimizar el binomio cuota/entrada, coordinada con la hipoteca vigente y con un análisis de ratio de esfuerzo para asegurar sostenibilidad.",
+      "Financiación puente: solución temporal para cubrir el descalce entre señal/arras/escritura y el cobro del bonus del 2º semestre, reduciendo la necesidad de desinvertir o consumir liquidez estructural.",
+      "Préstamo con garantía de cartera (lombardo): alternativa para financiar parte de la operación manteniendo la cartera invertida, con control de márgenes de garantía y escenarios de mercado.",
+      "Servicio de planificación patrimonial y fiscal: definición de titularidad, coordinación de activos y pasivos y revisión de implicaciones fiscales (incluida posible exposición internacional/divisa) antes de ejecutar la compra."
+    ],
+    "comparables": [
+      "Referencia de mercado: estructura típica de compra de 2ª vivienda para perfil directivo combina 20%–30% de entrada + financiación hipotecaria, complementada con financiación puente si el calendario de bonus/variable no coincide con la escritura.",
+      "Referencia de mercado: para clientes con patrimonio invertible relevante, es habitual evaluar préstamo con garantía de cartera como complemento a hipoteca para reducir desinversiones y mejorar flexibilidad de liquidez (sujeto a límites prudentes de colateral y volatilidad)."
+    ],
+    "argumentos_valor": [
+      "Ejecución sin fricciones: diseñamos un plan de liquidez 6–12 meses que separa (i) colchón operativo, (ii) entrada/arras y (iii) inversión, minimizando el riesgo de tensión de caja por el timing del bonus.",
+      "Optimización de coste y estructura: comparamos hipoteca 2ª vivienda vs. combinación hipoteca + garantía de cartera vs. financiación puente, buscando la estructura más eficiente en cuota, tipo y flexibilidad.",
+      "Gestión integral del patrimonio: alineamos la financiación con una revisión patrimonial (titularidad, fiscalidad y exposición internacional/divisa) para evitar decisiones subóptimas y mejorar la resiliencia del balance personal."
+    ],
+    "proximos_pasos": [
+      "En 48–72h (cliente + gestor): recopilar datos críticos: precio objetivo de la segunda vivienda, calendario (arras/escritura), % de entrada deseado, y detalle de la hipoteca vigente (saldo, tipo, plazo, cuota, comisiones).",
+      "En 1 semana (equipo comercial): preparar 3 escenarios comparativos (hipoteca 2ª vivienda / hipoteca + préstamo con garantía de cartera / hipoteca + financiación puente) con ratio de esfuerzo y plan de amortización usando el bonus del 2º semestre en distintos supuestos (conservador/base/alto).",
+      "En 1–2 semanas (equipo comercial + asesor fiscal si aplica): sesión de estructuración patrimonial para definir titularidad y mapa fiscal/divisa, y propuesta de estrategia de inversión del excedente de liquidez antes y después de la compra."
+    ],
+    "narrativa_markdown": "El cliente, con perfil directivo y remuneración mixta, se encuentra en un momento idóneo para abordar la compra de una segunda vivienda con una estructura financiera eficiente. La combinación de liquidez disponible hoy (~130.000 EUR) y un evento de liquidez esperado por bonus en el 2º semestre permite diseñar un plan que reduzca fricciones en el calendario de arras/escritura y evite desinversiones en momentos no deseados.\n\nDesde el punto de vista financiero, el cliente presenta ingresos anuales estimados de ~145.000 EUR y un patrimonio invertible estimado de ~410.000 EUR, con tendencia positiva en los últimos 12 meses. No obstante, existe una hipoteca vigente sin detalle de saldo/condiciones, por lo que el primer paso es completar la radiografía de endeudamiento para dimensionar correctamente la nueva financiación y asegurar un ratio de esfuerzo sostenible.\n\nLa propuesta combina (i) hipoteca para segunda vivienda como pilar de financiación a largo plazo, (ii) financiación puente para cubrir el descalce temporal hasta el cobro del bonus si el calendario lo requiere, y (iii) la opción de préstamo con garantía de cartera para aportar flexibilidad manteniendo el patrimonio invertido, siempre bajo criterios prudentes de colateral y escenarios de mercado.\n\nEn paralelo, recomendamos una sesión de planificación patrimonial y fiscal para definir la titularidad óptima de la compra, coordinar activos y pasivos (incluida la hipoteca vigente) y revisar la exposición internacional/divisa. El objetivo es que la operación inmobiliaria no sea un evento aislado, sino un paso coherente dentro de una estrategia patrimonial de medio plazo.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {
+    "cliente_desde": "2021-01-01",
+    "rating_interno": "Vinculacion alta",
+    "impagos": 0,
+    "segmento": "Personal",
+    "gestor": "Barcelona - Diagonal",
+    "operaciones_activas": [
+      {
+        "tipo": "Relacion comercial activa",
+        "importe_EUR": 410000,
+        "fecha_inicio": "2023-01-01",
+        "vencimiento": "Revision anual",
+        "al_corriente": true
+      }
+    ],
+    "notas_gestor": "Directivo con remuneracion variable, exposicion internacional y mayor complejidad financiera personal."
+  }
+}

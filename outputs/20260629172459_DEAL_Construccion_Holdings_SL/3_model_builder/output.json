@@ -1,0 +1,32 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos (2022→2024)",
+      "valor": "10,0m€ → 13,5m€ (+35,0% vs. 2022)"
+    },
+    {
+      "nombre": "Crecimiento ingresos YoY",
+      "valor": "+18,0% (2023) ; +14,4% (2024)"
+    },
+    {
+      "nombre": "EBITDA (2022→2024)",
+      "valor": "1,6m€ → 2,3m€"
+    },
+    {
+      "nombre": "Margen EBITDA",
+      "valor": "~16,0% (2022) ; ~16,1% (2023) ; ~17,0% (2024)"
+    },
+    {
+      "nombre": "Deuda/EBITDA",
+      "valor": "~2,6x–2,7x (2022–2024)"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Crecimiento sostenido de ingresos 2022–2024 con desaceleración moderada del YoY (18,0% a 14,4%) pero expansión acumulada relevante (+35,0% vs. 2022).",
+    "Mejora gradual de rentabilidad operativa (EBITDA y margen EBITDA) consistente con apalancamiento operativo y/o mejor ejecución de proyectos.",
+    "Aumento de deuda financiera en términos absolutos (4,2m€ a 5,2m€) pero apalancamiento relativamente estable gracias al crecimiento del EBITDA.",
+    "Refuerzo de la base de capital vía crecimiento del patrimonio neto (3,2m€ a 4,2m€), lo que sugiere capacidad de absorber parte del crecimiento del balance."
+  ],
+  "interpretacion": "La compañía combina expansión de actividad con mejora gradual de márgenes, lo que apunta a una trayectoria operativa positiva y cierta disciplina en la gestión del apalancamiento (Deuda/EBITDA estable pese al aumento de deuda). El crecimiento del endeudamiento y la naturaleza del negocio de construcción sugieren potencial necesidad de financiación para circulante y garantías de obra, además de posible optimización de la estructura de deuda. Falta información de CAPEX y EBIT/amortizaciones para evaluar intensidad inversora, generación de caja y sostenibilidad del crecimiento sin presión adicional de financiación.",
+  "disponible": true
+}

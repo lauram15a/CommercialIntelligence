@@ -1,0 +1,23 @@
+{
+  "perfil": "AgroVal Export Partners SL es una compañía del sector agro/exportación con crecimiento orgánico sostenido y tracción comercial estable. Entre 2022 y 2024 incrementa ingresos de 21,3m€ a 26,8m€ y mantiene rentabilidad operativa estable (margen EBITDA ~8,7%→9,3%). Es cliente bancario desde 2011, con rating interno A, 2 operaciones activas y sin impagos, lo que sugiere un perfil de riesgo históricamente sólido.",
+  "situacion_actual": "La oportunidad prioritaria es una refinanciación y optimización de la estructura de deuda, con foco en vencimientos próximos y calendario de amortización. La deuda financiera crece de 5,9m€ (2022) a 7,2m€ (2024), mientras el apalancamiento se mantiene controlado/mejora ligeramente (deuda/EBITDA ~3,2x→~2,9x), pero con presión por mayores gastos financieros (290k€→380k€). El aumento de amortizaciones (0,56m€→0,75m€) apunta a una base de activos en expansión y posible ciclo inversor que puede estar tensionando la estructura de financiación.",
+  "necesidades_potenciales": [
+    "Refinanciación de los vencimientos próximos para suavizar el perfil de amortización y reducir riesgo de liquidez, manteniendo el apalancamiento en niveles compatibles con el crecimiento (deuda/EBITDA ~2,9x en 2024).",
+    "Optimización del coste financiero: con gastos financieros al alza (290k€→380k€), explorar repricing, extensión de plazos y/o sustitución de tramos más caros para proteger el resultado antes de impuestos.",
+    "Revisión de estructura de deuda vs. ciclo de inversión: el incremento de amortizaciones (0,56m€→0,75m€) sugiere mayor base de activos; potencial necesidad de financiar CAPEX y/o capital circulante asociado al crecimiento de ventas (21,3m€→26,8m€).",
+    "Ajuste de covenants y flexibilidad financiera: al crecer deuda absoluta (5,9m€→7,2m€) y mantener márgenes, puede convenir alinear covenants con estacionalidad del negocio exportador y con el plan de crecimiento para evitar restricciones operativas."
+  ],
+  "riesgos": [
+    "Riesgo de presión de caja por calendario de amortización y vencimientos cercanos: aunque el apalancamiento está controlado, una concentración de pagos podría tensionar liquidez si coincide con picos de capital circulante.",
+    "Riesgo de sensibilidad a tipos/coste de financiación: el aumento de gastos financieros (290k€→380k€) puede seguir erosionando el beneficio si no se optimiza la estructura o si persisten condiciones de financiación menos favorables.",
+    "Riesgo de inversión sin visibilidad de CAPEX/FCF: el aumento de amortizaciones sugiere inversión; sin datos de CAPEX y generación de caja, existe riesgo de que el crecimiento requiera más deuda de la prevista.",
+    "Riesgo de margen operativo: aunque el margen EBITDA mejora ligeramente (~8,7%→9,3%), cualquier compresión por costes/logística/commodities podría deteriorar la capacidad de servicio de deuda."
+  ],
+  "talking_points": [
+    "Mapear vencimientos y amortización: confirmar importes por tramo, fechas clave y si hay concentración en los próximos 12–24 meses; acordar objetivo de “suavizar” el perfil de pagos.",
+    "Coste financiero y palancas de mejora: revisar tipo medio actual implícito (gastos financieros 380k€ sobre deuda 7,2m€) y alternativas (extensión de plazo, refinanciación de tramos, estructura mixta fijo/variable).",
+    "Capacidad real de desapalancamiento: pedir CFO/FCF, CAPEX y evolución de capital circulante para validar que el crecimiento (26,8m€ ingresos 2024) se traduce en caja suficiente para sostener deuda.",
+    "Alineación con plan de negocio: entender si el aumento de activos (amortizaciones 0,75m€) responde a expansión y qué retorno esperan; calibrar financiación (plazo, carencias, covenants) a ese plan.",
+    "Propuesta de estructura objetivo: plantear un rango de deuda/EBITDA objetivo y un calendario de amortización compatible con estacionalidad del negocio exportador, manteniendo el perfil de riesgo coherente con rating interno A."
+  ]
+}

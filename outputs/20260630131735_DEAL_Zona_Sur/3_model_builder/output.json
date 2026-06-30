@@ -1,0 +1,24 @@
+{
+  "indicadores_clave": [
+    {
+      "nombre": "Ingresos anuales estimados",
+      "valor": "~47.000 EUR"
+    },
+    {
+      "nombre": "Ahorro líquido estimado",
+      "valor": "~18.000 EUR"
+    },
+    {
+      "nombre": "Patrimonio invertible estimado",
+      "valor": "~22.000 EUR"
+    }
+  ],
+  "tendencias_estructurales": [
+    "Patrón estacional de ingresos que sugiere variabilidad intraanual y posibles caídas puntuales de caja.",
+    "Ausencia de información de costes/márgenes y CAPEX, lo que impide evaluar rentabilidad y estrategia de inversión/expansión.",
+    "No se reportan datos de endeudamiento ni productos financieros activos, por lo que no puede inferirse apalancamiento ni estructura de financiación actual.",
+    "Interés en cambiar de entidad por rapidez/digitalización, lo que sugiere una oportunidad comercial de captación."
+  ],
+  "interpretacion": "Con los datos disponibles, el perfil apunta a un autónomo con nivel de ingresos moderado y cierta base de liquidez/patrimonio, pero potencialmente expuesto a tensiones de tesorería por estacionalidad. La falta de visibilidad sobre márgenes, gastos, impuestos, CAPEX y deuda limita el diagnóstico de capacidad de servicio de deuda y necesidades de financiación de medio plazo. Para dimensionar una solución (póliza de crédito, confirming/anticipo, cuenta remunerada o herramientas de cash management) harían falta series mensuales de cobros/pagos, estructura de costes y cualquier pasivo financiero vigente.",
+  "disponible": true
+}

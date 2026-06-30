@@ -1,0 +1,9 @@
+El cliente, con perfil directivo y remuneración mixta, se encuentra en un momento idóneo para abordar la compra de una segunda vivienda con una estructura financiera eficiente. La combinación de liquidez disponible hoy (~130.000 EUR) y un evento de liquidez esperado por bonus en el 2º semestre permite diseñar un plan que reduzca fricciones en el calendario de arras/escritura y evite desinversiones en momentos no deseados.
+
+Desde el punto de vista financiero, el cliente presenta ingresos anuales estimados de ~145.000 EUR y un patrimonio invertible estimado de ~410.000 EUR, con tendencia positiva en los últimos 12 meses. No obstante, existe una hipoteca vigente sin detalle de saldo/condiciones, por lo que el primer paso es completar la radiografía de endeudamiento para dimensionar correctamente la nueva financiación y asegurar un ratio de esfuerzo sostenible.
+
+La propuesta combina (i) hipoteca para segunda vivienda como pilar de financiación a largo plazo, (ii) financiación puente para cubrir el descalce temporal hasta el cobro del bonus si el calendario lo requiere, y (iii) la opción de préstamo con garantía de cartera para aportar flexibilidad manteniendo el patrimonio invertido, siempre bajo criterios prudentes de colateral y escenarios de mercado.
+
+En paralelo, recomendamos una sesión de planificación patrimonial y fiscal para definir la titularidad óptima de la compra, coordinar activos y pasivos (incluida la hipoteca vigente) y revisar la exposición internacional/divisa. El objetivo es que la operación inmobiliaria no sea un evento aislado, sino un paso coherente dentro de una estrategia patrimonial de medio plazo.
+
+El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.

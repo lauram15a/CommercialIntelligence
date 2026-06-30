@@ -1,0 +1,33 @@
+{
+  "titulo": "Propuesta comercial | Financiación de segunda vivienda + estructuración patrimonial para directivo con liquidez y bonus esperado",
+  "subtitulo": "Estructuramos la compra de una segunda residencia optimizando entrada, financiación y fiscalidad, y alineando la cartera y la liquidez con el cobro del bonus del 2º semestre.",
+  "oportunidad_detectada": "Cliente particular con perfil directivo y remuneración mixta (fijo + variable) que prioriza la compra de una segunda vivienda. La combinación de liquidez disponible hoy y un bonus esperado en el 2º semestre abre la puerta a diseñar una financiación eficiente (incluida financiación puente si el calendario lo exige) y a ordenar el patrimonio para evitar desinversiones inoportunas. Es un momento oportuno para revisar endeudamiento actual (hipoteca vigente) y definir una estructura patrimonial/fiscal coherente antes de formalizar la operación.",
+  "contexto_financiero": [
+    "Ingresos anuales estimados: ~145.000 EUR, con componente variable relevante y posible volatilidad intraanual por bonificación extraordinaria prevista en el 2º semestre.",
+    "Ahorro líquido estimado: ~130.000 EUR, que puede cubrir parte de la entrada/arras y un colchón de seguridad, pero requiere planificación para evitar tensión de tesorería durante el proceso de compra.",
+    "Patrimonio invertible estimado: ~410.000 EUR, con tendencia positiva (incremento de saldos en productos de inversión en los últimos 12 meses), lo que habilita alternativas como financiación con garantía de cartera y una estrategia de inversión del excedente post-compra."
+  ],
+  "encaje_productos": [
+    "Hipoteca para segunda vivienda: financiación a largo plazo para optimizar el binomio cuota/entrada, coordinada con la hipoteca vigente y con un análisis de ratio de esfuerzo para asegurar sostenibilidad.",
+    "Financiación puente: solución temporal para cubrir el descalce entre señal/arras/escritura y el cobro del bonus del 2º semestre, reduciendo la necesidad de desinvertir o consumir liquidez estructural.",
+    "Préstamo con garantía de cartera (lombardo): alternativa para financiar parte de la operación manteniendo la cartera invertida, con control de márgenes de garantía y escenarios de mercado.",
+    "Servicio de planificación patrimonial y fiscal: definición de titularidad, coordinación de activos y pasivos y revisión de implicaciones fiscales (incluida posible exposición internacional/divisa) antes de ejecutar la compra."
+  ],
+  "comparables": [
+    "Referencia de mercado: estructura típica de compra de 2ª vivienda para perfil directivo combina 20%–30% de entrada + financiación hipotecaria, complementada con financiación puente si el calendario de bonus/variable no coincide con la escritura.",
+    "Referencia de mercado: para clientes con patrimonio invertible relevante, es habitual evaluar préstamo con garantía de cartera como complemento a hipoteca para reducir desinversiones y mejorar flexibilidad de liquidez (sujeto a límites prudentes de colateral y volatilidad)."
+  ],
+  "argumentos_valor": [
+    "Ejecución sin fricciones: diseñamos un plan de liquidez 6–12 meses que separa (i) colchón operativo, (ii) entrada/arras y (iii) inversión, minimizando el riesgo de tensión de caja por el timing del bonus.",
+    "Optimización de coste y estructura: comparamos hipoteca 2ª vivienda vs. combinación hipoteca + garantía de cartera vs. financiación puente, buscando la estructura más eficiente en cuota, tipo y flexibilidad.",
+    "Gestión integral del patrimonio: alineamos la financiación con una revisión patrimonial (titularidad, fiscalidad y exposición internacional/divisa) para evitar decisiones subóptimas y mejorar la resiliencia del balance personal."
+  ],
+  "proximos_pasos": [
+    "En 48–72h (cliente + gestor): recopilar datos críticos: precio objetivo de la segunda vivienda, calendario (arras/escritura), % de entrada deseado, y detalle de la hipoteca vigente (saldo, tipo, plazo, cuota, comisiones).",
+    "En 1 semana (equipo comercial): preparar 3 escenarios comparativos (hipoteca 2ª vivienda / hipoteca + préstamo con garantía de cartera / hipoteca + financiación puente) con ratio de esfuerzo y plan de amortización usando el bonus del 2º semestre en distintos supuestos (conservador/base/alto).",
+    "En 1–2 semanas (equipo comercial + asesor fiscal si aplica): sesión de estructuración patrimonial para definir titularidad y mapa fiscal/divisa, y propuesta de estrategia de inversión del excedente de liquidez antes y después de la compra."
+  ],
+  "narrativa_markdown": "El cliente, con perfil directivo y remuneración mixta, se encuentra en un momento idóneo para abordar la compra de una segunda vivienda con una estructura financiera eficiente. La combinación de liquidez disponible hoy (~130.000 EUR) y un evento de liquidez esperado por bonus en el 2º semestre permite diseñar un plan que reduzca fricciones en el calendario de arras/escritura y evite desinversiones en momentos no deseados.\n\nDesde el punto de vista financiero, el cliente presenta ingresos anuales estimados de ~145.000 EUR y un patrimonio invertible estimado de ~410.000 EUR, con tendencia positiva en los últimos 12 meses. No obstante, existe una hipoteca vigente sin detalle de saldo/condiciones, por lo que el primer paso es completar la radiografía de endeudamiento para dimensionar correctamente la nueva financiación y asegurar un ratio de esfuerzo sostenible.\n\nLa propuesta combina (i) hipoteca para segunda vivienda como pilar de financiación a largo plazo, (ii) financiación puente para cubrir el descalce temporal hasta el cobro del bonus si el calendario lo requiere, y (iii) la opción de préstamo con garantía de cartera para aportar flexibilidad manteniendo el patrimonio invertido, siempre bajo criterios prudentes de colateral y escenarios de mercado.\n\nEn paralelo, recomendamos una sesión de planificación patrimonial y fiscal para definir la titularidad óptima de la compra, coordinar activos y pasivos (incluida la hipoteca vigente) y revisar la exposición internacional/divisa. El objetivo es que la operación inmobiliaria no sea un evento aislado, sino un paso coherente dentro de una estrategia patrimonial de medio plazo.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.",
+  "pptx_path": "5_pitch_builder/pitchbook.pptx",
+  "pdf_path": "5_pitch_builder/pitchbook.pdf"
+}

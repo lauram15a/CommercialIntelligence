@@ -1,0 +1,22 @@
+{
+  "perfil": "Empresa no identificada con una foto financiera operativa TTM estimada: ingresos 12,0m€ y EBITDA 1,8m€ (margen 15,0%), lo que sugiere un negocio de tamaño pequeño/mediano con rentabilidad operativa razonable. Presenta CAPEX moderado (0,6m€, ~5% de ventas) y apalancamiento material (deuda estimada 5,4m€, ~3,0x EBITDA), compatible con una estructura financiera que requiere seguimiento activo.",
+  "situacion_actual": "La oportunidad se basa en una estimación TTM sin histórico comparativo, con una referencia de crecimiento anual del 7,0% pero sin serie temporal para validar la tendencia real. La combinación de margen EBITDA del 15% y deuda ~3,0x sugiere potencial necesidad de financiación (circulante y/o crecimiento) y, en paralelo, margen para optimizar estructura de deuda y coberturas, sujeto a confirmar con estados financieros y detalle de vencimientos/coste.",
+  "necesidades_potenciales": [
+    "Financiación de circulante para sostener crecimiento (referencia +7,0% anual): dimensionar líneas de crédito/confirming/factoring en función de ciclo de cobros y pagos y estacionalidad.",
+    "Refinanciación u optimización de la deuda existente (5,4m€; ~3,0x EBITDA): revisar calendario de vencimientos, coste, covenants y opciones de extensión de plazos o mejora de pricing.",
+    "Gestión de riesgo de tipos y estructura de coberturas: con apalancamiento material, evaluar sensibilidad a tipos y conveniencia de swaps/caps según mix fijo/variable.",
+    "Financiación de CAPEX (0,6m€ TTM; ~5% ventas): explorar leasing/loan específico si el CAPEX está ligado a capacidad productiva o eficiencia y tiene retorno medible."
+  ],
+  "riesgos": [
+    "Calidad y completitud de la información: los datos son estimaciones TTM sin histórico, lo que puede distorsionar margen, crecimiento real y capacidad de servicio de deuda.",
+    "Sensibilidad financiera por apalancamiento (~3,0x EBITDA): riesgo de tensión de liquidez ante subida de tipos, caída de EBITDA o incremento de necesidades de circulante; falta visibilidad de vencimientos y covenants.",
+    "Riesgo de inversión/ejecución: CAPEX moderado sin desglose puede ocultar necesidades de inversión mayores o proyectos con retorno incierto."
+  ],
+  "talking_points": [
+    "Validación rápida del “equity story” financiero: pedir P&L y balance de 24–36 meses para confirmar crecimiento, estabilidad del margen (15%) y generación de caja vs CAPEX (0,6m€).",
+    "Mapa de deuda: solicitar detalle de préstamos/líneas (importe, tipo fijo/variable, coste, vencimientos, garantías, covenants) para identificar palancas de refinanciación y/o reestructuración.",
+    "Diagnóstico de circulante: preguntar por DSO/DPO/DIO, concentración de clientes/proveedores y estacionalidad para proponer soluciones (líneas, factoring, confirming) con tamaño objetivo.",
+    "Sensibilidad a tipos y plan de coberturas: cuantificar impacto de +100/+200 pb en coste financiero y acordar si tiene sentido fijar parte del riesgo (cap/swap).",
+    "Uso de fondos y plan de CAPEX: clarificar si el CAPEX es mantenimiento o crecimiento y si hay proyectos con ROI que justifiquen financiación dedicada."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "sector": "Agroindustria",
+  "oportunidades": [
+    {
+      "empresa": "AgroVal Export Partners SL",
+      "motivo": "Refinanciacion y optimizacion de estructura de deuda con foco en los vencimientos proximos y el calendario de amortizacion.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "Existe una conversacion inmediata de financiacion con capacidad de generar propuesta concreta y multproducto."
+    },
+    {
+      "empresa": "AgroVal Export Partners SL",
+      "motivo": "Refuerzo de circulante, trade finance y lineas operativas para acompanar crecimiento y expansion. Exportador hortofruticola con fuerte presencia en Reino Unido (35% ventas) y Europa Central. Exposición a divisa GBP y EUR/USD. Estacionalidad en campañas de primavera y otoño. Cliente del banco desde 2019. Sin incidencias crediticias.",
+      "prioridad": "media",
+      "justificacion_prioridad": "La necesidad es relevante para sostener crecimiento, aunque normalmente se estructura despues de ordenar la deuda principal."
+    },
+    {
+      "empresa": "AgroVal Export Partners SL",
+      "motivo": "Paquete de tesoreria, coberturas y vinculacion adicional para mejorar principalidad y rentabilidad relacional.",
+      "prioridad": "alta",
+      "justificacion_prioridad": "La relacion activa permite una conversacion de share of wallet y cross-sell con alta probabilidad comercial."
+    }
+  ],
+  "resumen": "Analisis focalizado en AgroVal Export Partners SL. Se priorizan palancas sobre la propia empresa, con foco en refinanciacion, circulante y vinculacion financiera asociada al sector agroindustria. Vencimientos monitorizados: 2026: 1,296,000 EUR, 2027: 1,584,000 EUR, 2028: 1,728,000 EUR, 2029+: 2,592,000 EUR."
+}

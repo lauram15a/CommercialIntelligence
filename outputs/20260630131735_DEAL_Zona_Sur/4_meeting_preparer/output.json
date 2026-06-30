@@ -1,0 +1,23 @@
+{
+  "perfil": "Javier Romero Pardo es un autónomo con ingresos anuales estimados de ~47.000 EUR y un patrón de facturación estacional que sugiere variabilidad de caja durante el año. Presenta un ahorro líquido estimado de ~18.000 EUR y un patrimonio invertible de ~22.000 EUR, lo que indica una base financiera moderada y potencial interés por optimizar su operativa bancaria.",
+  "situacion_actual": "Es un prospecto no cliente en fase de captación, con una oportunidad prioritaria para sustituir su entidad principal mediante una propuesta de liquidez y operativa diaria. Las señales apuntan a posibles tensiones puntuales de tesorería por estacionalidad y a una motivación clara por rapidez/digitalización, lo que abre una ventana para migrar su operativa y vinculación.",
+  "necesidades_potenciales": [
+    "Gestión de tesorería y liquidez para cubrir baches intraanuales: estructurar un colchón operativo y/o una línea de circulante de pequeña escala alineada con ingresos anuales (~47.000 EUR) y liquidez disponible (~18.000 EUR).",
+    "Sustitución de banco principal con foco en operativa diaria digital: cuenta principal, pagos/impuestos, transferencias inmediatas y herramientas de control de cobros/pagos para reducir fricción operativa.",
+    "Optimización del excedente: propuesta simple para rentabilizar parte del ahorro líquido (~18.000 EUR) y/o el patrimonio invertible (~22.000 EUR) manteniendo disponibilidad para picos de circulante.",
+    "Diagnóstico financiero básico para dimensionar soluciones: recopilación de series mensuales de cobros/pagos y estructura de gastos/impuestos para estimar necesidades de circulante y capacidad de servicio si se plantea financiación."
+  ],
+  "riesgos": [
+    "Información financiera incompleta (sin costes/márgenes, CAPEX ni deuda): riesgo de sobredimensionar o infradimensionar una solución de financiación y de no ajustar límites/condiciones a la realidad del negocio.",
+    "Estacionalidad con posibles caídas puntuales de caja: riesgo de impagos o tensiones de liquidez si no existe financiación puente o planificación de tesorería.",
+    "Base patrimonial moderada para absorber shocks (líquido ~18.000 EUR): riesgo de que un evento puntual (impuestos, caída de ingresos, gasto extraordinario) reduzca el colchón y afecte la operativa.",
+    "Oportunidad competitiva: si otra entidad ofrece mejor experiencia digital/rapidez, se puede perder la captación pese al interés inicial."
+  ],
+  "talking_points": [
+    "Mapear la estacionalidad: “¿En qué meses se concentran cobros y en cuáles se acumulan pagos/impuestos? ¿Cuál es el bache máximo de tesorería que has tenido en los últimos 12 meses?”",
+    "Propuesta de cambio de banco principal: “Te planteo una migración en 2 pasos: operativa diaria (cuenta, pagos, impuestos) y después liquidez/financiación; ¿qué es lo que hoy te frena más: tiempos, app, atención o costes?”",
+    "Liquidez y colchón: “Con ~18.000 EUR de líquido, definamos cuánto debe quedar siempre disponible y qué parte puede rentabilizarse sin comprometer la caja.”",
+    "Financiación de circulante (si aplica): “Si hay baches recurrentes, podemos valorar una línea flexible; para dimensionarla necesito 6–12 meses de movimientos y calendario de impuestos.”",
+    "Siguiente paso concreto: acordar documentación mínima (extractos/ingresos mensuales, principales pagos, impuestos, cualquier deuda) y un plazo corto para presentar propuesta cerrada de operativa + liquidez."
+  ]
+}

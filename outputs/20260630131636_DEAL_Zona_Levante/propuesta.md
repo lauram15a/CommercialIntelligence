@@ -1,0 +1,9 @@
+La compañía (no identificada) presenta una foto operativa TTM estimada de **12,0m€ de ingresos** y **1,8m€ de EBITDA** (margen **15,0%**), con **CAPEX ~0,6m€** (~**5%** de ventas) y **deuda financiera estimada de 5,4m€**, equivalente a **~3,0x EBITDA**. Esta combinación sugiere un negocio con rentabilidad operativa razonable, pero con una palanca financiera material que puede amplificar la sensibilidad a tipos, covenants y tensiones de liquidez.
+
+La oportunidad comercial se centra en estructurar una solución integral que combine **financiación de circulante** (para sostener el crecimiento de referencia del **7,0%** y absorber estacionalidad), **refinanciación/optimización de deuda** (para mejorar calendario de vencimientos, coste y flexibilidad) y **coberturas de tipo** (si existe exposición relevante a tipo variable). Adicionalmente, el CAPEX moderado permite valorar **financiación específica de inversión** (leasing/préstamo) para alinear repago con la vida útil del activo y preservar caja.
+
+El primer paso es convertir la foto estimada en un diagnóstico verificable: solicitar P&L y balance de 24–36 meses, detalle completo de deuda (importe, coste, vencimientos, garantías y covenants) y métricas de circulante (DSO/DPO/DIO). Con esa base, se puede dimensionar una estructura objetivo (revolving para circulante + term/leasing para inversión + deuda estructural) y preparar escenarios de sensibilidad a EBITDA y tipos.
+
+Nuestra propuesta aporta rapidez de ejecución, disciplina de estructura y foco en resiliencia financiera: separar usos de fondos, estabilizar el coste financiero y asegurar que la financiación acompaña el ciclo real del negocio, reduciendo el riesgo de tensiones de liquidez y mejorando la capacidad de inversión.
+
+El equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.

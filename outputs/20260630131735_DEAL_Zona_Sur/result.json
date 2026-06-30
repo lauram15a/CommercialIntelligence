@@ -1,0 +1,110 @@
+{
+  "run_id": "20260630131735",
+  "sector": "Sur",
+  "company_name": "Javier Romero Pardo",
+  "entity_family": "fisica",
+  "fuente": "externa",
+  "geografia": "Sur",
+  "analyst_notes": null,
+  "use_case": "deal",
+  "opportunity_output": {
+    "sector": "Sur",
+    "oportunidades": [
+      {
+        "empresa": "Javier Romero Pardo",
+        "motivo": "Captacion con propuesta de liquidez y operativa diaria para sustituir entidad principal.",
+        "prioridad": "alta",
+        "justificacion_prioridad": "Existe una necesidad funcional inmediata y predisposicion expresa a cambiar de banco.",
+        "ingresos_estimados": 47000,
+        "empleados": 1,
+        "historial_banco": "Prospecto no cliente. Analisis apoyado en perfil patrimonial y senales comerciales."
+      }
+    ],
+    "resumen": "Universo de personas fisicas priorizado por territorial Sur. El ranking combina inmediatez comercial, capacidad economica y potencial de vinculacion."
+  },
+  "earnings_summary": "Javier Romero Pardo presenta unos ingresos anuales estimados de ~47.000 EUR, con un patrón estacional que sugiere variabilidad intraanual y posibles caídas puntuales de caja, si bien no se aportan series históricas para cuantificar crecimiento interanual ni tendencia de ingresos. No hay información de cuenta de resultados (costes/margen operativo) ni de inversión (CAPEX), por lo que no es posible evaluar evolución de rentabilidad ni si existe una estrategia de expansión vía inversión. En términos de liquidez y capacidad de colchón, se estima un ahorro líquido de ~18.000 EUR y un patrimonio invertible de ~22.000 EUR, lo que indica cierta base financiera pero potencialmente limitada para absorber picos de circulante si la estacionalidad es marcada. No se reportan datos de endeudamiento ni productos financieros activos, por lo que no puede analizarse apalancamiento ni estructura de financiación actual. Adicionalmente, el hecho de no ser cliente actual y mostrar interés en cambiar de entidad por rapidez/digitalización apunta a una ventana comercial de captación.\n\nLa compañía (autónomo) presenta ingresos estables pero con tensión de tesorería puntual y ausencia de financiación estructurada conocida, lo que puede implicar una necesidad recurrente de financiación de circulante de pequeña escala y soluciones de gestión de liquidez.",
+  "model_output": {
+    "indicadores_clave": [
+      {
+        "nombre": "Ingresos anuales estimados",
+        "valor": "~47.000 EUR"
+      },
+      {
+        "nombre": "Ahorro líquido estimado",
+        "valor": "~18.000 EUR"
+      },
+      {
+        "nombre": "Patrimonio invertible estimado",
+        "valor": "~22.000 EUR"
+      }
+    ],
+    "tendencias_estructurales": [
+      "Patrón estacional de ingresos que sugiere variabilidad intraanual y posibles caídas puntuales de caja.",
+      "Ausencia de información de costes/márgenes y CAPEX, lo que impide evaluar rentabilidad y estrategia de inversión/expansión.",
+      "No se reportan datos de endeudamiento ni productos financieros activos, por lo que no puede inferirse apalancamiento ni estructura de financiación actual.",
+      "Interés en cambiar de entidad por rapidez/digitalización, lo que sugiere una oportunidad comercial de captación."
+    ],
+    "interpretacion": "Con los datos disponibles, el perfil apunta a un autónomo con nivel de ingresos moderado y cierta base de liquidez/patrimonio, pero potencialmente expuesto a tensiones de tesorería por estacionalidad. La falta de visibilidad sobre márgenes, gastos, impuestos, CAPEX y deuda limita el diagnóstico de capacidad de servicio de deuda y necesidades de financiación de medio plazo. Para dimensionar una solución (póliza de crédito, confirming/anticipo, cuenta remunerada o herramientas de cash management) harían falta series mensuales de cobros/pagos, estructura de costes y cualquier pasivo financiero vigente.",
+    "disponible": true
+  },
+  "meeting_brief": {
+    "perfil": "Javier Romero Pardo es un autónomo con ingresos anuales estimados de ~47.000 EUR y un patrón de facturación estacional que sugiere variabilidad de caja durante el año. Presenta un ahorro líquido estimado de ~18.000 EUR y un patrimonio invertible de ~22.000 EUR, lo que indica una base financiera moderada y potencial interés por optimizar su operativa bancaria.",
+    "situacion_actual": "Es un prospecto no cliente en fase de captación, con una oportunidad prioritaria para sustituir su entidad principal mediante una propuesta de liquidez y operativa diaria. Las señales apuntan a posibles tensiones puntuales de tesorería por estacionalidad y a una motivación clara por rapidez/digitalización, lo que abre una ventana para migrar su operativa y vinculación.",
+    "necesidades_potenciales": [
+      "Gestión de tesorería y liquidez para cubrir baches intraanuales: estructurar un colchón operativo y/o una línea de circulante de pequeña escala alineada con ingresos anuales (~47.000 EUR) y liquidez disponible (~18.000 EUR).",
+      "Sustitución de banco principal con foco en operativa diaria digital: cuenta principal, pagos/impuestos, transferencias inmediatas y herramientas de control de cobros/pagos para reducir fricción operativa.",
+      "Optimización del excedente: propuesta simple para rentabilizar parte del ahorro líquido (~18.000 EUR) y/o el patrimonio invertible (~22.000 EUR) manteniendo disponibilidad para picos de circulante.",
+      "Diagnóstico financiero básico para dimensionar soluciones: recopilación de series mensuales de cobros/pagos y estructura de gastos/impuestos para estimar necesidades de circulante y capacidad de servicio si se plantea financiación."
+    ],
+    "riesgos": [
+      "Información financiera incompleta (sin costes/márgenes, CAPEX ni deuda): riesgo de sobredimensionar o infradimensionar una solución de financiación y de no ajustar límites/condiciones a la realidad del negocio.",
+      "Estacionalidad con posibles caídas puntuales de caja: riesgo de impagos o tensiones de liquidez si no existe financiación puente o planificación de tesorería.",
+      "Base patrimonial moderada para absorber shocks (líquido ~18.000 EUR): riesgo de que un evento puntual (impuestos, caída de ingresos, gasto extraordinario) reduzca el colchón y afecte la operativa.",
+      "Oportunidad competitiva: si otra entidad ofrece mejor experiencia digital/rapidez, se puede perder la captación pese al interés inicial."
+    ],
+    "talking_points": [
+      "Mapear la estacionalidad: “¿En qué meses se concentran cobros y en cuáles se acumulan pagos/impuestos? ¿Cuál es el bache máximo de tesorería que has tenido en los últimos 12 meses?”",
+      "Propuesta de cambio de banco principal: “Te planteo una migración en 2 pasos: operativa diaria (cuenta, pagos, impuestos) y después liquidez/financiación; ¿qué es lo que hoy te frena más: tiempos, app, atención o costes?”",
+      "Liquidez y colchón: “Con ~18.000 EUR de líquido, definamos cuánto debe quedar siempre disponible y qué parte puede rentabilizarse sin comprometer la caja.”",
+      "Financiación de circulante (si aplica): “Si hay baches recurrentes, podemos valorar una línea flexible; para dimensionarla necesito 6–12 meses de movimientos y calendario de impuestos.”",
+      "Siguiente paso concreto: acordar documentación mínima (extractos/ingresos mensuales, principales pagos, impuestos, cualquier deuda) y un plazo corto para presentar propuesta cerrada de operativa + liquidez."
+    ]
+  },
+  "pitch_output": {
+    "titulo": "Propuesta comercial | Captación de autónomo con migración de banco principal y solución de liquidez",
+    "subtitulo": "Migrar la operativa diaria a una cuenta principal digital y complementar con un esquema de liquidez flexible para cubrir baches de tesorería por estacionalidad.",
+    "oportunidad_detectada": "Javier Romero Pardo (autónomo) es un prospecto con prioridad alta para sustituir su entidad principal, motivado por rapidez y digitalización. Con ingresos anuales estimados de ~47.000 EUR y un patrón estacional, es probable que experimente baches puntuales de caja (impuestos, pagos a proveedores, meses de menor facturación). La ventana es inmediata: si se ofrece una migración simple de operativa diaria + una solución de liquidez dimensionada a su ciclo de cobros/pagos, se puede capturar la vinculación principal y aumentar recurrencia.",
+    "contexto_financiero": [
+      "Ingresos anuales estimados: ~47.000 EUR, con estacionalidad que sugiere variabilidad intraanual y potenciales caídas puntuales de caja.",
+      "Ahorro líquido estimado: ~18.000 EUR, que aporta colchón pero puede ser insuficiente si coincide un bache de ingresos con pagos/impuestos concentrados.",
+      "Patrimonio invertible estimado: ~22.000 EUR, oportunidad para estructurar una rentabilización conservadora manteniendo disponibilidad parcial para circulante.",
+      "No se reporta endeudamiento ni productos financieros activos: hipótesis prudente de ausencia de financiación estructurada, lo que refuerza el encaje de una línea flexible de circulante de pequeña escala."
+    ],
+    "encaje_productos": [
+      "Cuenta de autónomos / cuenta principal con operativa digital (transferencias inmediatas, domiciliaciones, pagos de impuestos, tarjetas): encaja para sustituir la entidad principal y concentrar cobros/pagos con una experiencia más ágil.",
+      "Línea de circulante flexible (póliza de crédito o línea de liquidez) de pequeña escala: encaja para cubrir baches estacionales sin descapitalizar el ahorro líquido; el límite se definiría tras revisar 6–12 meses de movimientos.",
+      "Anticipo de facturas / descuento comercial (si factura a clientes con plazos): encaja para acelerar cobros en meses valle y reducir tensión de tesorería sin aumentar estructura fija.",
+      "Cuenta remunerada / depósito a corto plazo para excedentes: encaja para rentabilizar una parte del saldo manteniendo un mínimo operativo disponible para pagos e impuestos."
+    ],
+    "comparables": [
+      "Referencia de mercado (autónomos con facturación 40–60k EUR/año): suelen presentar picos de necesidad de liquidez ligados a IVA/IRPF y estacionalidad; solución típica = cuenta principal + línea flexible de circulante.",
+      "Referencia sectorial (servicios/actividad estacional en el Sur): patrón frecuente de concentración de cobros en determinados meses y pagos/impuestos en ventanas fijas; recomendación estándar = planificación de tesorería + colchón mínimo + financiación puente."
+    ],
+    "argumentos_valor": [
+      "Captación por fricción cero: propuesta de migración en 2 fases (operativa diaria primero, liquidez después) para cambiar de banco principal sin interrumpir cobros/pagos.",
+      "Liquidez diseñada al ciclo real: dimensionamiento basado en calendario de impuestos y serie mensual de movimientos (6–12 meses), evitando sobredimensionar límites y optimizando coste financiero.",
+      "Mejora de control y previsión: herramientas de seguimiento de cobros/pagos y alertas de saldo para anticipar baches y reducir incidencias (devoluciones, recargos, retrasos).",
+      "Optimización del excedente con prudencia: separar “saldo mínimo operativo” y “excedente invertible” para rentabilizar sin comprometer la disponibilidad en meses de mayor tensión."
+    ],
+    "proximos_pasos": [
+      "En 48–72h: solicitar documentación mínima para diagnóstico (extractos 6–12 meses, calendario de impuestos, principales pagos recurrentes, facturación mensual aproximada y cualquier deuda vigente). Responsable: gestor comercial.",
+      "En 5 días laborables: entregar propuesta cerrada de cuenta principal + paquete de operativa diaria (domiciliaciones, impuestos, tarjetas, transferencias) y plan de migración (checklist de cambios). Responsable: gestor comercial + soporte de onboarding.",
+      "En 7–10 días laborables: presentar preoferta de liquidez (póliza/línea flexible y/o anticipo de facturas) con rango de límite y condiciones sujeto a verificación de movimientos. Responsable: riesgos/negocio.",
+      "Tras 30 días de operativa: revisión de saldos y estacionalidad observada para ajustar límites, definir saldo mínimo operativo y activar rentabilización del excedente (si aplica). Responsable: gestor comercial."
+    ],
+    "narrativa_markdown": "Javier Romero Pardo es un autónomo con ingresos anuales estimados de ~47.000 EUR y un patrón estacional que sugiere variabilidad de caja. La oportunidad (prioridad alta) consiste en captar y sustituir su entidad principal con una propuesta centrada en operativa diaria digital y una solución de liquidez que reduzca fricción y cubra baches puntuales.\n\nDesde un punto de vista financiero, el cliente cuenta con un ahorro líquido estimado de ~18.000 EUR y un patrimonio invertible de ~22.000 EUR. Esta base permite operar con cierta holgura, pero puede tensionarse si coinciden meses de menor facturación con pagos concentrados (especialmente impuestos). Además, al no disponer de información de endeudamiento, se plantea una hipótesis prudente de ausencia de financiación estructurada, lo que refuerza el encaje de una línea flexible de circulante de pequeña escala.\n\nLa propuesta se estructura en dos fases para maximizar la probabilidad de captación: (1) migración de operativa diaria a una cuenta principal para autónomos con foco en rapidez/digitalización (cobros, pagos, impuestos, transferencias inmediatas y control), y (2) activación de un esquema de liquidez (póliza/línea flexible y, si aplica, anticipo de facturas) dimensionado con datos reales de 6–12 meses de movimientos y calendario fiscal.\n\nComo valor añadido, se plantea separar un “saldo mínimo operativo” del excedente para rentabilizar de forma conservadora sin comprometer la disponibilidad en meses valle. El objetivo es convertir la mejora de experiencia (digital/rapidez) en vinculación principal y, a la vez, reducir el riesgo de tensiones de tesorería mediante planificación y financiación puente cuando sea necesario.\n\nEl equipo comercial revisa, ajusta y personaliza esta propuesta antes de cualquier interacción con el cliente.",
+    "pptx_path": "5_pitch_builder/pitchbook.pptx",
+    "pdf_path": "5_pitch_builder/pitchbook.pdf"
+  },
+  "historial": {}
+}
